@@ -1,0 +1,530 @@
+{
+  "066-2": {
+    "chunks": [
+      [
+        "あなたの嘘で",
+        "M"
+      ],
+      [
+        "私は不愉快に",
+        "P"
+      ],
+      [
+        "なりました",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "You",
+        "S"
+      ],
+      [
+        " made",
+        "V"
+      ],
+      [
+        " me sick",
+        "P"
+      ],
+      [
+        " with your lies.",
+        "M"
+      ]
+    ],
+    "implicit": true,
+    "implicitParts": {
+      "S": "あなたが（英文で主語になる）"
+    },
+    "implicitSubject": "あなたが（英文で主語になる）",
+    "translationShift": true,
+    "note": "日本語は「あなたの嘘で私が不愉快になった」、英語は「あなたが嘘で私を不愉快にした」。英語の主語Youは和訳の「あなたの嘘で」全体とは別に補います。原因のwith your liesはM、me sickはこの教材のO/Pです。"
+  },
+  "117-3": {
+    "chunks": [
+      [
+        "調子は",
+        "S"
+      ],
+      [
+        "どう",
+        "P"
+      ],
+      [
+        "ですか",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "How",
+        "P"
+      ],
+      [
+        " are",
+        "V"
+      ],
+      [
+        " things",
+        "S"
+      ],
+      [
+        " with you?",
+        "M"
+      ]
+    ],
+    "implicit": false,
+    "implicitParts": {
+      "M": "あなたのほうでは（文ではかくれる）"
+    },
+    "note": "with youは「あなたのほうでは」という追加情報です。和訳では省略されています。Howが状態を尋ね、areがSのthingsの前に出ます。"
+  },
+  "120-4": {
+    "chunks": [
+      [
+        "あなたは",
+        "S"
+      ],
+      [
+        "このショッピングモールのどこに車を",
+        "P"
+      ],
+      [
+        "駐車しましたか",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "Where",
+        "P"
+      ],
+      [
+        " did",
+        "V"
+      ],
+      [
+        " you",
+        "S"
+      ],
+      [
+        " park",
+        "V"
+      ],
+      [
+        " your car in this mall?",
+        "P"
+      ]
+    ],
+    "implicit": false,
+    "implicitParts": {},
+    "note": "Whereとin this mallは「このショッピングモールのどこに」という場所のまとまりとして、車と一緒にこの教材のO/Pに入れます。疑問文ではWhereとdidがSの前に出ます。"
+  },
+  "131-3": {
+    "chunks": [
+      [
+        "言うは易く行うは難し",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "This",
+        "S"
+      ],
+      [
+        " is easier said than done.",
+        "V"
+      ]
+    ],
+    "implicit": true,
+    "implicitParts": {
+      "S": "これは（英文で補う主語）"
+    },
+    "implicitSubject": "これは（英文で補う主語）",
+    "translationShift": true,
+    "note": "ことわざの意訳です。「言うは易く行うは難し」全体とis easier said than done全体を、ひとまとまりの述語Vとして対応させます。英文のSはThisです。日本語の「言うは」だけがThisに当たるわけではありません。"
+  },
+  "135-3": {
+    "chunks": [
+      [
+        "彼は",
+        "S"
+      ],
+      [
+        "見かけで判断するほど愚かではない",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "He",
+        "S"
+      ],
+      [
+        " knows better than to judge by appearances.",
+        "V"
+      ]
+    ],
+    "implicit": false,
+    "implicitParts": {},
+    "note": "know better than to ...は「〜するほど愚かではない」という熟語です。見かけで判断しないという述語全体をVとして対応させ、一語ずつ直訳しません。"
+  },
+  "143-1": {
+    "chunks": [
+      [
+        "ケンほど背が高い",
+        "P"
+      ],
+      [
+        "人は",
+        "S"
+      ],
+      [
+        "私のクラスには",
+        "M"
+      ],
+      [
+        "いません",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "No one",
+        "S"
+      ],
+      [
+        " in my class",
+        "M"
+      ],
+      [
+        " is",
+        "V"
+      ],
+      [
+        " as tall as Ken.",
+        "P"
+      ]
+    ],
+    "implicit": false,
+    "implicitParts": {},
+    "translationShift": true,
+    "note": "日本語は「〜する人・ものはいない」、英語はNo one／No animals／NothingをSにして述べます。ここでは英語の枠に合わせ、長い日本語の名詞句から状態・動作・比較を取り出します。日本語の文法上の主語をそのまま分けたものではありません。否定の意味も日本語の「いません／ありません」から英語のSに移ります。 in my classは、対象となる範囲を添える追加情報Mとして表示します。"
+  },
+  "143-2": {
+    "chunks": [
+      [
+        "チーターと同じくらい速く",
+        "M"
+      ],
+      [
+        "走ることができる",
+        "V"
+      ],
+      [
+        "動物は",
+        "S"
+      ],
+      [
+        "いません",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "No animals",
+        "S"
+      ],
+      [
+        " can run",
+        "V"
+      ],
+      [
+        " as fast as the cheetah.",
+        "M"
+      ]
+    ],
+    "implicit": false,
+    "implicitParts": {},
+    "translationShift": true,
+    "note": "日本語は「〜する人・ものはいない」、英語はNo one／No animals／NothingをSにして述べます。ここでは英語の枠に合わせ、長い日本語の名詞句から状態・動作・比較を取り出します。日本語の文法上の主語をそのまま分けたものではありません。否定の意味も日本語の「いません／ありません」から英語のSに移ります。"
+  },
+  "143-3": {
+    "chunks": [
+      [
+        "光ほど速く",
+        "M"
+      ],
+      [
+        "伝わる",
+        "V"
+      ],
+      [
+        "ものは",
+        "S"
+      ],
+      [
+        "ありません",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "Nothing",
+        "S"
+      ],
+      [
+        " can travel",
+        "V"
+      ],
+      [
+        " faster than light.",
+        "M"
+      ]
+    ],
+    "implicit": false,
+    "implicitParts": {},
+    "translationShift": true,
+    "note": "日本語は「〜する人・ものはいない」、英語はNo one／No animals／NothingをSにして述べます。ここでは英語の枠に合わせ、長い日本語の名詞句から状態・動作・比較を取り出します。日本語の文法上の主語をそのまま分けたものではありません。否定の意味も日本語の「いません／ありません」から英語のSに移ります。"
+  },
+  "143-4": {
+    "chunks": [
+      [
+        "トムと同じくらい成功した",
+        "P"
+      ],
+      [
+        "人は誰も",
+        "S"
+      ],
+      [
+        "いませんでした",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "No one else",
+        "S"
+      ],
+      [
+        " was",
+        "V"
+      ],
+      [
+        " as successful as Tom.",
+        "P"
+      ]
+    ],
+    "implicit": false,
+    "implicitParts": {},
+    "translationShift": true,
+    "note": "日本語は「〜する人・ものはいない」、英語はNo one／No animals／NothingをSにして述べます。ここでは英語の枠に合わせ、長い日本語の名詞句から状態・動作・比較を取り出します。日本語の文法上の主語をそのまま分けたものではありません。否定の意味も日本語の「いません／ありません」から英語のSに移ります。"
+  },
+  "146-1": {
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "あなたが",
+        "P"
+      ],
+      [
+        "好きです",
+        "V"
+      ],
+      [
+        "が、あなたの友人は好きではありません",
+        "M"
+      ]
+    ],
+    "english": [
+      [
+        "I",
+        "S"
+      ],
+      [
+        " like",
+        "V"
+      ],
+      [
+        " you,",
+        "P"
+      ],
+      [
+        " but I don't like your friends.",
+        "M"
+      ]
+    ],
+    "implicit": false,
+    "implicitParts": {},
+    "note": "二つの独立した文をbutでつないでいます。この練習では前半をS・V・O/Pに分け、but以降は追加の文のまとまりとしてMに入れます。後半自体にもS・Vなどがありますが、ここでは入れ子に分解しません。"
+  },
+  "146-2": {
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "それを",
+        "P"
+      ],
+      [
+        "買いたいのです",
+        "V"
+      ],
+      [
+        "が、十分なお金を持っていません",
+        "M"
+      ]
+    ],
+    "english": [
+      [
+        "I",
+        "S"
+      ],
+      [
+        " want to buy",
+        "V"
+      ],
+      [
+        " it,",
+        "P"
+      ],
+      [
+        " but I don't have enough money.",
+        "M"
+      ]
+    ],
+    "implicit": false,
+    "implicitParts": {},
+    "note": "二つの独立した文をbutでつないでいます。この練習では前半をS・V・O/Pに分け、but以降は追加の文のまとまりとしてMに入れます。後半自体にもS・Vなどがありますが、ここでは入れ子に分解しません。"
+  },
+  "146-3": {
+    "chunks": [
+      [
+        "彼女は",
+        "S"
+      ],
+      [
+        "かわいい",
+        "P"
+      ],
+      [
+        "です",
+        "V"
+      ],
+      [
+        "が、あまりにも自己中心的です",
+        "M"
+      ]
+    ],
+    "english": [
+      [
+        "She",
+        "S"
+      ],
+      [
+        " is",
+        "V"
+      ],
+      [
+        " pretty,",
+        "P"
+      ],
+      [
+        " but she's too self-centered.",
+        "M"
+      ]
+    ],
+    "implicit": false,
+    "implicitParts": {},
+    "note": "二つの独立した文をbutでつないでいます。この練習では前半をS・V・O/Pに分け、but以降は追加の文のまとまりとしてMに入れます。後半自体にもS・Vなどがありますが、ここでは入れ子に分解しません。"
+  },
+  "146-4": {
+    "chunks": [
+      [
+        "これは",
+        "S"
+      ],
+      [
+        "よい考え",
+        "P"
+      ],
+      [
+        "です",
+        "V"
+      ],
+      [
+        "が、さらによく計画を立てる必要があります",
+        "M"
+      ]
+    ],
+    "english": [
+      [
+        "This",
+        "S"
+      ],
+      [
+        " is",
+        "V"
+      ],
+      [
+        " a good idea,",
+        "P"
+      ],
+      [
+        " but it needs further planning.",
+        "M"
+      ]
+    ],
+    "implicit": false,
+    "implicitParts": {},
+    "note": "二つの独立した文をbutでつないでいます。この練習では前半をS・V・O/Pに分け、but以降は追加の文のまとまりとしてMに入れます。後半自体にもS・Vなどがありますが、ここでは入れ子に分解しません。"
+  },
+  "149-2": {
+    "chunks": [
+      [
+        "誰かが話し出す前には",
+        "M"
+      ],
+      [
+        "長い沈黙が",
+        "P"
+      ],
+      [
+        "ありました",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "There",
+        "S"
+      ],
+      [
+        " was",
+        "V"
+      ],
+      [
+        " a long silence",
+        "P"
+      ],
+      [
+        " before anybody spoke.",
+        "M"
+      ]
+    ],
+    "implicit": true,
+    "implicitParts": {
+      "S": "there（形式上の主語）"
+    },
+    "implicitSubject": "there（形式上の主語）",
+    "translationShift": true,
+    "note": "There was ...は「〜があった」という存在の表現です。このthereは場所の「そこに」を意味しません。Sには形式上のthere、O/Pには存在する内容a long silenceを入れます。O/Pはこの教材の大まかな内容の箱で、a long silenceを普通の目的語と呼ぶ意味ではありません。"
+  }
+}

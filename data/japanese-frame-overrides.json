@@ -1,0 +1,1755 @@
+{
+  "021-1": {
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "学校が",
+        "P"
+      ],
+      [
+        "楽しいです",
+        "V"
+      ]
+    ],
+    "englishFrameParts": {
+      "S": "私は",
+      "V": "です",
+      "P": "楽しい・幸せな状態",
+      "M": "学校で"
+    },
+    "note": "日本語は「学校が楽しい」という述語で表し、英語は I / am / happy / at school と述べます。「学校が」を場所Mと誤って扱わず、日本語と英語の枠を別々に確かめます。",
+    "translationShift": true,
+    "implicit": false,
+    "implicitParts": {},
+    "implicitSubject": ""
+  },
+  "025-1": {
+    "chunks": [
+      [
+        "彼に助けを求めることは",
+        "S"
+      ],
+      [
+        "いい考え",
+        "P"
+      ],
+      [
+        "です",
+        "V"
+      ]
+    ],
+    "englishFrameParts": {
+      "S": "それは（後ろの「助けを求めること」）",
+      "V": "です",
+      "P": "いい考え／彼に助けを求めること",
+      "M": "なし"
+    },
+    "note": "日本語のSは「彼に助けを求めることは」です。英語はまず形式的な主語Itを置き、to ask him for helpを後ろに続けます。日本語の主語カードを英文のItと一語ずつ対応させません。",
+    "translationShift": true,
+    "implicit": false,
+    "implicitParts": {},
+    "implicitSubject": ""
+  },
+  "025-2": {
+    "chunks": [
+      [
+        "新しい人々に会うことは",
+        "S"
+      ],
+      [
+        "すばらしい方法",
+        "P"
+      ],
+      [
+        "です",
+        "V"
+      ]
+    ],
+    "englishFrameParts": {
+      "S": "それは（ある方法・やり方を指すIt）",
+      "V": "です",
+      "P": "新しい人々に会うためのすばらしい方法",
+      "M": "なし"
+    },
+    "note": "和文は「新しい人々に会うこと」を主語にしていますが、英文はIt（その方法など）を主語にし、後ろのto meet new peopleはwayを説明します。和文と英文で枠の立て方が異なります。",
+    "translationShift": true,
+    "implicit": false,
+    "implicitParts": {},
+    "implicitSubject": ""
+  },
+  "025-4": {
+    "chunks": [
+      [
+        "30年以上を経て再会したのは",
+        "S"
+      ],
+      [
+        "すばらしいこと",
+        "P"
+      ],
+      [
+        "です",
+        "V"
+      ]
+    ],
+    "englishFrameParts": {
+      "S": "それは（後ろの「再会したこと」）",
+      "V": "です",
+      "P": "すばらしいこと／30年以上を経て私たちが再会したこと",
+      "M": "なし"
+    },
+    "note": "日本語は再会した出来事全体をSにします。英文はItを主語に置き、thatから始まる出来事を後ろで説明します。",
+    "translationShift": true,
+    "implicit": false,
+    "implicitParts": {},
+    "implicitSubject": ""
+  },
+  "026-2": {
+    "chunks": [
+      [
+        "外国に一人きりで住むことは",
+        "S"
+      ],
+      [
+        "難しい",
+        "P"
+      ],
+      [
+        "です",
+        "V"
+      ]
+    ],
+    "englishFrameParts": {
+      "S": "それは（後ろの「住むこと」）",
+      "V": "です",
+      "P": "難しい／外国に一人きりで住むこと",
+      "M": "なし"
+    },
+    "note": "日本語のSは「外国に一人きりで住むことは」です。英文では形式的なItを先に置き、住む内容はto live ...で後ろに続けます。",
+    "translationShift": true,
+    "implicit": false,
+    "implicitParts": {},
+    "implicitSubject": ""
+  },
+  "026-3": {
+    "chunks": [
+      [
+        "私たちにとって",
+        "M"
+      ],
+      [
+        "これを理解することは",
+        "S"
+      ],
+      [
+        "非常に",
+        "M"
+      ],
+      [
+        "重要",
+        "P"
+      ],
+      [
+        "です",
+        "V"
+      ]
+    ],
+    "englishFrameParts": {
+      "S": "それは（後ろの「理解すること」）",
+      "V": "です",
+      "P": "私たちがこれを理解することが重要",
+      "M": "非常に"
+    },
+    "note": "日本語のSは「これを理解することは」です。英文は形式的なItを使い、for us to realize thisをimportantの後ろに置きます。日本語の「私たちにとって」は、英語では後ろのfor usにつながります。",
+    "translationShift": true,
+    "implicit": false,
+    "implicitParts": {},
+    "implicitSubject": ""
+  },
+  "026-4": {
+    "chunks": [
+      [
+        "あなたが一日で自分自身でこれをやったとは",
+        "S"
+      ],
+      [
+        "驚き",
+        "P"
+      ],
+      [
+        "です",
+        "V"
+      ]
+    ],
+    "englishFrameParts": {
+      "S": "それは（後ろの「あなたがやったこと」）",
+      "V": "です",
+      "P": "驚くようなこと／あなたが一日で自分だけでこれをやったこと",
+      "M": "なし"
+    },
+    "note": "日本語は「あなたが一日で自分自身でこれをやったとは」をSとして述べます。英文は形式的なItを主語にして、その出来事をthat節で後ろに置きます。",
+    "translationShift": true,
+    "implicit": false,
+    "implicitParts": {},
+    "implicitSubject": ""
+  },
+  "027-2": {
+    "chunks": [
+      [
+        "髪の毛をアップにしているあなたは",
+        "S"
+      ],
+      [
+        "素敵",
+        "P"
+      ],
+      [
+        "ですね",
+        "V"
+      ]
+    ],
+    "englishFrameParts": {
+      "S": "あなたは",
+      "V": "見えます",
+      "P": "素敵に",
+      "M": "髪の毛をアップにして"
+    },
+    "note": "日本語の「髪の毛をアップにしている」は「あなた」を説明する部分で、S全体に含めます。英語はYouをSにして、with your hair upをMとして後ろに添えます。",
+    "translationShift": true,
+    "implicit": false,
+    "implicitParts": {},
+    "implicitSubject": ""
+  },
+  "027-3": {
+    "chunks": [
+      [
+        "あのドレスを着ているあなたは",
+        "S"
+      ],
+      [
+        "ものすごく",
+        "M"
+      ],
+      [
+        "魅力的に",
+        "P"
+      ],
+      [
+        "見えます",
+        "V"
+      ]
+    ],
+    "englishFrameParts": {
+      "S": "あなたは",
+      "V": "見えます",
+      "P": "魅力的に",
+      "M": "ものすごく／あのドレスを着て"
+    },
+    "note": "日本語のSは「あのドレスを着ているあなたは」という長い名詞句全体です。英文はYouをSにし、in that dressをMにして服装を後ろに添えます。",
+    "translationShift": true,
+    "implicit": false,
+    "implicitParts": {},
+    "implicitSubject": ""
+  },
+  "034-3": {
+    "chunks": [
+      [
+        "お祭りの間に",
+        "M"
+      ],
+      [
+        "映画を見るチャンスが",
+        "S"
+      ],
+      [
+        "ありました",
+        "V"
+      ]
+    ],
+    "englishFrameParts": {
+      "S": "私は",
+      "V": "得ました",
+      "P": "映画を見るチャンスを",
+      "M": "お祭りの間に"
+    },
+    "note": "日本語の主語は「映画を見るチャンスが」です。英語はI「私」をSとして「チャンスを得た」と述べます。日本語の「チャンスが」をO/Pに変えて正解とはしません。",
+    "translationShift": true,
+    "implicit": false,
+    "implicitParts": {},
+    "implicitSubject": ""
+  },
+  "050-2": {
+    "chunks": [
+      [
+        "この賞を受けることは",
+        "S"
+      ],
+      [
+        "私に",
+        "P"
+      ],
+      [
+        "大きな喜びを",
+        "P"
+      ],
+      [
+        "与えてくれます",
+        "V"
+      ]
+    ],
+    "englishFrameParts": {
+      "S": "それは（後ろの「この賞を受けること」）",
+      "V": "与えてくれます",
+      "P": "私に大きな喜びを／この賞を受けること",
+      "M": "なし"
+    },
+    "note": "日本語は「この賞を受けること」をSにします。英文は形式的なItで始め、to accept this awardを後ろに置きます。英語の枠のO/Pには喜びを受ける人と内容をまとめています。",
+    "translationShift": true,
+    "implicit": false,
+    "implicitParts": {},
+    "implicitSubject": ""
+  },
+  "050-3": {
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "それを見た時に",
+        "M"
+      ],
+      [
+        "かなり",
+        "M"
+      ],
+      [
+        "ショックを",
+        "P"
+      ],
+      [
+        "受けました",
+        "V"
+      ]
+    ],
+    "englishFrameParts": {
+      "S": "それが",
+      "V": "与えました",
+      "P": "私にかなりのショックを",
+      "M": "私がそれを見た時に"
+    },
+    "note": "日本語は「私」がショックを受けたと述べ、英語は「それ」が私にショックを与えたと述べます。日本語の「私は」は必ずSです。英語の枠では原因のItをSにします。",
+    "translationShift": true,
+    "implicit": false,
+    "implicitParts": {},
+    "implicitSubject": ""
+  },
+  "050-4": {
+    "chunks": [
+      [
+        "そんなに長い年月の後で彼女に再会するとは",
+        "M"
+      ],
+      [
+        "本当に",
+        "M"
+      ],
+      [
+        "興奮しました",
+        "V"
+      ]
+    ],
+    "englishFrameParts": {
+      "S": "それは（後ろの「彼女に再会すること」）",
+      "V": "与えました",
+      "P": "私に本当の興奮を／彼女に再会すること",
+      "M": "そんなに長い年月の後で"
+    },
+    "note": "日本語は「私は本当に興奮しました」と、感情を感じた人を省略しています。再会した出来事を日本語のSと決めつけません。英語はIt / gave / me a real thrill ...と、出来事が興奮を与えた形で表します。",
+    "translationShift": true,
+    "implicit": true,
+    "implicitParts": {},
+    "implicitSubject": "私は（日本語では省略）"
+  },
+  "065-1": {
+    "chunks": [
+      [
+        "私の演技によって",
+        "M"
+      ],
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "スターに",
+        "P"
+      ],
+      [
+        "なりました",
+        "V"
+      ]
+    ],
+    "englishFrameParts": {
+      "S": "私の演技が",
+      "V": "～にしました",
+      "P": "私をスターに",
+      "M": "なし"
+    },
+    "note": "日本語のSは「私は」、原因を添える「私の演技によって」はMです。英語はMy performanceをSにして「私をスターにした」と原因から述べます。",
+    "translationShift": true,
+    "implicit": false,
+    "implicitParts": {},
+    "implicitSubject": ""
+  },
+  "065-2": {
+    "chunks": [
+      [
+        "その事故によって",
+        "M"
+      ],
+      [
+        "私の人生は",
+        "S"
+      ],
+      [
+        "悲惨なものに",
+        "P"
+      ],
+      [
+        "なりました",
+        "V"
+      ]
+    ],
+    "englishFrameParts": {
+      "S": "その事故が",
+      "V": "～にしました",
+      "P": "私の人生を悲惨なものに",
+      "M": "なし"
+    },
+    "note": "日本語のSは「私の人生は」です。「その事故によって」は原因Mです。英文は事故をSにし、my life a miseryをこの教材のO/Pにまとめます。",
+    "translationShift": true,
+    "implicit": false,
+    "implicitParts": {},
+    "implicitSubject": ""
+  },
+  "066-1": {
+    "chunks": [
+      [
+        "そのワインを飲んで",
+        "M"
+      ],
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "眠く",
+        "P"
+      ],
+      [
+        "なりました",
+        "V"
+      ]
+    ],
+    "englishFrameParts": {
+      "S": "そのワインが",
+      "V": "～にしました",
+      "P": "私を眠い状態に",
+      "M": "なし"
+    },
+    "note": "日本語は「私は眠くなった」と述べ、ワインを飲んだことは原因Mです。英語はThe wineをSとして「私を眠くした」と述べます。",
+    "translationShift": true,
+    "implicit": false,
+    "implicitParts": {},
+    "implicitSubject": ""
+  },
+  "066-2": {
+    "chunks": [
+      [
+        "あなたの嘘で",
+        "M"
+      ],
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "不愉快に",
+        "P"
+      ],
+      [
+        "なりました",
+        "V"
+      ]
+    ],
+    "englishFrameParts": {
+      "S": "あなたが",
+      "V": "～にしました",
+      "P": "私を不愉快に",
+      "M": "あなたの嘘で"
+    },
+    "note": "日本語のSは「私は」、原因の「あなたの嘘で」はMです。英文のSはYouです。日本語の「私は」をPにしたり、「あなたの嘘で」をSにしたりして対応させません。",
+    "translationShift": true,
+    "implicit": false,
+    "implicitParts": {},
+    "implicitSubject": ""
+  },
+  "066-3": {
+    "chunks": [
+      [
+        "そのことを考えると",
+        "M"
+      ],
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "具合が悪く",
+        "P"
+      ],
+      [
+        "なります",
+        "V"
+      ]
+    ],
+    "englishFrameParts": {
+      "S": "そのことを考えることが",
+      "V": "～にします",
+      "P": "私を具合の悪い状態に",
+      "M": "なし"
+    },
+    "note": "日本語は条件・きっかけの「そのことを考えると」をM、経験する「私は」をSにします。英文はThe thought of itをSにして、考えが私を具合悪くする形で述べます。",
+    "translationShift": true,
+    "implicit": false,
+    "implicitParts": {},
+    "implicitSubject": ""
+  },
+  "066-4": {
+    "chunks": [
+      [
+        "このところ",
+        "M"
+      ],
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "そのニュースを聞くと",
+        "M"
+      ],
+      [
+        "怒る気にしか",
+        "P"
+      ],
+      [
+        "なりません",
+        "V"
+      ]
+    ],
+    "englishFrameParts": {
+      "S": "ニュースを聞くことが",
+      "V": "ただ～にする",
+      "P": "私を怒った状態に",
+      "M": "このところ"
+    },
+    "note": "日本語のSは「私は」、「そのニュースを聞くと」は条件・きっかけMです。英語はListening to the newsをSにして、聞くことが私を怒らせると述べます。",
+    "translationShift": true,
+    "implicit": false,
+    "implicitParts": {},
+    "implicitSubject": ""
+  },
+  "067-1": {
+    "chunks": [
+      [
+        "それで",
+        "M"
+      ],
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "気分がよく",
+        "P"
+      ],
+      [
+        "なるでしょう",
+        "V"
+      ]
+    ],
+    "englishFrameParts": {
+      "S": "それが",
+      "V": "～にするでしょう",
+      "P": "私の気分をよく",
+      "M": "なし"
+    },
+    "note": "日本語の「それで」は原因を添えるMで、Sは「私は」です。英文はThatをSにして「それが私の気分をよくする」と述べます。",
+    "translationShift": true,
+    "implicit": false,
+    "implicitParts": {},
+    "implicitSubject": ""
+  },
+  "067-2": {
+    "chunks": [
+      [
+        "その薬で",
+        "M"
+      ],
+      [
+        "私の髪の毛は",
+        "S"
+      ],
+      [
+        "抜け落ちてしまいました",
+        "V"
+      ]
+    ],
+    "englishFrameParts": {
+      "S": "その薬が",
+      "V": "～させました",
+      "P": "私の髪の毛を抜け落ちるように",
+      "M": "なし"
+    },
+    "note": "日本語のSは「私の髪の毛は」、「その薬で」は原因Mです。英文はThe drugsをSにし、my hair fall outをO/Pにまとめて原因から述べます。",
+    "translationShift": true,
+    "implicit": false,
+    "implicitParts": {},
+    "implicitSubject": ""
+  },
+  "067-3": {
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "何があっても",
+        "M"
+      ],
+      [
+        "決心を",
+        "P"
+      ],
+      [
+        "変えないでしょう",
+        "V"
+      ]
+    ],
+    "englishFrameParts": {
+      "S": "何も～ない（否定を含む主語Nothing）",
+      "V": "変えさせるでしょう",
+      "P": "私に決心を",
+      "M": "なし"
+    },
+    "note": "日本語のSは「私は」、「何があっても」は条件Mです。英語はNothingをSにし、「私の決心を変えさせるものは何もない」と述べます。英語では否定の意味がSのNothingに入ります。",
+    "translationShift": true,
+    "implicit": false,
+    "implicitParts": {},
+    "implicitSubject": ""
+  },
+  "067-4": {
+    "chunks": [
+      [
+        "あなたは",
+        "S"
+      ],
+      [
+        "なぜ",
+        "M"
+      ],
+      [
+        "獣医になると",
+        "P"
+      ],
+      [
+        "決心したのですか",
+        "V"
+      ]
+    ],
+    "englishFrameParts": {
+      "S": "何が",
+      "V": "決心させたのですか",
+      "P": "あなたに獣医になることを",
+      "M": "なし"
+    },
+    "note": "日本語はS「あなたは」に理由「なぜ」をMとして尋ねます。英文はWhat「何が」をSにして、何があなたを決心させたかを尋ねます。「なぜ」を日本語のSにはしません。",
+    "translationShift": true,
+    "implicit": false,
+    "implicitParts": {},
+    "implicitSubject": ""
+  },
+  "069-3": {
+    "chunks": [
+      [
+        "あなたに何か飲みものを",
+        "P"
+      ],
+      [
+        "持ってきますね",
+        "V"
+      ]
+    ],
+    "englishFrameParts": {
+      "S": "あなたは（命令形では省略）",
+      "V": "させてください",
+      "P": "私があなたに何か飲みものを持ってくることを",
+      "M": "なし"
+    },
+    "note": "日本語は「私が持ってきます」という申し出で、隠れた主語は私です。英文はLet me ...という相手への働きかけで、命令形として省略された主語はyouです。二つの段階で省略される人が異なります。",
+    "translationShift": true,
+    "implicit": true,
+    "implicitParts": {},
+    "implicitSubject": "私は（日本語では省略）"
+  },
+  "070-3": {
+    "chunks": [
+      [
+        "パスワードなしでは",
+        "M"
+      ],
+      [
+        "あなたは",
+        "S"
+      ],
+      [
+        "入れません",
+        "V"
+      ]
+    ],
+    "englishFrameParts": {
+      "S": "それ（システムなど）が",
+      "V": "許してくれない",
+      "P": "あなたが入ることを",
+      "M": "パスワードなしでは"
+    },
+    "note": "日本語のSは「あなたは」です。英文はItをSにし、システムなどがyouの入室を許さない、というletの枠で述べます。",
+    "translationShift": true,
+    "implicit": false,
+    "implicitParts": {},
+    "implicitSubject": ""
+  },
+  "071-1": {
+    "chunks": [
+      [
+        "仕事で",
+        "M"
+      ],
+      [
+        "忙しいのが",
+        "S"
+      ],
+      [
+        "続いています",
+        "V"
+      ]
+    ],
+    "englishFrameParts": {
+      "S": "私の仕事が",
+      "V": "保ちます",
+      "P": "私を忙しい状態に",
+      "M": "なし"
+    },
+    "note": "日本語は「忙しいのが続いている」と忙しい状態をSにし、仕事をMとして添えます。英文はMy workをSにして、仕事が私を忙しい状態に保つと述べます。",
+    "translationShift": true,
+    "implicit": false,
+    "implicitParts": {},
+    "implicitSubject": ""
+  },
+  "071-3": {
+    "chunks": [
+      [
+        "それのせいで",
+        "M"
+      ],
+      [
+        "夜",
+        "M"
+      ],
+      [
+        "眠れません",
+        "V"
+      ]
+    ],
+    "englishFrameParts": {
+      "S": "それが",
+      "V": "私を眠れない状態に保ちます",
+      "P": "この文では選ばない",
+      "M": "夜"
+    },
+    "note": "日本語は省略した「私は」が眠れないと述べ、「それのせいで」は原因Mです。英文はItをSにし、原因を主語にします。英文のkeeps me awakeはこの教材では一まとまりのVです。",
+    "translationShift": true,
+    "implicit": true,
+    "implicitParts": {},
+    "implicitSubject": "私は（日本語では省略）"
+  },
+  "079-4": {
+    "chunks": [
+      [
+        "壁と天井が調和するように同じ色で塗るのが",
+        "S"
+      ],
+      [
+        "よいのでは",
+        "V"
+      ]
+    ],
+    "englishFrameParts": {
+      "S": "あなたは",
+      "V": "塗ってはどうですか",
+      "P": "壁と天井を同じ色に",
+      "M": "それらが調和するように"
+    },
+    "note": "日本語は「～塗るのがよい」と行為全体をSにする提案です。英文はYouをSにし、could paintで相手が塗る行為を提案します。日本語の長いSを勝手に分解して英文と同じ枠にしません。",
+    "translationShift": true,
+    "implicit": false,
+    "implicitParts": {},
+    "implicitSubject": ""
+  },
+  "093-4": {
+    "chunks": [
+      [
+        "彼女が引っ越してから",
+        "M"
+      ],
+      [
+        "便りが",
+        "S"
+      ],
+      [
+        "ありましたか",
+        "V"
+      ]
+    ],
+    "englishFrameParts": {
+      "S": "あなたは",
+      "V": "便りを聞きましたか",
+      "P": "彼女から",
+      "M": "彼女が引っ越してから"
+    },
+    "note": "日本語は「便りがありましたか」で便りをSにします。英文はyouをSにしたHave you heard ...?です。日本語の「便りが」をO/Pに変えて正解とはしません。",
+    "translationShift": true,
+    "implicit": false,
+    "implicitParts": {},
+    "implicitSubject": ""
+  },
+  "099-1": {
+    "chunks": [
+      [
+        "お願いが",
+        "S"
+      ],
+      [
+        "あるのですが",
+        "V"
+      ]
+    ],
+    "englishFrameParts": {
+      "S": "あなたは",
+      "V": "してくれますか",
+      "P": "私にお願いを",
+      "M": "なし"
+    },
+    "note": "日本語のSは「お願いが」です。英語はCould you do me a favor?と、youが願い事をかなえる動作で表します。日本語と英語の主語が異なります。",
+    "translationShift": true,
+    "implicit": false,
+    "implicitParts": {},
+    "implicitSubject": ""
+  },
+  "102-1": {
+    "chunks": [
+      [
+        "しばらく待つのが",
+        "S"
+      ],
+      [
+        "よい",
+        "P"
+      ],
+      [
+        "でしょう",
+        "V"
+      ]
+    ],
+    "englishFrameParts": {
+      "S": "それは（後ろの「しばらく待つこと」）",
+      "V": "でしょう",
+      "P": "よりよい／しばらく待つこと",
+      "M": "なし"
+    },
+    "note": "日本語のSは「しばらく待つのが」です。英文は形式的なItを先に置き、待つ内容をto wait a whileで後ろに続けます。",
+    "translationShift": true,
+    "implicit": false,
+    "implicitParts": {},
+    "implicitSubject": ""
+  },
+  "102-2": {
+    "chunks": [
+      [
+        "今",
+        "M"
+      ],
+      [
+        "あきらめるのは",
+        "S"
+      ],
+      [
+        "残念",
+        "P"
+      ],
+      [
+        "だ",
+        "V"
+      ]
+    ],
+    "englishFrameParts": {
+      "S": "それは（後ろの「あきらめること」）",
+      "V": "でしょう",
+      "P": "残念なこと／あきらめること",
+      "M": "今"
+    },
+    "note": "日本語は「あきらめるのは」をSにします。英文はItを主語に置いて、to give upを後ろで説明します。",
+    "translationShift": true,
+    "implicit": false,
+    "implicitParts": {},
+    "implicitSubject": ""
+  },
+  "102-3": {
+    "chunks": [
+      [
+        "花を彼らに送るのは",
+        "S"
+      ],
+      [
+        "よい考え",
+        "P"
+      ],
+      [
+        "でしょう",
+        "V"
+      ]
+    ],
+    "englishFrameParts": {
+      "S": "それは（後ろの「花を送ること」）",
+      "V": "でしょう",
+      "P": "素敵な考え／彼らに花を送ること",
+      "M": "なし"
+    },
+    "note": "日本語のSは「花を彼らに送るのは」です。英文は形式的なItで始め、to send them some flowersを後ろに置きます。",
+    "translationShift": true,
+    "implicit": false,
+    "implicitParts": {},
+    "implicitSubject": ""
+  },
+  "102-4": {
+    "chunks": [
+      [
+        "劇場に行く前に",
+        "M"
+      ],
+      [
+        "利用できる座席を調べるのが",
+        "S"
+      ],
+      [
+        "賢明",
+        "P"
+      ],
+      [
+        "でしょう",
+        "V"
+      ]
+    ],
+    "englishFrameParts": {
+      "S": "それは（後ろの「空席を調べること」）",
+      "V": "でしょう",
+      "P": "賢明なこと／利用できる座席を調べること",
+      "M": "劇場に行く前に"
+    },
+    "note": "日本語は「利用できる座席を調べるのが」をSにします。英文は形式的なItを置き、to check ...を後ろで説明します。",
+    "translationShift": true,
+    "implicit": false,
+    "implicitParts": {},
+    "implicitSubject": ""
+  },
+  "104-4": {
+    "chunks": [
+      [
+        "これから何日か",
+        "M"
+      ],
+      [
+        "あなたを買いものに連れて行く時間は",
+        "S"
+      ],
+      [
+        "ないでしょう",
+        "V"
+      ]
+    ],
+    "englishFrameParts": {
+      "S": "私は",
+      "V": "持たないでしょう",
+      "P": "あなたを買いものに連れて行く時間を",
+      "M": "これから何日か"
+    },
+    "note": "日本語は「時間はない」と時間をSにします。英語はIをSとして「時間を持たない」と述べます。日本語の「時間は」をO/Pにはしません。",
+    "translationShift": true,
+    "implicit": false,
+    "implicitParts": {},
+    "implicitSubject": ""
+  },
+  "106-3": {
+    "chunks": [
+      [
+        "私たちと一緒に来られるのは",
+        "S"
+      ],
+      [
+        "いかがでしょうか",
+        "V"
+      ]
+    ],
+    "englishFrameParts": {
+      "S": "あなたは",
+      "V": "興味がありますか",
+      "P": "私たちと一緒に来ることに",
+      "M": "なし"
+    },
+    "note": "日本語は「一緒に来ることはいかがか」と行為全体をSにする勧誘です。英文はyouをSにして、来ることに関心があるかを丁寧に尋ねます。",
+    "translationShift": true,
+    "implicit": false,
+    "implicitParts": {},
+    "implicitSubject": ""
+  },
+  "107-2": {
+    "chunks": [
+      [
+        "私たちと一緒に夕食に来るのは",
+        "S"
+      ],
+      [
+        "いかがですか",
+        "V"
+      ]
+    ],
+    "englishFrameParts": {
+      "S": "あなたは",
+      "V": "望みますか",
+      "P": "私たちと一緒に夕食に来ることを",
+      "M": "なし"
+    },
+    "note": "日本語は「夕食に来るのは」をSにする勧誘です。英文はWould you like ...?と、youの希望を尋ねる形で表します。",
+    "translationShift": true,
+    "implicit": false,
+    "implicitParts": {},
+    "implicitSubject": ""
+  },
+  "107-3": {
+    "chunks": [
+      [
+        "向こうの窓のそばに座るのは",
+        "S"
+      ],
+      [
+        "いかがですか",
+        "V"
+      ]
+    ],
+    "englishFrameParts": {
+      "S": "あなたは",
+      "V": "望みますか",
+      "P": "向こうの窓のそばに座ることを",
+      "M": "なし"
+    },
+    "note": "日本語は「窓のそばに座るのは」をSにする提案です。英文はyouをSにして、座ることを望むかを丁寧に尋ねます。",
+    "translationShift": true,
+    "implicit": false,
+    "implicitParts": {},
+    "implicitSubject": ""
+  },
+  "107-4": {
+    "chunks": [
+      [
+        "あなたのカバンを",
+        "P"
+      ],
+      [
+        "運びましょうか",
+        "V"
+      ]
+    ],
+    "englishFrameParts": {
+      "S": "あなたは",
+      "V": "望みますか",
+      "P": "私があなたのためにカバンを運ぶことを",
+      "M": "なし"
+    },
+    "note": "日本語は省略した「私」がカバンを運ぶ申し出です。英文のSはyouで、「私が運ぶことをあなたは望みますか」と尋ねます。日本語の省略主語と英文のSを同じ人にしません。",
+    "translationShift": true,
+    "implicit": true,
+    "implicitParts": {},
+    "implicitSubject": "私は（日本語では省略）"
+  },
+  "113-4": {
+    "chunks": [
+      [
+        "先月FBIに逮捕されたのは",
+        "S"
+      ],
+      [
+        "誰",
+        "P"
+      ],
+      [
+        "でしたか",
+        "V"
+      ]
+    ],
+    "englishFrameParts": {
+      "S": "誰が",
+      "V": "逮捕されましたか",
+      "P": "この文では選ばない",
+      "M": "先月／FBIに"
+    },
+    "note": "日本語は「先月FBIに逮捕されたのは」をS、「誰」をその答えにあたるO/Pとして尋ねます。英文はWhoそのものがSです。日本語の文と英文で尋ね方が異なります。",
+    "translationShift": true,
+    "implicit": false,
+    "implicitParts": {},
+    "implicitSubject": ""
+  },
+  "114-2": {
+    "chunks": [
+      [
+        "どうかしましたか",
+        "V"
+      ]
+    ],
+    "englishFrameParts": {
+      "S": "何が",
+      "V": "～ですか",
+      "P": "あなたにとっておかしい",
+      "M": "なし"
+    },
+    "note": "日本語は「どうかしましたか」全体で相手の様子を尋ねます。英文はWhatがS、isがV、wrong with youが状態の内容です。日本語の「どうか」をそのまま英語のSやO/Pにはしません。",
+    "translationShift": true,
+    "implicit": true,
+    "implicitParts": {},
+    "implicitSubject": "あなたは（日本語では省略）"
+  },
+  "116-4": {
+    "chunks": [
+      [
+        "バスで行くのと歩くのでは",
+        "M"
+      ],
+      [
+        "どっちが",
+        "S"
+      ],
+      [
+        "よりいい",
+        "P"
+      ],
+      [
+        "ですか",
+        "V"
+      ]
+    ],
+    "englishFrameParts": {
+      "S": "どちらが",
+      "V": "ですか",
+      "P": "よりよい／バスで行くことと歩くこと",
+      "M": "なし"
+    },
+    "note": "日本語のSは「どっちが」、比較する範囲の「バスで行くのと歩くのでは」はMです。英語はWhichをSにし、二つの選択肢を後ろに添えます。",
+    "translationShift": true,
+    "implicit": false,
+    "implicitParts": {},
+    "implicitSubject": ""
+  },
+  "119-1": {
+    "chunks": [
+      [
+        "どういう意味",
+        "V"
+      ]
+    ],
+    "englishFrameParts": {
+      "S": "あなたは",
+      "V": "意味していますか",
+      "P": "何を",
+      "M": "なし"
+    },
+    "note": "日本語は「どういう意味？」全体が、ですかを省いた名詞の述語です。「意味」という名詞だけを動詞Vだとは教えません。英文はyouをS、do ... meanをV、WhatをO/Pにして尋ねます。",
+    "translationShift": true,
+    "implicit": true,
+    "implicitParts": {},
+    "implicitSubject": "それは（日本語では省略）"
+  },
+  "122-1": {
+    "chunks": [
+      [
+        "今朝の気分は",
+        "S"
+      ],
+      [
+        "どう",
+        "P"
+      ],
+      [
+        "ですか",
+        "V"
+      ]
+    ],
+    "englishFrameParts": {
+      "S": "あなたは",
+      "V": "感じますか",
+      "P": "どのように",
+      "M": "今朝"
+    },
+    "note": "日本語のSは「今朝の気分は」です。英文はyouをSにして、今朝どう感じるかを尋ねます。日本語の「気分は」をO/Pにして無理に合わせません。",
+    "translationShift": true,
+    "implicit": false,
+    "implicitParts": {},
+    "implicitSubject": ""
+  },
+  "123-4": {
+    "chunks": [
+      [
+        "なぜ",
+        "M"
+      ],
+      [
+        "奥さんに",
+        "P"
+      ],
+      [
+        "あんな風に",
+        "M"
+      ],
+      [
+        "話さなければならなかったのですか",
+        "V"
+      ]
+    ],
+    "englishFrameParts": {
+      "S": "あなたは",
+      "V": "わざわざ動揺させなければならなかったのですか",
+      "P": "奥さんを",
+      "M": "なぜ／あんな風に"
+    },
+    "note": "出典の日本語は「奥さんに話す」、英文はupset your wife「奥さんを動揺させる」と表現しています。英語の枠は英文の意味で選びます。日本語の役割を英文に合わせて変更しません。",
+    "translationShift": true,
+    "implicit": true,
+    "implicitParts": {},
+    "implicitSubject": "あなたは（日本語では省略）"
+  },
+  "124-4": {
+    "chunks": [
+      [
+        "どんな仕事の経験が",
+        "S"
+      ],
+      [
+        "ありますか",
+        "V"
+      ]
+    ],
+    "englishFrameParts": {
+      "S": "あなたは",
+      "V": "～ですか",
+      "P": "どんな仕事の経験を持っている",
+      "M": "なし"
+    },
+    "note": "日本語は「どんな仕事の経験が」をSにする存在の表現です。英文はyouをSにして、どんな仕事にexperienced「経験がある」のかを尋ねます。",
+    "translationShift": true,
+    "implicit": false,
+    "implicitParts": {},
+    "implicitSubject": ""
+  },
+  "126-2": {
+    "chunks": [
+      [
+        "料理をするのは",
+        "S"
+      ],
+      [
+        "誰の番",
+        "P"
+      ],
+      [
+        "ですか",
+        "V"
+      ]
+    ],
+    "englishFrameParts": {
+      "S": "it（主語として置く語）",
+      "V": "ですか",
+      "P": "誰の番／料理をすること",
+      "M": "なし"
+    },
+    "note": "日本語のSは「料理をするのは」です。英文は主語itを置くWhose turn is it ...?の形で、料理することを後ろに添えます。日本語の名詞句とitを単語ごとに直結させません。",
+    "translationShift": true,
+    "implicit": false,
+    "implicitParts": {},
+    "implicitSubject": ""
+  },
+  "126-4": {
+    "chunks": [
+      [
+        "私たちがお金をすべて失っているのは",
+        "S"
+      ],
+      [
+        "誰のせい",
+        "P"
+      ],
+      [
+        "ですか",
+        "V"
+      ]
+    ],
+    "englishFrameParts": {
+      "S": "それは（後ろの「お金を失っていること」）",
+      "V": "ですか",
+      "P": "誰のせい／私たちがお金をすべて失っていること",
+      "M": "なし"
+    },
+    "note": "日本語は「私たちがお金をすべて失っているのは」をSにして述べます。英文はitを主語に置き、その内容をthat節で後ろに説明します。",
+    "translationShift": true,
+    "implicit": false,
+    "implicitParts": {},
+    "implicitSubject": ""
+  },
+  "128-3": {
+    "chunks": [
+      [
+        "もしよろしければ",
+        "M"
+      ],
+      [
+        "携帯電話を",
+        "P"
+      ],
+      [
+        "借りられないでしょうか",
+        "V"
+      ]
+    ],
+    "englishFrameParts": {
+      "S": "私は",
+      "V": "思っていました（丁寧な依頼）",
+      "P": "あなたの携帯電話を使ってもよいかどうか",
+      "M": "なし"
+    },
+    "note": "日本語は借りられるかという丁寧な依頼です。英文はI was wonderingを主節にし、依頼する内容をif節のO/Pにまとめます。和文の「もしよろしければ」は、英文のifが条件Mだという意味ではありません。",
+    "translationShift": true,
+    "implicit": true,
+    "implicitParts": {},
+    "implicitSubject": "私は（日本語では省略）"
+  },
+  "128-4": {
+    "chunks": [
+      [
+        "もしよろしければ",
+        "M"
+      ],
+      [
+        "その地域で訪れるべき場所の情報を",
+        "P"
+      ],
+      [
+        "もらえないでしょうか",
+        "V"
+      ]
+    ],
+    "englishFrameParts": {
+      "S": "私は",
+      "V": "思っていました（丁寧な依頼）",
+      "P": "あなたが私にその地域で訪れる場所の情報をくれるかどうか",
+      "M": "なし"
+    },
+    "note": "日本語は情報をもらえるかという丁寧な依頼です。英文はI was wonderingを主節にし、依頼する内容をif節のO/Pにまとめます。日本語の条件表現を英語のif節の文法上の役割と同一視しません。",
+    "translationShift": true,
+    "implicit": true,
+    "implicitParts": {},
+    "implicitSubject": "私は（日本語では省略）"
+  },
+  "131-3": {
+    "chunks": [
+      [
+        "言うは",
+        "S"
+      ],
+      [
+        "易く",
+        "V"
+      ],
+      [
+        "行うは",
+        "S"
+      ],
+      [
+        "難し",
+        "V"
+      ]
+    ],
+    "englishFrameParts": {
+      "S": "これは（このようなことは）",
+      "V": "言うのは簡単でも行うのは難しい",
+      "P": "この文では選ばない",
+      "M": "なし"
+    },
+    "note": "日本語のことわざは「言うは／易く」と「行うは／難し」という二つの述べ方を並べています。英文ではThisをSにします。この教材では英文のis easier said than doneを一まとまりの述語Vとして示します。",
+    "translationShift": true,
+    "implicit": false,
+    "implicitParts": {},
+    "implicitSubject": ""
+  },
+  "137-4": {
+    "chunks": [
+      [
+        "彼女の言ったことで",
+        "M"
+      ],
+      [
+        "ショックを受けたというよりおかしかった",
+        "V"
+      ]
+    ],
+    "englishFrameParts": {
+      "S": "私は",
+      "V": "でした",
+      "P": "ショックというより面白く感じた状態",
+      "M": "彼女の言ったことで"
+    },
+    "note": "日本語は省略した「私」が面白く感じたと述べます。述語全体をVにまとめ、名詞の「ショック」を不自然に独立した対象にはしません。英文はwasをV、比較を含む状態をO/Pに分けます。",
+    "translationShift": true,
+    "implicit": true,
+    "implicitParts": {},
+    "implicitSubject": "私は（日本語では省略）"
+  },
+  "138-3": {
+    "chunks": [
+      [
+        "子供たちが学校に入るには",
+        "M"
+      ],
+      [
+        "6歳より年下ではダメです",
+        "V"
+      ]
+    ],
+    "englishFrameParts": {
+      "S": "子供たちは",
+      "V": "～であるべきです",
+      "P": "6歳未満ではない",
+      "M": "学校に入るためには"
+    },
+    "note": "日本語の「子供たちが学校に入るには」は条件のまとまりMで、後ろが年齢条件を述べる述語です。英文はChildrenをSとして年齢の状態を述べ、目的をto enter the schoolで添えます。",
+    "translationShift": true,
+    "implicit": false,
+    "implicitParts": {},
+    "implicitSubject": ""
+  },
+  "141-4": {
+    "chunks": [
+      [
+        "私の給料で暮らしていくのは",
+        "S"
+      ],
+      [
+        "ますます難しく",
+        "P"
+      ],
+      [
+        "なっていきました",
+        "V"
+      ]
+    ],
+    "englishFrameParts": {
+      "S": "それは（後ろの「給料で暮らすこと」）",
+      "V": "なっていきました",
+      "P": "ますます難しい／私の給料で暮らすこと",
+      "M": "なし"
+    },
+    "note": "日本語のSは「私の給料で暮らしていくのは」です。英文は形式的なItを使い、暮らす内容をto live on my salaryで後ろに置きます。",
+    "translationShift": true,
+    "implicit": false,
+    "implicitParts": {},
+    "implicitSubject": ""
+  },
+  "142-4": {
+    "chunks": [
+      [
+        "野菜を食べれば食べるほど、",
+        "M"
+      ],
+      [
+        "がんになる機会は",
+        "S"
+      ],
+      [
+        "少なく",
+        "P"
+      ],
+      [
+        "なります",
+        "V"
+      ]
+    ],
+    "englishFrameParts": {
+      "S": "あなたは",
+      "V": "持つことになります",
+      "P": "より少ないがんになる可能性を",
+      "M": "野菜を食べれば食べるほど"
+    },
+    "note": "日本語のSは「がんになる機会は」です。英文はyouをSにし、「あなたがより少ない可能性を持つ」と表現します。日本語の主語を英文に合わせて変更しません。",
+    "translationShift": true,
+    "implicit": false,
+    "implicitParts": {},
+    "implicitSubject": ""
+  },
+  "143-1": {
+    "chunks": [
+      [
+        "ケンほど背が高い人は",
+        "S"
+      ],
+      [
+        "私のクラスには",
+        "M"
+      ],
+      [
+        "いません",
+        "V"
+      ]
+    ],
+    "englishFrameParts": {
+      "S": "誰も～ない（否定を含む主語No one）",
+      "V": "～である",
+      "P": "ケンと同じくらい背が高い",
+      "M": "私のクラスでは"
+    },
+    "note": "日本語のSは「ケンほど背が高い人は」という長い名詞句全体です。英文はNo oneをSにして比較を述べます。No oneは否定を含む主語で、日本語の「いません」に相当する否定の位置が移ります。",
+    "translationShift": true,
+    "implicit": false,
+    "implicitParts": {},
+    "implicitSubject": ""
+  },
+  "143-2": {
+    "chunks": [
+      [
+        "チーターと同じくらい速く走ることができる動物は",
+        "S"
+      ],
+      [
+        "いません",
+        "V"
+      ]
+    ],
+    "englishFrameParts": {
+      "S": "どの動物も～ない（否定を含む主語No animals）",
+      "V": "走ることができる",
+      "P": "この文では選ばない",
+      "M": "チーターと同じくらい速く"
+    },
+    "note": "日本語は動物を説明する部分も含めてSです。英文はNo animalsをSにし、動作と速さを別に述べます。日本語の長い主語から動詞を切り取ってVに置くことはしません。",
+    "translationShift": true,
+    "implicit": false,
+    "implicitParts": {},
+    "implicitSubject": ""
+  },
+  "143-3": {
+    "chunks": [
+      [
+        "光ほど速く伝わるものは",
+        "S"
+      ],
+      [
+        "ありません",
+        "V"
+      ]
+    ],
+    "englishFrameParts": {
+      "S": "何も～ない（否定を含む主語Nothing）",
+      "V": "伝わることができる",
+      "P": "この文では選ばない",
+      "M": "光より速く"
+    },
+    "note": "日本語のSは「光ほど速く伝わるものは」全体です。英文は否定を含むNothingをSにし、can travelをVとして速さを添えます。日本語の名詞句と英文の各役割は一対一ではありません。",
+    "translationShift": true,
+    "implicit": false,
+    "implicitParts": {},
+    "implicitSubject": ""
+  },
+  "143-4": {
+    "chunks": [
+      [
+        "トムと同じくらい成功した人は誰も",
+        "S"
+      ],
+      [
+        "いませんでした",
+        "V"
+      ]
+    ],
+    "englishFrameParts": {
+      "S": "ほかの誰も～ない（否定を含む主語No one else）",
+      "V": "～だった",
+      "P": "トムと同じくらい成功した",
+      "M": "なし"
+    },
+    "note": "日本語は成功した人を説明する長いSで述べます。英文はNo one elseをS、wasをV、成功の比較をO/Pに置きます。否定の意味はNo one elseに入ります。",
+    "translationShift": true,
+    "implicit": false,
+    "implicitParts": {},
+    "implicitSubject": ""
+  },
+  "148-4": {
+    "chunks": [
+      [
+        "もし彼らがそれを気に入れば",
+        "M"
+      ],
+      [
+        "いいね、",
+        "V"
+      ],
+      [
+        "でなければ",
+        "M"
+      ],
+      [
+        "ダメだね",
+        "V"
+      ]
+    ],
+    "englishFrameParts": {
+      "S": "この文では選ばない",
+      "V": "この文では選ばない",
+      "P": "よい／残念だ",
+      "M": "もし彼らがそれを気に入れば／そうでなければ"
+    },
+    "note": "日本語の「いいね」「ダメだね」はそれぞれ一まとまりの述語です。「ね」だけを動詞Vにしません。英文のfine／too badは主語とbe動詞を省いた表現なので、英語の枠にS・Vを無理に補いません。",
+    "translationShift": true,
+    "implicit": false,
+    "implicitParts": {},
+    "implicitSubject": ""
+  },
+  "149-2": {
+    "chunks": [
+      [
+        "誰かが話し出す前には",
+        "M"
+      ],
+      [
+        "長い沈黙が",
+        "S"
+      ],
+      [
+        "ありました",
+        "V"
+      ]
+    ],
+    "englishFrameParts": {
+      "S": "there（存在の文で置く形式的な主語）",
+      "V": "ありました",
+      "P": "長い沈黙が",
+      "M": "誰かが話し出す前に"
+    },
+    "note": "日本語のSは「長い沈黙が」です。英文はThere was ...と形式的な主語thereを置き、存在する内容をbe動詞の後ろに置きます。日本語のSをO/Pとして正解にはしません。",
+    "translationShift": true,
+    "implicit": false,
+    "implicitParts": {},
+    "implicitSubject": ""
+  },
+  "154-3": {
+    "chunks": [
+      [
+        "自分ではどうにもできないことを心配するのは",
+        "S"
+      ],
+      [
+        "ばかげたこと",
+        "P"
+      ],
+      [
+        "です",
+        "V"
+      ]
+    ],
+    "englishFrameParts": {
+      "S": "それは（後ろの「心配すること」）",
+      "V": "です",
+      "P": "ばかげている／自分ではどうにもできないことを心配すること",
+      "M": "なし"
+    },
+    "note": "日本語は心配すること全体をSにします。英文は形式的なItを主語にし、worryingから始まる内容を後ろで説明します。",
+    "translationShift": true,
+    "implicit": false,
+    "implicitParts": {},
+    "implicitSubject": ""
+  },
+  "159-2": {
+    "chunks": [
+      [
+        "彼女の手紙だけが",
+        "S"
+      ],
+      [
+        "私を前向きに",
+        "P"
+      ],
+      [
+        "させてくれました",
+        "V"
+      ]
+    ],
+    "englishFrameParts": {
+      "S": "彼女の手紙だけが",
+      "V": "でした",
+      "P": "私を前向きにしてくれた唯一のもの",
+      "M": "なし"
+    },
+    "note": "日本語は「手紙が私を前向きにさせた」という動作で表します。英文の主な枠はHer letters / were / the only thing ...で、「唯一のものだった」という状態の述べ方です。",
+    "translationShift": true,
+    "implicit": false,
+    "implicitParts": {},
+    "implicitSubject": ""
+  },
+  "136-4": {
+    "chunks": [
+      [
+        "植物は",
+        "S"
+      ],
+      [
+        "涼しく湿った状態で",
+        "M"
+      ],
+      [
+        "最もよく",
+        "M"
+      ],
+      [
+        "育ちます",
+        "V"
+      ]
+    ],
+    "implicit": false,
+    "englishFrameParts": {
+      "S": "植物は",
+      "V": "育ちます",
+      "P": "なし",
+      "M": "涼しく湿った状態で／最もよく"
+    },
+    "title": "植物がよく育つ条件"
+  }
+}

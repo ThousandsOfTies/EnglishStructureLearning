@@ -1,0 +1,8392 @@
+[
+  {
+    "index": 225,
+    "id": "057-1",
+    "title": "彼は別の会社での仕事を私にとってくれ",
+    "chunks": [
+      [
+        "彼は",
+        "S"
+      ],
+      [
+        "別の会社での仕事を私に",
+        "P"
+      ],
+      [
+        "とってくれました",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "He ",
+        "S"
+      ],
+      [
+        "got ",
+        "V"
+      ],
+      [
+        "me a job at another company.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 226,
+    "id": "057-2",
+    "title": "彼は私の誕生日のためにプレゼントを手",
+    "chunks": [
+      [
+        "彼は",
+        "S"
+      ],
+      [
+        "私の誕生日のために",
+        "M"
+      ],
+      [
+        "プレゼントを",
+        "P"
+      ],
+      [
+        "手に入れてくれました",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "He ",
+        "S"
+      ],
+      [
+        "got ",
+        "V"
+      ],
+      [
+        "me a gift ",
+        "P"
+      ],
+      [
+        "for my birthday.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 227,
+    "id": "057-3",
+    "title": "彼女は私が仕事のために必要な情報をと",
+    "chunks": [
+      [
+        "彼女は",
+        "S"
+      ],
+      [
+        "私が仕事のために必要な情報を",
+        "P"
+      ],
+      [
+        "とってくれました",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "She ",
+        "S"
+      ],
+      [
+        "got ",
+        "V"
+      ],
+      [
+        "me the information I needed for the job.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 228,
+    "id": "057-4",
+    "title": "私が最初にここに来たとき彼女は1週間",
+    "chunks": [
+      [
+        "私が最初にここに来たとき",
+        "M"
+      ],
+      [
+        "彼女は",
+        "S"
+      ],
+      [
+        "1週間",
+        "M"
+      ],
+      [
+        "部屋を",
+        "P"
+      ],
+      [
+        "とってくれました",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "She ",
+        "S"
+      ],
+      [
+        "got ",
+        "V"
+      ],
+      [
+        "me a room ",
+        "P"
+      ],
+      [
+        "there for a week when I first came here.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 229,
+    "id": "058-1",
+    "title": "彼は音楽の理論を私たちに教えました",
+    "chunks": [
+      [
+        "彼は",
+        "S"
+      ],
+      [
+        "音楽の理論を私たちに",
+        "P"
+      ],
+      [
+        "教えました",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "He ",
+        "S"
+      ],
+      [
+        "taught ",
+        "V"
+      ],
+      [
+        "us music theory.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 230,
+    "id": "058-2",
+    "title": "彼女は私たちに自由と忍耐を教えました",
+    "chunks": [
+      [
+        "彼女は",
+        "S"
+      ],
+      [
+        "私たちに自由と忍耐を",
+        "P"
+      ],
+      [
+        "教えました",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "She ",
+        "S"
+      ],
+      [
+        "taught ",
+        "V"
+      ],
+      [
+        "us freedom and tolerance.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 231,
+    "id": "058-3",
+    "title": "彼は私たちに重要な教訓を教えてくれま",
+    "chunks": [
+      [
+        "彼は",
+        "S"
+      ],
+      [
+        "私たちに重要な教訓を",
+        "P"
+      ],
+      [
+        "教えてくれます",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "He ",
+        "S"
+      ],
+      [
+        "teaches ",
+        "V"
+      ],
+      [
+        "us an important lesson.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 232,
+    "id": "058-4",
+    "title": "私の父は私にどのように自転車に乗るか",
+    "chunks": [
+      [
+        "私の父は",
+        "S"
+      ],
+      [
+        "私にどのように自転車に乗るかを",
+        "P"
+      ],
+      [
+        "教えました",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "My father ",
+        "S"
+      ],
+      [
+        "taught ",
+        "V"
+      ],
+      [
+        "me how to ride a bike.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 233,
+    "id": "059-1",
+    "title": "私にタオルを持ってきてください",
+    "chunks": [
+      [
+        "私にタオルを",
+        "P"
+      ],
+      [
+        "持ってきてください",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "Bring ",
+        "V"
+      ],
+      [
+        "me a towel.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    },
+    "implicit": true,
+    "implicitSubject": "あなたが（文ではかくれる）"
+  },
+  {
+    "index": 234,
+    "id": "059-2",
+    "title": "彼は私に花や何かを持ってきたことは一",
+    "chunks": [
+      [
+        "彼は",
+        "S"
+      ],
+      [
+        "私に花や何かを",
+        "P"
+      ],
+      [
+        "持ってきたことは一度もありませんでした",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "He ",
+        "S"
+      ],
+      [
+        "never brought ",
+        "V"
+      ],
+      [
+        "me flowers or anything.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 235,
+    "id": "059-3",
+    "title": "彼は私に一杯の牛乳と卵をいくつか持っ",
+    "chunks": [
+      [
+        "彼は",
+        "S"
+      ],
+      [
+        "私に一杯の牛乳と卵をいくつか",
+        "P"
+      ],
+      [
+        "持ってきました",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "He ",
+        "S"
+      ],
+      [
+        "brought ",
+        "V"
+      ],
+      [
+        "me a glass of milk and some eggs.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 236,
+    "id": "059-4",
+    "title": "彼女は私に毎朝朝食をベッドに持ってき",
+    "chunks": [
+      [
+        "彼女は",
+        "S"
+      ],
+      [
+        "私に",
+        "P"
+      ],
+      [
+        "毎朝",
+        "M"
+      ],
+      [
+        "朝食を",
+        "P"
+      ],
+      [
+        "ベッドに",
+        "M"
+      ],
+      [
+        "持ってきてくれました",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "She ",
+        "S"
+      ],
+      [
+        "brought ",
+        "V"
+      ],
+      [
+        "me breakfast ",
+        "P"
+      ],
+      [
+        "in bed every morning.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 237,
+    "id": "060-1",
+    "title": "目の前のその瓶を取ってください",
+    "chunks": [
+      [
+        "目の前のその瓶を",
+        "P"
+      ],
+      [
+        "取ってください",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "Pass ",
+        "V"
+      ],
+      [
+        "me that bottle in front of you.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    },
+    "implicit": true,
+    "implicitSubject": "あなたが（文ではかくれる）"
+  },
+  {
+    "index": 238,
+    "id": "060-2",
+    "title": "ソファーの下のあの新聞を取っていただ",
+    "chunks": [
+      [
+        "ソファーの下のあの新聞を",
+        "P"
+      ],
+      [
+        "取っていただけますか",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "Could ",
+        "V"
+      ],
+      [
+        "you ",
+        "S"
+      ],
+      [
+        "pass ",
+        "V"
+      ],
+      [
+        "me that newspaper under the sofa?",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    },
+    "implicit": true,
+    "implicitSubject": "あなたが（文ではかくれる）",
+    "note": "疑問文では助動詞などがSの前に出ます。各箱は役割の対応を表し、実際の語順は完成英文で確かめます。"
+  },
+  {
+    "index": 239,
+    "id": "060-3",
+    "title": "私にティッシュを取ってくれますか",
+    "chunks": [
+      [
+        "私にティッシュを",
+        "P"
+      ],
+      [
+        "取ってくれますか",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "Can ",
+        "V"
+      ],
+      [
+        "you ",
+        "S"
+      ],
+      [
+        "pass ",
+        "V"
+      ],
+      [
+        "me a tissue?",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    },
+    "implicit": true,
+    "implicitSubject": "あなたが（文ではかくれる）",
+    "note": "疑問文では助動詞などがSの前に出ます。各箱は役割の対応を表し、実際の語順は完成英文で確かめます。"
+  },
+  {
+    "index": 240,
+    "id": "060-4",
+    "title": "あなたの足のそばにあるそのかばんを私",
+    "chunks": [
+      [
+        "あなたの足のそばにあるそのかばんを私に",
+        "P"
+      ],
+      [
+        "取ってくれますか",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "Can ",
+        "V"
+      ],
+      [
+        "you ",
+        "S"
+      ],
+      [
+        "pass ",
+        "V"
+      ],
+      [
+        "me that bag by your feet?",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    },
+    "implicit": true,
+    "implicitSubject": "あなたが（文ではかくれる）",
+    "note": "疑問文では助動詞などがSの前に出ます。各箱は役割の対応を表し、実際の語順は完成英文で確かめます。"
+  },
+  {
+    "index": 241,
+    "id": "061-1",
+    "title": "私は車を彼に売りました",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "車を彼に",
+        "P"
+      ],
+      [
+        "売りました",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I ",
+        "S"
+      ],
+      [
+        "sold ",
+        "V"
+      ],
+      [
+        "him my car.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 242,
+    "id": "061-2",
+    "title": "私は彼によりよい値段で車を売りました",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "彼に",
+        "P"
+      ],
+      [
+        "よりよい値段で",
+        "M"
+      ],
+      [
+        "車を",
+        "P"
+      ],
+      [
+        "売りました",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I ",
+        "S"
+      ],
+      [
+        "sold ",
+        "V"
+      ],
+      [
+        "him the car ",
+        "P"
+      ],
+      [
+        "at a better rate.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 243,
+    "id": "061-3",
+    "title": "私は彼に家をより安い値段で売りました",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "彼に家を",
+        "P"
+      ],
+      [
+        "より安い値段で",
+        "M"
+      ],
+      [
+        "売りました",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I ",
+        "S"
+      ],
+      [
+        "sold ",
+        "V"
+      ],
+      [
+        "him the house ",
+        "P"
+      ],
+      [
+        "at a lower price.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 244,
+    "id": "061-4",
+    "title": "私は彼女にすぐに金持ちになれるウェブ",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "彼女にすぐに金持ちになれるウェブサイトのアイデアを",
+        "P"
+      ],
+      [
+        "売りました",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I ",
+        "S"
+      ],
+      [
+        "sold ",
+        "V"
+      ],
+      [
+        "her the idea of websites that will make her rich instantly.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 245,
+    "id": "062-1",
+    "title": "飲みものをおごるよ",
+    "chunks": [
+      [
+        "飲みものを",
+        "P"
+      ],
+      [
+        "おごるよ",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I",
+        "S"
+      ],
+      [
+        "'ll buy ",
+        "V"
+      ],
+      [
+        "you a drink.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    },
+    "implicit": true,
+    "implicitSubject": "私は（文ではかくれる）"
+  },
+  {
+    "index": 246,
+    "id": "062-2",
+    "title": "昼食をおごるよ",
+    "chunks": [
+      [
+        "昼食を",
+        "P"
+      ],
+      [
+        "おごるよ",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I",
+        "S"
+      ],
+      [
+        "'ll buy ",
+        "V"
+      ],
+      [
+        "you lunch.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    },
+    "implicit": true,
+    "implicitSubject": "私は（文ではかくれる）"
+  },
+  {
+    "index": 247,
+    "id": "062-3",
+    "title": "あなたの誕生日のために何か買ってあげ",
+    "chunks": [
+      [
+        "あなたの誕生日のために",
+        "M"
+      ],
+      [
+        "何か",
+        "P"
+      ],
+      [
+        "買ってあげよう",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I",
+        "S"
+      ],
+      [
+        "'ll buy ",
+        "V"
+      ],
+      [
+        "you something ",
+        "P"
+      ],
+      [
+        "for your birthday.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    },
+    "implicit": true,
+    "implicitSubject": "私は（文ではかくれる）"
+  },
+  {
+    "index": 248,
+    "id": "062-4",
+    "title": "遅くなる埋め合わせに夕食をおごるよ",
+    "chunks": [
+      [
+        "遅くなる埋め合わせに",
+        "M"
+      ],
+      [
+        "夕食を",
+        "P"
+      ],
+      [
+        "おごるよ",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I",
+        "S"
+      ],
+      [
+        "'ll buy ",
+        "V"
+      ],
+      [
+        "you dinner ",
+        "P"
+      ],
+      [
+        "to make up for being so late.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    },
+    "implicit": true,
+    "implicitSubject": "私は（文ではかくれる）"
+  },
+  {
+    "index": 249,
+    "id": "063-1",
+    "title": "私はあなたにチケットを送ります",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "あなたにチケットを",
+        "P"
+      ],
+      [
+        "送ります",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I",
+        "S"
+      ],
+      [
+        "'ll send ",
+        "V"
+      ],
+      [
+        "you the ticket.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 250,
+    "id": "063-2",
+    "title": "私がオンラインになったら、あなたに私",
+    "chunks": [
+      [
+        "私がオンラインになったら、",
+        "M"
+      ],
+      [
+        "あなたに私のメールアドレスを",
+        "P"
+      ],
+      [
+        "送ります",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I",
+        "S"
+      ],
+      [
+        "'ll send ",
+        "V"
+      ],
+      [
+        "you my email address ",
+        "P"
+      ],
+      [
+        "once I'm online.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    },
+    "implicit": true,
+    "implicitSubject": "私は（文ではかくれる）"
+  },
+  {
+    "index": 251,
+    "id": "063-3",
+    "title": "私はあなたに会議について思い出しても",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "あなたに会議について思い出してもらうようにメモを",
+        "P"
+      ],
+      [
+        "送ります",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I",
+        "S"
+      ],
+      [
+        "'ll send ",
+        "V"
+      ],
+      [
+        "you a note reminding you about the meeting.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 252,
+    "id": "063-4",
+    "title": "私はパーティーの招待状を送ります",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "パーティーの招待状を",
+        "P"
+      ],
+      [
+        "送ります",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I",
+        "S"
+      ],
+      [
+        "'ll send ",
+        "V"
+      ],
+      [
+        "you the invitation for the party.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 253,
+    "id": "064-1",
+    "title": "私はあなたに1時間につき10ドルを払",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "あなたに",
+        "P"
+      ],
+      [
+        "1時間につき",
+        "M"
+      ],
+      [
+        "10ドルを",
+        "P"
+      ],
+      [
+        "払います",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I",
+        "S"
+      ],
+      [
+        "'ll pay ",
+        "V"
+      ],
+      [
+        "you 10 dollars ",
+        "P"
+      ],
+      [
+        "an hour.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 254,
+    "id": "064-2",
+    "title": "私は後であなたに残りを払います",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "後で",
+        "M"
+      ],
+      [
+        "あなたに残りを",
+        "P"
+      ],
+      [
+        "払います",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I",
+        "S"
+      ],
+      [
+        "'ll pay ",
+        "V"
+      ],
+      [
+        "you the rest ",
+        "P"
+      ],
+      [
+        "later on.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 255,
+    "id": "064-3",
+    "title": "私はあなたに借りているものを来週払い",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "あなたに借りているものを",
+        "P"
+      ],
+      [
+        "来週",
+        "M"
+      ],
+      [
+        "払います",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I",
+        "S"
+      ],
+      [
+        "'ll pay ",
+        "V"
+      ],
+      [
+        "you what I owe you ",
+        "P"
+      ],
+      [
+        "next week.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 256,
+    "id": "064-4",
+    "title": "私は芝を刈るのに5ドルをあなたに払い",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "芝を刈るのに",
+        "M"
+      ],
+      [
+        "5ドルをあなたに",
+        "P"
+      ],
+      [
+        "払います",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I",
+        "S"
+      ],
+      [
+        "'ll pay ",
+        "V"
+      ],
+      [
+        "you five dollars ",
+        "P"
+      ],
+      [
+        "to mow the lawn.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 257,
+    "id": "065-1",
+    "title": "私の演技によって私はスターになりまし",
+    "chunks": [
+      [
+        "私の演技によって",
+        "S"
+      ],
+      [
+        "私はスターに",
+        "P"
+      ],
+      [
+        "なりました",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "My performance ",
+        "S"
+      ],
+      [
+        "made ",
+        "V"
+      ],
+      [
+        "me a star.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    },
+    "note": "自然な和訳と英語では主語の立て方が異なります。英語でSになる原因・きっかけをSの箱にまとめています。"
+  },
+  {
+    "index": 258,
+    "id": "065-2",
+    "title": "その事故によって私の人生は悲惨なもの",
+    "chunks": [
+      [
+        "その事故によって",
+        "S"
+      ],
+      [
+        "私の人生は悲惨なものに",
+        "P"
+      ],
+      [
+        "なりました",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "The accident ",
+        "S"
+      ],
+      [
+        "made ",
+        "V"
+      ],
+      [
+        "my life a misery.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    },
+    "note": "自然な和訳と英語では主語の立て方が異なります。英語でSになる原因・きっかけをSの箱にまとめています。"
+  },
+  {
+    "index": 259,
+    "id": "065-3",
+    "title": "私の自信のある雰囲気が私をリーダーに",
+    "chunks": [
+      [
+        "私の自信のある雰囲気が",
+        "S"
+      ],
+      [
+        "私をリーダーに",
+        "P"
+      ],
+      [
+        "しました",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "My air of confidence ",
+        "S"
+      ],
+      [
+        "made ",
+        "V"
+      ],
+      [
+        "me a leader.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "skipped",
+      "reason": "自信のある雰囲気がリーダーにしたという因果は、静止画だけでは特定できません。"
+    },
+    "note": "自然な和訳と英語では主語の立て方が異なります。英語でSになる原因・きっかけをSの箱にまとめています。"
+  },
+  {
+    "index": 260,
+    "id": "065-4",
+    "title": "彼に忠実に従えば、彼は私を大金持ちに",
+    "chunks": [
+      [
+        "彼に忠実に従えば、",
+        "M"
+      ],
+      [
+        "彼は",
+        "S"
+      ],
+      [
+        "私を大金持ちに",
+        "P"
+      ],
+      [
+        "してくれるでしょう",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "He",
+        "S"
+      ],
+      [
+        "'ll make ",
+        "V"
+      ],
+      [
+        "me a millionaire ",
+        "P"
+      ],
+      [
+        "if I stick with him.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    },
+    "note": "自然な和訳と英語では主語の立て方が異なります。英語でSになる原因・きっかけをSの箱にまとめています。"
+  },
+  {
+    "index": 261,
+    "id": "066-1",
+    "title": "そのワインを飲んで私は眠くなりました",
+    "chunks": [
+      [
+        "そのワインを飲んで",
+        "S"
+      ],
+      [
+        "私は眠く",
+        "P"
+      ],
+      [
+        "なりました",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "The wine ",
+        "S"
+      ],
+      [
+        "made ",
+        "V"
+      ],
+      [
+        "me sleepy.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    },
+    "note": "自然な和訳と英語では主語の立て方が異なります。英語でSになる原因・きっかけをSの箱にまとめています。"
+  },
+  {
+    "index": 262,
+    "id": "066-2",
+    "title": "あなたの嘘で私は不愉快になりました",
+    "chunks": [
+      [
+        "あなたの嘘で",
+        "S"
+      ],
+      [
+        "私は不愉快に",
+        "P"
+      ],
+      [
+        "なりました",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "You ",
+        "S"
+      ],
+      [
+        "made ",
+        "V"
+      ],
+      [
+        "me sick ",
+        "P"
+      ],
+      [
+        "with your lies.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    },
+    "note": "和訳の「あなたの嘘で」は英語ではSのYouとMのwith your liesに分かれます。和訳を英語に一語ずつ置き換えるのではなく、原因をSとして捉える練習です。"
+  },
+  {
+    "index": 263,
+    "id": "066-3",
+    "title": "そのことを考えると私は具合が悪くなり",
+    "chunks": [
+      [
+        "そのことを考えると",
+        "S"
+      ],
+      [
+        "私は具合が悪く",
+        "P"
+      ],
+      [
+        "なります",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "The thought of it ",
+        "S"
+      ],
+      [
+        "makes ",
+        "V"
+      ],
+      [
+        "me sick.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "skipped",
+      "reason": "そのことの内容が示されず、考えただけで具合が悪いという因果を画像で確定できません。"
+    },
+    "note": "自然な和訳と英語では主語の立て方が異なります。英語でSになる原因・きっかけをSの箱にまとめています。"
+  },
+  {
+    "index": 264,
+    "id": "066-4",
+    "title": "このところ私はそのニュースを聞くと怒",
+    "chunks": [
+      [
+        "このところ",
+        "M"
+      ],
+      [
+        "私は",
+        "P"
+      ],
+      [
+        "そのニュースを聞くと",
+        "S"
+      ],
+      [
+        "怒る気にしかなりません",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "Listening to the news ",
+        "S"
+      ],
+      [
+        "just makes ",
+        "V"
+      ],
+      [
+        "me angry ",
+        "P"
+      ],
+      [
+        "these days.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    },
+    "note": "自然な和訳と英語では主語の立て方が異なります。英語でSになる原因・きっかけをSの箱にまとめています。"
+  },
+  {
+    "index": 265,
+    "id": "067-1",
+    "title": "それで私は気分がよくなるでしょう",
+    "chunks": [
+      [
+        "それで",
+        "S"
+      ],
+      [
+        "私は気分がよく",
+        "P"
+      ],
+      [
+        "なるでしょう",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "That",
+        "S"
+      ],
+      [
+        "'ll make ",
+        "V"
+      ],
+      [
+        "me feel better.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "skipped",
+      "reason": "「それ」の内容が不明で、気分が改善する理由を場面として特定できません。"
+    },
+    "note": "自然な和訳と英語では主語の立て方が異なります。英語でSになる原因・きっかけをSの箱にまとめています。"
+  },
+  {
+    "index": 266,
+    "id": "067-2",
+    "title": "その薬で私の髪の毛は抜け落ちてしまい",
+    "chunks": [
+      [
+        "その薬で",
+        "S"
+      ],
+      [
+        "私の髪の毛は抜け落ちて",
+        "P"
+      ],
+      [
+        "しまいました",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "The drugs ",
+        "S"
+      ],
+      [
+        "made ",
+        "V"
+      ],
+      [
+        "my hair fall out.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    },
+    "note": "自然な和訳と英語では主語の立て方が異なります。英語でSになる原因・きっかけをSの箱にまとめています。"
+  },
+  {
+    "index": 267,
+    "id": "067-3",
+    "title": "私は何があっても決心を変えないでしょ",
+    "chunks": [
+      [
+        "私は",
+        "P"
+      ],
+      [
+        "何があっても",
+        "S"
+      ],
+      [
+        "決心を",
+        "P"
+      ],
+      [
+        "変えないでしょう",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "Nothing ",
+        "S"
+      ],
+      [
+        "will make ",
+        "V"
+      ],
+      [
+        "me change my mind.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "skipped",
+      "reason": "何があっても決心を変えないという決意は、対象が示されておらず絵で確定できません。"
+    },
+    "note": "何があっても決心を変えないという和訳を、英語ではNothingを主語にして表します。「何があっても」をSに対応させています。"
+  },
+  {
+    "index": 268,
+    "id": "067-4",
+    "title": "あなたはなぜ獣医になると決心したので",
+    "chunks": [
+      [
+        "あなたは",
+        "P"
+      ],
+      [
+        "なぜ",
+        "S"
+      ],
+      [
+        "獣医になると",
+        "P"
+      ],
+      [
+        "決心したのですか",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "What ",
+        "S"
+      ],
+      [
+        "made ",
+        "V"
+      ],
+      [
+        "you decide to be a veterinarian?",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    },
+    "note": "自然な和訳と英語では主語の立て方が異なります。英語でSになる原因・きっかけをSの箱にまとめています。"
+  },
+  {
+    "index": 269,
+    "id": "068-1",
+    "title": "私をボブと呼んでください",
+    "chunks": [
+      [
+        "私をボブと",
+        "P"
+      ],
+      [
+        "呼んでください",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "Call ",
+        "V"
+      ],
+      [
+        "me Bob.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    },
+    "implicit": true,
+    "implicitSubject": "あなたが（文ではかくれる）"
+  },
+  {
+    "index": 270,
+    "id": "068-2",
+    "title": "彼らは私を馬鹿呼ばわりしました",
+    "chunks": [
+      [
+        "彼らは",
+        "S"
+      ],
+      [
+        "私を馬鹿",
+        "P"
+      ],
+      [
+        "呼ばわりしました",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "They ",
+        "S"
+      ],
+      [
+        "called ",
+        "V"
+      ],
+      [
+        "me an idiot.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 271,
+    "id": "068-3",
+    "title": "彼らは学校で私をさまざまな名前で呼ん",
+    "chunks": [
+      [
+        "彼らは",
+        "S"
+      ],
+      [
+        "学校で",
+        "M"
+      ],
+      [
+        "私をさまざまな名前で",
+        "P"
+      ],
+      [
+        "呼んだものでした",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "They ",
+        "S"
+      ],
+      [
+        "used to call ",
+        "V"
+      ],
+      [
+        "me all kinds of names ",
+        "P"
+      ],
+      [
+        "at school.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 272,
+    "id": "068-4",
+    "title": "どうしてジョンは私を友だちと呼ぶのに",
+    "chunks": [
+      [
+        "どうして",
+        "M"
+      ],
+      [
+        "ジョンは",
+        "S"
+      ],
+      [
+        "私を友だちと",
+        "P"
+      ],
+      [
+        "呼ぶのにそんなことができたのだろうか",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "How ",
+        "M"
+      ],
+      [
+        "could ",
+        "V"
+      ],
+      [
+        "John ",
+        "S"
+      ],
+      [
+        "call ",
+        "V"
+      ],
+      [
+        "me a friend and then do such a thing?",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "skipped",
+      "reason": "友だちと呼ぶことと「そんなこと」の対立は、行為の内容が示されていません。"
+    },
+    "note": "疑問文では助動詞などがSの前に出ます。各箱は役割の対応を表し、実際の語順は完成英文で確かめます。"
+  },
+  {
+    "index": 273,
+    "id": "069-1",
+    "title": "私にそれをやらせてください",
+    "chunks": [
+      [
+        "私にそれを",
+        "P"
+      ],
+      [
+        "やらせてください",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "Let ",
+        "V"
+      ],
+      [
+        "me do it.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    },
+    "implicit": true,
+    "implicitSubject": "あなたが（文ではかくれる）",
+    "note": "Let me ... は、聞き手のyouを隠した命令形で「私に…させて」という形です。自然な和訳では申し出・お願いとして表れます。Let me knowは「知らせる」のひとまとまりとしてVに置きます。"
+  },
+  {
+    "index": 274,
+    "id": "069-2",
+    "title": "私にもう一度説明させてください",
+    "chunks": [
+      [
+        "私に",
+        "P"
+      ],
+      [
+        "もう一度",
+        "M"
+      ],
+      [
+        "説明させてください",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "Let ",
+        "V"
+      ],
+      [
+        "me explain ",
+        "P"
+      ],
+      [
+        "one more time!",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    },
+    "implicit": true,
+    "implicitSubject": "あなたが（文ではかくれる）",
+    "note": "Let me ... は、聞き手のyouを隠した命令形で「私に…させて」という形です。自然な和訳では申し出・お願いとして表れます。Let me knowは「知らせる」のひとまとまりとしてVに置きます。"
+  },
+  {
+    "index": 275,
+    "id": "069-3",
+    "title": "あなたに何か飲みものを持ってきますね",
+    "chunks": [
+      [
+        "あなたに何か飲みものを",
+        "P"
+      ],
+      [
+        "持ってきますね",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "Let ",
+        "V"
+      ],
+      [
+        "me get you something to drink.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    },
+    "implicit": true,
+    "implicitSubject": "あなたが（文ではかくれる）",
+    "note": "Let me ... は、聞き手のyouを隠した命令形で「私に…させて」という形です。自然な和訳では申し出・お願いとして表れます。Let me knowは「知らせる」のひとまとまりとしてVに置きます。"
+  },
+  {
+    "index": 276,
+    "id": "069-4",
+    "title": "もしどのような助けでも必要なら知らせ",
+    "chunks": [
+      [
+        "もしどのような助けでも必要なら",
+        "M"
+      ],
+      [
+        "知らせてくださいね",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "Let me know ",
+        "V"
+      ],
+      [
+        "if you need any help.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    },
+    "implicit": true,
+    "implicitSubject": "あなたが（文ではかくれる）",
+    "note": "Let me ... は、聞き手のyouを隠した命令形で「私に…させて」という形です。自然な和訳では申し出・お願いとして表れます。Let me knowは「知らせる」のひとまとまりとしてVに置きます。"
+  },
+  {
+    "index": 277,
+    "id": "070-1",
+    "title": "明日あなたに知らせますよ",
+    "chunks": [
+      [
+        "明日",
+        "M"
+      ],
+      [
+        "あなたに",
+        "P"
+      ],
+      [
+        "知らせますよ",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I",
+        "S"
+      ],
+      [
+        "'ll let ",
+        "V"
+      ],
+      [
+        "you know ",
+        "P"
+      ],
+      [
+        "tomorrow.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    },
+    "implicit": true,
+    "implicitSubject": "私は（文ではかくれる）"
+  },
+  {
+    "index": 278,
+    "id": "070-2",
+    "title": "あなたに私の新しい電話番号を教えます",
+    "chunks": [
+      [
+        "あなたに私の新しい電話番号を",
+        "P"
+      ],
+      [
+        "教えますね",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I",
+        "S"
+      ],
+      [
+        "'ll let ",
+        "V"
+      ],
+      [
+        "you have my new phone number.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    },
+    "implicit": true,
+    "implicitSubject": "私は（文ではかくれる）"
+  },
+  {
+    "index": 279,
+    "id": "070-3",
+    "title": "パスワードなしではあなたは入れません",
+    "chunks": [
+      [
+        "パスワードなしでは",
+        "M"
+      ],
+      [
+        "あなたは",
+        "P"
+      ],
+      [
+        "入れません",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "It ",
+        "S"
+      ],
+      [
+        "won't let ",
+        "V"
+      ],
+      [
+        "you enter ",
+        "P"
+      ],
+      [
+        "without a password.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    },
+    "implicit": true,
+    "implicitSubject": "それが（文ではかくれる）",
+    "note": "自然な和訳と英語では主語の立て方が異なります。英語でSになる原因・きっかけをSの箱にまとめています。"
+  },
+  {
+    "index": 280,
+    "id": "070-4",
+    "title": "来週までには確実にあなたにお金を渡し",
+    "chunks": [
+      [
+        "来週までには確実に",
+        "M"
+      ],
+      [
+        "あなたにお金を",
+        "P"
+      ],
+      [
+        "渡しますね",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I",
+        "S"
+      ],
+      [
+        "'ll let ",
+        "V"
+      ],
+      [
+        "you have the money ",
+        "P"
+      ],
+      [
+        "for sure by next week.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    },
+    "implicit": true,
+    "implicitSubject": "私は（文ではかくれる）"
+  },
+  {
+    "index": 281,
+    "id": "071-1",
+    "title": "仕事で忙しいのが続いています",
+    "chunks": [
+      [
+        "仕事で",
+        "S"
+      ],
+      [
+        "忙しいのが",
+        "P"
+      ],
+      [
+        "続いています",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "My work ",
+        "S"
+      ],
+      [
+        "keeps ",
+        "V"
+      ],
+      [
+        "me busy.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    },
+    "note": "自然な和訳と英語では主語の立て方が異なります。英語でSになる原因・きっかけをSの箱にまとめています。"
+  },
+  {
+    "index": 282,
+    "id": "071-2",
+    "title": "私は目をしっかりと閉じたままでした",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "目を",
+        "P"
+      ],
+      [
+        "しっかりと",
+        "M"
+      ],
+      [
+        "閉じたまま",
+        "P"
+      ],
+      [
+        "でした",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I ",
+        "S"
+      ],
+      [
+        "kept ",
+        "V"
+      ],
+      [
+        "my eyes closed ",
+        "P"
+      ],
+      [
+        "tight.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 283,
+    "id": "071-3",
+    "title": "それのせいで夜眠れません",
+    "chunks": [
+      [
+        "それのせいで",
+        "S"
+      ],
+      [
+        "夜",
+        "M"
+      ],
+      [
+        "眠れません",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "It ",
+        "S"
+      ],
+      [
+        "keeps me awake ",
+        "V"
+      ],
+      [
+        "at night.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    },
+    "note": "眠れない状態を保つkeeps me awakeを、和訳の「眠れません」に合わせてVのひとまとまりにしています。正式なSVOCの細分化は行いません。"
+  },
+  {
+    "index": 284,
+    "id": "071-4",
+    "title": "ジョギングは日常生活で私を健康でエネ",
+    "chunks": [
+      [
+        "ジョギングは",
+        "S"
+      ],
+      [
+        "日常生活で",
+        "M"
+      ],
+      [
+        "私を健康でエネルギッシュに",
+        "P"
+      ],
+      [
+        "保ちます",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "Jogging ",
+        "S"
+      ],
+      [
+        "keeps ",
+        "V"
+      ],
+      [
+        "me healthy and energetic ",
+        "P"
+      ],
+      [
+        "in my daily life.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 285,
+    "id": "072-1",
+    "title": "私はそれは退屈だと思います",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "それは退屈だと",
+        "P"
+      ],
+      [
+        "思います",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I ",
+        "S"
+      ],
+      [
+        "find ",
+        "V"
+      ],
+      [
+        "it boring.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 286,
+    "id": "072-2",
+    "title": "変化を受け入れることは難しいと思いま",
+    "chunks": [
+      [
+        "変化を受け入れることは難しいと",
+        "P"
+      ],
+      [
+        "思います",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I ",
+        "S"
+      ],
+      [
+        "find ",
+        "V"
+      ],
+      [
+        "it hard to accept change.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "skipped",
+      "reason": "変化の具体的内容がなく、受け入れることの難しさを画像で特定できません。"
+    },
+    "implicit": true,
+    "implicitSubject": "私は（文ではかくれる）"
+  },
+  {
+    "index": 287,
+    "id": "072-3",
+    "title": "彼女が嘘をついたとは信じられません",
+    "chunks": [
+      [
+        "彼女が嘘をついたとは",
+        "P"
+      ],
+      [
+        "信じられません",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I ",
+        "S"
+      ],
+      [
+        "find ",
+        "V"
+      ],
+      [
+        "it hard to believe that she lied.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "skipped",
+      "reason": "嘘の内容と信じがたさを静止画から確定できません。"
+    },
+    "implicit": true,
+    "implicitSubject": "私は（文ではかくれる）"
+  },
+  {
+    "index": 288,
+    "id": "072-4",
+    "title": "仕事と楽しみの間に一線を引くのは難し",
+    "chunks": [
+      [
+        "仕事と楽しみの間に一線を引くのは難しいと",
+        "P"
+      ],
+      [
+        "思います",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I ",
+        "S"
+      ],
+      [
+        "find ",
+        "V"
+      ],
+      [
+        "it difficult to draw the line between work and pleasure.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "skipped",
+      "reason": "仕事と楽しみの境界という抽象的判断が中心です。"
+    },
+    "implicit": true,
+    "implicitSubject": "私は（文ではかくれる）"
+  },
+  {
+    "index": 289,
+    "id": "073-1",
+    "title": "私は彼女が窓際のテーブルに座っている",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "彼女が窓際のテーブルに座っているのを",
+        "P"
+      ],
+      [
+        "見ました",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I ",
+        "S"
+      ],
+      [
+        "saw ",
+        "V"
+      ],
+      [
+        "her sitting at a window table.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 290,
+    "id": "073-2",
+    "title": "私は彼女がカーテン越しにのぞき見をし",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "彼女がカーテン越しにのぞき見をしているのを",
+        "P"
+      ],
+      [
+        "見ました",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I ",
+        "S"
+      ],
+      [
+        "saw ",
+        "V"
+      ],
+      [
+        "her peeping through the curtain.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 291,
+    "id": "073-3",
+    "title": "私は彼女が黄色い車に乗った男性と話し",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "彼女が黄色い車に乗った男性と話しているのを",
+        "P"
+      ],
+      [
+        "見ました",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I ",
+        "S"
+      ],
+      [
+        "saw ",
+        "V"
+      ],
+      [
+        "her talking to a man in a yellow car.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 292,
+    "id": "073-4",
+    "title": "私は彼が子育てをして同時に仕事に行く",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "彼が子育てをして同時に仕事に行くのを",
+        "P"
+      ],
+      [
+        "見たことがあります",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I",
+        "S"
+      ],
+      [
+        "'ve seen ",
+        "V"
+      ],
+      [
+        "him bring up children and go to work at the same time.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 293,
+    "id": "074-1",
+    "title": "私は外で犬が吠えているのを聞きました",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "外で犬が吠えているのを",
+        "P"
+      ],
+      [
+        "聞きました",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I ",
+        "S"
+      ],
+      [
+        "heard ",
+        "V"
+      ],
+      [
+        "a dog barking outside.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 294,
+    "id": "074-2",
+    "title": "私はドアが開いてそれから閉まるのを聞",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "ドアが開いてそれから閉まるのを",
+        "P"
+      ],
+      [
+        "聞きました",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I ",
+        "S"
+      ],
+      [
+        "heard ",
+        "V"
+      ],
+      [
+        "a door open and then close.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 295,
+    "id": "074-3",
+    "title": "私は私の後ろで足音が近づいてくるのを",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "私の後ろで足音が近づいてくるのを",
+        "P"
+      ],
+      [
+        "聞きました",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I ",
+        "S"
+      ],
+      [
+        "heard ",
+        "V"
+      ],
+      [
+        "footsteps approaching behind me.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 296,
+    "id": "074-4",
+    "title": "私は誰かが上の階で動き回るのを聞きま",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "誰かが上の階で動き回るのを",
+        "P"
+      ],
+      [
+        "聞きました",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I ",
+        "S"
+      ],
+      [
+        "heard ",
+        "V"
+      ],
+      [
+        "someone moving around upstairs.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 297,
+    "id": "075-1",
+    "title": "彼女は私がいくつか新しい服を選ぶのを",
+    "chunks": [
+      [
+        "彼女は",
+        "S"
+      ],
+      [
+        "私がいくつか新しい服を選ぶのを",
+        "P"
+      ],
+      [
+        "手伝ってくれました",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "She ",
+        "S"
+      ],
+      [
+        "helped ",
+        "V"
+      ],
+      [
+        "me choose some new clothes.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 298,
+    "id": "075-2",
+    "title": "彼は私がアパートにペンキを塗るのを手",
+    "chunks": [
+      [
+        "彼は",
+        "S"
+      ],
+      [
+        "私がアパートにペンキを塗るのを",
+        "P"
+      ],
+      [
+        "手伝いました",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "He ",
+        "S"
+      ],
+      [
+        "helped ",
+        "V"
+      ],
+      [
+        "me paint my apartment.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 299,
+    "id": "075-3",
+    "title": "その医者は私が悲しみを受け入れられる",
+    "chunks": [
+      [
+        "その医者は",
+        "S"
+      ],
+      [
+        "私が悲しみを受け入れられるように",
+        "P"
+      ],
+      [
+        "してくれました",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "The doctor ",
+        "S"
+      ],
+      [
+        "helped ",
+        "V"
+      ],
+      [
+        "me come to terms with grief.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 300,
+    "id": "075-4",
+    "title": "彼は私が本箱を壁から離すのを手伝って",
+    "chunks": [
+      [
+        "彼は",
+        "S"
+      ],
+      [
+        "私が本箱を壁から離すのを",
+        "P"
+      ],
+      [
+        "手伝ってくれました",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "He ",
+        "S"
+      ],
+      [
+        "helped ",
+        "V"
+      ],
+      [
+        "me move the bookcases away from the wall.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 301,
+    "id": "076-1",
+    "title": "髪を切ってもらいました",
+    "chunks": [
+      [
+        "髪を",
+        "P"
+      ],
+      [
+        "切ってもらいました",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I ",
+        "S"
+      ],
+      [
+        "had ",
+        "V"
+      ],
+      [
+        "my hair cut.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    },
+    "implicit": true,
+    "implicitSubject": "私は（文ではかくれる）"
+  },
+  {
+    "index": 302,
+    "id": "076-2",
+    "title": "私は駅でかばんを盗まれました",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "駅で",
+        "M"
+      ],
+      [
+        "かばんを",
+        "P"
+      ],
+      [
+        "盗まれました",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I ",
+        "S"
+      ],
+      [
+        "had ",
+        "V"
+      ],
+      [
+        "my bag stolen ",
+        "P"
+      ],
+      [
+        "in the station.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 303,
+    "id": "076-3",
+    "title": "彼にあなたの荷物を運んでもらいましょ",
+    "chunks": [
+      [
+        "彼にあなたの荷物を",
+        "P"
+      ],
+      [
+        "運んでもらいましょう",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I",
+        "S"
+      ],
+      [
+        "'ll have ",
+        "V"
+      ],
+      [
+        "him carry your luggage.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    },
+    "implicit": true,
+    "implicitSubject": "私は（文ではかくれる）"
+  },
+  {
+    "index": 304,
+    "id": "076-4",
+    "title": "彼に受付に車を持ってきてもらいましょ",
+    "chunks": [
+      [
+        "彼に受付に車を",
+        "P"
+      ],
+      [
+        "持ってきてもらいましょう",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I",
+        "S"
+      ],
+      [
+        "'ll have ",
+        "V"
+      ],
+      [
+        "him bring a car to the reception.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    },
+    "implicit": true,
+    "implicitSubject": "私は（文ではかくれる）"
+  },
+  {
+    "index": 305,
+    "id": "077-1",
+    "title": "私は風邪をひきはじめたのを感じます",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "風邪をひきはじめたのを",
+        "P"
+      ],
+      [
+        "感じます",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I ",
+        "S"
+      ],
+      [
+        "can feel ",
+        "V"
+      ],
+      [
+        "a cold coming on.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 306,
+    "id": "077-2",
+    "title": "鋭い痛みが足に走るのを感じました",
+    "chunks": [
+      [
+        "鋭い痛みが足に走るのを",
+        "P"
+      ],
+      [
+        "感じました",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I ",
+        "S"
+      ],
+      [
+        "felt ",
+        "V"
+      ],
+      [
+        "a sharp pain run down my leg.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    },
+    "implicit": true,
+    "implicitSubject": "私は（文ではかくれる）"
+  },
+  {
+    "index": 307,
+    "id": "077-3",
+    "title": "私は手がぬれているものに触れるのを感",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "手がぬれているものに触れるのを",
+        "P"
+      ],
+      [
+        "感じました",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I ",
+        "S"
+      ],
+      [
+        "felt ",
+        "V"
+      ],
+      [
+        "my hand touch something wet.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 308,
+    "id": "077-4",
+    "title": "私は突然不思議な興奮が私を包むのを感",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "突然",
+        "M"
+      ],
+      [
+        "不思議な興奮が私を包むのを",
+        "P"
+      ],
+      [
+        "感じました",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I ",
+        "S"
+      ],
+      [
+        "felt ",
+        "V"
+      ],
+      [
+        "a strange excitement taking hold of me ",
+        "P"
+      ],
+      [
+        "all of a sudden.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 309,
+    "id": "078-1",
+    "title": "私は窓を開けたままにしておきました",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "窓を開けたままに",
+        "P"
+      ],
+      [
+        "しておきました",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I ",
+        "S"
+      ],
+      [
+        "left ",
+        "V"
+      ],
+      [
+        "the window open.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 310,
+    "id": "078-2",
+    "title": "私は彼を部屋に一人ぼっちにしました",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "彼を",
+        "P"
+      ],
+      [
+        "部屋に",
+        "M"
+      ],
+      [
+        "一人ぼっちに",
+        "P"
+      ],
+      [
+        "しました",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I ",
+        "S"
+      ],
+      [
+        "left ",
+        "V"
+      ],
+      [
+        "him alone ",
+        "P"
+      ],
+      [
+        "in the room.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 311,
+    "id": "078-3",
+    "title": "私はお風呂場で蛇口の水を流しっぱなし",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "お風呂場で",
+        "M"
+      ],
+      [
+        "蛇口の水を流しっぱなしに",
+        "P"
+      ],
+      [
+        "していました",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I",
+        "S"
+      ],
+      [
+        "'ve left ",
+        "V"
+      ],
+      [
+        "the tap running ",
+        "P"
+      ],
+      [
+        "in the bathroom.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 312,
+    "id": "078-4",
+    "title": "私は私を待つ彼を置いていった、なぜな",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "私を待つ彼を",
+        "P"
+      ],
+      [
+        "置いていった",
+        "V"
+      ],
+      [
+        "、なぜなら彼に腹を立てていたから",
+        "M"
+      ]
+    ],
+    "english": [
+      [
+        "I ",
+        "S"
+      ],
+      [
+        "left ",
+        "V"
+      ],
+      [
+        "him waiting for me ",
+        "P"
+      ],
+      [
+        "because I was angry with him.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 313,
+    "id": "079-1",
+    "title": "彼女は爪を明るい赤に塗りました",
+    "chunks": [
+      [
+        "彼女は",
+        "S"
+      ],
+      [
+        "爪を明るい赤に",
+        "P"
+      ],
+      [
+        "塗りました",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "She ",
+        "S"
+      ],
+      [
+        "painted ",
+        "V"
+      ],
+      [
+        "her nails bright red.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 314,
+    "id": "079-2",
+    "title": "私は壁を白に、そして天井をピンクに塗",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "壁を白に、そして天井をピンクに",
+        "P"
+      ],
+      [
+        "塗るつもりです",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I",
+        "S"
+      ],
+      [
+        "'m going to paint ",
+        "V"
+      ],
+      [
+        "the walls white and the ceiling pink.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 315,
+    "id": "079-3",
+    "title": "私たちは敷物に合うように戸棚を緑に塗",
+    "chunks": [
+      [
+        "私たちは",
+        "S"
+      ],
+      [
+        "敷物に合うように",
+        "M"
+      ],
+      [
+        "戸棚を緑に",
+        "P"
+      ],
+      [
+        "塗りました",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "We ",
+        "S"
+      ],
+      [
+        "painted ",
+        "V"
+      ],
+      [
+        "the cabinets green ",
+        "P"
+      ],
+      [
+        "to match the rug.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 316,
+    "id": "079-4",
+    "title": "壁と天井が調和するように同じ色で塗る",
+    "chunks": [
+      [
+        "壁と天井が調和するように",
+        "M"
+      ],
+      [
+        "同じ色で",
+        "P"
+      ],
+      [
+        "塗るのがよいのでは",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "You ",
+        "S"
+      ],
+      [
+        "could paint ",
+        "V"
+      ],
+      [
+        "the walls and ceilings the same color ",
+        "P"
+      ],
+      [
+        "so they blend together.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    },
+    "implicit": true,
+    "implicitSubject": "あなたが（文ではかくれる）"
+  },
+  {
+    "index": 317,
+    "id": "080-1",
+    "title": "あなたは彼のことを友だちだと考えてい",
+    "chunks": [
+      [
+        "あなたは",
+        "S"
+      ],
+      [
+        "彼のことを友だちだと",
+        "P"
+      ],
+      [
+        "考えていますか",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "Do ",
+        "V"
+      ],
+      [
+        "you ",
+        "S"
+      ],
+      [
+        "consider ",
+        "V"
+      ],
+      [
+        "him a friend?",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    },
+    "note": "疑問文では助動詞などがSの前に出ます。各箱は役割の対応を表し、実際の語順は完成英文で確かめます。"
+  },
+  {
+    "index": 318,
+    "id": "080-2",
+    "title": "私たちは彼女がその仕事に適していると",
+    "chunks": [
+      [
+        "私たちは",
+        "S"
+      ],
+      [
+        "彼女がその仕事に適しているとは",
+        "P"
+      ],
+      [
+        "考えていません",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "We ",
+        "S"
+      ],
+      [
+        "don't consider ",
+        "V"
+      ],
+      [
+        "her suitable for the job.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "skipped",
+      "reason": "仕事への適性という判断は、仕事の内容と判断の根拠が示されていません。"
+    }
+  },
+  {
+    "index": 319,
+    "id": "080-3",
+    "title": "私は招待されることはすばらしい名誉だ",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "招待されることはすばらしい名誉だと",
+        "P"
+      ],
+      [
+        "考えています",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I ",
+        "S"
+      ],
+      [
+        "consider ",
+        "V"
+      ],
+      [
+        "it a great honor to be invited.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "skipped",
+      "reason": "招待されることを名誉とみなす価値判断が中心です。"
+    }
+  },
+  {
+    "index": 320,
+    "id": "080-4",
+    "title": "彼はエンジニアリングが自分の天職の一",
+    "chunks": [
+      [
+        "彼は",
+        "S"
+      ],
+      [
+        "エンジニアリングが自分の天職の一つだと",
+        "P"
+      ],
+      [
+        "考えました",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "He ",
+        "S"
+      ],
+      [
+        "considered ",
+        "V"
+      ],
+      [
+        "engineering one of the highest possible callings.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "skipped",
+      "reason": "エンジニアリングを天職とみなす価値判断が中心です。"
+    }
+  },
+  {
+    "index": 321,
+    "id": "081-1",
+    "title": "私は毎日学校に行きます",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "毎日",
+        "M"
+      ],
+      [
+        "学校に",
+        "P"
+      ],
+      [
+        "行きます",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I ",
+        "S"
+      ],
+      [
+        "go ",
+        "V"
+      ],
+      [
+        "to school ",
+        "P"
+      ],
+      [
+        "every day.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 322,
+    "id": "081-2",
+    "title": "私は毎週土曜日の朝、散歩に行きます",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "毎週土曜日の朝、",
+        "M"
+      ],
+      [
+        "散歩に",
+        "P"
+      ],
+      [
+        "行きます",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I ",
+        "S"
+      ],
+      [
+        "go ",
+        "V"
+      ],
+      [
+        "for a walk ",
+        "P"
+      ],
+      [
+        "in the morning every Saturday.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 323,
+    "id": "081-3",
+    "title": "私は毎日午後10時に寝ます",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "毎日午後10時に",
+        "M"
+      ],
+      [
+        "寝ます",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I ",
+        "S"
+      ],
+      [
+        "go to sleep ",
+        "V"
+      ],
+      [
+        "at 10 p.m. every day.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 324,
+    "id": "081-4",
+    "title": "私は毎週末仕事の後でリラックスするた",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "毎週末仕事の後でリラックスするために",
+        "M"
+      ],
+      [
+        "カフェに",
+        "P"
+      ],
+      [
+        "行きます",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I ",
+        "S"
+      ],
+      [
+        "go ",
+        "V"
+      ],
+      [
+        "to the cafe ",
+        "P"
+      ],
+      [
+        "after work to relax every weekend.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 325,
+    "id": "082-1",
+    "title": "あなたは会議に出席するつもりですか",
+    "chunks": [
+      [
+        "あなたは",
+        "S"
+      ],
+      [
+        "会議に",
+        "P"
+      ],
+      [
+        "出席するつもりですか",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "Are ",
+        "V"
+      ],
+      [
+        "you ",
+        "S"
+      ],
+      [
+        "going to attend ",
+        "V"
+      ],
+      [
+        "the meeting?",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    },
+    "note": "疑問文では助動詞などがSの前に出ます。各箱は役割の対応を表し、実際の語順は完成英文で確かめます。"
+  },
+  {
+    "index": 326,
+    "id": "082-2",
+    "title": "あなたは彼らとサッカーをするつもりで",
+    "chunks": [
+      [
+        "あなたは",
+        "S"
+      ],
+      [
+        "彼らと",
+        "M"
+      ],
+      [
+        "サッカーを",
+        "P"
+      ],
+      [
+        "するつもりですか",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "Are ",
+        "V"
+      ],
+      [
+        "you ",
+        "S"
+      ],
+      [
+        "going to play ",
+        "V"
+      ],
+      [
+        "soccer ",
+        "P"
+      ],
+      [
+        "with them?",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    },
+    "note": "疑問文では助動詞などがSの前に出ます。各箱は役割の対応を表し、実際の語順は完成英文で確かめます。"
+  },
+  {
+    "index": 327,
+    "id": "082-3",
+    "title": "あなたは今晩パブでのパーティーに行く",
+    "chunks": [
+      [
+        "あなたは",
+        "S"
+      ],
+      [
+        "今晩",
+        "M"
+      ],
+      [
+        "パブでのパーティーに",
+        "P"
+      ],
+      [
+        "行くつもりですか",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "Are ",
+        "V"
+      ],
+      [
+        "you ",
+        "S"
+      ],
+      [
+        "going to go ",
+        "V"
+      ],
+      [
+        "to the party in the pub ",
+        "P"
+      ],
+      [
+        "tonight?",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    },
+    "note": "疑問文では助動詞などがSの前に出ます。各箱は役割の対応を表し、実際の語順は完成英文で確かめます。"
+  },
+  {
+    "index": 328,
+    "id": "082-4",
+    "title": "あなたはクリスマスに自分のために何か",
+    "chunks": [
+      [
+        "あなたは",
+        "S"
+      ],
+      [
+        "クリスマスに自分のために",
+        "M"
+      ],
+      [
+        "何かを",
+        "P"
+      ],
+      [
+        "買うつもりですか",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "Are ",
+        "V"
+      ],
+      [
+        "you ",
+        "S"
+      ],
+      [
+        "going to buy ",
+        "V"
+      ],
+      [
+        "something ",
+        "P"
+      ],
+      [
+        "for yourself for Christmas?",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    },
+    "note": "疑問文では助動詞などがSの前に出ます。各箱は役割の対応を表し、実際の語順は完成英文で確かめます。"
+  },
+  {
+    "index": 329,
+    "id": "083-1",
+    "title": "私はベストを尽くすつもりです",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "ベストを",
+        "P"
+      ],
+      [
+        "尽くすつもりです",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I",
+        "S"
+      ],
+      [
+        "'m going to do ",
+        "V"
+      ],
+      [
+        "my best.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "skipped",
+      "reason": "「ベストを尽くす」の対象となる具体的な行為が示されていません。"
+    }
+  },
+  {
+    "index": 330,
+    "id": "083-2",
+    "title": "私は明日中国に向けて出発するつもりで",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "明日",
+        "M"
+      ],
+      [
+        "中国に向けて",
+        "P"
+      ],
+      [
+        "出発するつもりです",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I",
+        "S"
+      ],
+      [
+        "'m going to leave ",
+        "V"
+      ],
+      [
+        "for China ",
+        "P"
+      ],
+      [
+        "tomorrow.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 331,
+    "id": "083-3",
+    "title": "私はマネージャーに状況を説明するつも",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "マネージャーに状況を",
+        "P"
+      ],
+      [
+        "説明するつもりです",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I",
+        "S"
+      ],
+      [
+        "'m going to explain ",
+        "V"
+      ],
+      [
+        "the situation to my manager.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "skipped",
+      "reason": "状況の内容が不明で、説明すべき対象を画像から確定できません。"
+    }
+  },
+  {
+    "index": 332,
+    "id": "083-4",
+    "title": "私は休暇に友だちに会うために旅行する",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "休暇に友だちに会うために",
+        "M"
+      ],
+      [
+        "旅行するつもりです",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I",
+        "S"
+      ],
+      [
+        "'m going to travel ",
+        "V"
+      ],
+      [
+        "to see my friend for the holiday.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 333,
+    "id": "084-1",
+    "title": "私は明日の夜あなたと一緒に行くつもり",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "明日の夜あなたと一緒に",
+        "M"
+      ],
+      [
+        "行くつもりです",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I ",
+        "S"
+      ],
+      [
+        "will go ",
+        "V"
+      ],
+      [
+        "with you tomorrow night.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 334,
+    "id": "084-2",
+    "title": "私は金曜日の午後1時までにはそこにい",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "金曜日の午後1時までには",
+        "M"
+      ],
+      [
+        "そこに",
+        "P"
+      ],
+      [
+        "いるつもりです",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I ",
+        "S"
+      ],
+      [
+        "will be ",
+        "V"
+      ],
+      [
+        "there ",
+        "P"
+      ],
+      [
+        "by one o'clock on Friday afternoon.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 335,
+    "id": "084-3",
+    "title": "私は来週あなたにスタッフ会議で再会し",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "来週",
+        "M"
+      ],
+      [
+        "あなたに",
+        "P"
+      ],
+      [
+        "スタッフ会議で",
+        "M"
+      ],
+      [
+        "再会しますよ",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I ",
+        "S"
+      ],
+      [
+        "will see ",
+        "V"
+      ],
+      [
+        "you ",
+        "P"
+      ],
+      [
+        "again at the staff meeting next week.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 336,
+    "id": "084-4",
+    "title": "私は後ほど細かい指示をあなたに出すつ",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "後ほど",
+        "M"
+      ],
+      [
+        "細かい指示をあなたに",
+        "P"
+      ],
+      [
+        "出すつもりです",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I ",
+        "S"
+      ],
+      [
+        "will give ",
+        "V"
+      ],
+      [
+        "you detailed instructions ",
+        "P"
+      ],
+      [
+        "later.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "skipped",
+      "reason": "細かい指示の内容が示されていません。"
+    }
+  },
+  {
+    "index": 337,
+    "id": "085-1",
+    "title": "私は三日前渋谷に行きました",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "三日前",
+        "M"
+      ],
+      [
+        "渋谷に",
+        "P"
+      ],
+      [
+        "行きました",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I ",
+        "S"
+      ],
+      [
+        "went ",
+        "V"
+      ],
+      [
+        "to Shibuya ",
+        "P"
+      ],
+      [
+        "three days ago.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 338,
+    "id": "085-2",
+    "title": "私は先週彼女と映画に行きました",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "先週彼女と",
+        "M"
+      ],
+      [
+        "映画に",
+        "P"
+      ],
+      [
+        "行きました",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I ",
+        "S"
+      ],
+      [
+        "went ",
+        "V"
+      ],
+      [
+        "to the movies ",
+        "P"
+      ],
+      [
+        "with my girlfriend last week.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 339,
+    "id": "085-3",
+    "title": "私は先週の日曜日に初めてジムに行きま",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "先週の日曜日に初めて",
+        "M"
+      ],
+      [
+        "ジムに",
+        "P"
+      ],
+      [
+        "行きました",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I ",
+        "S"
+      ],
+      [
+        "went ",
+        "V"
+      ],
+      [
+        "to the gym ",
+        "P"
+      ],
+      [
+        "for the first time last Sunday.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 340,
+    "id": "085-4",
+    "title": "私は昨日さらなるアドバイスを求めて医",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "昨日さらなるアドバイスを求めて",
+        "M"
+      ],
+      [
+        "医者に",
+        "P"
+      ],
+      [
+        "行きました",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I ",
+        "S"
+      ],
+      [
+        "went ",
+        "V"
+      ],
+      [
+        "to the doctor ",
+        "P"
+      ],
+      [
+        "for further advice yesterday.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 341,
+    "id": "086-1",
+    "title": "もう食べましたか",
+    "chunks": [
+      [
+        "もう",
+        "M"
+      ],
+      [
+        "食べましたか",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "Did ",
+        "V"
+      ],
+      [
+        "you ",
+        "S"
+      ],
+      [
+        "eat ",
+        "V"
+      ],
+      [
+        "yet?",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    },
+    "implicit": true,
+    "implicitSubject": "あなたが（文ではかくれる）",
+    "note": "疑問文では助動詞などがSの前に出ます。各箱は役割の対応を表し、実際の語順は完成英文で確かめます。"
+  },
+  {
+    "index": 342,
+    "id": "086-2",
+    "title": "あなたは昨夜パーティーで楽しく過ごし",
+    "chunks": [
+      [
+        "あなたは",
+        "S"
+      ],
+      [
+        "昨夜パーティーで",
+        "M"
+      ],
+      [
+        "楽しく過ごしましたか",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "Did ",
+        "V"
+      ],
+      [
+        "you ",
+        "S"
+      ],
+      [
+        "have a good time ",
+        "V"
+      ],
+      [
+        "at the party last night?",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    },
+    "note": "疑問文では助動詞などがSの前に出ます。各箱は役割の対応を表し、実際の語順は完成英文で確かめます。"
+  },
+  {
+    "index": 343,
+    "id": "086-3",
+    "title": "お母さんの誕生日のためにすでに買いも",
+    "chunks": [
+      [
+        "お母さんの誕生日のためにすでに",
+        "M"
+      ],
+      [
+        "買いものに",
+        "P"
+      ],
+      [
+        "行きましたか",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "Did ",
+        "V"
+      ],
+      [
+        "you ",
+        "S"
+      ],
+      [
+        "go ",
+        "V"
+      ],
+      [
+        "shopping ",
+        "P"
+      ],
+      [
+        "for Mom's birthday already?",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    },
+    "implicit": true,
+    "implicitSubject": "あなたが（文ではかくれる）",
+    "note": "疑問文では助動詞などがSの前に出ます。各箱は役割の対応を表し、実際の語順は完成英文で確かめます。"
+  },
+  {
+    "index": 344,
+    "id": "086-4",
+    "title": "あなたは先週公立図書館で何か役に立つ",
+    "chunks": [
+      [
+        "あなたは",
+        "S"
+      ],
+      [
+        "先週公立図書館で",
+        "M"
+      ],
+      [
+        "何か役に立つ情報を",
+        "P"
+      ],
+      [
+        "見つけましたか",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "Did ",
+        "V"
+      ],
+      [
+        "you ",
+        "S"
+      ],
+      [
+        "find ",
+        "V"
+      ],
+      [
+        "any useful information ",
+        "P"
+      ],
+      [
+        "in the public library last week?",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    },
+    "note": "疑問文では助動詞などがSの前に出ます。各箱は役割の対応を表し、実際の語順は完成英文で確かめます。"
+  },
+  {
+    "index": 345,
+    "id": "087-1",
+    "title": "彼はSF映画を見ています",
+    "chunks": [
+      [
+        "彼は",
+        "S"
+      ],
+      [
+        "SF映画を",
+        "P"
+      ],
+      [
+        "見ています",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "He ",
+        "S"
+      ],
+      [
+        "is watching ",
+        "V"
+      ],
+      [
+        "a sci-fi movie.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 346,
+    "id": "087-2",
+    "title": "彼は親友と一緒にテニスをしています",
+    "chunks": [
+      [
+        "彼は",
+        "S"
+      ],
+      [
+        "親友と一緒に",
+        "M"
+      ],
+      [
+        "テニスを",
+        "P"
+      ],
+      [
+        "しています",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "He ",
+        "S"
+      ],
+      [
+        "is playing ",
+        "V"
+      ],
+      [
+        "tennis ",
+        "P"
+      ],
+      [
+        "with his close friend.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 347,
+    "id": "087-3",
+    "title": "彼女は父を助けるために医学部で勉強し",
+    "chunks": [
+      [
+        "彼女は",
+        "S"
+      ],
+      [
+        "父を助けるために",
+        "M"
+      ],
+      [
+        "医学部で",
+        "P"
+      ],
+      [
+        "勉強しています",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "She ",
+        "S"
+      ],
+      [
+        "is studying ",
+        "V"
+      ],
+      [
+        "at medical school ",
+        "P"
+      ],
+      [
+        "to help her father.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 348,
+    "id": "087-4",
+    "title": "彼女はその女の子のことで彼氏と言い争",
+    "chunks": [
+      [
+        "彼女は",
+        "S"
+      ],
+      [
+        "その女の子のことで彼氏と",
+        "P"
+      ],
+      [
+        "言い争いをしています",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "She ",
+        "S"
+      ],
+      [
+        "is having an argument ",
+        "V"
+      ],
+      [
+        "with her boyfriend about the girl.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 349,
+    "id": "088-1",
+    "title": "私はその時寝ていました",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "その時",
+        "M"
+      ],
+      [
+        "寝ていました",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I ",
+        "S"
+      ],
+      [
+        "was sleeping ",
+        "V"
+      ],
+      [
+        "at that time.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 350,
+    "id": "088-2",
+    "title": "私は支店長として働いていました",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "支店長として",
+        "M"
+      ],
+      [
+        "働いていました",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I ",
+        "S"
+      ],
+      [
+        "was working ",
+        "V"
+      ],
+      [
+        "as a branch manager.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 351,
+    "id": "088-3",
+    "title": "私は外国にいた時、金銭的に困難な時を",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "外国にいた時、金銭的に",
+        "M"
+      ],
+      [
+        "困難な時を",
+        "P"
+      ],
+      [
+        "過ごしていました",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I ",
+        "S"
+      ],
+      [
+        "was having ",
+        "V"
+      ],
+      [
+        "a difficult time ",
+        "P"
+      ],
+      [
+        "financially when I was abroad.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 352,
+    "id": "088-4",
+    "title": "私は誰かが来てドアをノックした時イン",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "誰かが来てドアをノックした時",
+        "M"
+      ],
+      [
+        "インターネットを",
+        "P"
+      ],
+      [
+        "していました",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I ",
+        "S"
+      ],
+      [
+        "was surfing ",
+        "V"
+      ],
+      [
+        "the Internet ",
+        "P"
+      ],
+      [
+        "when somebody came and knocked on the door.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 353,
+    "id": "089-1",
+    "title": "私はすぐ出発する予定です",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "すぐ",
+        "M"
+      ],
+      [
+        "出発する予定です",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I ",
+        "S"
+      ],
+      [
+        "will be leaving ",
+        "V"
+      ],
+      [
+        "soon.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 354,
+    "id": "089-2",
+    "title": "私は大学で講義をする予定です",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "大学で",
+        "M"
+      ],
+      [
+        "講義を",
+        "P"
+      ],
+      [
+        "する予定です",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I ",
+        "S"
+      ],
+      [
+        "will be giving ",
+        "V"
+      ],
+      [
+        "a lecture ",
+        "P"
+      ],
+      [
+        "at the university.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 355,
+    "id": "089-3",
+    "title": "私は来週彼らとこの問題を議論する予定",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "来週",
+        "M"
+      ],
+      [
+        "彼らとこの問題を",
+        "P"
+      ],
+      [
+        "議論する予定です",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I ",
+        "S"
+      ],
+      [
+        "will be discussing ",
+        "V"
+      ],
+      [
+        "this issue with them ",
+        "P"
+      ],
+      [
+        "next week.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "skipped",
+      "reason": "議論する問題の内容が示されていません。"
+    }
+  },
+  {
+    "index": 356,
+    "id": "089-4",
+    "title": "私は明日のこの時間には家のソファーで",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "明日のこの時間には家のソファーで",
+        "M"
+      ],
+      [
+        "テレビを",
+        "P"
+      ],
+      [
+        "見ているだろう",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I ",
+        "S"
+      ],
+      [
+        "will be watching ",
+        "V"
+      ],
+      [
+        "TV ",
+        "P"
+      ],
+      [
+        "at this time tomorrow at home on my sofa.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 357,
+    "id": "090-1",
+    "title": "私はすでに彼らにメールを送りました",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "すでに",
+        "M"
+      ],
+      [
+        "彼らにメールを",
+        "P"
+      ],
+      [
+        "送りました",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I",
+        "S"
+      ],
+      [
+        "'ve ",
+        "V"
+      ],
+      [
+        "already ",
+        "M"
+      ],
+      [
+        "emailed ",
+        "V"
+      ],
+      [
+        "them.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 358,
+    "id": "090-2",
+    "title": "私はすでに何回もこれをやりました",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "すでに何回も",
+        "M"
+      ],
+      [
+        "これを",
+        "P"
+      ],
+      [
+        "やりました",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I",
+        "S"
+      ],
+      [
+        "'ve ",
+        "V"
+      ],
+      [
+        "already ",
+        "M"
+      ],
+      [
+        "done ",
+        "V"
+      ],
+      [
+        "this ",
+        "P"
+      ],
+      [
+        "so many times.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "skipped",
+      "reason": "「これ」の内容が不明で、繰り返す具体的行為を特定できません。"
+    }
+  },
+  {
+    "index": 359,
+    "id": "090-3",
+    "title": "私はそれは可能ではないとすでにあなた",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "それは可能ではないと",
+        "P"
+      ],
+      [
+        "すでに",
+        "M"
+      ],
+      [
+        "あなたに",
+        "P"
+      ],
+      [
+        "言いました",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I",
+        "S"
+      ],
+      [
+        "'ve ",
+        "V"
+      ],
+      [
+        "already ",
+        "M"
+      ],
+      [
+        "told ",
+        "V"
+      ],
+      [
+        "you it's not possible.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "skipped",
+      "reason": "不可能とされる「それ」の内容が示されていません。"
+    }
+  },
+  {
+    "index": 360,
+    "id": "090-4",
+    "title": "私はすでにお気に入りのレストランで彼",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "すでに",
+        "M"
+      ],
+      [
+        "お気に入りのレストランで彼と会う手はずを",
+        "P"
+      ],
+      [
+        "整えました",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I",
+        "S"
+      ],
+      [
+        "'ve ",
+        "V"
+      ],
+      [
+        "already ",
+        "M"
+      ],
+      [
+        "arranged ",
+        "V"
+      ],
+      [
+        "to meet with him at my favorite restaurant.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 361,
+    "id": "091-1",
+    "title": "私はここに何年間もずっと住んでいます",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "ここに",
+        "P"
+      ],
+      [
+        "何年間も",
+        "M"
+      ],
+      [
+        "ずっと住んでいます",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I ",
+        "S"
+      ],
+      [
+        "have lived ",
+        "V"
+      ],
+      [
+        "here ",
+        "P"
+      ],
+      [
+        "for many years.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 362,
+    "id": "091-2",
+    "title": "私はカリフォルニアに3歳からずっと住",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "カリフォルニアに",
+        "P"
+      ],
+      [
+        "3歳から",
+        "M"
+      ],
+      [
+        "ずっと住んでいます",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I ",
+        "S"
+      ],
+      [
+        "have lived ",
+        "V"
+      ],
+      [
+        "in California ",
+        "P"
+      ],
+      [
+        "since I was three.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 363,
+    "id": "091-3",
+    "title": "私は東京の郊外に過去20年間ずっと住",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "東京の郊外に",
+        "P"
+      ],
+      [
+        "過去20年間",
+        "M"
+      ],
+      [
+        "ずっと住んでいます",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I ",
+        "S"
+      ],
+      [
+        "have lived ",
+        "V"
+      ],
+      [
+        "in a suburb of Tokyo ",
+        "P"
+      ],
+      [
+        "for the past 20 years.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 364,
+    "id": "091-4",
+    "title": "私は1970年3月の私たちの結婚以来",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "1970年3月の私たちの結婚以来",
+        "M"
+      ],
+      [
+        "この町に",
+        "P"
+      ],
+      [
+        "ずっと住んでいます",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I ",
+        "S"
+      ],
+      [
+        "have lived ",
+        "V"
+      ],
+      [
+        "in this town ",
+        "P"
+      ],
+      [
+        "since our marriage in March 1970.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 365,
+    "id": "092-1",
+    "title": "私はスペインに一度行ったことがありま",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "スペインに",
+        "P"
+      ],
+      [
+        "一度",
+        "M"
+      ],
+      [
+        "行ったことがあります",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I",
+        "S"
+      ],
+      [
+        "'ve been ",
+        "V"
+      ],
+      [
+        "to Spain ",
+        "P"
+      ],
+      [
+        "once.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 366,
+    "id": "092-2",
+    "title": "私は彼らの家に何回も行ったことがあり",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "彼らの家に",
+        "P"
+      ],
+      [
+        "何回も",
+        "M"
+      ],
+      [
+        "行ったことがあります",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I",
+        "S"
+      ],
+      [
+        "'ve been ",
+        "V"
+      ],
+      [
+        "to their house ",
+        "P"
+      ],
+      [
+        "many times.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 367,
+    "id": "092-3",
+    "title": "私は映画に長い間行っていません",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "映画に",
+        "P"
+      ],
+      [
+        "長い間",
+        "M"
+      ],
+      [
+        "行っていません",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I ",
+        "S"
+      ],
+      [
+        "haven't been ",
+        "V"
+      ],
+      [
+        "to the cinema ",
+        "P"
+      ],
+      [
+        "for ages.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 368,
+    "id": "092-4",
+    "title": "私は大学時代から野外コンサートにずっ",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "大学時代から",
+        "M"
+      ],
+      [
+        "野外コンサートに",
+        "P"
+      ],
+      [
+        "ずっと行っていません",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I ",
+        "S"
+      ],
+      [
+        "haven't been ",
+        "V"
+      ],
+      [
+        "to an outdoor concert ",
+        "P"
+      ],
+      [
+        "since my college days.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 369,
+    "id": "093-1",
+    "title": "あなたは今までにパリに行ったことがあ",
+    "chunks": [
+      [
+        "あなたは",
+        "S"
+      ],
+      [
+        "今までに",
+        "M"
+      ],
+      [
+        "パリに",
+        "P"
+      ],
+      [
+        "行ったことがありますか",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "Have ",
+        "V"
+      ],
+      [
+        "you ",
+        "S"
+      ],
+      [
+        "ever ",
+        "M"
+      ],
+      [
+        "been ",
+        "V"
+      ],
+      [
+        "to Paris?",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    },
+    "note": "疑問文では助動詞などがSの前に出ます。各箱は役割の対応を表し、実際の語順は完成英文で確かめます。"
+  },
+  {
+    "index": 370,
+    "id": "093-2",
+    "title": "あなたは数学の宿題全部をもうやりまし",
+    "chunks": [
+      [
+        "あなたは",
+        "S"
+      ],
+      [
+        "数学の宿題全部を",
+        "P"
+      ],
+      [
+        "もう",
+        "M"
+      ],
+      [
+        "やりましたか",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "Have ",
+        "V"
+      ],
+      [
+        "you ",
+        "S"
+      ],
+      [
+        "done ",
+        "V"
+      ],
+      [
+        "all your math homework?",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    },
+    "note": "日本語の「もう」は、英文では独立した語にならず完了形の質問に含まれます。"
+  },
+  {
+    "index": 371,
+    "id": "093-3",
+    "title": "どこかで私の鍵を見ましたか",
+    "chunks": [
+      [
+        "どこかで",
+        "M"
+      ],
+      [
+        "私の鍵を",
+        "P"
+      ],
+      [
+        "見ましたか",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "Have ",
+        "V"
+      ],
+      [
+        "you ",
+        "S"
+      ],
+      [
+        "seen ",
+        "V"
+      ],
+      [
+        "my keys ",
+        "P"
+      ],
+      [
+        "anywhere?",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    },
+    "implicit": true,
+    "implicitSubject": "あなたが（文ではかくれる）",
+    "note": "疑問文では助動詞などがSの前に出ます。各箱は役割の対応を表し、実際の語順は完成英文で確かめます。"
+  },
+  {
+    "index": 372,
+    "id": "093-4",
+    "title": "彼女が引っ越してから便りがありました",
+    "chunks": [
+      [
+        "彼女が引っ越してから",
+        "M"
+      ],
+      [
+        "便りが",
+        "P"
+      ],
+      [
+        "ありましたか",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "Have ",
+        "V"
+      ],
+      [
+        "you ",
+        "S"
+      ],
+      [
+        "heard ",
+        "V"
+      ],
+      [
+        "from her ",
+        "P"
+      ],
+      [
+        "since she moved?",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    },
+    "implicit": true,
+    "implicitSubject": "あなたが（文ではかくれる）",
+    "note": "疑問文では助動詞などがSの前に出ます。各箱は役割の対応を表し、実際の語順は完成英文で確かめます。"
+  },
+  {
+    "index": 373,
+    "id": "094-1",
+    "title": "私は10年間彼と一緒に働き続けていま",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "10年間彼と一緒に",
+        "M"
+      ],
+      [
+        "働き続けています",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I",
+        "S"
+      ],
+      [
+        "'ve been working ",
+        "V"
+      ],
+      [
+        "with him for 10 years.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 374,
+    "id": "094-2",
+    "title": "私はあなたの楽しいブログを読み続けて",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "あなたの楽しいブログを",
+        "P"
+      ],
+      [
+        "読み続けています",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I",
+        "S"
+      ],
+      [
+        "'ve been reading ",
+        "V"
+      ],
+      [
+        "your blog which is fun.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 375,
+    "id": "094-3",
+    "title": "私はウェブサイトの作り方を人々に教え",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "ウェブサイトの作り方を人々に",
+        "P"
+      ],
+      [
+        "教え続けています",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I",
+        "S"
+      ],
+      [
+        "'ve been teaching ",
+        "V"
+      ],
+      [
+        "people how to make websites.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 376,
+    "id": "094-4",
+    "title": "私はここに来てからこのことを考え続け",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "ここに来てから",
+        "M"
+      ],
+      [
+        "このことを",
+        "P"
+      ],
+      [
+        "考え続けています",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I",
+        "S"
+      ],
+      [
+        "'ve been thinking ",
+        "V"
+      ],
+      [
+        "about this ",
+        "P"
+      ],
+      [
+        "since I came here.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "skipped",
+      "reason": "「このこと」の内容が不明で、考える対象を特定できません。"
+    }
+  },
+  {
+    "index": 377,
+    "id": "095-1",
+    "title": "彼女はその時までには昼食を食べ終えて",
+    "chunks": [
+      [
+        "彼女は",
+        "S"
+      ],
+      [
+        "その時までには",
+        "M"
+      ],
+      [
+        "昼食を",
+        "P"
+      ],
+      [
+        "食べ終えているでしょう",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "She ",
+        "S"
+      ],
+      [
+        "will have finished ",
+        "V"
+      ],
+      [
+        "her lunch ",
+        "P"
+      ],
+      [
+        "by then.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 378,
+    "id": "095-2",
+    "title": "あなたが帰る前に彼は出発しているでし",
+    "chunks": [
+      [
+        "あなたが帰る前に",
+        "M"
+      ],
+      [
+        "彼は",
+        "S"
+      ],
+      [
+        "出発しているでしょう",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "He ",
+        "S"
+      ],
+      [
+        "will have left ",
+        "V"
+      ],
+      [
+        "before you return.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 379,
+    "id": "095-3",
+    "title": "私が到着する時までに彼女は寝ているで",
+    "chunks": [
+      [
+        "私が到着する時までに",
+        "M"
+      ],
+      [
+        "彼女は",
+        "S"
+      ],
+      [
+        "寝ているでしょう",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "She ",
+        "S"
+      ],
+      [
+        "will have gone to bed ",
+        "V"
+      ],
+      [
+        "by the time I arrive.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 380,
+    "id": "095-4",
+    "title": "彼女は、なぜ私が戻ってきたか今頃はも",
+    "chunks": [
+      [
+        "彼女は、",
+        "S"
+      ],
+      [
+        "なぜ私が戻ってきたか",
+        "P"
+      ],
+      [
+        "今頃はもう",
+        "M"
+      ],
+      [
+        "推測していることでしょう",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "She ",
+        "S"
+      ],
+      [
+        "will have guessed ",
+        "V"
+      ],
+      [
+        "by now ",
+        "M"
+      ],
+      [
+        "why I came back.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "skipped",
+      "reason": "戻ってきた理由を推測する思考は静止画では特定できません。"
+    }
+  },
+  {
+    "index": 381,
+    "id": "096-1",
+    "title": "私は最初にあなたに尋ねるべきだったの",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "最初に",
+        "M"
+      ],
+      [
+        "あなたに",
+        "P"
+      ],
+      [
+        "尋ねるべきだったのに",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I ",
+        "S"
+      ],
+      [
+        "should have asked ",
+        "V"
+      ],
+      [
+        "you ",
+        "P"
+      ],
+      [
+        "first.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "skipped",
+      "reason": "何を尋ねるべきだったか不明で、後悔の対象を特定できません。"
+    }
+  },
+  {
+    "index": 382,
+    "id": "096-2",
+    "title": "私はずっと前にその関係を終わらせるべ",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "ずっと前に",
+        "M"
+      ],
+      [
+        "その関係を",
+        "P"
+      ],
+      [
+        "終わらせるべきだったのに",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I ",
+        "S"
+      ],
+      [
+        "should have ended ",
+        "V"
+      ],
+      [
+        "the relationship ",
+        "P"
+      ],
+      [
+        "long ago.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 383,
+    "id": "096-3",
+    "title": "私は10分前に到着すべきだったのに",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "10分前に",
+        "M"
+      ],
+      [
+        "到着すべきだったのに",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I ",
+        "S"
+      ],
+      [
+        "should have arrived ",
+        "V"
+      ],
+      [
+        "10 minutes ago.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 384,
+    "id": "096-4",
+    "title": "私は今朝出発すべきだったのですが少し",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "今朝",
+        "M"
+      ],
+      [
+        "出発すべきだったのですが",
+        "V"
+      ],
+      [
+        "少し具合が悪かったのです",
+        "M"
+      ]
+    ],
+    "english": [
+      [
+        "I ",
+        "S"
+      ],
+      [
+        "should have gone ",
+        "V"
+      ],
+      [
+        "this morning, but I was feeling a bit ill.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    },
+    "note": "後半のbut節は理由を補うひとまとまりとしてMにまとめています。"
+  },
+  {
+    "index": 385,
+    "id": "097-1",
+    "title": "私はギターを弾くことができます",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "ギターを",
+        "P"
+      ],
+      [
+        "弾くことができます",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I ",
+        "S"
+      ],
+      [
+        "can play ",
+        "V"
+      ],
+      [
+        "the guitar.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 386,
+    "id": "097-2",
+    "title": "私はどんな状況でも彼女を信じることが",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "どんな状況でも",
+        "M"
+      ],
+      [
+        "彼女を",
+        "P"
+      ],
+      [
+        "信じることができます",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I ",
+        "S"
+      ],
+      [
+        "can trust ",
+        "V"
+      ],
+      [
+        "her ",
+        "P"
+      ],
+      [
+        "in any circumstance.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "skipped",
+      "reason": "どんな状況でも信頼するという一般的な態度は、特定の場面では確定できません。"
+    }
+  },
+  {
+    "index": 387,
+    "id": "097-3",
+    "title": "私は彼女の秘密について誰にも言うこと",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "彼女の秘密について誰にも",
+        "P"
+      ],
+      [
+        "言うことができません",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I ",
+        "S"
+      ],
+      [
+        "can't tell ",
+        "V"
+      ],
+      [
+        "anyone about her secret.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 388,
+    "id": "097-4",
+    "title": "私には給料で高価なジュエリーを買う余",
+    "chunks": [
+      [
+        "私には",
+        "S"
+      ],
+      [
+        "給料で",
+        "M"
+      ],
+      [
+        "高価なジュエリーを買う余裕は",
+        "P"
+      ],
+      [
+        "ありません",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I ",
+        "S"
+      ],
+      [
+        "can't afford ",
+        "V"
+      ],
+      [
+        "to buy costly jewels ",
+        "P"
+      ],
+      [
+        "on my salary.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 389,
+    "id": "098-1",
+    "title": "あなたに、関連した質問をしてもいいで",
+    "chunks": [
+      [
+        "あなたに、関連した質問を",
+        "P"
+      ],
+      [
+        "してもいいですか",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "Can ",
+        "V"
+      ],
+      [
+        "I ",
+        "S"
+      ],
+      [
+        "ask ",
+        "V"
+      ],
+      [
+        "you a related question?",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    },
+    "implicit": true,
+    "implicitSubject": "私は（文ではかくれる）",
+    "note": "疑問文では助動詞などがSの前に出ます。各箱は役割の対応を表し、実際の語順は完成英文で確かめます。"
+  },
+  {
+    "index": 390,
+    "id": "098-2",
+    "title": "昼食のお金をいくらかお借りしてもいい",
+    "chunks": [
+      [
+        "昼食の",
+        "M"
+      ],
+      [
+        "お金をいくらか",
+        "P"
+      ],
+      [
+        "お借りしてもいいですか",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "Can ",
+        "V"
+      ],
+      [
+        "I ",
+        "S"
+      ],
+      [
+        "borrow ",
+        "V"
+      ],
+      [
+        "some money ",
+        "P"
+      ],
+      [
+        "for lunch?",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    },
+    "implicit": true,
+    "implicitSubject": "私は（文ではかくれる）",
+    "note": "疑問文では助動詞などがSの前に出ます。各箱は役割の対応を表し、実際の語順は完成英文で確かめます。"
+  },
+  {
+    "index": 391,
+    "id": "098-3",
+    "title": "個人的にあなたとちょっと話をしてもよ",
+    "chunks": [
+      [
+        "個人的に",
+        "M"
+      ],
+      [
+        "あなたとちょっと話を",
+        "P"
+      ],
+      [
+        "してもよろしいですか",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "Could ",
+        "V"
+      ],
+      [
+        "I ",
+        "S"
+      ],
+      [
+        "have a word ",
+        "V"
+      ],
+      [
+        "with you ",
+        "P"
+      ],
+      [
+        "in private?",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    },
+    "implicit": true,
+    "implicitSubject": "私は（文ではかくれる）",
+    "note": "疑問文では助動詞などがSの前に出ます。各箱は役割の対応を表し、実際の語順は完成英文で確かめます。"
+  },
+  {
+    "index": 392,
+    "id": "098-4",
+    "title": "椅子を少し動かしていただけますか",
+    "chunks": [
+      [
+        "椅子を少し動かして",
+        "P"
+      ],
+      [
+        "いただけますか",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "Could ",
+        "V"
+      ],
+      [
+        "I ",
+        "S"
+      ],
+      [
+        "ask ",
+        "V"
+      ],
+      [
+        "you to move your chair a little?",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    },
+    "implicit": true,
+    "implicitSubject": "私は（文ではかくれる）",
+    "note": "疑問文では助動詞などがSの前に出ます。各箱は役割の対応を表し、実際の語順は完成英文で確かめます。"
+  },
+  {
+    "index": 393,
+    "id": "099-1",
+    "title": "お願いがあるのですが",
+    "chunks": [
+      [
+        "お願いが",
+        "P"
+      ],
+      [
+        "あるのですが",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "Could ",
+        "V"
+      ],
+      [
+        "you ",
+        "S"
+      ],
+      [
+        "do ",
+        "V"
+      ],
+      [
+        "me a favor?",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    },
+    "implicit": true,
+    "implicitSubject": "あなたが（文ではかくれる）",
+    "note": "疑問文では助動詞などがSの前に出ます。各箱は役割の対応を表し、実際の語順は完成英文で確かめます。"
+  },
+  {
+    "index": 394,
+    "id": "099-2",
+    "title": "最寄駅への道を教えてもらえますか",
+    "chunks": [
+      [
+        "最寄駅への道を",
+        "P"
+      ],
+      [
+        "教えてもらえますか",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "Can ",
+        "V"
+      ],
+      [
+        "you ",
+        "S"
+      ],
+      [
+        "tell ",
+        "V"
+      ],
+      [
+        "me the way to the nearest station?",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    },
+    "implicit": true,
+    "implicitSubject": "あなたが（文ではかくれる）",
+    "note": "疑問文では助動詞などがSの前に出ます。各箱は役割の対応を表し、実際の語順は完成英文で確かめます。"
+  },
+  {
+    "index": 395,
+    "id": "099-3",
+    "title": "明日私を職場に車で送ってもらえますか",
+    "chunks": [
+      [
+        "明日",
+        "M"
+      ],
+      [
+        "私を職場に",
+        "P"
+      ],
+      [
+        "車で",
+        "M"
+      ],
+      [
+        "送ってもらえますか",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "Can ",
+        "V"
+      ],
+      [
+        "you ",
+        "S"
+      ],
+      [
+        "give ",
+        "V"
+      ],
+      [
+        "me a ride to work ",
+        "P"
+      ],
+      [
+        "tomorrow?",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    },
+    "implicit": true,
+    "implicitSubject": "あなたが（文ではかくれる）",
+    "note": "疑問文では助動詞などがSの前に出ます。各箱は役割の対応を表し、実際の語順は完成英文で確かめます。"
+  },
+  {
+    "index": 396,
+    "id": "099-4",
+    "title": "私が電話をかけている間少し待っていた",
+    "chunks": [
+      [
+        "私が電話をかけている間少し",
+        "M"
+      ],
+      [
+        "待っていただけますか",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "Could ",
+        "V"
+      ],
+      [
+        "you ",
+        "S"
+      ],
+      [
+        "wait ",
+        "V"
+      ],
+      [
+        "a minute while I make a call?",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    },
+    "implicit": true,
+    "implicitSubject": "あなたが（文ではかくれる）",
+    "note": "疑問文では助動詞などがSの前に出ます。各箱は役割の対応を表し、実際の語順は完成英文で確かめます。"
+  },
+  {
+    "index": 397,
+    "id": "100-1",
+    "title": "私が間違っているかもしれません",
+    "chunks": [
+      [
+        "私が",
+        "S"
+      ],
+      [
+        "間違っている",
+        "P"
+      ],
+      [
+        "かもしれません",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I ",
+        "S"
+      ],
+      [
+        "could be ",
+        "V"
+      ],
+      [
+        "wrong.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "skipped",
+      "reason": "何が間違っているかが示されていません。"
+    }
+  },
+  {
+    "index": 398,
+    "id": "100-2",
+    "title": "私は金曜日以外のどの日でも来られます",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "金曜日以外のどの日でも",
+        "M"
+      ],
+      [
+        "来られますよ",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I ",
+        "S"
+      ],
+      [
+        "could come ",
+        "V"
+      ],
+      [
+        "any day but Friday.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 399,
+    "id": "100-3",
+    "title": "私ならたやすく彼の仕事をやれるでしょ",
+    "chunks": [
+      [
+        "私なら",
+        "S"
+      ],
+      [
+        "たやすく",
+        "M"
+      ],
+      [
+        "彼の仕事を",
+        "P"
+      ],
+      [
+        "やれるでしょう",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I ",
+        "S"
+      ],
+      [
+        "could do ",
+        "V"
+      ],
+      [
+        "his job ",
+        "P"
+      ],
+      [
+        "with my eyes shut.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "skipped",
+      "reason": "仕事の内容が不明で「たやすい」という判断を特定できません。"
+    }
+  },
+  {
+    "index": 400,
+    "id": "100-4",
+    "title": "もしその方が都合がいいなら、あなたと",
+    "chunks": [
+      [
+        "もしその方が都合がいいなら、",
+        "M"
+      ],
+      [
+        "あなたと",
+        "P"
+      ],
+      [
+        "木曜日に",
+        "M"
+      ],
+      [
+        "会えます",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I ",
+        "S"
+      ],
+      [
+        "could meet ",
+        "V"
+      ],
+      [
+        "you ",
+        "P"
+      ],
+      [
+        "on Thursday, if that's more convenient.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    },
+    "implicit": true,
+    "implicitSubject": "私は（文ではかくれる）"
+  },
+  {
+    "index": 401,
+    "id": "101-1",
+    "title": "それは本当かもしれません",
+    "chunks": [
+      [
+        "それは",
+        "S"
+      ],
+      [
+        "本当",
+        "P"
+      ],
+      [
+        "かもしれません",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "It ",
+        "S"
+      ],
+      [
+        "could be ",
+        "V"
+      ],
+      [
+        "true.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "skipped",
+      "reason": "本当かもしれない内容が示されていません。"
+    }
+  },
+  {
+    "index": 402,
+    "id": "101-2",
+    "title": "それは大惨事になっていたかもしれませ",
+    "chunks": [
+      [
+        "それは",
+        "S"
+      ],
+      [
+        "大惨事に",
+        "P"
+      ],
+      [
+        "なっていたかもしれません",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "It ",
+        "S"
+      ],
+      [
+        "could have been ",
+        "V"
+      ],
+      [
+        "a disaster.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "skipped",
+      "reason": "起こらなかった大惨事という反実仮想は静止画で確定できません。"
+    }
+  },
+  {
+    "index": 403,
+    "id": "101-3",
+    "title": "もし私たちがこのやり方でやると何週間",
+    "chunks": [
+      [
+        "もし私たちがこのやり方でやると",
+        "M"
+      ],
+      [
+        "何週間も",
+        "M"
+      ],
+      [
+        "かかるかもしれません",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "It ",
+        "S"
+      ],
+      [
+        "could take ",
+        "V"
+      ],
+      [
+        "weeks if we do it this way.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "skipped",
+      "reason": "作業の内容が不明で、何週間も必要な理由を特定できません。"
+    },
+    "implicit": true,
+    "implicitSubject": "それが（文ではかくれる）"
+  },
+  {
+    "index": 404,
+    "id": "101-4",
+    "title": "それはインターネットを使う人誰にでも",
+    "chunks": [
+      [
+        "それは",
+        "S"
+      ],
+      [
+        "インターネットを使う人誰にでも",
+        "P"
+      ],
+      [
+        "起こるかもしれません",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "It ",
+        "S"
+      ],
+      [
+        "could happen ",
+        "V"
+      ],
+      [
+        "to anyone who uses the Internet.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "skipped",
+      "reason": "インターネットで起こり得る「それ」の内容が示されていません。"
+    }
+  },
+  {
+    "index": 405,
+    "id": "102-1",
+    "title": "しばらく待つのがよいでしょう",
+    "chunks": [
+      [
+        "しばらく待つのが",
+        "S"
+      ],
+      [
+        "よい",
+        "P"
+      ],
+      [
+        "でしょう",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "It ",
+        "S"
+      ],
+      [
+        "would be ",
+        "V"
+      ],
+      [
+        "better to wait a while.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "skipped",
+      "reason": "何を待つかと、待つほうがよい理由が示されていません。"
+    },
+    "note": "英語のItは仮の主語です。内容を表す日本語のまとまりをSとして選び、完成英文でItと後ろの不定詞を確かめます。"
+  },
+  {
+    "index": 406,
+    "id": "102-2",
+    "title": "今あきらめるのは残念だ",
+    "chunks": [
+      [
+        "今",
+        "M"
+      ],
+      [
+        "あきらめるのは",
+        "S"
+      ],
+      [
+        "残念",
+        "P"
+      ],
+      [
+        "だ",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "It ",
+        "S"
+      ],
+      [
+        "would be ",
+        "V"
+      ],
+      [
+        "a pity to give up ",
+        "P"
+      ],
+      [
+        "now.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "skipped",
+      "reason": "何をあきらめるかが示されていません。"
+    },
+    "note": "英語のItは仮の主語です。内容を表す日本語のまとまりをSとして選び、完成英文でItと後ろの不定詞を確かめます。"
+  },
+  {
+    "index": 407,
+    "id": "102-3",
+    "title": "花を彼らに送るのはよい考えでしょう",
+    "chunks": [
+      [
+        "花を彼らに送るのは",
+        "S"
+      ],
+      [
+        "よい考え",
+        "P"
+      ],
+      [
+        "でしょう",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "It ",
+        "S"
+      ],
+      [
+        "would be ",
+        "V"
+      ],
+      [
+        "a nice idea to send them some flowers.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    },
+    "note": "英語のItは仮の主語です。内容を表す日本語のまとまりをSとして選び、完成英文でItと後ろの不定詞を確かめます。"
+  },
+  {
+    "index": 408,
+    "id": "102-4",
+    "title": "劇場に行く前に利用できる座席を調べる",
+    "chunks": [
+      [
+        "劇場に行く前に",
+        "M"
+      ],
+      [
+        "利用できる座席を調べるのが",
+        "S"
+      ],
+      [
+        "賢明",
+        "P"
+      ],
+      [
+        "でしょう",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "It ",
+        "S"
+      ],
+      [
+        "would be ",
+        "V"
+      ],
+      [
+        "wise to check the availability of seats ",
+        "P"
+      ],
+      [
+        "before going to the theater.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    },
+    "note": "英語のItは仮の主語です。内容を表す日本語のまとまりをSとして選び、完成英文でItと後ろの不定詞を確かめます。"
+  },
+  {
+    "index": 409,
+    "id": "103-1",
+    "title": "私は説明してみるつもりです",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "説明してみるつもりです",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I",
+        "S"
+      ],
+      [
+        "'ll try to explain.",
+        "V"
+      ]
+    ],
+    "illustration": {
+      "status": "skipped",
+      "reason": "説明の内容が示されていません。"
+    }
+  },
+  {
+    "index": 410,
+    "id": "103-2",
+    "title": "私はあなたに最後のチャンスをあげるつ",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "あなたに最後のチャンスを",
+        "P"
+      ],
+      [
+        "あげるつもりです",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I",
+        "S"
+      ],
+      [
+        "'ll give ",
+        "V"
+      ],
+      [
+        "you one last chance.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "skipped",
+      "reason": "何の最後のチャンスかが示されていません。"
+    }
+  },
+  {
+    "index": 411,
+    "id": "103-3",
+    "title": "私はあなたが私に頼むことは何でもする",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "あなたが私に頼むことは何でも",
+        "P"
+      ],
+      [
+        "するつもりです",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I",
+        "S"
+      ],
+      [
+        "'ll do ",
+        "V"
+      ],
+      [
+        "whatever you ask me to do.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "skipped",
+      "reason": "頼まれる具体的な行為が示されていません。"
+    }
+  },
+  {
+    "index": 412,
+    "id": "103-4",
+    "title": "私はもし20ドル持っていたら映画に行",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "もし20ドル持っていたら",
+        "M"
+      ],
+      [
+        "映画に",
+        "P"
+      ],
+      [
+        "行くつもりです",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I",
+        "S"
+      ],
+      [
+        "'ll go ",
+        "V"
+      ],
+      [
+        "to the cinema ",
+        "P"
+      ],
+      [
+        "if I have 20 dollars.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    }
+  },
+  {
+    "index": 413,
+    "id": "104-1",
+    "title": "私はあの才能のある俳優を忘れないでし",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "あの才能のある俳優を",
+        "P"
+      ],
+      [
+        "忘れないでしょう",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I ",
+        "S"
+      ],
+      [
+        "won't forget ",
+        "V"
+      ],
+      [
+        "that very talented actor.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "skipped",
+      "reason": "俳優を今後忘れないという記憶の意図は静止画では確定できません。"
+    }
+  },
+  {
+    "index": 414,
+    "id": "104-2",
+    "title": "私は何も危害は加えません",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "何も危害は",
+        "P"
+      ],
+      [
+        "加えません",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I ",
+        "S"
+      ],
+      [
+        "won't do ",
+        "V"
+      ],
+      [
+        "any harm.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "skipped",
+      "reason": "危害を加えないという意志は行為や対象が特定されていません。"
+    }
+  },
+  {
+    "index": 415,
+    "id": "104-3",
+    "title": "私は再び同じ間違いをすることはないで",
+    "chunks": [
+      [
+        "私は",
+        "S"
+      ],
+      [
+        "再び",
+        "M"
+      ],
+      [
+        "同じ間違いを",
+        "P"
+      ],
+      [
+        "することはないでしょう",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I ",
+        "S"
+      ],
+      [
+        "won't make ",
+        "V"
+      ],
+      [
+        "the same mistake ",
+        "P"
+      ],
+      [
+        "again.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "skipped",
+      "reason": "繰り返さない間違いの内容が示されていません。"
+    }
+  },
+  {
+    "index": 416,
+    "id": "104-4",
+    "title": "これから何日かあなたを買いものに連れ",
+    "chunks": [
+      [
+        "これから何日か",
+        "M"
+      ],
+      [
+        "あなたを買いものに連れて行く時間は",
+        "P"
+      ],
+      [
+        "ないでしょう",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I ",
+        "S"
+      ],
+      [
+        "won't have ",
+        "V"
+      ],
+      [
+        "time to take you shopping ",
+        "P"
+      ],
+      [
+        "over the next few days.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    },
+    "implicit": true,
+    "implicitSubject": "私は（文ではかくれる）"
+  },
+  {
+    "index": 417,
+    "id": "105-1",
+    "title": "私と結婚してくれますか",
+    "chunks": [
+      [
+        "私と",
+        "P"
+      ],
+      [
+        "結婚してくれますか",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "Will ",
+        "V"
+      ],
+      [
+        "you ",
+        "S"
+      ],
+      [
+        "marry ",
+        "V"
+      ],
+      [
+        "me?",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    },
+    "implicit": true,
+    "implicitSubject": "あなたが（文ではかくれる）",
+    "note": "疑問文では助動詞などがSの前に出ます。各箱は役割の対応を表し、実際の語順は完成英文で確かめます。"
+  },
+  {
+    "index": 418,
+    "id": "105-2",
+    "title": "そのためにお金を貯めてくれますか",
+    "chunks": [
+      [
+        "そのために",
+        "M"
+      ],
+      [
+        "お金を",
+        "P"
+      ],
+      [
+        "貯めてくれますか",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "Will ",
+        "V"
+      ],
+      [
+        "you ",
+        "S"
+      ],
+      [
+        "save ",
+        "V"
+      ],
+      [
+        "money ",
+        "P"
+      ],
+      [
+        "for it?",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    },
+    "implicit": true,
+    "implicitSubject": "あなたが（文ではかくれる）",
+    "note": "疑問文では助動詞などがSの前に出ます。各箱は役割の対応を表し、実際の語順は完成英文で確かめます。"
+  },
+  {
+    "index": 419,
+    "id": "105-3",
+    "title": "彼のためにお茶を入れてくれますか",
+    "chunks": [
+      [
+        "彼のために",
+        "M"
+      ],
+      [
+        "お茶を",
+        "P"
+      ],
+      [
+        "入れてくれますか",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "Will ",
+        "V"
+      ],
+      [
+        "you ",
+        "S"
+      ],
+      [
+        "make ",
+        "V"
+      ],
+      [
+        "some tea ",
+        "P"
+      ],
+      [
+        "for him?",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    },
+    "implicit": true,
+    "implicitSubject": "あなたが（文ではかくれる）",
+    "note": "疑問文では助動詞などがSの前に出ます。各箱は役割の対応を表し、実際の語順は完成英文で確かめます。"
+  },
+  {
+    "index": 420,
+    "id": "105-4",
+    "title": "もし鳴ったら電話に出てくれますか",
+    "chunks": [
+      [
+        "もし鳴ったら",
+        "M"
+      ],
+      [
+        "電話に",
+        "P"
+      ],
+      [
+        "出てくれますか",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "Will ",
+        "V"
+      ],
+      [
+        "you ",
+        "S"
+      ],
+      [
+        "answer ",
+        "V"
+      ],
+      [
+        "the phone ",
+        "P"
+      ],
+      [
+        "if it rings?",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    },
+    "implicit": true,
+    "implicitSubject": "あなたが（文ではかくれる）",
+    "note": "疑問文では助動詞などがSの前に出ます。各箱は役割の対応を表し、実際の語順は完成英文で確かめます。"
+  },
+  {
+    "index": 421,
+    "id": "106-1",
+    "title": "私にコーヒーを買ってきてくださいます",
+    "chunks": [
+      [
+        "私にコーヒーを",
+        "P"
+      ],
+      [
+        "買ってきてくださいますか",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "Would ",
+        "V"
+      ],
+      [
+        "you ",
+        "S"
+      ],
+      [
+        "get ",
+        "V"
+      ],
+      [
+        "me a coffee?",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    },
+    "implicit": true,
+    "implicitSubject": "あなたが（文ではかくれる）",
+    "note": "疑問文では助動詞などがSの前に出ます。各箱は役割の対応を表し、実際の語順は完成英文で確かめます。"
+  },
+  {
+    "index": 422,
+    "id": "106-2",
+    "title": "わかったらすぐに私に電話してください",
+    "chunks": [
+      [
+        "わかったらすぐに",
+        "M"
+      ],
+      [
+        "私に",
+        "P"
+      ],
+      [
+        "電話してくださいますか",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "Would ",
+        "V"
+      ],
+      [
+        "you ",
+        "S"
+      ],
+      [
+        "call ",
+        "V"
+      ],
+      [
+        "me ",
+        "P"
+      ],
+      [
+        "as soon as you find out?",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    },
+    "implicit": true,
+    "implicitSubject": "あなたが（文ではかくれる）",
+    "note": "疑問文では助動詞などがSの前に出ます。各箱は役割の対応を表し、実際の語順は完成英文で確かめます。"
+  },
+  {
+    "index": 423,
+    "id": "106-3",
+    "title": "私たちと一緒に来られるのはいかがでし",
+    "chunks": [
+      [
+        "私たちと一緒に来られるのは",
+        "P"
+      ],
+      [
+        "いかがでしょうか",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "Would ",
+        "V"
+      ],
+      [
+        "you ",
+        "S"
+      ],
+      [
+        "be interested ",
+        "V"
+      ],
+      [
+        "in coming with us?",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    },
+    "implicit": true,
+    "implicitSubject": "あなたが（文ではかくれる）",
+    "note": "Would you ... は、聞き手を主語にした丁寧な質問です。自然な和訳では聞き手が省略されていても、英語ではyouをSに置きます。"
+  },
+  {
+    "index": 424,
+    "id": "106-4",
+    "title": "ドアを閉めていただけますか",
+    "chunks": [
+      [
+        "ドアを",
+        "P"
+      ],
+      [
+        "閉めていただけますか",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "Would ",
+        "V"
+      ],
+      [
+        "you ",
+        "S"
+      ],
+      [
+        "be kind enough ",
+        "V"
+      ],
+      [
+        "to close the door?",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    },
+    "implicit": true,
+    "implicitSubject": "あなたが（文ではかくれる）",
+    "note": "Would you ... は、聞き手を主語にした丁寧な質問です。自然な和訳では聞き手が省略されていても、英語ではyouをSに置きます。"
+  },
+  {
+    "index": 425,
+    "id": "107-1",
+    "title": "コーヒーを一杯いかがですか",
+    "chunks": [
+      [
+        "コーヒーを一杯",
+        "P"
+      ],
+      [
+        "いかがですか",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "Would ",
+        "V"
+      ],
+      [
+        "you ",
+        "S"
+      ],
+      [
+        "like ",
+        "V"
+      ],
+      [
+        "a cup of coffee?",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    },
+    "implicit": true,
+    "implicitSubject": "あなたが（文ではかくれる）",
+    "note": "Would you ... は、聞き手を主語にした丁寧な質問です。自然な和訳では聞き手が省略されていても、英語ではyouをSに置きます。"
+  },
+  {
+    "index": 426,
+    "id": "107-2",
+    "title": "私たちと一緒に夕食に来るのはいかがで",
+    "chunks": [
+      [
+        "私たちと一緒に夕食に来るのは",
+        "P"
+      ],
+      [
+        "いかがですか",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "Would ",
+        "V"
+      ],
+      [
+        "you ",
+        "S"
+      ],
+      [
+        "like ",
+        "V"
+      ],
+      [
+        "to join us for dinner?",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    },
+    "implicit": true,
+    "implicitSubject": "あなたが（文ではかくれる）",
+    "note": "Would you ... は、聞き手を主語にした丁寧な質問です。自然な和訳では聞き手が省略されていても、英語ではyouをSに置きます。"
+  },
+  {
+    "index": 427,
+    "id": "107-3",
+    "title": "向こうの窓のそばに座るのはいかがです",
+    "chunks": [
+      [
+        "向こうの窓のそばに座るのは",
+        "P"
+      ],
+      [
+        "いかがですか",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "Would ",
+        "V"
+      ],
+      [
+        "you ",
+        "S"
+      ],
+      [
+        "like ",
+        "V"
+      ],
+      [
+        "to sit over there by the window?",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    },
+    "implicit": true,
+    "implicitSubject": "あなたが（文ではかくれる）",
+    "note": "Would you ... は、聞き手を主語にした丁寧な質問です。自然な和訳では聞き手が省略されていても、英語ではyouをSに置きます。"
+  },
+  {
+    "index": 428,
+    "id": "107-4",
+    "title": "あなたのカバンを運びましょうか",
+    "chunks": [
+      [
+        "あなたのカバンを",
+        "P"
+      ],
+      [
+        "運びましょうか",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "Would ",
+        "V"
+      ],
+      [
+        "you ",
+        "S"
+      ],
+      [
+        "like ",
+        "V"
+      ],
+      [
+        "me to carry your bag for you?",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    },
+    "implicit": true,
+    "implicitSubject": "あなたが（文ではかくれる）",
+    "note": "Would you ... は、聞き手を主語にした丁寧な質問です。自然な和訳では聞き手が省略されていても、英語ではyouをSに置きます。"
+  },
+  {
+    "index": 429,
+    "id": "108-1",
+    "title": "すみませんが水を一杯いただきたいので",
+    "chunks": [
+      [
+        "すみませんが",
+        "M"
+      ],
+      [
+        "水を一杯",
+        "P"
+      ],
+      [
+        "いただきたいのですが",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I ",
+        "S"
+      ],
+      [
+        "would like ",
+        "V"
+      ],
+      [
+        "a glass of water ",
+        "P"
+      ],
+      [
+        "please.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    },
+    "implicit": true,
+    "implicitSubject": "私は（文ではかくれる）"
+  },
+  {
+    "index": 430,
+    "id": "108-2",
+    "title": "2歳の娘のために服を何枚か買いたいの",
+    "chunks": [
+      [
+        "2歳の娘のために",
+        "M"
+      ],
+      [
+        "服を何枚か",
+        "P"
+      ],
+      [
+        "買いたいのですが",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I ",
+        "S"
+      ],
+      [
+        "would like to buy ",
+        "V"
+      ],
+      [
+        "some clothes ",
+        "P"
+      ],
+      [
+        "for my two-year old daughter.",
+        "M"
+      ]
+    ],
+    "illustration": {
+      "status": "planned"
+    },
+    "implicit": true,
+    "implicitSubject": "私は（文ではかくれる）"
+  },
+  {
+    "index": 431,
+    "id": "108-3",
+    "title": "あなたの親切に対する感謝の気持ちを表",
+    "chunks": [
+      [
+        "あなたの親切に対する感謝の気持ちを",
+        "P"
+      ],
+      [
+        "表したいのですが",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I ",
+        "S"
+      ],
+      [
+        "would like to express ",
+        "V"
+      ],
+      [
+        "my thanks for your kindness.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "skipped",
+      "reason": "親切の内容が不明で、感謝の対象を画像から特定できません。"
+    },
+    "implicit": true,
+    "implicitSubject": "私は（文ではかくれる）"
+  },
+  {
+    "index": 432,
+    "id": "108-4",
+    "title": "あなたが以前に言ったことをはっきりさ",
+    "chunks": [
+      [
+        "あなたが以前に言ったことを",
+        "P"
+      ],
+      [
+        "はっきりさせたいのですが",
+        "V"
+      ]
+    ],
+    "english": [
+      [
+        "I ",
+        "S"
+      ],
+      [
+        "would like to clarify ",
+        "V"
+      ],
+      [
+        "something you said earlier.",
+        "P"
+      ]
+    ],
+    "illustration": {
+      "status": "skipped",
+      "reason": "以前に言った発言の内容が示されていません。"
+    },
+    "implicit": true,
+    "implicitSubject": "私は（文ではかくれる）"
+  }
+]

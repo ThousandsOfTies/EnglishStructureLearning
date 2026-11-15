@@ -1,0 +1,10 @@
+{
+  "id": "100-2",
+  "status": "ready",
+  "tool": "built-in image_gen",
+  "sourceFile": "exec-32b41680-c953-4dc3-ba54-76b95f723982.png",
+  "file": "100-2.jpg",
+  "width": 1280,
+  "height": 853,
+  "sha256": "a72ce297a02d1514ce4f90e934194d6b8305f903167325bb88ebf4950af71e22"
+}

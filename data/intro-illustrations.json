@@ -1,0 +1,72 @@
+[
+  {
+    "id": "001-1",
+    "ja": "私はバスで学校に行きます。",
+    "scene": "A student riding a bus toward a clearly visible school with a schoolyard; show student by bus window and school beyond, unmistakable bus commute to school.",
+    "style": "Friendly clean editorial illustration, soft colors, clear silhouettes, natural human proportions, modest detail. Landscape composition. No text, captions, letters or watermark.",
+    "tool": "built-in image_gen"
+  },
+  {
+    "id": "001-2",
+    "ja": "私は仕事で海外に行きました。",
+    "scene": "An adult business traveler arriving in a foreign country, carrying a briefcase and rolling suitcase, with airport and distant foreign city and an airplane; professional business trip rather than vacation.",
+    "style": "Friendly clean editorial illustration, soft colors, clear silhouettes, natural human proportions, modest detail. Landscape composition. No text, captions, letters or watermark.",
+    "tool": "built-in image_gen"
+  },
+  {
+    "id": "001-3",
+    "ja": "私は妹と銀座に買いものに行きました。",
+    "scene": "An older sibling and younger sister shopping together in Ginza Tokyo, elegant department store street, holding shopping bags; clear sibling age difference.",
+    "style": "Friendly clean editorial illustration, soft colors, clear silhouettes, natural human proportions, modest detail. Landscape composition. No text, captions, letters or watermark.",
+    "tool": "built-in image_gen"
+  },
+  {
+    "id": "001-4",
+    "ja": "私は昨年の夏に休暇でハワイに行きました。",
+    "scene": "A person on summer vacation in Hawaii, palm-lined beach, Diamond Head in background, ocean and relaxed holiday clothing. Do not try to depict last year with text.",
+    "style": "Friendly clean editorial illustration, soft colors, clear silhouettes, natural human proportions, modest detail. Landscape composition. No text, captions, letters or watermark.",
+    "tool": "built-in image_gen"
+  },
+  {
+    "id": "002-1",
+    "ja": "私は大学で勉強するために長野から来ました。",
+    "scene": "A student arriving with suitcase and books at a university campus; small subtle vignette of mountainous Nagano home in background connected by travel path, emphasize relocation for university study. No text or maps labels.",
+    "style": "Friendly clean editorial illustration, soft colors, clear silhouettes, natural human proportions, modest detail. Landscape composition. No text, captions, letters or watermark.",
+    "tool": "built-in image_gen"
+  },
+  {
+    "id": "002-2",
+    "ja": "私は病院にいる彼に会いに来ました。",
+    "scene": "A visitor entering a hospital patient room to visit a male friend resting in a hospital bed, welcoming eye contact; visitor holding a small bouquet. Clear hospital setting.",
+    "style": "Friendly clean editorial illustration, soft colors, clear silhouettes, natural human proportions, modest detail. Landscape composition. No text, captions, letters or watermark.",
+    "tool": "built-in image_gen"
+  },
+  {
+    "id": "002-3",
+    "ja": "私は夜遅くに仕事から家に帰ってきました。",
+    "scene": "A tired office worker in business clothes with briefcase opening the front door of home late at night, dark sky and moon outside, warm entryway light; subtle analog clock near midnight.",
+    "style": "Friendly clean editorial illustration, soft colors, clear silhouettes, natural human proportions, modest detail. Landscape composition. No text, captions, letters or watermark.",
+    "tool": "built-in image_gen"
+  },
+  {
+    "id": "002-4",
+    "ja": "私は3カ月前に観光ビザでシカゴに来ました。",
+    "scene": "A tourist arriving in Chicago with suitcase and passport containing a generic visa stamp with no lettering; distinctive Chicago skyline and Cloud Gate visible. No attempt to depict three months ago as text.",
+    "style": "Friendly clean editorial illustration, soft colors, clear silhouettes, natural human proportions, modest detail. Landscape composition. No text, captions, letters or watermark.",
+    "tool": "built-in image_gen"
+  },
+  {
+    "id": "003-1",
+    "ja": "戸棚の上の時計を見て。",
+    "scene": "A person pointing another person's attention toward a freestanding analog clock sitting ON TOP OF a cupboard. Clock rests on cupboard top, not hanging above it. Composition makes spatial relation unmistakable.",
+    "style": "Friendly clean editorial illustration, soft colors, clear silhouettes, natural human proportions, modest detail. Landscape composition. No text, captions, letters or watermark.",
+    "tool": "built-in image_gen"
+  },
+  {
+    "id": "003-2",
+    "ja": "黄色い帽子をかぶった男の人を見て。",
+    "scene": "One person pointing gently to draw attention to a man wearing a bright yellow hat in a small park or street; yellow hat is unmistakable focal detail, man full upper body visible.",
+    "style": "Friendly clean editorial illustration, soft colors, clear silhouettes, natural human proportions, modest detail. Landscape composition. No text, captions, letters or watermark.",
+    "tool": "built-in image_gen"
+  }
+]

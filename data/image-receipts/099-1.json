@@ -1,0 +1,10 @@
+{
+  "id": "099-1",
+  "status": "ready",
+  "tool": "built-in image_gen",
+  "sourceFile": "exec-3b54d090-4bdf-4238-a66f-b0833dad9b3d.png",
+  "file": "099-1.jpg",
+  "width": 1280,
+  "height": 853,
+  "sha256": "4368a06729ba6e8a482daa7a15e0afe9e91e057a4d3ee920f68185b0aceb4e86"
+}

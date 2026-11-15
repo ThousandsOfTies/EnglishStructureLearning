@@ -1,0 +1,10 @@
+{
+  "id": "123-2",
+  "status": "ready",
+  "tool": "built-in image_gen",
+  "sourceFile": "exec-28aa1dd0-77cd-4010-ad36-508e0bac88a0.png",
+  "file": "123-2.jpg",
+  "width": 1280,
+  "height": 853,
+  "sha256": "1a648a081b75fc0d86b59e842bc7b7676628f7e4a6aabf2630a1a9a3c40545b9"
+}

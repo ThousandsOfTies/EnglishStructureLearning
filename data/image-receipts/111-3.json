@@ -1,0 +1,10 @@
+{
+  "id": "111-3",
+  "status": "ready",
+  "tool": "built-in image_gen",
+  "sourceFile": "exec-4f136694-f7d0-448b-a8c3-fe9b3613e4ca.png",
+  "file": "111-3.jpg",
+  "width": 1280,
+  "height": 720,
+  "sha256": "e46cbbb1b22acd4d44d482a84490a6f7378c12e36ecb665ac32356eb09e3d8e5"
+}

@@ -1,0 +1,6402 @@
+[
+  {
+    "index": 1,
+    "id": "001-1",
+    "chapter": 1,
+    "pattern": 1,
+    "example": 1,
+    "page": 13,
+    "ja": "私はバスで学校に行きます。",
+    "en": "I go to school by bus."
+  },
+  {
+    "index": 2,
+    "id": "001-2",
+    "chapter": 1,
+    "pattern": 1,
+    "example": 2,
+    "page": 13,
+    "ja": "私は仕事で海外に行きました。",
+    "en": "I went abroad on business."
+  },
+  {
+    "index": 3,
+    "id": "001-3",
+    "chapter": 1,
+    "pattern": 1,
+    "example": 3,
+    "page": 13,
+    "ja": "私は妹と銀座に買いものに行きました。",
+    "en": "I went shopping in Ginza with my younger sister."
+  },
+  {
+    "index": 4,
+    "id": "001-4",
+    "chapter": 1,
+    "pattern": 1,
+    "example": 4,
+    "page": 13,
+    "ja": "私は昨年の夏に休暇でハワイに行きました。",
+    "en": "I went to Hawaii on vacation last summer."
+  },
+  {
+    "index": 5,
+    "id": "002-1",
+    "chapter": 1,
+    "pattern": 2,
+    "example": 1,
+    "page": 13,
+    "ja": "私は大学で勉強するために長野から来ました。",
+    "en": "I came from Nagano to study at the university."
+  },
+  {
+    "index": 6,
+    "id": "002-2",
+    "chapter": 1,
+    "pattern": 2,
+    "example": 2,
+    "page": 13,
+    "ja": "私は病院にいる彼に会いに来ました。",
+    "en": "I came to see him in the hospital."
+  },
+  {
+    "index": 7,
+    "id": "002-3",
+    "chapter": 1,
+    "pattern": 2,
+    "example": 3,
+    "page": 13,
+    "ja": "私は夜遅くに仕事から家に帰ってきました。",
+    "en": "I came home from work late at night."
+  },
+  {
+    "index": 8,
+    "id": "002-4",
+    "chapter": 1,
+    "pattern": 2,
+    "example": 4,
+    "page": 13,
+    "ja": "私は3カ月前に観光ビザでシカゴに来ました。",
+    "en": "I came to Chicago on a tourist visa three months ago."
+  },
+  {
+    "index": 9,
+    "id": "003-1",
+    "chapter": 1,
+    "pattern": 3,
+    "example": 1,
+    "page": 14,
+    "ja": "戸棚の上の時計を見て。",
+    "en": "Look at the clock on the cupboard."
+  },
+  {
+    "index": 10,
+    "id": "003-2",
+    "chapter": 1,
+    "pattern": 3,
+    "example": 2,
+    "page": 14,
+    "ja": "黄色い帽子をかぶった男の人を見て。",
+    "en": "Look at the man with a yellow hat."
+  },
+  {
+    "index": 11,
+    "id": "003-3",
+    "chapter": 1,
+    "pattern": 3,
+    "example": 3,
+    "page": 14,
+    "ja": "女の子と向こうを走っている犬を見て。",
+    "en": "Look at the dog running over there with a girl."
+  },
+  {
+    "index": 12,
+    "id": "003-4",
+    "chapter": 1,
+    "pattern": 3,
+    "example": 4,
+    "page": 14,
+    "ja": "彼女が話している間、私は彼女の目をじっと見つめました。",
+    "en": "I looked into her eyes while she was talking."
+  },
+  {
+    "index": 13,
+    "id": "004-1",
+    "chapter": 1,
+    "pattern": 4,
+    "example": 1,
+    "page": 14,
+    "ja": "私は最適な解決策を見つけるために研究員と働きます。",
+    "en": "I work with researchers to find the best solutions."
+  },
+  {
+    "index": 14,
+    "id": "004-2",
+    "chapter": 1,
+    "pattern": 4,
+    "example": 2,
+    "page": 14,
+    "ja": "私は秘書として会社で働きました。",
+    "en": "I worked for a company as a secretary."
+  },
+  {
+    "index": 15,
+    "id": "004-3",
+    "chapter": 1,
+    "pattern": 4,
+    "example": 3,
+    "page": 14,
+    "ja": "私は10年以上銀行で働いています。",
+    "en": "I have worked for a bank for more than 10 years."
+  },
+  {
+    "index": 16,
+    "id": "004-4",
+    "chapter": 1,
+    "pattern": 4,
+    "example": 4,
+    "page": 14,
+    "ja": "私は昇進するために一生懸命働いたが無駄だった。",
+    "en": "I worked hard in vain to get a promotion."
+  },
+  {
+    "index": 17,
+    "id": "005-1",
+    "chapter": 1,
+    "pattern": 5,
+    "example": 1,
+    "page": 15,
+    "ja": "私は東京の郊外に住んでいます。",
+    "en": "I live in the suburbs of Tokyo."
+  },
+  {
+    "index": 18,
+    "id": "005-2",
+    "chapter": 1,
+    "pattern": 5,
+    "example": 2,
+    "page": 15,
+    "ja": "私はフランスの小さい町に一人で住んでいます。",
+    "en": "I live alone in a small town in France."
+  },
+  {
+    "index": 19,
+    "id": "005-3",
+    "chapter": 1,
+    "pattern": 5,
+    "example": 3,
+    "page": 15,
+    "ja": "私は家族と京都に住んでいます。",
+    "en": "I live in Kyoto with my family."
+  },
+  {
+    "index": 20,
+    "id": "005-4",
+    "chapter": 1,
+    "pattern": 5,
+    "example": 4,
+    "page": 15,
+    "ja": "私はクレジットカードなしでは大都市には住めません。",
+    "en": "I can't live in a big city without credit cards."
+  },
+  {
+    "index": 21,
+    "id": "006-1",
+    "chapter": 1,
+    "pattern": 6,
+    "example": 1,
+    "page": 15,
+    "ja": "私は子供のように踊りながら部屋中を動き回りました。",
+    "en": "I moved around the room dancing like a child."
+  },
+  {
+    "index": 22,
+    "id": "006-2",
+    "chapter": 1,
+    "pattern": 6,
+    "example": 2,
+    "page": 15,
+    "ja": "私は小さいキッチン付の新しいアパートに引っ越しました。",
+    "en": "I moved into a new apartment with a small kitchen."
+  },
+  {
+    "index": 23,
+    "id": "006-3",
+    "chapter": 1,
+    "pattern": 6,
+    "example": 3,
+    "page": 15,
+    "ja": "私は大学で歴史を勉強するために大阪に引っ越しました。",
+    "en": "I moved to Osaka to study history at college."
+  },
+  {
+    "index": 24,
+    "id": "006-4",
+    "chapter": 1,
+    "pattern": 6,
+    "example": 4,
+    "page": 15,
+    "ja": "私は仕事を見つけるために一昨日故郷から引っ越しました。",
+    "en": "I moved from my hometown the day before yesterday to find a job."
+  },
+  {
+    "index": 25,
+    "id": "007-1",
+    "chapter": 1,
+    "pattern": 7,
+    "example": 1,
+    "page": 16,
+    "ja": "私はコーヒーを飲みながら友だちと話しました。",
+    "en": "I talked over coffee with my friends."
+  },
+  {
+    "index": 26,
+    "id": "007-2",
+    "chapter": 1,
+    "pattern": 7,
+    "example": 2,
+    "page": 16,
+    "ja": "私はぼそっと独り言を言いました。",
+    "en": "I talked to myself in a low voice."
+  },
+  {
+    "index": 27,
+    "id": "007-3",
+    "chapter": 1,
+    "pattern": 7,
+    "example": 3,
+    "page": 16,
+    "ja": "私は心配事について医者に話しました。",
+    "en": "I talked to a doctor about my concerns."
+  },
+  {
+    "index": 28,
+    "id": "007-4",
+    "chapter": 1,
+    "pattern": 7,
+    "example": 4,
+    "page": 16,
+    "ja": "私はテレビを見ながら電話で2時間話しました。",
+    "en": "I talked over the phone for two hours while watching TV."
+  },
+  {
+    "index": 29,
+    "id": "008-1",
+    "chapter": 1,
+    "pattern": 8,
+    "example": 1,
+    "page": 16,
+    "ja": "私は聴衆に自分の経験について話しました。",
+    "en": "I spoke about my experience to the audience."
+  },
+  {
+    "index": 30,
+    "id": "008-2",
+    "chapter": 1,
+    "pattern": 8,
+    "example": 2,
+    "page": 16,
+    "ja": "私はその薬を飲む前に医者と話しました。",
+    "en": "I spoke with the doctor before I took the medicine."
+  },
+  {
+    "index": 31,
+    "id": "008-3",
+    "chapter": 1,
+    "pattern": 8,
+    "example": 3,
+    "page": 16,
+    "ja": "私は娘と電話で話しました。",
+    "en": "I spoke with my daughter over the phone."
+  },
+  {
+    "index": 32,
+    "id": "008-4",
+    "chapter": 1,
+    "pattern": 8,
+    "example": 4,
+    "page": 16,
+    "ja": "私は会議でエイズについて話しました。",
+    "en": "I spoke about AIDS at the conference."
+  },
+  {
+    "index": 33,
+    "id": "009-1",
+    "chapter": 1,
+    "pattern": 9,
+    "example": 1,
+    "page": 17,
+    "ja": "私は四六時中あなたのことを考えています。",
+    "en": "I am thinking of you all the time."
+  },
+  {
+    "index": 34,
+    "id": "009-2",
+    "chapter": 1,
+    "pattern": 9,
+    "example": 2,
+    "page": 17,
+    "ja": "私は子供たちの未来を考えていくだろう。",
+    "en": "I will be thinking of the future of our children."
+  },
+  {
+    "index": 35,
+    "id": "009-3",
+    "chapter": 1,
+    "pattern": 9,
+    "example": 3,
+    "page": 17,
+    "ja": "私はあなたが私に話した計画について考えていました。",
+    "en": "I was thinking about the plan you told me."
+  },
+  {
+    "index": 36,
+    "id": "009-4",
+    "chapter": 1,
+    "pattern": 9,
+    "example": 4,
+    "page": 17,
+    "ja": "私は何度も何度もそのアイデアについて考えました。",
+    "en": "I thought about the idea again and again."
+  },
+  {
+    "index": 37,
+    "id": "010-1",
+    "chapter": 1,
+    "pattern": 10,
+    "example": 1,
+    "page": 17,
+    "ja": "私は「結構です」と彼に言いました。",
+    "en": "I said to him, \"Fine\"."
+  },
+  {
+    "index": 38,
+    "id": "010-2",
+    "chapter": 1,
+    "pattern": 10,
+    "example": 2,
+    "page": 17,
+    "ja": "私は「踊りましょう」と彼女にやさしく言いました。",
+    "en": "I said to her softly \"Let's dance!\""
+  },
+  {
+    "index": 39,
+    "id": "010-3",
+    "chapter": 1,
+    "pattern": 10,
+    "example": 3,
+    "page": 17,
+    "ja": "「ごめん」と私は彼女にそっと言いました。",
+    "en": "\"I'm sorry,\" I said to her softly."
+  },
+  {
+    "index": 40,
+    "id": "010-4",
+    "chapter": 1,
+    "pattern": 10,
+    "example": 4,
+    "page": 17,
+    "ja": "「何の用?」と私は直接彼らに言いました。",
+    "en": "\"What do you want?\" I said to them directly."
+  },
+  {
+    "index": 41,
+    "id": "011-1",
+    "chapter": 1,
+    "pattern": 11,
+    "example": 1,
+    "page": 18,
+    "ja": "私は一瞬で彼女に恋をしました。",
+    "en": "I fell in love with her at once."
+  },
+  {
+    "index": 42,
+    "id": "011-2",
+    "chapter": 1,
+    "pattern": 11,
+    "example": 2,
+    "page": 18,
+    "ja": "私は同じ会社で働く女性に恋をしました。",
+    "en": "I fell in love with a woman who worked at the same firm."
+  },
+  {
+    "index": 43,
+    "id": "011-3",
+    "chapter": 1,
+    "pattern": 11,
+    "example": 3,
+    "page": 18,
+    "ja": "私は仕事の後すぐにベッドに倒れこみました。",
+    "en": "I fell into bed immediately after work."
+  },
+  {
+    "index": 44,
+    "id": "011-4",
+    "chapter": 1,
+    "pattern": 11,
+    "example": 4,
+    "page": 18,
+    "ja": "私は車にぶつかって音を立てて地面に倒れました。",
+    "en": "I fell down on the ground with a crash when the car hit me."
+  },
+  {
+    "index": 45,
+    "id": "012-1",
+    "chapter": 1,
+    "pattern": 12,
+    "example": 1,
+    "page": 18,
+    "ja": "私は彼女の隣に座りました。",
+    "en": "I sat down next to her."
+  },
+  {
+    "index": 46,
+    "id": "012-2",
+    "chapter": 1,
+    "pattern": 12,
+    "example": 2,
+    "page": 18,
+    "ja": "私はその男の椅子の向いの椅子に座りました。",
+    "en": "I sat in a chair across from the man's chair."
+  },
+  {
+    "index": 47,
+    "id": "012-3",
+    "chapter": 1,
+    "pattern": 12,
+    "example": 3,
+    "page": 18,
+    "ja": "私は彼の話を聞くために彼のそばに座りました。",
+    "en": "I sat beside him to listen to his talk."
+  },
+  {
+    "index": 48,
+    "id": "012-4",
+    "chapter": 1,
+    "pattern": 12,
+    "example": 4,
+    "page": 18,
+    "ja": "私はソファーに足を組んで座りました。",
+    "en": "I sat with my legs crossed on the sofa."
+  },
+  {
+    "index": 49,
+    "id": "013-1",
+    "chapter": 1,
+    "pattern": 13,
+    "example": 1,
+    "page": 19,
+    "ja": "彼はガンで亡くなりました。",
+    "en": "He died of cancer."
+  },
+  {
+    "index": 50,
+    "id": "013-2",
+    "chapter": 1,
+    "pattern": 13,
+    "example": 2,
+    "page": 19,
+    "ja": "彼は12歳の時に自動車事故で亡くなりました。",
+    "en": "He died in a car accident at the age of 12."
+  },
+  {
+    "index": 51,
+    "id": "013-3",
+    "chapter": 1,
+    "pattern": 13,
+    "example": 3,
+    "page": 19,
+    "ja": "彼女の母は若くして心臓発作のために亡くなりました。",
+    "en": "Her mother died young because of a heart attack."
+  },
+  {
+    "index": 52,
+    "id": "013-4",
+    "chapter": 1,
+    "pattern": 13,
+    "example": 4,
+    "page": 19,
+    "ja": "彼女は外国から伝染した病気で亡くなりました。",
+    "en": "She died from a disease brought in from a foreign country."
+  },
+  {
+    "index": 53,
+    "id": "014-1",
+    "chapter": 1,
+    "pattern": 14,
+    "example": 1,
+    "page": 19,
+    "ja": "私は100%あなたに同意します。",
+    "en": "I agree with you 100%."
+  },
+  {
+    "index": 54,
+    "id": "014-2",
+    "chapter": 1,
+    "pattern": 14,
+    "example": 2,
+    "page": 19,
+    "ja": "私は心からその提案に同意します。",
+    "en": "I agree to the proposal wholeheartedly."
+  },
+  {
+    "index": 55,
+    "id": "014-3",
+    "chapter": 1,
+    "pattern": 14,
+    "example": 3,
+    "page": 19,
+    "ja": "私はこの点で彼の意見に同意します。",
+    "en": "I agree with his opinion on this point."
+  },
+  {
+    "index": 56,
+    "id": "014-4",
+    "chapter": 1,
+    "pattern": 14,
+    "example": 4,
+    "page": 19,
+    "ja": "私は個人的には会社の方針に同意しません。",
+    "en": "I don't agree with the company's policy personally."
+  },
+  {
+    "index": 57,
+    "id": "015-1",
+    "chapter": 1,
+    "pattern": 15,
+    "example": 1,
+    "page": 20,
+    "ja": "偶然には何も起こりません。",
+    "en": "Nothing happens by chance."
+  },
+  {
+    "index": 58,
+    "id": "015-2",
+    "chapter": 1,
+    "pattern": 15,
+    "example": 2,
+    "page": 20,
+    "ja": "あなたと彼の間に何かが起こりましたか?",
+    "en": "Did something happen between you and him?"
+  },
+  {
+    "index": 59,
+    "id": "015-3",
+    "chapter": 1,
+    "pattern": 15,
+    "example": 3,
+    "page": 20,
+    "ja": "私がこのボタンを押すと何が起こるのですか?",
+    "en": "What happens if I press this button?"
+  },
+  {
+    "index": 60,
+    "id": "015-4",
+    "chapter": 1,
+    "pattern": 15,
+    "example": 4,
+    "page": 20,
+    "ja": "同じことが私に何度も繰り返して起こります。",
+    "en": "The same thing happens to me over and over again."
+  },
+  {
+    "index": 61,
+    "id": "016-1",
+    "chapter": 1,
+    "pattern": 16,
+    "example": 1,
+    "page": 20,
+    "ja": "私の人生は永遠に変わりました。",
+    "en": "My life has changed forever."
+  },
+  {
+    "index": 62,
+    "id": "016-2",
+    "chapter": 1,
+    "pattern": 16,
+    "example": 2,
+    "page": 20,
+    "ja": "一晩ですべてが完全に変わりました。",
+    "en": "Everything changed completely overnight."
+  },
+  {
+    "index": 63,
+    "id": "016-3",
+    "chapter": 1,
+    "pattern": 16,
+    "example": 3,
+    "page": 20,
+    "ja": "事態は少しよい方向へ変わるでしょう。",
+    "en": "Things will change a little bit for the better."
+  },
+  {
+    "index": 64,
+    "id": "016-4",
+    "chapter": 1,
+    "pattern": 16,
+    "example": 4,
+    "page": 20,
+    "ja": "状況はあなたの努力のおかげで劇的に変わりました。",
+    "en": "The situation changed dramatically thanks to your efforts."
+  },
+  {
+    "index": 65,
+    "id": "017-1",
+    "chapter": 2,
+    "pattern": 17,
+    "example": 1,
+    "page": 22,
+    "ja": "私は学生です。",
+    "en": "I'm a student."
+  },
+  {
+    "index": 66,
+    "id": "017-2",
+    "chapter": 2,
+    "pattern": 17,
+    "example": 2,
+    "page": 22,
+    "ja": "私はドイツから来た学生です。",
+    "en": "I'm a student from Germany."
+  },
+  {
+    "index": 67,
+    "id": "017-3",
+    "chapter": 2,
+    "pattern": 17,
+    "example": 3,
+    "page": 22,
+    "ja": "私は東京大学の学生です。",
+    "en": "I'm a student at Tokyo University."
+  },
+  {
+    "index": 68,
+    "id": "017-4",
+    "chapter": 2,
+    "pattern": 17,
+    "example": 4,
+    "page": 22,
+    "ja": "私は韓国から来た言語学を専攻している学生です。",
+    "en": "I'm a student from Korea majoring in linguistics."
+  },
+  {
+    "index": 69,
+    "id": "018-1",
+    "chapter": 2,
+    "pattern": 18,
+    "example": 1,
+    "page": 22,
+    "ja": "彼女はフランス出身です。",
+    "en": "She's from France."
+  },
+  {
+    "index": 70,
+    "id": "018-2",
+    "chapter": 2,
+    "pattern": 18,
+    "example": 2,
+    "page": 22,
+    "ja": "彼女はフランス出身で政府機関で働いています。",
+    "en": "She's from France and works for the government."
+  },
+  {
+    "index": 71,
+    "id": "018-3",
+    "chapter": 2,
+    "pattern": 18,
+    "example": 3,
+    "page": 22,
+    "ja": "彼は大学に在学中でバイオテクノロジーを勉強しています。",
+    "en": "He's in college studying biotechnology."
+  },
+  {
+    "index": 72,
+    "id": "018-4",
+    "chapter": 2,
+    "pattern": 18,
+    "example": 4,
+    "page": 22,
+    "ja": "彼はハワイで彼女と休暇中です。",
+    "en": "He's on vacation in Hawaii with his girlfriend."
+  },
+  {
+    "index": 73,
+    "id": "019-1",
+    "chapter": 2,
+    "pattern": 19,
+    "example": 1,
+    "page": 23,
+    "ja": "ごめんなさい、でもそれはできません。",
+    "en": "I'm sorry, but I can't do that."
+  },
+  {
+    "index": 74,
+    "id": "019-2",
+    "chapter": 2,
+    "pattern": 19,
+    "example": 2,
+    "page": 23,
+    "ja": "お邪魔してごめんなさい。",
+    "en": "I'm sorry to interrupt you."
+  },
+  {
+    "index": 75,
+    "id": "019-3",
+    "chapter": 2,
+    "pattern": 19,
+    "example": 3,
+    "page": 23,
+    "ja": "あなたの事故について聞いて残念です。",
+    "en": "I'm sorry to hear about your accident."
+  },
+  {
+    "index": 76,
+    "id": "019-4",
+    "chapter": 2,
+    "pattern": 19,
+    "example": 4,
+    "page": 23,
+    "ja": "あなたがランチをあまり楽しめなかったことが残念です。",
+    "en": "I'm sorry that you didn't enjoy the lunch."
+  },
+  {
+    "index": 77,
+    "id": "020-1",
+    "chapter": 2,
+    "pattern": 20,
+    "example": 1,
+    "page": 23,
+    "ja": "私はそのことがうれしいです。",
+    "en": "I'm glad about that."
+  },
+  {
+    "index": 78,
+    "id": "020-2",
+    "chapter": 2,
+    "pattern": 20,
+    "example": 2,
+    "page": 23,
+    "ja": "私はそれを聞いて心の底からうれしいです。",
+    "en": "I'm glad to hear that from the bottom of my heart."
+  },
+  {
+    "index": 79,
+    "id": "020-3",
+    "chapter": 2,
+    "pattern": 20,
+    "example": 3,
+    "page": 23,
+    "ja": "私はやっとあなたに会えてとてもうれしいです。",
+    "en": "I'm so glad that I finally met you."
+  },
+  {
+    "index": 80,
+    "id": "020-4",
+    "chapter": 2,
+    "pattern": 20,
+    "example": 4,
+    "page": 23,
+    "ja": "私は明後日喜んであなたのお子さんを見ますよ。",
+    "en": "I'd be glad to watch the kids for you the day after tomorrow."
+  },
+  {
+    "index": 81,
+    "id": "021-1",
+    "chapter": 2,
+    "pattern": 21,
+    "example": 1,
+    "page": 24,
+    "ja": "私は学校が楽しいです。",
+    "en": "I'm happy at school."
+  },
+  {
+    "index": 82,
+    "id": "021-2",
+    "chapter": 2,
+    "pattern": 21,
+    "example": 2,
+    "page": 24,
+    "ja": "私はテストの結果を喜んでいます。",
+    "en": "I'm happy with the results of my test."
+  },
+  {
+    "index": 83,
+    "id": "021-3",
+    "chapter": 2,
+    "pattern": 21,
+    "example": 3,
+    "page": 24,
+    "ja": "私は彼氏とパリで生活していて幸せです。",
+    "en": "I'm happy living in Paris with my boyfriend."
+  },
+  {
+    "index": 84,
+    "id": "021-4",
+    "chapter": 2,
+    "pattern": 21,
+    "example": 4,
+    "page": 24,
+    "ja": "彼女がよい仕事を得たことを知ってうれしいです。",
+    "en": "I'm happy to know she's got a good job."
+  },
+  {
+    "index": 85,
+    "id": "022-1",
+    "chapter": 2,
+    "pattern": 22,
+    "example": 1,
+    "page": 24,
+    "ja": "私は日本の歴史に興味があります。",
+    "en": "I'm interested in the history of Japan."
+  },
+  {
+    "index": 86,
+    "id": "022-2",
+    "chapter": 2,
+    "pattern": 22,
+    "example": 2,
+    "page": 24,
+    "ja": "私は家を買うことに興味があります。",
+    "en": "I'm interested in buying a house."
+  },
+  {
+    "index": 87,
+    "id": "022-3",
+    "chapter": 2,
+    "pattern": 22,
+    "example": 3,
+    "page": 24,
+    "ja": "私はその本について知りたいです。",
+    "en": "I'm interested to know about the book."
+  },
+  {
+    "index": 88,
+    "id": "022-4",
+    "chapter": 2,
+    "pattern": 22,
+    "example": 4,
+    "page": 24,
+    "ja": "私は写真についてもっと学びたいです。",
+    "en": "I'm interested to learn more about photography."
+  },
+  {
+    "index": 89,
+    "id": "023-1",
+    "chapter": 2,
+    "pattern": 23,
+    "example": 1,
+    "page": 25,
+    "ja": "私はその知らせに驚いています。",
+    "en": "I'm surprised at the news."
+  },
+  {
+    "index": 90,
+    "id": "023-2",
+    "chapter": 2,
+    "pattern": 23,
+    "example": 2,
+    "page": 25,
+    "ja": "私はここであなたに会うなんて驚いています。",
+    "en": "I'm surprised to see you here."
+  },
+  {
+    "index": 91,
+    "id": "023-3",
+    "chapter": 2,
+    "pattern": 23,
+    "example": 3,
+    "page": 25,
+    "ja": "私は彼女が涙ぐんでいるのを見て驚いています。",
+    "en": "I'm surprised to find her in tears."
+  },
+  {
+    "index": 92,
+    "id": "023-4",
+    "chapter": 2,
+    "pattern": 23,
+    "example": 4,
+    "page": 25,
+    "ja": "私は彼女が彼と結婚しても驚かないでしょう。",
+    "en": "I wouldn't be surprised if she married him."
+  },
+  {
+    "index": 93,
+    "id": "024-1",
+    "chapter": 2,
+    "pattern": 24,
+    "example": 1,
+    "page": 25,
+    "ja": "あなたは先生ですか?",
+    "en": "Are you a teacher?"
+  },
+  {
+    "index": 94,
+    "id": "024-2",
+    "chapter": 2,
+    "pattern": 24,
+    "example": 2,
+    "page": 25,
+    "ja": "あなたはあのボーイバンドのファンですか?",
+    "en": "Are you a fan of that boy band?"
+  },
+  {
+    "index": 95,
+    "id": "024-3",
+    "chapter": 2,
+    "pattern": 24,
+    "example": 3,
+    "page": 25,
+    "ja": "あなたはハワイへの旅行の準備ができていますか?",
+    "en": "Are you ready for the trip to Hawaii?"
+  },
+  {
+    "index": 96,
+    "id": "024-4",
+    "chapter": 2,
+    "pattern": 24,
+    "example": 4,
+    "page": 25,
+    "ja": "あなたは奨学金で海外留学することに関心がありますか?",
+    "en": "Are you interested in studying abroad on a scholarship?"
+  },
+  {
+    "index": 97,
+    "id": "025-1",
+    "chapter": 2,
+    "pattern": 25,
+    "example": 1,
+    "page": 26,
+    "ja": "彼に助けを求めることはいい考えです。",
+    "en": "It's a good idea to ask him for help."
+  },
+  {
+    "index": 98,
+    "id": "025-2",
+    "chapter": 2,
+    "pattern": 25,
+    "example": 2,
+    "page": 26,
+    "ja": "新しい人々に会うことはすばらしい方法です。",
+    "en": "It's an excellent way to meet new people."
+  },
+  {
+    "index": 99,
+    "id": "025-3",
+    "chapter": 2,
+    "pattern": 25,
+    "example": 3,
+    "page": 26,
+    "ja": "それは私の人生で最も幸せな日々の一つです。",
+    "en": "It's one of the happiest days in my life."
+  },
+  {
+    "index": 100,
+    "id": "025-4",
+    "chapter": 2,
+    "pattern": 25,
+    "example": 4,
+    "page": 26,
+    "ja": "30年以上を経て再会したのはすばらしいことです。",
+    "en": "It's a wonderful thing that we met again after more than thirty years."
+  },
+  {
+    "index": 101,
+    "id": "026-1",
+    "chapter": 2,
+    "pattern": 26,
+    "example": 1,
+    "page": 26,
+    "ja": "それは私にとって難しいです。",
+    "en": "It's difficult for me."
+  },
+  {
+    "index": 102,
+    "id": "026-2",
+    "chapter": 2,
+    "pattern": 26,
+    "example": 2,
+    "page": 26,
+    "ja": "外国に一人きりで住むことは難しいです。",
+    "en": "It's difficult to live in a foreign country all alone."
+  },
+  {
+    "index": 103,
+    "id": "026-3",
+    "chapter": 2,
+    "pattern": 26,
+    "example": 3,
+    "page": 26,
+    "ja": "私たちにとってこれを理解することは非常に重要です。",
+    "en": "It's extremely important for us to realize this."
+  },
+  {
+    "index": 104,
+    "id": "026-4",
+    "chapter": 2,
+    "pattern": 26,
+    "example": 4,
+    "page": 26,
+    "ja": "あなたが一日で自分自身でこれをやったとは驚きです。",
+    "en": "It's amazing that you did this by yourself in one day."
+  },
+  {
+    "index": 105,
+    "id": "027-1",
+    "chapter": 2,
+    "pattern": 27,
+    "example": 1,
+    "page": 27,
+    "ja": "あなたは今日はだいぶ元気に見えます。",
+    "en": "You look a lot better today."
+  },
+  {
+    "index": 106,
+    "id": "027-2",
+    "chapter": 2,
+    "pattern": 27,
+    "example": 2,
+    "page": 27,
+    "ja": "髪の毛をアップにしているあなたは素敵ですね。",
+    "en": "You look nice with your hair up."
+  },
+  {
+    "index": 107,
+    "id": "027-3",
+    "chapter": 2,
+    "pattern": 27,
+    "example": 3,
+    "page": 27,
+    "ja": "あのドレスを着ているあなたはものすごく魅力的に見えます。",
+    "en": "You look absolutely stunning in that dress."
+  },
+  {
+    "index": 108,
+    "id": "027-4",
+    "chapter": 2,
+    "pattern": 27,
+    "example": 4,
+    "page": 27,
+    "ja": "あなたはメキシコからの長旅の後で疲れているように見えます。",
+    "en": "You look tired after a long journey from Mexico."
+  },
+  {
+    "index": 109,
+    "id": "028-1",
+    "chapter": 2,
+    "pattern": 28,
+    "example": 1,
+    "page": 27,
+    "ja": "彼は幸せそうです。",
+    "en": "He seems happy."
+  },
+  {
+    "index": 110,
+    "id": "028-2",
+    "chapter": 2,
+    "pattern": 28,
+    "example": 2,
+    "page": 27,
+    "ja": "彼女はその会議でたいへん緊張しているようでした。",
+    "en": "She seemed quite nervous at the meeting."
+  },
+  {
+    "index": 111,
+    "id": "028-3",
+    "chapter": 2,
+    "pattern": 28,
+    "example": 3,
+    "page": 27,
+    "ja": "彼女はその仕事にとても適任のようです。",
+    "en": "She seems well qualified for the job."
+  },
+  {
+    "index": 112,
+    "id": "028-4",
+    "chapter": 2,
+    "pattern": 28,
+    "example": 4,
+    "page": 27,
+    "ja": "彼は彼の富と社会的地位を誇りに思い過ぎているようです。",
+    "en": "He seems too proud of his wealth and his importance in society."
+  },
+  {
+    "index": 113,
+    "id": "029-1",
+    "chapter": 2,
+    "pattern": 29,
+    "example": 1,
+    "page": 28,
+    "ja": "彼女は億万長者になりました。",
+    "en": "She became a millionaire."
+  },
+  {
+    "index": 114,
+    "id": "029-2",
+    "chapter": 2,
+    "pattern": 29,
+    "example": 2,
+    "page": 28,
+    "ja": "彼女は1990年代初期に有名になりました。",
+    "en": "She became famous in the early 1990s."
+  },
+  {
+    "index": 115,
+    "id": "029-3",
+    "chapter": 2,
+    "pattern": 29,
+    "example": 3,
+    "page": 28,
+    "ja": "彼は最初に北極に到達した人になりました。",
+    "en": "He became the first man to reach the North Pole."
+  },
+  {
+    "index": 116,
+    "id": "029-4",
+    "chapter": 2,
+    "pattern": 29,
+    "example": 4,
+    "page": 28,
+    "ja": "彼は私が妊娠していると言った時とても動揺しました。",
+    "en": "He became very emotional when I told him I was pregnant."
+  },
+  {
+    "index": 117,
+    "id": "030-1",
+    "chapter": 2,
+    "pattern": 30,
+    "example": 1,
+    "page": 28,
+    "ja": "私は最悪の気分です。",
+    "en": "I feel awful."
+  },
+  {
+    "index": 118,
+    "id": "030-2",
+    "chapter": 2,
+    "pattern": 30,
+    "example": 2,
+    "page": 28,
+    "ja": "私は彼らをがっかりさせるのは悪い気がします。",
+    "en": "I feel bad about letting them down."
+  },
+  {
+    "index": 119,
+    "id": "030-3",
+    "chapter": 2,
+    "pattern": 30,
+    "example": 3,
+    "page": 28,
+    "ja": "私は起き上がれるくらい気分がいいです。",
+    "en": "I feel well enough to sit up."
+  },
+  {
+    "index": 120,
+    "id": "030-4",
+    "chapter": 2,
+    "pattern": 30,
+    "example": 4,
+    "page": 28,
+    "ja": "私は夜一人で出かけるのが怖いです。",
+    "en": "I feel afraid of going out alone at night."
+  },
+  {
+    "index": 121,
+    "id": "031-1",
+    "chapter": 2,
+    "pattern": 31,
+    "example": 1,
+    "page": 29,
+    "ja": "何かがうまくいかなくなりました。",
+    "en": "Something went wrong."
+  },
+  {
+    "index": 122,
+    "id": "031-2",
+    "chapter": 2,
+    "pattern": 31,
+    "example": 2,
+    "page": 29,
+    "ja": "私は計算で間違ったのでしょうか?",
+    "en": "Did I go wrong in my calculations?"
+  },
+  {
+    "index": 123,
+    "id": "031-3",
+    "chapter": 2,
+    "pattern": 31,
+    "example": 3,
+    "page": 29,
+    "ja": "昼食を早く済ませるには、パスタにすれば間違いないですよ。",
+    "en": "You can't go wrong with pasta for a quick lunch."
+  },
+  {
+    "index": 124,
+    "id": "031-4",
+    "chapter": 2,
+    "pattern": 31,
+    "example": 4,
+    "page": 29,
+    "ja": "ストレスを感じている時は物事はうまくいかなくなりがちです。",
+    "en": "Things can easily go wrong when you are under stress."
+  },
+  {
+    "index": 125,
+    "id": "032-1",
+    "chapter": 2,
+    "pattern": 32,
+    "example": 1,
+    "page": 29,
+    "ja": "私の足首はだんだんよくなってきました。",
+    "en": "My ankle got better gradually."
+  },
+  {
+    "index": 126,
+    "id": "032-2",
+    "chapter": 2,
+    "pattern": 32,
+    "example": 2,
+    "page": 29,
+    "ja": "物事は時とともによくなっていくでしょう。",
+    "en": "Things will get better over time."
+  },
+  {
+    "index": 127,
+    "id": "032-3",
+    "chapter": 2,
+    "pattern": 32,
+    "example": 3,
+    "page": 29,
+    "ja": "彼らの結婚生活は時が経つにつれうまくいくようになりました。",
+    "en": "Their marriage got better as time went by."
+  },
+  {
+    "index": 128,
+    "id": "032-4",
+    "chapter": 2,
+    "pattern": 32,
+    "example": 4,
+    "page": 29,
+    "ja": "状況はあまり遠くない将来よくなるようには思えません。",
+    "en": "The situation is unlikely to get better in the foreseeable future."
+  },
+  {
+    "index": 129,
+    "id": "033-1",
+    "chapter": 3,
+    "pattern": 33,
+    "example": 1,
+    "page": 31,
+    "ja": "私は家でケーキを作りました。",
+    "en": "I made a cake at home."
+  },
+  {
+    "index": 130,
+    "id": "033-2",
+    "chapter": 3,
+    "pattern": 33,
+    "example": 2,
+    "page": 31,
+    "ja": "私は食事を全部自分一人で作りました。",
+    "en": "I made the whole meal all by myself."
+  },
+  {
+    "index": 131,
+    "id": "033-3",
+    "chapter": 3,
+    "pattern": 33,
+    "example": 3,
+    "page": 31,
+    "ja": "私はアメリカに電話をかけました。",
+    "en": "I made a phone call to the United States."
+  },
+  {
+    "index": 132,
+    "id": "033-4",
+    "chapter": 3,
+    "pattern": 33,
+    "example": 4,
+    "page": 31,
+    "ja": "あなたのエッセイについていくつか提案をしてもよろしいですか?",
+    "en": "Could I make a few suggestions about your essay?"
+  },
+  {
+    "index": 133,
+    "id": "034-1",
+    "chapter": 3,
+    "pattern": 34,
+    "example": 1,
+    "page": 31,
+    "ja": "私は食料品店での仕事を得ました。",
+    "en": "I got a job at a grocery store."
+  },
+  {
+    "index": 134,
+    "id": "034-2",
+    "chapter": 3,
+    "pattern": 34,
+    "example": 2,
+    "page": 31,
+    "ja": "私は爪をきれいにする方法についてよい考えを思いつきました。",
+    "en": "I got an idea of how to clean my nails."
+  },
+  {
+    "index": 135,
+    "id": "034-3",
+    "chapter": 3,
+    "pattern": 34,
+    "example": 3,
+    "page": 31,
+    "ja": "お祭りの間に映画を見るチャンスがありました。",
+    "en": "I got a chance to see the film during the festival."
+  },
+  {
+    "index": 136,
+    "id": "034-4",
+    "chapter": 3,
+    "pattern": 34,
+    "example": 4,
+    "page": 31,
+    "ja": "私は病院でのインターンシップの機会について情報を得ました。",
+    "en": "I got the information about internship opportunities at the hospital."
+  },
+  {
+    "index": 137,
+    "id": "035-1",
+    "chapter": 3,
+    "pattern": 35,
+    "example": 1,
+    "page": 32,
+    "ja": "私は車の写真を撮りました。",
+    "en": "I took a picture of the car."
+  },
+  {
+    "index": 138,
+    "id": "035-2",
+    "chapter": 3,
+    "pattern": 35,
+    "example": 2,
+    "page": 32,
+    "ja": "私はレストランでメニューを見ました。",
+    "en": "I took a look at the menu at a restaurant."
+  },
+  {
+    "index": 139,
+    "id": "035-3",
+    "chapter": 3,
+    "pattern": 35,
+    "example": 3,
+    "page": 32,
+    "ja": "私は市役所で行われたイベントに参加しました。",
+    "en": "I took part in the event held in the city hall."
+  },
+  {
+    "index": 140,
+    "id": "035-4",
+    "chapter": 3,
+    "pattern": 35,
+    "example": 4,
+    "page": 32,
+    "ja": "私は子供たちを守るために前もって行動を起こしました。",
+    "en": "I took action in advance to protect my children."
+  },
+  {
+    "index": 141,
+    "id": "036-1",
+    "chapter": 3,
+    "pattern": 36,
+    "example": 1,
+    "page": 32,
+    "ja": "私たちは学校に遅刻すると思います。",
+    "en": "I think we're late for school."
+  },
+  {
+    "index": 142,
+    "id": "036-2",
+    "chapter": 3,
+    "pattern": 36,
+    "example": 2,
+    "page": 32,
+    "ja": "私たちは今すぐ出発すべきだと思います。",
+    "en": "I think we should leave right now."
+  },
+  {
+    "index": 143,
+    "id": "036-3",
+    "chapter": 3,
+    "pattern": 36,
+    "example": 3,
+    "page": 32,
+    "ja": "私は彼は冗談を言っていると思いましたが彼は本気でした。",
+    "en": "I thought he was joking, but he was serious."
+  },
+  {
+    "index": 144,
+    "id": "036-4",
+    "chapter": 3,
+    "pattern": 36,
+    "example": 4,
+    "page": 32,
+    "ja": "これが私たちの将来のためによい考えだとは思いません。",
+    "en": "I don't think this is a good idea for our future."
+  },
+  {
+    "index": 145,
+    "id": "037-1",
+    "chapter": 3,
+    "pattern": 37,
+    "example": 1,
+    "page": 33,
+    "ja": "あなたはユーチューブでその映画の予告編を見ましたか?",
+    "en": "Did you see the preview of the movie on YouTube?"
+  },
+  {
+    "index": 146,
+    "id": "037-2",
+    "chapter": 3,
+    "pattern": 37,
+    "example": 2,
+    "page": 33,
+    "ja": "あなたはセカンドオピニオンのために医者にかかりましたか?",
+    "en": "Did you see a doctor to get a second opinion?"
+  },
+  {
+    "index": 147,
+    "id": "037-3",
+    "chapter": 3,
+    "pattern": 37,
+    "example": 3,
+    "page": 33,
+    "ja": "あなたは庭で数分前に彼を見ましたか?",
+    "en": "Did you see him in the garden a few minutes ago?"
+  },
+  {
+    "index": 148,
+    "id": "037-4",
+    "chapter": 3,
+    "pattern": 37,
+    "example": 4,
+    "page": 33,
+    "ja": "あなたは調査の結果をテレビで見ましたか?",
+    "en": "Did you see the results of the survey on TV?"
+  },
+  {
+    "index": 149,
+    "id": "038-1",
+    "chapter": 3,
+    "pattern": 38,
+    "example": 1,
+    "page": 33,
+    "ja": "あなたはブラウンさんを知っていますか?",
+    "en": "Do you know Mr. Brown?"
+  },
+  {
+    "index": 150,
+    "id": "038-2",
+    "chapter": 3,
+    "pattern": 38,
+    "example": 2,
+    "page": 33,
+    "ja": "あなたは彼の素性について何か知っていますか?",
+    "en": "Do you know anything about his background?"
+  },
+  {
+    "index": 151,
+    "id": "038-3",
+    "chapter": 3,
+    "pattern": 38,
+    "example": 3,
+    "page": 33,
+    "ja": "私の眼鏡がどこにあるかあなたは知っていますか?",
+    "en": "Do you know where my glasses are?"
+  },
+  {
+    "index": 152,
+    "id": "038-4",
+    "chapter": 3,
+    "pattern": 38,
+    "example": 4,
+    "page": 33,
+    "ja": "中古のパソコンを買えるところをどこか知っていますか?",
+    "en": "Do you know anywhere I can buy a second-hand PC?"
+  },
+  {
+    "index": 153,
+    "id": "039-1",
+    "chapter": 3,
+    "pattern": 39,
+    "example": 1,
+    "page": 34,
+    "ja": "クレジットカードを使うことができますか？",
+    "en": "Can I use a credit card?"
+  },
+  {
+    "index": 154,
+    "id": "039-2",
+    "chapter": 3,
+    "pattern": 39,
+    "example": 2,
+    "page": 34,
+    "ja": "電車でWIFIを使うことができますか?",
+    "en": "Can I use WIFI on the train?"
+  },
+  {
+    "index": 155,
+    "id": "039-3",
+    "chapter": 3,
+    "pattern": 39,
+    "example": 3,
+    "page": 34,
+    "ja": "夕食を作るのにそのレシピを使えますか?",
+    "en": "Can I use that recipe to make dinner?"
+  },
+  {
+    "index": 156,
+    "id": "039-4",
+    "chapter": 3,
+    "pattern": 39,
+    "example": 4,
+    "page": 34,
+    "ja": "仕事中に携帯電話を使うことができますか?",
+    "en": "Can I use my cell phone while working?"
+  },
+  {
+    "index": 157,
+    "id": "040-1",
+    "chapter": 3,
+    "pattern": 40,
+    "example": 1,
+    "page": 34,
+    "ja": "私のために私のカバンを見つけてくれますか?",
+    "en": "Can you find my bag for me?"
+  },
+  {
+    "index": 158,
+    "id": "040-2",
+    "chapter": 3,
+    "pattern": 40,
+    "example": 2,
+    "page": 34,
+    "ja": "あなたはこの近くに駐車する場所を見つけてくれますか?",
+    "en": "Can you find a place to park near here?"
+  },
+  {
+    "index": 159,
+    "id": "040-3",
+    "chapter": 3,
+    "pattern": 40,
+    "example": 3,
+    "page": 34,
+    "ja": "あなたはこの花瓶を置くよい場所を見つけられますか?",
+    "en": "Can you find a good place for this vase?"
+  },
+  {
+    "index": 160,
+    "id": "040-4",
+    "chapter": 3,
+    "pattern": 40,
+    "example": 4,
+    "page": 34,
+    "ja": "あなたは会議であなたの代理をする人を見つけられますか?",
+    "en": "Can you find someone to substitute for you at the meeting?"
+  },
+  {
+    "index": 161,
+    "id": "041-1",
+    "chapter": 3,
+    "pattern": 41,
+    "example": 1,
+    "page": 35,
+    "ja": "私は飲みものが欲しいです。",
+    "en": "I want a drink."
+  },
+  {
+    "index": 162,
+    "id": "041-2",
+    "chapter": 3,
+    "pattern": 41,
+    "example": 2,
+    "page": 35,
+    "ja": "私は部屋にお風呂が付いているホテルの部屋がいいです。",
+    "en": "I want a hotel room with an en suite bathroom."
+  },
+  {
+    "index": 163,
+    "id": "041-3",
+    "chapter": 3,
+    "pattern": 41,
+    "example": 3,
+    "page": 35,
+    "ja": "私は洗濯で手助けが欲しいです。",
+    "en": "I want some help with the laundry."
+  },
+  {
+    "index": 164,
+    "id": "041-4",
+    "chapter": 3,
+    "pattern": 41,
+    "example": 4,
+    "page": 35,
+    "ja": "私は六本木のレストランについてもっと情報が欲しいです。",
+    "en": "I want more information about a restaurant in Roppongi."
+  },
+  {
+    "index": 165,
+    "id": "042-1",
+    "chapter": 3,
+    "pattern": 42,
+    "example": 1,
+    "page": 35,
+    "ja": "私は座って一杯のお茶を飲む必要があります。",
+    "en": "I need a cup of tea and a sit-down."
+  },
+  {
+    "index": 166,
+    "id": "042-2",
+    "chapter": 3,
+    "pattern": 42,
+    "example": 2,
+    "page": 35,
+    "ja": "私には何でも悩みを打ち明けられる人が必要です。",
+    "en": "I need a shoulder to cry on."
+  },
+  {
+    "index": 167,
+    "id": "042-3",
+    "chapter": 3,
+    "pattern": 42,
+    "example": 3,
+    "page": 35,
+    "ja": "私は携帯電話用に新しい電池が必要です。",
+    "en": "I need some new batteries for my mobile phone."
+  },
+  {
+    "index": 168,
+    "id": "042-4",
+    "chapter": 3,
+    "pattern": 42,
+    "example": 4,
+    "page": 35,
+    "ja": "私は店で買い物を手伝ってくれる人が必要です。",
+    "en": "I need someone to help out in the shop."
+  },
+  {
+    "index": 169,
+    "id": "043-1",
+    "chapter": 3,
+    "pattern": 43,
+    "example": 1,
+    "page": 36,
+    "ja": "私はそのドレスを試着してみましたが合いませんでした。",
+    "en": "I tried the dress on, but it didn't fit."
+  },
+  {
+    "index": 170,
+    "id": "043-2",
+    "chapter": 3,
+    "pattern": 43,
+    "example": 2,
+    "page": 36,
+    "ja": "私は健康のためにハーブ治療を試してみました。",
+    "en": "I tried an herbal remedy for my health."
+  },
+  {
+    "index": 171,
+    "id": "043-3",
+    "chapter": 3,
+    "pattern": 43,
+    "example": 3,
+    "page": 36,
+    "ja": "私は料理している間に、いくつか生魚を味見してみました。",
+    "en": "I tried some raw fish while cooking."
+  },
+  {
+    "index": 172,
+    "id": "043-4",
+    "chapter": 3,
+    "pattern": 43,
+    "example": 4,
+    "page": 36,
+    "ja": "体重を減らすために何度もすべてを試してみたが無駄でした。",
+    "en": "I tried everything over and over again to lose weight with no success."
+  },
+  {
+    "index": 173,
+    "id": "044-1",
+    "chapter": 3,
+    "pattern": 44,
+    "example": 1,
+    "page": 36,
+    "ja": "私はあなたの新しい髪形が好きです。",
+    "en": "I like your new haircut."
+  },
+  {
+    "index": 174,
+    "id": "044-2",
+    "chapter": 3,
+    "pattern": 44,
+    "example": 2,
+    "page": 36,
+    "ja": "私はタコスのようなスパイシーな食べものが好きです。",
+    "en": "I like spicy foods such as tacos."
+  },
+  {
+    "index": 175,
+    "id": "044-3",
+    "chapter": 3,
+    "pattern": 44,
+    "example": 3,
+    "page": 36,
+    "ja": "私は秋のすべてが好きです。",
+    "en": "I like everything about autumn."
+  },
+  {
+    "index": 176,
+    "id": "044-4",
+    "chapter": 3,
+    "pattern": 44,
+    "example": 4,
+    "page": 36,
+    "ja": "私は田舎で暮らすという考えが気に入っています。",
+    "en": "I like the idea of living in the countryside."
+  },
+  {
+    "index": 177,
+    "id": "045-1",
+    "chapter": 3,
+    "pattern": 45,
+    "example": 1,
+    "page": 37,
+    "ja": "私はファーストキスを覚えています。",
+    "en": "I remember my first kiss."
+  },
+  {
+    "index": 178,
+    "id": "045-2",
+    "chapter": 3,
+    "pattern": 45,
+    "example": 2,
+    "page": 37,
+    "ja": "私は学校での初日を覚えています。",
+    "en": "I remember my first day at school."
+  },
+  {
+    "index": 179,
+    "id": "045-3",
+    "chapter": 3,
+    "pattern": 45,
+    "example": 3,
+    "page": 37,
+    "ja": "私はあなたに最初に会った時のことを覚えています。",
+    "en": "I remember the moment I first met you."
+  },
+  {
+    "index": 180,
+    "id": "045-4",
+    "chapter": 3,
+    "pattern": 45,
+    "example": 4,
+    "page": 37,
+    "ja": "私は死ぬまであなたのご親切を忘れません。",
+    "en": "I'll remember your kindness till my dying day."
+  },
+  {
+    "index": 181,
+    "id": "046-1",
+    "chapter": 3,
+    "pattern": 46,
+    "example": 1,
+    "page": 37,
+    "ja": "私は一週間に3回サッカーをします。",
+    "en": "I play football three times a week."
+  },
+  {
+    "index": 182,
+    "id": "046-2",
+    "chapter": 3,
+    "pattern": 46,
+    "example": 2,
+    "page": 37,
+    "ja": "私はリラックスするためにピアノを弾きます。",
+    "en": "I play the piano for relaxation."
+  },
+  {
+    "index": 183,
+    "id": "046-3",
+    "chapter": 3,
+    "pattern": 46,
+    "example": 3,
+    "page": 37,
+    "ja": "私はテニスだけでなく野球もします。",
+    "en": "I play baseball as well as tennis."
+  },
+  {
+    "index": 184,
+    "id": "046-4",
+    "chapter": 3,
+    "pattern": 46,
+    "example": 4,
+    "page": 37,
+    "ja": "そこにはるばる行く私の両親のためにツアーガイドの役目をします。",
+    "en": "I play the role of tour guide for my parents who go all the way there."
+  },
+  {
+    "index": 185,
+    "id": "047-1",
+    "chapter": 3,
+    "pattern": 47,
+    "example": 1,
+    "page": 38,
+    "ja": "私はラジオのダイアルを回しました。",
+    "en": "I turned the dial on the radio."
+  },
+  {
+    "index": 186,
+    "id": "047-2",
+    "chapter": 3,
+    "pattern": 47,
+    "example": 2,
+    "page": 38,
+    "ja": "私は彼女から顔をそむけました。",
+    "en": "I turned my face away from her."
+  },
+  {
+    "index": 187,
+    "id": "047-3",
+    "chapter": 3,
+    "pattern": 47,
+    "example": 3,
+    "page": 38,
+    "ja": "私はあのバイクで高速で角を曲がりました。",
+    "en": "I turned the corner at high speed on that motorcycle."
+  },
+  {
+    "index": 188,
+    "id": "047-4",
+    "chapter": 3,
+    "pattern": 47,
+    "example": 4,
+    "page": 38,
+    "ja": "私は自分の感情を隠すために彼から顔をそむけました。",
+    "en": "I turned my face from him to hide my feelings."
+  },
+  {
+    "index": 189,
+    "id": "048-1",
+    "chapter": 3,
+    "pattern": 48,
+    "example": 1,
+    "page": 38,
+    "ja": "私は床に地図を置きました。",
+    "en": "I set the map on the floor."
+  },
+  {
+    "index": 190,
+    "id": "048-2",
+    "chapter": 3,
+    "pattern": 48,
+    "example": 2,
+    "page": 38,
+    "ja": "私は午前7時に目覚ましをセットしました。",
+    "en": "I set the alarm for 7 a.m."
+  },
+  {
+    "index": 191,
+    "id": "048-3",
+    "chapter": 3,
+    "pattern": 48,
+    "example": 3,
+    "page": 38,
+    "ja": "私は将来の仕事の予定をたてました。",
+    "en": "I set the agenda for future work."
+  },
+  {
+    "index": 192,
+    "id": "048-4",
+    "chapter": 3,
+    "pattern": 48,
+    "example": 4,
+    "page": 38,
+    "ja": "私は美容師になるということを決心しました。",
+    "en": "I set my heart on becoming a hairdresser."
+  },
+  {
+    "index": 193,
+    "id": "049-1",
+    "chapter": 4,
+    "pattern": 49,
+    "example": 1,
+    "page": 40,
+    "ja": "彼女は先日私に電話をくれました。",
+    "en": "She gave me a call the other day."
+  },
+  {
+    "index": 194,
+    "id": "049-2",
+    "chapter": 4,
+    "pattern": 49,
+    "example": 2,
+    "page": 40,
+    "ja": "彼女はパーティーで何を着るべきか私にアドバイスしてくれました。",
+    "en": "She gave me some advice on what to wear at the party."
+  },
+  {
+    "index": 195,
+    "id": "049-3",
+    "chapter": 4,
+    "pattern": 49,
+    "example": 3,
+    "page": 40,
+    "ja": "彼は私に海外で勉強するチャンスをくれました。",
+    "en": "He gave me a chance to study abroad."
+  },
+  {
+    "index": 196,
+    "id": "049-4",
+    "chapter": 4,
+    "pattern": 49,
+    "example": 4,
+    "page": 40,
+    "ja": "彼は私たちの人生で最も大切な質問の答えを出してくれました。",
+    "en": "He gave me an answer to the most important question in our lives."
+  },
+  {
+    "index": 197,
+    "id": "050-1",
+    "chapter": 4,
+    "pattern": 50,
+    "example": 1,
+    "page": 40,
+    "ja": "それは私に将来のための希望を与えてくれます。",
+    "en": "It gives me hope for the future."
+  },
+  {
+    "index": 198,
+    "id": "050-2",
+    "chapter": 4,
+    "pattern": 50,
+    "example": 2,
+    "page": 40,
+    "ja": "この賞を受けることは私に大きな喜びを与えてくれます。",
+    "en": "It gives me great pleasure to accept this award."
+  },
+  {
+    "index": 199,
+    "id": "050-3",
+    "chapter": 4,
+    "pattern": 50,
+    "example": 3,
+    "page": 40,
+    "ja": "私はそれを見た時にかなりショックを受けました。",
+    "en": "It gave me quite a shock when I saw it."
+  },
+  {
+    "index": 200,
+    "id": "050-4",
+    "chapter": 4,
+    "pattern": 50,
+    "example": 4,
+    "page": 40,
+    "ja": "そんなに長い年月の後で彼女に再会するとは本当に興奮しました。",
+    "en": "It gave me a real thrill to see her again after so many years."
+  },
+  {
+    "index": 201,
+    "id": "051-1",
+    "chapter": 4,
+    "pattern": 51,
+    "example": 1,
+    "page": 41,
+    "ja": "ちょっとあなたにアドバイスしてもいいですか?",
+    "en": "Can I give you a little advice?"
+  },
+  {
+    "index": 202,
+    "id": "051-2",
+    "chapter": 4,
+    "pattern": 51,
+    "example": 2,
+    "page": 41,
+    "ja": "あなたを駅まで車に乗せてあげましょうか?",
+    "en": "Can I give you a ride to the station?"
+  },
+  {
+    "index": 203,
+    "id": "051-3",
+    "chapter": 4,
+    "pattern": 51,
+    "example": 3,
+    "page": 41,
+    "ja": "あれらのかばんを運ぶお手伝いをしましょうか?",
+    "en": "Can I give you a hand with those bags?"
+  },
+  {
+    "index": 204,
+    "id": "051-4",
+    "chapter": 4,
+    "pattern": 51,
+    "example": 4,
+    "page": 41,
+    "ja": "カメラがどのように動くか実演をしてもいいですか?",
+    "en": "Can I give you a demonstration of how the camera works?"
+  },
+  {
+    "index": 205,
+    "id": "052-1",
+    "chapter": 4,
+    "pattern": 52,
+    "example": 1,
+    "page": 41,
+    "ja": "私に数日いただけますか?",
+    "en": "Could you give me a couple of days?"
+  },
+  {
+    "index": 206,
+    "id": "052-2",
+    "chapter": 4,
+    "pattern": 52,
+    "example": 2,
+    "page": 41,
+    "ja": "家まで車に乗せていただけますか?",
+    "en": "Could you give me a lift home?"
+  },
+  {
+    "index": 207,
+    "id": "052-3",
+    "chapter": 4,
+    "pattern": 52,
+    "example": 3,
+    "page": 41,
+    "ja": "これをする最良の方法についてアドバイスいただけますか?",
+    "en": "Could you give me some advice on the best way to do this?"
+  },
+  {
+    "index": 208,
+    "id": "052-4",
+    "chapter": 4,
+    "pattern": 52,
+    "example": 4,
+    "page": 41,
+    "ja": "何人が来るのかだいたいの考えを聞かせていただけますか?",
+    "en": "Could you give me a rough idea of how many people will be coming?"
+  },
+  {
+    "index": 209,
+    "id": "053-1",
+    "chapter": 4,
+    "pattern": 53,
+    "example": 1,
+    "page": 42,
+    "ja": "あなたにやり方（道順）を教えますね。",
+    "en": "I'll show you the way."
+  },
+  {
+    "index": 210,
+    "id": "053-2",
+    "chapter": 4,
+    "pattern": 53,
+    "example": 2,
+    "page": 42,
+    "ja": "どこに事務所があるのかをあなたに教えますね。",
+    "en": "I'll show you where the office is."
+  },
+  {
+    "index": 211,
+    "id": "053-3",
+    "chapter": 4,
+    "pattern": 53,
+    "example": 3,
+    "page": 42,
+    "ja": "ボブとシェアしているアパートを見せましょう。",
+    "en": "I'll show you the apartment I share with Bob."
+  },
+  {
+    "index": 212,
+    "id": "053-4",
+    "chapter": 4,
+    "pattern": 53,
+    "example": 4,
+    "page": 42,
+    "ja": "私は自分が育った家の写真を彼に見せました。",
+    "en": "I showed him a picture of the house where I grew up."
+  },
+  {
+    "index": 213,
+    "id": "054-1",
+    "chapter": 4,
+    "pattern": 54,
+    "example": 1,
+    "page": 42,
+    "ja": "それをどうやればよいのかについて教えていただけますか?",
+    "en": "Could you show me how to do it?"
+  },
+  {
+    "index": 214,
+    "id": "054-2",
+    "chapter": 4,
+    "pattern": 54,
+    "example": 2,
+    "page": 42,
+    "ja": "駅への道を教えていただけますか？",
+    "en": "Could you show me the way to the station?"
+  },
+  {
+    "index": 215,
+    "id": "054-3",
+    "chapter": 4,
+    "pattern": 54,
+    "example": 3,
+    "page": 42,
+    "ja": "あなたが手に持っているものを見せていただけますか?",
+    "en": "Could you show me what you have in your hand?"
+  },
+  {
+    "index": 216,
+    "id": "054-4",
+    "chapter": 4,
+    "pattern": 54,
+    "example": 4,
+    "page": 42,
+    "ja": "これをやるための正しい方法を教えていただけますか?",
+    "en": "Could you show me the right way to do this?"
+  },
+  {
+    "index": 217,
+    "id": "055-1",
+    "chapter": 4,
+    "pattern": 55,
+    "example": 1,
+    "page": 43,
+    "ja": "ちょっと聞いてもいいですか?",
+    "en": "Can I ask you something?"
+  },
+  {
+    "index": 218,
+    "id": "055-2",
+    "chapter": 4,
+    "pattern": 55,
+    "example": 2,
+    "page": 43,
+    "ja": "もう一つお願いしてもいいですか?",
+    "en": "Can I ask you one more thing?"
+  },
+  {
+    "index": 219,
+    "id": "055-3",
+    "chapter": 4,
+    "pattern": 55,
+    "example": 3,
+    "page": 43,
+    "ja": "お願いしてもいいですか?",
+    "en": "Can I ask you a favor?"
+  },
+  {
+    "index": 220,
+    "id": "055-4",
+    "chapter": 4,
+    "pattern": 55,
+    "example": 4,
+    "page": 43,
+    "ja": "かなり個人的な質問をしてもいいですか?",
+    "en": "Can I ask you a rather personal question?"
+  },
+  {
+    "index": 221,
+    "id": "056-1",
+    "chapter": 4,
+    "pattern": 56,
+    "example": 1,
+    "page": 43,
+    "ja": "私は私が知っていることすべてをあなたに言います。",
+    "en": "I'll tell you all I know."
+  },
+  {
+    "index": 222,
+    "id": "056-2",
+    "chapter": 4,
+    "pattern": 56,
+    "example": 2,
+    "page": 43,
+    "ja": "私はあなたに何をすべきかを言いましょう。",
+    "en": "I'll tell you what to do."
+  },
+  {
+    "index": 223,
+    "id": "056-3",
+    "chapter": 4,
+    "pattern": 56,
+    "example": 3,
+    "page": 43,
+    "ja": "私は私の家族についての真実をあなたに言いましょう。",
+    "en": "I'll tell you the truth about my family."
+  },
+  {
+    "index": 224,
+    "id": "056-4",
+    "chapter": 4,
+    "pattern": 56,
+    "example": 4,
+    "page": 43,
+    "ja": "私は戻ってきたらそれについてすべてをあなたに言います。",
+    "en": "I'll tell you all about it when I get back."
+  },
+  {
+    "index": 225,
+    "id": "057-1",
+    "chapter": 4,
+    "pattern": 57,
+    "example": 1,
+    "page": 44,
+    "ja": "彼は別の会社での仕事を私にとってくれました。",
+    "en": "He got me a job at another company."
+  },
+  {
+    "index": 226,
+    "id": "057-2",
+    "chapter": 4,
+    "pattern": 57,
+    "example": 2,
+    "page": 44,
+    "ja": "彼は私の誕生日のためにプレゼントを手に入れてくれました。",
+    "en": "He got me a gift for my birthday."
+  },
+  {
+    "index": 227,
+    "id": "057-3",
+    "chapter": 4,
+    "pattern": 57,
+    "example": 3,
+    "page": 44,
+    "ja": "彼女は私が仕事のために必要な情報をとってくれました。",
+    "en": "She got me the information I needed for the job."
+  },
+  {
+    "index": 228,
+    "id": "057-4",
+    "chapter": 4,
+    "pattern": 57,
+    "example": 4,
+    "page": 44,
+    "ja": "私が最初にここに来たとき彼女は1週間部屋をとってくれました。",
+    "en": "She got me a room there for a week when I first came here."
+  },
+  {
+    "index": 229,
+    "id": "058-1",
+    "chapter": 4,
+    "pattern": 58,
+    "example": 1,
+    "page": 44,
+    "ja": "彼は音楽の理論を私たちに教えました。",
+    "en": "He taught us music theory."
+  },
+  {
+    "index": 230,
+    "id": "058-2",
+    "chapter": 4,
+    "pattern": 58,
+    "example": 2,
+    "page": 44,
+    "ja": "彼女は私たちに自由と忍耐を教えました。",
+    "en": "She taught us freedom and tolerance."
+  },
+  {
+    "index": 231,
+    "id": "058-3",
+    "chapter": 4,
+    "pattern": 58,
+    "example": 3,
+    "page": 44,
+    "ja": "彼は私たちに重要な教訓を教えてくれます。",
+    "en": "He teaches us an important lesson."
+  },
+  {
+    "index": 232,
+    "id": "058-4",
+    "chapter": 4,
+    "pattern": 58,
+    "example": 4,
+    "page": 44,
+    "ja": "私の父は私にどのように自転車に乗るかを教えました。",
+    "en": "My father taught me how to ride a bike."
+  },
+  {
+    "index": 233,
+    "id": "059-1",
+    "chapter": 4,
+    "pattern": 59,
+    "example": 1,
+    "page": 45,
+    "ja": "私にタオルを持ってきてください。",
+    "en": "Bring me a towel."
+  },
+  {
+    "index": 234,
+    "id": "059-2",
+    "chapter": 4,
+    "pattern": 59,
+    "example": 2,
+    "page": 45,
+    "ja": "彼は私に花や何かを持ってきたことは一度もありませんでした。",
+    "en": "He never brought me flowers or anything."
+  },
+  {
+    "index": 235,
+    "id": "059-3",
+    "chapter": 4,
+    "pattern": 59,
+    "example": 3,
+    "page": 45,
+    "ja": "彼は私に一杯の牛乳と卵をいくつか持ってきました。",
+    "en": "He brought me a glass of milk and some eggs."
+  },
+  {
+    "index": 236,
+    "id": "059-4",
+    "chapter": 4,
+    "pattern": 59,
+    "example": 4,
+    "page": 45,
+    "ja": "彼女は私に毎朝朝食をベッドに持ってきてくれました。",
+    "en": "She brought me breakfast in bed every morning."
+  },
+  {
+    "index": 237,
+    "id": "060-1",
+    "chapter": 4,
+    "pattern": 60,
+    "example": 1,
+    "page": 45,
+    "ja": "目の前のその瓶を取ってください。",
+    "en": "Pass me that bottle in front of you."
+  },
+  {
+    "index": 238,
+    "id": "060-2",
+    "chapter": 4,
+    "pattern": 60,
+    "example": 2,
+    "page": 45,
+    "ja": "ソファーの下のあの新聞を取っていただけますか?",
+    "en": "Could you pass me that newspaper under the sofa?"
+  },
+  {
+    "index": 239,
+    "id": "060-3",
+    "chapter": 4,
+    "pattern": 60,
+    "example": 3,
+    "page": 45,
+    "ja": "私にティッシュを取ってくれますか?",
+    "en": "Can you pass me a tissue?"
+  },
+  {
+    "index": 240,
+    "id": "060-4",
+    "chapter": 4,
+    "pattern": 60,
+    "example": 4,
+    "page": 45,
+    "ja": "あなたの足のそばにあるそのかばんを私に取ってくれますか?",
+    "en": "Can you pass me that bag by your feet?"
+  },
+  {
+    "index": 241,
+    "id": "061-1",
+    "chapter": 4,
+    "pattern": 61,
+    "example": 1,
+    "page": 46,
+    "ja": "私は車を彼に売りました。",
+    "en": "I sold him my car."
+  },
+  {
+    "index": 242,
+    "id": "061-2",
+    "chapter": 4,
+    "pattern": 61,
+    "example": 2,
+    "page": 46,
+    "ja": "私は彼によりよい値段で車を売りました。",
+    "en": "I sold him the car at a better rate."
+  },
+  {
+    "index": 243,
+    "id": "061-3",
+    "chapter": 4,
+    "pattern": 61,
+    "example": 3,
+    "page": 46,
+    "ja": "私は彼に家をより安い値段で売りました。",
+    "en": "I sold him the house at a lower price."
+  },
+  {
+    "index": 244,
+    "id": "061-4",
+    "chapter": 4,
+    "pattern": 61,
+    "example": 4,
+    "page": 46,
+    "ja": "私は彼女にすぐに金持ちになれるウェブサイトのアイデアを売りました。",
+    "en": "I sold her the idea of websites that will make her rich instantly."
+  },
+  {
+    "index": 245,
+    "id": "062-1",
+    "chapter": 4,
+    "pattern": 62,
+    "example": 1,
+    "page": 46,
+    "ja": "飲みものをおごるよ。",
+    "en": "I'll buy you a drink."
+  },
+  {
+    "index": 246,
+    "id": "062-2",
+    "chapter": 4,
+    "pattern": 62,
+    "example": 2,
+    "page": 46,
+    "ja": "昼食をおごるよ。",
+    "en": "I'll buy you lunch."
+  },
+  {
+    "index": 247,
+    "id": "062-3",
+    "chapter": 4,
+    "pattern": 62,
+    "example": 3,
+    "page": 46,
+    "ja": "あなたの誕生日のために何か買ってあげよう。",
+    "en": "I'll buy you something for your birthday."
+  },
+  {
+    "index": 248,
+    "id": "062-4",
+    "chapter": 4,
+    "pattern": 62,
+    "example": 4,
+    "page": 46,
+    "ja": "遅くなる埋め合わせに夕食をおごるよ。",
+    "en": "I'll buy you dinner to make up for being so late."
+  },
+  {
+    "index": 249,
+    "id": "063-1",
+    "chapter": 4,
+    "pattern": 63,
+    "example": 1,
+    "page": 47,
+    "ja": "私はあなたにチケットを送ります。",
+    "en": "I'll send you the ticket."
+  },
+  {
+    "index": 250,
+    "id": "063-2",
+    "chapter": 4,
+    "pattern": 63,
+    "example": 2,
+    "page": 47,
+    "ja": "私がオンラインになったら、あなたに私のメールアドレスを送ります。",
+    "en": "I'll send you my email address once I'm online."
+  },
+  {
+    "index": 251,
+    "id": "063-3",
+    "chapter": 4,
+    "pattern": 63,
+    "example": 3,
+    "page": 47,
+    "ja": "私はあなたに会議について思い出してもらうようにメモを送ります。",
+    "en": "I'll send you a note reminding you about the meeting."
+  },
+  {
+    "index": 252,
+    "id": "063-4",
+    "chapter": 4,
+    "pattern": 63,
+    "example": 4,
+    "page": 47,
+    "ja": "私はパーティーの招待状を送ります。",
+    "en": "I'll send you the invitation for the party."
+  },
+  {
+    "index": 253,
+    "id": "064-1",
+    "chapter": 4,
+    "pattern": 64,
+    "example": 1,
+    "page": 47,
+    "ja": "私はあなたに1時間につき10ドルを払います。",
+    "en": "I'll pay you 10 dollars an hour."
+  },
+  {
+    "index": 254,
+    "id": "064-2",
+    "chapter": 4,
+    "pattern": 64,
+    "example": 2,
+    "page": 47,
+    "ja": "私は後であなたに残りを払います。",
+    "en": "I'll pay you the rest later on."
+  },
+  {
+    "index": 255,
+    "id": "064-3",
+    "chapter": 4,
+    "pattern": 64,
+    "example": 3,
+    "page": 47,
+    "ja": "私はあなたに借りているものを来週払います。",
+    "en": "I'll pay you what I owe you next week."
+  },
+  {
+    "index": 256,
+    "id": "064-4",
+    "chapter": 4,
+    "pattern": 64,
+    "example": 4,
+    "page": 47,
+    "ja": "私は芝を刈るのに5ドルをあなたに払います。",
+    "en": "I'll pay you five dollars to mow the lawn."
+  },
+  {
+    "index": 257,
+    "id": "065-1",
+    "chapter": 5,
+    "pattern": 65,
+    "example": 1,
+    "page": 49,
+    "ja": "私の演技によって私はスターになりました。",
+    "en": "My performance made me a star."
+  },
+  {
+    "index": 258,
+    "id": "065-2",
+    "chapter": 5,
+    "pattern": 65,
+    "example": 2,
+    "page": 49,
+    "ja": "その事故によって私の人生は悲惨なものになりました。",
+    "en": "The accident made my life a misery."
+  },
+  {
+    "index": 259,
+    "id": "065-3",
+    "chapter": 5,
+    "pattern": 65,
+    "example": 3,
+    "page": 49,
+    "ja": "私の自信のある雰囲気が私をリーダーにしました。",
+    "en": "My air of confidence made me a leader."
+  },
+  {
+    "index": 260,
+    "id": "065-4",
+    "chapter": 5,
+    "pattern": 65,
+    "example": 4,
+    "page": 49,
+    "ja": "彼に忠実に従えば、彼は私を大金持ちにしてくれるでしょう。",
+    "en": "He'll make me a millionaire if I stick with him."
+  },
+  {
+    "index": 261,
+    "id": "066-1",
+    "chapter": 5,
+    "pattern": 66,
+    "example": 1,
+    "page": 49,
+    "ja": "そのワインを飲んで私は眠くなりました。",
+    "en": "The wine made me sleepy."
+  },
+  {
+    "index": 262,
+    "id": "066-2",
+    "chapter": 5,
+    "pattern": 66,
+    "example": 2,
+    "page": 49,
+    "ja": "あなたの嘘で私は不愉快になりました。",
+    "en": "You made me sick with your lies."
+  },
+  {
+    "index": 263,
+    "id": "066-3",
+    "chapter": 5,
+    "pattern": 66,
+    "example": 3,
+    "page": 49,
+    "ja": "そのことを考えると私は具合が悪くなります。",
+    "en": "The thought of it makes me sick."
+  },
+  {
+    "index": 264,
+    "id": "066-4",
+    "chapter": 5,
+    "pattern": 66,
+    "example": 4,
+    "page": 49,
+    "ja": "このところ私はそのニュースを聞くと怒る気にしかなりません。",
+    "en": "Listening to the news just makes me angry these days."
+  },
+  {
+    "index": 265,
+    "id": "067-1",
+    "chapter": 5,
+    "pattern": 67,
+    "example": 1,
+    "page": 50,
+    "ja": "それで私は気分がよくなるでしょう。",
+    "en": "That'll make me feel better."
+  },
+  {
+    "index": 266,
+    "id": "067-2",
+    "chapter": 5,
+    "pattern": 67,
+    "example": 2,
+    "page": 50,
+    "ja": "その薬で私の髪の毛は抜け落ちてしまいました。",
+    "en": "The drugs made my hair fall out."
+  },
+  {
+    "index": 267,
+    "id": "067-3",
+    "chapter": 5,
+    "pattern": 67,
+    "example": 3,
+    "page": 50,
+    "ja": "私は何があっても決心を変えないでしょう。",
+    "en": "Nothing will make me change my mind."
+  },
+  {
+    "index": 268,
+    "id": "067-4",
+    "chapter": 5,
+    "pattern": 67,
+    "example": 4,
+    "page": 50,
+    "ja": "あなたはなぜ獣医になると決心したのですか?",
+    "en": "What made you decide to be a veterinarian?"
+  },
+  {
+    "index": 269,
+    "id": "068-1",
+    "chapter": 5,
+    "pattern": 68,
+    "example": 1,
+    "page": 50,
+    "ja": "私をボブと呼んでください。",
+    "en": "Call me Bob."
+  },
+  {
+    "index": 270,
+    "id": "068-2",
+    "chapter": 5,
+    "pattern": 68,
+    "example": 2,
+    "page": 50,
+    "ja": "彼らは私を馬鹿呼ばわりしました。",
+    "en": "They called me an idiot."
+  },
+  {
+    "index": 271,
+    "id": "068-3",
+    "chapter": 5,
+    "pattern": 68,
+    "example": 3,
+    "page": 50,
+    "ja": "彼らは学校で私をさまざまな名前で呼んだものでした。",
+    "en": "They used to call me all kinds of names at school."
+  },
+  {
+    "index": 272,
+    "id": "068-4",
+    "chapter": 5,
+    "pattern": 68,
+    "example": 4,
+    "page": 50,
+    "ja": "どうしてジョンは私を友だちと呼ぶのにそんなことができたのだろうか?",
+    "en": "How could John call me a friend and then do such a thing?"
+  },
+  {
+    "index": 273,
+    "id": "069-1",
+    "chapter": 5,
+    "pattern": 69,
+    "example": 1,
+    "page": 51,
+    "ja": "私にそれをやらせてください。",
+    "en": "Let me do it."
+  },
+  {
+    "index": 274,
+    "id": "069-2",
+    "chapter": 5,
+    "pattern": 69,
+    "example": 2,
+    "page": 51,
+    "ja": "私にもう一度説明させてください！",
+    "en": "Let me explain one more time!"
+  },
+  {
+    "index": 275,
+    "id": "069-3",
+    "chapter": 5,
+    "pattern": 69,
+    "example": 3,
+    "page": 51,
+    "ja": "あなたに何か飲みものを持ってきますね。",
+    "en": "Let me get you something to drink."
+  },
+  {
+    "index": 276,
+    "id": "069-4",
+    "chapter": 5,
+    "pattern": 69,
+    "example": 4,
+    "page": 51,
+    "ja": "もしどのような助けでも必要なら知らせてくださいね。",
+    "en": "Let me know if you need any help."
+  },
+  {
+    "index": 277,
+    "id": "070-1",
+    "chapter": 5,
+    "pattern": 70,
+    "example": 1,
+    "page": 51,
+    "ja": "明日あなたに知らせますよ。",
+    "en": "I'll let you know tomorrow."
+  },
+  {
+    "index": 278,
+    "id": "070-2",
+    "chapter": 5,
+    "pattern": 70,
+    "example": 2,
+    "page": 51,
+    "ja": "あなたに私の新しい電話番号を教えますね。",
+    "en": "I'll let you have my new phone number."
+  },
+  {
+    "index": 279,
+    "id": "070-3",
+    "chapter": 5,
+    "pattern": 70,
+    "example": 3,
+    "page": 51,
+    "ja": "パスワードなしではあなたは入れません。",
+    "en": "It won't let you enter without a password."
+  },
+  {
+    "index": 280,
+    "id": "070-4",
+    "chapter": 5,
+    "pattern": 70,
+    "example": 4,
+    "page": 51,
+    "ja": "来週までには確実にあなたにお金を渡しますね。",
+    "en": "I'll let you have the money for sure by next week."
+  },
+  {
+    "index": 281,
+    "id": "071-1",
+    "chapter": 5,
+    "pattern": 71,
+    "example": 1,
+    "page": 52,
+    "ja": "仕事で忙しいのが続いています。",
+    "en": "My work keeps me busy."
+  },
+  {
+    "index": 282,
+    "id": "071-2",
+    "chapter": 5,
+    "pattern": 71,
+    "example": 2,
+    "page": 52,
+    "ja": "私は目をしっかりと閉じたままでした。",
+    "en": "I kept my eyes closed tight."
+  },
+  {
+    "index": 283,
+    "id": "071-3",
+    "chapter": 5,
+    "pattern": 71,
+    "example": 3,
+    "page": 52,
+    "ja": "それのせいで夜眠れません。",
+    "en": "It keeps me awake at night."
+  },
+  {
+    "index": 284,
+    "id": "071-4",
+    "chapter": 5,
+    "pattern": 71,
+    "example": 4,
+    "page": 52,
+    "ja": "ジョギングは日常生活で私を健康でエネルギッシュに保ちます。",
+    "en": "Jogging keeps me healthy and energetic in my daily life."
+  },
+  {
+    "index": 285,
+    "id": "072-1",
+    "chapter": 5,
+    "pattern": 72,
+    "example": 1,
+    "page": 52,
+    "ja": "私はそれは退屈だと思います。",
+    "en": "I find it boring."
+  },
+  {
+    "index": 286,
+    "id": "072-2",
+    "chapter": 5,
+    "pattern": 72,
+    "example": 2,
+    "page": 52,
+    "ja": "変化を受け入れることは難しいと思います。",
+    "en": "I find it hard to accept change."
+  },
+  {
+    "index": 287,
+    "id": "072-3",
+    "chapter": 5,
+    "pattern": 72,
+    "example": 3,
+    "page": 52,
+    "ja": "彼女が嘘をついたとは信じられません。",
+    "en": "I find it hard to believe that she lied."
+  },
+  {
+    "index": 288,
+    "id": "072-4",
+    "chapter": 5,
+    "pattern": 72,
+    "example": 4,
+    "page": 52,
+    "ja": "仕事と楽しみの間に一線を引くのは難しいと思います。",
+    "en": "I find it difficult to draw the line between work and pleasure."
+  },
+  {
+    "index": 289,
+    "id": "073-1",
+    "chapter": 5,
+    "pattern": 73,
+    "example": 1,
+    "page": 53,
+    "ja": "私は彼女が窓際のテーブルに座っているのを見ました。",
+    "en": "I saw her sitting at a window table."
+  },
+  {
+    "index": 290,
+    "id": "073-2",
+    "chapter": 5,
+    "pattern": 73,
+    "example": 2,
+    "page": 53,
+    "ja": "私は彼女がカーテン越しにのぞき見をしているのを見ました。",
+    "en": "I saw her peeping through the curtain."
+  },
+  {
+    "index": 291,
+    "id": "073-3",
+    "chapter": 5,
+    "pattern": 73,
+    "example": 3,
+    "page": 53,
+    "ja": "私は彼女が黄色い車に乗った男性と話しているのを見ました。",
+    "en": "I saw her talking to a man in a yellow car."
+  },
+  {
+    "index": 292,
+    "id": "073-4",
+    "chapter": 5,
+    "pattern": 73,
+    "example": 4,
+    "page": 53,
+    "ja": "私は彼が子育てをして同時に仕事に行くのを見たことがあります。",
+    "en": "I've seen him bring up children and go to work at the same time."
+  },
+  {
+    "index": 293,
+    "id": "074-1",
+    "chapter": 5,
+    "pattern": 74,
+    "example": 1,
+    "page": 53,
+    "ja": "私は外で犬が吠えているのを聞きました。",
+    "en": "I heard a dog barking outside."
+  },
+  {
+    "index": 294,
+    "id": "074-2",
+    "chapter": 5,
+    "pattern": 74,
+    "example": 2,
+    "page": 53,
+    "ja": "私はドアが開いてそれから閉まるのを聞きました。",
+    "en": "I heard a door open and then close."
+  },
+  {
+    "index": 295,
+    "id": "074-3",
+    "chapter": 5,
+    "pattern": 74,
+    "example": 3,
+    "page": 53,
+    "ja": "私は私の後ろで足音が近づいてくるのを聞きました。",
+    "en": "I heard footsteps approaching behind me."
+  },
+  {
+    "index": 296,
+    "id": "074-4",
+    "chapter": 5,
+    "pattern": 74,
+    "example": 4,
+    "page": 53,
+    "ja": "私は誰かが上の階で動き回るのを聞きました。",
+    "en": "I heard someone moving around upstairs."
+  },
+  {
+    "index": 297,
+    "id": "075-1",
+    "chapter": 5,
+    "pattern": 75,
+    "example": 1,
+    "page": 54,
+    "ja": "彼女は私がいくつか新しい服を選ぶのを手伝ってくれました。",
+    "en": "She helped me choose some new clothes."
+  },
+  {
+    "index": 298,
+    "id": "075-2",
+    "chapter": 5,
+    "pattern": 75,
+    "example": 2,
+    "page": 54,
+    "ja": "彼は私がアパートにペンキを塗るのを手伝いました。",
+    "en": "He helped me paint my apartment."
+  },
+  {
+    "index": 299,
+    "id": "075-3",
+    "chapter": 5,
+    "pattern": 75,
+    "example": 3,
+    "page": 54,
+    "ja": "その医者は私が悲しみを受け入れられるようにしてくれました。",
+    "en": "The doctor helped me come to terms with grief."
+  },
+  {
+    "index": 300,
+    "id": "075-4",
+    "chapter": 5,
+    "pattern": 75,
+    "example": 4,
+    "page": 54,
+    "ja": "彼は私が本箱を壁から離すのを手伝ってくれました。",
+    "en": "He helped me move the bookcases away from the wall."
+  },
+  {
+    "index": 301,
+    "id": "076-1",
+    "chapter": 5,
+    "pattern": 76,
+    "example": 1,
+    "page": 54,
+    "ja": "髪を切ってもらいました。",
+    "en": "I had my hair cut."
+  },
+  {
+    "index": 302,
+    "id": "076-2",
+    "chapter": 5,
+    "pattern": 76,
+    "example": 2,
+    "page": 54,
+    "ja": "私は駅でかばんを盗まれました。",
+    "en": "I had my bag stolen in the station."
+  },
+  {
+    "index": 303,
+    "id": "076-3",
+    "chapter": 5,
+    "pattern": 76,
+    "example": 3,
+    "page": 54,
+    "ja": "彼にあなたの荷物を運んでもらいましょう。",
+    "en": "I'll have him carry your luggage."
+  },
+  {
+    "index": 304,
+    "id": "076-4",
+    "chapter": 5,
+    "pattern": 76,
+    "example": 4,
+    "page": 54,
+    "ja": "彼に受付に車を持ってきてもらいましょう。",
+    "en": "I'll have him bring a car to the reception."
+  },
+  {
+    "index": 305,
+    "id": "077-1",
+    "chapter": 5,
+    "pattern": 77,
+    "example": 1,
+    "page": 55,
+    "ja": "私は風邪をひきはじめたのを感じます。",
+    "en": "I can feel a cold coming on."
+  },
+  {
+    "index": 306,
+    "id": "077-2",
+    "chapter": 5,
+    "pattern": 77,
+    "example": 2,
+    "page": 55,
+    "ja": "鋭い痛みが足に走るのを感じました。",
+    "en": "I felt a sharp pain run down my leg."
+  },
+  {
+    "index": 307,
+    "id": "077-3",
+    "chapter": 5,
+    "pattern": 77,
+    "example": 3,
+    "page": 55,
+    "ja": "私は手がぬれているものに触れるのを感じました。",
+    "en": "I felt my hand touch something wet."
+  },
+  {
+    "index": 308,
+    "id": "077-4",
+    "chapter": 5,
+    "pattern": 77,
+    "example": 4,
+    "page": 55,
+    "ja": "私は突然不思議な興奮が私を包むのを感じました。",
+    "en": "I felt a strange excitement taking hold of me all of a sudden."
+  },
+  {
+    "index": 309,
+    "id": "078-1",
+    "chapter": 5,
+    "pattern": 78,
+    "example": 1,
+    "page": 55,
+    "ja": "私は窓を開けたままにしておきました。",
+    "en": "I left the window open."
+  },
+  {
+    "index": 310,
+    "id": "078-2",
+    "chapter": 5,
+    "pattern": 78,
+    "example": 2,
+    "page": 55,
+    "ja": "私は彼を部屋に一人ぼっちにしました。",
+    "en": "I left him alone in the room."
+  },
+  {
+    "index": 311,
+    "id": "078-3",
+    "chapter": 5,
+    "pattern": 78,
+    "example": 3,
+    "page": 55,
+    "ja": "私はお風呂場で蛇口の水を流しっぱなしにしていました。",
+    "en": "I've left the tap running in the bathroom."
+  },
+  {
+    "index": 312,
+    "id": "078-4",
+    "chapter": 5,
+    "pattern": 78,
+    "example": 4,
+    "page": 55,
+    "ja": "私は私を待つ彼を置いていった、なぜなら彼に腹を立てていたから。",
+    "en": "I left him waiting for me because I was angry with him."
+  },
+  {
+    "index": 313,
+    "id": "079-1",
+    "chapter": 5,
+    "pattern": 79,
+    "example": 1,
+    "page": 56,
+    "ja": "彼女は爪を明るい赤に塗りました。",
+    "en": "She painted her nails bright red."
+  },
+  {
+    "index": 314,
+    "id": "079-2",
+    "chapter": 5,
+    "pattern": 79,
+    "example": 2,
+    "page": 56,
+    "ja": "私は壁を白に、そして天井をピンクに塗るつもりです。",
+    "en": "I'm going to paint the walls white and the ceiling pink."
+  },
+  {
+    "index": 315,
+    "id": "079-3",
+    "chapter": 5,
+    "pattern": 79,
+    "example": 3,
+    "page": 56,
+    "ja": "私たちは敷物に合うように戸棚を緑に塗りました。",
+    "en": "We painted the cabinets green to match the rug."
+  },
+  {
+    "index": 316,
+    "id": "079-4",
+    "chapter": 5,
+    "pattern": 79,
+    "example": 4,
+    "page": 56,
+    "ja": "壁と天井が調和するように同じ色で塗るのがよいのでは。",
+    "en": "You could paint the walls and ceilings the same color so they blend together."
+  },
+  {
+    "index": 317,
+    "id": "080-1",
+    "chapter": 5,
+    "pattern": 80,
+    "example": 1,
+    "page": 56,
+    "ja": "あなたは彼のことを友だちだと考えていますか?",
+    "en": "Do you consider him a friend?"
+  },
+  {
+    "index": 318,
+    "id": "080-2",
+    "chapter": 5,
+    "pattern": 80,
+    "example": 2,
+    "page": 56,
+    "ja": "私たちは彼女がその仕事に適しているとは考えていません。",
+    "en": "We don't consider her suitable for the job."
+  },
+  {
+    "index": 319,
+    "id": "080-3",
+    "chapter": 5,
+    "pattern": 80,
+    "example": 3,
+    "page": 56,
+    "ja": "私は招待されることはすばらしい名誉だと考えています。",
+    "en": "I consider it a great honor to be invited."
+  },
+  {
+    "index": 320,
+    "id": "080-4",
+    "chapter": 5,
+    "pattern": 80,
+    "example": 4,
+    "page": 56,
+    "ja": "彼はエンジニアリングが自分の天職の一つだと考えました。",
+    "en": "He considered engineering one of the highest possible callings."
+  },
+  {
+    "index": 321,
+    "id": "081-1",
+    "chapter": 6,
+    "pattern": 81,
+    "example": 1,
+    "page": 59,
+    "ja": "私は毎日学校に行きます。",
+    "en": "I go to school every day."
+  },
+  {
+    "index": 322,
+    "id": "081-2",
+    "chapter": 6,
+    "pattern": 81,
+    "example": 2,
+    "page": 59,
+    "ja": "私は毎週土曜日の朝、散歩に行きます。",
+    "en": "I go for a walk in the morning every Saturday."
+  },
+  {
+    "index": 323,
+    "id": "081-3",
+    "chapter": 6,
+    "pattern": 81,
+    "example": 3,
+    "page": 59,
+    "ja": "私は毎日午後10時に寝ます。",
+    "en": "I go to sleep at 10 p.m. every day."
+  },
+  {
+    "index": 324,
+    "id": "081-4",
+    "chapter": 6,
+    "pattern": 81,
+    "example": 4,
+    "page": 59,
+    "ja": "私は毎週末仕事の後でリラックスするためにカフェに行きます。",
+    "en": "I go to the cafe after work to relax every weekend."
+  },
+  {
+    "index": 325,
+    "id": "082-1",
+    "chapter": 6,
+    "pattern": 82,
+    "example": 1,
+    "page": 59,
+    "ja": "あなたは会議に出席するつもりですか?",
+    "en": "Are you going to attend the meeting?"
+  },
+  {
+    "index": 326,
+    "id": "082-2",
+    "chapter": 6,
+    "pattern": 82,
+    "example": 2,
+    "page": 59,
+    "ja": "あなたは彼らとサッカーをするつもりですか?",
+    "en": "Are you going to play soccer with them?"
+  },
+  {
+    "index": 327,
+    "id": "082-3",
+    "chapter": 6,
+    "pattern": 82,
+    "example": 3,
+    "page": 59,
+    "ja": "あなたは今晩パブでのパーティーに行くつもりですか?",
+    "en": "Are you going to go to the party in the pub tonight?"
+  },
+  {
+    "index": 328,
+    "id": "082-4",
+    "chapter": 6,
+    "pattern": 82,
+    "example": 4,
+    "page": 59,
+    "ja": "あなたはクリスマスに自分のために何かを買うつもりですか?",
+    "en": "Are you going to buy something for yourself for Christmas?"
+  },
+  {
+    "index": 329,
+    "id": "083-1",
+    "chapter": 6,
+    "pattern": 83,
+    "example": 1,
+    "page": 60,
+    "ja": "私はベストを尽くすつもりです。",
+    "en": "I'm going to do my best."
+  },
+  {
+    "index": 330,
+    "id": "083-2",
+    "chapter": 6,
+    "pattern": 83,
+    "example": 2,
+    "page": 60,
+    "ja": "私は明日中国に向けて出発するつもりです。",
+    "en": "I'm going to leave for China tomorrow."
+  },
+  {
+    "index": 331,
+    "id": "083-3",
+    "chapter": 6,
+    "pattern": 83,
+    "example": 3,
+    "page": 60,
+    "ja": "私はマネージャーに状況を説明するつもりです。",
+    "en": "I'm going to explain the situation to my manager."
+  },
+  {
+    "index": 332,
+    "id": "083-4",
+    "chapter": 6,
+    "pattern": 83,
+    "example": 4,
+    "page": 60,
+    "ja": "私は休暇に友だちに会うために旅行するつもりです。",
+    "en": "I'm going to travel to see my friend for the holiday."
+  },
+  {
+    "index": 333,
+    "id": "084-1",
+    "chapter": 6,
+    "pattern": 84,
+    "example": 1,
+    "page": 60,
+    "ja": "私は明日の夜あなたと一緒に行くつもりです。",
+    "en": "I will go with you tomorrow night."
+  },
+  {
+    "index": 334,
+    "id": "084-2",
+    "chapter": 6,
+    "pattern": 84,
+    "example": 2,
+    "page": 60,
+    "ja": "私は金曜日の午後1時までにはそこにいるつもりです。",
+    "en": "I will be there by one o'clock on Friday afternoon."
+  },
+  {
+    "index": 335,
+    "id": "084-3",
+    "chapter": 6,
+    "pattern": 84,
+    "example": 3,
+    "page": 60,
+    "ja": "私は来週あなたにスタッフ会議で再会しますよ。",
+    "en": "I will see you again at the staff meeting next week."
+  },
+  {
+    "index": 336,
+    "id": "084-4",
+    "chapter": 6,
+    "pattern": 84,
+    "example": 4,
+    "page": 60,
+    "ja": "私は後ほど細かい指示をあなたに出すつもりです。",
+    "en": "I will give you detailed instructions later."
+  },
+  {
+    "index": 337,
+    "id": "085-1",
+    "chapter": 6,
+    "pattern": 85,
+    "example": 1,
+    "page": 61,
+    "ja": "私は三日前渋谷に行きました。",
+    "en": "I went to Shibuya three days ago."
+  },
+  {
+    "index": 338,
+    "id": "085-2",
+    "chapter": 6,
+    "pattern": 85,
+    "example": 2,
+    "page": 61,
+    "ja": "私は先週彼女と映画に行きました。",
+    "en": "I went to the movies with my girlfriend last week."
+  },
+  {
+    "index": 339,
+    "id": "085-3",
+    "chapter": 6,
+    "pattern": 85,
+    "example": 3,
+    "page": 61,
+    "ja": "私は先週の日曜日に初めてジムに行きました。",
+    "en": "I went to the gym for the first time last Sunday."
+  },
+  {
+    "index": 340,
+    "id": "085-4",
+    "chapter": 6,
+    "pattern": 85,
+    "example": 4,
+    "page": 61,
+    "ja": "私は昨日さらなるアドバイスを求めて医者に行きました。",
+    "en": "I went to the doctor for further advice yesterday."
+  },
+  {
+    "index": 341,
+    "id": "086-1",
+    "chapter": 6,
+    "pattern": 86,
+    "example": 1,
+    "page": 61,
+    "ja": "もう食べましたか?",
+    "en": "Did you eat yet?"
+  },
+  {
+    "index": 342,
+    "id": "086-2",
+    "chapter": 6,
+    "pattern": 86,
+    "example": 2,
+    "page": 61,
+    "ja": "あなたは昨夜パーティーで楽しく過ごしましたか?",
+    "en": "Did you have a good time at the party last night?"
+  },
+  {
+    "index": 343,
+    "id": "086-3",
+    "chapter": 6,
+    "pattern": 86,
+    "example": 3,
+    "page": 61,
+    "ja": "お母さんの誕生日のためにすでに買いものに行きましたか?",
+    "en": "Did you go shopping for Mom's birthday already?"
+  },
+  {
+    "index": 344,
+    "id": "086-4",
+    "chapter": 6,
+    "pattern": 86,
+    "example": 4,
+    "page": 61,
+    "ja": "あなたは先週公立図書館で何か役に立つ情報を見つけましたか?",
+    "en": "Did you find any useful information in the public library last week?"
+  },
+  {
+    "index": 345,
+    "id": "087-1",
+    "chapter": 6,
+    "pattern": 87,
+    "example": 1,
+    "page": 62,
+    "ja": "彼はSF映画を見ています。",
+    "en": "He is watching a sci-fi movie."
+  },
+  {
+    "index": 346,
+    "id": "087-2",
+    "chapter": 6,
+    "pattern": 87,
+    "example": 2,
+    "page": 62,
+    "ja": "彼は親友と一緒にテニスをしています。",
+    "en": "He is playing tennis with his close friend."
+  },
+  {
+    "index": 347,
+    "id": "087-3",
+    "chapter": 6,
+    "pattern": 87,
+    "example": 3,
+    "page": 62,
+    "ja": "彼女は父を助けるために医学部で勉強しています。",
+    "en": "She is studying at medical school to help her father."
+  },
+  {
+    "index": 348,
+    "id": "087-4",
+    "chapter": 6,
+    "pattern": 87,
+    "example": 4,
+    "page": 62,
+    "ja": "彼女はその女の子のことで彼氏と言い争いをしています。",
+    "en": "She is having an argument with her boyfriend about the girl."
+  },
+  {
+    "index": 349,
+    "id": "088-1",
+    "chapter": 6,
+    "pattern": 88,
+    "example": 1,
+    "page": 62,
+    "ja": "私はその時寝ていました。",
+    "en": "I was sleeping at that time."
+  },
+  {
+    "index": 350,
+    "id": "088-2",
+    "chapter": 6,
+    "pattern": 88,
+    "example": 2,
+    "page": 62,
+    "ja": "私は支店長として働いていました。",
+    "en": "I was working as a branch manager."
+  },
+  {
+    "index": 351,
+    "id": "088-3",
+    "chapter": 6,
+    "pattern": 88,
+    "example": 3,
+    "page": 62,
+    "ja": "私は外国にいた時、金銭的に困難な時を過ごしていました。",
+    "en": "I was having a difficult time financially when I was abroad."
+  },
+  {
+    "index": 352,
+    "id": "088-4",
+    "chapter": 6,
+    "pattern": 88,
+    "example": 4,
+    "page": 62,
+    "ja": "私は誰かが来てドアをノックした時インターネットをしていました。",
+    "en": "I was surfing the Internet when somebody came and knocked on the door."
+  },
+  {
+    "index": 353,
+    "id": "089-1",
+    "chapter": 6,
+    "pattern": 89,
+    "example": 1,
+    "page": 63,
+    "ja": "私はすぐ出発する予定です。",
+    "en": "I will be leaving soon."
+  },
+  {
+    "index": 354,
+    "id": "089-2",
+    "chapter": 6,
+    "pattern": 89,
+    "example": 2,
+    "page": 63,
+    "ja": "私は大学で講義をする予定です。",
+    "en": "I will be giving a lecture at the university."
+  },
+  {
+    "index": 355,
+    "id": "089-3",
+    "chapter": 6,
+    "pattern": 89,
+    "example": 3,
+    "page": 63,
+    "ja": "私は来週彼らとこの問題を議論する予定です。",
+    "en": "I will be discussing this issue with them next week."
+  },
+  {
+    "index": 356,
+    "id": "089-4",
+    "chapter": 6,
+    "pattern": 89,
+    "example": 4,
+    "page": 63,
+    "ja": "私は明日のこの時間には家のソファーでテレビを見ているだろう。",
+    "en": "I will be watching TV at this time tomorrow at home on my sofa."
+  },
+  {
+    "index": 357,
+    "id": "090-1",
+    "chapter": 6,
+    "pattern": 90,
+    "example": 1,
+    "page": 63,
+    "ja": "私はすでに彼らにメールを送りました。",
+    "en": "I've already emailed them."
+  },
+  {
+    "index": 358,
+    "id": "090-2",
+    "chapter": 6,
+    "pattern": 90,
+    "example": 2,
+    "page": 63,
+    "ja": "私はすでに何回もこれをやりました。",
+    "en": "I've already done this so many times."
+  },
+  {
+    "index": 359,
+    "id": "090-3",
+    "chapter": 6,
+    "pattern": 90,
+    "example": 3,
+    "page": 63,
+    "ja": "私はそれは可能ではないとすでにあなたに言いました。",
+    "en": "I've already told you it's not possible."
+  },
+  {
+    "index": 360,
+    "id": "090-4",
+    "chapter": 6,
+    "pattern": 90,
+    "example": 4,
+    "page": 63,
+    "ja": "私はすでにお気に入りのレストランで彼と会う手はずを整えました。",
+    "en": "I've already arranged to meet with him at my favorite restaurant."
+  },
+  {
+    "index": 361,
+    "id": "091-1",
+    "chapter": 6,
+    "pattern": 91,
+    "example": 1,
+    "page": 64,
+    "ja": "私はここに何年間もずっと住んでいます。",
+    "en": "I have lived here for many years."
+  },
+  {
+    "index": 362,
+    "id": "091-2",
+    "chapter": 6,
+    "pattern": 91,
+    "example": 2,
+    "page": 64,
+    "ja": "私はカリフォルニアに3歳からずっと住んでいます。",
+    "en": "I have lived in California since I was three."
+  },
+  {
+    "index": 363,
+    "id": "091-3",
+    "chapter": 6,
+    "pattern": 91,
+    "example": 3,
+    "page": 64,
+    "ja": "私は東京の郊外に過去20年間ずっと住んでいます。",
+    "en": "I have lived in a suburb of Tokyo for the past 20 years."
+  },
+  {
+    "index": 364,
+    "id": "091-4",
+    "chapter": 6,
+    "pattern": 91,
+    "example": 4,
+    "page": 64,
+    "ja": "私は1970年3月の私たちの結婚以来この町にずっと住んでいます。",
+    "en": "I have lived in this town since our marriage in March 1970."
+  },
+  {
+    "index": 365,
+    "id": "092-1",
+    "chapter": 6,
+    "pattern": 92,
+    "example": 1,
+    "page": 64,
+    "ja": "私はスペインに一度行ったことがあります。",
+    "en": "I've been to Spain once."
+  },
+  {
+    "index": 366,
+    "id": "092-2",
+    "chapter": 6,
+    "pattern": 92,
+    "example": 2,
+    "page": 64,
+    "ja": "私は彼らの家に何回も行ったことがあります。",
+    "en": "I've been to their house many times."
+  },
+  {
+    "index": 367,
+    "id": "092-3",
+    "chapter": 6,
+    "pattern": 92,
+    "example": 3,
+    "page": 64,
+    "ja": "私は映画に長い間行っていません。",
+    "en": "I haven't been to the cinema for ages."
+  },
+  {
+    "index": 368,
+    "id": "092-4",
+    "chapter": 6,
+    "pattern": 92,
+    "example": 4,
+    "page": 64,
+    "ja": "私は大学時代から野外コンサートにずっと行っていません。",
+    "en": "I haven't been to an outdoor concert since my college days."
+  },
+  {
+    "index": 369,
+    "id": "093-1",
+    "chapter": 6,
+    "pattern": 93,
+    "example": 1,
+    "page": 65,
+    "ja": "あなたは今までにパリに行ったことがありますか?",
+    "en": "Have you ever been to Paris?"
+  },
+  {
+    "index": 370,
+    "id": "093-2",
+    "chapter": 6,
+    "pattern": 93,
+    "example": 2,
+    "page": 65,
+    "ja": "あなたは数学の宿題全部をもうやりましたか?",
+    "en": "Have you done all your math homework?"
+  },
+  {
+    "index": 371,
+    "id": "093-3",
+    "chapter": 6,
+    "pattern": 93,
+    "example": 3,
+    "page": 65,
+    "ja": "どこかで私の鍵を見ましたか?",
+    "en": "Have you seen my keys anywhere?"
+  },
+  {
+    "index": 372,
+    "id": "093-4",
+    "chapter": 6,
+    "pattern": 93,
+    "example": 4,
+    "page": 65,
+    "ja": "彼女が引っ越してから便りがありましたか?",
+    "en": "Have you heard from her since she moved?"
+  },
+  {
+    "index": 373,
+    "id": "094-1",
+    "chapter": 6,
+    "pattern": 94,
+    "example": 1,
+    "page": 65,
+    "ja": "私は10年間彼と一緒に働き続けています。",
+    "en": "I've been working with him for 10 years."
+  },
+  {
+    "index": 374,
+    "id": "094-2",
+    "chapter": 6,
+    "pattern": 94,
+    "example": 2,
+    "page": 65,
+    "ja": "私はあなたの楽しいブログを読み続けています。",
+    "en": "I've been reading your blog which is fun."
+  },
+  {
+    "index": 375,
+    "id": "094-3",
+    "chapter": 6,
+    "pattern": 94,
+    "example": 3,
+    "page": 65,
+    "ja": "私はウェブサイトの作り方を人々に教え続けています。",
+    "en": "I've been teaching people how to make websites."
+  },
+  {
+    "index": 376,
+    "id": "094-4",
+    "chapter": 6,
+    "pattern": 94,
+    "example": 4,
+    "page": 65,
+    "ja": "私はここに来てからこのことを考え続けています。",
+    "en": "I've been thinking about this since I came here."
+  },
+  {
+    "index": 377,
+    "id": "095-1",
+    "chapter": 6,
+    "pattern": 95,
+    "example": 1,
+    "page": 66,
+    "ja": "彼女はその時までには昼食を食べ終えているでしょう。",
+    "en": "She will have finished her lunch by then."
+  },
+  {
+    "index": 378,
+    "id": "095-2",
+    "chapter": 6,
+    "pattern": 95,
+    "example": 2,
+    "page": 66,
+    "ja": "あなたが帰る前に彼は出発しているでしょう。",
+    "en": "He will have left before you return."
+  },
+  {
+    "index": 379,
+    "id": "095-3",
+    "chapter": 6,
+    "pattern": 95,
+    "example": 3,
+    "page": 66,
+    "ja": "私が到着する時までに彼女は寝ているでしょう。",
+    "en": "She will have gone to bed by the time I arrive."
+  },
+  {
+    "index": 380,
+    "id": "095-4",
+    "chapter": 6,
+    "pattern": 95,
+    "example": 4,
+    "page": 66,
+    "ja": "彼女は、なぜ私が戻ってきたか今頃はもう推測していることでしょう。",
+    "en": "She will have guessed by now why I came back."
+  },
+  {
+    "index": 381,
+    "id": "096-1",
+    "chapter": 6,
+    "pattern": 96,
+    "example": 1,
+    "page": 66,
+    "ja": "私は最初にあなたに尋ねるべきだったのに。",
+    "en": "I should have asked you first."
+  },
+  {
+    "index": 382,
+    "id": "096-2",
+    "chapter": 6,
+    "pattern": 96,
+    "example": 2,
+    "page": 66,
+    "ja": "私はずっと前にその関係を終わらせるべきだったのに。",
+    "en": "I should have ended the relationship long ago."
+  },
+  {
+    "index": 383,
+    "id": "096-3",
+    "chapter": 6,
+    "pattern": 96,
+    "example": 3,
+    "page": 66,
+    "ja": "私は10分前に到着すべきだったのに。",
+    "en": "I should have arrived 10 minutes ago."
+  },
+  {
+    "index": 384,
+    "id": "096-4",
+    "chapter": 6,
+    "pattern": 96,
+    "example": 4,
+    "page": 66,
+    "ja": "私は今朝出発すべきだったのですが少し具合が悪かったのです。",
+    "en": "I should have gone this morning, but I was feeling a bit ill."
+  },
+  {
+    "index": 385,
+    "id": "097-1",
+    "chapter": 7,
+    "pattern": 97,
+    "example": 1,
+    "page": 68,
+    "ja": "私はギターを弾くことができます。",
+    "en": "I can play the guitar."
+  },
+  {
+    "index": 386,
+    "id": "097-2",
+    "chapter": 7,
+    "pattern": 97,
+    "example": 2,
+    "page": 68,
+    "ja": "私はどんな状況でも彼女を信じることができます。",
+    "en": "I can trust her in any circumstance."
+  },
+  {
+    "index": 387,
+    "id": "097-3",
+    "chapter": 7,
+    "pattern": 97,
+    "example": 3,
+    "page": 68,
+    "ja": "私は彼女の秘密について誰にも言うことができません。",
+    "en": "I can't tell anyone about her secret."
+  },
+  {
+    "index": 388,
+    "id": "097-4",
+    "chapter": 7,
+    "pattern": 97,
+    "example": 4,
+    "page": 68,
+    "ja": "私には給料で高価なジュエリーを買う余裕はありません。",
+    "en": "I can't afford to buy costly jewels on my salary."
+  },
+  {
+    "index": 389,
+    "id": "098-1",
+    "chapter": 7,
+    "pattern": 98,
+    "example": 1,
+    "page": 68,
+    "ja": "あなたに、関連した質問をしてもいいですか?",
+    "en": "Can I ask you a related question?"
+  },
+  {
+    "index": 390,
+    "id": "098-2",
+    "chapter": 7,
+    "pattern": 98,
+    "example": 2,
+    "page": 68,
+    "ja": "昼食のお金をいくらかお借りしてもいいですか?",
+    "en": "Can I borrow some money for lunch?"
+  },
+  {
+    "index": 391,
+    "id": "098-3",
+    "chapter": 7,
+    "pattern": 98,
+    "example": 3,
+    "page": 68,
+    "ja": "個人的にあなたとちょっと話をしてもよろしいですか?",
+    "en": "Could I have a word with you in private?"
+  },
+  {
+    "index": 392,
+    "id": "098-4",
+    "chapter": 7,
+    "pattern": 98,
+    "example": 4,
+    "page": 68,
+    "ja": "椅子を少し動かしていただけますか?",
+    "en": "Could I ask you to move your chair a little?"
+  },
+  {
+    "index": 393,
+    "id": "099-1",
+    "chapter": 7,
+    "pattern": 99,
+    "example": 1,
+    "page": 69,
+    "ja": "お願いがあるのですが。",
+    "en": "Could you do me a favor?"
+  },
+  {
+    "index": 394,
+    "id": "099-2",
+    "chapter": 7,
+    "pattern": 99,
+    "example": 2,
+    "page": 69,
+    "ja": "最寄駅への道を教えてもらえますか?",
+    "en": "Can you tell me the way to the nearest station?"
+  },
+  {
+    "index": 395,
+    "id": "099-3",
+    "chapter": 7,
+    "pattern": 99,
+    "example": 3,
+    "page": 69,
+    "ja": "明日私を職場に車で送ってもらえますか?",
+    "en": "Can you give me a ride to work tomorrow?"
+  },
+  {
+    "index": 396,
+    "id": "099-4",
+    "chapter": 7,
+    "pattern": 99,
+    "example": 4,
+    "page": 69,
+    "ja": "私が電話をかけている間少し待っていただけますか?",
+    "en": "Could you wait a minute while I make a call?"
+  },
+  {
+    "index": 397,
+    "id": "100-1",
+    "chapter": 7,
+    "pattern": 100,
+    "example": 1,
+    "page": 69,
+    "ja": "私が間違っているかもしれません。",
+    "en": "I could be wrong."
+  },
+  {
+    "index": 398,
+    "id": "100-2",
+    "chapter": 7,
+    "pattern": 100,
+    "example": 2,
+    "page": 69,
+    "ja": "私は金曜日以外のどの日でも来られますよ。",
+    "en": "I could come any day but Friday."
+  },
+  {
+    "index": 399,
+    "id": "100-3",
+    "chapter": 7,
+    "pattern": 100,
+    "example": 3,
+    "page": 69,
+    "ja": "私ならたやすく彼の仕事をやれるでしょう。",
+    "en": "I could do his job with my eyes shut."
+  },
+  {
+    "index": 400,
+    "id": "100-4",
+    "chapter": 7,
+    "pattern": 100,
+    "example": 4,
+    "page": 69,
+    "ja": "もしその方が都合がいいなら、あなたと木曜日に会えます。",
+    "en": "I could meet you on Thursday, if that's more convenient."
+  },
+  {
+    "index": 401,
+    "id": "101-1",
+    "chapter": 7,
+    "pattern": 101,
+    "example": 1,
+    "page": 70,
+    "ja": "それは本当かもしれません。",
+    "en": "It could be true."
+  },
+  {
+    "index": 402,
+    "id": "101-2",
+    "chapter": 7,
+    "pattern": 101,
+    "example": 2,
+    "page": 70,
+    "ja": "それは大惨事になっていたかもしれません。",
+    "en": "It could have been a disaster."
+  },
+  {
+    "index": 403,
+    "id": "101-3",
+    "chapter": 7,
+    "pattern": 101,
+    "example": 3,
+    "page": 70,
+    "ja": "もし私たちがこのやり方でやると何週間もかかるかもしれません。",
+    "en": "It could take weeks if we do it this way."
+  },
+  {
+    "index": 404,
+    "id": "101-4",
+    "chapter": 7,
+    "pattern": 101,
+    "example": 4,
+    "page": 70,
+    "ja": "それはインターネットを使う人誰にでも起こるかもしれません。",
+    "en": "It could happen to anyone who uses the Internet."
+  },
+  {
+    "index": 405,
+    "id": "102-1",
+    "chapter": 7,
+    "pattern": 102,
+    "example": 1,
+    "page": 70,
+    "ja": "しばらく待つのがよいでしょう。",
+    "en": "It would be better to wait a while."
+  },
+  {
+    "index": 406,
+    "id": "102-2",
+    "chapter": 7,
+    "pattern": 102,
+    "example": 2,
+    "page": 70,
+    "ja": "今あきらめるのは残念だ。",
+    "en": "It would be a pity to give up now."
+  },
+  {
+    "index": 407,
+    "id": "102-3",
+    "chapter": 7,
+    "pattern": 102,
+    "example": 3,
+    "page": 70,
+    "ja": "花を彼らに送るのはよい考えでしょう。",
+    "en": "It would be a nice idea to send them some flowers."
+  },
+  {
+    "index": 408,
+    "id": "102-4",
+    "chapter": 7,
+    "pattern": 102,
+    "example": 4,
+    "page": 70,
+    "ja": "劇場に行く前に利用できる座席を調べるのが賢明でしょう。",
+    "en": "It would be wise to check the availability of seats before going to the theater."
+  },
+  {
+    "index": 409,
+    "id": "103-1",
+    "chapter": 7,
+    "pattern": 103,
+    "example": 1,
+    "page": 71,
+    "ja": "私は説明してみるつもりです。",
+    "en": "I'll try to explain."
+  },
+  {
+    "index": 410,
+    "id": "103-2",
+    "chapter": 7,
+    "pattern": 103,
+    "example": 2,
+    "page": 71,
+    "ja": "私はあなたに最後のチャンスをあげるつもりです。",
+    "en": "I'll give you one last chance."
+  },
+  {
+    "index": 411,
+    "id": "103-3",
+    "chapter": 7,
+    "pattern": 103,
+    "example": 3,
+    "page": 71,
+    "ja": "私はあなたが私に頼むことは何でもするつもりです。",
+    "en": "I'll do whatever you ask me to do."
+  },
+  {
+    "index": 412,
+    "id": "103-4",
+    "chapter": 7,
+    "pattern": 103,
+    "example": 4,
+    "page": 71,
+    "ja": "私はもし20ドル持っていたら映画に行くつもりです。",
+    "en": "I'll go to the cinema if I have 20 dollars."
+  },
+  {
+    "index": 413,
+    "id": "104-1",
+    "chapter": 7,
+    "pattern": 104,
+    "example": 1,
+    "page": 71,
+    "ja": "私はあの才能のある俳優を忘れないでしょう。",
+    "en": "I won't forget that very talented actor."
+  },
+  {
+    "index": 414,
+    "id": "104-2",
+    "chapter": 7,
+    "pattern": 104,
+    "example": 2,
+    "page": 71,
+    "ja": "私は何も危害は加えません。",
+    "en": "I won't do any harm."
+  },
+  {
+    "index": 415,
+    "id": "104-3",
+    "chapter": 7,
+    "pattern": 104,
+    "example": 3,
+    "page": 71,
+    "ja": "私は再び同じ間違いをすることはないでしょう。",
+    "en": "I won't make the same mistake again."
+  },
+  {
+    "index": 416,
+    "id": "104-4",
+    "chapter": 7,
+    "pattern": 104,
+    "example": 4,
+    "page": 71,
+    "ja": "これから何日かあなたを買いものに連れて行く時間はないでしょう。",
+    "en": "I won't have time to take you shopping over the next few days."
+  },
+  {
+    "index": 417,
+    "id": "105-1",
+    "chapter": 7,
+    "pattern": 105,
+    "example": 1,
+    "page": 72,
+    "ja": "私と結婚してくれますか?",
+    "en": "Will you marry me?"
+  },
+  {
+    "index": 418,
+    "id": "105-2",
+    "chapter": 7,
+    "pattern": 105,
+    "example": 2,
+    "page": 72,
+    "ja": "そのためにお金を貯めてくれますか?",
+    "en": "Will you save money for it?"
+  },
+  {
+    "index": 419,
+    "id": "105-3",
+    "chapter": 7,
+    "pattern": 105,
+    "example": 3,
+    "page": 72,
+    "ja": "彼のためにお茶を入れてくれますか?",
+    "en": "Will you make some tea for him?"
+  },
+  {
+    "index": 420,
+    "id": "105-4",
+    "chapter": 7,
+    "pattern": 105,
+    "example": 4,
+    "page": 72,
+    "ja": "もし鳴ったら電話に出てくれますか?",
+    "en": "Will you answer the phone if it rings?"
+  },
+  {
+    "index": 421,
+    "id": "106-1",
+    "chapter": 7,
+    "pattern": 106,
+    "example": 1,
+    "page": 72,
+    "ja": "私にコーヒーを買ってきてくださいますか?",
+    "en": "Would you get me a coffee?"
+  },
+  {
+    "index": 422,
+    "id": "106-2",
+    "chapter": 7,
+    "pattern": 106,
+    "example": 2,
+    "page": 72,
+    "ja": "わかったらすぐに私に電話してくださいますか?",
+    "en": "Would you call me as soon as you find out?"
+  },
+  {
+    "index": 423,
+    "id": "106-3",
+    "chapter": 7,
+    "pattern": 106,
+    "example": 3,
+    "page": 72,
+    "ja": "私たちと一緒に来られるのはいかがでしょうか?",
+    "en": "Would you be interested in coming with us?"
+  },
+  {
+    "index": 424,
+    "id": "106-4",
+    "chapter": 7,
+    "pattern": 106,
+    "example": 4,
+    "page": 72,
+    "ja": "ドアを閉めていただけますか?",
+    "en": "Would you be kind enough to close the door?"
+  },
+  {
+    "index": 425,
+    "id": "107-1",
+    "chapter": 7,
+    "pattern": 107,
+    "example": 1,
+    "page": 73,
+    "ja": "コーヒーを一杯いかがですか？",
+    "en": "Would you like a cup of coffee?"
+  },
+  {
+    "index": 426,
+    "id": "107-2",
+    "chapter": 7,
+    "pattern": 107,
+    "example": 2,
+    "page": 73,
+    "ja": "私たちと一緒に夕食に来るのはいかがですか？",
+    "en": "Would you like to join us for dinner?"
+  },
+  {
+    "index": 427,
+    "id": "107-3",
+    "chapter": 7,
+    "pattern": 107,
+    "example": 3,
+    "page": 73,
+    "ja": "向こうの窓のそばに座るのはいかがですか？",
+    "en": "Would you like to sit over there by the window?"
+  },
+  {
+    "index": 428,
+    "id": "107-4",
+    "chapter": 7,
+    "pattern": 107,
+    "example": 4,
+    "page": 73,
+    "ja": "あなたのカバンを運びましょうか?",
+    "en": "Would you like me to carry your bag for you?"
+  },
+  {
+    "index": 429,
+    "id": "108-1",
+    "chapter": 7,
+    "pattern": 108,
+    "example": 1,
+    "page": 73,
+    "ja": "すみませんが水を一杯いただきたいのですが。",
+    "en": "I would like a glass of water please."
+  },
+  {
+    "index": 430,
+    "id": "108-2",
+    "chapter": 7,
+    "pattern": 108,
+    "example": 2,
+    "page": 73,
+    "ja": "2歳の娘のために服を何枚か買いたいのですが。",
+    "en": "I would like to buy some clothes for my two-year old daughter."
+  },
+  {
+    "index": 431,
+    "id": "108-3",
+    "chapter": 7,
+    "pattern": 108,
+    "example": 3,
+    "page": 73,
+    "ja": "あなたの親切に対する感謝の気持ちを表したいのですが。",
+    "en": "I would like to express my thanks for your kindness."
+  },
+  {
+    "index": 432,
+    "id": "108-4",
+    "chapter": 7,
+    "pattern": 108,
+    "example": 4,
+    "page": 73,
+    "ja": "あなたが以前に言ったことをはっきりさせたいのですが。",
+    "en": "I would like to clarify something you said earlier."
+  },
+  {
+    "index": 433,
+    "id": "109-1",
+    "chapter": 7,
+    "pattern": 109,
+    "example": 1,
+    "page": 74,
+    "ja": "私はベッドでしばらくの間じっとしていなければ。",
+    "en": "I should stay in bed for a while."
+  },
+  {
+    "index": 434,
+    "id": "109-2",
+    "chapter": 7,
+    "pattern": 109,
+    "example": 2,
+    "page": 74,
+    "ja": "私はあなたに私が見たことを話さなければ。",
+    "en": "I should tell you what I saw."
+  },
+  {
+    "index": 435,
+    "id": "109-3",
+    "chapter": 7,
+    "pattern": 109,
+    "example": 3,
+    "page": 74,
+    "ja": "私はもう少し長く待たなければ。",
+    "en": "I should wait a little longer."
+  },
+  {
+    "index": 436,
+    "id": "109-4",
+    "chapter": 7,
+    "pattern": 109,
+    "example": 4,
+    "page": 74,
+    "ja": "私はもうあきらめて別の方法を見つけなければ。",
+    "en": "I should give up now and find another way."
+  },
+  {
+    "index": 437,
+    "id": "110-1",
+    "chapter": 7,
+    "pattern": 110,
+    "example": 1,
+    "page": 74,
+    "ja": "あなたはそれをやってみるべきです。",
+    "en": "You should give it a try."
+  },
+  {
+    "index": 438,
+    "id": "110-2",
+    "chapter": 7,
+    "pattern": 110,
+    "example": 2,
+    "page": 74,
+    "ja": "あなたは次の記事を見てみるべきです。",
+    "en": "You should have a look at the following article."
+  },
+  {
+    "index": 439,
+    "id": "110-3",
+    "chapter": 7,
+    "pattern": 110,
+    "example": 3,
+    "page": 74,
+    "ja": "あなたは自分自身のことを恥ずかしいと思うべきです。",
+    "en": "You should be ashamed of yourself."
+  },
+  {
+    "index": 440,
+    "id": "110-4",
+    "chapter": 7,
+    "pattern": 110,
+    "example": 4,
+    "page": 74,
+    "ja": "あなたは外に出て新鮮な空気を吸うべきです。",
+    "en": "You should go out and get some fresh air."
+  },
+  {
+    "index": 441,
+    "id": "111-1",
+    "chapter": 7,
+    "pattern": 111,
+    "example": 1,
+    "page": 75,
+    "ja": "私は一生懸命勉強しなければなりません。",
+    "en": "I must study hard."
+  },
+  {
+    "index": 442,
+    "id": "111-2",
+    "chapter": 7,
+    "pattern": 111,
+    "example": 2,
+    "page": 75,
+    "ja": "私はすぐにそこに行かなければなりません。",
+    "en": "I must go there at once."
+  },
+  {
+    "index": 443,
+    "id": "111-3",
+    "chapter": 7,
+    "pattern": 111,
+    "example": 3,
+    "page": 75,
+    "ja": "私は彼女が来る前に部屋を掃除しなければなりません。",
+    "en": "I must clean my room before she comes."
+  },
+  {
+    "index": 444,
+    "id": "111-4",
+    "chapter": 7,
+    "pattern": 111,
+    "example": 4,
+    "page": 75,
+    "ja": "私はいつかもう一度彼らを必ず訪ねなければなりません。",
+    "en": "I must come and visit them again sometime."
+  },
+  {
+    "index": 445,
+    "id": "112-1",
+    "chapter": 7,
+    "pattern": 112,
+    "example": 1,
+    "page": 75,
+    "ja": "私はかつてこの地域に住んでいたものでした。",
+    "en": "I used to live in this area."
+  },
+  {
+    "index": 446,
+    "id": "112-2",
+    "chapter": 7,
+    "pattern": 112,
+    "example": 2,
+    "page": 75,
+    "ja": "私はかつて学生時代にこのコーヒーショップで働いていたものでした。",
+    "en": "I used to work at this coffee shop when I was a student."
+  },
+  {
+    "index": 447,
+    "id": "112-3",
+    "chapter": 7,
+    "pattern": 112,
+    "example": 3,
+    "page": 75,
+    "ja": "私はかつてジムにトレーニングに行っていたものでした。",
+    "en": "I used to go to the gym to work out."
+  },
+  {
+    "index": 448,
+    "id": "112-4",
+    "chapter": 7,
+    "pattern": 112,
+    "example": 4,
+    "page": 75,
+    "ja": "かつてドイツ語を勉強したものですが、今はもうやっていません。",
+    "en": "I used to study German but not any more."
+  },
+  {
+    "index": 449,
+    "id": "113-1",
+    "chapter": 8,
+    "pattern": 113,
+    "example": 1,
+    "page": 77,
+    "ja": "彼女は誰ですか?",
+    "en": "Who is she?"
+  },
+  {
+    "index": 450,
+    "id": "113-2",
+    "chapter": 8,
+    "pattern": 113,
+    "example": 2,
+    "page": 77,
+    "ja": "向こうに立っている紳士は誰ですか?",
+    "en": "Who is the gentleman standing over there?"
+  },
+  {
+    "index": 451,
+    "id": "113-3",
+    "chapter": 8,
+    "pattern": 113,
+    "example": 3,
+    "page": 77,
+    "ja": "あなたが言っていた本の作者は誰ですか?",
+    "en": "Who is the author of the book you mentioned?"
+  },
+  {
+    "index": 452,
+    "id": "113-4",
+    "chapter": 8,
+    "pattern": 113,
+    "example": 4,
+    "page": 77,
+    "ja": "先月FBIに逮捕されたのは誰でしたか?",
+    "en": "Who was arrested last month by the FBI?"
+  },
+  {
+    "index": 453,
+    "id": "114-1",
+    "chapter": 8,
+    "pattern": 114,
+    "example": 1,
+    "page": 77,
+    "ja": "これは何ですか?",
+    "en": "What's this?"
+  },
+  {
+    "index": 454,
+    "id": "114-2",
+    "chapter": 8,
+    "pattern": 114,
+    "example": 2,
+    "page": 77,
+    "ja": "どうかしましたか?",
+    "en": "What's wrong with you?"
+  },
+  {
+    "index": 455,
+    "id": "114-3",
+    "chapter": 8,
+    "pattern": 114,
+    "example": 3,
+    "page": 77,
+    "ja": "英語を勉強するのに最も効果的な方法は何ですか?",
+    "en": "What's the most effective way to study English?"
+  },
+  {
+    "index": 456,
+    "id": "114-4",
+    "chapter": 8,
+    "pattern": 114,
+    "example": 4,
+    "page": 77,
+    "ja": "その事業計画についてのあなたの印象はどうでしたか?",
+    "en": "What was your impression of the business plan?"
+  },
+  {
+    "index": 457,
+    "id": "115-1",
+    "chapter": 8,
+    "pattern": 115,
+    "example": 1,
+    "page": 78,
+    "ja": "ボブはどこですか?",
+    "en": "Where is Bob?"
+  },
+  {
+    "index": 458,
+    "id": "115-2",
+    "chapter": 8,
+    "pattern": 115,
+    "example": 2,
+    "page": 78,
+    "ja": "私のカメラはどこですか?",
+    "en": "Where is my camera?"
+  },
+  {
+    "index": 459,
+    "id": "115-3",
+    "chapter": 8,
+    "pattern": 115,
+    "example": 3,
+    "page": 78,
+    "ja": "彼女はどこ出身ですか?",
+    "en": "Where is she from?"
+  },
+  {
+    "index": 460,
+    "id": "115-4",
+    "chapter": 8,
+    "pattern": 115,
+    "example": 4,
+    "page": 78,
+    "ja": "明日あなたはどこへ行くのですか?",
+    "en": "Where are you going tomorrow?"
+  },
+  {
+    "index": 461,
+    "id": "116-1",
+    "chapter": 8,
+    "pattern": 116,
+    "example": 1,
+    "page": 78,
+    "ja": "私の傘はどっちですか?",
+    "en": "Which is my umbrella?"
+  },
+  {
+    "index": 462,
+    "id": "116-2",
+    "chapter": 8,
+    "pattern": 116,
+    "example": 2,
+    "page": 78,
+    "ja": "あなたの好きな教科は数学それとも音楽どっちですか?",
+    "en": "Which is your favorite subject, math or music?"
+  },
+  {
+    "index": 463,
+    "id": "116-3",
+    "chapter": 8,
+    "pattern": 116,
+    "example": 3,
+    "page": 78,
+    "ja": "ビーチへの一番早い道はどっちですか?",
+    "en": "Which is the quickest way to the beach?"
+  },
+  {
+    "index": 464,
+    "id": "116-4",
+    "chapter": 8,
+    "pattern": 116,
+    "example": 4,
+    "page": 78,
+    "ja": "バスで行くのと歩くのではどっちがよりいいですか?",
+    "en": "Which is better, going by bus or going on foot?"
+  },
+  {
+    "index": 465,
+    "id": "117-1",
+    "chapter": 8,
+    "pattern": 117,
+    "example": 1,
+    "page": 79,
+    "ja": "あなたのお母さんはどうですか?",
+    "en": "How is your mother?"
+  },
+  {
+    "index": 466,
+    "id": "117-2",
+    "chapter": 8,
+    "pattern": 117,
+    "example": 2,
+    "page": 79,
+    "ja": "仕事の調子はどうですか？",
+    "en": "How is the business doing?"
+  },
+  {
+    "index": 467,
+    "id": "117-3",
+    "chapter": 8,
+    "pattern": 117,
+    "example": 3,
+    "page": 79,
+    "ja": "調子はどうですか?",
+    "en": "How are things with you?"
+  },
+  {
+    "index": 468,
+    "id": "117-4",
+    "chapter": 8,
+    "pattern": 117,
+    "example": 4,
+    "page": 79,
+    "ja": "沖縄の天気はどうでしたか?",
+    "en": "How was the weather in Okinawa?"
+  },
+  {
+    "index": 469,
+    "id": "118-1",
+    "chapter": 8,
+    "pattern": 118,
+    "example": 1,
+    "page": 79,
+    "ja": "あなたは誰を信頼しますか?",
+    "en": "Who do you trust?"
+  },
+  {
+    "index": 470,
+    "id": "118-2",
+    "chapter": 8,
+    "pattern": 118,
+    "example": 2,
+    "page": 79,
+    "ja": "あなたは助けをもらうのに誰に連絡しますか?",
+    "en": "Who do you contact for help?"
+  },
+  {
+    "index": 471,
+    "id": "118-3",
+    "chapter": 8,
+    "pattern": 118,
+    "example": 3,
+    "page": 79,
+    "ja": "もしあなたに選択肢があれば誰を選びますか?",
+    "en": "Who do you choose if you have a choice?"
+  },
+  {
+    "index": 472,
+    "id": "118-4",
+    "chapter": 8,
+    "pattern": 118,
+    "example": 4,
+    "page": 79,
+    "ja": "あなたは昨夜誰と一緒に出かけましたか?",
+    "en": "Who did you go out with last night?"
+  },
+  {
+    "index": 473,
+    "id": "119-1",
+    "chapter": 8,
+    "pattern": 119,
+    "example": 1,
+    "page": 80,
+    "ja": "どういう意味?",
+    "en": "What do you mean?"
+  },
+  {
+    "index": 474,
+    "id": "119-2",
+    "chapter": 8,
+    "pattern": 119,
+    "example": 2,
+    "page": 80,
+    "ja": "何をして欲しいの?",
+    "en": "What do you want from me?"
+  },
+  {
+    "index": 475,
+    "id": "119-3",
+    "chapter": 8,
+    "pattern": 119,
+    "example": 3,
+    "page": 80,
+    "ja": "何を食べたいですか?",
+    "en": "What do you want to eat?"
+  },
+  {
+    "index": 476,
+    "id": "119-4",
+    "chapter": 8,
+    "pattern": 119,
+    "example": 4,
+    "page": 80,
+    "ja": "健康を保つために何をしていますか?",
+    "en": "What do you do to keep fit?"
+  },
+  {
+    "index": 477,
+    "id": "120-1",
+    "chapter": 8,
+    "pattern": 120,
+    "example": 1,
+    "page": 80,
+    "ja": "あなたはどこに洗剤をしまっておくのですか?",
+    "en": "Where do you keep the detergent?"
+  },
+  {
+    "index": 478,
+    "id": "120-2",
+    "chapter": 8,
+    "pattern": 120,
+    "example": 2,
+    "page": 80,
+    "ja": "あなたは休暇にどこに行きたいですか?",
+    "en": "Where do you want to go for your holidays?"
+  },
+  {
+    "index": 479,
+    "id": "120-3",
+    "chapter": 8,
+    "pattern": 120,
+    "example": 3,
+    "page": 80,
+    "ja": "あなたはどこであのドレスを買いましたか?",
+    "en": "Where did you buy that dress?"
+  },
+  {
+    "index": 480,
+    "id": "120-4",
+    "chapter": 8,
+    "pattern": 120,
+    "example": 4,
+    "page": 80,
+    "ja": "あなたはこのショッピングモールのどこに車を駐車しましたか?",
+    "en": "Where did you park your car in this mall?"
+  },
+  {
+    "index": 481,
+    "id": "121-1",
+    "chapter": 8,
+    "pattern": 121,
+    "example": 1,
+    "page": 81,
+    "ja": "あなたはどちらが好きですか?",
+    "en": "Which do you like?"
+  },
+  {
+    "index": 482,
+    "id": "121-2",
+    "chapter": 8,
+    "pattern": 121,
+    "example": 2,
+    "page": 81,
+    "ja": "都市と田舎ではあなたはどちらが好きですか？",
+    "en": "Which do you prefer, the city or the country?"
+  },
+  {
+    "index": 483,
+    "id": "121-3",
+    "chapter": 8,
+    "pattern": 121,
+    "example": 3,
+    "page": 81,
+    "ja": "読むのに一番いいシリーズはどれだとあなたは思いますか?",
+    "en": "Which do you think is the best series to read?"
+  },
+  {
+    "index": 484,
+    "id": "121-4",
+    "chapter": 8,
+    "pattern": 121,
+    "example": 4,
+    "page": 81,
+    "ja": "私がここに留まるかまたは出発するか、どちらにして欲しいですか?",
+    "en": "Which do you want me to do, stay here or leave?"
+  },
+  {
+    "index": 485,
+    "id": "122-1",
+    "chapter": 8,
+    "pattern": 122,
+    "example": 1,
+    "page": 81,
+    "ja": "今朝の気分はどうですか?",
+    "en": "How do you feel this morning?"
+  },
+  {
+    "index": 486,
+    "id": "122-2",
+    "chapter": 8,
+    "pattern": 122,
+    "example": 2,
+    "page": 81,
+    "ja": "私の新しい靴をどう思いますか?",
+    "en": "How do you like my new shoes?"
+  },
+  {
+    "index": 487,
+    "id": "122-3",
+    "chapter": 8,
+    "pattern": 122,
+    "example": 3,
+    "page": 81,
+    "ja": "この暑い天気でどうしてそんなに涼しそうにしていられるのですか?",
+    "en": "How do you manage to look so cool in this hot weather?"
+  },
+  {
+    "index": 488,
+    "id": "122-4",
+    "chapter": 8,
+    "pattern": 122,
+    "example": 4,
+    "page": 81,
+    "ja": "あなたは最初どうやって脚本執筆を始めたのですか?",
+    "en": "How do you first get into scriptwriting?"
+  },
+  {
+    "index": 489,
+    "id": "123-1",
+    "chapter": 8,
+    "pattern": 123,
+    "example": 1,
+    "page": 82,
+    "ja": "なぜそんなこと聞くの?",
+    "en": "Why do you ask?"
+  },
+  {
+    "index": 490,
+    "id": "123-2",
+    "chapter": 8,
+    "pattern": 123,
+    "example": 2,
+    "page": 82,
+    "ja": "なぜいつも私をいじめるのですか?",
+    "en": "Why do you always pick on me?"
+  },
+  {
+    "index": 491,
+    "id": "123-3",
+    "chapter": 8,
+    "pattern": 123,
+    "example": 3,
+    "page": 82,
+    "ja": "なぜぎりぎりまで何でも放っておくんですか？",
+    "en": "Why do you leave everything until the last moment?"
+  },
+  {
+    "index": 492,
+    "id": "123-4",
+    "chapter": 8,
+    "pattern": 123,
+    "example": 4,
+    "page": 82,
+    "ja": "なぜ奥さんにあんな風に話さなければならなかったのですか?",
+    "en": "Why did you have to go and upset your wife like that?"
+  },
+  {
+    "index": 493,
+    "id": "124-1",
+    "chapter": 8,
+    "pattern": 124,
+    "example": 1,
+    "page": 82,
+    "ja": "どんな食べものが一番好き?",
+    "en": "What food do you like the best?"
+  },
+  {
+    "index": 494,
+    "id": "124-2",
+    "chapter": 8,
+    "pattern": 124,
+    "example": 2,
+    "page": 82,
+    "ja": "どんな本を読むのが好きですか?",
+    "en": "What books do you prefer to read?"
+  },
+  {
+    "index": 495,
+    "id": "124-3",
+    "chapter": 8,
+    "pattern": 124,
+    "example": 3,
+    "page": 82,
+    "ja": "どんな人になりたいですか?",
+    "en": "What kind of person do you want to be?"
+  },
+  {
+    "index": 496,
+    "id": "124-4",
+    "chapter": 8,
+    "pattern": 124,
+    "example": 4,
+    "page": 82,
+    "ja": "どんな仕事の経験がありますか?",
+    "en": "What sort of work are you experienced in?"
+  },
+  {
+    "index": 497,
+    "id": "125-1",
+    "chapter": 8,
+    "pattern": 125,
+    "example": 1,
+    "page": 83,
+    "ja": "あなたはクッキーをいくつ食べましたか?",
+    "en": "How many cookies did you eat?"
+  },
+  {
+    "index": 498,
+    "id": "125-2",
+    "chapter": 8,
+    "pattern": 125,
+    "example": 2,
+    "page": 83,
+    "ja": "あなたはいくつの都市を訪れたことがありますか?",
+    "en": "How many cities have you visited?"
+  },
+  {
+    "index": 499,
+    "id": "125-3",
+    "chapter": 8,
+    "pattern": 125,
+    "example": 3,
+    "page": 83,
+    "ja": "あなたは一週間に何冊の本を読みますか?",
+    "en": "How many books do you read in a week?"
+  },
+  {
+    "index": 500,
+    "id": "125-4",
+    "chapter": 8,
+    "pattern": 125,
+    "example": 4,
+    "page": 83,
+    "ja": "あなたは北海道に何回行ったことがありますか?",
+    "en": "How many times have you been to Hokkaido?"
+  },
+  {
+    "index": 501,
+    "id": "126-1",
+    "chapter": 8,
+    "pattern": 126,
+    "example": 1,
+    "page": 83,
+    "ja": "これは誰のかばんですか?",
+    "en": "Whose bag is this?"
+  },
+  {
+    "index": 502,
+    "id": "126-2",
+    "chapter": 8,
+    "pattern": 126,
+    "example": 2,
+    "page": 83,
+    "ja": "料理をするのは誰の番ですか?",
+    "en": "Whose turn is it to cook?"
+  },
+  {
+    "index": 503,
+    "id": "126-3",
+    "chapter": 8,
+    "pattern": 126,
+    "example": 3,
+    "page": 83,
+    "ja": "あなたは誰の味方をしているのですか?",
+    "en": "Whose side are you on?"
+  },
+  {
+    "index": 504,
+    "id": "126-4",
+    "chapter": 8,
+    "pattern": 126,
+    "example": 4,
+    "page": 83,
+    "ja": "私たちがお金をすべて失っているのは誰のせいですか?",
+    "en": "Whose fault is it that we are losing all the money?"
+  },
+  {
+    "index": 505,
+    "id": "127-1",
+    "chapter": 8,
+    "pattern": 127,
+    "example": 1,
+    "page": 84,
+    "ja": "私が言いたいことがわかりますか?",
+    "en": "Do you know what I mean?"
+  },
+  {
+    "index": 506,
+    "id": "127-2",
+    "chapter": 8,
+    "pattern": 127,
+    "example": 2,
+    "page": 84,
+    "ja": "郵便局がどこにあるか知っていますか?",
+    "en": "Do you know where the post office is?"
+  },
+  {
+    "index": 507,
+    "id": "127-3",
+    "chapter": 8,
+    "pattern": 127,
+    "example": 3,
+    "page": 84,
+    "ja": "上の階の部屋に誰が住んでいるか知っていますか?",
+    "en": "Do you know who lives in the room upstairs?"
+  },
+  {
+    "index": 508,
+    "id": "127-4",
+    "chapter": 8,
+    "pattern": 127,
+    "example": 4,
+    "page": 84,
+    "ja": "このコンピューターでどうやって印刷するか知っていますか?",
+    "en": "Do you know how to print on this computer?"
+  },
+  {
+    "index": 509,
+    "id": "128-1",
+    "chapter": 8,
+    "pattern": 128,
+    "example": 1,
+    "page": 84,
+    "ja": "私はトイレに行ってもいいかどうかを尋ねました。",
+    "en": "I asked if I could go to the restroom."
+  },
+  {
+    "index": 510,
+    "id": "128-2",
+    "chapter": 8,
+    "pattern": 128,
+    "example": 2,
+    "page": 84,
+    "ja": "私はチケットを交換してもらえるかどうかを尋ねました。",
+    "en": "I asked whether they could change my ticket."
+  },
+  {
+    "index": 511,
+    "id": "128-3",
+    "chapter": 8,
+    "pattern": 128,
+    "example": 3,
+    "page": 84,
+    "ja": "もしよろしければ携帯電話を借りられないでしょうか。",
+    "en": "I was wondering if I could use your cell phone."
+  },
+  {
+    "index": 512,
+    "id": "128-4",
+    "chapter": 8,
+    "pattern": 128,
+    "example": 4,
+    "page": 84,
+    "ja": "もしよろしければその地域で訪れるべき場所の情報をもらえないでしょうか。",
+    "en": "I was wondering if you could give me some information about places to visit in the area."
+  },
+  {
+    "index": 513,
+    "id": "129-1",
+    "chapter": 9,
+    "pattern": 129,
+    "example": 1,
+    "page": 86,
+    "ja": "あなたの学校は私のと同じくらい大きいです。",
+    "en": "Your school is as big as mine."
+  },
+  {
+    "index": 514,
+    "id": "129-2",
+    "chapter": 9,
+    "pattern": 129,
+    "example": 2,
+    "page": 86,
+    "ja": "イースターはクリスマスと同じくらい盛大です。",
+    "en": "Easter is as big as Christmas."
+  },
+  {
+    "index": 515,
+    "id": "129-3",
+    "chapter": 9,
+    "pattern": 129,
+    "example": 3,
+    "page": 86,
+    "ja": "彼女の肌は雪と同じくらい白いです。",
+    "en": "Her skin is as white as snow."
+  },
+  {
+    "index": 516,
+    "id": "129-4",
+    "chapter": 9,
+    "pattern": 129,
+    "example": 4,
+    "page": 86,
+    "ja": "彼女は眼鏡なしではコウモリと同じくらい目が見えないです。",
+    "en": "She is as blind as a bat without glasses."
+  },
+  {
+    "index": 517,
+    "id": "130-1",
+    "chapter": 9,
+    "pattern": 130,
+    "example": 1,
+    "page": 86,
+    "ja": "ジョンは彼の兄ほど背が高くないです。",
+    "en": "John is not as tall as his brother."
+  },
+  {
+    "index": 518,
+    "id": "130-2",
+    "chapter": 9,
+    "pattern": 130,
+    "example": 2,
+    "page": 86,
+    "ja": "宿題は私が思ったほど難しくはないです。",
+    "en": "The homework is not as hard as I thought."
+  },
+  {
+    "index": 519,
+    "id": "130-3",
+    "chapter": 9,
+    "pattern": 130,
+    "example": 3,
+    "page": 86,
+    "ja": "彼のスペイン語は彼の英語ほど上手ではありませんでした。",
+    "en": "His Spanish was not as good as his English."
+  },
+  {
+    "index": 520,
+    "id": "130-4",
+    "chapter": 9,
+    "pattern": 130,
+    "example": 4,
+    "page": 86,
+    "ja": "就労ビザを取得するのはあなたが考えるほど簡単ではありません。",
+    "en": "Getting a working visa is not as simple as you might think."
+  },
+  {
+    "index": 521,
+    "id": "131-1",
+    "chapter": 9,
+    "pattern": 131,
+    "example": 1,
+    "page": 87,
+    "ja": "彼は私より若いです。",
+    "en": "He is younger than me."
+  },
+  {
+    "index": 522,
+    "id": "131-2",
+    "chapter": 9,
+    "pattern": 131,
+    "example": 2,
+    "page": 87,
+    "ja": "ドライブは空を飛ぶよりも安いです。",
+    "en": "Driving is cheaper than flying."
+  },
+  {
+    "index": 523,
+    "id": "131-3",
+    "chapter": 9,
+    "pattern": 131,
+    "example": 3,
+    "page": 87,
+    "ja": "言うは易く行うは難し。",
+    "en": "This is easier said than done."
+  },
+  {
+    "index": 524,
+    "id": "131-4",
+    "chapter": 9,
+    "pattern": 131,
+    "example": 4,
+    "page": 87,
+    "ja": "失業率は一年前よりも高いです。",
+    "en": "Unemployment is higher than it was a year ago."
+  },
+  {
+    "index": 525,
+    "id": "132-1",
+    "chapter": 9,
+    "pattern": 132,
+    "example": 1,
+    "page": 87,
+    "ja": "幸福はお金よりも重要です。",
+    "en": "Happiness is more important than money."
+  },
+  {
+    "index": 526,
+    "id": "132-2",
+    "chapter": 9,
+    "pattern": 132,
+    "example": 2,
+    "page": 87,
+    "ja": "あなたの健康は他のどんなものよりも大切です。",
+    "en": "Your health is more important than anything else."
+  },
+  {
+    "index": 527,
+    "id": "132-3",
+    "chapter": 9,
+    "pattern": 132,
+    "example": 3,
+    "page": 87,
+    "ja": "チケットは私が思っていたよりも高価でした。",
+    "en": "The ticket was more expensive than I thought."
+  },
+  {
+    "index": 528,
+    "id": "132-4",
+    "chapter": 9,
+    "pattern": 132,
+    "example": 4,
+    "page": 87,
+    "ja": "自転車は街では車よりも便利です。",
+    "en": "A bicycle is more convenient than a car in towns."
+  },
+  {
+    "index": 529,
+    "id": "133-1",
+    "chapter": 9,
+    "pattern": 133,
+    "example": 1,
+    "page": 88,
+    "ja": "彼女はクラスで最も年下です。",
+    "en": "She is the youngest in her class."
+  },
+  {
+    "index": 530,
+    "id": "133-2",
+    "chapter": 9,
+    "pattern": 133,
+    "example": 2,
+    "page": 88,
+    "ja": "これは私に今までに起こった最もよいことです。",
+    "en": "This is the best thing that's ever happened to me."
+  },
+  {
+    "index": 531,
+    "id": "133-3",
+    "chapter": 9,
+    "pattern": 133,
+    "example": 3,
+    "page": 88,
+    "ja": "子供たちは受動喫煙の最大の被害者です。",
+    "en": "Children are the biggest victims of passive smoking."
+  },
+  {
+    "index": 532,
+    "id": "133-4",
+    "chapter": 9,
+    "pattern": 133,
+    "example": 4,
+    "page": 88,
+    "ja": "これはアップル社の製品のシリーズの中で最新です。",
+    "en": "This is the latest in a series of products by Apple."
+  },
+  {
+    "index": 533,
+    "id": "134-1",
+    "chapter": 9,
+    "pattern": 134,
+    "example": 1,
+    "page": 88,
+    "ja": "これらのテストはすべてのうちで最も重要です。",
+    "en": "These exams are the most important of all."
+  },
+  {
+    "index": 534,
+    "id": "134-2",
+    "chapter": 9,
+    "pattern": 134,
+    "example": 2,
+    "page": 88,
+    "ja": "彼女は学校で最も人気のある教師です。",
+    "en": "She is the most popular teacher in school."
+  },
+  {
+    "index": 535,
+    "id": "134-3",
+    "chapter": 9,
+    "pattern": 134,
+    "example": 3,
+    "page": 88,
+    "ja": "それは彼女が今まで経験したうちで最もすばらしい感情でした。",
+    "en": "It was the most wonderful feeling she had ever experienced."
+  },
+  {
+    "index": 536,
+    "id": "134-4",
+    "chapter": 9,
+    "pattern": 134,
+    "example": 4,
+    "page": 88,
+    "ja": "日本の公共交通システムは世界で最も効率のよいものの一つです。",
+    "en": "The public transportation system in Japan is one of the most efficient in the world."
+  },
+  {
+    "index": 537,
+    "id": "135-1",
+    "chapter": 9,
+    "pattern": 135,
+    "example": 1,
+    "page": 89,
+    "ja": "あなたはあれよりも上手にできますよ!",
+    "en": "You can do better than that!"
+  },
+  {
+    "index": 538,
+    "id": "135-2",
+    "chapter": 9,
+    "pattern": 135,
+    "example": 2,
+    "page": 89,
+    "ja": "あなたは時速20マイル以上で運転してはいけません。",
+    "en": "You cannot drive faster than 20 miles per hour."
+  },
+  {
+    "index": 539,
+    "id": "135-3",
+    "chapter": 9,
+    "pattern": 135,
+    "example": 3,
+    "page": 89,
+    "ja": "彼は見かけで判断するほど愚かではない。",
+    "en": "He knows better than to judge by appearances."
+  },
+  {
+    "index": 540,
+    "id": "135-4",
+    "chapter": 9,
+    "pattern": 135,
+    "example": 4,
+    "page": 89,
+    "ja": "あなたは前回より長く待たなければなりません。",
+    "en": "You have to wait longer than the last time."
+  },
+  {
+    "index": 541,
+    "id": "136-1",
+    "chapter": 9,
+    "pattern": 136,
+    "example": 1,
+    "page": 89,
+    "ja": "誰が最も素早くそこに着くことができますか？",
+    "en": "Who can get there the quickest?"
+  },
+  {
+    "index": 542,
+    "id": "136-2",
+    "chapter": 9,
+    "pattern": 136,
+    "example": 2,
+    "page": 89,
+    "ja": "あなたたちのうちの誰が最も遠くにボールを投げられますか?",
+    "en": "Which of you can throw the ball the furthest?"
+  },
+  {
+    "index": 543,
+    "id": "136-3",
+    "chapter": 9,
+    "pattern": 136,
+    "example": 3,
+    "page": 89,
+    "ja": "一番高いチケットが一番速く売れることが多いです。",
+    "en": "The most expensive tickets often sell fastest."
+  },
+  {
+    "index": 544,
+    "id": "136-4",
+    "chapter": 9,
+    "pattern": 136,
+    "example": 4,
+    "page": 89,
+    "ja": "植物は涼しく湿った状態が最もよく育ちます。",
+    "en": "The plants grow best in cool damp conditions."
+  },
+  {
+    "index": 545,
+    "id": "137-1",
+    "chapter": 9,
+    "pattern": 137,
+    "example": 1,
+    "page": 90,
+    "ja": "問題は身体的なものというより感情的なものの方にあります。",
+    "en": "The problem is more emotional than physical."
+  },
+  {
+    "index": 546,
+    "id": "137-2",
+    "chapter": 9,
+    "pattern": 137,
+    "example": 2,
+    "page": 90,
+    "ja": "私の父は怒っているよりもがっかりしたように見えました。",
+    "en": "My father seemed more disappointed than angry."
+  },
+  {
+    "index": 547,
+    "id": "137-3",
+    "chapter": 9,
+    "pattern": 137,
+    "example": 3,
+    "page": 90,
+    "ja": "彼の気質は科学的というよりは直感的です。",
+    "en": "His temperament is more intuitive than scientific."
+  },
+  {
+    "index": 548,
+    "id": "137-4",
+    "chapter": 9,
+    "pattern": 137,
+    "example": 4,
+    "page": 90,
+    "ja": "彼女の言ったことでショックを受けたというよりおかしかった。",
+    "en": "I was more amused than shocked by what she said."
+  },
+  {
+    "index": 549,
+    "id": "138-1",
+    "chapter": 9,
+    "pattern": 138,
+    "example": 1,
+    "page": 90,
+    "ja": "ショッピングモールは15分しか離れていないところにあります。",
+    "en": "The mall is no more than 15 minutes away."
+  },
+  {
+    "index": 550,
+    "id": "138-2",
+    "chapter": 9,
+    "pattern": 138,
+    "example": 2,
+    "page": 90,
+    "ja": "私の勧めるやり方は単に大まかな指標に過ぎません。",
+    "en": "My recommendations are no more than rough guidelines."
+  },
+  {
+    "index": 551,
+    "id": "138-3",
+    "chapter": 9,
+    "pattern": 138,
+    "example": 3,
+    "page": 90,
+    "ja": "子供たちが学校に入るには6歳より年下ではダメです。",
+    "en": "Children should be no younger than six to enter the school."
+  },
+  {
+    "index": 552,
+    "id": "138-4",
+    "chapter": 9,
+    "pattern": 138,
+    "example": 4,
+    "page": 90,
+    "ja": "彼は大事な試合で162もの得点を出しました。",
+    "en": "He scored no fewer than 162 during the important match."
+  },
+  {
+    "index": 553,
+    "id": "139-1",
+    "chapter": 9,
+    "pattern": 139,
+    "example": 1,
+    "page": 91,
+    "ja": "私はあなたと同じくらい速く走ることはできません。",
+    "en": "I can't run as fast as you."
+  },
+  {
+    "index": 554,
+    "id": "139-2",
+    "chapter": 9,
+    "pattern": 139,
+    "example": 2,
+    "page": 91,
+    "ja": "彼らはできる限り安く暮らしました。",
+    "en": "They lived as cheaply as possible."
+  },
+  {
+    "index": 555,
+    "id": "139-3",
+    "chapter": 9,
+    "pattern": 139,
+    "example": 3,
+    "page": 91,
+    "ja": "私は以前ほどたくさんギターを弾きません。",
+    "en": "I don't play the guitar as much as I used to."
+  },
+  {
+    "index": 556,
+    "id": "139-4",
+    "chapter": 9,
+    "pattern": 139,
+    "example": 4,
+    "page": 91,
+    "ja": "彼は目一杯の速さで走りました。",
+    "en": "He ran as fast as one could possibly imagine."
+  },
+  {
+    "index": 557,
+    "id": "140-1",
+    "chapter": 9,
+    "pattern": 140,
+    "example": 1,
+    "page": 91,
+    "ja": "猫は人間の2倍多く眠ります。",
+    "en": "Cats sleep twice as much as people."
+  },
+  {
+    "index": 558,
+    "id": "140-2",
+    "chapter": 9,
+    "pattern": 140,
+    "example": 2,
+    "page": 91,
+    "ja": "このバッテリーは他のバッテリーの2倍長く持ちます。",
+    "en": "This battery lasts twice as long as other batteries."
+  },
+  {
+    "index": 559,
+    "id": "140-3",
+    "chapter": 9,
+    "pattern": 140,
+    "example": 3,
+    "page": 91,
+    "ja": "私は昨年やった2倍の頻度でジョギングをしています。",
+    "en": "I've been jogging twice as often as I did last year."
+  },
+  {
+    "index": 560,
+    "id": "140-4",
+    "chapter": 9,
+    "pattern": 140,
+    "example": 4,
+    "page": 91,
+    "ja": "その州はイングランドの3倍の大きさです。",
+    "en": "The state is three times as big as England."
+  },
+  {
+    "index": 561,
+    "id": "141-1",
+    "chapter": 9,
+    "pattern": 141,
+    "example": 1,
+    "page": 92,
+    "ja": "私はますます退屈になりました。",
+    "en": "I got more and more bored."
+  },
+  {
+    "index": 562,
+    "id": "141-2",
+    "chapter": 9,
+    "pattern": 141,
+    "example": 2,
+    "page": 92,
+    "ja": "状況はますます複雑になりつつあります。",
+    "en": "The situation is getting more and more complicated."
+  },
+  {
+    "index": 563,
+    "id": "141-3",
+    "chapter": 9,
+    "pattern": 141,
+    "example": 3,
+    "page": 92,
+    "ja": "お店はクリスマスが近づくにつれてますます混雑します。",
+    "en": "The shops get more and more crowded as Christmas gets closer."
+  },
+  {
+    "index": 564,
+    "id": "141-4",
+    "chapter": 9,
+    "pattern": 141,
+    "example": 4,
+    "page": 92,
+    "ja": "私の給料で暮らしていくのはますます難しくなっていきました。",
+    "en": "It was becoming more and more difficult to live on my salary."
+  },
+  {
+    "index": 565,
+    "id": "142-1",
+    "chapter": 9,
+    "pattern": 142,
+    "example": 1,
+    "page": 92,
+    "ja": "より多く払えば払うほど、より多く手に入れることになります。",
+    "en": "The more you pay, the more you get."
+  },
+  {
+    "index": 566,
+    "id": "142-2",
+    "chapter": 9,
+    "pattern": 142,
+    "example": 2,
+    "page": 92,
+    "ja": "貯金すればするほど、より多くの利子を稼ぐことになるでしょう。",
+    "en": "The more you save, the more interest you'll earn."
+  },
+  {
+    "index": 567,
+    "id": "142-3",
+    "chapter": 9,
+    "pattern": 142,
+    "example": 3,
+    "page": 92,
+    "ja": "彼女はそのことについて考えれば考えるほど、より失望しました。",
+    "en": "The more she thought about it, the more depressed she became."
+  },
+  {
+    "index": 568,
+    "id": "142-4",
+    "chapter": 9,
+    "pattern": 142,
+    "example": 4,
+    "page": 92,
+    "ja": "野菜を食べれば食べるほど、がんになる機会は少なくなります。",
+    "en": "The more vegetables you eat, the less chance you have of getting cancer."
+  },
+  {
+    "index": 569,
+    "id": "143-1",
+    "chapter": 9,
+    "pattern": 143,
+    "example": 1,
+    "page": 93,
+    "ja": "ケンほど背が高い人は私のクラスにはいません。",
+    "en": "No one in my class is as tall as Ken."
+  },
+  {
+    "index": 570,
+    "id": "143-2",
+    "chapter": 9,
+    "pattern": 143,
+    "example": 2,
+    "page": 93,
+    "ja": "チーターと同じくらい速く走ることができる動物はいません。",
+    "en": "No animals can run as fast as the cheetah."
+  },
+  {
+    "index": 571,
+    "id": "143-3",
+    "chapter": 9,
+    "pattern": 143,
+    "example": 3,
+    "page": 93,
+    "ja": "光ほど速く伝わるものはありません。",
+    "en": "Nothing can travel faster than light."
+  },
+  {
+    "index": 572,
+    "id": "143-4",
+    "chapter": 9,
+    "pattern": 143,
+    "example": 4,
+    "page": 93,
+    "ja": "トムと同じくらい成功した人は誰もいませんでした。",
+    "en": "No one else was as successful as Tom."
+  },
+  {
+    "index": 573,
+    "id": "144-1",
+    "chapter": 9,
+    "pattern": 144,
+    "example": 1,
+    "page": 93,
+    "ja": "私は雨がやんだらすぐに出かけられるように用意ができています。",
+    "en": "I'm ready to go as soon as it stops raining."
+  },
+  {
+    "index": 574,
+    "id": "144-2",
+    "chapter": 9,
+    "pattern": 144,
+    "example": 2,
+    "page": 93,
+    "ja": "私は本屋だけでなく銀行に行く必要があります。",
+    "en": "I need to go to the bank as well as the bookshop."
+  },
+  {
+    "index": 575,
+    "id": "144-3",
+    "chapter": 9,
+    "pattern": 144,
+    "example": 3,
+    "page": 93,
+    "ja": "私が知っている限り誰も不平を言いませんでした。",
+    "en": "As far as I know, no one has complained."
+  },
+  {
+    "index": 576,
+    "id": "144-4",
+    "chapter": 9,
+    "pattern": 144,
+    "example": 4,
+    "page": 93,
+    "ja": "私が幸せである限り、私の両親は私の仕事について心配しません。",
+    "en": "As long as I'm happy, my parents don't care about my job."
+  },
+  {
+    "index": 577,
+    "id": "145-1",
+    "chapter": 10,
+    "pattern": 145,
+    "example": 1,
+    "page": 95,
+    "ja": "私たちは鉛筆と紙が必要です。",
+    "en": "We need a pencil and a piece of paper."
+  },
+  {
+    "index": 578,
+    "id": "145-2",
+    "chapter": 10,
+    "pattern": 145,
+    "example": 2,
+    "page": 95,
+    "ja": "行って見てみましょう。",
+    "en": "Let's go and take a look."
+  },
+  {
+    "index": 579,
+    "id": "145-3",
+    "chapter": 10,
+    "pattern": 145,
+    "example": 3,
+    "page": 95,
+    "ja": "私は京都に行き、そしてそこに3日間滞在しました。",
+    "en": "I went to Kyoto and stayed there for three days."
+  },
+  {
+    "index": 580,
+    "id": "145-4",
+    "chapter": 10,
+    "pattern": 145,
+    "example": 4,
+    "page": 95,
+    "ja": "小麦粉を加えて5分間調理しなさい。",
+    "en": "Add flour and cook for five minutes."
+  },
+  {
+    "index": 581,
+    "id": "146-1",
+    "chapter": 10,
+    "pattern": 146,
+    "example": 1,
+    "page": 95,
+    "ja": "私はあなたが好きですが、あなたの友人は好きではありません。",
+    "en": "I like you, but I don't like your friends."
+  },
+  {
+    "index": 582,
+    "id": "146-2",
+    "chapter": 10,
+    "pattern": 146,
+    "example": 2,
+    "page": 95,
+    "ja": "私はそれを買いたいのですが、十分なお金を持っていません。",
+    "en": "I want to buy it, but I don't have enough money."
+  },
+  {
+    "index": 583,
+    "id": "146-3",
+    "chapter": 10,
+    "pattern": 146,
+    "example": 3,
+    "page": 95,
+    "ja": "彼女はかわいいですが、あまりにも自己中心的です。",
+    "en": "She is pretty, but she's too self-centered."
+  },
+  {
+    "index": 584,
+    "id": "146-4",
+    "chapter": 10,
+    "pattern": 146,
+    "example": 4,
+    "page": 95,
+    "ja": "これはよい考えですが、さらによく計画を立てる必要があります。",
+    "en": "This is a good idea, but it needs further planning."
+  },
+  {
+    "index": 585,
+    "id": "147-1",
+    "chapter": 10,
+    "pattern": 147,
+    "example": 1,
+    "page": 96,
+    "ja": "あなたは今晩鶏肉、または魚を食べることができます。",
+    "en": "You can have chicken or fish tonight."
+  },
+  {
+    "index": 586,
+    "id": "147-2",
+    "chapter": 10,
+    "pattern": 147,
+    "example": 2,
+    "page": 96,
+    "ja": "彼は多分会議中です、でなければ昼食中です。",
+    "en": "He's probably in a meeting or at lunch."
+  },
+  {
+    "index": 587,
+    "id": "147-3",
+    "chapter": 10,
+    "pattern": 147,
+    "example": 3,
+    "page": 96,
+    "ja": "何かをしなさい、さもないとあなたは後悔するでしょう。",
+    "en": "Do something or you'll feel sorry."
+  },
+  {
+    "index": 588,
+    "id": "147-4",
+    "chapter": 10,
+    "pattern": 147,
+    "example": 4,
+    "page": 96,
+    "ja": "違う解決策を試してみなさい、または専門家を呼びなさい。",
+    "en": "Try different solutions or call a professional."
+  },
+  {
+    "index": 589,
+    "id": "148-1",
+    "chapter": 10,
+    "pattern": 148,
+    "example": 1,
+    "page": 96,
+    "ja": "もし私が10歳若かったら、彼とデートするでしょうに。",
+    "en": "If I was 10 years younger, I would go out with him."
+  },
+  {
+    "index": 590,
+    "id": "148-2",
+    "chapter": 10,
+    "pattern": 148,
+    "example": 2,
+    "page": 96,
+    "ja": "あなたはもし来たくなければ、もう一度来る必要はありません。",
+    "en": "You don't have to come again if you don't want to."
+  },
+  {
+    "index": 591,
+    "id": "148-3",
+    "chapter": 10,
+    "pattern": 148,
+    "example": 3,
+    "page": 96,
+    "ja": "もしあなたが遅刻したらあなたの上司は怒るでしょう。",
+    "en": "Your boss will be angry if you are late."
+  },
+  {
+    "index": 592,
+    "id": "148-4",
+    "chapter": 10,
+    "pattern": 148,
+    "example": 4,
+    "page": 96,
+    "ja": "もし彼らがそれを気に入ればいいね、でなければダメだね。",
+    "en": "If they like it, fine. If not, too bad!"
+  },
+  {
+    "index": 593,
+    "id": "149-1",
+    "chapter": 10,
+    "pattern": 149,
+    "example": 1,
+    "page": 97,
+    "ja": "私は彼が去った後でさびしく感じました。",
+    "en": "I felt so lonely after he left."
+  },
+  {
+    "index": 594,
+    "id": "149-2",
+    "chapter": 10,
+    "pattern": 149,
+    "example": 2,
+    "page": 97,
+    "ja": "誰かが話し出す前には長い沈黙がありました。",
+    "en": "There was a long silence before anybody spoke."
+  },
+  {
+    "index": 595,
+    "id": "149-3",
+    "chapter": 10,
+    "pattern": 149,
+    "example": 3,
+    "page": 97,
+    "ja": "料理を始める前に手を洗いなさい。",
+    "en": "Wash your hands before you start cooking."
+  },
+  {
+    "index": 596,
+    "id": "149-4",
+    "chapter": 10,
+    "pattern": 149,
+    "example": 4,
+    "page": 97,
+    "ja": "彼らは最初に出会った翌年に結婚しました。",
+    "en": "They were married the year after they first met."
+  },
+  {
+    "index": 597,
+    "id": "150-1",
+    "chapter": 10,
+    "pattern": 150,
+    "example": 1,
+    "page": 97,
+    "ja": "私は家に着いたらあなたにもう一度電話します。",
+    "en": "I'll phone you again when I get home."
+  },
+  {
+    "index": 598,
+    "id": "150-2",
+    "chapter": 10,
+    "pattern": 150,
+    "example": 2,
+    "page": 97,
+    "ja": "あなたが私の歳になれば、あなたは理解するでしょう。",
+    "en": "When you're my age, you'll understand."
+  },
+  {
+    "index": 599,
+    "id": "150-3",
+    "chapter": 10,
+    "pattern": 150,
+    "example": 3,
+    "page": 97,
+    "ja": "彼女が私に微笑んだ時、すべてがうまくいったとわかりました。",
+    "en": "When she smiled at me, I knew everything was all right."
+  },
+  {
+    "index": 600,
+    "id": "150-4",
+    "chapter": 10,
+    "pattern": 150,
+    "example": 4,
+    "page": 97,
+    "ja": "電話が鳴った時、私はちょうどお風呂に入ったところでした。",
+    "en": "I was just getting into the bath when the telephone rang."
+  },
+  {
+    "index": 601,
+    "id": "151-1",
+    "chapter": 10,
+    "pattern": 151,
+    "example": 1,
+    "page": 98,
+    "ja": "彼は家に早く帰りました。なぜなら具合が悪かったからです。",
+    "en": "He went home early because he felt sick."
+  },
+  {
+    "index": 602,
+    "id": "151-2",
+    "chapter": 10,
+    "pattern": 151,
+    "example": 2,
+    "page": 98,
+    "ja": "私は科学の世界に入りました。なぜなら面白かったからです。",
+    "en": "I got into science because it was fun."
+  },
+  {
+    "index": 603,
+    "id": "151-3",
+    "chapter": 10,
+    "pattern": 151,
+    "example": 3,
+    "page": 98,
+    "ja": "私たちはネットバンキングに切り替えました。時間とお金の節約のためです。",
+    "en": "We went over to Internet banking because it saved time and money."
+  },
+  {
+    "index": 604,
+    "id": "151-4",
+    "chapter": 10,
+    "pattern": 151,
+    "example": 4,
+    "page": 98,
+    "ja": "彼女は決断が得意です。なぜなら明晰に考える人だからです。",
+    "en": "She is good at making decisions because she's a very clear thinker."
+  },
+  {
+    "index": 605,
+    "id": "152-1",
+    "chapter": 10,
+    "pattern": 152,
+    "example": 1,
+    "page": 98,
+    "ja": "私はやり終えたらすぐに、家に帰ります。",
+    "en": "As soon as I'm done, I'm going home."
+  },
+  {
+    "index": 606,
+    "id": "152-2",
+    "chapter": 10,
+    "pattern": 152,
+    "example": 2,
+    "page": 98,
+    "ja": "私たちはそれが利用可能になったらすぐにコピーを送ります。",
+    "en": "We'll send you a copy as soon as it becomes available."
+  },
+  {
+    "index": 607,
+    "id": "152-3",
+    "chapter": 10,
+    "pattern": 152,
+    "example": 3,
+    "page": 98,
+    "ja": "建設作業が終わったらすぐに私たちは引っ越しすることができます。",
+    "en": "We can move in as soon as the building work is finished."
+  },
+  {
+    "index": 608,
+    "id": "152-4",
+    "chapter": 10,
+    "pattern": 152,
+    "example": 4,
+    "page": 98,
+    "ja": "彼女に会ってすぐに私は何か悪いことがあったとわかりました。",
+    "en": "As soon as I saw her, I knew there was something wrong."
+  },
+  {
+    "index": 609,
+    "id": "153-1",
+    "chapter": 10,
+    "pattern": 153,
+    "example": 1,
+    "page": 99,
+    "ja": "彼女は賢くて、ハンサムで面白いところもある男の人希望です。",
+    "en": "She wants a man who is smart, handsome and funny as well."
+  },
+  {
+    "index": 610,
+    "id": "153-2",
+    "chapter": 10,
+    "pattern": 153,
+    "example": 2,
+    "page": 99,
+    "ja": "65歳以上の人は割引チケットが手に入れられます。",
+    "en": "People who are 65 years old and over can get discount tickets."
+  },
+  {
+    "index": 611,
+    "id": "153-3",
+    "chapter": 10,
+    "pattern": 153,
+    "example": 3,
+    "page": 99,
+    "ja": "彼はそんなことをするような人ではありません。",
+    "en": "He would be the last person who would do such a thing."
+  },
+  {
+    "index": 612,
+    "id": "153-4",
+    "chapter": 10,
+    "pattern": 153,
+    "example": 4,
+    "page": 99,
+    "ja": "彼女は注目の的になるのが好きな類の人です。",
+    "en": "She's one of those people who love to be the center of attention."
+  },
+  {
+    "index": 613,
+    "id": "154-1",
+    "chapter": 10,
+    "pattern": 154,
+    "example": 1,
+    "page": 99,
+    "ja": "それはあなたが絶対に欲しがらないようなものです。",
+    "en": "That's the kind of thing which you certainly don't want."
+  },
+  {
+    "index": 614,
+    "id": "154-2",
+    "chapter": 10,
+    "pattern": 154,
+    "example": 2,
+    "page": 99,
+    "ja": "私はやりがいのあるすべてをやる用意ができています。",
+    "en": "I'm ready to do all those things which are more challenging."
+  },
+  {
+    "index": 615,
+    "id": "154-3",
+    "chapter": 10,
+    "pattern": 154,
+    "example": 3,
+    "page": 99,
+    "ja": "自分ではどうにもできないことを心配するのはばかげたことです。",
+    "en": "It's silly worrying about things which are outside your control."
+  },
+  {
+    "index": 616,
+    "id": "154-4",
+    "chapter": 10,
+    "pattern": 154,
+    "example": 4,
+    "page": 99,
+    "ja": "コーヒーはあなたの体をリフレッシュさせてくれるものです。",
+    "en": "Coffee is a thing which gives your body extra refreshment."
+  },
+  {
+    "index": 617,
+    "id": "155-1",
+    "chapter": 10,
+    "pattern": 155,
+    "example": 1,
+    "page": 100,
+    "ja": "彼は私が意見を尊重する男です。",
+    "en": "He's a man whose opinion I respect."
+  },
+  {
+    "index": 618,
+    "id": "155-2",
+    "chapter": 10,
+    "pattern": 155,
+    "example": 2,
+    "page": 100,
+    "ja": "あれが有名な政治家を父親に持つ男です。",
+    "en": "That's the man whose father is a famous politician."
+  },
+  {
+    "index": 619,
+    "id": "155-3",
+    "chapter": 10,
+    "pattern": 155,
+    "example": 3,
+    "page": 100,
+    "ja": "彼女は私が本当に作品を崇拝している芸術家です。",
+    "en": "She's an artist whose work I really admire."
+  },
+  {
+    "index": 620,
+    "id": "155-4",
+    "chapter": 10,
+    "pattern": 155,
+    "example": 4,
+    "page": 100,
+    "ja": "それはドアが赤く塗られている家です。",
+    "en": "It's the house whose door is painted red."
+  },
+  {
+    "index": 621,
+    "id": "156-1",
+    "chapter": 10,
+    "pattern": 156,
+    "example": 1,
+    "page": 100,
+    "ja": "彼女がやることは完全に無謀です。",
+    "en": "The things she does are completely mad."
+  },
+  {
+    "index": 622,
+    "id": "156-2",
+    "chapter": 10,
+    "pattern": 156,
+    "example": 2,
+    "page": 100,
+    "ja": "私たちが今できる唯一のことは待って見ていることです。",
+    "en": "The only thing we can do now is wait and see."
+  },
+  {
+    "index": 623,
+    "id": "156-3",
+    "chapter": 10,
+    "pattern": 156,
+    "example": 3,
+    "page": 100,
+    "ja": "あなたは私たちがその仕事のために必要とするまさにその人です。",
+    "en": "You're the very person we need for the job."
+  },
+  {
+    "index": 624,
+    "id": "156-4",
+    "chapter": 10,
+    "pattern": 156,
+    "example": 4,
+    "page": 100,
+    "ja": "彼は私が今までに出会ったうちで最もハンサムな男です。",
+    "en": "He's the most handsome man I've ever met."
+  },
+  {
+    "index": 625,
+    "id": "157-1",
+    "chapter": 10,
+    "pattern": 157,
+    "example": 1,
+    "page": 101,
+    "ja": "これがなぜその事故が起こったのかの理由です。",
+    "en": "This is why the accident happened."
+  },
+  {
+    "index": 626,
+    "id": "157-2",
+    "chapter": 10,
+    "pattern": 157,
+    "example": 2,
+    "page": 101,
+    "ja": "あれがなぜ私が彼をそんなに嫌いなのかの理由です。",
+    "en": "That's why I hate him so much."
+  },
+  {
+    "index": 627,
+    "id": "157-3",
+    "chapter": 10,
+    "pattern": 157,
+    "example": 3,
+    "page": 101,
+    "ja": "それはなぜ彼女が今日学校にいなかったのかを説明しています。",
+    "en": "That explains why she wasn't in school today."
+  },
+  {
+    "index": 628,
+    "id": "157-4",
+    "chapter": 10,
+    "pattern": 157,
+    "example": 4,
+    "page": 101,
+    "ja": "これはなぜ誰もここに住みたがらないのかを説明しています。",
+    "en": "This explains why no one wants to live here."
+  },
+  {
+    "index": 629,
+    "id": "158-1",
+    "chapter": 10,
+    "pattern": 158,
+    "example": 1,
+    "page": 101,
+    "ja": "これが私があなたにやってもらいたいことです。",
+    "en": "This is what I want you to do."
+  },
+  {
+    "index": 630,
+    "id": "158-2",
+    "chapter": 10,
+    "pattern": 158,
+    "example": 2,
+    "page": 101,
+    "ja": "これが決断を急ぐとこんなことになるというよい見本です。",
+    "en": "This is what happens when you make rash decisions."
+  },
+  {
+    "index": 631,
+    "id": "158-3",
+    "chapter": 10,
+    "pattern": 158,
+    "example": 3,
+    "page": 101,
+    "ja": "それが私がここにいる理由です。",
+    "en": "That's what I'm here for."
+  },
+  {
+    "index": 632,
+    "id": "158-4",
+    "chapter": 10,
+    "pattern": 158,
+    "example": 4,
+    "page": 101,
+    "ja": "それが彼に関して私が好きなところです。",
+    "en": "That's what I like about him."
+  },
+  {
+    "index": 633,
+    "id": "159-1",
+    "chapter": 10,
+    "pattern": 159,
+    "example": 1,
+    "page": 102,
+    "ja": "お金だけが彼にとって重要なものです。",
+    "en": "Money is the only thing that matters to him."
+  },
+  {
+    "index": 634,
+    "id": "159-2",
+    "chapter": 10,
+    "pattern": 159,
+    "example": 2,
+    "page": 102,
+    "ja": "彼女の手紙だけが私を前向きにさせてくれました。",
+    "en": "Her letters were the only thing that kept me going."
+  },
+  {
+    "index": 635,
+    "id": "159-3",
+    "chapter": 10,
+    "pattern": 159,
+    "example": 3,
+    "page": 102,
+    "ja": "私が心配なことは現地の食べものだけです。",
+    "en": "The only thing that worries me is the local food."
+  },
+  {
+    "index": 636,
+    "id": "159-4",
+    "chapter": 10,
+    "pattern": 159,
+    "example": 4,
+    "page": 102,
+    "ja": "私を健全に保っているものは音楽だけです。",
+    "en": "The only thing that keeps me sane is music."
+  },
+  {
+    "index": 637,
+    "id": "160-1",
+    "chapter": 10,
+    "pattern": 160,
+    "example": 1,
+    "page": 102,
+    "ja": "私が欲しいのは真実だけです。",
+    "en": "All I want is the truth."
+  },
+  {
+    "index": 638,
+    "id": "160-2",
+    "chapter": 10,
+    "pattern": 160,
+    "example": 2,
+    "page": 102,
+    "ja": "私が欲しいのは愛されることだけです。",
+    "en": "All I want is to be loved."
+  },
+  {
+    "index": 639,
+    "id": "160-3",
+    "chapter": 10,
+    "pattern": 160,
+    "example": 3,
+    "page": 102,
+    "ja": "私が欲しいのは私のビジネスに加わることができる人だけです。",
+    "en": "All I want is someone who can join my business."
+  },
+  {
+    "index": 640,
+    "id": "160-4",
+    "chapter": 10,
+    "pattern": 160,
+    "example": 4,
+    "page": 102,
+    "ja": "私が欲しいのは自分自身を試す機会だけです。",
+    "en": "All I want is the chance to prove myself."
+  }
+]
