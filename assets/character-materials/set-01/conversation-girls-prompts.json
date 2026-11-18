@@ -1,0 +1,23 @@
+{
+  "tool": "built-in image_gen",
+  "assets": [
+    {
+      "file": "07-red-girl-speaking.png",
+      "label": "話しかけている赤い服の女の子",
+      "width": 1254,
+      "height": 1254,
+      "transparentBackground": true,
+      "sha256": "ce6a2a49beabeac0b4aa1a9f6e7b1f331fd21646b3fa4d472444ae9c02cd84e7",
+      "prompt": "Create ONE isolated waist-up character asset on a genuinely transparent RGBA background, matching these existing warm watercolor/gouache Japanese children's-book illustrations. Soft brown linework, paper-like paint texture only within the character, natural child proportions, brown expressive eyes. Match the existing cutouts in scale and square canvas, full head/hair and hands visible, only an intentional waist/hip-level crop at bottom. No background, colored flecks, ground shadow, speech bubble, text, symbols or extra characters. Clean alpha-transparent gaps. Image 1 is the POSE/ROLE reference, the blue boy speaking to a listener on SCREEN RIGHT. Image 2 is the CHARACTER IDENTITY reference. Replace the boy with the SAME chestnut bob-haired GIRL from image 2: yellow star hairclip, coral-red button cardigan, cream shirt and teal pleated skirt. She faces RIGHT in three-quarter/near-profile conversation, eyes looking RIGHT directly toward a separately placed listener, warm engaged smile with mouth OPEN while speaking, one complete open palm raised toward the listener just like the boy. Use the girl's own face/hair/outfit, no hoodie or boy features. Make her clearly talking TO a nearby person rather than looking out toward the viewer. Girl only."
+    },
+    {
+      "file": "08-purple-girl-listening.png",
+      "label": "話を聞いている紫の服の女の子",
+      "width": 1254,
+      "height": 1254,
+      "transparentBackground": true,
+      "sha256": "bca2aebe0a4ac18ccc1bdd11e0844189e9b2bc59589852896fc38e4047e8deb8",
+      "prompt": "Create ONE isolated waist-up character asset on a genuinely transparent RGBA background, matching these existing warm watercolor/gouache Japanese children's-book illustrations. Soft brown linework, paper-like paint texture only within the character, natural child proportions, brown expressive eyes. Match the existing cutouts in scale and square canvas, full head/hair and hands visible, only an intentional waist/hip-level crop at bottom. No background, colored flecks, ground shadow, speech bubble, text, symbols or extra characters. Clean alpha-transparent gaps. Image 1 is the POSE/ROLE reference, the red-clothed girl listening toward SCREEN LEFT. Image 2 is the CHARACTER IDENTITY reference: the distinct purple-clothed ponytail girl. Replace the red girl with the SAME dark-brown high-ponytail GIRL from image 2, lavender scrunchie, purple long-sleeve top, dark blue pleated skirt. She faces LEFT in attentive three-quarter/near-profile conversation, head slightly lifted, brown eyes looking LEFT toward a separately placed speaker, mouth CLOSED with gentle small smile. Hands relaxed down/in lap, not gesturing or speaking. Preserve ponytail and purple scrunchie fully inside frame. No yellow star hairclip, coral clothing, bicycle, backpack or bob hairstyle. Girl only."
+    }
+  ]
+}

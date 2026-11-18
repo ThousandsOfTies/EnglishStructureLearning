@@ -1,0 +1,121 @@
+'use strict';
+const assert = require('node:assert/strict');
+const fs = require('node:fs');
+const path = require('node:path');
+const test = require('node:test');
+const draft = JSON.parse(fs.readFileSync(path.join(__dirname, '../data/construction-examples.json'), 'utf8'));
+const basic = draft.examples.filter(q => q.level === 1);
+const get = id => basic.find(q => q.id === 'build-' + id);
+
+test('the original 100 groups keep three core scenes each, with contrasts added', () => {
+  const core = basic.filter(q => q.contrastFamily === q.id);
+  assert.equal(core.length, 300);
+  const coreGroups = draft.groups.filter(q => !q.key.startsWith('pronouns-'));
+  assert.equal(coreGroups.length, 100);
+  for (const group of coreGroups) assert.equal(core.filter(q => q.group === group.key).length, 3);
+});
+
+test('connectors stay with the predicate and leave the target in P', () => {
+  for (const [id, predicate, target] of [
+    ['go-1', 'go to', 'the park'], ['look-1', 'look at', 'the moon'],
+    ['listen-1', 'listen to', 'music'], ['wait-1', 'wait for', 'the bus'],
+  ]) {
+    assert.equal(get(id).slots.predicate.en.replace(/^(looks|listens|waits)\b/, word => word.slice(0,-1)), predicate);
+    assert.equal(get(id).slots.P1.en, target);
+  }
+});
+
+test('be nouns and adjectives are complete predicates with an empty P', () => {
+  assert.equal(get('be-noun-1').slots.predicate.en, 'am a student');
+  assert.match(get('be-adjective-1').slots.predicate.en, /^(?:am|is|are) happy$/);
+  for (const q of basic.filter(q => q.group.startsWith('be-'))) {
+    assert.deepEqual(q.slots.P1, {ja: '', en: ''});
+    assert.deepEqual(q.slots.P2, {ja: '', en: ''});
+  }
+});
+
+test('location and invitation targets cannot leak into the time slot', () => {
+  assert.equal(get('wait-1').slots.place.en, 'here');
+  assert.equal(get('invite-1').slots.P1.en, 'your friend to your birthday party');
+  for (const q of basic) assert.match(q.slots.time.en, /^(?:$|on Sundays|every day|every morning|on Saturdays|today|now|yesterday)$/);
+});
+
+test('filled slots reconstruct the exact complete English sentence', () => {
+  for (const q of basic) {
+    const slots = ['S', 'predicate', 'P1', 'P2', 'place', 'time'].map(k => q.slots[k].en).filter(Boolean);
+    assert.equal(slots.join(' ') + '.', q.en, q.id);
+  }
+});
+
+test('P1 and P2 distinguish recipient/thing from object/description', () => {
+  assert.deepEqual([get('give-1').slots.P1.en, get('give-1').slots.P2.en], ['our brother', 'a sticker']);
+  assert.deepEqual([get('call-3').slots.P1.en, get('call-3').slots.P2.en], ['their dog', 'Pochi']);
+  assert.deepEqual([get('keep-1').slots.P1.en, get('keep-1').slots.P2.en], ['our room', 'clean']);
+  assert.deepEqual([get('make-3').slots.P1.en, get('make-3').slots.P2.en], ['our sister', 'happy']);
+});
+
+test('each selectable level has its requested number of examples', () => {
+  assert.deepEqual([1,2,3].map(level => draft.examples.filter(q => q.level === level).length), [878,10,10]);
+  assert.deepEqual(draft.levels.map(q => q.id), [1,2,3]);
+  assert.equal(new Set(draft.examples.map(q => q.id)).size, 898);
+});
+
+test('state verbs stay simple while ongoing actions are be plus ing', () => {
+  const states = new Set(['like','love','want','need','hear','see','feel','live']);
+  for (const q of basic.filter(q => states.has(q.group))) {
+    assert.equal(q.meaning, 'state');
+    assert.doesNotMatch(q.slots.predicate.en, /\bing\b/);
+  }
+  for (const q of basic.filter(q => q.meaning === 'ongoing')) {
+    const subject = q.slots.S.en;
+    const expectedBe = subject === 'I' ? 'am' : ['You','We','They'].includes(subject) ? 'are' : 'is';
+    assert.ok(q.slots.predicate.en.startsWith(expectedBe + ' '), q.id);
+    assert.match(q.slots.predicate.en, /\b\w+ing\b/, q.id);
+    assert.equal(q.slots.time.en, 'now');
+  }
+});
+
+test('contrast families preserve the scene participants and include real irregular past forms', () => {
+  for (const [id, verb] of [['go-1','went'],['swim-1','swam'],['write-1','wrote'],['give-1','gave'],['take-1','took'],['build-1','built']]) {
+    const current = get(id), previous = get(id + '-past');
+    assert.equal(previous.slots.predicate.en.split(' ')[0], verb);
+    for (const role of ['S','P1','P2','place']) assert.deepEqual(previous.slots[role], current.slots[role]);
+    assert.equal(previous.scene.speakerTime, '今');
+    assert.equal(previous.scene.eventTime, '昨日');
+  }
+  assert.equal(get('read-1-past').note.includes('/red/'), true);
+  assert.equal(get('be-adjective-1-past').slots.predicate.ja, 'うれしかったです');
+  assert.equal(get('be-adjective-2-past').slots.predicate.ja, 'いそがしかったです');
+  assert.equal(get('be-adjective-3-past').slots.predicate.ja, '静かでした');
+});
+
+test('personal pronouns cover subject, object, possessive and reflexive forms with explicit viewpoints', () => {
+  const expected = {
+    subject: ['I','You','He','She','It','We','They'],
+    object: ['me','you','him','her','it','us','them'],
+    possessive: ['my','your','his','her','its','our','their'],
+    independent: ['mine','yours','his','hers','ours','theirs'],
+    reflexive: ['myself','yourself','himself','herself','itself','ourselves','yourselves','themselves'],
+  };
+  for (const [category, forms] of Object.entries(expected)) {
+    const examples = basic.filter(q => q.pronounFocus?.category === category);
+    assert.deepEqual([...new Set(examples.map(q => q.pronounFocus.form))].sort(), forms.sort());
+    for (const q of examples) assert.ok(q.scene.speaker && q.scene.listener && q.scene.viewpoint, q.id);
+  }
+  assert.equal(basic.filter(q => q.pronounFocus?.category === 'independent' && q.pronounFocus.form === 'its').length, 0);
+});
+
+test('advanced blocks reconstruct spoken English and never speak silent whether', () => {
+  for (const q of draft.examples.filter(q => q.level > 1)) {
+    assert.equal(q.blocks.map(([,text]) => text).join(' ') + (q.level === 3 ? '?' : '.'), q.en);
+    assert.doesNotMatch(q.en, /\bwhether\b/i);
+    if (q.level === 3) assert.equal(q.question.spoken, q.question.token !== 'whether');
+  }
+});
+
+test('questions about the subject preserve the subject position without do', () => {
+  const subjectQuestion = draft.examples.find(q => q.id === 'level3-06');
+  assert.equal(subjectQuestion.question.target, 'S');
+  assert.equal(subjectQuestion.en, 'Who gives you a sticker at school?');
+  assert.doesNotMatch(subjectQuestion.en, /\bdo(?:es)?\b/i);
+});

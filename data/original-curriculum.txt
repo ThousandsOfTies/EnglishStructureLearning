@@ -1,0 +1,112 @@
+# オリジナル教材。各行: 動詞|日本語の動き|3つの場面（日本語=英語）|追加情報（日本語=英語、任意）
+# 文型順ではなく生活場面ごとの動詞順。書籍の例文・章構成は使用しない。
+@おでかけと体の動き
+go|行きます|公園に=to the park;図書館に=to the library;プールに=to the pool|日曜日に=on Sundays
+come|来ます|ここに=here;この部屋に=to this room;公園に=to the park|放課後に=after school
+walk|歩きます|川のそばを=by the river;学校まで=to school;森の中を=through the woods|朝に=in the morning
+run|走ります|公園で=in the park;校庭で=in the schoolyard;浜辺で=on the beach|毎日=every day
+jump|とびこえます|小さな水たまりを=over a small puddle;ロープを=over a rope;線を=over a line
+swim|泳ぎます|プールで=in the pool;海で=in the sea;湖で=in the lake|夏に=in summer
+fly|飛ばします|赤いたこを=a red kite;青いたこを=a blue kite;紙飛行機を=a paper plane|公園で=in the park
+ride|乗ります|自転車に=a bike;小さな馬に=a pony;スクーターに=a scooter|日曜日に=on Sundays
+climb|登ります|小さな丘に=a small hill;木に=a tree;はしごに=a ladder
+sit|座ります|ベンチに=on a bench;いすに=on a chair;芝生に=on the grass
+@一日のくらし
+stand|立ちます|ドアのそばに=by the door;木の下に=under a tree;先生のとなりに=next to the teacher
+sleep|ねます|ベッドで=in a bed;テントで=in a tent;ふとんで=on a futon|夜に=at night
+wake|起きます|~=~;~=~;~=~|7時に=at seven;6時に=at six;8時に=at eight
+rest|休みます|木の下で=under a tree;ソファで=on the sofa;ベンチで=on a bench|昼食のあとに=after lunch
+stay|とまります|おばあちゃんの家に=at Grandma's house;テントに=in a tent;ホテルに=at a hotel|土曜日に=on Saturdays
+live|住んでいます|小さな家に=in a small house;海の近くに=near the sea;公園の近くに=near a park
+move|動かします|箱を=a box;いすを=a chair;小さな机を=a small desk|ゆっくり=slowly
+stop|止めます|おもちゃの電車を=a toy train;音楽を=the music;タイマーを=the timer
+start|始めます|ゲームを=a game;宿題を=my homework;パズルを=a puzzle|夕食のあとに=after dinner
+wait|待ちます|バスを=for the bus;友だちを=for a friend;お母さんを=for Mom|ここで=here
+@食べものと料理
+eat|食べます|おにぎりを=a rice ball;バナナを=a banana;にんじんを=a carrot|昼食に=for lunch
+drink|飲みます|水を=water;牛乳を=milk;りんごジュースを=apple juice|朝食のときに=at breakfast
+cook|作ります|カレーを=curry;スープを=soup;ごはんを=rice|お父さんと=with Dad
+bake|焼きます|バナナケーキを=a banana cake;クッキーを=cookies;パンを=bread|お母さんと=with Mom
+taste|味見します|スープを=the soup;カレーを=the curry;ソースを=the sauce
+cut|切ります|りんごを=an apple;紙を=paper;パンを=bread|気をつけて=carefully
+peel|むきます|バナナの皮を=a banana;みかんの皮を=an orange;じゃがいもの皮を=a potato
+mix|混ぜます|卵を=the eggs;サラダを=the salad;絵の具を=the paint|ゆっくり=slowly
+pour|そそぎます|水を=water;牛乳を=milk;ジュースを=juice|コップに=into a cup
+wash|洗います|手を=my hands;りんごを=an apple;コップを=a cup|水で=with water
+@学校と学び
+read|読みます|動物の本を=an animal book;短いお話を=a short story;まんがを=a comic|放課後に=after school
+write|書きます|名前を=my name;短い手紙を=a short letter;英語の単語を=an English word
+draw|かきます|うさぎを=a rabbit;虹を=a rainbow;ロボットを=a robot
+color|色をぬります|花の絵に=a flower;星の絵に=a star;魚の絵に=a fish
+count|数えます|星を=the stars;ビー玉を=the marbles;カードを=the cards
+study|勉強します|英語を=English;算数を=math;理科を=science|放課後に=after school
+learn|覚えます|新しい歌を=a new song;新しい単語を=a new word;新しいダンスを=a new dance
+practice|練習します|ピアノを=the piano;英語を=English;ダンスを=dancing|毎日=every day
+spell|つづりを言います|catの=cat;dogの=dog;birdの=bird
+answer|答えます|先生の質問に=the teacher's question;かんたんな質問に=an easy question;最後の質問に=the last question
+@遊びと五感
+play|します|なわとびを=jump rope;かくれんぼを=hide-and-seek;カードゲームを=a card game|友だちと=with friends
+sing|歌います|好きな歌を=my favorite song;誕生日の歌を=a birthday song;楽しい歌を=a happy song
+dance|おどります|音楽に合わせて=to the music;ステージで=on the stage;部屋で=in my room
+watch|見ます|テレビ番組を=a TV show;アニメを=a cartoon;サッカーの試合を=a soccer game|夕食のあとに=after dinner
+listen|聞きます|音楽を=to music;雨の音を=to the rain;鳥の歌を=to birds singing
+look|見ます|月を=at the moon;小さな虫を=at a little bug;地図を=at a map
+hear|聞こえます|鳥の歌が=birds singing;犬の声が=a dog barking;ピアノの音が=a piano
+see|見かけます|赤いバスを=a red bus;白い猫を=a white cat;小さな鳥を=a small bird|毎朝=every morning
+touch|さわります|やわらかい毛布に=a soft blanket;冷たい水に=cold water;木の葉に=a leaf
+feel|感じます|風を=the wind;雨のしずくを=raindrops;太陽のあたたかさを=the warmth of the sun
+@ものを動かす
+open|開けます|お弁当箱を=my lunch box;本を=a book;窓を=a window
+close|閉じます|本を=my book;箱を=a box;目を=my eyes
+push|押します|青いボタンを=a blue button;小さなカートを=a small cart;おもちゃの車を=a toy car
+pull|引きます|ロープを=a rope;小さなワゴンを=a little wagon;いすを=a chair
+turn|回します|ハンドルを=the handle;ドアのつまみを=the doorknob;おもちゃの車輪を=a toy wheel|ゆっくり=slowly
+lift|持ち上げます|小さな箱を=a small box;かばんを=a bag;ふたを=the lid
+carry|運びます|本を=books;かごを=a basket;毛布を=a blanket
+hold|持ちます|赤い風船を=a red balloon;かさを=an umbrella;小さな旗を=a little flag
+put|置きます|本を=a book;コップを=a cup;鉛筆を=a pencil|机の上に=on the desk
+take|とります|赤い車の写真を=a photo of a red car;猫の写真を=a photo of a cat;花の写真を=a photo of a flower
+@伝える・受けわたす
+give|あげます|弟にシールを=my brother a sticker;友だちにカードを=my friend a card;妹に花を=my sister a flower
+get|もらいます|新しい鉛筆を=a new pencil;シールを=a sticker;絵はがきを=a postcard
+bring|持ってきます|お弁当を=my lunch;お気に入りの本を=my favorite book;青いボールを=a blue ball
+send|送ります|おばあちゃんにカードを=Grandma a card;友だちに手紙を=my friend a letter;お父さんに写真を=Dad a photo
+show|見せます|お母さんに絵を=Mom my picture;友だちに地図を=my friend a map;弟にロボットを=my brother a robot
+tell|伝えます|妹に予定を=my sister the plan;友だちに答えを=my friend the answer;お父さんに時刻を=Dad the time
+ask|たずねます|先生に質問を=the teacher a question;お父さんに質問を=Dad a question;友だちに名前を=my friend their name
+talk|話します|友だちと=with a friend;お母さんと=with Mom;おじいちゃんと=with Grandpa|昼食のあとに=after lunch
+speak|話します|英語を=English;日本語を=Japanese;英語を=English|ゆっくり=slowly
+call|電話します|おばあちゃんに=Grandma;おじいちゃんに=Grandpa;友だちに=a friend|日曜日に=on Sundays
+@家族と友だち
+help|手伝います|お父さんを=Dad;友だちを=a friend;妹を=my sister|朝に=in the morning
+share|分け合います|クッキーを=cookies;色鉛筆を=colored pencils;シールを=stickers|友だちと=with a friend
+thank|お礼を言います|先生に=my teacher;お母さんに=Mom;友だちに=my friend
+greet|あいさつします|先生に=my teacher;友だちに=my friend;おとなりさんに=my neighbor|毎朝=every morning
+meet|会います|友だちに=a friend;いとこに=my cousin;おばあちゃんに=Grandma|駅で=at the station
+visit|遊びに行きます|おばあちゃんのところに=Grandma;いとこのところに=my cousin;友だちのところに=my friend|日曜日に=on Sundays
+invite|招きます|友だちを=my friend;いとこを=my cousin;おとなりさんを=my neighbor|誕生日会に=to my birthday party
+join|加わります|ゲームに=the game;チームに=the team;ダンスクラブに=the dance club
+teach|教えます|弟に新しいゲームを=my brother a new game;友だちに歌を=my friend a song;妹にダンスを=my sister a dance
+follow|ついていきます|先生に=my teacher;お父さんに=Dad;友だちに=my friend|ゆっくり=slowly
+@好きなもの・作ること
+like|好きです|いちごが=strawberries;パズルが=puzzles;ペンギンが=penguins
+love|大好きです|雪が=snow;音楽が=music;うさぎが=rabbits
+want|ほしいです|緑の鉛筆が=a green pencil;小さなボールが=a little ball;新しいノートが=a new notebook
+need|必要です|はさみが=scissors;白い紙が=white paper;水が=water
+choose|選びます|青いカードを=a blue card;小さなりんごを=a small apple;動物の本を=an animal book
+try|やってみます|新しいゲームを=a new game;パズルを=a puzzle;新しいスポーツを=a new sport
+make|作ります|紙のぼうしを=a paper hat;サンドイッチを=a sandwich;誕生日カードを=a birthday card
+build|作ります|砂のお城を=a sandcastle;小さな家を=a little house;高いタワーを=a tall tower
+use|使います|赤いペンを=a red pen;定規を=a ruler;小さなスプーンを=a little spoon
+fix|直します|おもちゃの車を=a toy car;小さなロボットを=a little robot;こわれた箱を=a broken box|お父さんと=with Dad
+@身の回りと買いもの
+clean|そうじします|自分の部屋を=my room;机を=my desk;黒板を=the board|土曜日に=on Saturdays
+tidy|片づけます|自分の机を=my desk;おもちゃ箱を=my toy box;本だなを=my bookshelf|夕食の前に=before dinner
+wear|身につけます|赤いぼうしを=a red hat;青いシャツを=a blue shirt;黄色いコートを=a yellow coat
+change|取りかえます|シャツを=my shirt;靴下を=my socks;上着を=my jacket|朝に=in the morning
+buy|買います|ノートを=a notebook;消しゴムを=an eraser;小さなパンを=a small loaf of bread|お母さんと=with Mom
+pay|お金を払います|切符の=for a ticket;おやつの=for a snack;ノートの=for a notebook
+save|ためます|おこづかいを=my pocket money;おこづかいを=my pocket money;おこづかいを=my pocket money|新しい本のために=for a new book;自転車のために=for a bike;ゲームのために=for a game
+keep|しまっておきます|シールを=my stickers;石を=my stones;宝物を=my treasures|小さな箱に=in a little box
+find|見つけます|赤い葉っぱを=a red leaf;小さな石を=a little stone;松ぼっくりを=a pine cone|公園で=in the park
+check|確かめます|自分のかばんを=my bag;答えを=my answer;時間割を=my timetable|朝に=in the morning

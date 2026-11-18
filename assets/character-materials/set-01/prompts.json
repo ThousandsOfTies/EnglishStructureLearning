@@ -1,0 +1,86 @@
+{
+  "tool": "built-in image_gen",
+  "assets": [
+    {
+      "file": "01-girl-cycling.png",
+      "label": "自転車をこいでいる女の子",
+      "width": 1254,
+      "height": 1254,
+      "transparentBackground": true,
+      "sha256": "3a7771e236ff452b83b6384fa0d9e7203b8ab55cf50c4948e709811a74e894f3",
+      "prompt": "Use case: illustration-story / identity-preserve character asset. Reference image is a visual reference for character identity, costume, pose and painterly style, NOT a background to reproduce. Create ONE isolated character cutout asset on a genuinely TRANSPARENT background (RGBA alpha); no colored paper, no white rectangle, no checkerboard printed into pixels, no scenery, no speech balloon, no calendar, no text, no frame, no ground shadow. Match the attached Japanese children's book illustration closely: warm watercolor/gouache texture, fine soft dark-brown outlines, gentle natural proportions, expressive brown eyes, delicate shading, not glossy 3D and not anime redesign. Keep one consistent character identity. Girl: chestnut bob hair, yellow star hairclip, coral cardigan with small buttons, cream shirt, teal pleated skirt. Boy: tousled short brown hair, blue zip-front hoodie over cream shirt. Final square 1536x1536 composition, character large with a small clear transparent margin around the entire subject. Never crop head, hair, fingers or required objects. Extract and faithfully recreate ONLY the girl riding the light-blue basket bicycle in the LARGE EVENT SCENE. Full girl plus ENTIRE bicycle including both circular wheels, tires, spokes, handlebars, basket, pedals and feet. Girl pedals toward SCREEN RIGHT in cheerful three-quarter side view; hands contact handlebars and feet contact pedals naturally. Same yellow star hairclip/coral cardigan/teal skirt/white socks/light sneakers. Reconstruct any occluded bicycle parts cleanly. Transparent gaps between spokes, bicycle frame and limbs, with no remaining park colors. No narrator copy: exactly one girl, one bicycle."
+    },
+    {
+      "file": "02-girl-presenting-right.png",
+      "label": "右向きに紹介している女の子",
+      "width": 1254,
+      "height": 1254,
+      "transparentBackground": true,
+      "sha256": "f103f1825c05fe9ef50c2d996ae12698835a7ac3723bd292636c9e33869da964",
+      "prompt": "Use case: illustration-story / identity-preserve character asset. Reference image is a visual reference for character identity, costume, pose and painterly style, NOT a background to reproduce. Create ONE isolated character cutout asset on a genuinely TRANSPARENT background (RGBA alpha); no colored paper, no white rectangle, no checkerboard printed into pixels, no scenery, no speech balloon, no calendar, no text, no frame, no ground shadow. Match the attached Japanese children's book illustration closely: warm watercolor/gouache texture, fine soft dark-brown outlines, gentle natural proportions, expressive brown eyes, delicate shading, not glossy 3D and not anime redesign. Keep one consistent character identity. Girl: chestnut bob hair, yellow star hairclip, coral cardigan with small buttons, cream shirt, teal pleated skirt. Boy: tousled short brown hair, blue zip-front hoodie over cream shirt. Final square 1536x1536 composition, character large with a small clear transparent margin around the entire subject. Never crop head, hair, fingers or required objects. Recreate ONLY the speaking girl at the LEFT foreground. Waist-up introduction pose, standing at screen left and facing SCREEN RIGHT. Her eyes and friendly open speaking mouth face RIGHT. One open palm extends toward the RIGHT side as if introducing a scene there. Keep her chestnut bob and yellow star hairclip, coral button cardigan, cream shirt and upper teal skirt. Show the full head, both visible arms and complete hand/fingers; intentional straight waist/hip crop only along lower edge of the figure. The girl alone, no bicycle, no second girl, no speech effects."
+    },
+    {
+      "file": "03-girl-presenting-left.png",
+      "label": "左向きに紹介している女の子",
+      "width": 1254,
+      "height": 1254,
+      "transparentBackground": true,
+      "sha256": "252ac376367c12ec0f148e4e84df68938b042dc7121399db1ff702b8024c9729",
+      "prompt": "Use case: illustration-story / identity-preserve character asset. Reference image is a visual reference for character identity, costume, pose and painterly style, NOT a background to reproduce. Create ONE isolated character cutout asset on a genuinely TRANSPARENT background (RGBA alpha); no colored paper, no white rectangle, no checkerboard printed into pixels, no scenery, no speech balloon, no calendar, no text, no frame, no ground shadow. Match the attached Japanese children's book illustration closely: warm watercolor/gouache texture, fine soft dark-brown outlines, gentle natural proportions, expressive brown eyes, delicate shading, not glossy 3D and not anime redesign. Keep one consistent character identity. Girl: chestnut bob hair, yellow star hairclip, coral cardigan with small buttons, cream shirt, teal pleated skirt. Boy: tousled short brown hair, blue zip-front hoodie over cream shirt. Final square 1536x1536 composition, character large with a small clear transparent margin around the entire subject. Never crop head, hair, fingers or required objects. Recreate ONLY the large narrator girl at the RIGHT foreground. Waist-up introduction pose, standing at screen right and looking/turning toward SCREEN LEFT. Her eyes and friendly open speaking mouth face LEFT; open palm extends toward the LEFT side, presenting a scene there. Match her identity, yellow star hairclip, chestnut bob, coral cardigan, cream shirt and upper teal skirt. Show the full head, arms and entire presenting hand/fingers; intentional straight waist/hip crop only along lower edge. One girl only, no backpack, no walking girl, no speech balloon, no timeline."
+    },
+    {
+      "file": "04-boy-speaking.png",
+      "label": "話しかけている男の子",
+      "width": 1254,
+      "height": 1254,
+      "transparentBackground": true,
+      "sha256": "40e75124eecb6f83e66024fa3eac8098030995a7b4dac392de29e534fee0e657",
+      "prompt": "Use case: illustration-story / identity-preserve character asset. Reference image is a visual reference for character identity, costume, pose and painterly style, NOT a background to reproduce. Create ONE isolated character cutout asset on a genuinely TRANSPARENT background (RGBA alpha); no colored paper, no white rectangle, no checkerboard printed into pixels, no scenery, no speech balloon, no calendar, no text, no frame, no ground shadow. Match the attached Japanese children's book illustration closely: warm watercolor/gouache texture, fine soft dark-brown outlines, gentle natural proportions, expressive brown eyes, delicate shading, not glossy 3D and not anime redesign. Keep one consistent character identity. Girl: chestnut bob hair, yellow star hairclip, coral cardigan with small buttons, cream shirt, teal pleated skirt. Boy: tousled short brown hair, blue zip-front hoodie over cream shirt. Final square 1536x1536 composition, character large with a small clear transparent margin around the entire subject. Never crop head, hair, fingers or required objects. Recreate ONLY the speaking boy at the LEFT foreground. Waist-up, positioned to face SCREEN RIGHT toward a listener that will be placed separately. Friendly engaged expression, mouth open speaking, brown eyes looking RIGHT, one hand open palm-up gesturing RIGHT. Tousled short brown hair, blue zip-front hoodie with cream drawstrings, cream shirt. Full hair, head, upper body and complete fingers visible; intentional waist/hip crop only along lower edge of figure. ONE boy alone. No girl, pony, park, words or speech balloon."
+    },
+    {
+      "file": "05-girl-listening.png",
+      "label": "話を聞いている女の子",
+      "width": 1254,
+      "height": 1254,
+      "transparentBackground": true,
+      "sha256": "0dd257a4b9b172f75261cefeb5e3ee6c840e0e5632f0f873481a2c8e41456233",
+      "prompt": "Use case: illustration-story / identity-preserve character asset. Reference image is a visual reference for character identity, costume, pose and painterly style, NOT a background to reproduce. Create ONE isolated character cutout asset on a genuinely TRANSPARENT background (RGBA alpha); no colored paper, no white rectangle, no checkerboard printed into pixels, no scenery, no speech balloon, no calendar, no text, no frame, no ground shadow. Match the attached Japanese children's book illustration closely: warm watercolor/gouache texture, fine soft dark-brown outlines, gentle natural proportions, expressive brown eyes, delicate shading, not glossy 3D and not anime redesign. Keep one consistent character identity. Girl: chestnut bob hair, yellow star hairclip, coral cardigan with small buttons, cream shirt, teal pleated skirt. Boy: tousled short brown hair, blue zip-front hoodie over cream shirt. Final square 1536x1536 composition, character large with a small clear transparent margin around the entire subject. Never crop head, hair, fingers or required objects. Recreate ONLY the listening girl at the LOWER foreground, not the girl riding the pony. Waist-up attentive listener facing SCREEN LEFT toward a speaker that will be placed separately. Gently tilted/lifted head, brown eyes looking LEFT at speaker, CLOSED mouth with slight warm smile; calm listening posture, hands relaxed down rather than a presenting gesture. Chestnut bob, yellow star hairclip, coral cardigan, cream shirt and upper teal skirt. Entire head/hair and upper body visible, intentional waist/hip crop only along lower edge. Exactly one girl alone. No pony, boy, speaking mouth, speech balloon, scenery."
+    },
+    {
+      "file": "06-purple-girl-cycling.png",
+      "label": "紫の服の女の子が自転車をこいでいる",
+      "width": 1254,
+      "height": 1254,
+      "transparentBackground": true,
+      "sha256": "5d44da6ad9ebf05b20490cc2dbb0ea19836fd7c55750d3e13383807a8a972f37",
+      "prompt": "Use case: identity-preserve character illustration asset. Image 1 is the CHARACTER IDENTITY REFERENCE: use ONLY the ponytailed girl wearing PURPLE who is walking at the right INSIDE the large balloon. Image 2 is the POSE, BICYCLE and CUTOUT STYLE reference. Create ONE girl riding a bicycle toward SCREEN RIGHT, replacing the coral-cardigan bob-haired rider from image 2 with the distinct purple-clothed ponytail girl from image 1. Faithfully preserve the purple girl's face, dark brown high ponytail, lavender/purple hair tie, brown eyes, purple long-sleeve top and dark blue pleated skirt. She has NO yellow star hairclip and NO coral cardigan. Cheerful natural expression. Whole body, white socks and simple sneakers; hands on handlebar grips, both feet naturally on pedals. Keep the entire light-blue bicycle with front wire basket, both complete round wheels, pedals, frame and spokes. Match the same warm watercolor/gouache children's book style, fine brown outlines, delicate paper-like color texture and gentle proportions. Square canvas, large subject with all hair, fingers and wheel edges visible and a clear transparent margin. GENUINELY TRANSPARENT RGBA background everywhere outside the girl/bike AND in all empty gaps between spokes, inside the basket mesh and bicycle frame. NO colored flecks, leftover park colors, background texture or halo in transparent gaps. No scene, ground, shadows, speech balloon, calendar, text, extra people, backpack or pony. One girl, one bicycle, fully isolated reusable PNG material."
+    },
+    {
+      "file": "07-red-girl-speaking.png",
+      "label": "話しかけている赤い服の女の子",
+      "width": 1254,
+      "height": 1254,
+      "transparentBackground": true,
+      "sha256": "ce6a2a49beabeac0b4aa1a9f6e7b1f331fd21646b3fa4d472444ae9c02cd84e7",
+      "prompt": "Create ONE isolated waist-up character asset on a genuinely transparent RGBA background, matching these existing warm watercolor/gouache Japanese children's-book illustrations. Soft brown linework, paper-like paint texture only within the character, natural child proportions, brown expressive eyes. Match the existing cutouts in scale and square canvas, full head/hair and hands visible, only an intentional waist/hip-level crop at bottom. No background, colored flecks, ground shadow, speech bubble, text, symbols or extra characters. Clean alpha-transparent gaps. Image 1 is the POSE/ROLE reference, the blue boy speaking to a listener on SCREEN RIGHT. Image 2 is the CHARACTER IDENTITY reference. Replace the boy with the SAME chestnut bob-haired GIRL from image 2: yellow star hairclip, coral-red button cardigan, cream shirt and teal pleated skirt. She faces RIGHT in three-quarter/near-profile conversation, eyes looking RIGHT directly toward a separately placed listener, warm engaged smile with mouth OPEN while speaking, one complete open palm raised toward the listener just like the boy. Use the girl's own face/hair/outfit, no hoodie or boy features. Make her clearly talking TO a nearby person rather than looking out toward the viewer. Girl only."
+    },
+    {
+      "file": "08-purple-girl-listening.png",
+      "label": "話を聞いている紫の服の女の子",
+      "width": 1254,
+      "height": 1254,
+      "transparentBackground": true,
+      "sha256": "bca2aebe0a4ac18ccc1bdd11e0844189e9b2bc59589852896fc38e4047e8deb8",
+      "prompt": "Create ONE isolated waist-up character asset on a genuinely transparent RGBA background, matching these existing warm watercolor/gouache Japanese children's-book illustrations. Soft brown linework, paper-like paint texture only within the character, natural child proportions, brown expressive eyes. Match the existing cutouts in scale and square canvas, full head/hair and hands visible, only an intentional waist/hip-level crop at bottom. No background, colored flecks, ground shadow, speech bubble, text, symbols or extra characters. Clean alpha-transparent gaps. Image 1 is the POSE/ROLE reference, the red-clothed girl listening toward SCREEN LEFT. Image 2 is the CHARACTER IDENTITY reference: the distinct purple-clothed ponytail girl. Replace the red girl with the SAME dark-brown high-ponytail GIRL from image 2, lavender scrunchie, purple long-sleeve top, dark blue pleated skirt. She faces LEFT in attentive three-quarter/near-profile conversation, head slightly lifted, brown eyes looking LEFT toward a separately placed speaker, mouth CLOSED with gentle small smile. Hands relaxed down/in lap, not gesturing or speaking. Preserve ponytail and purple scrunchie fully inside frame. No yellow star hairclip, coral clothing, bicycle, backpack or bob hairstyle. Girl only."
+    },
+    {
+      "file": "09-boy-cycling.png",
+      "label": "自転車をこいでいる青いパーカーの男の子",
+      "width": 1254,
+      "height": 1254,
+      "transparentBackground": true,
+      "sha256": "5be009ee02216ff739c8e3376b495059cdba6df5d849a91636c9f0c3ce2c4d48",
+      "prompt": "Use case: identity-preserve children's illustration cutout. Image 1 is CHARACTER IDENTITY reference: the short tousled brown-haired boy wearing a BLUE zip-front hoodie, cream shirt, brown eyes, warm expressive face. Image 2 is POSE/BICYCLE/ART STYLE reference. Create ONE boy pedaling a bicycle toward SCREEN RIGHT, replacing the girl rider in image 2 with this SAME BOY. Match image 1 face and haircut faithfully, blue hoodie with cream drawstrings, cream shirt; tan knee-length shorts, white socks, simple sneakers to complete the boy's outfit. No girl, skirt, star hairclip or ponytail. Cheerful natural smile and forward gaze. Full rider and ENTIRE light-blue bicycle including front wire basket, two complete circular wheels, spokes, frame, chain guard, pedals and feet. Natural hands gripping handlebars and both feet contacting pedals, believable cycling posture. Match warm watercolor/gouache children's book painting, delicate textured colors, soft fine brown outlines, gentle natural child proportions. Square composition at the same scale as the existing bicycle cutout, clear transparent margins so no hair, fingers or wheels are cut off. Genuinely TRANSPARENT RGBA background, including all empty spaces inside spoke gaps, basket mesh and frame. NO scenery, white rectangle, printed checkerboard, colored flecks/park residue, cast shadow, text, calendar, speech bubble or extra people. A single reusable isolated boy-and-bicycle PNG asset."
+    }
+  ]
+}
