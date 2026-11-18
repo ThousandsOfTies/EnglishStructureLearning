@@ -7,7 +7,7 @@ const app = require('../src/construction-practice.js');
 const data = JSON.parse(fs.readFileSync(path.join(__dirname, '../data/construction-examples.json'), 'utf8'));
 const get = id => data.examples.find(q => q.id === id);
 
-test('all 898 exercises can be completed by moving cards into their intended targets', () => {
+test('all curriculum exercises can be completed by moving cards into their intended targets', () => {
   for (const q of data.examples) {
     const cards = app.cardsFor(q);
     assert.equal(app.isCorrect(q, []), false, q.id);
@@ -82,8 +82,8 @@ test('subject and object who retain their order and silent whether is never a ca
 
 test('basic-first navigation separates contrasts, pronouns, and advanced reflexives', () => {
   const filters = { level: 1, group: 'all', scope: 'core', search: '' };
-  assert.equal(app.visibleExamples(data, filters).length, 300);
-  assert.equal(app.visibleExamples(data, { ...filters, scope: 'all' }).length, 878);
+  assert.equal(app.visibleExamples(data, filters).length, 310);
+  assert.equal(app.visibleExamples(data, { ...filters, scope: 'all' }).length, 918);
   assert.equal(app.visibleExamples(data, { ...filters, scope: 'pronouns' }).length, 31);
   assert.equal(app.visibleExamples(data, { ...filters, scope: 'extension' }).length, 8);
   assert.equal(app.visibleExamples(data, { ...filters, level: 2 }).length, 10);

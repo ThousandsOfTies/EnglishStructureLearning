@@ -75,6 +75,33 @@ def make_example(key, group, number, values):
             'ja': ja, 'en': en, 'frame': frame, 'authorship': 'original-six-slots-v1'}
 
 
+def tense_picture_examples():
+    # Forms match the four approved illustrations for each activity.
+    actions = [
+        ('bicycle', '自転車に', 'a bike', ('乗る', '乗った', '乗っている'), ('ride', 'rode', 'riding', 'ridden')),
+        ('pony', 'ポニーに', 'a pony', ('乗る', '乗った', '乗っている'), ('ride', 'rode', 'riding', 'ridden')),
+        ('kite', 'たこを', 'a kite', ('あげる', 'あげた', 'あげている'), ('fly', 'flew', 'flying', 'flown')),
+        ('rope', '', '', ('なわとびをする', 'なわとびをした', 'なわとびをしている'), ('jump rope', 'jumped rope', 'jumping rope', 'jumped rope')),
+        ('violin', 'バイオリンを', 'the violin', ('弾く', '弾いた', '弾いている'), ('play', 'played', 'playing', 'played')),
+        ('ball', 'ボールを', 'a ball', ('ける', 'けった', 'けっている'), ('kick', 'kicked', 'kicking', 'kicked')),
+        ('piano', 'ピアノを', 'the piano', ('弾く', '弾いた', '弾いている'), ('play', 'played', 'playing', 'played')),
+        ('flowers', '花に', 'the flowers', ('水をやる', '水をやった', '水をやっている'), ('water', 'watered', 'watering', 'watered')),
+        ('paint', '絵を', 'a picture', ('描く', '描いた', '描いている'), ('paint', 'painted', 'painting', 'painted')),
+        ('sushi', 'のり巻きを', 'sushi rolls', ('作る', '作った', '作っている'), ('make', 'made', 'making', 'made')),
+    ]
+    for number, (key, ja_object, en_object, ja, en) in enumerate(actions, 1):
+        family = 'tense-' + key
+        forms = [('routine', ja[0], en[0]), ('past', ja[1], en[1]),
+                 ('ongoing', ja[2], 'am ' + en[2]), ('experience', ja[1] + 'ことがある', 'have ' + en[3])]
+        for meaning, verb_ja, verb_en in forms:
+            example_id = family if meaning == 'routine' else family + '-' + meaning
+            q = make_example(example_id, 'tense-pictures', number, {
+                'S': slot('私が', 'I'), 'predicate': slot(verb_ja, verb_en),
+                'P': slot(ja_object, en_object), 'place': slot(), 'time': slot()})
+            q.update(contrastFamily=family, meaning=meaning)
+            yield q
+
+
 def build_examples():
     rows, groups = [], []
     for line in (ROOT / 'data/original-curriculum.txt').read_text(encoding='utf-8').splitlines():
@@ -238,6 +265,8 @@ def build_examples():
             assert q['slots']['P1'] == q['slots']['P2'] == slot()
 
     rows, groups = refine(rows, groups)
+    groups.insert(0, {'key': 'tense-pictures', 'label': '10の動作', 'ja': '時制の絵くらべ'})
+    rows.extend(tense_picture_examples())
     for q in rows:
         q['level'] = 1
         q['blocks'] = [[k, q['slots'][k]['en']] for k in SLOTS if q['slots'][k]['en']]
@@ -280,7 +309,7 @@ def build_examples():
         ],
         'silentQuestionWord': {'token': 'whether', 'meaning': '〜かどうか', 'spoken': False, 'written': False},
         'counts': {'level1': len(rows), 'level2': 10, 'level3': 10, 'total': len(all_examples),
-                   'core': 300, 'pronounPractice': 39,
+                   'core': sum(q.get('contrastFamily') == q['id'] for q in rows), 'pronounPractice': 39,
                    'ongoing': sum(q['meaning'] == 'ongoing' and not q.get('pronounFocus') for q in rows),
                    'past': sum(q['meaning'] == 'past' for q in rows)},
         'groups': groups, 'examples': all_examples,
@@ -288,7 +317,7 @@ def build_examples():
     (ROOT / 'data/construction-examples.json').write_text(json.dumps(result, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     lines = [f'# レベル1：英文を組み立てる{len(rows)}文', '',
              '基本動詞98種類と「be＋名詞」「be＋形容詞」の原型300文を土台に、いつもの動き・今の動き・昨日の動きを対比し、代名詞の39文も加えました。', '',
-             f"内訳：原型300文＋今の動き{result['counts']['ongoing']}文＋過去{result['counts']['past']}文＋代名詞39文。レベル2・3は別に各10文です。", '',
+             f"内訳：基本{result['counts']['core']}文＋今の動き{result['counts']['ongoing']}文＋過去{result['counts']['past']}文＋経験10文＋代名詞39文。レベル2・3は別に各10文です。", '',
              '全部を一度に練習する必要はありません。まず「いつもの動き／状態」の原型を使い、同じcontrastFamilyの「今」「昨日」と比べます。再帰代名詞8文は発展扱いです。', '',
              '「doに動作を渡す」は習慣・行為の捉え方を説明する比喩です。肯定文にdoを実際に追加するルールではありません。', '',
              'S → 述語 → P1 → P2 → 場所 → 時。使わない欄は「—」。これは英文を作るための教材上の区切りです。', '',
@@ -303,7 +332,7 @@ def build_examples():
                       '| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |', '| --- | --- | --- | --- | --- | --- | --- |'])
         examples = [q for q in rows if q['group'] == group['key']]
         for q in examples:
-            label = {'routine': 'いつもの動き', 'ongoing': '今している', 'past': '昨日した', 'state': '状態'}[q['meaning']]
+            label = {'routine': 'いつもの動き', 'ongoing': '今している', 'past': '過去の動き' if q['group'] == 'tense-pictures' else '昨日した', 'experience': 'したことがある', 'state': '状態'}[q['meaning']]
             lines.append('| ' + label + ' | ' + ' | '.join(q['slots'][k]['en'] or '—' for k in SLOTS) + ' |')
         lines.append('')
         for q in examples:
@@ -345,7 +374,7 @@ def build_examples():
                        '## 絵の共通ルール', '',
                        '- 話し手を吹き出しの外に置き、中の人物と同じ服・目印で結ぶとIになる。',
                        '- 聞き手ならyou。話し手を含むグループならwe、含まない第三者のグループならthey。',
-                       '- いつもの動き：複数の日の小コマとカレンダー。今の動き：外も中も「今」。過去：外は「今日」、中は「昨日」。',
+                       '- 吹き出しは直角の四隅と三角の突起を保つ。枠線と背景の色は変更可。現在は話し手の右、過去は左。進行は左に同じ高さ・濃さの4本線、話し手は真下からやや上を見る。経験は左の場面から話し手に向けて4本線が低く薄くなる。',
                        '- 単語だけで一意に決まらない関係は、話し手・聞き手・指さし・持ち主の名札で補う。',
                        '- 所有を表すitsは名詞とセットにする。独立した「それのもの」にitsを使う練習は作らない。', '',
                        '各例文のsceneに描画用の人物関係・時間の目印を保存しています。画像自体は生成・差し替えしていません。', ''])

@@ -1,0 +1,15 @@
+<!doctype html><html lang="ja"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>時制の絵くらべ</title>
+<style>
+*{box-sizing:border-box}body{margin:0;color:#322d29;background:#faf8f4;font:16px/1.45 "BIZ UDPGothic",Meiryo,sans-serif}
+main{max-width:1100px;margin:auto;padding:12px}header{display:flex;flex-wrap:wrap;gap:12px 24px;align-items:center;margin-bottom:10px}
+h1{font-size:1.2rem;margin:0}select,button{font:inherit;padding:5px}label{display:inline-flex;gap:6px;align-items:center}input{width:18px;height:18px}a{color:#74370f}
+figure{position:relative;margin:0;background:white}img{display:block;width:100%;height:auto}
+.hide::before,.hide::after{content:"";position:absolute;left:0;right:0;height:3.4%;background:white;pointer-events:none}.hide::before{bottom:50%}.hide::after{bottom:0}
+</style><main><header><h1>時制の絵くらべ</h1><label>動作<select id="act"><option value="01-bicycle.png">自転車に乗る</option><option value="02-pony.png">ポニーに乗る</option><option value="03-kite.png">たこをあげる</option><option value="04-rope.png">なわとびをする</option><option value="05-violin.png">バイオリンを弾く</option><option value="06-ball.png">ボールをける</option><option value="07-piano.png">ピアノを弾く</option><option value="08-flowers.png">花に水をやる</option><option value="09-paint.png">絵を描く</option><option value="10-sushi.png">のり巻きを作る</option></select></label><label><input id="cap" type="checkbox" checked>文を表示</label><a href="../../../index.html#tense-pictures">アプリで40問を解く</a><a id="full" href="01-bicycle.png">原寸のPNG</a></header>
+<figure id="frame"><img id="sheet" src="01-bicycle.png" width="1400" height="1175" alt="自転車に乗る。左上は過去、右上は現在、左下は経験、右下は進行。"></figure></main>
+<script>
+const act=document.getElementById("act"),cap=document.getElementById("cap"),frame=document.getElementById("frame"),sheet=document.getElementById("sheet"),full=document.getElementById("full");
+function update(){sheet.src=act.value;full.href=act.value;sheet.alt=act.selectedOptions[0].text+"。左上は過去、右上は現在、左下は経験、右下は進行。";frame.classList.toggle("hide",!cap.checked)}
+act.addEventListener("change",update);cap.addEventListener("change",update);update();
+</script></html>

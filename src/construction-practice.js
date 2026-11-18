@@ -13,10 +13,12 @@ const Construction = (() => {
     return cardsFor(q).every((_, i) => placements[i] === expectedTarget(q, i));
   }
   function choicesFor(data, q, role) {
-    const candidates = [...data.examples.filter(item => item.level === 1 && item.group === q.group),
+    const family = q.group === 'tense-pictures' && role === 'predicate'
+      ? data.examples.filter(item => item.contrastFamily === q.contrastFamily) : [];
+    const candidates = [...family, ...data.examples.filter(item => item.level === 1 && item.group === q.group),
       ...data.examples.filter(item => item.level === 1)];
     const correct = q.slots[role].ja;
-    const alternatives = [...new Set(candidates.map(item => item.slots[role].ja))].filter(text => text && text !== correct).slice(0, 3);
+    const alternatives = [...new Set(candidates.filter(item => q.group !== 'tense-pictures' || item.slots[role].en !== q.slots[role].en).map(item => item.slots[role].ja))].filter(text => text && text !== correct).slice(0, 3);
     const options = [...new Set([correct, ...alternatives])].filter(Boolean);
     // Vary where the correct answer appears instead of always placing it first.
     const offset = [...q.id + role].reduce((n, c) => n + c.charCodeAt(0), 0) % options.length;
@@ -95,7 +97,7 @@ if (typeof document !== 'undefined') {
   const esc = value => String(value).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   const labels = { S: '主語', predicate: '述語', P1: 'P1', P2: 'P2', place: '場所', time: '時' };
   const hints = { S: 'だれ・何が？', predicate: 'どうする・どんな状態？', P1: '述語につなぐ一つ目', P2: '述語につなぐ二つ目', place: 'どこで？', time: 'いつ？' };
-  const meaningLabel = { routine: '基本：いつもの動き', state: '基本：状態', ongoing: '今している', past: '過去の場面' };
+  const meaningLabel = { routine: '基本：いつもの動き', state: '基本：状態', ongoing: '今している', past: '過去の場面', experience: 'したことがある' };
   let saved = null, savedVoice = '', storageOK = true;
   try { saved = JSON.parse(localStorage.getItem(KEY)); savedVoice = JSON.parse(localStorage.getItem(VOICE_KEY))?.voiceURI || ''; }
   catch (error) { if (error.name !== 'SyntaxError') storageOK = false; }
@@ -111,6 +113,12 @@ if (typeof document !== 'undefined') {
     if (!DATA.examples.some(q => q.id === state.current && q.level === 1 && q.image)) {
       state.current = DATA.examples.find(q => q.level === 1 && q.image).id;
     }
+  }
+  function openTensePictures() {
+    const first = DATA.examples.find(q => q.group === 'tense-pictures');
+    illustratedOnly = true;
+    Object.assign(state, { level: 1, group: first.group, scope: 'all', search: '', mode: 'select' });
+    choose(first.id);
   }
   const hasSpeech = 'speechSynthesis' in window && 'SpeechSynthesisUtterance' in window;
   const getQ = () => DATA.examples.find(q => q.id === state.current);
@@ -157,7 +165,8 @@ if (typeof document !== 'undefined') {
     $('artworkProgress').textContent = `絵のある例文 ${Object.keys(ILLUSTRATIONS).length} / ${DATA.examples.length}文`;
     $('filterCount').textContent = illustratedOnly ? `${visible.length}文を表示 ／ 絵のある${illustratedCount}文` : `${visible.length}文を表示 ／ 全${DATA.examples.length}文`;
     $('lessons').innerHTML = visible.length ? visible.map(q => `<button data-lesson="${esc(q.id)}" aria-current="${state.current === q.id}">${state.completed.includes(q.id) ? '✓ ' : ''}${esc(q.ja)}</button>`).join('') : '<p class="muted">見つかりません。テーマや検索することばを変えてみよう。</p>';
-    const playable = illustratedOnly ? DATA.examples.filter(q => q.level === state.level && q.image) : DATA.examples;
+    const playable = state.level === 1 && state.group === 'tense-pictures' ? DATA.examples.filter(q => q.group === state.group)
+      : illustratedOnly ? DATA.examples.filter(q => q.level === state.level && q.image) : DATA.examples;
     const completed = playable.filter(q => state.completed.includes(q.id)).length;
     $('progressText').textContent = `できた ${completed} / ${playable.length}`;
     $('progressBar').max = playable.length; $('progressBar').value = completed;
@@ -182,7 +191,7 @@ if (typeof document !== 'undefined') {
     $('modeSwitcher').hidden = !basic;
     $('cardsMode').setAttribute('aria-pressed', !usingLists());
     $('selectMode').setAttribute('aria-pressed', usingLists());
-    $('pictureScene').hidden = !usingLists() && !(q.image && !basic);
+    $('pictureScene').hidden = !usingLists() && !(q.image && (!basic || q.group === 'tense-pictures'));
     $('pool').hidden = $('selectedStatus').hidden = usingLists();
     const family = basic && q.contrastFamily ? DATA.examples.filter(item => item.contrastFamily === q.contrastFamily && (!illustratedOnly || item.image)) : [];
     $('contrasts').innerHTML = family.length > 1 ? family.map(item => `<button data-lesson="${esc(item.id)}" aria-pressed="${item.id === q.id}">${esc(meaningLabel[item.meaning])}</button>`).join('') : '';
@@ -211,7 +220,8 @@ if (typeof document !== 'undefined') {
     if (event.target.id === 'level' && Number($('level').value) !== 1) illustratedOnly = false;
     state.level = Number($('level').value); state.group = $('group').value; state.scope = $('scope').value; state.search = $('search').value;
     if (state.level === 1 && event.target.id === 'group') {
-      if (state.group.startsWith('pronouns-')) state.scope = state.group === 'pronouns-reflexive' ? 'extension' : 'pronouns';
+      if (state.group === 'tense-pictures') state.scope = 'all';
+      else if (state.group.startsWith('pronouns-')) state.scope = state.group === 'pronouns-reflexive' ? 'extension' : 'pronouns';
       else if (state.group !== 'all' && ['pronouns', 'extension'].includes(state.scope)) state.scope = 'core';
     }
     if (event.target.id === 'scope' && state.group.startsWith('pronouns-') &&
@@ -328,6 +338,7 @@ if (typeof document !== 'undefined') {
       document.querySelector(`[data-target="${button.dataset.target}"]`)?.focus({ preventScroll: true }); return;
     }
     switch (button.id) {
+      case 'tensePictures': openTensePictures(); break;
       case 'showIllustrated': {
         illustratedOnly = !illustratedOnly;
         state.group = 'all'; state.scope = 'all'; state.search = ''; state.mode = state.level === 1 ? 'select' : 'cards';
@@ -397,5 +408,10 @@ if (typeof document !== 'undefined') {
   if (hasSpeech) speechSynthesis.addEventListener('voiceschanged', populateVoices);
   // A saved comparison can be outside the basic-scene filter; retain it for resuming.
   if (getQ().level !== state.level) state.current = DATA.examples.find(q => q.level === state.level).id;
-  populateVoices(); save(); render();
+  populateVoices();
+  if (location.hash === '#tense-pictures') openTensePictures();
+  else { save(); render(); }
+  window.addEventListener('hashchange', () => {
+    if (location.hash === '#tense-pictures') openTensePictures();
+  });
 }

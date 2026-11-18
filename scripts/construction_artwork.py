@@ -25,6 +25,7 @@ STYLE = ('Use case: illustration-story. Single landscape 3:2 wordless educationa
          'cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. '
          'Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. '
          'Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. '
+         'Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. '
          'Keep identities/outfits consistent across the scene and temporal variants. ')
 
 
@@ -67,18 +68,15 @@ def prompt_for(q):
     weekday = next((day for day in WEEKDAY_ICONS if day in q.get('slots', {}).get('time', {}).get('ja', '')), None)
     if meaning == 'past':
         layout = ('Place the NOW narrator(s) at the RIGHT, with body facing right and head looking back LEFT. '
-                  'Large balloon on LEFT contains the past event. Bottom timeline: thin arrow to right, past dot on left, now dot on right. '
-                  'Speaker remains now. Do not put the narrator in the past. ')
-    elif meaning == 'ongoing' and subject in ('I', 'We'):
-        layout = ('Current action in progress: ONLY the actual event actor(s) in one large scene enclosed by a balloon outline. '
-                  'No separate outside narrator. Balloon outline indents into scene with its tip pointing inward toward actor. '
-                  'No timeline. No repeated scenes. ')
-        viewpoint = ('The main girl is the sole actor.' if subject == 'I' else
-                     'Exactly TWO actors together: main star-hairclip girl and dark-ponytail lavender-shirt girl. '
-                     'They are the speaking group. No duplicate outside narrator. No phone or remote conversation.')
+                  'Large balloon on LEFT contains the past event. No bars or timeline. ')
     elif meaning == 'ongoing':
-        layout = ('Show current action IN PROGRESS in a large balloon, with small present-day speaker/listener on left. '
-                  'Outside and inside are simultaneous now. No timeline, calendar, or repetitions. ')
+        layout = ('Current action inside the balloon; place the outside speaker directly under its horizontal center, '
+                  'head and eyes lifted slightly UP toward the event. Triangle tail points down to this speaker. '
+                  'Immediately outside the LEFT edge place exactly four equally tall, equally dark vertical narrow bars. '
+                  'No timeline or arrows. ')
+    elif meaning == 'experience':
+        layout = ('Experience: outside speaker on RIGHT looks LEFT at an earlier event. Four narrow bars outside '
+                  'the RIGHT edge of the balloon become shorter and paler toward the speaker. No timeline or arrows. ')
     else:
         layout = ('Small outside present-day speaker/listener on LEFT; one large balloon on RIGHT illustrates the action concept or state. '
                   'Tail points to the outside speaker. Use ONE event scene, no repeated mini-panels, no timeline. '

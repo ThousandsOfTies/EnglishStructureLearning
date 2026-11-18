@@ -54,16 +54,21 @@
     "written": false
   },
   "counts": {
-    "level1": 878,
+    "level1": 918,
     "level2": 10,
     "level3": 10,
-    "total": 898,
-    "core": 300,
+    "total": 938,
+    "core": 310,
     "pronounPractice": 39,
-    "ongoing": 265,
-    "past": 274
+    "ongoing": 275,
+    "past": 284
   },
   "groups": [
+    {
+      "key": "tense-pictures",
+      "label": "10の動作",
+      "ja": "時制の絵くらべ"
+    },
     {
       "key": "go",
       "label": "go",
@@ -61095,6 +61100,2070 @@
         ]
       ],
       "extension": true
+    },
+    {
+      "id": "tense-bicycle",
+      "group": "tense-pictures",
+      "variant": 1,
+      "slots": {
+        "S": {
+          "ja": "私が",
+          "en": "I"
+        },
+        "predicate": {
+          "ja": "乗る",
+          "en": "ride"
+        },
+        "place": {
+          "ja": "",
+          "en": ""
+        },
+        "time": {
+          "ja": "",
+          "en": ""
+        },
+        "P1": {
+          "ja": "自転車に",
+          "en": "a bike"
+        },
+        "P2": {
+          "ja": "",
+          "en": ""
+        }
+      },
+      "ja": "私が自転車に乗る。",
+      "en": "I ride a bike.",
+      "frame": "one-parameter",
+      "authorship": "original-six-slots-v1",
+      "contrastFamily": "tense-bicycle",
+      "meaning": "routine",
+      "level": 1,
+      "blocks": [
+        [
+          "S",
+          "I"
+        ],
+        [
+          "predicate",
+          "ride"
+        ],
+        [
+          "P1",
+          "a bike"
+        ]
+      ]
+    },
+    {
+      "id": "tense-bicycle-past",
+      "group": "tense-pictures",
+      "variant": 1,
+      "slots": {
+        "S": {
+          "ja": "私が",
+          "en": "I"
+        },
+        "predicate": {
+          "ja": "乗った",
+          "en": "rode"
+        },
+        "place": {
+          "ja": "",
+          "en": ""
+        },
+        "time": {
+          "ja": "",
+          "en": ""
+        },
+        "P1": {
+          "ja": "自転車に",
+          "en": "a bike"
+        },
+        "P2": {
+          "ja": "",
+          "en": ""
+        }
+      },
+      "ja": "私が自転車に乗った。",
+      "en": "I rode a bike.",
+      "frame": "one-parameter",
+      "authorship": "original-six-slots-v1",
+      "contrastFamily": "tense-bicycle",
+      "meaning": "past",
+      "level": 1,
+      "blocks": [
+        [
+          "S",
+          "I"
+        ],
+        [
+          "predicate",
+          "rode"
+        ],
+        [
+          "P1",
+          "a bike"
+        ]
+      ]
+    },
+    {
+      "id": "tense-bicycle-ongoing",
+      "group": "tense-pictures",
+      "variant": 1,
+      "slots": {
+        "S": {
+          "ja": "私が",
+          "en": "I"
+        },
+        "predicate": {
+          "ja": "乗っている",
+          "en": "am riding"
+        },
+        "place": {
+          "ja": "",
+          "en": ""
+        },
+        "time": {
+          "ja": "",
+          "en": ""
+        },
+        "P1": {
+          "ja": "自転車に",
+          "en": "a bike"
+        },
+        "P2": {
+          "ja": "",
+          "en": ""
+        }
+      },
+      "ja": "私が自転車に乗っている。",
+      "en": "I am riding a bike.",
+      "frame": "one-parameter",
+      "authorship": "original-six-slots-v1",
+      "contrastFamily": "tense-bicycle",
+      "meaning": "ongoing",
+      "level": 1,
+      "blocks": [
+        [
+          "S",
+          "I"
+        ],
+        [
+          "predicate",
+          "am riding"
+        ],
+        [
+          "P1",
+          "a bike"
+        ]
+      ]
+    },
+    {
+      "id": "tense-bicycle-experience",
+      "group": "tense-pictures",
+      "variant": 1,
+      "slots": {
+        "S": {
+          "ja": "私が",
+          "en": "I"
+        },
+        "predicate": {
+          "ja": "乗ったことがある",
+          "en": "have ridden"
+        },
+        "place": {
+          "ja": "",
+          "en": ""
+        },
+        "time": {
+          "ja": "",
+          "en": ""
+        },
+        "P1": {
+          "ja": "自転車に",
+          "en": "a bike"
+        },
+        "P2": {
+          "ja": "",
+          "en": ""
+        }
+      },
+      "ja": "私が自転車に乗ったことがある。",
+      "en": "I have ridden a bike.",
+      "frame": "one-parameter",
+      "authorship": "original-six-slots-v1",
+      "contrastFamily": "tense-bicycle",
+      "meaning": "experience",
+      "level": 1,
+      "blocks": [
+        [
+          "S",
+          "I"
+        ],
+        [
+          "predicate",
+          "have ridden"
+        ],
+        [
+          "P1",
+          "a bike"
+        ]
+      ]
+    },
+    {
+      "id": "tense-pony",
+      "group": "tense-pictures",
+      "variant": 2,
+      "slots": {
+        "S": {
+          "ja": "私が",
+          "en": "I"
+        },
+        "predicate": {
+          "ja": "乗る",
+          "en": "ride"
+        },
+        "place": {
+          "ja": "",
+          "en": ""
+        },
+        "time": {
+          "ja": "",
+          "en": ""
+        },
+        "P1": {
+          "ja": "ポニーに",
+          "en": "a pony"
+        },
+        "P2": {
+          "ja": "",
+          "en": ""
+        }
+      },
+      "ja": "私がポニーに乗る。",
+      "en": "I ride a pony.",
+      "frame": "one-parameter",
+      "authorship": "original-six-slots-v1",
+      "contrastFamily": "tense-pony",
+      "meaning": "routine",
+      "level": 1,
+      "blocks": [
+        [
+          "S",
+          "I"
+        ],
+        [
+          "predicate",
+          "ride"
+        ],
+        [
+          "P1",
+          "a pony"
+        ]
+      ]
+    },
+    {
+      "id": "tense-pony-past",
+      "group": "tense-pictures",
+      "variant": 2,
+      "slots": {
+        "S": {
+          "ja": "私が",
+          "en": "I"
+        },
+        "predicate": {
+          "ja": "乗った",
+          "en": "rode"
+        },
+        "place": {
+          "ja": "",
+          "en": ""
+        },
+        "time": {
+          "ja": "",
+          "en": ""
+        },
+        "P1": {
+          "ja": "ポニーに",
+          "en": "a pony"
+        },
+        "P2": {
+          "ja": "",
+          "en": ""
+        }
+      },
+      "ja": "私がポニーに乗った。",
+      "en": "I rode a pony.",
+      "frame": "one-parameter",
+      "authorship": "original-six-slots-v1",
+      "contrastFamily": "tense-pony",
+      "meaning": "past",
+      "level": 1,
+      "blocks": [
+        [
+          "S",
+          "I"
+        ],
+        [
+          "predicate",
+          "rode"
+        ],
+        [
+          "P1",
+          "a pony"
+        ]
+      ]
+    },
+    {
+      "id": "tense-pony-ongoing",
+      "group": "tense-pictures",
+      "variant": 2,
+      "slots": {
+        "S": {
+          "ja": "私が",
+          "en": "I"
+        },
+        "predicate": {
+          "ja": "乗っている",
+          "en": "am riding"
+        },
+        "place": {
+          "ja": "",
+          "en": ""
+        },
+        "time": {
+          "ja": "",
+          "en": ""
+        },
+        "P1": {
+          "ja": "ポニーに",
+          "en": "a pony"
+        },
+        "P2": {
+          "ja": "",
+          "en": ""
+        }
+      },
+      "ja": "私がポニーに乗っている。",
+      "en": "I am riding a pony.",
+      "frame": "one-parameter",
+      "authorship": "original-six-slots-v1",
+      "contrastFamily": "tense-pony",
+      "meaning": "ongoing",
+      "level": 1,
+      "blocks": [
+        [
+          "S",
+          "I"
+        ],
+        [
+          "predicate",
+          "am riding"
+        ],
+        [
+          "P1",
+          "a pony"
+        ]
+      ]
+    },
+    {
+      "id": "tense-pony-experience",
+      "group": "tense-pictures",
+      "variant": 2,
+      "slots": {
+        "S": {
+          "ja": "私が",
+          "en": "I"
+        },
+        "predicate": {
+          "ja": "乗ったことがある",
+          "en": "have ridden"
+        },
+        "place": {
+          "ja": "",
+          "en": ""
+        },
+        "time": {
+          "ja": "",
+          "en": ""
+        },
+        "P1": {
+          "ja": "ポニーに",
+          "en": "a pony"
+        },
+        "P2": {
+          "ja": "",
+          "en": ""
+        }
+      },
+      "ja": "私がポニーに乗ったことがある。",
+      "en": "I have ridden a pony.",
+      "frame": "one-parameter",
+      "authorship": "original-six-slots-v1",
+      "contrastFamily": "tense-pony",
+      "meaning": "experience",
+      "level": 1,
+      "blocks": [
+        [
+          "S",
+          "I"
+        ],
+        [
+          "predicate",
+          "have ridden"
+        ],
+        [
+          "P1",
+          "a pony"
+        ]
+      ]
+    },
+    {
+      "id": "tense-kite",
+      "group": "tense-pictures",
+      "variant": 3,
+      "slots": {
+        "S": {
+          "ja": "私が",
+          "en": "I"
+        },
+        "predicate": {
+          "ja": "あげる",
+          "en": "fly"
+        },
+        "place": {
+          "ja": "",
+          "en": ""
+        },
+        "time": {
+          "ja": "",
+          "en": ""
+        },
+        "P1": {
+          "ja": "たこを",
+          "en": "a kite"
+        },
+        "P2": {
+          "ja": "",
+          "en": ""
+        }
+      },
+      "ja": "私がたこをあげる。",
+      "en": "I fly a kite.",
+      "frame": "one-parameter",
+      "authorship": "original-six-slots-v1",
+      "contrastFamily": "tense-kite",
+      "meaning": "routine",
+      "level": 1,
+      "blocks": [
+        [
+          "S",
+          "I"
+        ],
+        [
+          "predicate",
+          "fly"
+        ],
+        [
+          "P1",
+          "a kite"
+        ]
+      ]
+    },
+    {
+      "id": "tense-kite-past",
+      "group": "tense-pictures",
+      "variant": 3,
+      "slots": {
+        "S": {
+          "ja": "私が",
+          "en": "I"
+        },
+        "predicate": {
+          "ja": "あげた",
+          "en": "flew"
+        },
+        "place": {
+          "ja": "",
+          "en": ""
+        },
+        "time": {
+          "ja": "",
+          "en": ""
+        },
+        "P1": {
+          "ja": "たこを",
+          "en": "a kite"
+        },
+        "P2": {
+          "ja": "",
+          "en": ""
+        }
+      },
+      "ja": "私がたこをあげた。",
+      "en": "I flew a kite.",
+      "frame": "one-parameter",
+      "authorship": "original-six-slots-v1",
+      "contrastFamily": "tense-kite",
+      "meaning": "past",
+      "level": 1,
+      "blocks": [
+        [
+          "S",
+          "I"
+        ],
+        [
+          "predicate",
+          "flew"
+        ],
+        [
+          "P1",
+          "a kite"
+        ]
+      ]
+    },
+    {
+      "id": "tense-kite-ongoing",
+      "group": "tense-pictures",
+      "variant": 3,
+      "slots": {
+        "S": {
+          "ja": "私が",
+          "en": "I"
+        },
+        "predicate": {
+          "ja": "あげている",
+          "en": "am flying"
+        },
+        "place": {
+          "ja": "",
+          "en": ""
+        },
+        "time": {
+          "ja": "",
+          "en": ""
+        },
+        "P1": {
+          "ja": "たこを",
+          "en": "a kite"
+        },
+        "P2": {
+          "ja": "",
+          "en": ""
+        }
+      },
+      "ja": "私がたこをあげている。",
+      "en": "I am flying a kite.",
+      "frame": "one-parameter",
+      "authorship": "original-six-slots-v1",
+      "contrastFamily": "tense-kite",
+      "meaning": "ongoing",
+      "level": 1,
+      "blocks": [
+        [
+          "S",
+          "I"
+        ],
+        [
+          "predicate",
+          "am flying"
+        ],
+        [
+          "P1",
+          "a kite"
+        ]
+      ]
+    },
+    {
+      "id": "tense-kite-experience",
+      "group": "tense-pictures",
+      "variant": 3,
+      "slots": {
+        "S": {
+          "ja": "私が",
+          "en": "I"
+        },
+        "predicate": {
+          "ja": "あげたことがある",
+          "en": "have flown"
+        },
+        "place": {
+          "ja": "",
+          "en": ""
+        },
+        "time": {
+          "ja": "",
+          "en": ""
+        },
+        "P1": {
+          "ja": "たこを",
+          "en": "a kite"
+        },
+        "P2": {
+          "ja": "",
+          "en": ""
+        }
+      },
+      "ja": "私がたこをあげたことがある。",
+      "en": "I have flown a kite.",
+      "frame": "one-parameter",
+      "authorship": "original-six-slots-v1",
+      "contrastFamily": "tense-kite",
+      "meaning": "experience",
+      "level": 1,
+      "blocks": [
+        [
+          "S",
+          "I"
+        ],
+        [
+          "predicate",
+          "have flown"
+        ],
+        [
+          "P1",
+          "a kite"
+        ]
+      ]
+    },
+    {
+      "id": "tense-rope",
+      "group": "tense-pictures",
+      "variant": 4,
+      "slots": {
+        "S": {
+          "ja": "私が",
+          "en": "I"
+        },
+        "predicate": {
+          "ja": "なわとびをする",
+          "en": "jump rope"
+        },
+        "place": {
+          "ja": "",
+          "en": ""
+        },
+        "time": {
+          "ja": "",
+          "en": ""
+        },
+        "P1": {
+          "ja": "",
+          "en": ""
+        },
+        "P2": {
+          "ja": "",
+          "en": ""
+        }
+      },
+      "ja": "私がなわとびをする。",
+      "en": "I jump rope.",
+      "frame": "no-parameter",
+      "authorship": "original-six-slots-v1",
+      "contrastFamily": "tense-rope",
+      "meaning": "routine",
+      "level": 1,
+      "blocks": [
+        [
+          "S",
+          "I"
+        ],
+        [
+          "predicate",
+          "jump rope"
+        ]
+      ]
+    },
+    {
+      "id": "tense-rope-past",
+      "group": "tense-pictures",
+      "variant": 4,
+      "slots": {
+        "S": {
+          "ja": "私が",
+          "en": "I"
+        },
+        "predicate": {
+          "ja": "なわとびをした",
+          "en": "jumped rope"
+        },
+        "place": {
+          "ja": "",
+          "en": ""
+        },
+        "time": {
+          "ja": "",
+          "en": ""
+        },
+        "P1": {
+          "ja": "",
+          "en": ""
+        },
+        "P2": {
+          "ja": "",
+          "en": ""
+        }
+      },
+      "ja": "私がなわとびをした。",
+      "en": "I jumped rope.",
+      "frame": "no-parameter",
+      "authorship": "original-six-slots-v1",
+      "contrastFamily": "tense-rope",
+      "meaning": "past",
+      "level": 1,
+      "blocks": [
+        [
+          "S",
+          "I"
+        ],
+        [
+          "predicate",
+          "jumped rope"
+        ]
+      ]
+    },
+    {
+      "id": "tense-rope-ongoing",
+      "group": "tense-pictures",
+      "variant": 4,
+      "slots": {
+        "S": {
+          "ja": "私が",
+          "en": "I"
+        },
+        "predicate": {
+          "ja": "なわとびをしている",
+          "en": "am jumping rope"
+        },
+        "place": {
+          "ja": "",
+          "en": ""
+        },
+        "time": {
+          "ja": "",
+          "en": ""
+        },
+        "P1": {
+          "ja": "",
+          "en": ""
+        },
+        "P2": {
+          "ja": "",
+          "en": ""
+        }
+      },
+      "ja": "私がなわとびをしている。",
+      "en": "I am jumping rope.",
+      "frame": "no-parameter",
+      "authorship": "original-six-slots-v1",
+      "contrastFamily": "tense-rope",
+      "meaning": "ongoing",
+      "level": 1,
+      "blocks": [
+        [
+          "S",
+          "I"
+        ],
+        [
+          "predicate",
+          "am jumping rope"
+        ]
+      ]
+    },
+    {
+      "id": "tense-rope-experience",
+      "group": "tense-pictures",
+      "variant": 4,
+      "slots": {
+        "S": {
+          "ja": "私が",
+          "en": "I"
+        },
+        "predicate": {
+          "ja": "なわとびをしたことがある",
+          "en": "have jumped rope"
+        },
+        "place": {
+          "ja": "",
+          "en": ""
+        },
+        "time": {
+          "ja": "",
+          "en": ""
+        },
+        "P1": {
+          "ja": "",
+          "en": ""
+        },
+        "P2": {
+          "ja": "",
+          "en": ""
+        }
+      },
+      "ja": "私がなわとびをしたことがある。",
+      "en": "I have jumped rope.",
+      "frame": "no-parameter",
+      "authorship": "original-six-slots-v1",
+      "contrastFamily": "tense-rope",
+      "meaning": "experience",
+      "level": 1,
+      "blocks": [
+        [
+          "S",
+          "I"
+        ],
+        [
+          "predicate",
+          "have jumped rope"
+        ]
+      ]
+    },
+    {
+      "id": "tense-violin",
+      "group": "tense-pictures",
+      "variant": 5,
+      "slots": {
+        "S": {
+          "ja": "私が",
+          "en": "I"
+        },
+        "predicate": {
+          "ja": "弾く",
+          "en": "play"
+        },
+        "place": {
+          "ja": "",
+          "en": ""
+        },
+        "time": {
+          "ja": "",
+          "en": ""
+        },
+        "P1": {
+          "ja": "バイオリンを",
+          "en": "the violin"
+        },
+        "P2": {
+          "ja": "",
+          "en": ""
+        }
+      },
+      "ja": "私がバイオリンを弾く。",
+      "en": "I play the violin.",
+      "frame": "one-parameter",
+      "authorship": "original-six-slots-v1",
+      "contrastFamily": "tense-violin",
+      "meaning": "routine",
+      "level": 1,
+      "blocks": [
+        [
+          "S",
+          "I"
+        ],
+        [
+          "predicate",
+          "play"
+        ],
+        [
+          "P1",
+          "the violin"
+        ]
+      ]
+    },
+    {
+      "id": "tense-violin-past",
+      "group": "tense-pictures",
+      "variant": 5,
+      "slots": {
+        "S": {
+          "ja": "私が",
+          "en": "I"
+        },
+        "predicate": {
+          "ja": "弾いた",
+          "en": "played"
+        },
+        "place": {
+          "ja": "",
+          "en": ""
+        },
+        "time": {
+          "ja": "",
+          "en": ""
+        },
+        "P1": {
+          "ja": "バイオリンを",
+          "en": "the violin"
+        },
+        "P2": {
+          "ja": "",
+          "en": ""
+        }
+      },
+      "ja": "私がバイオリンを弾いた。",
+      "en": "I played the violin.",
+      "frame": "one-parameter",
+      "authorship": "original-six-slots-v1",
+      "contrastFamily": "tense-violin",
+      "meaning": "past",
+      "level": 1,
+      "blocks": [
+        [
+          "S",
+          "I"
+        ],
+        [
+          "predicate",
+          "played"
+        ],
+        [
+          "P1",
+          "the violin"
+        ]
+      ]
+    },
+    {
+      "id": "tense-violin-ongoing",
+      "group": "tense-pictures",
+      "variant": 5,
+      "slots": {
+        "S": {
+          "ja": "私が",
+          "en": "I"
+        },
+        "predicate": {
+          "ja": "弾いている",
+          "en": "am playing"
+        },
+        "place": {
+          "ja": "",
+          "en": ""
+        },
+        "time": {
+          "ja": "",
+          "en": ""
+        },
+        "P1": {
+          "ja": "バイオリンを",
+          "en": "the violin"
+        },
+        "P2": {
+          "ja": "",
+          "en": ""
+        }
+      },
+      "ja": "私がバイオリンを弾いている。",
+      "en": "I am playing the violin.",
+      "frame": "one-parameter",
+      "authorship": "original-six-slots-v1",
+      "contrastFamily": "tense-violin",
+      "meaning": "ongoing",
+      "level": 1,
+      "blocks": [
+        [
+          "S",
+          "I"
+        ],
+        [
+          "predicate",
+          "am playing"
+        ],
+        [
+          "P1",
+          "the violin"
+        ]
+      ]
+    },
+    {
+      "id": "tense-violin-experience",
+      "group": "tense-pictures",
+      "variant": 5,
+      "slots": {
+        "S": {
+          "ja": "私が",
+          "en": "I"
+        },
+        "predicate": {
+          "ja": "弾いたことがある",
+          "en": "have played"
+        },
+        "place": {
+          "ja": "",
+          "en": ""
+        },
+        "time": {
+          "ja": "",
+          "en": ""
+        },
+        "P1": {
+          "ja": "バイオリンを",
+          "en": "the violin"
+        },
+        "P2": {
+          "ja": "",
+          "en": ""
+        }
+      },
+      "ja": "私がバイオリンを弾いたことがある。",
+      "en": "I have played the violin.",
+      "frame": "one-parameter",
+      "authorship": "original-six-slots-v1",
+      "contrastFamily": "tense-violin",
+      "meaning": "experience",
+      "level": 1,
+      "blocks": [
+        [
+          "S",
+          "I"
+        ],
+        [
+          "predicate",
+          "have played"
+        ],
+        [
+          "P1",
+          "the violin"
+        ]
+      ]
+    },
+    {
+      "id": "tense-ball",
+      "group": "tense-pictures",
+      "variant": 6,
+      "slots": {
+        "S": {
+          "ja": "私が",
+          "en": "I"
+        },
+        "predicate": {
+          "ja": "ける",
+          "en": "kick"
+        },
+        "place": {
+          "ja": "",
+          "en": ""
+        },
+        "time": {
+          "ja": "",
+          "en": ""
+        },
+        "P1": {
+          "ja": "ボールを",
+          "en": "a ball"
+        },
+        "P2": {
+          "ja": "",
+          "en": ""
+        }
+      },
+      "ja": "私がボールをける。",
+      "en": "I kick a ball.",
+      "frame": "one-parameter",
+      "authorship": "original-six-slots-v1",
+      "contrastFamily": "tense-ball",
+      "meaning": "routine",
+      "level": 1,
+      "blocks": [
+        [
+          "S",
+          "I"
+        ],
+        [
+          "predicate",
+          "kick"
+        ],
+        [
+          "P1",
+          "a ball"
+        ]
+      ]
+    },
+    {
+      "id": "tense-ball-past",
+      "group": "tense-pictures",
+      "variant": 6,
+      "slots": {
+        "S": {
+          "ja": "私が",
+          "en": "I"
+        },
+        "predicate": {
+          "ja": "けった",
+          "en": "kicked"
+        },
+        "place": {
+          "ja": "",
+          "en": ""
+        },
+        "time": {
+          "ja": "",
+          "en": ""
+        },
+        "P1": {
+          "ja": "ボールを",
+          "en": "a ball"
+        },
+        "P2": {
+          "ja": "",
+          "en": ""
+        }
+      },
+      "ja": "私がボールをけった。",
+      "en": "I kicked a ball.",
+      "frame": "one-parameter",
+      "authorship": "original-six-slots-v1",
+      "contrastFamily": "tense-ball",
+      "meaning": "past",
+      "level": 1,
+      "blocks": [
+        [
+          "S",
+          "I"
+        ],
+        [
+          "predicate",
+          "kicked"
+        ],
+        [
+          "P1",
+          "a ball"
+        ]
+      ]
+    },
+    {
+      "id": "tense-ball-ongoing",
+      "group": "tense-pictures",
+      "variant": 6,
+      "slots": {
+        "S": {
+          "ja": "私が",
+          "en": "I"
+        },
+        "predicate": {
+          "ja": "けっている",
+          "en": "am kicking"
+        },
+        "place": {
+          "ja": "",
+          "en": ""
+        },
+        "time": {
+          "ja": "",
+          "en": ""
+        },
+        "P1": {
+          "ja": "ボールを",
+          "en": "a ball"
+        },
+        "P2": {
+          "ja": "",
+          "en": ""
+        }
+      },
+      "ja": "私がボールをけっている。",
+      "en": "I am kicking a ball.",
+      "frame": "one-parameter",
+      "authorship": "original-six-slots-v1",
+      "contrastFamily": "tense-ball",
+      "meaning": "ongoing",
+      "level": 1,
+      "blocks": [
+        [
+          "S",
+          "I"
+        ],
+        [
+          "predicate",
+          "am kicking"
+        ],
+        [
+          "P1",
+          "a ball"
+        ]
+      ]
+    },
+    {
+      "id": "tense-ball-experience",
+      "group": "tense-pictures",
+      "variant": 6,
+      "slots": {
+        "S": {
+          "ja": "私が",
+          "en": "I"
+        },
+        "predicate": {
+          "ja": "けったことがある",
+          "en": "have kicked"
+        },
+        "place": {
+          "ja": "",
+          "en": ""
+        },
+        "time": {
+          "ja": "",
+          "en": ""
+        },
+        "P1": {
+          "ja": "ボールを",
+          "en": "a ball"
+        },
+        "P2": {
+          "ja": "",
+          "en": ""
+        }
+      },
+      "ja": "私がボールをけったことがある。",
+      "en": "I have kicked a ball.",
+      "frame": "one-parameter",
+      "authorship": "original-six-slots-v1",
+      "contrastFamily": "tense-ball",
+      "meaning": "experience",
+      "level": 1,
+      "blocks": [
+        [
+          "S",
+          "I"
+        ],
+        [
+          "predicate",
+          "have kicked"
+        ],
+        [
+          "P1",
+          "a ball"
+        ]
+      ]
+    },
+    {
+      "id": "tense-piano",
+      "group": "tense-pictures",
+      "variant": 7,
+      "slots": {
+        "S": {
+          "ja": "私が",
+          "en": "I"
+        },
+        "predicate": {
+          "ja": "弾く",
+          "en": "play"
+        },
+        "place": {
+          "ja": "",
+          "en": ""
+        },
+        "time": {
+          "ja": "",
+          "en": ""
+        },
+        "P1": {
+          "ja": "ピアノを",
+          "en": "the piano"
+        },
+        "P2": {
+          "ja": "",
+          "en": ""
+        }
+      },
+      "ja": "私がピアノを弾く。",
+      "en": "I play the piano.",
+      "frame": "one-parameter",
+      "authorship": "original-six-slots-v1",
+      "contrastFamily": "tense-piano",
+      "meaning": "routine",
+      "level": 1,
+      "blocks": [
+        [
+          "S",
+          "I"
+        ],
+        [
+          "predicate",
+          "play"
+        ],
+        [
+          "P1",
+          "the piano"
+        ]
+      ]
+    },
+    {
+      "id": "tense-piano-past",
+      "group": "tense-pictures",
+      "variant": 7,
+      "slots": {
+        "S": {
+          "ja": "私が",
+          "en": "I"
+        },
+        "predicate": {
+          "ja": "弾いた",
+          "en": "played"
+        },
+        "place": {
+          "ja": "",
+          "en": ""
+        },
+        "time": {
+          "ja": "",
+          "en": ""
+        },
+        "P1": {
+          "ja": "ピアノを",
+          "en": "the piano"
+        },
+        "P2": {
+          "ja": "",
+          "en": ""
+        }
+      },
+      "ja": "私がピアノを弾いた。",
+      "en": "I played the piano.",
+      "frame": "one-parameter",
+      "authorship": "original-six-slots-v1",
+      "contrastFamily": "tense-piano",
+      "meaning": "past",
+      "level": 1,
+      "blocks": [
+        [
+          "S",
+          "I"
+        ],
+        [
+          "predicate",
+          "played"
+        ],
+        [
+          "P1",
+          "the piano"
+        ]
+      ]
+    },
+    {
+      "id": "tense-piano-ongoing",
+      "group": "tense-pictures",
+      "variant": 7,
+      "slots": {
+        "S": {
+          "ja": "私が",
+          "en": "I"
+        },
+        "predicate": {
+          "ja": "弾いている",
+          "en": "am playing"
+        },
+        "place": {
+          "ja": "",
+          "en": ""
+        },
+        "time": {
+          "ja": "",
+          "en": ""
+        },
+        "P1": {
+          "ja": "ピアノを",
+          "en": "the piano"
+        },
+        "P2": {
+          "ja": "",
+          "en": ""
+        }
+      },
+      "ja": "私がピアノを弾いている。",
+      "en": "I am playing the piano.",
+      "frame": "one-parameter",
+      "authorship": "original-six-slots-v1",
+      "contrastFamily": "tense-piano",
+      "meaning": "ongoing",
+      "level": 1,
+      "blocks": [
+        [
+          "S",
+          "I"
+        ],
+        [
+          "predicate",
+          "am playing"
+        ],
+        [
+          "P1",
+          "the piano"
+        ]
+      ]
+    },
+    {
+      "id": "tense-piano-experience",
+      "group": "tense-pictures",
+      "variant": 7,
+      "slots": {
+        "S": {
+          "ja": "私が",
+          "en": "I"
+        },
+        "predicate": {
+          "ja": "弾いたことがある",
+          "en": "have played"
+        },
+        "place": {
+          "ja": "",
+          "en": ""
+        },
+        "time": {
+          "ja": "",
+          "en": ""
+        },
+        "P1": {
+          "ja": "ピアノを",
+          "en": "the piano"
+        },
+        "P2": {
+          "ja": "",
+          "en": ""
+        }
+      },
+      "ja": "私がピアノを弾いたことがある。",
+      "en": "I have played the piano.",
+      "frame": "one-parameter",
+      "authorship": "original-six-slots-v1",
+      "contrastFamily": "tense-piano",
+      "meaning": "experience",
+      "level": 1,
+      "blocks": [
+        [
+          "S",
+          "I"
+        ],
+        [
+          "predicate",
+          "have played"
+        ],
+        [
+          "P1",
+          "the piano"
+        ]
+      ]
+    },
+    {
+      "id": "tense-flowers",
+      "group": "tense-pictures",
+      "variant": 8,
+      "slots": {
+        "S": {
+          "ja": "私が",
+          "en": "I"
+        },
+        "predicate": {
+          "ja": "水をやる",
+          "en": "water"
+        },
+        "place": {
+          "ja": "",
+          "en": ""
+        },
+        "time": {
+          "ja": "",
+          "en": ""
+        },
+        "P1": {
+          "ja": "花に",
+          "en": "the flowers"
+        },
+        "P2": {
+          "ja": "",
+          "en": ""
+        }
+      },
+      "ja": "私が花に水をやる。",
+      "en": "I water the flowers.",
+      "frame": "one-parameter",
+      "authorship": "original-six-slots-v1",
+      "contrastFamily": "tense-flowers",
+      "meaning": "routine",
+      "level": 1,
+      "blocks": [
+        [
+          "S",
+          "I"
+        ],
+        [
+          "predicate",
+          "water"
+        ],
+        [
+          "P1",
+          "the flowers"
+        ]
+      ]
+    },
+    {
+      "id": "tense-flowers-past",
+      "group": "tense-pictures",
+      "variant": 8,
+      "slots": {
+        "S": {
+          "ja": "私が",
+          "en": "I"
+        },
+        "predicate": {
+          "ja": "水をやった",
+          "en": "watered"
+        },
+        "place": {
+          "ja": "",
+          "en": ""
+        },
+        "time": {
+          "ja": "",
+          "en": ""
+        },
+        "P1": {
+          "ja": "花に",
+          "en": "the flowers"
+        },
+        "P2": {
+          "ja": "",
+          "en": ""
+        }
+      },
+      "ja": "私が花に水をやった。",
+      "en": "I watered the flowers.",
+      "frame": "one-parameter",
+      "authorship": "original-six-slots-v1",
+      "contrastFamily": "tense-flowers",
+      "meaning": "past",
+      "level": 1,
+      "blocks": [
+        [
+          "S",
+          "I"
+        ],
+        [
+          "predicate",
+          "watered"
+        ],
+        [
+          "P1",
+          "the flowers"
+        ]
+      ]
+    },
+    {
+      "id": "tense-flowers-ongoing",
+      "group": "tense-pictures",
+      "variant": 8,
+      "slots": {
+        "S": {
+          "ja": "私が",
+          "en": "I"
+        },
+        "predicate": {
+          "ja": "水をやっている",
+          "en": "am watering"
+        },
+        "place": {
+          "ja": "",
+          "en": ""
+        },
+        "time": {
+          "ja": "",
+          "en": ""
+        },
+        "P1": {
+          "ja": "花に",
+          "en": "the flowers"
+        },
+        "P2": {
+          "ja": "",
+          "en": ""
+        }
+      },
+      "ja": "私が花に水をやっている。",
+      "en": "I am watering the flowers.",
+      "frame": "one-parameter",
+      "authorship": "original-six-slots-v1",
+      "contrastFamily": "tense-flowers",
+      "meaning": "ongoing",
+      "level": 1,
+      "blocks": [
+        [
+          "S",
+          "I"
+        ],
+        [
+          "predicate",
+          "am watering"
+        ],
+        [
+          "P1",
+          "the flowers"
+        ]
+      ]
+    },
+    {
+      "id": "tense-flowers-experience",
+      "group": "tense-pictures",
+      "variant": 8,
+      "slots": {
+        "S": {
+          "ja": "私が",
+          "en": "I"
+        },
+        "predicate": {
+          "ja": "水をやったことがある",
+          "en": "have watered"
+        },
+        "place": {
+          "ja": "",
+          "en": ""
+        },
+        "time": {
+          "ja": "",
+          "en": ""
+        },
+        "P1": {
+          "ja": "花に",
+          "en": "the flowers"
+        },
+        "P2": {
+          "ja": "",
+          "en": ""
+        }
+      },
+      "ja": "私が花に水をやったことがある。",
+      "en": "I have watered the flowers.",
+      "frame": "one-parameter",
+      "authorship": "original-six-slots-v1",
+      "contrastFamily": "tense-flowers",
+      "meaning": "experience",
+      "level": 1,
+      "blocks": [
+        [
+          "S",
+          "I"
+        ],
+        [
+          "predicate",
+          "have watered"
+        ],
+        [
+          "P1",
+          "the flowers"
+        ]
+      ]
+    },
+    {
+      "id": "tense-paint",
+      "group": "tense-pictures",
+      "variant": 9,
+      "slots": {
+        "S": {
+          "ja": "私が",
+          "en": "I"
+        },
+        "predicate": {
+          "ja": "描く",
+          "en": "paint"
+        },
+        "place": {
+          "ja": "",
+          "en": ""
+        },
+        "time": {
+          "ja": "",
+          "en": ""
+        },
+        "P1": {
+          "ja": "絵を",
+          "en": "a picture"
+        },
+        "P2": {
+          "ja": "",
+          "en": ""
+        }
+      },
+      "ja": "私が絵を描く。",
+      "en": "I paint a picture.",
+      "frame": "one-parameter",
+      "authorship": "original-six-slots-v1",
+      "contrastFamily": "tense-paint",
+      "meaning": "routine",
+      "level": 1,
+      "blocks": [
+        [
+          "S",
+          "I"
+        ],
+        [
+          "predicate",
+          "paint"
+        ],
+        [
+          "P1",
+          "a picture"
+        ]
+      ]
+    },
+    {
+      "id": "tense-paint-past",
+      "group": "tense-pictures",
+      "variant": 9,
+      "slots": {
+        "S": {
+          "ja": "私が",
+          "en": "I"
+        },
+        "predicate": {
+          "ja": "描いた",
+          "en": "painted"
+        },
+        "place": {
+          "ja": "",
+          "en": ""
+        },
+        "time": {
+          "ja": "",
+          "en": ""
+        },
+        "P1": {
+          "ja": "絵を",
+          "en": "a picture"
+        },
+        "P2": {
+          "ja": "",
+          "en": ""
+        }
+      },
+      "ja": "私が絵を描いた。",
+      "en": "I painted a picture.",
+      "frame": "one-parameter",
+      "authorship": "original-six-slots-v1",
+      "contrastFamily": "tense-paint",
+      "meaning": "past",
+      "level": 1,
+      "blocks": [
+        [
+          "S",
+          "I"
+        ],
+        [
+          "predicate",
+          "painted"
+        ],
+        [
+          "P1",
+          "a picture"
+        ]
+      ]
+    },
+    {
+      "id": "tense-paint-ongoing",
+      "group": "tense-pictures",
+      "variant": 9,
+      "slots": {
+        "S": {
+          "ja": "私が",
+          "en": "I"
+        },
+        "predicate": {
+          "ja": "描いている",
+          "en": "am painting"
+        },
+        "place": {
+          "ja": "",
+          "en": ""
+        },
+        "time": {
+          "ja": "",
+          "en": ""
+        },
+        "P1": {
+          "ja": "絵を",
+          "en": "a picture"
+        },
+        "P2": {
+          "ja": "",
+          "en": ""
+        }
+      },
+      "ja": "私が絵を描いている。",
+      "en": "I am painting a picture.",
+      "frame": "one-parameter",
+      "authorship": "original-six-slots-v1",
+      "contrastFamily": "tense-paint",
+      "meaning": "ongoing",
+      "level": 1,
+      "blocks": [
+        [
+          "S",
+          "I"
+        ],
+        [
+          "predicate",
+          "am painting"
+        ],
+        [
+          "P1",
+          "a picture"
+        ]
+      ]
+    },
+    {
+      "id": "tense-paint-experience",
+      "group": "tense-pictures",
+      "variant": 9,
+      "slots": {
+        "S": {
+          "ja": "私が",
+          "en": "I"
+        },
+        "predicate": {
+          "ja": "描いたことがある",
+          "en": "have painted"
+        },
+        "place": {
+          "ja": "",
+          "en": ""
+        },
+        "time": {
+          "ja": "",
+          "en": ""
+        },
+        "P1": {
+          "ja": "絵を",
+          "en": "a picture"
+        },
+        "P2": {
+          "ja": "",
+          "en": ""
+        }
+      },
+      "ja": "私が絵を描いたことがある。",
+      "en": "I have painted a picture.",
+      "frame": "one-parameter",
+      "authorship": "original-six-slots-v1",
+      "contrastFamily": "tense-paint",
+      "meaning": "experience",
+      "level": 1,
+      "blocks": [
+        [
+          "S",
+          "I"
+        ],
+        [
+          "predicate",
+          "have painted"
+        ],
+        [
+          "P1",
+          "a picture"
+        ]
+      ]
+    },
+    {
+      "id": "tense-sushi",
+      "group": "tense-pictures",
+      "variant": 10,
+      "slots": {
+        "S": {
+          "ja": "私が",
+          "en": "I"
+        },
+        "predicate": {
+          "ja": "作る",
+          "en": "make"
+        },
+        "place": {
+          "ja": "",
+          "en": ""
+        },
+        "time": {
+          "ja": "",
+          "en": ""
+        },
+        "P1": {
+          "ja": "のり巻きを",
+          "en": "sushi rolls"
+        },
+        "P2": {
+          "ja": "",
+          "en": ""
+        }
+      },
+      "ja": "私がのり巻きを作る。",
+      "en": "I make sushi rolls.",
+      "frame": "one-parameter",
+      "authorship": "original-six-slots-v1",
+      "contrastFamily": "tense-sushi",
+      "meaning": "routine",
+      "level": 1,
+      "blocks": [
+        [
+          "S",
+          "I"
+        ],
+        [
+          "predicate",
+          "make"
+        ],
+        [
+          "P1",
+          "sushi rolls"
+        ]
+      ]
+    },
+    {
+      "id": "tense-sushi-past",
+      "group": "tense-pictures",
+      "variant": 10,
+      "slots": {
+        "S": {
+          "ja": "私が",
+          "en": "I"
+        },
+        "predicate": {
+          "ja": "作った",
+          "en": "made"
+        },
+        "place": {
+          "ja": "",
+          "en": ""
+        },
+        "time": {
+          "ja": "",
+          "en": ""
+        },
+        "P1": {
+          "ja": "のり巻きを",
+          "en": "sushi rolls"
+        },
+        "P2": {
+          "ja": "",
+          "en": ""
+        }
+      },
+      "ja": "私がのり巻きを作った。",
+      "en": "I made sushi rolls.",
+      "frame": "one-parameter",
+      "authorship": "original-six-slots-v1",
+      "contrastFamily": "tense-sushi",
+      "meaning": "past",
+      "level": 1,
+      "blocks": [
+        [
+          "S",
+          "I"
+        ],
+        [
+          "predicate",
+          "made"
+        ],
+        [
+          "P1",
+          "sushi rolls"
+        ]
+      ]
+    },
+    {
+      "id": "tense-sushi-ongoing",
+      "group": "tense-pictures",
+      "variant": 10,
+      "slots": {
+        "S": {
+          "ja": "私が",
+          "en": "I"
+        },
+        "predicate": {
+          "ja": "作っている",
+          "en": "am making"
+        },
+        "place": {
+          "ja": "",
+          "en": ""
+        },
+        "time": {
+          "ja": "",
+          "en": ""
+        },
+        "P1": {
+          "ja": "のり巻きを",
+          "en": "sushi rolls"
+        },
+        "P2": {
+          "ja": "",
+          "en": ""
+        }
+      },
+      "ja": "私がのり巻きを作っている。",
+      "en": "I am making sushi rolls.",
+      "frame": "one-parameter",
+      "authorship": "original-six-slots-v1",
+      "contrastFamily": "tense-sushi",
+      "meaning": "ongoing",
+      "level": 1,
+      "blocks": [
+        [
+          "S",
+          "I"
+        ],
+        [
+          "predicate",
+          "am making"
+        ],
+        [
+          "P1",
+          "sushi rolls"
+        ]
+      ]
+    },
+    {
+      "id": "tense-sushi-experience",
+      "group": "tense-pictures",
+      "variant": 10,
+      "slots": {
+        "S": {
+          "ja": "私が",
+          "en": "I"
+        },
+        "predicate": {
+          "ja": "作ったことがある",
+          "en": "have made"
+        },
+        "place": {
+          "ja": "",
+          "en": ""
+        },
+        "time": {
+          "ja": "",
+          "en": ""
+        },
+        "P1": {
+          "ja": "のり巻きを",
+          "en": "sushi rolls"
+        },
+        "P2": {
+          "ja": "",
+          "en": ""
+        }
+      },
+      "ja": "私がのり巻きを作ったことがある。",
+      "en": "I have made sushi rolls.",
+      "frame": "one-parameter",
+      "authorship": "original-six-slots-v1",
+      "contrastFamily": "tense-sushi",
+      "meaning": "experience",
+      "level": 1,
+      "blocks": [
+        [
+          "S",
+          "I"
+        ],
+        [
+          "predicate",
+          "have made"
+        ],
+        [
+          "P1",
+          "sushi rolls"
+        ]
+      ]
     },
     {
       "id": "level2-01",

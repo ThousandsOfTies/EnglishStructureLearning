@@ -8,9 +8,9 @@ const basic = draft.examples.filter(q => q.level === 1);
 const get = id => basic.find(q => q.id === 'build-' + id);
 
 test('the original 100 groups keep three core scenes each, with contrasts added', () => {
-  const core = basic.filter(q => q.contrastFamily === q.id);
+  const core = basic.filter(q => q.contrastFamily === q.id && q.group !== 'tense-pictures');
   assert.equal(core.length, 300);
-  const coreGroups = draft.groups.filter(q => !q.key.startsWith('pronouns-'));
+  const coreGroups = draft.groups.filter(q => !q.key.startsWith('pronouns-') && q.key !== 'tense-pictures');
   assert.equal(coreGroups.length, 100);
   for (const group of coreGroups) assert.equal(core.filter(q => q.group === group.key).length, 3);
 });
@@ -55,9 +55,9 @@ test('P1 and P2 distinguish recipient/thing from object/description', () => {
 });
 
 test('each selectable level has its requested number of examples', () => {
-  assert.deepEqual([1,2,3].map(level => draft.examples.filter(q => q.level === level).length), [878,10,10]);
+  assert.deepEqual([1,2,3].map(level => draft.examples.filter(q => q.level === level).length), [918,10,10]);
   assert.deepEqual(draft.levels.map(q => q.id), [1,2,3]);
-  assert.equal(new Set(draft.examples.map(q => q.id)).size, 898);
+  assert.equal(new Set(draft.examples.map(q => q.id)).size, 938);
 });
 
 test('state verbs stay simple while ongoing actions are be plus ing', () => {
@@ -71,7 +71,7 @@ test('state verbs stay simple while ongoing actions are be plus ing', () => {
     const expectedBe = subject === 'I' ? 'am' : ['You','We','They'].includes(subject) ? 'are' : 'is';
     assert.ok(q.slots.predicate.en.startsWith(expectedBe + ' '), q.id);
     assert.match(q.slots.predicate.en, /\b\w+ing\b/, q.id);
-    assert.equal(q.slots.time.en, 'now');
+    assert.equal(q.slots.time.en, q.group === 'tense-pictures' ? '' : 'now');
   }
 });
 
@@ -118,4 +118,20 @@ test('questions about the subject preserve the subject position without do', () 
   assert.equal(subjectQuestion.question.target, 'S');
   assert.equal(subjectQuestion.en, 'Who gives you a sticker at school?');
   assert.doesNotMatch(subjectQuestion.en, /\bdo(?:es)?\b/i);
+});
+
+test('each picture activity has four complete forms using the same participants and object', () => {
+  const pictures = basic.filter(q => q.group === 'tense-pictures');
+  const families = new Set(pictures.map(q => q.contrastFamily));
+  assert.equal(families.size, 10);
+  for (const family of families) {
+    const variants = pictures.filter(q => q.contrastFamily === family);
+    assert.deepEqual(variants.map(q => q.meaning), ['routine', 'past', 'ongoing', 'experience']);
+    assert.match(variants[3].en, /^I have /);
+    assert.match(variants[3].ja, /ことがある。$/u);
+    for (const q of variants) {
+      assert.deepEqual(q.slots.P1, variants[0].slots.P1);
+      assert.equal(q.slots.S.en, 'I');
+    }
+  }
 });

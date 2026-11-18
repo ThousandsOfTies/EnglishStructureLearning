@@ -1,8 +1,8 @@
-# レベル1：英文を組み立てる878文
+# レベル1：英文を組み立てる918文
 
 基本動詞98種類と「be＋名詞」「be＋形容詞」の原型300文を土台に、いつもの動き・今の動き・昨日の動きを対比し、代名詞の39文も加えました。
 
-内訳：原型300文＋今の動き265文＋過去274文＋代名詞39文。レベル2・3は別に各10文です。
+内訳：基本310文＋今の動き275文＋過去284文＋経験10文＋代名詞39文。レベル2・3は別に各10文です。
 
 全部を一度に練習する必要はありません。まず「いつもの動き／状態」の原型を使い、同じcontrastFamilyの「今」「昨日」と比べます。再帰代名詞8文は発展扱いです。
 
@@ -21,6 +21,92 @@ PはParameter（引数）の教材独自の呼び名です。go to の to は述
 whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英文では書かず、発音もしません。S以外をたずねる直接疑問文では助動詞・be・doを主語の前に出します。SをたずねるwhoはSの位置に入ります。
 
 追加例文：[レベル2・10文](level2-examples.md) / [レベル3・10文](level3-examples.md)
+
+## 10の動作：時制の絵くらべ
+
+| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | I | ride | a bike | — | — | — |
+| 過去の動き | I | rode | a bike | — | — | — |
+| 今している | I | am riding | a bike | — | — | — |
+| したことがある | I | have ridden | a bike | — | — | — |
+| いつもの動き | I | ride | a pony | — | — | — |
+| 過去の動き | I | rode | a pony | — | — | — |
+| 今している | I | am riding | a pony | — | — | — |
+| したことがある | I | have ridden | a pony | — | — | — |
+| いつもの動き | I | fly | a kite | — | — | — |
+| 過去の動き | I | flew | a kite | — | — | — |
+| 今している | I | am flying | a kite | — | — | — |
+| したことがある | I | have flown | a kite | — | — | — |
+| いつもの動き | I | jump rope | — | — | — | — |
+| 過去の動き | I | jumped rope | — | — | — | — |
+| 今している | I | am jumping rope | — | — | — | — |
+| したことがある | I | have jumped rope | — | — | — | — |
+| いつもの動き | I | play | the violin | — | — | — |
+| 過去の動き | I | played | the violin | — | — | — |
+| 今している | I | am playing | the violin | — | — | — |
+| したことがある | I | have played | the violin | — | — | — |
+| いつもの動き | I | kick | a ball | — | — | — |
+| 過去の動き | I | kicked | a ball | — | — | — |
+| 今している | I | am kicking | a ball | — | — | — |
+| したことがある | I | have kicked | a ball | — | — | — |
+| いつもの動き | I | play | the piano | — | — | — |
+| 過去の動き | I | played | the piano | — | — | — |
+| 今している | I | am playing | the piano | — | — | — |
+| したことがある | I | have played | the piano | — | — | — |
+| いつもの動き | I | water | the flowers | — | — | — |
+| 過去の動き | I | watered | the flowers | — | — | — |
+| 今している | I | am watering | the flowers | — | — | — |
+| したことがある | I | have watered | the flowers | — | — | — |
+| いつもの動き | I | paint | a picture | — | — | — |
+| 過去の動き | I | painted | a picture | — | — | — |
+| 今している | I | am painting | a picture | — | — | — |
+| したことがある | I | have painted | a picture | — | — | — |
+| いつもの動き | I | make | sushi rolls | — | — | — |
+| 過去の動き | I | made | sushi rolls | — | — | — |
+| 今している | I | am making | sushi rolls | — | — | — |
+| したことがある | I | have made | sushi rolls | — | — | — |
+
+- I ride a bike. — 私が自転車に乗る。
+- I rode a bike. — 私が自転車に乗った。
+- I am riding a bike. — 私が自転車に乗っている。
+- I have ridden a bike. — 私が自転車に乗ったことがある。
+- I ride a pony. — 私がポニーに乗る。
+- I rode a pony. — 私がポニーに乗った。
+- I am riding a pony. — 私がポニーに乗っている。
+- I have ridden a pony. — 私がポニーに乗ったことがある。
+- I fly a kite. — 私がたこをあげる。
+- I flew a kite. — 私がたこをあげた。
+- I am flying a kite. — 私がたこをあげている。
+- I have flown a kite. — 私がたこをあげたことがある。
+- I jump rope. — 私がなわとびをする。
+- I jumped rope. — 私がなわとびをした。
+- I am jumping rope. — 私がなわとびをしている。
+- I have jumped rope. — 私がなわとびをしたことがある。
+- I play the violin. — 私がバイオリンを弾く。
+- I played the violin. — 私がバイオリンを弾いた。
+- I am playing the violin. — 私がバイオリンを弾いている。
+- I have played the violin. — 私がバイオリンを弾いたことがある。
+- I kick a ball. — 私がボールをける。
+- I kicked a ball. — 私がボールをけった。
+- I am kicking a ball. — 私がボールをけっている。
+- I have kicked a ball. — 私がボールをけったことがある。
+- I play the piano. — 私がピアノを弾く。
+- I played the piano. — 私がピアノを弾いた。
+- I am playing the piano. — 私がピアノを弾いている。
+- I have played the piano. — 私がピアノを弾いたことがある。
+- I water the flowers. — 私が花に水をやる。
+- I watered the flowers. — 私が花に水をやった。
+- I am watering the flowers. — 私が花に水をやっている。
+- I have watered the flowers. — 私が花に水をやったことがある。
+- I paint a picture. — 私が絵を描く。
+- I painted a picture. — 私が絵を描いた。
+- I am painting a picture. — 私が絵を描いている。
+- I have painted a picture. — 私が絵を描いたことがある。
+- I make sushi rolls. — 私がのり巻きを作る。
+- I made sushi rolls. — 私がのり巻きを作った。
+- I am making sushi rolls. — 私がのり巻きを作っている。
+- I have made sushi rolls. — 私がのり巻きを作ったことがある。
 
 ## go：行きます
 
