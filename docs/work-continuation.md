@@ -60,3 +60,7 @@ bake・taste・cut・peel・mix・pour の6テーマを新しい構図で54文�
 ## 家と学校の場面を追加（2026-11-19）
 
 wash・read・write・draw・color・count・study・learn・practice の9テーマを新しい構図で81文分追加。元の898文のうち337文が作画済み。「時制の絵くらべ」40文を含むアプリ全体では377/938文。次の未作画テーマは spell。
+
+## 旧構図100問を差し替え
+
+go・come・walk・run・jump・swim・fly・ride・climb・sit・stand・give の旧構図100問を四角い吹き出しの画像に差し替えた。日曜日の6問は太陽のカレンダーを維持。参照を切り替えた旧画像100枚と先に差し替え済みだった旧画像6枚を削除。問題IDと絵付き377問の件数は維持した。次の未作画テーマは spell。

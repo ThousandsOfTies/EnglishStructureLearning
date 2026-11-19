@@ -127,9 +127,10 @@ def prepare():
             clue += '話し手のいる場所へ近づいてきます。'
         if q['level'] > 1:
             clue = q.get('focus', '')
+        registered = manifest['images'].get(q['id'])
         jobs.append({'id': q['id'], 'level': q['level'], 'group': q.get('group', 'level' + str(q['level'])),
                      'family': q.get('contrastFamily', q['id']), 'sentence': q['en'],
-                     'file': 'assets/construction/' + q['id'] + '.png',
+                     'file': registered['file'] if registered else 'assets/construction/' + q['id'] + '.png',
                      'alt': q['ja'].rstrip('。') + '場面', 'clue': clue,
                      'status': 'ready' if q['id'] in manifest['images'] else 'generated' if (STAGED / (q['id'] + '.json')).exists() else 'pending', 'prompt': prompt_for(q)})
     plan = {'version': 1, 'generationTool': 'built-in image_gen', 'total': len(jobs),

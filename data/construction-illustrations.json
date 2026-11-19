@@ -3,601 +3,604 @@
   "status": "in-progress",
   "images": {
     "build-go-1": {
-      "file": "assets/construction/build-go-1-sunday-v2.png",
-      "alt": "星の髪留めの女の子が話し、吹き出しの中では同じ女の子が公園へ歩いている",
+      "file": "assets/construction/build-go-1-rect.png",
+      "alt": "左側の話し手が右の場面を紹介する。私は日曜日に公園に行きます。",
       "clue": "カレンダーの絵も見て、ことばをえらぼう。",
-      "review": "2026-11-17: 日曜カレンダー版の6場面を縮小一覧で個別確認。赤い綴じと2リング、紙の中の太陽、文字・数字なし。人物、人称、動作、行き先を元画像と比較して確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-go-1-ongoing": {
-      "file": "assets/construction/go-i-ongoing.png",
-      "alt": "吹き出しの中で、星の髪留めの女の子が今まさに公園へ向かって歩いている",
-      "clue": "時間のヒント：今、動きの途中です。"
+      "file": "assets/construction/build-go-1-ongoing-rect.png",
+      "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。私は今公園に向かっています。",
+      "clue": "時間のヒント：今、動きの途中です。",
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-go-1-past": {
-      "file": "assets/construction/go-i-past.png",
-      "alt": "右側の女の子が左の過去を振り返り、左の吹き出しに同じ女の子が公園へ行く場面。下の時間軸は左の過去から右の今へ伸びる",
-      "clue": "時間のヒント：昨日。右の話し手は今にいます。"
+      "file": "assets/construction/build-go-1-past-rect.png",
+      "alt": "右の話し手が左の場面を振り返る。私は昨日公園に行きました。",
+      "clue": "時間のヒント：昨日。右の話し手は今にいます。",
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-give-1": {
-      "file": "assets/construction/give-we-sticker.png",
-      "alt": "星の髪留めの女の子が話し、吹き出しの中では同じ女の子と姉が、家で小さな弟へ1枚の星のシールを渡している",
-      "clue": "時間のヒント：毎日。2人は姉妹、男の子は2人の弟です。"
+      "file": "assets/construction/build-give-1-rect.png",
+      "alt": "左側の話し手が右の場面を紹介する。私たちは毎日家で弟にシールをあげます。",
+      "clue": "時間のヒント：毎日。2人は姉妹、男の子は2人の弟です。",
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-go-2": {
-      "file": "assets/construction/build-go-2-sunday-v2.png",
-      "alt": "あなたは日曜日に図書館に行きます場面",
+      "file": "assets/construction/build-go-2-rect.png",
+      "alt": "左側の話し手が右の場面を紹介する。あなたは日曜日に図書館に行きます。",
       "clue": "カレンダーの絵も見て、ことばをえらぼう。",
-      "review": "2026-11-17: 日曜カレンダー版の6場面を縮小一覧で個別確認。赤い綴じと2リング、紙の中の太陽、文字・数字なし。人物、人称、動作、行き先を元画像と比較して確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-go-3": {
-      "file": "assets/construction/build-go-3-sunday-v2.png",
-      "alt": "彼は日曜日にプールに行きます場面",
+      "file": "assets/construction/build-go-3-rect.png",
+      "alt": "左側の話し手が右の場面を紹介する。彼は日曜日にプールに行きます。",
       "clue": "カレンダーの絵も見て、ことばをえらぼう。",
-      "review": "2026-11-17: 日曜カレンダー版の6場面を縮小一覧で個別確認。赤い綴じと2リング、紙の中の太陽、文字・数字なし。人物、人称、動作、行き先を元画像と比較して確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-go-2-ongoing": {
-      "file": "assets/construction/build-go-2-ongoing.png",
-      "alt": "あなたは今図書館に向かっています場面",
+      "file": "assets/construction/build-go-2-ongoing-rect.png",
+      "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。あなたは今図書館に向かっています。",
       "clue": "時間のヒント：今。",
-      "review": "人物の対応、目的地、動作の向き、現在と過去の配置を目視確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-go-2-past": {
-      "file": "assets/construction/build-go-2-past.png",
-      "alt": "あなたは昨日図書館に行きました場面",
+      "file": "assets/construction/build-go-2-past-rect.png",
+      "alt": "右の話し手が左の場面を振り返る。あなたは昨日図書館に行きました。",
       "clue": "時間のヒント：昨日。",
-      "review": "人物の対応、目的地、動作の向き、現在と過去の配置を目視確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-go-3-ongoing": {
-      "file": "assets/construction/build-go-3-ongoing.png",
-      "alt": "彼は今プールに向かっています場面",
+      "file": "assets/construction/build-go-3-ongoing-rect.png",
+      "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。彼は今プールに向かっています。",
       "clue": "時間のヒント：今。",
-      "review": "人物の対応、目的地、動作の向き、現在と過去の配置を目視確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-go-3-past": {
-      "file": "assets/construction/build-go-3-past.png",
-      "alt": "彼は昨日プールに行きました場面",
+      "file": "assets/construction/build-go-3-past-rect.png",
+      "alt": "右の話し手が左の場面を振り返る。彼は昨日プールに行きました。",
       "clue": "時間のヒント：昨日。",
-      "review": "人物の対応、目的地、動作の向き、現在と過去の配置を目視確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-come-1": {
-      "file": "assets/construction/build-come-1.png",
-      "alt": "彼女は毎日ここに来ます場面",
+      "file": "assets/construction/build-come-1-rect.png",
+      "alt": "左側の話し手が右の場面を紹介する。彼女は毎日ここに来ます。",
       "clue": "時間のヒント：毎日。話し手のいる場所へ近づいてきます。",
-      "review": "人物の対応、行き先と到着、動き、過去の左右配置を目視確認。comeの到着先は短いヒントでも補足。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-come-1-ongoing": {
-      "file": "assets/construction/build-come-1-ongoing.png",
-      "alt": "彼女は今ここに来る途中です場面",
+      "file": "assets/construction/build-come-1-ongoing-rect.png",
+      "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。彼女は今ここに来る途中です。",
       "clue": "時間のヒント：今。話し手のいる場所へ近づいてきます。",
-      "review": "人物の対応、行き先と到着、動き、過去の左右配置を目視確認。comeの到着先は短いヒントでも補足。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-come-1-past": {
-      "file": "assets/construction/build-come-1-past.png",
-      "alt": "彼女は昨日ここに来ました場面",
+      "file": "assets/construction/build-come-1-past-rect.png",
+      "alt": "右の話し手が左の場面を振り返る。彼女は昨日ここに来ました。",
       "clue": "時間のヒント：昨日。話し手のいる場所へ近づいてきます。",
-      "review": "人物の対応、行き先と到着、動き、過去の左右配置を目視確認。comeの到着先は短いヒントでも補足。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-come-2": {
-      "file": "assets/construction/build-come-2.png",
-      "alt": "彼は毎日この部屋に来ます場面",
+      "file": "assets/construction/build-come-2-rect.png",
+      "alt": "左側の話し手が右の場面を紹介する。彼は毎日この部屋に来ます。",
       "clue": "時間のヒント：毎日。話し手のいる場所へ近づいてきます。",
-      "review": "人物の対応、行き先と到着、動き、過去の左右配置を目視確認。comeの到着先は短いヒントでも補足。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-come-2-ongoing": {
-      "file": "assets/construction/build-come-2-ongoing.png",
-      "alt": "彼は今この部屋に来る途中です場面",
+      "file": "assets/construction/build-come-2-ongoing-rect.png",
+      "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。彼は今この部屋に来る途中です。",
       "clue": "時間のヒント：今。話し手のいる場所へ近づいてきます。",
-      "review": "人物の対応、行き先と到着、動き、過去の左右配置を目視確認。comeの到着先は短いヒントでも補足。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-come-2-past": {
-      "file": "assets/construction/build-come-2-past.png",
-      "alt": "彼は昨日この部屋に来ました場面",
+      "file": "assets/construction/build-come-2-past-rect.png",
+      "alt": "右の話し手が左の場面を振り返る。彼は昨日この部屋に来ました。",
       "clue": "時間のヒント：昨日。話し手のいる場所へ近づいてきます。",
-      "review": "人物の対応、行き先と到着、動き、過去の左右配置を目視確認。comeの到着先は短いヒントでも補足。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-come-3": {
-      "file": "assets/construction/build-come-3.png",
-      "alt": "私たちは毎日公園に来ます場面",
+      "file": "assets/construction/build-come-3-rect.png",
+      "alt": "左側の話し手が右の場面を紹介する。私たちは毎日公園に来ます。",
       "clue": "時間のヒント：毎日。話し手のいる場所へ近づいてきます。",
-      "review": "人物の対応、行き先と到着、動き、過去の左右配置を目視確認。comeの到着先は短いヒントでも補足。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-come-3-past": {
-      "file": "assets/construction/build-come-3-past.png",
-      "alt": "私たちは昨日公園に来ました場面",
+      "file": "assets/construction/build-come-3-past-rect.png",
+      "alt": "右の話し手が左の場面を振り返る。私たちは昨日公園に来ました。",
       "clue": "時間のヒント：昨日。話し手のいる場所へ近づいてきます。",
-      "review": "人物の対応、行き先と到着、動き、過去の左右配置を目視確認。comeの到着先は短いヒントでも補足。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-come-3-ongoing": {
-      "file": "assets/construction/build-come-3-ongoing.png",
-      "alt": "私たちは今公園に来る途中です場面",
+      "file": "assets/construction/build-come-3-ongoing-rect.png",
+      "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。私たちは今公園に来る途中です。",
       "clue": "時間のヒント：今。話し手のいる場所へ近づいてきます。",
-      "review": "各画像を目視確認。主語の人物対応、川・学校・森の場面、歩く動作と時点を確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-walk-1": {
-      "file": "assets/construction/build-walk-1.png",
-      "alt": "彼らは毎日川のそばを歩きます場面",
+      "file": "assets/construction/build-walk-1-rect.png",
+      "alt": "左側の話し手が右の場面を紹介する。彼らは毎日川のそばを歩きます。",
       "clue": "時間のヒント：毎日。",
-      "review": "各画像を目視確認。主語の人物対応、川・学校・森の場面、歩く動作と時点を確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-walk-1-ongoing": {
-      "file": "assets/construction/build-walk-1-ongoing.png",
-      "alt": "彼らは今川のそばを歩いています場面",
+      "file": "assets/construction/build-walk-1-ongoing-rect.png",
+      "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。彼らは今川のそばを歩いています。",
       "clue": "時間のヒント：今。",
-      "review": "各画像を目視確認。主語の人物対応、川・学校・森の場面、歩く動作と時点を確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-walk-1-past": {
-      "file": "assets/construction/build-walk-1-past.png",
-      "alt": "彼らは昨日川のそばを歩きました場面",
+      "file": "assets/construction/build-walk-1-past-rect.png",
+      "alt": "右の話し手が左の場面を振り返る。彼らは昨日川のそばを歩きました。",
       "clue": "時間のヒント：昨日。",
-      "review": "各画像を目視確認。主語の人物対応、川・学校・森の場面、歩く動作と時点を確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-walk-2": {
-      "file": "assets/construction/build-walk-2.png",
-      "alt": "私は毎日学校まで歩きます場面",
+      "file": "assets/construction/build-walk-2-rect.png",
+      "alt": "左側の話し手が右の場面を紹介する。私は毎日学校まで歩きます。",
       "clue": "時間のヒント：毎日。",
-      "review": "各画像を目視確認。主語の人物対応、川・学校・森の場面、歩く動作と時点を確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-walk-2-ongoing": {
-      "file": "assets/construction/build-walk-2-ongoing.png",
-      "alt": "私は今学校まで歩いています場面",
+      "file": "assets/construction/build-walk-2-ongoing-rect.png",
+      "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。私は今学校まで歩いています。",
       "clue": "時間のヒント：今。",
-      "review": "各画像を目視確認。主語の人物対応、川・学校・森の場面、歩く動作と時点を確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-walk-2-past": {
-      "file": "assets/construction/build-walk-2-past.png",
-      "alt": "私は昨日学校まで歩きました場面",
+      "file": "assets/construction/build-walk-2-past-rect.png",
+      "alt": "右の話し手が左の場面を振り返る。私は昨日学校まで歩きました。",
       "clue": "時間のヒント：昨日。",
-      "review": "各画像を目視確認。主語の人物対応、川・学校・森の場面、歩く動作と時点を確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-walk-3": {
-      "file": "assets/construction/build-walk-3.png",
-      "alt": "あなたは毎日森の中を歩きます場面",
+      "file": "assets/construction/build-walk-3-rect.png",
+      "alt": "左側の話し手が右の場面を紹介する。あなたは毎日森の中を歩きます。",
       "clue": "時間のヒント：毎日。",
-      "review": "各画像を目視確認。主語の人物対応、川・学校・森の場面、歩く動作と時点を確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-walk-3-ongoing": {
-      "file": "assets/construction/build-walk-3-ongoing.png",
-      "alt": "あなたは今森の中を歩いています場面",
+      "file": "assets/construction/build-walk-3-ongoing-rect.png",
+      "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。あなたは今森の中を歩いています。",
       "clue": "時間のヒント：今。",
-      "review": "各画像を目視確認。主語の人物対応、川・学校・森の場面、歩く動作と時点を確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-walk-3-past": {
-      "file": "assets/construction/build-walk-3-past.png",
-      "alt": "あなたは昨日森の中を歩きました場面",
+      "file": "assets/construction/build-walk-3-past-rect.png",
+      "alt": "右の話し手が左の場面を振り返る。あなたは昨日森の中を歩きました。",
       "clue": "時間のヒント：昨日。",
-      "review": "各画像を目視確認。主語の人物対応、川・学校・森の場面、歩く動作と時点を確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-run-1": {
-      "file": "assets/construction/build-run-1.png",
-      "alt": "彼は毎日公園で走ります場面",
+      "file": "assets/construction/build-run-1-rect.png",
+      "alt": "左側の話し手が右の場面を紹介する。彼は毎日公園で走ります。",
       "clue": "時間のヒント：毎日。",
-      "review": "画像を目視確認。人物・人数、走る場所、飛び越える対象、基本・進行・過去の配置を確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-run-1-ongoing": {
-      "file": "assets/construction/build-run-1-ongoing.png",
-      "alt": "彼は今公園で走っています場面",
+      "file": "assets/construction/build-run-1-ongoing-rect.png",
+      "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。彼は今公園で走っています。",
       "clue": "時間のヒント：今。",
-      "review": "画像を目視確認。人物・人数、走る場所、飛び越える対象、基本・進行・過去の配置を確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-run-1-past": {
-      "file": "assets/construction/build-run-1-past.png",
-      "alt": "彼は昨日公園で走りました場面",
+      "file": "assets/construction/build-run-1-past-rect.png",
+      "alt": "右の話し手が左の場面を振り返る。彼は昨日公園で走りました。",
       "clue": "時間のヒント：昨日。",
-      "review": "画像を目視確認。人物・人数、走る場所、飛び越える対象、基本・進行・過去の配置を確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-run-2": {
-      "file": "assets/construction/build-run-2.png",
-      "alt": "彼女は毎日校庭で走ります場面",
+      "file": "assets/construction/build-run-2-rect.png",
+      "alt": "左側の話し手が右の場面を紹介する。彼女は毎日校庭で走ります。",
       "clue": "時間のヒント：毎日。",
-      "review": "画像を目視確認。人物・人数、走る場所、飛び越える対象、基本・進行・過去の配置を確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-run-2-ongoing": {
-      "file": "assets/construction/build-run-2-ongoing.png",
-      "alt": "彼女は今校庭で走っています場面",
+      "file": "assets/construction/build-run-2-ongoing-rect.png",
+      "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。彼女は今校庭で走っています。",
       "clue": "時間のヒント：今。",
-      "review": "画像を目視確認。人物・人数、走る場所、飛び越える対象、基本・進行・過去の配置を確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-run-2-past": {
-      "file": "assets/construction/build-run-2-past.png",
-      "alt": "彼女は昨日校庭で走りました場面",
+      "file": "assets/construction/build-run-2-past-rect.png",
+      "alt": "右の話し手が左の場面を振り返る。彼女は昨日校庭で走りました。",
       "clue": "時間のヒント：昨日。",
-      "review": "画像を目視確認。人物・人数、走る場所、飛び越える対象、基本・進行・過去の配置を確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-run-3": {
-      "file": "assets/construction/build-run-3.png",
-      "alt": "それは毎日浜辺で走ります場面",
+      "file": "assets/construction/build-run-3-rect.png",
+      "alt": "左側の話し手が右の場面を紹介する。それは毎日浜辺で走ります。",
       "clue": "時間のヒント：毎日。",
-      "review": "画像を目視確認。人物・人数、走る場所、飛び越える対象、基本・進行・過去の配置を確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-run-3-ongoing": {
-      "file": "assets/construction/build-run-3-ongoing.png",
-      "alt": "それは今浜辺で走っています場面",
+      "file": "assets/construction/build-run-3-ongoing-rect.png",
+      "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。それは今浜辺で走っています。",
       "clue": "時間のヒント：今。",
-      "review": "画像を目視確認。人物・人数、走る場所、飛び越える対象、基本・進行・過去の配置を確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-run-3-past": {
-      "file": "assets/construction/build-run-3-past.png",
-      "alt": "それは昨日浜辺で走りました場面",
+      "file": "assets/construction/build-run-3-past-rect.png",
+      "alt": "右の話し手が左の場面を振り返る。それは昨日浜辺で走りました。",
       "clue": "時間のヒント：昨日。",
-      "review": "画像を目視確認。人物・人数、走る場所、飛び越える対象、基本・進行・過去の配置を確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-jump-1": {
-      "file": "assets/construction/build-jump-1.png",
-      "alt": "私たちは毎日公園で小さな水たまりをとびこえます場面",
+      "file": "assets/construction/build-jump-1-rect.png",
+      "alt": "左側の話し手が右の場面を紹介する。私たちは毎日公園で小さな水たまりをとびこえます。",
       "clue": "時間のヒント：毎日。",
-      "review": "画像を目視確認。人物・人数、走る場所、飛び越える対象、基本・進行・過去の配置を確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-jump-1-ongoing": {
-      "file": "assets/construction/build-jump-1-ongoing.png",
-      "alt": "私たちは今公園で小さな水たまりをとびこえています場面",
+      "file": "assets/construction/build-jump-1-ongoing-rect.png",
+      "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。私たちは今公園で小さな水たまりをとびこえています。",
       "clue": "時間のヒント：今。",
-      "review": "画像を目視確認。人物・人数、走る場所、飛び越える対象、基本・進行・過去の配置を確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-jump-1-past": {
-      "file": "assets/construction/build-jump-1-past.png",
-      "alt": "私たちは昨日公園で小さな水たまりをとびこえました場面",
+      "file": "assets/construction/build-jump-1-past-rect.png",
+      "alt": "右の話し手が左の場面を振り返る。私たちは昨日公園で小さな水たまりをとびこえました。",
       "clue": "時間のヒント：昨日。",
-      "review": "画像を目視確認。人物・人数、走る場所、飛び越える対象、基本・進行・過去の配置を確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-jump-2-ongoing": {
-      "file": "assets/construction/build-jump-2-ongoing.png",
-      "alt": "彼らは今公園でロープをとびこえています場面",
+      "file": "assets/construction/build-jump-2-ongoing-rect.png",
+      "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。彼らは今公園でロープをとびこえています。",
       "clue": "時間のヒント：今。",
-      "review": "画像を目視確認。人物・人数、走る場所、飛び越える対象、基本・進行・過去の配置を確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-jump-2-past": {
-      "file": "assets/construction/build-jump-2-past.png",
-      "alt": "彼らは昨日公園でロープをとびこえました場面",
+      "file": "assets/construction/build-jump-2-past-rect.png",
+      "alt": "右の話し手が左の場面を振り返る。彼らは昨日公園でロープをとびこえました。",
       "clue": "時間のヒント：昨日。",
-      "review": "画像を目視確認。人物・人数、走る場所、飛び越える対象、基本・進行・過去の配置を確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-jump-3": {
-      "file": "assets/construction/build-jump-3.png",
-      "alt": "私は毎日公園で線をとびこえます場面",
+      "file": "assets/construction/build-jump-3-rect.png",
+      "alt": "左側の話し手が右の場面を紹介する。私は毎日公園で線をとびこえます。",
       "clue": "時間のヒント：毎日。",
-      "review": "画像を目視確認。人物・人数、走る場所、飛び越える対象、基本・進行・過去の配置を確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-jump-3-ongoing": {
-      "file": "assets/construction/build-jump-3-ongoing.png",
-      "alt": "私は今公園で線をとびこえています場面",
+      "file": "assets/construction/build-jump-3-ongoing-rect.png",
+      "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。私は今公園で線をとびこえています。",
       "clue": "時間のヒント：今。",
-      "review": "画像を目視確認。人物・人数、走る場所、飛び越える対象、基本・進行・過去の配置を確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-jump-3-past": {
-      "file": "assets/construction/build-jump-3-past.png",
-      "alt": "私は昨日公園で線をとびこえました場面",
+      "file": "assets/construction/build-jump-3-past-rect.png",
+      "alt": "右の話し手が左の場面を振り返る。私は昨日公園で線をとびこえました。",
       "clue": "時間のヒント：昨日。",
-      "review": "画像を目視確認。人物・人数、走る場所、飛び越える対象、基本・進行・過去の配置を確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-jump-2": {
-      "file": "assets/construction/build-jump-2.png",
-      "alt": "彼らは毎日公園でロープをとびこえます場面",
+      "file": "assets/construction/build-jump-2-rect.png",
+      "alt": "左側の話し手が右の場面を紹介する。彼らは毎日公園でロープをとびこえます。",
       "clue": "時間のヒント：毎日。",
-      "review": "画像を目視確認。泳ぐ手足の動き、水泳用の服、プール・海・湖、人物と時点を確認。ロープ画像は支柱を確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-swim-1": {
-      "file": "assets/construction/build-swim-1.png",
-      "alt": "あなたは毎日プールで泳ぎます場面",
+      "file": "assets/construction/build-swim-1-rect.png",
+      "alt": "左側の話し手が右の場面を紹介する。あなたは毎日プールで泳ぎます。",
       "clue": "時間のヒント：毎日。",
-      "review": "画像を目視確認。泳ぐ手足の動き、水泳用の服、プール・海・湖、人物と時点を確認。ロープ画像は支柱を確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-swim-1-ongoing": {
-      "file": "assets/construction/build-swim-1-ongoing.png",
-      "alt": "あなたは今プールで泳いでいます場面",
+      "file": "assets/construction/build-swim-1-ongoing-rect.png",
+      "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。あなたは今プールで泳いでいます。",
       "clue": "時間のヒント：今。",
-      "review": "画像を目視確認。泳ぐ手足の動き、水泳用の服、プール・海・湖、人物と時点を確認。ロープ画像は支柱を確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-swim-1-past": {
-      "file": "assets/construction/build-swim-1-past.png",
-      "alt": "あなたは昨日プールで泳ぎました場面",
+      "file": "assets/construction/build-swim-1-past-rect.png",
+      "alt": "右の話し手が左の場面を振り返る。あなたは昨日プールで泳ぎました。",
       "clue": "時間のヒント：昨日。",
-      "review": "画像を目視確認。泳ぐ手足の動き、水泳用の服、プール・海・湖、人物と時点を確認。ロープ画像は支柱を確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-swim-2": {
-      "file": "assets/construction/build-swim-2.png",
-      "alt": "彼は毎日海で泳ぎます場面",
+      "file": "assets/construction/build-swim-2-rect.png",
+      "alt": "左側の話し手が右の場面を紹介する。彼は毎日海で泳ぎます。",
       "clue": "時間のヒント：毎日。",
-      "review": "画像を目視確認。泳ぐ手足の動き、水泳用の服、プール・海・湖、人物と時点を確認。ロープ画像は支柱を確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-swim-2-ongoing": {
-      "file": "assets/construction/build-swim-2-ongoing.png",
-      "alt": "彼は今海で泳いでいます場面",
+      "file": "assets/construction/build-swim-2-ongoing-rect.png",
+      "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。彼は今海で泳いでいます。",
       "clue": "時間のヒント：今。",
-      "review": "画像を目視確認。泳ぐ手足の動き、水泳用の服、プール・海・湖、人物と時点を確認。ロープ画像は支柱を確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-swim-2-past": {
-      "file": "assets/construction/build-swim-2-past.png",
-      "alt": "彼は昨日海で泳ぎました場面",
+      "file": "assets/construction/build-swim-2-past-rect.png",
+      "alt": "右の話し手が左の場面を振り返る。彼は昨日海で泳ぎました。",
       "clue": "時間のヒント：昨日。",
-      "review": "画像を目視確認。泳ぐ手足の動き、水泳用の服、プール・海・湖、人物と時点を確認。ロープ画像は支柱を確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-swim-3": {
-      "file": "assets/construction/build-swim-3.png",
-      "alt": "彼女は毎日湖で泳ぎます場面",
+      "file": "assets/construction/build-swim-3-rect.png",
+      "alt": "左側の話し手が右の場面を紹介する。彼女は毎日湖で泳ぎます。",
       "clue": "時間のヒント：毎日。",
-      "review": "画像を目視確認。泳ぐ手足の動き、水泳用の服、プール・海・湖、人物と時点を確認。ロープ画像は支柱を確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-swim-3-ongoing": {
-      "file": "assets/construction/build-swim-3-ongoing.png",
-      "alt": "彼女は今湖で泳いでいます場面",
+      "file": "assets/construction/build-swim-3-ongoing-rect.png",
+      "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。彼女は今湖で泳いでいます。",
       "clue": "時間のヒント：今。",
-      "review": "画像を目視確認。泳ぐ手足の動き、水泳用の服、プール・海・湖、人物と時点を確認。ロープ画像は支柱を確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-swim-3-past": {
-      "file": "assets/construction/build-swim-3-past.png",
-      "alt": "彼女は昨日湖で泳ぎました場面",
+      "file": "assets/construction/build-swim-3-past-rect.png",
+      "alt": "右の話し手が左の場面を振り返る。彼女は昨日湖で泳ぎました。",
       "clue": "時間のヒント：昨日。",
-      "review": "画像を目視確認。泳ぐ手足の動き、水泳用の服、プール・海・湖、人物と時点を確認。ロープ画像は支柱を確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-fly-1-ongoing": {
-      "file": "assets/construction/build-fly-1-ongoing.png",
-      "alt": "彼は今公園で赤いたこを飛ばしています場面",
+      "file": "assets/construction/build-fly-1-ongoing-rect.png",
+      "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。彼は今公園で赤いたこを飛ばしています。",
       "clue": "時間のヒント：今。",
-      "review": "縮小一覧で全9場面を個別確認。人物・人数と話し手の対応、公園、赤青のたこ・紙飛行機、または自転車・ポニー・キックボード、基本・進行・過去の配置を確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-fly-1-past": {
-      "file": "assets/construction/build-fly-1-past.png",
-      "alt": "彼は昨日公園で赤いたこを飛ばしました場面",
+      "file": "assets/construction/build-fly-1-past-rect.png",
+      "alt": "右の話し手が左の場面を振り返る。彼は昨日公園で赤いたこを飛ばしました。",
       "clue": "時間のヒント：昨日。",
-      "review": "縮小一覧で全9場面を個別確認。人物・人数と話し手の対応、公園、赤青のたこ・紙飛行機、または自転車・ポニー・キックボード、基本・進行・過去の配置を確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-fly-1": {
-      "file": "assets/construction/build-fly-1.png",
-      "alt": "彼は毎日公園で赤いたこを飛ばします場面",
+      "file": "assets/construction/build-fly-1-rect.png",
+      "alt": "左側の話し手が右の場面を紹介する。彼は毎日公園で赤いたこを飛ばします。",
       "clue": "時間のヒント：毎日。",
-      "review": "縮小一覧で全9場面を個別確認。人物・人数と話し手の対応、公園、赤青のたこ・紙飛行機、または自転車・ポニー・キックボード、基本・進行・過去の配置を確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-fly-2-ongoing": {
-      "file": "assets/construction/build-fly-2-ongoing.png",
-      "alt": "私たちは今公園で青いたこを飛ばしています場面",
+      "file": "assets/construction/build-fly-2-ongoing-rect.png",
+      "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。私たちは今公園で青いたこを飛ばしています。",
       "clue": "時間のヒント：今。",
-      "review": "縮小一覧で全9場面を個別確認。人物・人数と話し手の対応、公園、赤青のたこ・紙飛行機、または自転車・ポニー・キックボード、基本・進行・過去の配置を確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-fly-2-past": {
-      "file": "assets/construction/build-fly-2-past.png",
-      "alt": "私たちは昨日公園で青いたこを飛ばしました場面",
+      "file": "assets/construction/build-fly-2-past-rect.png",
+      "alt": "右の話し手が左の場面を振り返る。私たちは昨日公園で青いたこを飛ばしました。",
       "clue": "時間のヒント：昨日。",
-      "review": "縮小一覧で全9場面を個別確認。人物・人数と話し手の対応、公園、赤青のたこ・紙飛行機、または自転車・ポニー・キックボード、基本・進行・過去の配置を確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-fly-2": {
-      "file": "assets/construction/build-fly-2.png",
-      "alt": "私たちは毎日公園で青いたこを飛ばします場面",
+      "file": "assets/construction/build-fly-2-rect.png",
+      "alt": "左側の話し手が右の場面を紹介する。私たちは毎日公園で青いたこを飛ばします。",
       "clue": "時間のヒント：毎日。",
-      "review": "縮小一覧で全9場面を個別確認。人物・人数と話し手の対応、公園、赤青のたこ・紙飛行機、または自転車・ポニー・キックボード、基本・進行・過去の配置を確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-fly-3-ongoing": {
-      "file": "assets/construction/build-fly-3-ongoing.png",
-      "alt": "彼らは今公園で紙飛行機を飛ばしています場面",
+      "file": "assets/construction/build-fly-3-ongoing-rect.png",
+      "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。彼らは今公園で紙飛行機を飛ばしています。",
       "clue": "時間のヒント：今。",
-      "review": "縮小一覧で全9場面を個別確認。人物・人数と話し手の対応、公園、赤青のたこ・紙飛行機、または自転車・ポニー・キックボード、基本・進行・過去の配置を確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-fly-3-past": {
-      "file": "assets/construction/build-fly-3-past.png",
-      "alt": "彼らは昨日公園で紙飛行機を飛ばしました場面",
+      "file": "assets/construction/build-fly-3-past-rect.png",
+      "alt": "右の話し手が左の場面を振り返る。彼らは昨日公園で紙飛行機を飛ばしました。",
       "clue": "時間のヒント：昨日。",
-      "review": "縮小一覧で全9場面を個別確認。人物・人数と話し手の対応、公園、赤青のたこ・紙飛行機、または自転車・ポニー・キックボード、基本・進行・過去の配置を確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-fly-3": {
-      "file": "assets/construction/build-fly-3.png",
-      "alt": "彼らは毎日公園で紙飛行機を飛ばします場面",
+      "file": "assets/construction/build-fly-3-rect.png",
+      "alt": "左側の話し手が右の場面を紹介する。彼らは毎日公園で紙飛行機を飛ばします。",
       "clue": "時間のヒント：毎日。",
-      "review": "縮小一覧で全9場面を個別確認。人物・人数と話し手の対応、公園、赤青のたこ・紙飛行機、または自転車・ポニー・キックボード、基本・進行・過去の配置を確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-ride-1-ongoing": {
-      "file": "assets/construction/build-ride-1-ongoing.png",
-      "alt": "私は今公園で自転車に乗っています場面",
+      "file": "assets/construction/build-ride-1-ongoing-rect.png",
+      "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。私は今公園で自転車に乗っています。",
       "clue": "時間のヒント：今。",
-      "review": "縮小一覧で全9場面を個別確認。人物・人数と話し手の対応、公園、赤青のたこ・紙飛行機、または自転車・ポニー・キックボード、基本・進行・過去の配置を確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-ride-1-past": {
-      "file": "assets/construction/build-ride-1-past.png",
-      "alt": "私は昨日公園で自転車に乗りました場面",
+      "file": "assets/construction/build-ride-1-past-rect.png",
+      "alt": "右の話し手が左の場面を振り返る。私は昨日公園で自転車に乗りました。",
       "clue": "時間のヒント：昨日。",
-      "review": "縮小一覧で全9場面を個別確認。人物・人数と話し手の対応、公園、赤青のたこ・紙飛行機、または自転車・ポニー・キックボード、基本・進行・過去の配置を確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-ride-1": {
-      "file": "assets/construction/build-ride-1-sunday-v2.png",
-      "alt": "私は日曜日に公園で自転車に乗ります場面",
+      "file": "assets/construction/build-ride-1-rect.png",
+      "alt": "左側の話し手が右の場面を紹介する。私は日曜日に公園で自転車に乗ります。",
       "clue": "カレンダーの絵も見て、ことばをえらぼう。",
-      "review": "2026-11-17: 日曜カレンダー版の6場面を縮小一覧で個別確認。赤い綴じと2リング、紙の中の太陽、文字・数字なし。人物、人称、動作、行き先を元画像と比較して確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-ride-2-ongoing": {
-      "file": "assets/construction/build-ride-2-ongoing.png",
-      "alt": "あなたは今公園で小さな馬に乗っています場面",
+      "file": "assets/construction/build-ride-2-ongoing-rect.png",
+      "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。あなたは今公園で小さな馬に乗っています。",
       "clue": "時間のヒント：今。",
-      "review": "縮小一覧で全9場面を個別確認。人物・人数と話し手の対応、公園、赤青のたこ・紙飛行機、または自転車・ポニー・キックボード、基本・進行・過去の配置を確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-ride-2-past": {
-      "file": "assets/construction/build-ride-2-past.png",
-      "alt": "あなたは昨日公園で小さな馬に乗りました場面",
+      "file": "assets/construction/build-ride-2-past-rect.png",
+      "alt": "右の話し手が左の場面を振り返る。あなたは昨日公園で小さな馬に乗りました。",
       "clue": "時間のヒント：昨日。",
-      "review": "縮小一覧で全9場面を個別確認。人物・人数と話し手の対応、公園、赤青のたこ・紙飛行機、または自転車・ポニー・キックボード、基本・進行・過去の配置を確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-ride-2": {
-      "file": "assets/construction/build-ride-2-sunday-v2.png",
-      "alt": "あなたは日曜日に公園で小さな馬に乗ります場面",
+      "file": "assets/construction/build-ride-2-rect.png",
+      "alt": "左側の話し手が右の場面を紹介する。あなたは日曜日に公園で小さな馬に乗ります。",
       "clue": "カレンダーの絵も見て、ことばをえらぼう。",
-      "review": "2026-11-17: 日曜カレンダー版の6場面を縮小一覧で個別確認。赤い綴じと2リング、紙の中の太陽、文字・数字なし。人物、人称、動作、行き先を元画像と比較して確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-ride-3-ongoing": {
-      "file": "assets/construction/build-ride-3-ongoing.png",
-      "alt": "彼は今公園でスクーターに乗っています場面",
+      "file": "assets/construction/build-ride-3-ongoing-rect.png",
+      "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。彼は今公園でスクーターに乗っています。",
       "clue": "時間のヒント：今。",
-      "review": "縮小一覧で全9場面を個別確認。人物・人数と話し手の対応、公園、赤青のたこ・紙飛行機、または自転車・ポニー・キックボード、基本・進行・過去の配置を確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-ride-3-past": {
-      "file": "assets/construction/build-ride-3-past.png",
-      "alt": "彼は昨日公園でスクーターに乗りました場面",
+      "file": "assets/construction/build-ride-3-past-rect.png",
+      "alt": "右の話し手が左の場面を振り返る。彼は昨日公園でスクーターに乗りました。",
       "clue": "時間のヒント：昨日。",
-      "review": "縮小一覧で全9場面を個別確認。人物・人数と話し手の対応、公園、赤青のたこ・紙飛行機、または自転車・ポニー・キックボード、基本・進行・過去の配置を確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-ride-3": {
-      "file": "assets/construction/build-ride-3-sunday-v2.png",
-      "alt": "彼は日曜日に公園でスクーターに乗ります場面",
+      "file": "assets/construction/build-ride-3-rect.png",
+      "alt": "左側の話し手が右の場面を紹介する。彼は日曜日に公園でスクーターに乗ります。",
       "clue": "カレンダーの絵も見て、ことばをえらぼう。",
-      "review": "2026-11-17: 日曜カレンダー版の6場面を縮小一覧で個別確認。赤い綴じと2リング、紙の中の太陽、文字・数字なし。人物、人称、動作、行き先を元画像と比較して確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-climb-1": {
-      "file": "assets/construction/build-climb-1.png",
-      "alt": "彼女は毎日公園で小さな丘に登ります場面",
+      "file": "assets/construction/build-climb-1-rect.png",
+      "alt": "左側の話し手が右の場面を紹介する。彼女は毎日公園で小さな丘に登ります。",
       "clue": "時間のヒント：毎日。",
-      "review": "9場面を縮小一覧で個別確認。丘・木・公園のはしご、人物の対応、weの二人、基本・進行・過去の配置を確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-climb-1-ongoing": {
-      "file": "assets/construction/build-climb-1-ongoing.png",
-      "alt": "彼女は今公園で小さな丘に登っています場面",
+      "file": "assets/construction/build-climb-1-ongoing-rect.png",
+      "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。彼女は今公園で小さな丘に登っています。",
       "clue": "時間のヒント：今。",
-      "review": "9場面を縮小一覧で個別確認。丘・木・公園のはしご、人物の対応、weの二人、基本・進行・過去の配置を確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-climb-1-past": {
-      "file": "assets/construction/build-climb-1-past.png",
-      "alt": "彼女は昨日公園で小さな丘に登りました場面",
+      "file": "assets/construction/build-climb-1-past-rect.png",
+      "alt": "右の話し手が左の場面を振り返る。彼女は昨日公園で小さな丘に登りました。",
       "clue": "時間のヒント：昨日。",
-      "review": "9場面を縮小一覧で個別確認。丘・木・公園のはしご、人物の対応、weの二人、基本・進行・過去の配置を確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-climb-2": {
-      "file": "assets/construction/build-climb-2.png",
-      "alt": "彼は毎日公園で木に登ります場面",
+      "file": "assets/construction/build-climb-2-rect.png",
+      "alt": "左側の話し手が右の場面を紹介する。彼は毎日公園で木に登ります。",
       "clue": "時間のヒント：毎日。",
-      "review": "9場面を縮小一覧で個別確認。丘・木・公園のはしご、人物の対応、weの二人、基本・進行・過去の配置を確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-climb-2-ongoing": {
-      "file": "assets/construction/build-climb-2-ongoing.png",
-      "alt": "彼は今公園で木に登っています場面",
+      "file": "assets/construction/build-climb-2-ongoing-rect.png",
+      "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。彼は今公園で木に登っています。",
       "clue": "時間のヒント：今。",
-      "review": "9場面を縮小一覧で個別確認。丘・木・公園のはしご、人物の対応、weの二人、基本・進行・過去の配置を確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-climb-2-past": {
-      "file": "assets/construction/build-climb-2-past.png",
-      "alt": "彼は昨日公園で木に登りました場面",
+      "file": "assets/construction/build-climb-2-past-rect.png",
+      "alt": "右の話し手が左の場面を振り返る。彼は昨日公園で木に登りました。",
       "clue": "時間のヒント：昨日。",
-      "review": "9場面を縮小一覧で個別確認。丘・木・公園のはしご、人物の対応、weの二人、基本・進行・過去の配置を確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-climb-3": {
-      "file": "assets/construction/build-climb-3.png",
-      "alt": "私たちは毎日公園ではしごに登ります場面",
+      "file": "assets/construction/build-climb-3-rect.png",
+      "alt": "左側の話し手が右の場面を紹介する。私たちは毎日公園ではしごに登ります。",
       "clue": "時間のヒント：毎日。",
-      "review": "9場面を縮小一覧で個別確認。丘・木・公園のはしご、人物の対応、weの二人、基本・進行・過去の配置を確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-climb-3-ongoing": {
-      "file": "assets/construction/build-climb-3-ongoing.png",
-      "alt": "私たちは今公園ではしごに登っています場面",
+      "file": "assets/construction/build-climb-3-ongoing-rect.png",
+      "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。私たちは今公園ではしごに登っています。",
       "clue": "時間のヒント：今。",
-      "review": "9場面を縮小一覧で個別確認。丘・木・公園のはしご、人物の対応、weの二人、基本・進行・過去の配置を確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-climb-3-past": {
-      "file": "assets/construction/build-climb-3-past.png",
-      "alt": "私たちは昨日公園ではしごに登りました場面",
+      "file": "assets/construction/build-climb-3-past-rect.png",
+      "alt": "右の話し手が左の場面を振り返る。私たちは昨日公園ではしごに登りました。",
       "clue": "時間のヒント：昨日。",
-      "review": "9場面を縮小一覧で個別確認。丘・木・公園のはしご、人物の対応、weの二人、基本・進行・過去の配置を確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-sit-1": {
-      "file": "assets/construction/build-sit-1.png",
-      "alt": "彼らは毎日ベンチに座ります場面",
+      "file": "assets/construction/build-sit-1-rect.png",
+      "alt": "左側の話し手が右の場面を紹介する。彼らは毎日ベンチに座ります。",
       "clue": "時間のヒント：毎日。",
-      "review": "縮小一覧で各場面を個別確認。ベンチ・椅子・草地で座る人物、または戸口・木の下・先生の隣に立つ人物と、話し手・聞き手・第三者の対応、基本・進行・過去の配置を確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-sit-1-ongoing": {
-      "file": "assets/construction/build-sit-1-ongoing.png",
-      "alt": "彼らは今ベンチに座っています場面",
+      "file": "assets/construction/build-sit-1-ongoing-rect.png",
+      "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。彼らは今ベンチに座っています。",
       "clue": "時間のヒント：今。",
-      "review": "縮小一覧で各場面を個別確認。ベンチ・椅子・草地で座る人物、または戸口・木の下・先生の隣に立つ人物と、話し手・聞き手・第三者の対応、基本・進行・過去の配置を確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-sit-1-past": {
-      "file": "assets/construction/build-sit-1-past.png",
-      "alt": "彼らは昨日ベンチに座りました場面",
+      "file": "assets/construction/build-sit-1-past-rect.png",
+      "alt": "右の話し手が左の場面を振り返る。彼らは昨日ベンチに座りました。",
       "clue": "時間のヒント：昨日。",
-      "review": "縮小一覧で各場面を個別確認。ベンチ・椅子・草地で座る人物、または戸口・木の下・先生の隣に立つ人物と、話し手・聞き手・第三者の対応、基本・進行・過去の配置を確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-sit-2-ongoing": {
-      "file": "assets/construction/build-sit-2-ongoing.png",
-      "alt": "私は今いすに座っています場面",
+      "file": "assets/construction/build-sit-2-ongoing-rect.png",
+      "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。私は今いすに座っています。",
       "clue": "時間のヒント：今。",
-      "review": "縮小一覧で各場面を個別確認。ベンチ・椅子・草地で座る人物、または戸口・木の下・先生の隣に立つ人物と、話し手・聞き手・第三者の対応、基本・進行・過去の配置を確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-sit-2-past": {
-      "file": "assets/construction/build-sit-2-past.png",
-      "alt": "私は昨日いすに座りました場面",
+      "file": "assets/construction/build-sit-2-past-rect.png",
+      "alt": "右の話し手が左の場面を振り返る。私は昨日いすに座りました。",
       "clue": "時間のヒント：昨日。",
-      "review": "縮小一覧で各場面を個別確認。ベンチ・椅子・草地で座る人物、または戸口・木の下・先生の隣に立つ人物と、話し手・聞き手・第三者の対応、基本・進行・過去の配置を確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-sit-3": {
-      "file": "assets/construction/build-sit-3.png",
-      "alt": "あなたは毎日芝生に座ります場面",
+      "file": "assets/construction/build-sit-3-rect.png",
+      "alt": "左側の話し手が右の場面を紹介する。あなたは毎日芝生に座ります。",
       "clue": "時間のヒント：毎日。",
-      "review": "縮小一覧で各場面を個別確認。ベンチ・椅子・草地で座る人物、または戸口・木の下・先生の隣に立つ人物と、話し手・聞き手・第三者の対応、基本・進行・過去の配置を確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-sit-3-ongoing": {
-      "file": "assets/construction/build-sit-3-ongoing.png",
-      "alt": "あなたは今芝生に座っています場面",
+      "file": "assets/construction/build-sit-3-ongoing-rect.png",
+      "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。あなたは今芝生に座っています。",
       "clue": "時間のヒント：今。",
-      "review": "縮小一覧で各場面を個別確認。ベンチ・椅子・草地で座る人物、または戸口・木の下・先生の隣に立つ人物と、話し手・聞き手・第三者の対応、基本・進行・過去の配置を確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-sit-3-past": {
-      "file": "assets/construction/build-sit-3-past.png",
-      "alt": "あなたは昨日芝生に座りました場面",
+      "file": "assets/construction/build-sit-3-past-rect.png",
+      "alt": "右の話し手が左の場面を振り返る。あなたは昨日芝生に座りました。",
       "clue": "時間のヒント：昨日。",
-      "review": "縮小一覧で各場面を個別確認。ベンチ・椅子・草地で座る人物、または戸口・木の下・先生の隣に立つ人物と、話し手・聞き手・第三者の対応、基本・進行・過去の配置を確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-stand-1": {
-      "file": "assets/construction/build-stand-1.png",
-      "alt": "彼は毎日ドアのそばに立ちます場面",
+      "file": "assets/construction/build-stand-1-rect.png",
+      "alt": "左側の話し手が右の場面を紹介する。彼は毎日ドアのそばに立ちます。",
       "clue": "時間のヒント：毎日。",
-      "review": "縮小一覧で各場面を個別確認。ベンチ・椅子・草地で座る人物、または戸口・木の下・先生の隣に立つ人物と、話し手・聞き手・第三者の対応、基本・進行・過去の配置を確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-stand-1-ongoing": {
-      "file": "assets/construction/build-stand-1-ongoing.png",
-      "alt": "彼は今ドアのそばに立っています場面",
+      "file": "assets/construction/build-stand-1-ongoing-rect.png",
+      "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。彼は今ドアのそばに立っています。",
       "clue": "時間のヒント：今。",
-      "review": "縮小一覧で各場面を個別確認。ベンチ・椅子・草地で座る人物、または戸口・木の下・先生の隣に立つ人物と、話し手・聞き手・第三者の対応、基本・進行・過去の配置を確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-stand-1-past": {
-      "file": "assets/construction/build-stand-1-past.png",
-      "alt": "彼は昨日ドアのそばに立ちました場面",
+      "file": "assets/construction/build-stand-1-past-rect.png",
+      "alt": "右の話し手が左の場面を振り返る。彼は昨日ドアのそばに立ちました。",
       "clue": "時間のヒント：昨日。",
-      "review": "縮小一覧で各場面を個別確認。ベンチ・椅子・草地で座る人物、または戸口・木の下・先生の隣に立つ人物と、話し手・聞き手・第三者の対応、基本・進行・過去の配置を確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-stand-2": {
-      "file": "assets/construction/build-stand-2.png",
-      "alt": "彼女は毎日木の下に立ちます場面",
+      "file": "assets/construction/build-stand-2-rect.png",
+      "alt": "左側の話し手が右の場面を紹介する。彼女は毎日木の下に立ちます。",
       "clue": "時間のヒント：毎日。",
-      "review": "縮小一覧で各場面を個別確認。ベンチ・椅子・草地で座る人物、または戸口・木の下・先生の隣に立つ人物と、話し手・聞き手・第三者の対応、基本・進行・過去の配置を確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-stand-2-ongoing": {
-      "file": "assets/construction/build-stand-2-ongoing.png",
-      "alt": "彼女は今木の下に立っています場面",
+      "file": "assets/construction/build-stand-2-ongoing-rect.png",
+      "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。彼女は今木の下に立っています。",
       "clue": "時間のヒント：今。",
-      "review": "縮小一覧で各場面を個別確認。ベンチ・椅子・草地で座る人物、または戸口・木の下・先生の隣に立つ人物と、話し手・聞き手・第三者の対応、基本・進行・過去の配置を確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-stand-2-past": {
-      "file": "assets/construction/build-stand-2-past.png",
-      "alt": "彼女は昨日木の下に立ちました場面",
+      "file": "assets/construction/build-stand-2-past-rect.png",
+      "alt": "右の話し手が左の場面を振り返る。彼女は昨日木の下に立ちました。",
       "clue": "時間のヒント：昨日。",
-      "review": "縮小一覧で各場面を個別確認。ベンチ・椅子・草地で座る人物、または戸口・木の下・先生の隣に立つ人物と、話し手・聞き手・第三者の対応、基本・進行・過去の配置を確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-stand-3": {
-      "file": "assets/construction/build-stand-3.png",
-      "alt": "彼は毎日先生のとなりに立ちます場面",
+      "file": "assets/construction/build-stand-3-rect.png",
+      "alt": "左側の話し手が右の場面を紹介する。彼は毎日先生のとなりに立ちます。",
       "clue": "時間のヒント：毎日。",
-      "review": "縮小一覧で各場面を個別確認。ベンチ・椅子・草地で座る人物、または戸口・木の下・先生の隣に立つ人物と、話し手・聞き手・第三者の対応、基本・進行・過去の配置を確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-stand-3-ongoing": {
-      "file": "assets/construction/build-stand-3-ongoing.png",
-      "alt": "彼は今先生のとなりに立っています場面",
+      "file": "assets/construction/build-stand-3-ongoing-rect.png",
+      "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。彼は今先生のとなりに立っています。",
       "clue": "時間のヒント：今。",
-      "review": "縮小一覧で各場面を個別確認。ベンチ・椅子・草地で座る人物、または戸口・木の下・先生の隣に立つ人物と、話し手・聞き手・第三者の対応、基本・進行・過去の配置を確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-stand-3-past": {
-      "file": "assets/construction/build-stand-3-past.png",
-      "alt": "彼は昨日先生のとなりに立ちました場面",
+      "file": "assets/construction/build-stand-3-past-rect.png",
+      "alt": "右の話し手が左の場面を振り返る。彼は昨日先生のとなりに立ちました。",
       "clue": "時間のヒント：昨日。",
-      "review": "縮小一覧で各場面を個別確認。ベンチ・椅子・草地で座る人物、または戸口・木の下・先生の隣に立つ人物と、話し手・聞き手・第三者の対応、基本・進行・過去の配置を確認。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-sit-2": {
-      "file": "assets/construction/build-sit-2.png",
-      "alt": "私は毎日いすに座ります場面",
+      "file": "assets/construction/build-sit-2-rect.png",
+      "alt": "左側の話し手が右の場面を紹介する。私は毎日いすに座ります。",
       "clue": "時間のヒント：毎日。",
-      "review": "縮小画像で、同じ星の髪留めの話し手本人が椅子に座る一場面を確認。文字と時間軸なし。"
+      "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "tense-bicycle": {
       "file": "assets/construction/tense-bicycle.png",
