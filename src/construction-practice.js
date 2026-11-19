@@ -161,9 +161,6 @@ if (typeof document !== 'undefined') {
   function renderNav() {
     const visible = visibleExamples();
     const illustratedCount = DATA.examples.filter(q => q.level === state.level && q.image).length;
-    $('showIllustrated').setAttribute('aria-pressed', illustratedOnly);
-    $('showIllustrated').textContent = illustratedOnly ? '絵のない例文も見る' : `絵のある${illustratedCount}文で遊ぶ`;
-    $('showIllustrated').disabled = !illustratedOnly && illustratedCount === 0;
     $('artworkProgress').textContent = `絵のある例文 ${Object.keys(ILLUSTRATIONS).length} / ${DATA.examples.length}文`;
     $('filterCount').textContent = illustratedOnly ? `${visible.length}文を表示 ／ 絵のある${illustratedCount}文` : `${visible.length}文を表示 ／ 全${DATA.examples.length}文`;
     $('lessons').innerHTML = visible.length ? visible.map(q => `<button data-lesson="${esc(q.id)}" aria-current="${state.current === q.id}">${state.completed.includes(q.id) ? '✓ ' : ''}${esc(q.ja)}</button>`).join('') : '<p class="muted">見つかりません。テーマや検索することばを変えてみよう。</p>';
@@ -355,13 +352,6 @@ if (typeof document !== 'undefined') {
       document.querySelector(`[data-target="${button.dataset.target}"]`)?.focus({ preventScroll: true }); return;
     }
     switch (button.id) {
-      case 'tensePictures': openTensePictures(); break;
-      case 'showIllustrated': {
-        illustratedOnly = !illustratedOnly;
-        state.group = 'all'; state.scope = 'all'; state.search = ''; state.mode = state.level === 1 ? 'select' : 'cards';
-        const visible = visibleExamples();
-        choose(visible.some(q => q.id === state.current) ? state.current : visible[0].id); break;
-      }
       case 'cardsMode': case 'selectMode':
         stopSpeech(); state.mode = button.id === 'selectMode' ? 'select' : 'cards';
         selected = null; passed = false; feedback = null; wrong = []; save(); renderExercise(); break;

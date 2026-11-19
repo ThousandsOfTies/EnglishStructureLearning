@@ -14,7 +14,7 @@
 @media(max-width:480px){.slot label.target{line-height:1.25;min-height:calc(3lh + 4px)}}
 .slot.locked{background:#eceeef;border-color:#d4d9dd;color:#8a939a}.slot.locked .target,.slot.locked .target small{color:#8a939a}.slot.locked select{background:#e2e5e7;color:#8a939a;border-color:#cdd3d7;cursor:not-allowed}.slot.locked button:disabled{opacity:1;cursor:not-allowed}
 .pool{display:block}.pool-cards{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
-.illustrated-shortcut{flex-shrink:0;margin:12px 0 4px;background:#eaf2f9;border-color:#b4cada;font-size:13px;font-weight:600}.picture-scene{width:100%;max-width:760px;margin:0 auto 18px}.picture-scene img{width:100%;height:auto;max-height:420px;object-fit:contain;background:#fff9ee}.scene-clue{font-size:13px;color:var(--muted);margin-top:9px;padding:8px 12px;background:#f7f6ef;border-radius:9px;text-align:center}
+.picture-scene{width:100%;max-width:760px;margin:0 auto 18px}.picture-scene img{width:100%;height:auto;max-height:420px;object-fit:contain;background:#fff9ee}.scene-clue{font-size:13px;color:var(--muted);margin-top:9px;padding:8px 12px;background:#f7f6ef;border-radius:9px;text-align:center}
 .slot select.placeholder{color:#87929b}.slot select.has-choice{color:var(--ink)}.slot select option{color:var(--ink)}.slot select option[value="__unanswered__"]{color:#87929b}.slot.locked select{color:#8a939a}
 </style>
 </head>
@@ -24,8 +24,7 @@
 <div id="groupField"><label for="group">ことば・テーマ</label><select id="group"></select></div>
 <div id="scopeField"><label for="scope">練習する文</label><select id="scope"><option value="core">まずは基本の場面</option><option value="all">時制の比較もすべて</option><option value="pronouns">代名詞の練習</option><option value="extension">発展：自分自身を表す</option></select></div>
 <div><label for="search">例文をさがす</label><input id="search" type="search" placeholder="そうじ、give など"></div>
-<button id="tensePictures" class="illustrated-shortcut">時制の絵くらべ（40問）</button>
-<button id="showIllustrated" class="illustrated-shortcut">絵のある例文を試す</button><p id="artworkProgress" class="muted"></p>
+<p id="artworkProgress" class="muted"></p>
 <p class="muted wide" id="filterCount" aria-live="polite"></p><nav class="lessons wide" id="lessons" aria-label="例文一覧"></nav>
 </aside><main class="sheet" id="main">
 <div class="mode-switcher" id="modeSwitcher" role="group" aria-label="練習のしかた"><button id="cardsMode" aria-pressed="true">カードでつくる</button><button id="selectMode" aria-pressed="false">絵・文からえらぶ</button></div>
@@ -37,7 +36,7 @@
 <div class="actions"><button id="check" class="primary">たしかめる</button><button id="hint">ヒント</button><button id="reset">もう一度つくる</button></div>
 <div id="feedback" role="status" aria-live="polite"></div><div id="result"></div>
 <div class="lesson-navigation"><button id="previous">← 前の場面</button><button id="next">次の場面 →</button></div>
-<details><summary>この練習の考え方</summary><p>主語 ＋ 述語 ＋ P1 ＋ P2 ＋ 場所 ＋ 時。使わない欄は空欄で大丈夫です。</p><p>PはParameterという、この教材での呼び名です。giveはP1に相手、P2にもの。callは対象と名前、keepは対象と状態をつなぎます。</p><p>go to・look at・listen toは、つなぐことばまで述語。be＋名詞・形容詞も、まとめて述語として扱います。</p><p>レベル2・3では、部品を分けて発音する順に並べます。Yes／Noの問いには内部の目印「黙疑問詞 whether」を考えますが、完成英文には書かず、読み上げもしません。</p><p>「絵のある例文を試す」から、作画した代表例を練習できます。まだ絵のない場面もあります。</p></details>
+<details><summary>この練習の考え方</summary><p>主語 ＋ 述語 ＋ P1 ＋ P2 ＋ 場所 ＋ 時。使わない欄は空欄で大丈夫です。</p><p>PはParameterという、この教材での呼び名です。giveはP1に相手、P2にもの。callは対象と名前、keepは対象と状態をつなぎます。</p><p>go to・look at・listen toは、つなぐことばまで述語。be＋名詞・形容詞も、まとめて述語として扱います。</p><p>レベル2・3では、部品を分けて発音する順に並べます。Yes／Noの問いには内部の目印「黙疑問詞 whether」を考えますが、完成英文には書かず、読み上げもしません。</p><p></p></details>
 <details><summary>音声設定</summary><div class="speech-options"><label for="voice">英語の声<select id="voice"><option value="">自動でえらぶ</option></select></label><button id="refreshVoices">声の一覧を更新</button></div><p id="voiceStatus" class="muted" role="status"></p></details>
 </main></div><footer>オリジナル教材・試作版。進み具合はこのブラウザーに保存されます。<span id="storageStatus"></span></footer>
 </div><script id="curriculum" type="application/json">__CONSTRUCTION_DATA__</script><script id="illustrations" type="application/json">__ILLUSTRATION_DATA__</script><script>
