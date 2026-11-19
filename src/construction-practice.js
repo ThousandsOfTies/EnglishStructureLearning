@@ -176,8 +176,7 @@ if (typeof document !== 'undefined') {
     cancelDrag();
     const q = getQ(), basic = q.level === 1, cards = Construction.cardsFor(q), placements = attempt();
     $('main').classList.toggle('advanced', !basic);
-    $('exerciseTitle').textContent = basic ? '六つの欄で、文をつくろう。' : '英語の部品を、話す順に並べよう。';
-    $('instruction').textContent = basic ? '主語 → 述語の順に入れよう。述語まで入れると、残りの欄も使えるよ。' : '英語のカードをドラッグして、話す順に置こう。カード置き場へ戻すこともできるよ。';
+    $('advancedInstructions').hidden = basic;
     $('japanese').textContent = q.ja;
     $('japanese').parentElement.hidden = basic;
     $('base').textContent = basic ? '' : `もとの文：${q.base}`;
@@ -186,7 +185,8 @@ if (typeof document !== 'undefined') {
     $('cardsMode').setAttribute('aria-pressed', !usingLists());
     $('selectMode').setAttribute('aria-pressed', usingLists());
     $('pictureScene').hidden = !usingLists() && !(q.image && (!basic || q.group === 'tense-pictures'));
-    $('pool').hidden = $('selectedStatus').hidden = usingLists();
+    $('pool').hidden = usingLists();
+    $('selectedStatus').hidden = basic;
     $('selectedStatus').textContent = selected === null ? 'カードを押してから欄の見出しを押す方法でも置けます。' : `「${cards[selected].text}」を、どの欄に置く？（同じカードを押すと元に戻せます）`;
     const japaneseOrder = ['S', 'time', 'place', 'P1', 'P2', 'predicate'];
     const order = basic ? japaneseOrder.map(role => cards.findIndex(card => card.role === role)).filter(i => i >= 0) : Construction.shuffledIndices(q);
@@ -197,8 +197,6 @@ if (typeof document !== 'undefined') {
       return `<section class="slot ${locked ? 'locked' : ''} ${wrong.includes(target) ? 'wrong' : ''}" aria-disabled="${locked}" data-drop="${esc(target)}" data-role="${esc(role)}"><button class="target" ${locked ? 'disabled' : ''} data-target="${esc(target)}" aria-label="${esc(basic ? labels[role] : `${n + 1}番 ${labels[role] || role.replace(/\bS\b/g, "主語")}`)}に置く">${esc(basic ? labels[role] : `${n + 1}. ${labels[role] || role.replace(/\bS\b/g, "主語")}`)}${basic ? '' : '<small>発音する順</small>'}</button>${i < 0 ? '<span class="empty">空欄</span>' : cardHTML(q, i)}</section>`;
     }).join('');
     if (usingLists()) {
-      $('exerciseTitle').textContent = q.image ? '絵を見ながら、ことばをえらぼう。' : 'ことばをえらんで、文をつくろう。';
-      $('instruction').textContent = 'まず主語、次に述語をえらぼう。使わない欄は「えらんでね」のままで大丈夫。';
       $('slots').innerHTML = Construction.roles.map(role => `<section class="slot ${!targetAllowed(role) ? 'locked' : ''} ${wrong.includes(role) ? 'wrong' : ''}" data-role="${role}" aria-disabled="${!targetAllowed(role)}"><label class="target" for="choice-${role}">${labels[role]}</label><select class="${picks()[role] ? 'has-choice' : 'placeholder'}" id="choice-${role}" ${!targetAllowed(role) ? 'disabled' : ''} data-choice="${role}"><option value="__unanswered__" ${Object.hasOwn(picks(), role) ? '' : 'selected'}>えらんでね</option>${Construction.choicesFor(DATA, q, role).map(text => `<option value="${esc(text)}" ${Object.hasOwn(picks(), role) && picks()[role] === text ? 'selected' : ''}>${esc(text)}</option>`).join('')}</select></section>`).join('');
     }
     if (!$('pictureScene').hidden) $('pictureScene').innerHTML = q.image
