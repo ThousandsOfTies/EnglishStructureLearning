@@ -93,11 +93,12 @@ if (typeof document !== 'undefined') {
     if (illustration) { q.image = illustration.file; q.imageAlt = illustration.alt; q.imageClue = illustration.clue; }
   }
   const KEY = 'construction-workshop-original-v1', VOICE_KEY = 'sentence-workshop-voice-v1';
+  const SPEED_KEY = 'construction-workshop-speech-speed-v1';
   const $ = id => document.getElementById(id);
   const esc = value => String(value).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   const labels = { S: '主語', predicate: '述語', P1: '対象１', P2: '対象２', place: '場所', time: '時' };
   const hints = { S: 'だれ・何が？', predicate: 'どうする・どんな状態？', P1: '述語につなぐ一つ目', P2: '述語につなぐ二つ目', place: 'どこで？', time: 'いつ？' };
-  let saved = null, savedVoice = '', storageOK = true;
+  let saved = null, savedVoice = '', speechSpeed = 'normal', storageOK = true;
   try { saved = JSON.parse(localStorage.getItem(KEY)); savedVoice = JSON.parse(localStorage.getItem(VOICE_KEY))?.voiceURI || ''; }
   catch (error) { if (error.name !== 'SyntaxError') storageOK = false; }
   let state = Construction.restore(DATA, saved);
@@ -119,6 +120,8 @@ if (typeof document !== 'undefined') {
     Object.assign(state, { level: 1, group: first.group, scope: 'all', search: '', mode: 'select' });
     choose(first.id);
   }
+  try { if (localStorage.getItem(SPEED_KEY) === 'slow') speechSpeed = 'slow'; }
+  catch { storageOK = false; }
   const hasSpeech = 'speechSynthesis' in window && 'SpeechSynthesisUtterance' in window;
   const getQ = () => DATA.examples.find(q => q.id === state.current);
   function visibleExamples() {
@@ -205,8 +208,28 @@ if (typeof document !== 'undefined') {
       ? `<img src="${esc(q.image)}" alt="${esc(q.imageAlt)}" width="1536" height="1024"><figcaption class="scene-clue">${esc(q.imageClue)}</figcaption>`
       : '<div class="scene-pending"><b>この場面の絵は準備中です</b></div>';
     $('feedback').innerHTML = feedback ? `<div class="feedback ${feedback.good ? 'good' : ''}">${esc(feedback.text)}</div>` : '';
-    $('result').innerHTML = passed ? `<div class="result"><p class="full-english" lang="en">${esc(q.en)}</p>${q.note ? `<p>${esc(q.note)}</p>` : ''}<div class="spoken">${q.blocks.map(([role, text]) =>
-      `<div class="answer-part" data-role="${esc(role)}"><small>${esc(labels[role] || role.replace(/\bS\b/g, "主語"))}</small>${basic ? `<div class="answer-ja">${esc(q.slots[role].ja)}</div>` : ''}<div lang="en">${esc(text)}</div></div>`).join('')}</div><div class="actions"><button id="speak" ${hasSpeech ? '' : 'disabled'}>英語を聞く</button></div><p class="muted" id="speechStatus" role="status">${hasSpeech ? '' : 'このブラウザーでは音声を使えません。'}</p></div>` : '';
+    $('result').innerHTML = passed ? `
+      <div class="result">
+        <p class="full-english" lang="en">${esc(q.en)}</p>
+        ${q.note ? `<p>${esc(q.note)}</p>` : ''}
+        <div class="actions speech-controls">
+          <button id="speak" ${hasSpeech ? '' : 'disabled'}>英文を聞く</button>
+          <label for="speechSpeed">速さ</label>
+          <select id="speechSpeed" ${hasSpeech ? '' : 'disabled'}>
+            <option value="normal">ふつう</option>
+            <option value="slow" ${speechSpeed === 'slow' ? 'selected' : ''}>ゆっくり</option>
+          </select>
+        </div>
+        <div class="spoken">${q.blocks.map(([role, text], index) => {
+          const label = labels[role] || role.replace(/\bS\b/g, '主語');
+          return `<button type="button" class="answer-part" data-role="${esc(role)}" data-speak-part="${index}" aria-label="${esc(label)}「${esc(text)}」を聞く" ${hasSpeech ? '' : 'disabled'}>
+            <span class="answer-label">${esc(label)}</span>
+            ${basic ? `<span class="answer-ja">${esc(q.slots[role].ja)}</span>` : ''}
+            <span lang="en">${esc(text)}</span>
+          </button>`;
+        }).join('')}</div>
+        <p class="muted" id="speechStatus" role="status">${hasSpeech ? '' : 'このブラウザーでは音声を使えません。'}</p>
+      </div>` : '';
   }
   function render() { synchronizeFilters(); renderNav(); renderExercise(); }
   function changeFilters(event) {
@@ -315,6 +338,7 @@ if (typeof document !== 'undefined') {
   document.addEventListener('click', event => {
     if (event.detail !== 0 && Date.now() < suppressClickUntil) { event.preventDefault(); return; }
     const button = event.target.closest('button'); if (!button || button.disabled) return;
+    if (button.hasAttribute('data-speak-part')) { speak(getQ().blocks[Number(button.dataset.speakPart)]?.[1]); return; }
     if (button.dataset.lesson) { choose(button.dataset.lesson); return; }
     if (button.hasAttribute('data-card')) {
       const i = Number(button.dataset.card);
@@ -370,7 +394,7 @@ if (typeof document !== 'undefined') {
         const visible = visibleExamples(), i = Construction.navigationIndex(visible, getQ());
         const next = visible[i + (button.id === 'next' ? 1 : -1)]; if (next) choose(next.id); break;
       }
-      case 'speak': speak(); break;
+      case 'speak': speak(getQ().en); break;
       case 'refreshVoices': populateVoices(); break;
     }
   });
@@ -386,13 +410,20 @@ if (typeof document !== 'undefined') {
     stopSpeech(); savedVoice = $('voice').value;
     try { localStorage.setItem(VOICE_KEY, JSON.stringify({ voiceURI: savedVoice })); } catch { storageOK = false; save(); }
   });
-  function speak() {
-    if (!passed || !hasSpeech) return;
+  $('result').addEventListener('change', event => {
+    if (event.target.id !== 'speechSpeed') return;
+    stopSpeech();
+    $('speechStatus').textContent = '';
+    speechSpeed = event.target.value;
+    try { localStorage.setItem(SPEED_KEY, speechSpeed); } catch { storageOK = false; save(); }
+  });
+  function speak(text) {
+    if (!passed || !hasSpeech || !text) return;
     stopSpeech(); const run = speechRun, voices = englishVoices();
     const voice = voices.find(v => v.voiceURI === savedVoice) || voices.find(v => v.lang.toLowerCase() === 'en-us') || voices[0];
-    const utterance = new SpeechSynthesisUtterance(getQ().en); // Never derive speech from the internal question marker.
+    const utterance = new SpeechSynthesisUtterance(text); // Never derive speech from the internal question marker.
     if (voice) utterance.voice = voice;
-    utterance.lang = voice?.lang || 'en-US'; utterance.rate = .82;
+    utterance.lang = voice?.lang || 'en-US'; utterance.rate = speechSpeed === 'slow' ? .6 : .82;
     const report = text => { if (run === speechRun && $('speechStatus')) $('speechStatus').textContent = text; };
     utterance.onstart = () => report('読み上げ中…'); utterance.onend = () => report('読み上げました。');
     utterance.onerror = event => { if (!['canceled', 'interrupted'].includes(event.error)) report('声を使えませんでした。音声設定で別の声をえらんでください。'); };
