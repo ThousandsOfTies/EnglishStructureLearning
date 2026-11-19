@@ -1450,6 +1450,330 @@
       "alt": "右の話し手が左の場面を振り返る。私たちは昨日家でお父さんとごはんを作りました。",
       "clue": "時間のヒント：昨日。",
       "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。"
+    },
+    "build-bake-1": {
+      "file": "assets/construction/build-bake-1.png",
+      "alt": "左側の話し手が右の場面を紹介する。彼らは毎日家でお母さんとバナナケーキを焼きます。",
+      "clue": "時間のヒント：毎日。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-bake-1-ongoing": {
+      "file": "assets/construction/build-bake-1-ongoing.png",
+      "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。彼らは今家でお母さんとバナナケーキを焼いています。",
+      "clue": "時間のヒント：今。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-bake-1-past": {
+      "file": "assets/construction/build-bake-1-past.png",
+      "alt": "右の話し手が左の場面を振り返る。彼らは昨日家でお母さんとバナナケーキを焼きました。",
+      "clue": "時間のヒント：昨日。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-bake-2": {
+      "file": "assets/construction/build-bake-2.png",
+      "alt": "左側の話し手が右の場面を紹介する。私は毎日家でお母さんとクッキーを焼きます。",
+      "clue": "時間のヒント：毎日。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-bake-2-ongoing": {
+      "file": "assets/construction/build-bake-2-ongoing.png",
+      "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。私は今家でお母さんとクッキーを焼いています。",
+      "clue": "時間のヒント：今。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-bake-2-past": {
+      "file": "assets/construction/build-bake-2-past.png",
+      "alt": "右の話し手が左の場面を振り返る。私は昨日家でお母さんとクッキーを焼きました。",
+      "clue": "時間のヒント：昨日。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-bake-3": {
+      "file": "assets/construction/build-bake-3.png",
+      "alt": "左側の話し手が右の場面を紹介する。あなたは毎日家でお母さんとパンを焼きます。",
+      "clue": "時間のヒント：毎日。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-bake-3-ongoing": {
+      "file": "assets/construction/build-bake-3-ongoing.png",
+      "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。あなたは今家でお母さんとパンを焼いています。",
+      "clue": "時間のヒント：今。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-bake-3-past": {
+      "file": "assets/construction/build-bake-3-past.png",
+      "alt": "右の話し手が左の場面を振り返る。あなたは昨日家でお母さんとパンを焼きました。",
+      "clue": "時間のヒント：昨日。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-taste-1": {
+      "file": "assets/construction/build-taste-1.png",
+      "alt": "左側の話し手が右の場面を紹介する。彼は毎日家でスープを味見します。",
+      "clue": "時間のヒント：毎日。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-taste-1-ongoing": {
+      "file": "assets/construction/build-taste-1-ongoing.png",
+      "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。彼は今家でスープを味見しています。",
+      "clue": "時間のヒント：今。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-taste-1-past": {
+      "file": "assets/construction/build-taste-1-past.png",
+      "alt": "右の話し手が左の場面を振り返る。彼は昨日家でスープを味見しました。",
+      "clue": "時間のヒント：昨日。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-taste-2": {
+      "file": "assets/construction/build-taste-2.png",
+      "alt": "左側の話し手が右の場面を紹介する。彼女は毎日家でカレーを味見します。",
+      "clue": "時間のヒント：毎日。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-taste-2-ongoing": {
+      "file": "assets/construction/build-taste-2-ongoing.png",
+      "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。彼女は今家でカレーを味見しています。",
+      "clue": "時間のヒント：今。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-taste-2-past": {
+      "file": "assets/construction/build-taste-2-past.png",
+      "alt": "右の話し手が左の場面を振り返る。彼女は昨日家でカレーを味見しました。",
+      "clue": "時間のヒント：昨日。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-taste-3": {
+      "file": "assets/construction/build-taste-3.png",
+      "alt": "左側の話し手が右の場面を紹介する。彼は毎日家でソースを味見します。",
+      "clue": "時間のヒント：毎日。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-taste-3-ongoing": {
+      "file": "assets/construction/build-taste-3-ongoing.png",
+      "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。彼は今家でソースを味見しています。",
+      "clue": "時間のヒント：今。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-taste-3-past": {
+      "file": "assets/construction/build-taste-3-past.png",
+      "alt": "右の話し手が左の場面を振り返る。彼は昨日家でソースを味見しました。",
+      "clue": "時間のヒント：昨日。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-cut-1": {
+      "file": "assets/construction/build-cut-1.png",
+      "alt": "左側の話し手が右の場面を紹介する。私たちは毎日家でりんごを切ります。",
+      "clue": "時間のヒント：毎日。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-cut-1-ongoing": {
+      "file": "assets/construction/build-cut-1-ongoing.png",
+      "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。私たちは今家でりんごを切っています。",
+      "clue": "時間のヒント：今。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-cut-1-past": {
+      "file": "assets/construction/build-cut-1-past.png",
+      "alt": "右の話し手が左の場面を振り返る。私たちは昨日家でりんごを切りました。",
+      "clue": "時間のヒント：昨日。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-cut-2": {
+      "file": "assets/construction/build-cut-2.png",
+      "alt": "左側の話し手が右の場面を紹介する。彼らは毎日家で紙を切ります。",
+      "clue": "時間のヒント：毎日。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-cut-2-ongoing": {
+      "file": "assets/construction/build-cut-2-ongoing.png",
+      "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。彼らは今家で紙を切っています。",
+      "clue": "時間のヒント：今。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-cut-2-past": {
+      "file": "assets/construction/build-cut-2-past.png",
+      "alt": "右の話し手が左の場面を振り返る。彼らは昨日家で紙を切りました。",
+      "clue": "時間のヒント：昨日。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-cut-3": {
+      "file": "assets/construction/build-cut-3.png",
+      "alt": "左側の話し手が右の場面を紹介する。私は毎日家でパンを切ります。",
+      "clue": "時間のヒント：毎日。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-cut-3-ongoing": {
+      "file": "assets/construction/build-cut-3-ongoing.png",
+      "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。私は今家でパンを切っています。",
+      "clue": "時間のヒント：今。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-cut-3-past": {
+      "file": "assets/construction/build-cut-3-past.png",
+      "alt": "右の話し手が左の場面を振り返る。私は昨日家でパンを切りました。",
+      "clue": "時間のヒント：昨日。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-peel-1": {
+      "file": "assets/construction/build-peel-1.png",
+      "alt": "左側の話し手が右の場面を紹介する。あなたは毎日家でバナナの皮をむきます。",
+      "clue": "時間のヒント：毎日。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-peel-1-ongoing": {
+      "file": "assets/construction/build-peel-1-ongoing.png",
+      "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。あなたは今家でバナナの皮をむいています。",
+      "clue": "時間のヒント：今。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-peel-1-past": {
+      "file": "assets/construction/build-peel-1-past.png",
+      "alt": "右の話し手が左の場面を振り返る。あなたは昨日家でバナナの皮をむきました。",
+      "clue": "時間のヒント：昨日。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-peel-2": {
+      "file": "assets/construction/build-peel-2.png",
+      "alt": "左側の話し手が右の場面を紹介する。彼は毎日家でみかんの皮をむきます。",
+      "clue": "時間のヒント：毎日。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-peel-2-ongoing": {
+      "file": "assets/construction/build-peel-2-ongoing.png",
+      "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。彼は今家でみかんの皮をむいています。",
+      "clue": "時間のヒント：今。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-peel-2-past": {
+      "file": "assets/construction/build-peel-2-past.png",
+      "alt": "右の話し手が左の場面を振り返る。彼は昨日家でみかんの皮をむきました。",
+      "clue": "時間のヒント：昨日。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-peel-3": {
+      "file": "assets/construction/build-peel-3.png",
+      "alt": "左側の話し手が右の場面を紹介する。彼女は毎日家でじゃがいもの皮をむきます。",
+      "clue": "時間のヒント：毎日。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-peel-3-ongoing": {
+      "file": "assets/construction/build-peel-3-ongoing.png",
+      "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。彼女は今家でじゃがいもの皮をむいています。",
+      "clue": "時間のヒント：今。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-peel-3-past": {
+      "file": "assets/construction/build-peel-3-past.png",
+      "alt": "右の話し手が左の場面を振り返る。彼女は昨日家でじゃがいもの皮をむきました。",
+      "clue": "時間のヒント：昨日。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-mix-1": {
+      "file": "assets/construction/build-mix-1.png",
+      "alt": "左側の話し手が右の場面を紹介する。彼は毎日家で卵を混ぜます。",
+      "clue": "時間のヒント：毎日。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-mix-1-ongoing": {
+      "file": "assets/construction/build-mix-1-ongoing.png",
+      "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。彼は今家で卵を混ぜています。",
+      "clue": "時間のヒント：今。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-mix-1-past": {
+      "file": "assets/construction/build-mix-1-past.png",
+      "alt": "右の話し手が左の場面を振り返る。彼は昨日家で卵を混ぜました。",
+      "clue": "時間のヒント：昨日。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-mix-2": {
+      "file": "assets/construction/build-mix-2.png",
+      "alt": "左側の話し手が右の場面を紹介する。私たちは毎日家でサラダを混ぜます。",
+      "clue": "時間のヒント：毎日。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-mix-2-ongoing": {
+      "file": "assets/construction/build-mix-2-ongoing.png",
+      "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。私たちは今家でサラダを混ぜています。",
+      "clue": "時間のヒント：今。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-mix-2-past": {
+      "file": "assets/construction/build-mix-2-past.png",
+      "alt": "右の話し手が左の場面を振り返る。私たちは昨日家でサラダを混ぜました。",
+      "clue": "時間のヒント：昨日。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-mix-3": {
+      "file": "assets/construction/build-mix-3.png",
+      "alt": "左側の話し手が右の場面を紹介する。彼らは毎日家で絵の具を混ぜます。",
+      "clue": "時間のヒント：毎日。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-mix-3-ongoing": {
+      "file": "assets/construction/build-mix-3-ongoing.png",
+      "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。彼らは今家で絵の具を混ぜています。",
+      "clue": "時間のヒント：今。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-mix-3-past": {
+      "file": "assets/construction/build-mix-3-past.png",
+      "alt": "右の話し手が左の場面を振り返る。彼らは昨日家で絵の具を混ぜました。",
+      "clue": "時間のヒント：昨日。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-pour-1": {
+      "file": "assets/construction/build-pour-1.png",
+      "alt": "左側の話し手が右の場面を紹介する。私は毎日コップに水をそそぎます。",
+      "clue": "時間のヒント：毎日。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-pour-1-ongoing": {
+      "file": "assets/construction/build-pour-1-ongoing.png",
+      "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。私は今コップに水をそそいでいます。",
+      "clue": "時間のヒント：今。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-pour-1-past": {
+      "file": "assets/construction/build-pour-1-past.png",
+      "alt": "右の話し手が左の場面を振り返る。私は昨日コップに水をそそぎました。",
+      "clue": "時間のヒント：昨日。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-pour-2": {
+      "file": "assets/construction/build-pour-2.png",
+      "alt": "左側の話し手が右の場面を紹介する。あなたは毎日コップに牛乳をそそぎます。",
+      "clue": "時間のヒント：毎日。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-pour-2-ongoing": {
+      "file": "assets/construction/build-pour-2-ongoing.png",
+      "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。あなたは今コップに牛乳をそそいでいます。",
+      "clue": "時間のヒント：今。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-pour-2-past": {
+      "file": "assets/construction/build-pour-2-past.png",
+      "alt": "右の話し手が左の場面を振り返る。あなたは昨日コップに牛乳をそそぎました。",
+      "clue": "時間のヒント：昨日。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-pour-3": {
+      "file": "assets/construction/build-pour-3.png",
+      "alt": "左側の話し手が右の場面を紹介する。彼は毎日コップにジュースをそそぎます。",
+      "clue": "時間のヒント：毎日。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-pour-3-ongoing": {
+      "file": "assets/construction/build-pour-3-ongoing.png",
+      "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。彼は今コップにジュースをそそいでいます。",
+      "clue": "時間のヒント：今。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-pour-3-past": {
+      "file": "assets/construction/build-pour-3-past.png",
+      "alt": "右の話し手が左の場面を振り返る。彼は昨日コップにジュースをそそぎました。",
+      "clue": "時間のヒント：昨日。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
     }
   }
 }

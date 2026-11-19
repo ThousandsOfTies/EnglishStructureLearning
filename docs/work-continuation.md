@@ -52,3 +52,7 @@
 sleep・wake・rest・stay・live・move・stop・start・wait・eat・drink・cook の12テーマで、元の文章102文の画像を追加。元の898文は202文が作画済み。時制の絵くらべ40問を含むアプリ全体は242/938文、未作画696文。次は bake の「お母さんとバナナケーキ・クッキー・パンを焼く」3場面から。画像の進捗の正本は作画状況表。
 
 今回の場面素材は assets/character-materials/original-scenes/ に保存。作画記録の sceneAtlases と各例文の sourceCrop に元絵と切り出し位置がある。土曜日は赤いカレンダーに環のある土星を入れた。
+
+## 台所と工作の場面を追加（2026-11-19）
+
+bake・taste・cut・peel・mix・pour の6テーマを新しい構図で54文分追加。元の898文のうち256文が作画済み。「時制の絵くらべ」40文を含むアプリ全体では296/938文。次の未作画テーマは wash。

@@ -2086,6 +2086,816 @@
       "layout": "past",
       "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Place the NOW narrator(s) at the RIGHT, with body facing right and head looking back LEFT. Large balloon on LEFT contains the past event. No bars or timeline. Outside speaker is the main girl. The event group INSIDE includes the SAME main girl and the lavender-shirt girl. Include both as actors, so the speaker is part of the group. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"We cooked rice with Dad at home yesterday.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"私たちは昨日家でお父さんとごはんを作りました。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"We\", \"predicate\": \"cooked\", \"place\": \"at home\", \"time\": \"yesterday\", \"P1\": \"rice with Dad\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage.",
       "generationMethod": "Event art uses the recorded sceneAtlas prompt. The layout is composed from the approved speaker and listener poses."
+    },
+    {
+      "exampleId": "build-bake-1",
+      "file": "assets/construction/build-bake-1.png",
+      "sceneAtlas": "bake-taste-cut",
+      "cell": 1,
+      "sourceCrop": [
+        9,
+        9,
+        409,
+        409
+      ],
+      "layout": "routine",
+      "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Small outside present-day speaker/listener on LEFT; one large balloon on RIGHT illustrates the action concept or state. Tail points to the outside speaker. Use ONE event scene, no repeated mini-panels, no timeline. No calendar. Exact frequency/day will be supplied outside the picture. Outside main girl and blue-hoodie boy talk about the event group. INSIDE actors are a lavender-shirt girl and a green-shirt boy. Neither outside speaker nor listener is in that third-party group. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"They bake a banana cake with Mom at home every day.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"彼らは毎日家でお母さんとバナナケーキを焼きます。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"They\", \"predicate\": \"bake\", \"place\": \"at home\", \"time\": \"every day\", \"P1\": \"a banana cake with Mom\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage.",
+      "generationMethod": "Generated event art using sceneAtlas prompt and composed rectangular balloon with narrator poses."
+    },
+    {
+      "exampleId": "build-bake-1-ongoing",
+      "file": "assets/construction/build-bake-1-ongoing.png",
+      "sceneAtlas": "bake-taste-cut",
+      "cell": 1,
+      "sourceCrop": [
+        9,
+        9,
+        409,
+        409
+      ],
+      "layout": "ongoing",
+      "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Current action inside the balloon; place the outside speaker directly under its horizontal center, head and eyes lifted slightly UP toward the event. Triangle tail points down to this speaker. Immediately outside the LEFT edge place exactly four equally tall, equally dark vertical narrow bars. No timeline or arrows. Outside main girl and blue-hoodie boy talk about the event group. INSIDE actors are a lavender-shirt girl and a green-shirt boy. Neither outside speaker nor listener is in that third-party group. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"They are baking a banana cake with Mom at home now.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"彼らは今家でお母さんとバナナケーキを焼いています。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"They\", \"predicate\": \"are baking\", \"place\": \"at home\", \"time\": \"now\", \"P1\": \"a banana cake with Mom\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage.",
+      "generationMethod": "Generated event art using sceneAtlas prompt and composed rectangular balloon with narrator poses."
+    },
+    {
+      "exampleId": "build-bake-1-past",
+      "file": "assets/construction/build-bake-1-past.png",
+      "sceneAtlas": "bake-taste-cut",
+      "cell": 1,
+      "sourceCrop": [
+        9,
+        9,
+        409,
+        409
+      ],
+      "layout": "past",
+      "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Place the NOW narrator(s) at the RIGHT, with body facing right and head looking back LEFT. Large balloon on LEFT contains the past event. No bars or timeline. Outside main girl and blue-hoodie boy talk about the event group. INSIDE actors are a lavender-shirt girl and a green-shirt boy. Neither outside speaker nor listener is in that third-party group. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"They baked a banana cake with Mom at home yesterday.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"彼らは昨日家でお母さんとバナナケーキを焼きました。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"They\", \"predicate\": \"baked\", \"place\": \"at home\", \"time\": \"yesterday\", \"P1\": \"a banana cake with Mom\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage.",
+      "generationMethod": "Generated event art using sceneAtlas prompt and composed rectangular balloon with narrator poses."
+    },
+    {
+      "exampleId": "build-bake-2",
+      "file": "assets/construction/build-bake-2.png",
+      "sceneAtlas": "bake-taste-cut",
+      "cell": 2,
+      "sourceCrop": [
+        427,
+        9,
+        827,
+        409
+      ],
+      "layout": "routine",
+      "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Small outside present-day speaker/listener on LEFT; one large balloon on RIGHT illustrates the action concept or state. Tail points to the outside speaker. Use ONE event scene, no repeated mini-panels, no timeline. No calendar. Exact frequency/day will be supplied outside the picture. Outside narrator is the main girl; the ONLY event actor inside the balloon is the SAME girl, identical clothes/hairclip. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"I bake cookies with Mom at home every day.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"私は毎日家でお母さんとクッキーを焼きます。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"I\", \"predicate\": \"bake\", \"place\": \"at home\", \"time\": \"every day\", \"P1\": \"cookies with Mom\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage.",
+      "generationMethod": "Generated event art using sceneAtlas prompt and composed rectangular balloon with narrator poses."
+    },
+    {
+      "exampleId": "build-bake-2-ongoing",
+      "file": "assets/construction/build-bake-2-ongoing.png",
+      "sceneAtlas": "bake-taste-cut",
+      "cell": 2,
+      "sourceCrop": [
+        427,
+        9,
+        827,
+        409
+      ],
+      "layout": "ongoing",
+      "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Current action inside the balloon; place the outside speaker directly under its horizontal center, head and eyes lifted slightly UP toward the event. Triangle tail points down to this speaker. Immediately outside the LEFT edge place exactly four equally tall, equally dark vertical narrow bars. No timeline or arrows. Outside narrator is the main girl; the ONLY event actor inside the balloon is the SAME girl, identical clothes/hairclip. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"I am baking cookies with Mom at home now.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"私は今家でお母さんとクッキーを焼いています。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"I\", \"predicate\": \"am baking\", \"place\": \"at home\", \"time\": \"now\", \"P1\": \"cookies with Mom\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage.",
+      "generationMethod": "Generated event art using sceneAtlas prompt and composed rectangular balloon with narrator poses."
+    },
+    {
+      "exampleId": "build-bake-2-past",
+      "file": "assets/construction/build-bake-2-past.png",
+      "sceneAtlas": "bake-taste-cut",
+      "cell": 2,
+      "sourceCrop": [
+        427,
+        9,
+        827,
+        409
+      ],
+      "layout": "past",
+      "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Place the NOW narrator(s) at the RIGHT, with body facing right and head looking back LEFT. Large balloon on LEFT contains the past event. No bars or timeline. Outside narrator is the main girl; the ONLY event actor inside the balloon is the SAME girl, identical clothes/hairclip. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"I baked cookies with Mom at home yesterday.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"私は昨日家でお母さんとクッキーを焼きました。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"I\", \"predicate\": \"baked\", \"place\": \"at home\", \"time\": \"yesterday\", \"P1\": \"cookies with Mom\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage.",
+      "generationMethod": "Generated event art using sceneAtlas prompt and composed rectangular balloon with narrator poses."
+    },
+    {
+      "exampleId": "build-bake-3",
+      "file": "assets/construction/build-bake-3.png",
+      "sceneAtlas": "bake-taste-cut",
+      "cell": 3,
+      "sourceCrop": [
+        845,
+        9,
+        1245,
+        409
+      ],
+      "layout": "routine",
+      "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Small outside present-day speaker/listener on LEFT; one large balloon on RIGHT illustrates the action concept or state. Tail points to the outside speaker. Use ONE event scene, no repeated mini-panels, no timeline. No calendar. Exact frequency/day will be supplied outside the picture. EXACTLY TWO outside figures: short-brown-haired blue-hoodie BOY speaking and the main GIRL listening, direct eye contact. Tail points to BOY MOUTH, never girl. INSIDE: ONLY ONE actor, the SAME listener GIRL, not the speaker. No companions inside. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"You bake bread with Mom at home every day.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"あなたは毎日家でお母さんとパンを焼きます。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"You\", \"predicate\": \"bake\", \"place\": \"at home\", \"time\": \"every day\", \"P1\": \"bread with Mom\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage.",
+      "generationMethod": "Generated event art using sceneAtlas prompt and composed rectangular balloon with narrator poses."
+    },
+    {
+      "exampleId": "build-bake-3-ongoing",
+      "file": "assets/construction/build-bake-3-ongoing.png",
+      "sceneAtlas": "bake-taste-cut",
+      "cell": 3,
+      "sourceCrop": [
+        845,
+        9,
+        1245,
+        409
+      ],
+      "layout": "ongoing",
+      "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Current action inside the balloon; place the outside speaker directly under its horizontal center, head and eyes lifted slightly UP toward the event. Triangle tail points down to this speaker. Immediately outside the LEFT edge place exactly four equally tall, equally dark vertical narrow bars. No timeline or arrows. EXACTLY TWO outside figures: short-brown-haired blue-hoodie BOY speaking and the main GIRL listening, direct eye contact. Tail points to BOY MOUTH, never girl. INSIDE: ONLY ONE actor, the SAME listener GIRL, not the speaker. No companions inside. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"You are baking bread with Mom at home now.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"あなたは今家でお母さんとパンを焼いています。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"You\", \"predicate\": \"are baking\", \"place\": \"at home\", \"time\": \"now\", \"P1\": \"bread with Mom\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage.",
+      "generationMethod": "Generated event art using sceneAtlas prompt and composed rectangular balloon with narrator poses."
+    },
+    {
+      "exampleId": "build-bake-3-past",
+      "file": "assets/construction/build-bake-3-past.png",
+      "sceneAtlas": "bake-taste-cut",
+      "cell": 3,
+      "sourceCrop": [
+        845,
+        9,
+        1245,
+        409
+      ],
+      "layout": "past",
+      "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Place the NOW narrator(s) at the RIGHT, with body facing right and head looking back LEFT. Large balloon on LEFT contains the past event. No bars or timeline. EXACTLY TWO outside figures: short-brown-haired blue-hoodie BOY speaking and the main GIRL listening, direct eye contact. Tail points to BOY MOUTH, never girl. INSIDE: ONLY ONE actor, the SAME listener GIRL, not the speaker. No companions inside. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"You baked bread with Mom at home yesterday.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"あなたは昨日家でお母さんとパンを焼きました。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"You\", \"predicate\": \"baked\", \"place\": \"at home\", \"time\": \"yesterday\", \"P1\": \"bread with Mom\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage.",
+      "generationMethod": "Generated event art using sceneAtlas prompt and composed rectangular balloon with narrator poses."
+    },
+    {
+      "exampleId": "build-taste-1",
+      "file": "assets/construction/build-taste-1.png",
+      "sceneAtlas": "bake-taste-cut",
+      "cell": 4,
+      "sourceCrop": [
+        9,
+        427,
+        409,
+        827
+      ],
+      "layout": "routine",
+      "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Small outside present-day speaker/listener on LEFT; one large balloon on RIGHT illustrates the action concept or state. Tail points to the outside speaker. Use ONE event scene, no repeated mini-panels, no timeline. No calendar. Exact frequency/day will be supplied outside the picture. Outside speaker is the main girl addressing a dark-ponytail lavender-shirt girl. They look/gesture towards a distinct THIRD-PARTY short-brown-haired blue-hoodie BOY, the ONLY actor inside the scene. He is neither the speaker nor the listener. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"He tastes the soup at home every day.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"彼は毎日家でスープを味見します。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"He\", \"predicate\": \"tastes\", \"place\": \"at home\", \"time\": \"every day\", \"P1\": \"the soup\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage.",
+      "generationMethod": "Generated event art using sceneAtlas prompt and composed rectangular balloon with narrator poses."
+    },
+    {
+      "exampleId": "build-taste-1-ongoing",
+      "file": "assets/construction/build-taste-1-ongoing.png",
+      "sceneAtlas": "bake-taste-cut",
+      "cell": 4,
+      "sourceCrop": [
+        9,
+        427,
+        409,
+        827
+      ],
+      "layout": "ongoing",
+      "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Current action inside the balloon; place the outside speaker directly under its horizontal center, head and eyes lifted slightly UP toward the event. Triangle tail points down to this speaker. Immediately outside the LEFT edge place exactly four equally tall, equally dark vertical narrow bars. No timeline or arrows. Outside speaker is the main girl addressing a dark-ponytail lavender-shirt girl. They look/gesture towards a distinct THIRD-PARTY short-brown-haired blue-hoodie BOY, the ONLY actor inside the scene. He is neither the speaker nor the listener. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"He is tasting the soup at home now.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"彼は今家でスープを味見しています。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"He\", \"predicate\": \"is tasting\", \"place\": \"at home\", \"time\": \"now\", \"P1\": \"the soup\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage.",
+      "generationMethod": "Generated event art using sceneAtlas prompt and composed rectangular balloon with narrator poses."
+    },
+    {
+      "exampleId": "build-taste-1-past",
+      "file": "assets/construction/build-taste-1-past.png",
+      "sceneAtlas": "bake-taste-cut",
+      "cell": 4,
+      "sourceCrop": [
+        9,
+        427,
+        409,
+        827
+      ],
+      "layout": "past",
+      "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Place the NOW narrator(s) at the RIGHT, with body facing right and head looking back LEFT. Large balloon on LEFT contains the past event. No bars or timeline. Outside speaker is the main girl addressing a dark-ponytail lavender-shirt girl. They look/gesture towards a distinct THIRD-PARTY short-brown-haired blue-hoodie BOY, the ONLY actor inside the scene. He is neither the speaker nor the listener. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"He tasted the soup at home yesterday.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"彼は昨日家でスープを味見しました。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"He\", \"predicate\": \"tasted\", \"place\": \"at home\", \"time\": \"yesterday\", \"P1\": \"the soup\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage.",
+      "generationMethod": "Generated event art using sceneAtlas prompt and composed rectangular balloon with narrator poses."
+    },
+    {
+      "exampleId": "build-taste-2",
+      "file": "assets/construction/build-taste-2.png",
+      "sceneAtlas": "bake-taste-cut",
+      "cell": 5,
+      "sourceCrop": [
+        427,
+        427,
+        827,
+        827
+      ],
+      "layout": "routine",
+      "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Small outside present-day speaker/listener on LEFT; one large balloon on RIGHT illustrates the action concept or state. Tail points to the outside speaker. Use ONE event scene, no repeated mini-panels, no timeline. No calendar. Exact frequency/day will be supplied outside the picture. Outside speaker is the main girl addressing the blue-hoodie boy. They look/gesture towards a THIRD-PARTY lavender-shirt girl inside the scene. She is neither the speaker nor the listener. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"She tastes the curry at home every day.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"彼女は毎日家でカレーを味見します。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"She\", \"predicate\": \"tastes\", \"place\": \"at home\", \"time\": \"every day\", \"P1\": \"the curry\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage.",
+      "generationMethod": "Generated event art using sceneAtlas prompt and composed rectangular balloon with narrator poses."
+    },
+    {
+      "exampleId": "build-taste-2-ongoing",
+      "file": "assets/construction/build-taste-2-ongoing.png",
+      "sceneAtlas": "bake-taste-cut",
+      "cell": 5,
+      "sourceCrop": [
+        427,
+        427,
+        827,
+        827
+      ],
+      "layout": "ongoing",
+      "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Current action inside the balloon; place the outside speaker directly under its horizontal center, head and eyes lifted slightly UP toward the event. Triangle tail points down to this speaker. Immediately outside the LEFT edge place exactly four equally tall, equally dark vertical narrow bars. No timeline or arrows. Outside speaker is the main girl addressing the blue-hoodie boy. They look/gesture towards a THIRD-PARTY lavender-shirt girl inside the scene. She is neither the speaker nor the listener. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"She is tasting the curry at home now.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"彼女は今家でカレーを味見しています。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"She\", \"predicate\": \"is tasting\", \"place\": \"at home\", \"time\": \"now\", \"P1\": \"the curry\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage.",
+      "generationMethod": "Generated event art using sceneAtlas prompt and composed rectangular balloon with narrator poses."
+    },
+    {
+      "exampleId": "build-taste-2-past",
+      "file": "assets/construction/build-taste-2-past.png",
+      "sceneAtlas": "bake-taste-cut",
+      "cell": 5,
+      "sourceCrop": [
+        427,
+        427,
+        827,
+        827
+      ],
+      "layout": "past",
+      "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Place the NOW narrator(s) at the RIGHT, with body facing right and head looking back LEFT. Large balloon on LEFT contains the past event. No bars or timeline. Outside speaker is the main girl addressing the blue-hoodie boy. They look/gesture towards a THIRD-PARTY lavender-shirt girl inside the scene. She is neither the speaker nor the listener. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"She tasted the curry at home yesterday.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"彼女は昨日家でカレーを味見しました。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"She\", \"predicate\": \"tasted\", \"place\": \"at home\", \"time\": \"yesterday\", \"P1\": \"the curry\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage.",
+      "generationMethod": "Generated event art using sceneAtlas prompt and composed rectangular balloon with narrator poses."
+    },
+    {
+      "exampleId": "build-taste-3",
+      "file": "assets/construction/build-taste-3.png",
+      "sceneAtlas": "bake-taste-cut",
+      "cell": 6,
+      "sourceCrop": [
+        845,
+        427,
+        1245,
+        827
+      ],
+      "layout": "routine",
+      "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Small outside present-day speaker/listener on LEFT; one large balloon on RIGHT illustrates the action concept or state. Tail points to the outside speaker. Use ONE event scene, no repeated mini-panels, no timeline. No calendar. Exact frequency/day will be supplied outside the picture. Outside speaker is the main girl addressing a dark-ponytail lavender-shirt girl. They look/gesture towards a distinct THIRD-PARTY short-brown-haired blue-hoodie BOY, the ONLY actor inside the scene. He is neither the speaker nor the listener. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"He tastes the sauce at home every day.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"彼は毎日家でソースを味見します。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"He\", \"predicate\": \"tastes\", \"place\": \"at home\", \"time\": \"every day\", \"P1\": \"the sauce\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage.",
+      "generationMethod": "Generated event art using sceneAtlas prompt and composed rectangular balloon with narrator poses."
+    },
+    {
+      "exampleId": "build-taste-3-ongoing",
+      "file": "assets/construction/build-taste-3-ongoing.png",
+      "sceneAtlas": "bake-taste-cut",
+      "cell": 6,
+      "sourceCrop": [
+        845,
+        427,
+        1245,
+        827
+      ],
+      "layout": "ongoing",
+      "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Current action inside the balloon; place the outside speaker directly under its horizontal center, head and eyes lifted slightly UP toward the event. Triangle tail points down to this speaker. Immediately outside the LEFT edge place exactly four equally tall, equally dark vertical narrow bars. No timeline or arrows. Outside speaker is the main girl addressing a dark-ponytail lavender-shirt girl. They look/gesture towards a distinct THIRD-PARTY short-brown-haired blue-hoodie BOY, the ONLY actor inside the scene. He is neither the speaker nor the listener. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"He is tasting the sauce at home now.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"彼は今家でソースを味見しています。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"He\", \"predicate\": \"is tasting\", \"place\": \"at home\", \"time\": \"now\", \"P1\": \"the sauce\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage.",
+      "generationMethod": "Generated event art using sceneAtlas prompt and composed rectangular balloon with narrator poses."
+    },
+    {
+      "exampleId": "build-taste-3-past",
+      "file": "assets/construction/build-taste-3-past.png",
+      "sceneAtlas": "bake-taste-cut",
+      "cell": 6,
+      "sourceCrop": [
+        845,
+        427,
+        1245,
+        827
+      ],
+      "layout": "past",
+      "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Place the NOW narrator(s) at the RIGHT, with body facing right and head looking back LEFT. Large balloon on LEFT contains the past event. No bars or timeline. Outside speaker is the main girl addressing a dark-ponytail lavender-shirt girl. They look/gesture towards a distinct THIRD-PARTY short-brown-haired blue-hoodie BOY, the ONLY actor inside the scene. He is neither the speaker nor the listener. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"He tasted the sauce at home yesterday.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"彼は昨日家でソースを味見しました。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"He\", \"predicate\": \"tasted\", \"place\": \"at home\", \"time\": \"yesterday\", \"P1\": \"the sauce\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage.",
+      "generationMethod": "Generated event art using sceneAtlas prompt and composed rectangular balloon with narrator poses."
+    },
+    {
+      "exampleId": "build-cut-1",
+      "file": "assets/construction/build-cut-1.png",
+      "sceneAtlas": "bake-taste-cut",
+      "cell": 7,
+      "sourceCrop": [
+        9,
+        845,
+        409,
+        1245
+      ],
+      "layout": "routine",
+      "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Small outside present-day speaker/listener on LEFT; one large balloon on RIGHT illustrates the action concept or state. Tail points to the outside speaker. Use ONE event scene, no repeated mini-panels, no timeline. No calendar. Exact frequency/day will be supplied outside the picture. Outside speaker is the main girl. The event group INSIDE includes the SAME main girl and the lavender-shirt girl. Include both as actors, so the speaker is part of the group. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"We cut an apple at home every day.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"私たちは毎日家でりんごを切ります。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"We\", \"predicate\": \"cut\", \"place\": \"at home\", \"time\": \"every day\", \"P1\": \"an apple\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage.",
+      "generationMethod": "Generated event art using sceneAtlas prompt and composed rectangular balloon with narrator poses."
+    },
+    {
+      "exampleId": "build-cut-1-ongoing",
+      "file": "assets/construction/build-cut-1-ongoing.png",
+      "sceneAtlas": "bake-taste-cut",
+      "cell": 7,
+      "sourceCrop": [
+        9,
+        845,
+        409,
+        1245
+      ],
+      "layout": "ongoing",
+      "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Current action inside the balloon; place the outside speaker directly under its horizontal center, head and eyes lifted slightly UP toward the event. Triangle tail points down to this speaker. Immediately outside the LEFT edge place exactly four equally tall, equally dark vertical narrow bars. No timeline or arrows. Outside speaker is the main girl. The event group INSIDE includes the SAME main girl and the lavender-shirt girl. Include both as actors, so the speaker is part of the group. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"We are cuting an apple at home now.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"私たちは今家でりんごを切っています。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"We\", \"predicate\": \"are cuting\", \"place\": \"at home\", \"time\": \"now\", \"P1\": \"an apple\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage.",
+      "generationMethod": "Generated event art using sceneAtlas prompt and composed rectangular balloon with narrator poses."
+    },
+    {
+      "exampleId": "build-cut-1-past",
+      "file": "assets/construction/build-cut-1-past.png",
+      "sceneAtlas": "bake-taste-cut",
+      "cell": 7,
+      "sourceCrop": [
+        9,
+        845,
+        409,
+        1245
+      ],
+      "layout": "past",
+      "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Place the NOW narrator(s) at the RIGHT, with body facing right and head looking back LEFT. Large balloon on LEFT contains the past event. No bars or timeline. Outside speaker is the main girl. The event group INSIDE includes the SAME main girl and the lavender-shirt girl. Include both as actors, so the speaker is part of the group. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"We cut an apple at home yesterday.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"私たちは昨日家でりんごを切りました。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"We\", \"predicate\": \"cut\", \"place\": \"at home\", \"time\": \"yesterday\", \"P1\": \"an apple\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage.",
+      "generationMethod": "Generated event art using sceneAtlas prompt and composed rectangular balloon with narrator poses."
+    },
+    {
+      "exampleId": "build-cut-2",
+      "file": "assets/construction/build-cut-2.png",
+      "sceneAtlas": "bake-taste-cut",
+      "cell": 8,
+      "sourceCrop": [
+        427,
+        845,
+        827,
+        1245
+      ],
+      "layout": "routine",
+      "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Small outside present-day speaker/listener on LEFT; one large balloon on RIGHT illustrates the action concept or state. Tail points to the outside speaker. Use ONE event scene, no repeated mini-panels, no timeline. No calendar. Exact frequency/day will be supplied outside the picture. Outside main girl and blue-hoodie boy talk about the event group. INSIDE actors are a lavender-shirt girl and a green-shirt boy. Neither outside speaker nor listener is in that third-party group. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"They cut paper at home every day.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"彼らは毎日家で紙を切ります。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"They\", \"predicate\": \"cut\", \"place\": \"at home\", \"time\": \"every day\", \"P1\": \"paper\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage.",
+      "generationMethod": "Generated event art using sceneAtlas prompt and composed rectangular balloon with narrator poses."
+    },
+    {
+      "exampleId": "build-cut-2-ongoing",
+      "file": "assets/construction/build-cut-2-ongoing.png",
+      "sceneAtlas": "bake-taste-cut",
+      "cell": 8,
+      "sourceCrop": [
+        427,
+        845,
+        827,
+        1245
+      ],
+      "layout": "ongoing",
+      "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Current action inside the balloon; place the outside speaker directly under its horizontal center, head and eyes lifted slightly UP toward the event. Triangle tail points down to this speaker. Immediately outside the LEFT edge place exactly four equally tall, equally dark vertical narrow bars. No timeline or arrows. Outside main girl and blue-hoodie boy talk about the event group. INSIDE actors are a lavender-shirt girl and a green-shirt boy. Neither outside speaker nor listener is in that third-party group. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"They are cuting paper at home now.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"彼らは今家で紙を切っています。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"They\", \"predicate\": \"are cuting\", \"place\": \"at home\", \"time\": \"now\", \"P1\": \"paper\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage.",
+      "generationMethod": "Generated event art using sceneAtlas prompt and composed rectangular balloon with narrator poses."
+    },
+    {
+      "exampleId": "build-cut-2-past",
+      "file": "assets/construction/build-cut-2-past.png",
+      "sceneAtlas": "bake-taste-cut",
+      "cell": 8,
+      "sourceCrop": [
+        427,
+        845,
+        827,
+        1245
+      ],
+      "layout": "past",
+      "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Place the NOW narrator(s) at the RIGHT, with body facing right and head looking back LEFT. Large balloon on LEFT contains the past event. No bars or timeline. Outside main girl and blue-hoodie boy talk about the event group. INSIDE actors are a lavender-shirt girl and a green-shirt boy. Neither outside speaker nor listener is in that third-party group. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"They cut paper at home yesterday.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"彼らは昨日家で紙を切りました。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"They\", \"predicate\": \"cut\", \"place\": \"at home\", \"time\": \"yesterday\", \"P1\": \"paper\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage.",
+      "generationMethod": "Generated event art using sceneAtlas prompt and composed rectangular balloon with narrator poses."
+    },
+    {
+      "exampleId": "build-cut-3",
+      "file": "assets/construction/build-cut-3.png",
+      "sceneAtlas": "bake-taste-cut",
+      "cell": 9,
+      "sourceCrop": [
+        845,
+        845,
+        1245,
+        1245
+      ],
+      "layout": "routine",
+      "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Small outside present-day speaker/listener on LEFT; one large balloon on RIGHT illustrates the action concept or state. Tail points to the outside speaker. Use ONE event scene, no repeated mini-panels, no timeline. No calendar. Exact frequency/day will be supplied outside the picture. Outside narrator is the main girl; the ONLY event actor inside the balloon is the SAME girl, identical clothes/hairclip. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"I cut bread at home every day.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"私は毎日家でパンを切ります。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"I\", \"predicate\": \"cut\", \"place\": \"at home\", \"time\": \"every day\", \"P1\": \"bread\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage.",
+      "generationMethod": "Generated event art using sceneAtlas prompt and composed rectangular balloon with narrator poses."
+    },
+    {
+      "exampleId": "build-cut-3-ongoing",
+      "file": "assets/construction/build-cut-3-ongoing.png",
+      "sceneAtlas": "bake-taste-cut",
+      "cell": 9,
+      "sourceCrop": [
+        845,
+        845,
+        1245,
+        1245
+      ],
+      "layout": "ongoing",
+      "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Current action inside the balloon; place the outside speaker directly under its horizontal center, head and eyes lifted slightly UP toward the event. Triangle tail points down to this speaker. Immediately outside the LEFT edge place exactly four equally tall, equally dark vertical narrow bars. No timeline or arrows. Outside narrator is the main girl; the ONLY event actor inside the balloon is the SAME girl, identical clothes/hairclip. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"I am cuting bread at home now.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"私は今家でパンを切っています。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"I\", \"predicate\": \"am cuting\", \"place\": \"at home\", \"time\": \"now\", \"P1\": \"bread\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage.",
+      "generationMethod": "Generated event art using sceneAtlas prompt and composed rectangular balloon with narrator poses."
+    },
+    {
+      "exampleId": "build-cut-3-past",
+      "file": "assets/construction/build-cut-3-past.png",
+      "sceneAtlas": "bake-taste-cut",
+      "cell": 9,
+      "sourceCrop": [
+        845,
+        845,
+        1245,
+        1245
+      ],
+      "layout": "past",
+      "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Place the NOW narrator(s) at the RIGHT, with body facing right and head looking back LEFT. Large balloon on LEFT contains the past event. No bars or timeline. Outside narrator is the main girl; the ONLY event actor inside the balloon is the SAME girl, identical clothes/hairclip. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"I cut bread at home yesterday.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"私は昨日家でパンを切りました。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"I\", \"predicate\": \"cut\", \"place\": \"at home\", \"time\": \"yesterday\", \"P1\": \"bread\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage.",
+      "generationMethod": "Generated event art using sceneAtlas prompt and composed rectangular balloon with narrator poses."
+    },
+    {
+      "exampleId": "build-peel-1",
+      "file": "assets/construction/build-peel-1.png",
+      "sceneAtlas": "peel-mix-pour",
+      "cell": 1,
+      "sourceCrop": [
+        9,
+        9,
+        409,
+        409
+      ],
+      "layout": "routine",
+      "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Small outside present-day speaker/listener on LEFT; one large balloon on RIGHT illustrates the action concept or state. Tail points to the outside speaker. Use ONE event scene, no repeated mini-panels, no timeline. No calendar. Exact frequency/day will be supplied outside the picture. EXACTLY TWO outside figures: short-brown-haired blue-hoodie BOY speaking and the main GIRL listening, direct eye contact. Tail points to BOY MOUTH, never girl. INSIDE: ONLY ONE actor, the SAME listener GIRL, not the speaker. No companions inside. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"You peel a banana at home every day.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"あなたは毎日家でバナナの皮をむきます。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"You\", \"predicate\": \"peel\", \"place\": \"at home\", \"time\": \"every day\", \"P1\": \"a banana\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage.",
+      "generationMethod": "Generated event art using sceneAtlas prompt and composed rectangular balloon with narrator poses."
+    },
+    {
+      "exampleId": "build-peel-1-ongoing",
+      "file": "assets/construction/build-peel-1-ongoing.png",
+      "sceneAtlas": "peel-mix-pour",
+      "cell": 1,
+      "sourceCrop": [
+        9,
+        9,
+        409,
+        409
+      ],
+      "layout": "ongoing",
+      "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Current action inside the balloon; place the outside speaker directly under its horizontal center, head and eyes lifted slightly UP toward the event. Triangle tail points down to this speaker. Immediately outside the LEFT edge place exactly four equally tall, equally dark vertical narrow bars. No timeline or arrows. EXACTLY TWO outside figures: short-brown-haired blue-hoodie BOY speaking and the main GIRL listening, direct eye contact. Tail points to BOY MOUTH, never girl. INSIDE: ONLY ONE actor, the SAME listener GIRL, not the speaker. No companions inside. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"You are peeling a banana at home now.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"あなたは今家でバナナの皮をむいています。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"You\", \"predicate\": \"are peeling\", \"place\": \"at home\", \"time\": \"now\", \"P1\": \"a banana\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage.",
+      "generationMethod": "Generated event art using sceneAtlas prompt and composed rectangular balloon with narrator poses."
+    },
+    {
+      "exampleId": "build-peel-1-past",
+      "file": "assets/construction/build-peel-1-past.png",
+      "sceneAtlas": "peel-mix-pour",
+      "cell": 1,
+      "sourceCrop": [
+        9,
+        9,
+        409,
+        409
+      ],
+      "layout": "past",
+      "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Place the NOW narrator(s) at the RIGHT, with body facing right and head looking back LEFT. Large balloon on LEFT contains the past event. No bars or timeline. EXACTLY TWO outside figures: short-brown-haired blue-hoodie BOY speaking and the main GIRL listening, direct eye contact. Tail points to BOY MOUTH, never girl. INSIDE: ONLY ONE actor, the SAME listener GIRL, not the speaker. No companions inside. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"You peeled a banana at home yesterday.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"あなたは昨日家でバナナの皮をむきました。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"You\", \"predicate\": \"peeled\", \"place\": \"at home\", \"time\": \"yesterday\", \"P1\": \"a banana\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage.",
+      "generationMethod": "Generated event art using sceneAtlas prompt and composed rectangular balloon with narrator poses."
+    },
+    {
+      "exampleId": "build-peel-2",
+      "file": "assets/construction/build-peel-2.png",
+      "sceneAtlas": "peel-mix-pour",
+      "cell": 2,
+      "sourceCrop": [
+        427,
+        9,
+        827,
+        409
+      ],
+      "layout": "routine",
+      "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Small outside present-day speaker/listener on LEFT; one large balloon on RIGHT illustrates the action concept or state. Tail points to the outside speaker. Use ONE event scene, no repeated mini-panels, no timeline. No calendar. Exact frequency/day will be supplied outside the picture. Outside speaker is the main girl addressing a dark-ponytail lavender-shirt girl. They look/gesture towards a distinct THIRD-PARTY short-brown-haired blue-hoodie BOY, the ONLY actor inside the scene. He is neither the speaker nor the listener. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"He peels an orange at home every day.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"彼は毎日家でみかんの皮をむきます。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"He\", \"predicate\": \"peels\", \"place\": \"at home\", \"time\": \"every day\", \"P1\": \"an orange\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage.",
+      "generationMethod": "Generated event art using sceneAtlas prompt and composed rectangular balloon with narrator poses."
+    },
+    {
+      "exampleId": "build-peel-2-ongoing",
+      "file": "assets/construction/build-peel-2-ongoing.png",
+      "sceneAtlas": "peel-mix-pour",
+      "cell": 2,
+      "sourceCrop": [
+        427,
+        9,
+        827,
+        409
+      ],
+      "layout": "ongoing",
+      "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Current action inside the balloon; place the outside speaker directly under its horizontal center, head and eyes lifted slightly UP toward the event. Triangle tail points down to this speaker. Immediately outside the LEFT edge place exactly four equally tall, equally dark vertical narrow bars. No timeline or arrows. Outside speaker is the main girl addressing a dark-ponytail lavender-shirt girl. They look/gesture towards a distinct THIRD-PARTY short-brown-haired blue-hoodie BOY, the ONLY actor inside the scene. He is neither the speaker nor the listener. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"He is peeling an orange at home now.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"彼は今家でみかんの皮をむいています。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"He\", \"predicate\": \"is peeling\", \"place\": \"at home\", \"time\": \"now\", \"P1\": \"an orange\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage.",
+      "generationMethod": "Generated event art using sceneAtlas prompt and composed rectangular balloon with narrator poses."
+    },
+    {
+      "exampleId": "build-peel-2-past",
+      "file": "assets/construction/build-peel-2-past.png",
+      "sceneAtlas": "peel-mix-pour",
+      "cell": 2,
+      "sourceCrop": [
+        427,
+        9,
+        827,
+        409
+      ],
+      "layout": "past",
+      "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Place the NOW narrator(s) at the RIGHT, with body facing right and head looking back LEFT. Large balloon on LEFT contains the past event. No bars or timeline. Outside speaker is the main girl addressing a dark-ponytail lavender-shirt girl. They look/gesture towards a distinct THIRD-PARTY short-brown-haired blue-hoodie BOY, the ONLY actor inside the scene. He is neither the speaker nor the listener. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"He peeled an orange at home yesterday.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"彼は昨日家でみかんの皮をむきました。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"He\", \"predicate\": \"peeled\", \"place\": \"at home\", \"time\": \"yesterday\", \"P1\": \"an orange\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage.",
+      "generationMethod": "Generated event art using sceneAtlas prompt and composed rectangular balloon with narrator poses."
+    },
+    {
+      "exampleId": "build-peel-3",
+      "file": "assets/construction/build-peel-3.png",
+      "sceneAtlas": "peel-mix-pour",
+      "cell": 3,
+      "sourceCrop": [
+        845,
+        9,
+        1245,
+        409
+      ],
+      "layout": "routine",
+      "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Small outside present-day speaker/listener on LEFT; one large balloon on RIGHT illustrates the action concept or state. Tail points to the outside speaker. Use ONE event scene, no repeated mini-panels, no timeline. No calendar. Exact frequency/day will be supplied outside the picture. Outside speaker is the main girl addressing the blue-hoodie boy. They look/gesture towards a THIRD-PARTY lavender-shirt girl inside the scene. She is neither the speaker nor the listener. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"She peels a potato at home every day.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"彼女は毎日家でじゃがいもの皮をむきます。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"She\", \"predicate\": \"peels\", \"place\": \"at home\", \"time\": \"every day\", \"P1\": \"a potato\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage.",
+      "generationMethod": "Generated event art using sceneAtlas prompt and composed rectangular balloon with narrator poses."
+    },
+    {
+      "exampleId": "build-peel-3-ongoing",
+      "file": "assets/construction/build-peel-3-ongoing.png",
+      "sceneAtlas": "peel-mix-pour",
+      "cell": 3,
+      "sourceCrop": [
+        845,
+        9,
+        1245,
+        409
+      ],
+      "layout": "ongoing",
+      "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Current action inside the balloon; place the outside speaker directly under its horizontal center, head and eyes lifted slightly UP toward the event. Triangle tail points down to this speaker. Immediately outside the LEFT edge place exactly four equally tall, equally dark vertical narrow bars. No timeline or arrows. Outside speaker is the main girl addressing the blue-hoodie boy. They look/gesture towards a THIRD-PARTY lavender-shirt girl inside the scene. She is neither the speaker nor the listener. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"She is peeling a potato at home now.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"彼女は今家でじゃがいもの皮をむいています。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"She\", \"predicate\": \"is peeling\", \"place\": \"at home\", \"time\": \"now\", \"P1\": \"a potato\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage.",
+      "generationMethod": "Generated event art using sceneAtlas prompt and composed rectangular balloon with narrator poses."
+    },
+    {
+      "exampleId": "build-peel-3-past",
+      "file": "assets/construction/build-peel-3-past.png",
+      "sceneAtlas": "peel-mix-pour",
+      "cell": 3,
+      "sourceCrop": [
+        845,
+        9,
+        1245,
+        409
+      ],
+      "layout": "past",
+      "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Place the NOW narrator(s) at the RIGHT, with body facing right and head looking back LEFT. Large balloon on LEFT contains the past event. No bars or timeline. Outside speaker is the main girl addressing the blue-hoodie boy. They look/gesture towards a THIRD-PARTY lavender-shirt girl inside the scene. She is neither the speaker nor the listener. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"She peeled a potato at home yesterday.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"彼女は昨日家でじゃがいもの皮をむきました。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"She\", \"predicate\": \"peeled\", \"place\": \"at home\", \"time\": \"yesterday\", \"P1\": \"a potato\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage.",
+      "generationMethod": "Generated event art using sceneAtlas prompt and composed rectangular balloon with narrator poses."
+    },
+    {
+      "exampleId": "build-mix-1",
+      "file": "assets/construction/build-mix-1.png",
+      "sceneAtlas": "peel-mix-pour",
+      "cell": 4,
+      "sourceCrop": [
+        9,
+        427,
+        409,
+        827
+      ],
+      "layout": "routine",
+      "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Small outside present-day speaker/listener on LEFT; one large balloon on RIGHT illustrates the action concept or state. Tail points to the outside speaker. Use ONE event scene, no repeated mini-panels, no timeline. No calendar. Exact frequency/day will be supplied outside the picture. Outside speaker is the main girl addressing a dark-ponytail lavender-shirt girl. They look/gesture towards a distinct THIRD-PARTY short-brown-haired blue-hoodie BOY, the ONLY actor inside the scene. He is neither the speaker nor the listener. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"He mixes the eggs at home every day.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"彼は毎日家で卵を混ぜます。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"He\", \"predicate\": \"mixes\", \"place\": \"at home\", \"time\": \"every day\", \"P1\": \"the eggs\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage.",
+      "generationMethod": "Generated event art using sceneAtlas prompt and composed rectangular balloon with narrator poses."
+    },
+    {
+      "exampleId": "build-mix-1-ongoing",
+      "file": "assets/construction/build-mix-1-ongoing.png",
+      "sceneAtlas": "peel-mix-pour",
+      "cell": 4,
+      "sourceCrop": [
+        9,
+        427,
+        409,
+        827
+      ],
+      "layout": "ongoing",
+      "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Current action inside the balloon; place the outside speaker directly under its horizontal center, head and eyes lifted slightly UP toward the event. Triangle tail points down to this speaker. Immediately outside the LEFT edge place exactly four equally tall, equally dark vertical narrow bars. No timeline or arrows. Outside speaker is the main girl addressing a dark-ponytail lavender-shirt girl. They look/gesture towards a distinct THIRD-PARTY short-brown-haired blue-hoodie BOY, the ONLY actor inside the scene. He is neither the speaker nor the listener. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"He is mixing the eggs at home now.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"彼は今家で卵を混ぜています。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"He\", \"predicate\": \"is mixing\", \"place\": \"at home\", \"time\": \"now\", \"P1\": \"the eggs\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage.",
+      "generationMethod": "Generated event art using sceneAtlas prompt and composed rectangular balloon with narrator poses."
+    },
+    {
+      "exampleId": "build-mix-1-past",
+      "file": "assets/construction/build-mix-1-past.png",
+      "sceneAtlas": "peel-mix-pour",
+      "cell": 4,
+      "sourceCrop": [
+        9,
+        427,
+        409,
+        827
+      ],
+      "layout": "past",
+      "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Place the NOW narrator(s) at the RIGHT, with body facing right and head looking back LEFT. Large balloon on LEFT contains the past event. No bars or timeline. Outside speaker is the main girl addressing a dark-ponytail lavender-shirt girl. They look/gesture towards a distinct THIRD-PARTY short-brown-haired blue-hoodie BOY, the ONLY actor inside the scene. He is neither the speaker nor the listener. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"He mixed the eggs at home yesterday.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"彼は昨日家で卵を混ぜました。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"He\", \"predicate\": \"mixed\", \"place\": \"at home\", \"time\": \"yesterday\", \"P1\": \"the eggs\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage.",
+      "generationMethod": "Generated event art using sceneAtlas prompt and composed rectangular balloon with narrator poses."
+    },
+    {
+      "exampleId": "build-mix-2",
+      "file": "assets/construction/build-mix-2.png",
+      "sceneAtlas": "peel-mix-pour",
+      "cell": 5,
+      "sourceCrop": [
+        427,
+        427,
+        827,
+        827
+      ],
+      "layout": "routine",
+      "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Small outside present-day speaker/listener on LEFT; one large balloon on RIGHT illustrates the action concept or state. Tail points to the outside speaker. Use ONE event scene, no repeated mini-panels, no timeline. No calendar. Exact frequency/day will be supplied outside the picture. Outside speaker is the main girl. The event group INSIDE includes the SAME main girl and the lavender-shirt girl. Include both as actors, so the speaker is part of the group. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"We mix the salad at home every day.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"私たちは毎日家でサラダを混ぜます。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"We\", \"predicate\": \"mix\", \"place\": \"at home\", \"time\": \"every day\", \"P1\": \"the salad\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage.",
+      "generationMethod": "Generated event art using sceneAtlas prompt and composed rectangular balloon with narrator poses."
+    },
+    {
+      "exampleId": "build-mix-2-ongoing",
+      "file": "assets/construction/build-mix-2-ongoing.png",
+      "sceneAtlas": "peel-mix-pour",
+      "cell": 5,
+      "sourceCrop": [
+        427,
+        427,
+        827,
+        827
+      ],
+      "layout": "ongoing",
+      "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Current action inside the balloon; place the outside speaker directly under its horizontal center, head and eyes lifted slightly UP toward the event. Triangle tail points down to this speaker. Immediately outside the LEFT edge place exactly four equally tall, equally dark vertical narrow bars. No timeline or arrows. Outside speaker is the main girl. The event group INSIDE includes the SAME main girl and the lavender-shirt girl. Include both as actors, so the speaker is part of the group. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"We are mixing the salad at home now.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"私たちは今家でサラダを混ぜています。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"We\", \"predicate\": \"are mixing\", \"place\": \"at home\", \"time\": \"now\", \"P1\": \"the salad\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage.",
+      "generationMethod": "Generated event art using sceneAtlas prompt and composed rectangular balloon with narrator poses."
+    },
+    {
+      "exampleId": "build-mix-2-past",
+      "file": "assets/construction/build-mix-2-past.png",
+      "sceneAtlas": "peel-mix-pour",
+      "cell": 5,
+      "sourceCrop": [
+        427,
+        427,
+        827,
+        827
+      ],
+      "layout": "past",
+      "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Place the NOW narrator(s) at the RIGHT, with body facing right and head looking back LEFT. Large balloon on LEFT contains the past event. No bars or timeline. Outside speaker is the main girl. The event group INSIDE includes the SAME main girl and the lavender-shirt girl. Include both as actors, so the speaker is part of the group. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"We mixed the salad at home yesterday.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"私たちは昨日家でサラダを混ぜました。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"We\", \"predicate\": \"mixed\", \"place\": \"at home\", \"time\": \"yesterday\", \"P1\": \"the salad\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage.",
+      "generationMethod": "Generated event art using sceneAtlas prompt and composed rectangular balloon with narrator poses."
+    },
+    {
+      "exampleId": "build-mix-3",
+      "file": "assets/construction/build-mix-3.png",
+      "sceneAtlas": "peel-mix-pour",
+      "cell": 6,
+      "sourceCrop": [
+        845,
+        427,
+        1245,
+        827
+      ],
+      "layout": "routine",
+      "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Small outside present-day speaker/listener on LEFT; one large balloon on RIGHT illustrates the action concept or state. Tail points to the outside speaker. Use ONE event scene, no repeated mini-panels, no timeline. No calendar. Exact frequency/day will be supplied outside the picture. Outside main girl and blue-hoodie boy talk about the event group. INSIDE actors are a lavender-shirt girl and a green-shirt boy. Neither outside speaker nor listener is in that third-party group. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"They mix the paint at home every day.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"彼らは毎日家で絵の具を混ぜます。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"They\", \"predicate\": \"mix\", \"place\": \"at home\", \"time\": \"every day\", \"P1\": \"the paint\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage.",
+      "generationMethod": "Generated event art using sceneAtlas prompt and composed rectangular balloon with narrator poses."
+    },
+    {
+      "exampleId": "build-mix-3-ongoing",
+      "file": "assets/construction/build-mix-3-ongoing.png",
+      "sceneAtlas": "peel-mix-pour",
+      "cell": 6,
+      "sourceCrop": [
+        845,
+        427,
+        1245,
+        827
+      ],
+      "layout": "ongoing",
+      "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Current action inside the balloon; place the outside speaker directly under its horizontal center, head and eyes lifted slightly UP toward the event. Triangle tail points down to this speaker. Immediately outside the LEFT edge place exactly four equally tall, equally dark vertical narrow bars. No timeline or arrows. Outside main girl and blue-hoodie boy talk about the event group. INSIDE actors are a lavender-shirt girl and a green-shirt boy. Neither outside speaker nor listener is in that third-party group. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"They are mixing the paint at home now.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"彼らは今家で絵の具を混ぜています。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"They\", \"predicate\": \"are mixing\", \"place\": \"at home\", \"time\": \"now\", \"P1\": \"the paint\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage.",
+      "generationMethod": "Generated event art using sceneAtlas prompt and composed rectangular balloon with narrator poses."
+    },
+    {
+      "exampleId": "build-mix-3-past",
+      "file": "assets/construction/build-mix-3-past.png",
+      "sceneAtlas": "peel-mix-pour",
+      "cell": 6,
+      "sourceCrop": [
+        845,
+        427,
+        1245,
+        827
+      ],
+      "layout": "past",
+      "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Place the NOW narrator(s) at the RIGHT, with body facing right and head looking back LEFT. Large balloon on LEFT contains the past event. No bars or timeline. Outside main girl and blue-hoodie boy talk about the event group. INSIDE actors are a lavender-shirt girl and a green-shirt boy. Neither outside speaker nor listener is in that third-party group. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"They mixed the paint at home yesterday.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"彼らは昨日家で絵の具を混ぜました。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"They\", \"predicate\": \"mixed\", \"place\": \"at home\", \"time\": \"yesterday\", \"P1\": \"the paint\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage.",
+      "generationMethod": "Generated event art using sceneAtlas prompt and composed rectangular balloon with narrator poses."
+    },
+    {
+      "exampleId": "build-pour-1",
+      "file": "assets/construction/build-pour-1.png",
+      "sceneAtlas": "peel-mix-pour",
+      "cell": 7,
+      "sourceCrop": [
+        9,
+        845,
+        409,
+        1245
+      ],
+      "layout": "routine",
+      "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Small outside present-day speaker/listener on LEFT; one large balloon on RIGHT illustrates the action concept or state. Tail points to the outside speaker. Use ONE event scene, no repeated mini-panels, no timeline. No calendar. Exact frequency/day will be supplied outside the picture. Outside narrator is the main girl; the ONLY event actor inside the balloon is the SAME girl, identical clothes/hairclip. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"I pour water into a cup every day.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"私は毎日コップに水をそそぎます。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"I\", \"predicate\": \"pour\", \"place\": \"into a cup\", \"time\": \"every day\", \"P1\": \"water\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage.",
+      "generationMethod": "Generated event art using sceneAtlas prompt and composed rectangular balloon with narrator poses."
+    },
+    {
+      "exampleId": "build-pour-1-ongoing",
+      "file": "assets/construction/build-pour-1-ongoing.png",
+      "sceneAtlas": "peel-mix-pour",
+      "cell": 7,
+      "sourceCrop": [
+        9,
+        845,
+        409,
+        1245
+      ],
+      "layout": "ongoing",
+      "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Current action inside the balloon; place the outside speaker directly under its horizontal center, head and eyes lifted slightly UP toward the event. Triangle tail points down to this speaker. Immediately outside the LEFT edge place exactly four equally tall, equally dark vertical narrow bars. No timeline or arrows. Outside narrator is the main girl; the ONLY event actor inside the balloon is the SAME girl, identical clothes/hairclip. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"I am pouring water into a cup now.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"私は今コップに水をそそいでいます。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"I\", \"predicate\": \"am pouring\", \"place\": \"into a cup\", \"time\": \"now\", \"P1\": \"water\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage.",
+      "generationMethod": "Generated event art using sceneAtlas prompt and composed rectangular balloon with narrator poses."
+    },
+    {
+      "exampleId": "build-pour-1-past",
+      "file": "assets/construction/build-pour-1-past.png",
+      "sceneAtlas": "peel-mix-pour",
+      "cell": 7,
+      "sourceCrop": [
+        9,
+        845,
+        409,
+        1245
+      ],
+      "layout": "past",
+      "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Place the NOW narrator(s) at the RIGHT, with body facing right and head looking back LEFT. Large balloon on LEFT contains the past event. No bars or timeline. Outside narrator is the main girl; the ONLY event actor inside the balloon is the SAME girl, identical clothes/hairclip. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"I poured water into a cup yesterday.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"私は昨日コップに水をそそぎました。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"I\", \"predicate\": \"poured\", \"place\": \"into a cup\", \"time\": \"yesterday\", \"P1\": \"water\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage.",
+      "generationMethod": "Generated event art using sceneAtlas prompt and composed rectangular balloon with narrator poses."
+    },
+    {
+      "exampleId": "build-pour-2",
+      "file": "assets/construction/build-pour-2.png",
+      "sceneAtlas": "peel-mix-pour",
+      "cell": 8,
+      "sourceCrop": [
+        427,
+        845,
+        827,
+        1245
+      ],
+      "layout": "routine",
+      "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Small outside present-day speaker/listener on LEFT; one large balloon on RIGHT illustrates the action concept or state. Tail points to the outside speaker. Use ONE event scene, no repeated mini-panels, no timeline. No calendar. Exact frequency/day will be supplied outside the picture. EXACTLY TWO outside figures: short-brown-haired blue-hoodie BOY speaking and the main GIRL listening, direct eye contact. Tail points to BOY MOUTH, never girl. INSIDE: ONLY ONE actor, the SAME listener GIRL, not the speaker. No companions inside. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"You pour milk into a cup every day.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"あなたは毎日コップに牛乳をそそぎます。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"You\", \"predicate\": \"pour\", \"place\": \"into a cup\", \"time\": \"every day\", \"P1\": \"milk\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage.",
+      "generationMethod": "Generated event art using sceneAtlas prompt and composed rectangular balloon with narrator poses."
+    },
+    {
+      "exampleId": "build-pour-2-ongoing",
+      "file": "assets/construction/build-pour-2-ongoing.png",
+      "sceneAtlas": "peel-mix-pour",
+      "cell": 8,
+      "sourceCrop": [
+        427,
+        845,
+        827,
+        1245
+      ],
+      "layout": "ongoing",
+      "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Current action inside the balloon; place the outside speaker directly under its horizontal center, head and eyes lifted slightly UP toward the event. Triangle tail points down to this speaker. Immediately outside the LEFT edge place exactly four equally tall, equally dark vertical narrow bars. No timeline or arrows. EXACTLY TWO outside figures: short-brown-haired blue-hoodie BOY speaking and the main GIRL listening, direct eye contact. Tail points to BOY MOUTH, never girl. INSIDE: ONLY ONE actor, the SAME listener GIRL, not the speaker. No companions inside. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"You are pouring milk into a cup now.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"あなたは今コップに牛乳をそそいでいます。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"You\", \"predicate\": \"are pouring\", \"place\": \"into a cup\", \"time\": \"now\", \"P1\": \"milk\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage.",
+      "generationMethod": "Generated event art using sceneAtlas prompt and composed rectangular balloon with narrator poses."
+    },
+    {
+      "exampleId": "build-pour-2-past",
+      "file": "assets/construction/build-pour-2-past.png",
+      "sceneAtlas": "peel-mix-pour",
+      "cell": 8,
+      "sourceCrop": [
+        427,
+        845,
+        827,
+        1245
+      ],
+      "layout": "past",
+      "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Place the NOW narrator(s) at the RIGHT, with body facing right and head looking back LEFT. Large balloon on LEFT contains the past event. No bars or timeline. EXACTLY TWO outside figures: short-brown-haired blue-hoodie BOY speaking and the main GIRL listening, direct eye contact. Tail points to BOY MOUTH, never girl. INSIDE: ONLY ONE actor, the SAME listener GIRL, not the speaker. No companions inside. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"You poured milk into a cup yesterday.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"あなたは昨日コップに牛乳をそそぎました。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"You\", \"predicate\": \"poured\", \"place\": \"into a cup\", \"time\": \"yesterday\", \"P1\": \"milk\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage.",
+      "generationMethod": "Generated event art using sceneAtlas prompt and composed rectangular balloon with narrator poses."
+    },
+    {
+      "exampleId": "build-pour-3",
+      "file": "assets/construction/build-pour-3.png",
+      "sceneAtlas": "peel-mix-pour",
+      "cell": 9,
+      "sourceCrop": [
+        845,
+        845,
+        1245,
+        1245
+      ],
+      "layout": "routine",
+      "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Small outside present-day speaker/listener on LEFT; one large balloon on RIGHT illustrates the action concept or state. Tail points to the outside speaker. Use ONE event scene, no repeated mini-panels, no timeline. No calendar. Exact frequency/day will be supplied outside the picture. Outside speaker is the main girl addressing a dark-ponytail lavender-shirt girl. They look/gesture towards a distinct THIRD-PARTY short-brown-haired blue-hoodie BOY, the ONLY actor inside the scene. He is neither the speaker nor the listener. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"He pours juice into a cup every day.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"彼は毎日コップにジュースをそそぎます。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"He\", \"predicate\": \"pours\", \"place\": \"into a cup\", \"time\": \"every day\", \"P1\": \"juice\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage.",
+      "generationMethod": "Generated event art using sceneAtlas prompt and composed rectangular balloon with narrator poses."
+    },
+    {
+      "exampleId": "build-pour-3-ongoing",
+      "file": "assets/construction/build-pour-3-ongoing.png",
+      "sceneAtlas": "peel-mix-pour",
+      "cell": 9,
+      "sourceCrop": [
+        845,
+        845,
+        1245,
+        1245
+      ],
+      "layout": "ongoing",
+      "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Current action inside the balloon; place the outside speaker directly under its horizontal center, head and eyes lifted slightly UP toward the event. Triangle tail points down to this speaker. Immediately outside the LEFT edge place exactly four equally tall, equally dark vertical narrow bars. No timeline or arrows. Outside speaker is the main girl addressing a dark-ponytail lavender-shirt girl. They look/gesture towards a distinct THIRD-PARTY short-brown-haired blue-hoodie BOY, the ONLY actor inside the scene. He is neither the speaker nor the listener. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"He is pouring juice into a cup now.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"彼は今コップにジュースをそそいでいます。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"He\", \"predicate\": \"is pouring\", \"place\": \"into a cup\", \"time\": \"now\", \"P1\": \"juice\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage.",
+      "generationMethod": "Generated event art using sceneAtlas prompt and composed rectangular balloon with narrator poses."
+    },
+    {
+      "exampleId": "build-pour-3-past",
+      "file": "assets/construction/build-pour-3-past.png",
+      "sceneAtlas": "peel-mix-pour",
+      "cell": 9,
+      "sourceCrop": [
+        845,
+        845,
+        1245,
+        1245
+      ],
+      "layout": "past",
+      "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Place the NOW narrator(s) at the RIGHT, with body facing right and head looking back LEFT. Large balloon on LEFT contains the past event. No bars or timeline. Outside speaker is the main girl addressing a dark-ponytail lavender-shirt girl. They look/gesture towards a distinct THIRD-PARTY short-brown-haired blue-hoodie BOY, the ONLY actor inside the scene. He is neither the speaker nor the listener. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"He poured juice into a cup yesterday.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"彼は昨日コップにジュースをそそぎました。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"He\", \"predicate\": \"poured\", \"place\": \"into a cup\", \"time\": \"yesterday\", \"P1\": \"juice\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage.",
+      "generationMethod": "Generated event art using sceneAtlas prompt and composed rectangular balloon with narrator poses."
     }
   ],
   "sceneAtlases": {
@@ -2108,6 +2918,14 @@
     "boyposes": {
       "file": "assets/character-materials/original-scenes/boyposes.png",
       "prompt": "One single LANDSCAPE twin-pose character sprite sheet on a genuine transparent background. Exactly two equal independent square cells side by side for precise cropping. Each cell contains a full unobscured WAIST-UP portrait of the same 10-year-old Japanese storybook boy, tousled chestnut-brown hair and royal blue drawstring hoodie. Warm ink and colored pencil watercolor, big expressive brown eyes, gentle children's book anime. Each entire bust completely contained in its half with clean transparent space around all sides and between, no white background, no ground or shadows, no type, props or bubbles. LEFT CELL: boy faces almost straight forward, neck upright, head gently tilted BACK and gaze lifted UP at a scene just above his head, open smiling mouth speaking, one palm raised. RIGHT CELL: boy listening quietly with closed mouth, simple attentive smile, head turned LEFT toward a speaker to his left, unobtrusive arms relaxed, no raised hands. Both figures large and centered within their half. Consistent size waist up and cute proportions."
+    },
+    "bake-taste-cut": {
+      "file": "assets/character-materials/original-scenes/bake-taste-cut.png",
+      "prompt": "Use case: illustration-story. Generate ONE square scene atlas for an elementary English workbook. EXACTLY 3 columns and 3 rows, square cells, evenly aligned to thirds, independent pictures as listed. Inside each cell, leave a slim safe margin; center characters and key props so complete action stays inside. Warm watercolor and colored-pencil Japanese picture-book illustration, tasteful home interiors, clean hand-drawn line art. No words, letters, labels, captions, numbers, speech bubbles, narrator, or watermarks. Only draw actors specified. R = girl with chestnut bob, yellow star clip, coral cardigan and teal skirt. L = girl in lavender shirt with dark ponytail. B = tousled brown-haired boy in blue hoodie. G = dark-haired boy in green sweater. Mom = adult woman with apron. Make the referenced action and exact object instantly clear; people have natural hands and secure grips. Follow row-major cell instructions. The IDs are instructions, no text to render.\n1. L and G baking banana cake with Mom at home. Exactly 3 people. L places a small rectangular banana loaf pan on the oven rack using mitts, G assists beside Mom; visible bunch of bananas and a slice of banana cake for a clear clue.\n2. R and Mom baking round chocolate chip cookies at home. Tray of small round cookies at the open oven, R in mitts. Only those two.\n3. R and Mom baking a round scored yeast bread loaf at home. Visible distinct round crusty artisan loaf on oven tray held with mitts and a second risen dough ball; not cake, no cookies.\n4. B tasting vegetable soup at home. Bring a spoonful from a clear brothy soup bowl with vegetable pieces to his lips, steam.\n5. L tasting Japanese curry at home. Spoon lifted to lips from a plate divided into white rice and thick dark Japanese curry with carrots.\n6. B tasting tomato sauce at home. Tiny spoon to lips, small glass bowl of thick deep-red tomato sauce and a couple of tomatoes on counter, no pasta or other dish.\n7. R and L cutting a red apple at home. R safely slicing on a board, L places finished apple wedges on a plate beside her. Only the two girls.\n8. L and G sitting together cutting colored paper with blunt craft scissors, both have scissors and colored sheets and geometric offcuts. At home.\n9. R alone slicing a loaf of bread at home, knife clearly touches a baked loaf on a wooden chopping board, visible uniform slices."
+    },
+    "peel-mix-pour": {
+      "file": "assets/character-materials/original-scenes/peel-mix-pour.png",
+      "prompt": "Use case: illustration-story. Generate ONE square scene atlas for an elementary English workbook. EXACTLY 3 columns and 3 rows, square cells, evenly aligned to thirds, independent pictures as listed. Inside each cell, leave a slim safe margin; center characters and key props so complete action stays inside. Warm watercolor and colored-pencil Japanese picture-book illustration, tasteful home interiors, clean hand-drawn line art. No words, letters, labels, captions, numbers, speech bubbles, narrator, or watermarks. Only draw actors specified. R = girl with chestnut bob, yellow star clip, coral cardigan and teal skirt. L = girl in lavender shirt with dark ponytail. B = tousled brown-haired boy in blue hoodie. G = dark-haired boy in green sweater. Mom = adult woman with apron. Make the referenced action and exact object instantly clear; people have natural hands and secure grips. Follow row-major cell instructions. The IDs are instructions, no text to render.\n1. R peeling a banana by hand at home. She pulls one hanging yellow skin strip down from a distinct banana with exposed pale flesh. She is not eating.\n2. B peeling an orange by hand at home; part of the peel in his hand and white pith visibly exposed; round orange, curling orange peel, not eating.\n3. L peeling a brown potato with a Y-shaped kitchen peeler at home, with strip of thin peel falling, potatoes and common peels on the cutting board. No knife.\n4. B whisking beaten yellow eggs in a clear bowl at home, whisk in motion, two broken eggshells next to bowl.\n5. R and L mixing a large glass bowl of green salad at home. R and L each use one serving utensil to toss the lettuce, tomato and cucumber. Both girls.\n6. L and G mixing two distinct colors of paint at home using brushes in a flat palette, blue and yellow meeting to make green. Art table and paper.\n7. R pours clear colorless water from a transparent glass pitcher into a small empty cup; thin visible continuous water stream reaches INSIDE cup, kitchen table.\n8. R pours opaque WHITE MILK from a plain carton with a small cow picture into a small cup; clearly visible WHITE stream reaches INSIDE cup, kitchen table.\n9. B pours orange-colored juice from glass pitcher INTO a small cup, obvious continuous orange stream and orange fruit nearby, kitchen table."
     }
   }
 }
