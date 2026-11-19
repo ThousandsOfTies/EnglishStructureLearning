@@ -56,3 +56,7 @@ sleep・wake・rest・stay・live・move・stop・start・wait・eat・drink・c
 ## 台所と工作の場面を追加（2026-11-19）
 
 bake・taste・cut・peel・mix・pour の6テーマを新しい構図で54文分追加。元の898文のうち256文が作画済み。「時制の絵くらべ」40文を含むアプリ全体では296/938文。次の未作画テーマは wash。
+
+## 家と学校の場面を追加（2026-11-19）
+
+wash・read・write・draw・color・count・study・learn・practice の9テーマを新しい構図で81文分追加。元の898文のうち337文が作画済み。「時制の絵くらべ」40文を含むアプリ全体では377/938文。次の未作画テーマは spell。
