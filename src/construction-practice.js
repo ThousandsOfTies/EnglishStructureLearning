@@ -165,11 +165,6 @@ if (typeof document !== 'undefined') {
     $('artworkProgress').textContent = `絵のある例文 ${Object.keys(ILLUSTRATIONS).length} / ${DATA.examples.length}文`;
     $('filterCount').textContent = illustratedOnly ? `${visible.length}文を表示 ／ 絵のある${illustratedCount}文` : `${visible.length}文を表示 ／ 全${DATA.examples.length}文`;
     $('lessons').innerHTML = visible.length ? visible.map(q => `<button data-lesson="${esc(q.id)}" aria-current="${state.current === q.id}">${state.completed.includes(q.id) ? '✓ ' : ''}${esc(q.ja)}</button>`).join('') : '<p class="muted">見つかりません。テーマや検索することばを変えてみよう。</p>';
-    const playable = state.level === 1 && state.group === 'tense-pictures' ? DATA.examples.filter(q => q.group === state.group)
-      : illustratedOnly ? DATA.examples.filter(q => q.level === state.level && q.image) : DATA.examples;
-    const completed = playable.filter(q => state.completed.includes(q.id)).length;
-    $('progressText').textContent = `できた ${completed} / ${playable.length}`;
-    $('progressBar').max = playable.length; $('progressBar').value = completed;
     const index = Construction.navigationIndex(visible, getQ());
     $('previous').disabled = index <= 0; $('next').disabled = index < 0 || index >= visible.length - 1;
   }
