@@ -97,7 +97,6 @@ if (typeof document !== 'undefined') {
   const esc = value => String(value).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   const labels = { S: '主語', predicate: '述語', P1: 'P1', P2: 'P2', place: '場所', time: '時' };
   const hints = { S: 'だれ・何が？', predicate: 'どうする・どんな状態？', P1: '述語につなぐ一つ目', P2: '述語につなぐ二つ目', place: 'どこで？', time: 'いつ？' };
-  const meaningLabel = { routine: '基本：いつもの動き', state: '基本：状態', ongoing: '今している', past: '過去の場面', experience: 'したことがある' };
   let saved = null, savedVoice = '', storageOK = true;
   try { saved = JSON.parse(localStorage.getItem(KEY)); savedVoice = JSON.parse(localStorage.getItem(VOICE_KEY))?.voiceURI || ''; }
   catch (error) { if (error.name !== 'SyntaxError') storageOK = false; }
@@ -188,8 +187,6 @@ if (typeof document !== 'undefined') {
     $('selectMode').setAttribute('aria-pressed', usingLists());
     $('pictureScene').hidden = !usingLists() && !(q.image && (!basic || q.group === 'tense-pictures'));
     $('pool').hidden = $('selectedStatus').hidden = usingLists();
-    const family = basic && q.contrastFamily ? DATA.examples.filter(item => item.contrastFamily === q.contrastFamily && (!illustratedOnly || item.image)) : [];
-    $('contrasts').innerHTML = family.length > 1 ? family.map(item => `<button data-lesson="${esc(item.id)}" aria-pressed="${item.id === q.id}">${esc(meaningLabel[item.meaning])}</button>`).join('') : '';
     $('selectedStatus').textContent = selected === null ? 'カードを押してから欄の見出しを押す方法でも置けます。' : `「${cards[selected].text}」を、どの欄に置く？（同じカードを押すと元に戻せます）`;
     const japaneseOrder = ['S', 'time', 'place', 'P1', 'P2', 'predicate'];
     const order = basic ? japaneseOrder.map(role => cards.findIndex(card => card.role === role)).filter(i => i >= 0) : Construction.shuffledIndices(q);
