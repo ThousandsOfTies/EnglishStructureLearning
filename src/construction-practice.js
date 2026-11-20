@@ -154,6 +154,7 @@ if (typeof document !== 'undefined') {
     if (!DATA.examples.some(q => q.id === id)) return;
     stopSpeech(); state.current = id; selected = null; feedback = null; passed = false; wrong = [];
     save(); render();
+    $('practicePane').scrollTop = 0;
   }
   function synchronizeFilters() {
     for (const checkbox of $('levelChoices').querySelectorAll('input')) checkbox.checked = state.levels.includes(Number(checkbox.value));
