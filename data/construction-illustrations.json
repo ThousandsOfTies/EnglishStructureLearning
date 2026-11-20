@@ -23,7 +23,7 @@
     "build-give-1": {
       "file": "assets/construction/build-give-1-rect.png",
       "alt": "左側の話し手が右の場面を紹介する。私たちは毎日家で弟にシールをあげます。",
-      "clue": "時間のヒント：毎日。2人は姉妹、男の子は2人の弟です。",
+      "clue": "カレンダーのチェックを見てみよう。2人は姉妹、男の子は2人の弟です。",
       "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-go-2": {
@@ -65,7 +65,7 @@
     "build-come-1": {
       "file": "assets/construction/build-come-1-rect.png",
       "alt": "左側の話し手が右の場面を紹介する。彼女は毎日ここに来ます。",
-      "clue": "時間のヒント：毎日。話し手のいる場所へ近づいてきます。",
+      "clue": "カレンダーのチェックを見てみよう。話し手のいる場所へ近づいてきます。",
       "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-come-1-ongoing": {
@@ -83,7 +83,7 @@
     "build-come-2": {
       "file": "assets/construction/build-come-2-rect.png",
       "alt": "左側の話し手が右の場面を紹介する。彼は毎日この部屋に来ます。",
-      "clue": "時間のヒント：毎日。話し手のいる場所へ近づいてきます。",
+      "clue": "カレンダーのチェックを見てみよう。話し手のいる場所へ近づいてきます。",
       "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-come-2-ongoing": {
@@ -101,7 +101,7 @@
     "build-come-3": {
       "file": "assets/construction/build-come-3-rect.png",
       "alt": "左側の話し手が右の場面を紹介する。私たちは毎日公園に来ます。",
-      "clue": "時間のヒント：毎日。話し手のいる場所へ近づいてきます。",
+      "clue": "カレンダーのチェックを見てみよう。話し手のいる場所へ近づいてきます。",
       "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-come-3-past": {
@@ -119,7 +119,7 @@
     "build-walk-1": {
       "file": "assets/construction/build-walk-1-rect.png",
       "alt": "左側の話し手が右の場面を紹介する。彼らは毎日川のそばを歩きます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-walk-1-ongoing": {
@@ -137,7 +137,7 @@
     "build-walk-2": {
       "file": "assets/construction/build-walk-2-rect.png",
       "alt": "左側の話し手が右の場面を紹介する。私は毎日学校まで歩きます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-walk-2-ongoing": {
@@ -155,7 +155,7 @@
     "build-walk-3": {
       "file": "assets/construction/build-walk-3-rect.png",
       "alt": "左側の話し手が右の場面を紹介する。あなたは毎日森の中を歩きます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-walk-3-ongoing": {
@@ -173,7 +173,7 @@
     "build-run-1": {
       "file": "assets/construction/build-run-1-rect.png",
       "alt": "左側の話し手が右の場面を紹介する。彼は毎日公園で走ります。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-run-1-ongoing": {
@@ -191,7 +191,7 @@
     "build-run-2": {
       "file": "assets/construction/build-run-2-rect.png",
       "alt": "左側の話し手が右の場面を紹介する。彼女は毎日校庭で走ります。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-run-2-ongoing": {
@@ -209,7 +209,7 @@
     "build-run-3": {
       "file": "assets/construction/build-run-3-rect.png",
       "alt": "左側の話し手が右の場面を紹介する。それは毎日浜辺で走ります。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-run-3-ongoing": {
@@ -227,7 +227,7 @@
     "build-jump-1": {
       "file": "assets/construction/build-jump-1-rect.png",
       "alt": "左側の話し手が右の場面を紹介する。私たちは毎日公園で小さな水たまりをとびこえます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-jump-1-ongoing": {
@@ -257,7 +257,7 @@
     "build-jump-3": {
       "file": "assets/construction/build-jump-3-rect.png",
       "alt": "左側の話し手が右の場面を紹介する。私は毎日公園で線をとびこえます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-jump-3-ongoing": {
@@ -275,13 +275,13 @@
     "build-jump-2": {
       "file": "assets/construction/build-jump-2-rect.png",
       "alt": "左側の話し手が右の場面を紹介する。彼らは毎日公園でロープをとびこえます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-swim-1": {
       "file": "assets/construction/build-swim-1-rect.png",
       "alt": "左側の話し手が右の場面を紹介する。あなたは毎日プールで泳ぎます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-swim-1-ongoing": {
@@ -299,7 +299,7 @@
     "build-swim-2": {
       "file": "assets/construction/build-swim-2-rect.png",
       "alt": "左側の話し手が右の場面を紹介する。彼は毎日海で泳ぎます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-swim-2-ongoing": {
@@ -317,7 +317,7 @@
     "build-swim-3": {
       "file": "assets/construction/build-swim-3-rect.png",
       "alt": "左側の話し手が右の場面を紹介する。彼女は毎日湖で泳ぎます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-swim-3-ongoing": {
@@ -347,7 +347,7 @@
     "build-fly-1": {
       "file": "assets/construction/build-fly-1-rect.png",
       "alt": "左側の話し手が右の場面を紹介する。彼は毎日公園で赤いたこを飛ばします。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-fly-2-ongoing": {
@@ -365,7 +365,7 @@
     "build-fly-2": {
       "file": "assets/construction/build-fly-2-rect.png",
       "alt": "左側の話し手が右の場面を紹介する。私たちは毎日公園で青いたこを飛ばします。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-fly-3-ongoing": {
@@ -383,7 +383,7 @@
     "build-fly-3": {
       "file": "assets/construction/build-fly-3-rect.png",
       "alt": "左側の話し手が右の場面を紹介する。彼らは毎日公園で紙飛行機を飛ばします。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-ride-1-ongoing": {
@@ -443,7 +443,7 @@
     "build-climb-1": {
       "file": "assets/construction/build-climb-1-rect.png",
       "alt": "左側の話し手が右の場面を紹介する。彼女は毎日公園で小さな丘に登ります。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-climb-1-ongoing": {
@@ -461,7 +461,7 @@
     "build-climb-2": {
       "file": "assets/construction/build-climb-2-rect.png",
       "alt": "左側の話し手が右の場面を紹介する。彼は毎日公園で木に登ります。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-climb-2-ongoing": {
@@ -479,7 +479,7 @@
     "build-climb-3": {
       "file": "assets/construction/build-climb-3-rect.png",
       "alt": "左側の話し手が右の場面を紹介する。私たちは毎日公園ではしごに登ります。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-climb-3-ongoing": {
@@ -497,7 +497,7 @@
     "build-sit-1": {
       "file": "assets/construction/build-sit-1-rect.png",
       "alt": "左側の話し手が右の場面を紹介する。彼らは毎日ベンチに座ります。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-sit-1-ongoing": {
@@ -527,7 +527,7 @@
     "build-sit-3": {
       "file": "assets/construction/build-sit-3-rect.png",
       "alt": "左側の話し手が右の場面を紹介する。あなたは毎日芝生に座ります。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-sit-3-ongoing": {
@@ -545,7 +545,7 @@
     "build-stand-1": {
       "file": "assets/construction/build-stand-1-rect.png",
       "alt": "左側の話し手が右の場面を紹介する。彼は毎日ドアのそばに立ちます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-stand-1-ongoing": {
@@ -563,7 +563,7 @@
     "build-stand-2": {
       "file": "assets/construction/build-stand-2-rect.png",
       "alt": "左側の話し手が右の場面を紹介する。彼女は毎日木の下に立ちます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-stand-2-ongoing": {
@@ -581,7 +581,7 @@
     "build-stand-3": {
       "file": "assets/construction/build-stand-3-rect.png",
       "alt": "左側の話し手が右の場面を紹介する。彼は毎日先生のとなりに立ちます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-stand-3-ongoing": {
@@ -599,7 +599,7 @@
     "build-sit-2": {
       "file": "assets/construction/build-sit-2-rect.png",
       "alt": "左側の話し手が右の場面を紹介する。私は毎日いすに座ります。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "tense-bicycle": {
@@ -845,7 +845,7 @@
     "build-sleep-1": {
       "file": "assets/construction/build-sleep-1.png",
       "alt": "左側の話し手が右の場面を紹介する。私たちは毎日ベッドでねます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。"
     },
     "build-sleep-1-ongoing": {
@@ -863,7 +863,7 @@
     "build-sleep-2": {
       "file": "assets/construction/build-sleep-2.png",
       "alt": "左側の話し手が右の場面を紹介する。彼らは毎日テントでねます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。"
     },
     "build-sleep-2-ongoing": {
@@ -881,7 +881,7 @@
     "build-sleep-3": {
       "file": "assets/construction/build-sleep-3.png",
       "alt": "左側の話し手が右の場面を紹介する。私は毎日ふとんでねます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。"
     },
     "build-sleep-3-ongoing": {
@@ -899,7 +899,7 @@
     "build-wake-1": {
       "file": "assets/construction/build-wake-1.png",
       "alt": "左側の話し手が右の場面を紹介する。あなたは毎日家で起きます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。"
     },
     "build-wake-1-ongoing": {
@@ -917,7 +917,7 @@
     "build-wake-2": {
       "file": "assets/construction/build-wake-2.png",
       "alt": "左側の話し手が右の場面を紹介する。彼は毎日家で起きます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。"
     },
     "build-wake-2-ongoing": {
@@ -935,7 +935,7 @@
     "build-wake-3": {
       "file": "assets/construction/build-wake-3.png",
       "alt": "左側の話し手が右の場面を紹介する。彼女は毎日家で起きます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。"
     },
     "build-wake-3-ongoing": {
@@ -953,7 +953,7 @@
     "build-rest-1": {
       "file": "assets/construction/build-rest-1.png",
       "alt": "左側の話し手が右の場面を紹介する。彼は毎日木の下で休みます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。"
     },
     "build-rest-1-ongoing": {
@@ -971,7 +971,7 @@
     "build-rest-2": {
       "file": "assets/construction/build-rest-2.png",
       "alt": "左側の話し手が右の場面を紹介する。私たちは毎日ソファで休みます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。"
     },
     "build-rest-2-ongoing": {
@@ -989,7 +989,7 @@
     "build-rest-3": {
       "file": "assets/construction/build-rest-3.png",
       "alt": "左側の話し手が右の場面を紹介する。彼らは毎日ベンチで休みます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。"
     },
     "build-rest-3-ongoing": {
@@ -1079,7 +1079,7 @@
     "build-move-1": {
       "file": "assets/construction/build-move-1.png",
       "alt": "左側の話し手が右の場面を紹介する。彼らは毎日家で箱を動かします。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。"
     },
     "build-move-1-ongoing": {
@@ -1097,7 +1097,7 @@
     "build-move-2": {
       "file": "assets/construction/build-move-2.png",
       "alt": "左側の話し手が右の場面を紹介する。私は毎日家でいすを動かします。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。"
     },
     "build-move-2-ongoing": {
@@ -1115,7 +1115,7 @@
     "build-move-3": {
       "file": "assets/construction/build-move-3.png",
       "alt": "左側の話し手が右の場面を紹介する。あなたは毎日家で小さな机を動かします。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。"
     },
     "build-move-3-ongoing": {
@@ -1133,7 +1133,7 @@
     "build-stop-1": {
       "file": "assets/construction/build-stop-1.png",
       "alt": "左側の話し手が右の場面を紹介する。彼は毎日家でおもちゃの電車を止めます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。"
     },
     "build-stop-1-ongoing": {
@@ -1151,7 +1151,7 @@
     "build-stop-2": {
       "file": "assets/construction/build-stop-2.png",
       "alt": "左側の話し手が右の場面を紹介する。彼女は毎日家で音楽を止めます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。"
     },
     "build-stop-2-ongoing": {
@@ -1169,7 +1169,7 @@
     "build-stop-3": {
       "file": "assets/construction/build-stop-3.png",
       "alt": "左側の話し手が右の場面を紹介する。それは毎日家でタイマーを止めます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。"
     },
     "build-stop-3-ongoing": {
@@ -1187,7 +1187,7 @@
     "build-start-1": {
       "file": "assets/construction/build-start-1.png",
       "alt": "左側の話し手が右の場面を紹介する。私たちは毎日家でゲームを始めます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。"
     },
     "build-start-1-ongoing": {
@@ -1205,7 +1205,7 @@
     "build-start-2": {
       "file": "assets/construction/build-start-2.png",
       "alt": "左側の話し手が右の場面を紹介する。彼らは毎日家で宿題を始めます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。"
     },
     "build-start-2-ongoing": {
@@ -1223,7 +1223,7 @@
     "build-start-3": {
       "file": "assets/construction/build-start-3.png",
       "alt": "左側の話し手が右の場面を紹介する。私は毎日家でパズルを始めます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。"
     },
     "build-start-3-ongoing": {
@@ -1241,7 +1241,7 @@
     "build-wait-1": {
       "file": "assets/construction/build-wait-1.png",
       "alt": "左側の話し手が右の場面を紹介する。あなたは毎日ここでバスを待ちます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。"
     },
     "build-wait-1-ongoing": {
@@ -1259,7 +1259,7 @@
     "build-wait-2": {
       "file": "assets/construction/build-wait-2.png",
       "alt": "左側の話し手が右の場面を紹介する。彼は毎日ここで友だちを待ちます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。"
     },
     "build-wait-2-ongoing": {
@@ -1277,7 +1277,7 @@
     "build-wait-3": {
       "file": "assets/construction/build-wait-3.png",
       "alt": "左側の話し手が右の場面を紹介する。彼女は毎日ここでお母さんを待ちます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。"
     },
     "build-wait-3-ongoing": {
@@ -1295,7 +1295,7 @@
     "build-eat-1": {
       "file": "assets/construction/build-eat-1.png",
       "alt": "左側の話し手が右の場面を紹介する。彼は毎日家でおにぎりを食べます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。"
     },
     "build-eat-1-ongoing": {
@@ -1313,7 +1313,7 @@
     "build-eat-2": {
       "file": "assets/construction/build-eat-2.png",
       "alt": "左側の話し手が右の場面を紹介する。私たちは毎日家でバナナを食べます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。"
     },
     "build-eat-2-ongoing": {
@@ -1331,7 +1331,7 @@
     "build-eat-3": {
       "file": "assets/construction/build-eat-3.png",
       "alt": "左側の話し手が右の場面を紹介する。彼らは毎日家でにんじんを食べます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。"
     },
     "build-eat-3-ongoing": {
@@ -1349,7 +1349,7 @@
     "build-drink-1": {
       "file": "assets/construction/build-drink-1.png",
       "alt": "左側の話し手が右の場面を紹介する。私は毎日家で水を飲みます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。"
     },
     "build-drink-1-ongoing": {
@@ -1367,7 +1367,7 @@
     "build-drink-2": {
       "file": "assets/construction/build-drink-2.png",
       "alt": "左側の話し手が右の場面を紹介する。あなたは毎日家で牛乳を飲みます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。"
     },
     "build-drink-2-ongoing": {
@@ -1385,7 +1385,7 @@
     "build-drink-3": {
       "file": "assets/construction/build-drink-3.png",
       "alt": "左側の話し手が右の場面を紹介する。彼は毎日家でりんごジュースを飲みます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。"
     },
     "build-drink-3-ongoing": {
@@ -1403,7 +1403,7 @@
     "build-cook-1": {
       "file": "assets/construction/build-cook-1.png",
       "alt": "左側の話し手が右の場面を紹介する。彼女は毎日家でお父さんとカレーを作ります。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。"
     },
     "build-cook-1-ongoing": {
@@ -1421,7 +1421,7 @@
     "build-cook-2": {
       "file": "assets/construction/build-cook-2.png",
       "alt": "左側の話し手が右の場面を紹介する。彼は毎日家でお父さんとスープを作ります。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。"
     },
     "build-cook-2-ongoing": {
@@ -1439,7 +1439,7 @@
     "build-cook-3": {
       "file": "assets/construction/build-cook-3.png",
       "alt": "左側の話し手が右の場面を紹介する。私たちは毎日家でお父さんとごはんを作ります。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。"
     },
     "build-cook-3-ongoing": {
@@ -1457,7 +1457,7 @@
     "build-bake-1": {
       "file": "assets/construction/build-bake-1.png",
       "alt": "左側の話し手が右の場面を紹介する。彼らは毎日家でお母さんとバナナケーキを焼きます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-bake-1-ongoing": {
@@ -1475,7 +1475,7 @@
     "build-bake-2": {
       "file": "assets/construction/build-bake-2.png",
       "alt": "左側の話し手が右の場面を紹介する。私は毎日家でお母さんとクッキーを焼きます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-bake-2-ongoing": {
@@ -1493,7 +1493,7 @@
     "build-bake-3": {
       "file": "assets/construction/build-bake-3.png",
       "alt": "左側の話し手が右の場面を紹介する。あなたは毎日家でお母さんとパンを焼きます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-bake-3-ongoing": {
@@ -1511,7 +1511,7 @@
     "build-taste-1": {
       "file": "assets/construction/build-taste-1.png",
       "alt": "左側の話し手が右の場面を紹介する。彼は毎日家でスープを味見します。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-taste-1-ongoing": {
@@ -1529,7 +1529,7 @@
     "build-taste-2": {
       "file": "assets/construction/build-taste-2.png",
       "alt": "左側の話し手が右の場面を紹介する。彼女は毎日家でカレーを味見します。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-taste-2-ongoing": {
@@ -1547,7 +1547,7 @@
     "build-taste-3": {
       "file": "assets/construction/build-taste-3.png",
       "alt": "左側の話し手が右の場面を紹介する。彼は毎日家でソースを味見します。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-taste-3-ongoing": {
@@ -1565,7 +1565,7 @@
     "build-cut-1": {
       "file": "assets/construction/build-cut-1.png",
       "alt": "左側の話し手が右の場面を紹介する。私たちは毎日家でりんごを切ります。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-cut-1-ongoing": {
@@ -1583,7 +1583,7 @@
     "build-cut-2": {
       "file": "assets/construction/build-cut-2.png",
       "alt": "左側の話し手が右の場面を紹介する。彼らは毎日家で紙を切ります。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-cut-2-ongoing": {
@@ -1601,7 +1601,7 @@
     "build-cut-3": {
       "file": "assets/construction/build-cut-3.png",
       "alt": "左側の話し手が右の場面を紹介する。私は毎日家でパンを切ります。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-cut-3-ongoing": {
@@ -1619,7 +1619,7 @@
     "build-peel-1": {
       "file": "assets/construction/build-peel-1.png",
       "alt": "左側の話し手が右の場面を紹介する。あなたは毎日家でバナナの皮をむきます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-peel-1-ongoing": {
@@ -1637,7 +1637,7 @@
     "build-peel-2": {
       "file": "assets/construction/build-peel-2.png",
       "alt": "左側の話し手が右の場面を紹介する。彼は毎日家でみかんの皮をむきます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-peel-2-ongoing": {
@@ -1655,7 +1655,7 @@
     "build-peel-3": {
       "file": "assets/construction/build-peel-3.png",
       "alt": "左側の話し手が右の場面を紹介する。彼女は毎日家でじゃがいもの皮をむきます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-peel-3-ongoing": {
@@ -1673,7 +1673,7 @@
     "build-mix-1": {
       "file": "assets/construction/build-mix-1.png",
       "alt": "左側の話し手が右の場面を紹介する。彼は毎日家で卵を混ぜます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-mix-1-ongoing": {
@@ -1691,7 +1691,7 @@
     "build-mix-2": {
       "file": "assets/construction/build-mix-2.png",
       "alt": "左側の話し手が右の場面を紹介する。私たちは毎日家でサラダを混ぜます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-mix-2-ongoing": {
@@ -1709,7 +1709,7 @@
     "build-mix-3": {
       "file": "assets/construction/build-mix-3.png",
       "alt": "左側の話し手が右の場面を紹介する。彼らは毎日家で絵の具を混ぜます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-mix-3-ongoing": {
@@ -1727,7 +1727,7 @@
     "build-pour-1": {
       "file": "assets/construction/build-pour-1.png",
       "alt": "左側の話し手が右の場面を紹介する。私は毎日コップに水をそそぎます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-pour-1-ongoing": {
@@ -1745,7 +1745,7 @@
     "build-pour-2": {
       "file": "assets/construction/build-pour-2.png",
       "alt": "左側の話し手が右の場面を紹介する。あなたは毎日コップに牛乳をそそぎます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-pour-2-ongoing": {
@@ -1763,7 +1763,7 @@
     "build-pour-3": {
       "file": "assets/construction/build-pour-3.png",
       "alt": "左側の話し手が右の場面を紹介する。彼は毎日コップにジュースをそそぎます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-pour-3-ongoing": {
@@ -1781,7 +1781,7 @@
     "build-wash-1": {
       "file": "assets/construction/build-wash-1.png",
       "alt": "左側の話し手が右の場面を紹介する。彼女は毎日家で手を洗います。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-wash-1-ongoing": {
@@ -1799,7 +1799,7 @@
     "build-wash-2": {
       "file": "assets/construction/build-wash-2.png",
       "alt": "左側の話し手が右の場面を紹介する。彼は毎日家でりんごを洗います。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-wash-2-ongoing": {
@@ -1817,7 +1817,7 @@
     "build-wash-3": {
       "file": "assets/construction/build-wash-3.png",
       "alt": "左側の話し手が右の場面を紹介する。私たちは毎日家でコップを洗います。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-wash-3-ongoing": {
@@ -1835,7 +1835,7 @@
     "build-read-1": {
       "file": "assets/construction/build-read-1.png",
       "alt": "左側の話し手が右の場面を紹介する。彼らは毎日家で動物の本を読みます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-read-1-ongoing": {
@@ -1853,7 +1853,7 @@
     "build-read-2": {
       "file": "assets/construction/build-read-2.png",
       "alt": "左側の話し手が右の場面を紹介する。私は毎日家で短いお話を読みます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-read-2-ongoing": {
@@ -1871,7 +1871,7 @@
     "build-read-3": {
       "file": "assets/construction/build-read-3.png",
       "alt": "左側の話し手が右の場面を紹介する。あなたは毎日家でまんがを読みます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-read-3-ongoing": {
@@ -1889,7 +1889,7 @@
     "build-write-1": {
       "file": "assets/construction/build-write-1.png",
       "alt": "左側の話し手が右の場面を紹介する。彼は毎日学校で名前を書きます。",
-      "clue": "時間のヒント：毎日。机の紙は自分の名札です。",
+      "clue": "カレンダーのチェックを見てみよう。机の紙は自分の名札です。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-write-1-ongoing": {
@@ -1907,7 +1907,7 @@
     "build-write-2": {
       "file": "assets/construction/build-write-2.png",
       "alt": "左側の話し手が右の場面を紹介する。彼女は毎日学校で短い手紙を書きます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-write-2-ongoing": {
@@ -1925,7 +1925,7 @@
     "build-write-3": {
       "file": "assets/construction/build-write-3.png",
       "alt": "左側の話し手が右の場面を紹介する。それは毎日学校で英語の単語を書きます。",
-      "clue": "時間のヒント：毎日。ロボットは英語のことばを一つ書きます。",
+      "clue": "カレンダーのチェックを見てみよう。ロボットは英語のことばを一つ書きます。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-write-3-ongoing": {
@@ -1943,7 +1943,7 @@
     "build-draw-1": {
       "file": "assets/construction/build-draw-1.png",
       "alt": "左側の話し手が右の場面を紹介する。私たちは毎日学校でうさぎをかきます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-draw-1-ongoing": {
@@ -1961,7 +1961,7 @@
     "build-draw-2": {
       "file": "assets/construction/build-draw-2.png",
       "alt": "左側の話し手が右の場面を紹介する。彼らは毎日学校で虹をかきます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-draw-2-ongoing": {
@@ -1979,7 +1979,7 @@
     "build-draw-3": {
       "file": "assets/construction/build-draw-3.png",
       "alt": "左側の話し手が右の場面を紹介する。私は毎日学校でロボットをかきます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-draw-3-ongoing": {
@@ -1997,7 +1997,7 @@
     "build-color-1": {
       "file": "assets/construction/build-color-1.png",
       "alt": "左側の話し手が右の場面を紹介する。あなたは毎日学校で花の絵に色をぬります。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-color-1-ongoing": {
@@ -2015,7 +2015,7 @@
     "build-color-2": {
       "file": "assets/construction/build-color-2.png",
       "alt": "左側の話し手が右の場面を紹介する。彼は毎日学校で星の絵に色をぬります。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-color-2-ongoing": {
@@ -2033,7 +2033,7 @@
     "build-color-3": {
       "file": "assets/construction/build-color-3.png",
       "alt": "左側の話し手が右の場面を紹介する。彼女は毎日学校で魚の絵に色をぬります。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-color-3-ongoing": {
@@ -2051,7 +2051,7 @@
     "build-count-1": {
       "file": "assets/construction/build-count-1.png",
       "alt": "左側の話し手が右の場面を紹介する。それは毎日庭で星を数えます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-count-1-ongoing": {
@@ -2069,7 +2069,7 @@
     "build-count-2": {
       "file": "assets/construction/build-count-2.png",
       "alt": "左側の話し手が右の場面を紹介する。私たちは毎日学校でビー玉を数えます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-count-2-ongoing": {
@@ -2087,7 +2087,7 @@
     "build-count-3": {
       "file": "assets/construction/build-count-3.png",
       "alt": "左側の話し手が右の場面を紹介する。彼らは毎日学校でカードを数えます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-count-3-ongoing": {
@@ -2105,7 +2105,7 @@
     "build-study-1": {
       "file": "assets/construction/build-study-1.png",
       "alt": "左側の話し手が右の場面を紹介する。私は毎日学校で英語を勉強します。",
-      "clue": "時間のヒント：毎日。絵カードは英語の授業で使います。",
+      "clue": "カレンダーのチェックを見てみよう。絵カードは英語の授業で使います。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-study-1-ongoing": {
@@ -2123,7 +2123,7 @@
     "build-study-2": {
       "file": "assets/construction/build-study-2.png",
       "alt": "左側の話し手が右の場面を紹介する。あなたは毎日学校で算数を勉強します。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-study-2-ongoing": {
@@ -2141,7 +2141,7 @@
     "build-study-3": {
       "file": "assets/construction/build-study-3.png",
       "alt": "左側の話し手が右の場面を紹介する。彼は毎日学校で理科を勉強します。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-study-3-ongoing": {
@@ -2159,7 +2159,7 @@
     "build-learn-1": {
       "file": "assets/construction/build-learn-1.png",
       "alt": "左側の話し手が右の場面を紹介する。彼女は毎日学校で新しい歌を覚えます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-learn-1-ongoing": {
@@ -2177,7 +2177,7 @@
     "build-learn-2": {
       "file": "assets/construction/build-learn-2.png",
       "alt": "左側の話し手が右の場面を紹介する。彼は毎日学校で新しい単語を覚えます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-learn-2-ongoing": {
@@ -2195,7 +2195,7 @@
     "build-learn-3": {
       "file": "assets/construction/build-learn-3.png",
       "alt": "左側の話し手が右の場面を紹介する。私たちは毎日学校で新しいダンスを覚えます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-learn-3-ongoing": {
@@ -2213,7 +2213,7 @@
     "build-practice-1": {
       "file": "assets/construction/build-practice-1.png",
       "alt": "左側の話し手が右の場面を紹介する。彼らは毎日家でピアノを練習します。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-practice-1-ongoing": {
@@ -2231,7 +2231,7 @@
     "build-practice-2": {
       "file": "assets/construction/build-practice-2.png",
       "alt": "左側の話し手が右の場面を紹介する。私は毎日家で英語を練習します。",
-      "clue": "時間のヒント：毎日。ヘッドホンから聞こえるのは英語です。",
+      "clue": "カレンダーのチェックを見てみよう。ヘッドホンから聞こえるのは英語です。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-practice-2-ongoing": {
@@ -2249,7 +2249,7 @@
     "build-practice-3": {
       "file": "assets/construction/build-practice-3.png",
       "alt": "左側の話し手が右の場面を紹介する。あなたは毎日家でダンスを練習します。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-practice-3-ongoing": {
@@ -2267,7 +2267,7 @@
     "build-spell-1": {
       "file": "assets/construction/build-spell-1.png",
       "alt": "左側の話し手が右の場面を紹介する。彼は毎日学校でcatのつづりを言います。",
-      "clue": "時間のヒント：毎日。 カードに描かれた動物の英単語を、一文字ずつ口に出す練習です。",
+      "clue": "カレンダーのチェックを見てみよう。 カードに描かれた動物の英単語を、一文字ずつ口に出す練習です。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-spell-1-ongoing": {
@@ -2285,7 +2285,7 @@
     "build-spell-2": {
       "file": "assets/construction/build-spell-2.png",
       "alt": "左側の話し手が右の場面を紹介する。彼女は毎日学校でdogのつづりを言います。",
-      "clue": "時間のヒント：毎日。 カードに描かれた動物の英単語を、一文字ずつ口に出す練習です。",
+      "clue": "カレンダーのチェックを見てみよう。 カードに描かれた動物の英単語を、一文字ずつ口に出す練習です。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-spell-2-ongoing": {
@@ -2303,7 +2303,7 @@
     "build-spell-3": {
       "file": "assets/construction/build-spell-3.png",
       "alt": "左側の話し手が右の場面を紹介する。それは毎日学校でbirdのつづりを言います。",
-      "clue": "時間のヒント：毎日。 カードに描かれた動物の英単語を、一文字ずつ口に出す練習です。",
+      "clue": "カレンダーのチェックを見てみよう。 カードに描かれた動物の英単語を、一文字ずつ口に出す練習です。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-spell-3-ongoing": {
@@ -2321,7 +2321,7 @@
     "build-answer-1": {
       "file": "assets/construction/build-answer-1.png",
       "alt": "左側の話し手が右の場面を紹介する。私たちは毎日学校で先生の質問に答えます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-answer-1-ongoing": {
@@ -2339,7 +2339,7 @@
     "build-answer-2": {
       "file": "assets/construction/build-answer-2.png",
       "alt": "左側の話し手が右の場面を紹介する。彼らは毎日学校でかんたんな質問に答えます。",
-      "clue": "時間のヒント：毎日。 りんごを数えるだけの問題です。",
+      "clue": "カレンダーのチェックを見てみよう。 りんごを数えるだけの問題です。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-answer-2-ongoing": {
@@ -2357,7 +2357,7 @@
     "build-answer-3": {
       "file": "assets/construction/build-answer-3.png",
       "alt": "左側の話し手が右の場面を紹介する。私は毎日学校で最後の質問に答えます。",
-      "clue": "時間のヒント：毎日。 プリントのいちばん下の問いに注目。",
+      "clue": "カレンダーのチェックを見てみよう。 プリントのいちばん下の問いに注目。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-answer-3-ongoing": {
@@ -2375,7 +2375,7 @@
     "build-play-1": {
       "file": "assets/construction/build-play-1.png",
       "alt": "左側の話し手が右の場面を紹介する。あなたは毎日公園で友だちとサッカーをします。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-play-1-ongoing": {
@@ -2393,7 +2393,7 @@
     "build-play-2": {
       "file": "assets/construction/build-play-2.png",
       "alt": "左側の話し手が右の場面を紹介する。彼は毎日公園で友だちとかくれんぼをします。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-play-2-ongoing": {
@@ -2411,7 +2411,7 @@
     "build-play-3": {
       "file": "assets/construction/build-play-3.png",
       "alt": "左側の話し手が右の場面を紹介する。彼女は毎日家で友だちとカードゲームをします。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-play-3-ongoing": {
@@ -2429,7 +2429,7 @@
     "build-sing-1": {
       "file": "assets/construction/build-sing-1.png",
       "alt": "左側の話し手が右の場面を紹介する。それは毎日家で好きな歌を歌います。",
-      "clue": "時間のヒント：毎日。 ハートの印は、ロボットのお気に入りを表します。",
+      "clue": "カレンダーのチェックを見てみよう。 ハートの印は、ロボットのお気に入りを表します。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-sing-1-ongoing": {
@@ -2447,7 +2447,7 @@
     "build-sing-2": {
       "file": "assets/construction/build-sing-2.png",
       "alt": "左側の話し手が右の場面を紹介する。私たちは毎日家で誕生日の歌を歌います。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-sing-2-ongoing": {
@@ -2465,7 +2465,7 @@
     "build-sing-3": {
       "file": "assets/construction/build-sing-3.png",
       "alt": "左側の話し手が右の場面を紹介する。彼らは毎日家で楽しい歌を歌います。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-sing-3-ongoing": {
@@ -2483,7 +2483,7 @@
     "build-dance-1": {
       "file": "assets/construction/build-dance-1.png",
       "alt": "左側の話し手が右の場面を紹介する。私は毎日家で音楽に合わせておどります。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-dance-1-ongoing": {
@@ -2501,7 +2501,7 @@
     "build-dance-2": {
       "file": "assets/construction/build-dance-2.png",
       "alt": "左側の話し手が右の場面を紹介する。あなたは毎日ステージでおどります。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-dance-2-ongoing": {
@@ -2519,7 +2519,7 @@
     "build-dance-3": {
       "file": "assets/construction/build-dance-3.png",
       "alt": "左側の話し手が右の場面を紹介する。彼は毎日部屋でおどります。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-dance-3-ongoing": {
@@ -2537,7 +2537,7 @@
     "build-watch-1": {
       "file": "assets/construction/build-watch-1.png",
       "alt": "左側の話し手が右の場面を紹介する。彼女は毎日家でテレビ番組を見ます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-watch-1-ongoing": {
@@ -2555,7 +2555,7 @@
     "build-watch-2": {
       "file": "assets/construction/build-watch-2.png",
       "alt": "左側の話し手が右の場面を紹介する。彼は毎日家でアニメを見ます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-watch-2-ongoing": {
@@ -2573,7 +2573,7 @@
     "build-watch-3": {
       "file": "assets/construction/build-watch-3.png",
       "alt": "左側の話し手が右の場面を紹介する。私たちは毎日家でサッカーの試合を見ます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-watch-3-ongoing": {
@@ -2591,7 +2591,7 @@
     "build-listen-1": {
       "file": "assets/construction/build-listen-1.png",
       "alt": "左側の話し手が右の場面を紹介する。彼らは毎日家で音楽を聞きます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-listen-1-ongoing": {
@@ -2609,7 +2609,7 @@
     "build-listen-2": {
       "file": "assets/construction/build-listen-2.png",
       "alt": "左側の話し手が右の場面を紹介する。私は毎日家で雨の音を聞きます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-listen-2-ongoing": {
@@ -2627,7 +2627,7 @@
     "build-listen-3": {
       "file": "assets/construction/build-listen-3.png",
       "alt": "左側の話し手が右の場面を紹介する。あなたは毎日家で鳥の歌を聞きます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-listen-3-ongoing": {
@@ -2645,7 +2645,7 @@
     "build-look-1": {
       "file": "assets/construction/build-look-1.png",
       "alt": "左側の話し手が右の場面を紹介する。彼は毎日庭で月を見ます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-look-1-ongoing": {
@@ -2663,7 +2663,7 @@
     "build-look-2": {
       "file": "assets/construction/build-look-2.png",
       "alt": "左側の話し手が右の場面を紹介する。彼女は毎日家で小さな虫を見ます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-look-2-ongoing": {
@@ -2681,7 +2681,7 @@
     "build-look-3": {
       "file": "assets/construction/build-look-3.png",
       "alt": "左側の話し手が右の場面を紹介する。それは毎日家で地図を見ます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-look-3-ongoing": {
@@ -2735,7 +2735,7 @@
     "build-touch-1": {
       "file": "assets/construction/build-touch-1.png",
       "alt": "左側の話し手が右の場面を紹介する。それは毎日家でやわらかい毛布にさわります。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-touch-1-ongoing": {
@@ -2753,7 +2753,7 @@
     "build-touch-2": {
       "file": "assets/construction/build-touch-2.png",
       "alt": "左側の話し手が右の場面を紹介する。私たちは毎日家で冷たい水にさわります。",
-      "clue": "時間のヒント：毎日。 水の中の氷に注目。",
+      "clue": "カレンダーのチェックを見てみよう。 水の中の氷に注目。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-touch-2-ongoing": {
@@ -2771,7 +2771,7 @@
     "build-touch-3": {
       "file": "assets/construction/build-touch-3.png",
       "alt": "左側の話し手が右の場面を紹介する。彼らは毎日家で木の葉にさわります。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-touch-3-ongoing": {
@@ -2789,7 +2789,7 @@
     "build-open-1": {
       "file": "assets/construction/build-open-1.png",
       "alt": "左側の話し手が右の場面を紹介する。彼女は毎日学校でお弁当箱を開けます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-open-1-ongoing": {
@@ -2807,7 +2807,7 @@
     "build-open-2": {
       "file": "assets/construction/build-open-2.png",
       "alt": "左側の話し手が右の場面を紹介する。彼は毎日家で本を開けます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-open-2-ongoing": {
@@ -2825,7 +2825,7 @@
     "build-open-3": {
       "file": "assets/construction/build-open-3.png",
       "alt": "左側の話し手が右の場面を紹介する。私たちは毎日家で窓を開けます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-open-3-ongoing": {
@@ -2849,7 +2849,7 @@
     "build-close-1": {
       "file": "assets/construction/build-close-1.png",
       "alt": "左側の話し手が右の場面を紹介する。彼らは毎日家で本を閉じます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-close-1-ongoing": {
@@ -2867,7 +2867,7 @@
     "build-close-2": {
       "file": "assets/construction/build-close-2.png",
       "alt": "左側の話し手が右の場面を紹介する。私は毎日家で箱を閉じます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-close-2-ongoing": {
@@ -2885,7 +2885,7 @@
     "build-close-3": {
       "file": "assets/construction/build-close-3.png",
       "alt": "左側の話し手が右の場面を紹介する。あなたは毎日家で目を閉じます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-close-3-ongoing": {
@@ -2903,7 +2903,7 @@
     "build-push-1": {
       "file": "assets/construction/build-push-1.png",
       "alt": "左側の話し手が右の場面を紹介する。彼は毎日家で青いボタンを押します。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-push-1-ongoing": {
@@ -2921,7 +2921,7 @@
     "build-push-2": {
       "file": "assets/construction/build-push-2.png",
       "alt": "左側の話し手が右の場面を紹介する。彼女は毎日家で小さなカートを押します。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-push-2-ongoing": {
@@ -2939,7 +2939,7 @@
     "build-push-3": {
       "file": "assets/construction/build-push-3.png",
       "alt": "左側の話し手が右の場面を紹介する。それは毎日家でおもちゃの車を押します。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-push-3-ongoing": {
@@ -2957,7 +2957,7 @@
     "build-pull-1": {
       "file": "assets/construction/build-pull-1.png",
       "alt": "左側の話し手が右の場面を紹介する。私たちは毎日家でロープを引きます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-pull-1-ongoing": {
@@ -2975,7 +2975,7 @@
     "build-pull-2": {
       "file": "assets/construction/build-pull-2.png",
       "alt": "左側の話し手が右の場面を紹介する。彼らは毎日家で小さなワゴンを引きます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-pull-2-ongoing": {
@@ -2993,7 +2993,7 @@
     "build-pull-3": {
       "file": "assets/construction/build-pull-3.png",
       "alt": "左側の話し手が右の場面を紹介する。私は毎日家でいすを引きます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-pull-3-ongoing": {
@@ -3011,7 +3011,7 @@
     "build-turn-1": {
       "file": "assets/construction/build-turn-1.png",
       "alt": "左側の話し手が右の場面を紹介する。あなたは毎日家でハンドルを回します。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-turn-1-ongoing": {
@@ -3029,7 +3029,7 @@
     "build-turn-2": {
       "file": "assets/construction/build-turn-2.png",
       "alt": "左側の話し手が右の場面を紹介する。彼は毎日家でドアのつまみを回します。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-turn-2-ongoing": {
@@ -3047,7 +3047,7 @@
     "build-turn-3": {
       "file": "assets/construction/build-turn-3.png",
       "alt": "左側の話し手が右の場面を紹介する。彼女は毎日家でおもちゃの車輪を回します。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-turn-3-ongoing": {
@@ -3065,7 +3065,7 @@
     "build-lift-1": {
       "file": "assets/construction/build-lift-1.png",
       "alt": "左側の話し手が右の場面を紹介する。それは毎日家で小さな箱を持ち上げます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-lift-1-ongoing": {
@@ -3083,7 +3083,7 @@
     "build-lift-2": {
       "file": "assets/construction/build-lift-2.png",
       "alt": "左側の話し手が右の場面を紹介する。私たちは毎日家でかばんを持ち上げます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-lift-2-ongoing": {
@@ -3101,7 +3101,7 @@
     "build-lift-3": {
       "file": "assets/construction/build-lift-3.png",
       "alt": "左側の話し手が右の場面を紹介する。彼らは毎日家でふたを持ち上げます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-lift-3-ongoing": {
@@ -3119,7 +3119,7 @@
     "build-carry-1": {
       "file": "assets/construction/build-carry-1.png",
       "alt": "左側の話し手が右の場面を紹介する。私は毎日家で本を運びます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-carry-1-ongoing": {
@@ -3137,7 +3137,7 @@
     "build-carry-2": {
       "file": "assets/construction/build-carry-2.png",
       "alt": "左側の話し手が右の場面を紹介する。あなたは毎日家でかごを運びます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-carry-2-ongoing": {
@@ -3155,7 +3155,7 @@
     "build-carry-3": {
       "file": "assets/construction/build-carry-3.png",
       "alt": "左側の話し手が右の場面を紹介する。彼は毎日家で毛布を運びます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-carry-3-ongoing": {
@@ -3173,7 +3173,7 @@
     "build-hold-1": {
       "file": "assets/construction/build-hold-1.png",
       "alt": "左側の話し手が右の場面を紹介する。彼女は毎日外で赤い風船を持ちます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-hold-1-ongoing": {
@@ -3191,7 +3191,7 @@
     "build-hold-2": {
       "file": "assets/construction/build-hold-2.png",
       "alt": "左側の話し手が右の場面を紹介する。彼は毎日外でかさを持ちます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-hold-2-ongoing": {
@@ -3209,7 +3209,7 @@
     "build-hold-3": {
       "file": "assets/construction/build-hold-3.png",
       "alt": "左側の話し手が右の場面を紹介する。私たちは毎日外で小さな旗を持ちます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-hold-3-ongoing": {
@@ -3227,7 +3227,7 @@
     "build-put-1": {
       "file": "assets/construction/build-put-1.png",
       "alt": "左側の話し手が右の場面を紹介する。彼らは毎日机の上に本を置きます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-put-1-ongoing": {
@@ -3245,7 +3245,7 @@
     "build-put-2": {
       "file": "assets/construction/build-put-2.png",
       "alt": "左側の話し手が右の場面を紹介する。私は毎日机の上にコップを置きます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-put-2-ongoing": {
@@ -3263,7 +3263,7 @@
     "build-put-3": {
       "file": "assets/construction/build-put-3.png",
       "alt": "左側の話し手が右の場面を紹介する。あなたは毎日机の上に鉛筆を置きます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-put-3-ongoing": {
@@ -3299,7 +3299,7 @@
     "build-take-1": {
       "file": "assets/construction/build-take-1.png",
       "alt": "左側の話し手が右の場面を紹介する。彼は毎日通りで赤い車の写真をとります。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-take-1-ongoing": {
@@ -3317,7 +3317,7 @@
     "build-take-2": {
       "file": "assets/construction/build-take-2.png",
       "alt": "左側の話し手が右の場面を紹介する。彼女は毎日通りで猫の写真をとります。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-take-2-ongoing": {
@@ -3335,7 +3335,7 @@
     "build-take-3": {
       "file": "assets/construction/build-take-3.png",
       "alt": "左側の話し手が右の場面を紹介する。それは毎日通りで花の写真をとります。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-take-3-ongoing": {
@@ -3365,7 +3365,7 @@
     "build-give-2": {
       "file": "assets/construction/build-give-2.png",
       "alt": "左側の話し手が右の場面を紹介する。彼らは毎日家で友だちにカードをあげます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-give-2-ongoing": {
@@ -3383,7 +3383,7 @@
     "build-give-3": {
       "file": "assets/construction/build-give-3.png",
       "alt": "左側の話し手が右の場面を紹介する。私は毎日家で妹に花をあげます。",
-      "clue": "時間のヒント：毎日。 受け取る女の子は妹です。",
+      "clue": "カレンダーのチェックを見てみよう。 受け取る女の子は妹です。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-give-3-ongoing": {
@@ -3401,7 +3401,7 @@
     "build-get-1": {
       "file": "assets/construction/build-get-1.png",
       "alt": "左側の話し手が右の場面を紹介する。あなたは毎日家で新しい鉛筆をもらいます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-get-1-ongoing": {
@@ -3419,7 +3419,7 @@
     "build-get-2": {
       "file": "assets/construction/build-get-2.png",
       "alt": "左側の話し手が右の場面を紹介する。彼は毎日家でシールをもらいます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-get-2-ongoing": {
@@ -3437,7 +3437,7 @@
     "build-get-3": {
       "file": "assets/construction/build-get-3.png",
       "alt": "左側の話し手が右の場面を紹介する。彼女は毎日家で絵はがきをもらいます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-get-3-ongoing": {
@@ -3455,7 +3455,7 @@
     "build-bring-1": {
       "file": "assets/construction/build-bring-1.png",
       "alt": "左側の話し手が右の場面を紹介する。それは毎日学校にお弁当を持ってきます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-bring-1-ongoing": {
@@ -3473,7 +3473,7 @@
     "build-bring-2": {
       "file": "assets/construction/build-bring-2.png",
       "alt": "左側の話し手が右の場面を紹介する。私たちは毎日学校にお気に入りの本を持ってきます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-bring-2-ongoing": {
@@ -3491,7 +3491,7 @@
     "build-bring-3": {
       "file": "assets/construction/build-bring-3.png",
       "alt": "左側の話し手が右の場面を紹介する。彼らは毎日学校に青いボールを持ってきます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-bring-3-ongoing": {
@@ -3509,7 +3509,7 @@
     "build-send-1": {
       "file": "assets/construction/build-send-1.png",
       "alt": "左側の話し手が右の場面を紹介する。私は毎日家でおばあちゃんにカードを送ります。",
-      "clue": "時間のヒント：毎日。 写真の人がおばあちゃんです。",
+      "clue": "カレンダーのチェックを見てみよう。 写真の人がおばあちゃんです。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-send-1-ongoing": {
@@ -3527,7 +3527,7 @@
     "build-send-2": {
       "file": "assets/construction/build-send-2.png",
       "alt": "左側の話し手が右の場面を紹介する。あなたは毎日家で友だちに手紙を送ります。",
-      "clue": "時間のヒント：毎日。 写真に写っている友だちに送ります。",
+      "clue": "カレンダーのチェックを見てみよう。 写真に写っている友だちに送ります。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-send-2-ongoing": {
@@ -3545,7 +3545,7 @@
     "build-send-3": {
       "file": "assets/construction/build-send-3.png",
       "alt": "左側の話し手が右の場面を紹介する。彼は毎日家でお父さんに写真を送ります。",
-      "clue": "時間のヒント：毎日。 写真に写っているお父さんに送ります。",
+      "clue": "カレンダーのチェックを見てみよう。 写真に写っているお父さんに送ります。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-send-3-ongoing": {
@@ -3563,7 +3563,7 @@
     "build-show-1": {
       "file": "assets/construction/build-show-1.png",
       "alt": "左側の話し手が右の場面を紹介する。彼女は毎日家でお母さんに絵を見せます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-show-1-ongoing": {
@@ -3581,7 +3581,7 @@
     "build-show-2": {
       "file": "assets/construction/build-show-2.png",
       "alt": "左側の話し手が右の場面を紹介する。彼は毎日家で友だちに地図を見せます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-show-2-ongoing": {
@@ -3599,7 +3599,7 @@
     "build-show-3": {
       "file": "assets/construction/build-show-3.png",
       "alt": "左側の話し手が右の場面を紹介する。私たちは毎日家で弟にロボットを見せます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-show-3-ongoing": {
@@ -3617,7 +3617,7 @@
     "build-tell-1": {
       "file": "assets/construction/build-tell-1.png",
       "alt": "左側の話し手が右の場面を紹介する。彼らは毎日家で妹に予定を伝えます。",
-      "clue": "時間のヒント：毎日。 予定の絵を聞いているのは妹です。",
+      "clue": "カレンダーのチェックを見てみよう。 予定の絵を聞いているのは妹です。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-tell-1-ongoing": {
@@ -3635,7 +3635,7 @@
     "build-tell-2": {
       "file": "assets/construction/build-tell-2.png",
       "alt": "左側の話し手が右の場面を紹介する。私は毎日家で友だちに答えを伝えます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-tell-2-ongoing": {
@@ -3653,7 +3653,7 @@
     "build-tell-3": {
       "file": "assets/construction/build-tell-3.png",
       "alt": "左側の話し手が右の場面を紹介する。あなたは毎日家でお父さんに時刻を伝えます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-tell-3-ongoing": {
@@ -3671,7 +3671,7 @@
     "build-ask-1": {
       "file": "assets/construction/build-ask-1.png",
       "alt": "左側の話し手が右の場面を紹介する。彼は毎日学校で先生に質問をします。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-ask-1-ongoing": {
@@ -3689,7 +3689,7 @@
     "build-ask-2": {
       "file": "assets/construction/build-ask-2.png",
       "alt": "左側の話し手が右の場面を紹介する。彼女は毎日家でお父さんに質問をします。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-ask-2-ongoing": {
@@ -3707,7 +3707,7 @@
     "build-ask-3": {
       "file": "assets/construction/build-ask-3.png",
       "alt": "左側の話し手が右の場面を紹介する。彼は毎日学校で友だちに名前をたずねます。",
-      "clue": "時間のヒント：毎日。 相手がつけている名札に注目。",
+      "clue": "カレンダーのチェックを見てみよう。 相手がつけている名札に注目。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-ask-3-ongoing": {
@@ -3725,7 +3725,7 @@
     "build-talk-1": {
       "file": "assets/construction/build-talk-1.png",
       "alt": "左側の話し手が右の場面を紹介する。私たちは毎日家で友だちと話します。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-talk-1-ongoing": {
@@ -3743,7 +3743,7 @@
     "build-talk-2": {
       "file": "assets/construction/build-talk-2.png",
       "alt": "左側の話し手が右の場面を紹介する。彼らは毎日家でお母さんと話します。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-talk-2-ongoing": {
@@ -3761,7 +3761,7 @@
     "build-talk-3": {
       "file": "assets/construction/build-talk-3.png",
       "alt": "左側の話し手が右の場面を紹介する。私は毎日家でおじいちゃんと話します。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-talk-3-ongoing": {
@@ -3779,7 +3779,7 @@
     "build-speak-1": {
       "file": "assets/construction/build-speak-1.png",
       "alt": "左側の話し手が右の場面を紹介する。あなたは毎日家で英語を話します。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-speak-1-ongoing": {
@@ -3797,7 +3797,7 @@
     "build-speak-2": {
       "file": "assets/construction/build-speak-2.png",
       "alt": "左側の話し手が右の場面を紹介する。彼は毎日家で日本語を話します。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-speak-2-ongoing": {
@@ -3815,7 +3815,7 @@
     "build-speak-3": {
       "file": "assets/construction/build-speak-3.png",
       "alt": "左側の話し手が右の場面を紹介する。彼女は毎日家で英語を話します。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-speak-3-ongoing": {
@@ -3875,7 +3875,7 @@
     "build-help-1": {
       "file": "assets/construction/build-help-1.png",
       "alt": "左側の話し手が右の場面を紹介する。私は毎日家でお父さんを手伝います。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-help-1-ongoing": {
@@ -3893,7 +3893,7 @@
     "build-help-2": {
       "file": "assets/construction/build-help-2.png",
       "alt": "左側の話し手が右の場面を紹介する。あなたは毎日家で友だちを手伝います。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-help-2-ongoing": {
@@ -3911,7 +3911,7 @@
     "build-help-3": {
       "file": "assets/construction/build-help-3.png",
       "alt": "左側の話し手が右の場面を紹介する。彼は毎日家で妹を手伝います。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-help-3-ongoing": {
@@ -3929,7 +3929,7 @@
     "build-choose-1": {
       "file": "assets/construction/build-choose-1.png",
       "alt": "左側の話し手が右の場面を紹介する。それは毎日家で青いカードを選びます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-choose-1-ongoing": {
@@ -3947,7 +3947,7 @@
     "build-choose-2": {
       "file": "assets/construction/build-choose-2.png",
       "alt": "左側の話し手が右の場面を紹介する。私たちは毎日家で小さなりんごを選びます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-choose-2-ongoing": {
@@ -3965,7 +3965,7 @@
     "build-choose-3": {
       "file": "assets/construction/build-choose-3.png",
       "alt": "左側の話し手が右の場面を紹介する。彼らは毎日家で動物の本を選びます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-choose-3-ongoing": {
@@ -3983,7 +3983,7 @@
     "build-try-1": {
       "file": "assets/construction/build-try-1.png",
       "alt": "左側の話し手が右の場面を紹介する。私は毎日学校で新しいゲームをやってみます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-try-1-ongoing": {
@@ -4001,7 +4001,7 @@
     "build-try-2": {
       "file": "assets/construction/build-try-2.png",
       "alt": "左側の話し手が右の場面を紹介する。あなたは毎日学校でパズルをやってみます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-try-2-ongoing": {
@@ -4019,7 +4019,7 @@
     "build-try-3": {
       "file": "assets/construction/build-try-3.png",
       "alt": "左側の話し手が右の場面を紹介する。彼は毎日学校で新しいスポーツをやってみます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-try-3-ongoing": {
@@ -4037,7 +4037,7 @@
     "build-make-1": {
       "file": "assets/construction/build-make-1.png",
       "alt": "左側の話し手が右の場面を紹介する。彼女は毎日家で紙のぼうしを作ります。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-make-1-ongoing": {
@@ -4055,7 +4055,7 @@
     "build-make-2": {
       "file": "assets/construction/build-make-2.png",
       "alt": "左側の話し手が右の場面を紹介する。彼は毎日家でサンドイッチを作ります。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-make-2-ongoing": {
@@ -4073,7 +4073,7 @@
     "build-make-3": {
       "file": "assets/construction/build-make-3.png",
       "alt": "左側の話し手が右の場面を紹介する。私たちは毎日家で妹をうれしい気持ちにします。",
-      "clue": "時間のヒント：毎日。 紫の女の子は二人の妹です。",
+      "clue": "カレンダーのチェックを見てみよう。 紫の女の子は二人の妹です。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-make-3-ongoing": {
@@ -4091,7 +4091,7 @@
     "build-build-1": {
       "file": "assets/construction/build-build-1.png",
       "alt": "左側の話し手が右の場面を紹介する。彼らは毎日浜辺で砂のお城を作ります。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-build-1-ongoing": {
@@ -4109,7 +4109,7 @@
     "build-build-2": {
       "file": "assets/construction/build-build-2.png",
       "alt": "左側の話し手が右の場面を紹介する。私は毎日家で小さな家を作ります。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-build-2-ongoing": {
@@ -4127,7 +4127,7 @@
     "build-build-3": {
       "file": "assets/construction/build-build-3.png",
       "alt": "左側の話し手が右の場面を紹介する。あなたは毎日家で高いタワーを作ります。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-build-3-ongoing": {
@@ -4145,7 +4145,7 @@
     "build-use-1": {
       "file": "assets/construction/build-use-1.png",
       "alt": "左側の話し手が右の場面を紹介する。彼は毎日家で赤いペンを使います。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-use-1-ongoing": {
@@ -4163,7 +4163,7 @@
     "build-use-2": {
       "file": "assets/construction/build-use-2.png",
       "alt": "左側の話し手が右の場面を紹介する。彼女は毎日家で定規を使います。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-use-2-ongoing": {
@@ -4181,7 +4181,7 @@
     "build-use-3": {
       "file": "assets/construction/build-use-3.png",
       "alt": "左側の話し手が右の場面を紹介する。それは毎日家で小さなスプーンを使います。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-use-3-ongoing": {
@@ -4199,7 +4199,7 @@
     "build-fix-1": {
       "file": "assets/construction/build-fix-1.png",
       "alt": "左側の話し手が右の場面を紹介する。私たちは毎日家でお父さんとおもちゃの車を直します。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-fix-1-ongoing": {
@@ -4217,7 +4217,7 @@
     "build-fix-2": {
       "file": "assets/construction/build-fix-2.png",
       "alt": "左側の話し手が右の場面を紹介する。彼らは毎日家でお父さんと小さなロボットを直します。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-fix-2-ongoing": {
@@ -4235,7 +4235,7 @@
     "build-fix-3": {
       "file": "assets/construction/build-fix-3.png",
       "alt": "左側の話し手が右の場面を紹介する。私は毎日家でお父さんとこわれた箱を直します。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-fix-3-ongoing": {
@@ -4289,7 +4289,7 @@
     "build-clean-3": {
       "file": "assets/construction/build-clean-3.png",
       "alt": "左側の話し手が右の場面を紹介する。彼女は毎日学校で黒板をそうじします。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-clean-3-ongoing": {
@@ -4361,7 +4361,7 @@
     "build-change-1": {
       "file": "assets/construction/build-change-1.png",
       "alt": "左側の話し手が右の場面を紹介する。私は毎日家でシャツを取りかえます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-change-1-ongoing": {
@@ -4379,7 +4379,7 @@
     "build-change-2": {
       "file": "assets/construction/build-change-2.png",
       "alt": "左側の話し手が右の場面を紹介する。あなたは毎日家で靴下を取りかえます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-change-2-ongoing": {
@@ -4397,7 +4397,7 @@
     "build-change-3": {
       "file": "assets/construction/build-change-3.png",
       "alt": "左側の話し手が右の場面を紹介する。彼は毎日家で上着を取りかえます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-change-3-ongoing": {
@@ -4415,7 +4415,7 @@
     "build-buy-1": {
       "file": "assets/construction/build-buy-1.png",
       "alt": "左側の話し手が右の場面を紹介する。彼女は毎日お店でお母さんとノートを買います。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-buy-1-ongoing": {
@@ -4433,7 +4433,7 @@
     "build-buy-2": {
       "file": "assets/construction/build-buy-2.png",
       "alt": "左側の話し手が右の場面を紹介する。彼は毎日お店でお母さんと消しゴムを買います。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-buy-2-ongoing": {
@@ -4451,7 +4451,7 @@
     "build-buy-3": {
       "file": "assets/construction/build-buy-3.png",
       "alt": "左側の話し手が右の場面を紹介する。私たちは毎日お店でお母さんと小さなパンを買います。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-buy-3-ongoing": {
@@ -4469,7 +4469,7 @@
     "build-pay-1": {
       "file": "assets/construction/build-pay-1.png",
       "alt": "左側の話し手が右の場面を紹介する。彼らは毎日駅で切符のお金を払います。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-pay-1-ongoing": {
@@ -4487,7 +4487,7 @@
     "build-pay-2": {
       "file": "assets/construction/build-pay-2.png",
       "alt": "左側の話し手が右の場面を紹介する。私は毎日お店でおやつのお金を払います。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-pay-2-ongoing": {
@@ -4505,7 +4505,7 @@
     "build-pay-3": {
       "file": "assets/construction/build-pay-3.png",
       "alt": "左側の話し手が右の場面を紹介する。あなたは毎日お店でノートのお金を払います。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-pay-3-ongoing": {
@@ -4523,7 +4523,7 @@
     "build-save-1": {
       "file": "assets/construction/build-save-1.png",
       "alt": "左側の話し手が右の場面を紹介する。彼は毎日新しい本のためにおこづかいをためます。",
-      "clue": "時間のヒント：毎日。 貯金箱のそばには、買いたい本の絵があります。",
+      "clue": "カレンダーのチェックを見てみよう。 貯金箱のそばには、買いたい本の絵があります。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-save-1-ongoing": {
@@ -4541,7 +4541,7 @@
     "build-save-2": {
       "file": "assets/construction/build-save-2.png",
       "alt": "左側の話し手が右の場面を紹介する。彼女は毎日自転車のためにおこづかいをためます。",
-      "clue": "時間のヒント：毎日。 貯金箱のそばには、買いたい自転車の絵があります。",
+      "clue": "カレンダーのチェックを見てみよう。 貯金箱のそばには、買いたい自転車の絵があります。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-save-2-ongoing": {
@@ -4559,7 +4559,7 @@
     "build-save-3": {
       "file": "assets/construction/build-save-3.png",
       "alt": "左側の話し手が右の場面を紹介する。彼は毎日ゲームのためにおこづかいをためます。",
-      "clue": "時間のヒント：毎日。 貯金箱のそばには、買いたいゲームの絵があります。",
+      "clue": "カレンダーのチェックを見てみよう。 貯金箱のそばには、買いたいゲームの絵があります。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-save-3-ongoing": {
@@ -4577,7 +4577,7 @@
     "build-share-1": {
       "file": "assets/construction/build-share-1.png",
       "alt": "左側の話し手が右の場面を紹介する。彼女は毎日家で友だちとクッキーを分け合います。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-share-1-ongoing": {
@@ -4595,7 +4595,7 @@
     "build-share-2": {
       "file": "assets/construction/build-share-2.png",
       "alt": "左側の話し手が右の場面を紹介する。彼は毎日家で友だちと色鉛筆を分け合います。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-share-2-ongoing": {
@@ -4613,7 +4613,7 @@
     "build-share-3": {
       "file": "assets/construction/build-share-3.png",
       "alt": "左側の話し手が右の場面を紹介する。私たちは毎日家で友だちとシールを分け合います。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-share-3-ongoing": {
@@ -4631,7 +4631,7 @@
     "build-thank-1": {
       "file": "assets/construction/build-thank-1.png",
       "alt": "左側の話し手が右の場面を紹介する。彼らは毎日学校で先生にお礼を言います。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-thank-1-ongoing": {
@@ -4649,7 +4649,7 @@
     "build-thank-2": {
       "file": "assets/construction/build-thank-2.png",
       "alt": "左側の話し手が右の場面を紹介する。私は毎日家でお母さんにお礼を言います。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-thank-2-ongoing": {
@@ -4667,7 +4667,7 @@
     "build-thank-3": {
       "file": "assets/construction/build-thank-3.png",
       "alt": "左側の話し手が右の場面を紹介する。あなたは毎日学校で友だちにお礼を言います。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-thank-3-ongoing": {
@@ -4685,7 +4685,7 @@
     "build-meet-1": {
       "file": "assets/construction/build-meet-1.png",
       "alt": "左側の話し手が右の場面を紹介する。彼は毎日駅で友だちに会います。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-meet-1-ongoing": {
@@ -4703,7 +4703,7 @@
     "build-meet-2": {
       "file": "assets/construction/build-meet-2.png",
       "alt": "左側の話し手が右の場面を紹介する。彼女は毎日駅でいとこに会います。",
-      "clue": "時間のヒント：毎日。 駅で会う相手はいとこです。",
+      "clue": "カレンダーのチェックを見てみよう。 駅で会う相手はいとこです。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-meet-2-ongoing": {
@@ -4721,7 +4721,7 @@
     "build-meet-3": {
       "file": "assets/construction/build-meet-3.png",
       "alt": "左側の話し手が右の場面を紹介する。彼は毎日駅でおばあちゃんに会います。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-meet-3-ongoing": {
@@ -4793,7 +4793,7 @@
     "build-invite-1": {
       "file": "assets/construction/build-invite-1.png",
       "alt": "左側の話し手が右の場面を紹介する。あなたは毎日家で誕生日会に友だちを招きます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-invite-1-ongoing": {
@@ -4811,7 +4811,7 @@
     "build-invite-2": {
       "file": "assets/construction/build-invite-2.png",
       "alt": "左側の話し手が右の場面を紹介する。彼は毎日家で誕生日会にいとこを招きます。",
-      "clue": "時間のヒント：毎日。 招待状を受け取る男の子はいとこです。",
+      "clue": "カレンダーのチェックを見てみよう。 招待状を受け取る男の子はいとこです。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-invite-2-ongoing": {
@@ -4829,7 +4829,7 @@
     "build-invite-3": {
       "file": "assets/construction/build-invite-3.png",
       "alt": "左側の話し手が右の場面を紹介する。彼女は毎日家で誕生日会におとなりさんを招きます。",
-      "clue": "時間のヒント：毎日。 招待状を受け取る女の子は近所に住んでいます。",
+      "clue": "カレンダーのチェックを見てみよう。 招待状を受け取る女の子は近所に住んでいます。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-invite-3-ongoing": {
@@ -4847,7 +4847,7 @@
     "build-join-1": {
       "file": "assets/construction/build-join-1.png",
       "alt": "左側の話し手が右の場面を紹介する。彼は毎日学校でゲームに加わります。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-join-1-ongoing": {
@@ -4865,7 +4865,7 @@
     "build-join-2": {
       "file": "assets/construction/build-join-2.png",
       "alt": "左側の話し手が右の場面を紹介する。私たちは毎日学校でチームに加わります。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-join-2-ongoing": {
@@ -4883,7 +4883,7 @@
     "build-join-3": {
       "file": "assets/construction/build-join-3.png",
       "alt": "左側の話し手が右の場面を紹介する。彼らは毎日学校でダンスクラブに加わります。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-join-3-ongoing": {
@@ -4901,7 +4901,7 @@
     "build-teach-1": {
       "file": "assets/construction/build-teach-1.png",
       "alt": "左側の話し手が右の場面を紹介する。私は毎日家で弟に新しいゲームを教えます。",
-      "clue": "時間のヒント：毎日。 ゲームを教わるのは弟です。",
+      "clue": "カレンダーのチェックを見てみよう。 ゲームを教わるのは弟です。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-teach-1-ongoing": {
@@ -4919,7 +4919,7 @@
     "build-teach-2": {
       "file": "assets/construction/build-teach-2.png",
       "alt": "左側の話し手が右の場面を紹介する。あなたは毎日家で友だちに歌を教えます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-teach-2-ongoing": {
@@ -4937,7 +4937,7 @@
     "build-teach-3": {
       "file": "assets/construction/build-teach-3.png",
       "alt": "左側の話し手が右の場面を紹介する。彼は毎日家で妹にダンスを教えます。",
-      "clue": "時間のヒント：毎日。 ダンスを教わるのは妹です。",
+      "clue": "カレンダーのチェックを見てみよう。 ダンスを教わるのは妹です。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-teach-3-ongoing": {
@@ -4955,7 +4955,7 @@
     "build-follow-1": {
       "file": "assets/construction/build-follow-1.png",
       "alt": "左側の話し手が右の場面を紹介する。彼女は毎日公園で先生についていきます。",
-      "clue": "時間のヒント：毎日。 先に歩いている大人は先生です。",
+      "clue": "カレンダーのチェックを見てみよう。 先に歩いている大人は先生です。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-follow-1-ongoing": {
@@ -4973,7 +4973,7 @@
     "build-follow-2": {
       "file": "assets/construction/build-follow-2.png",
       "alt": "左側の話し手が右の場面を紹介する。彼は毎日公園でお父さんについていきます。",
-      "clue": "時間のヒント：毎日。 先に歩いている大人はお父さんです。",
+      "clue": "カレンダーのチェックを見てみよう。 先に歩いている大人はお父さんです。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-follow-2-ongoing": {
@@ -4991,7 +4991,7 @@
     "build-follow-3": {
       "file": "assets/construction/build-follow-3.png",
       "alt": "左側の話し手が右の場面を紹介する。私たちは毎日公園で友だちについていきます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-follow-3-ongoing": {
@@ -5087,7 +5087,7 @@
     "build-keep-2": {
       "file": "assets/construction/build-keep-2.png",
       "alt": "左側の話し手が右の場面を紹介する。彼らは毎日小さな箱に石をしまっておきます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-keep-2-ongoing": {
@@ -5105,7 +5105,7 @@
     "build-keep-3": {
       "file": "assets/construction/build-keep-3.png",
       "alt": "左側の話し手が右の場面を紹介する。私は毎日小さな箱に宝物をしまっておきます。",
-      "clue": "時間のヒント：毎日。 箱の中は女の子の宝物です。",
+      "clue": "カレンダーのチェックを見てみよう。 箱の中は女の子の宝物です。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-keep-3-ongoing": {
@@ -5123,7 +5123,7 @@
     "build-find-1": {
       "file": "assets/construction/build-find-1.png",
       "alt": "左側の話し手が右の場面を紹介する。あなたは毎日公園で赤い葉っぱを見つけます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-find-1-past": {
@@ -5135,7 +5135,7 @@
     "build-find-2": {
       "file": "assets/construction/build-find-2.png",
       "alt": "左側の話し手が右の場面を紹介する。彼は毎日公園で小さな石を見つけます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-find-2-past": {
@@ -5147,7 +5147,7 @@
     "build-find-3": {
       "file": "assets/construction/build-find-3.png",
       "alt": "左側の話し手が右の場面を紹介する。彼女は毎日公園で松ぼっくりを見つけます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-find-3-past": {
@@ -5159,7 +5159,7 @@
     "build-check-1": {
       "file": "assets/construction/build-check-1.png",
       "alt": "左側の話し手が右の場面を紹介する。それは毎日家で自分のかばんを確かめます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-check-1-ongoing": {
@@ -5177,7 +5177,7 @@
     "build-check-2": {
       "file": "assets/construction/build-check-2.png",
       "alt": "左側の話し手が右の場面を紹介する。私たちは毎日家で答えを確かめます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-check-2-ongoing": {
@@ -5195,7 +5195,7 @@
     "build-check-3": {
       "file": "assets/construction/build-check-3.png",
       "alt": "左側の話し手が右の場面を紹介する。彼らは毎日家で時間割を確かめます。",
-      "clue": "時間のヒント：毎日。",
+      "clue": "カレンダーのチェックを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-check-3-ongoing": {

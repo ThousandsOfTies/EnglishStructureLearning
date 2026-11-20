@@ -174,21 +174,29 @@ if (typeof document !== 'undefined') {
     const locked = attempt()[i] && !targetAllowed(attempt()[i]);
     return `<button class="card ${selected === i ? 'selected' : ''}" data-card="${i}" ${locked ? 'disabled' : ''} aria-pressed="${selected === i}" aria-label="${esc(card.text)}：移動するカードをえらぶ">${esc(card.text)}</button>`;
   }
+  function calendarFor(time) {
+    if (time === 'every day') {
+      return `
+        <span class="day-calendar daily-calendar" role="img" aria-label="二週間分の全ての日にチェックが付いたカレンダー">
+          <span class="daily-checks">${'<span></span>'.repeat(14)}</span>
+        </span>`;
+    }
+    return time === 'yesterday' || time === 'tomorrow' ? `
+      <span class="day-calendar ${time}" role="img" aria-label="地球儀を${time === 'yesterday' ? '左' : '右'}向きに一周するカレンダー">
+        <span class="day-orbit"></span>
+        <img src="assets/calendar/earth.png" alt="">
+      </span>` : '';
+  }
   function renderPicture(q) {
     if (!q.image) {
       $('pictureScene').innerHTML = `<div class="scene-pending japanese">${esc(q.ja)}</div>`;
       return;
     }
     const time = q.slots?.time.en ?? q.blocks.find(([role]) => role === '時')?.[1];
-    const calendar = time === 'yesterday' || time === 'tomorrow' ? `
-      <span class="day-calendar ${time}" role="img" aria-label="地球儀を${time === 'yesterday' ? '左' : '右'}向きに一周するカレンダー">
-        <span class="day-orbit"></span>
-        <img src="assets/calendar/earth.png" alt="">
-      </span>` : '';
     $('pictureScene').innerHTML = `
       <div class="scene-visual">
         <img class="scene-illustration" src="${esc(q.image)}" alt="${esc(q.imageAlt)}" width="1536" height="1024">
-        ${calendar}
+        ${calendarFor(time)}
       </div>
       <figcaption class="scene-clue">${esc(q.imageClue)}</figcaption>`;
   }

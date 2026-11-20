@@ -20,6 +20,9 @@
 .day-calendar{position:absolute;top:4%;right:4%;width:clamp(44px,12%,86px);aspect-ratio:1/1.04;border:2px solid #8a5132;border-radius:12%;background:linear-gradient(#d3503d 20%,#fff5de 20%);isolation:isolate}
 .day-calendar::before,.day-calendar::after{content:"";position:absolute;top:-7%;width:7%;height:18%;border:1px solid #704b32;border-radius:999px;background:#fff2d5}
 .day-calendar::before{left:24%}.day-calendar::after{right:24%}
+.daily-calendar{width:clamp(66px,14%,100px);aspect-ratio:1.25;border-radius:10%}
+.daily-checks{position:absolute;inset:32% 7% 12%;display:grid;grid-template-columns:repeat(7,minmax(0,1fr));grid-template-rows:repeat(2,1fr);place-items:center}
+.daily-checks span{width:74%;aspect-ratio:1.6;border:solid #1d7347;border-width:0 0 2px 2px;border-radius:0 0 0 1px;transform:rotate(-45deg);margin-top:-2px}
 .day-calendar img{position:absolute;left:13%;top:24%;width:74%;height:69%;object-fit:contain;pointer-events:none}
 .day-orbit{--orbit-stroke:clamp(2px,.35vw,4px);--orbit-outline:#39253e;position:absolute;z-index:1;left:6%;right:6%;top:49%;height:26%;color:#ffe24f;transform:rotate(-9deg);filter:drop-shadow(1px 0 0 var(--orbit-outline)) drop-shadow(-1px 0 0 var(--orbit-outline)) drop-shadow(0 1px 0 var(--orbit-outline)) drop-shadow(0 -1px 0 var(--orbit-outline))}
 .day-orbit::before{content:"";position:absolute;inset:0 1% 0 7%;border:var(--orbit-stroke) solid currentColor;border-radius:50%;clip-path:polygon(10% 58%,86% 58%,86% 0,100% 0,100% 100%,10% 100%)}
