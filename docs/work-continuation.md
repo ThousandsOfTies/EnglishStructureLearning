@@ -76,3 +76,7 @@ spell・answer・play・sing・dance・watch・listen・look・hear・see・touc
 ## 物を扱う場面と体で感じる場面を追加
 
 close・push・pull・turn・lift・carry・hold・put・feel の9テーマを75文分追加。アプリ全体では549/938文が作画済み。レベル1は548文。次の未作画テーマは take。
+
+## 写真・受け渡し・会話の場面を追加
+
+take・give・get・bring・send・show・tell・ask・talk・speak・call・help の12テーマを105文分追加。日曜日に電話する2文には太陽のカレンダーを表示。アプリ全体では654/938文が作画済み。レベル1は653文。次の未作画テーマは share。
