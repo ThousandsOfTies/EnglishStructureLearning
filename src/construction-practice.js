@@ -114,6 +114,7 @@ if (typeof document !== 'undefined') {
   const selections = new Map();
   let selected = null, feedback = null, passed = false, wrong = [], speechRun = 0;
   let drag = null, suppressClickUntil = 0;
+  let feedbackAudio, feedbackSoundEnd = 0;
   const hasBasicImages = DATA.examples.some(q => q.level === 1 && q.image);
   function openTensePictures() {
     const first = DATA.examples.find(q => q.group === 'tense-pictures');
@@ -150,6 +151,43 @@ if (typeof document !== 'undefined') {
     $('storageStatus').textContent = storageOK ? '' : ' このブラウザーでは保存できません。開いている間は練習できます。';
   }
   function stopSpeech() { speechRun++; if (hasSpeech) speechSynthesis.cancel(); }
+  async function playFeedbackSound(correct) {
+    const AudioContext = window.AudioContext || window.webkitAudioContext;
+    if (!AudioContext) return;
+    try {
+      const audio = feedbackAudio ??= new AudioContext();
+      if (audio.state !== 'running') await audio.resume();
+      const now = audio.currentTime;
+      if (audio.state !== 'running' || now < feedbackSoundEnd) return;
+
+      const tone = audio.createOscillator();
+      const envelope = audio.createGain();
+      tone.connect(envelope);
+      envelope.connect(audio.destination);
+
+      const frequencies = correct ? [523.25, 659.25] : [440, 349.23];
+      const volume = correct ? 0.10 : 0.075;
+      const start = now + 0.01;
+      const noteSpacing = 0.115;
+      const noteLength = 0.108;
+      frequencies.forEach((frequency, index) => {
+        const onset = start + index * noteSpacing;
+        tone.frequency.setValueAtTime(frequency, onset);
+        envelope.gain.setValueAtTime(0, onset);
+        envelope.gain.linearRampToValueAtTime(volume, onset + 0.016);
+        envelope.gain.linearRampToValueAtTime(0, onset + noteLength);
+      });
+      feedbackSoundEnd = start + noteSpacing + noteLength;
+      tone.onended = () => {
+        tone.disconnect();
+        envelope.disconnect();
+      };
+      tone.start(start);
+      tone.stop(feedbackSoundEnd);
+    } catch {
+      // Grading still works when the browser cannot play audio.
+    }
+  }
   function choose(id) {
     if (!DATA.examples.some(q => q.id === id)) return;
     stopSpeech(); state.current = id; selected = null; feedback = null; passed = false; wrong = [];
@@ -397,6 +435,7 @@ if (typeof document !== 'undefined') {
         selected = null; passed = false; feedback = null; wrong = []; save(); renderExercise(); break;
       case 'check': {
         const q = getQ(); passed = usingLists() ? Construction.choicesCorrect(q, picks()) : Construction.isCorrect(q, attempt()); wrong = [];
+        playFeedbackSound(passed);
         if (passed) {
           if (!state.completed.includes(q.id)) state.completed.push(q.id);
           feedback = { good: true, text: '正解！ ことばがつながったね。' }; save();
