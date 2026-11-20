@@ -64,3 +64,7 @@ wash・read・write・draw・color・count・study・learn・practice の9テー
 ## 旧構図100問を差し替え
 
 go・come・walk・run・jump・swim・fly・ride・climb・sit・stand・give の旧構図100問を四角い吹き出しの画像に差し替えた。日曜日の6問は太陽のカレンダーを維持。参照を切り替えた旧画像100枚と先に差し替え済みだった旧画像6枚を削除。問題IDと絵付き377問の件数は維持した。次の未作画テーマは spell。
+
+## 学校・遊び・見聞きの場面を追加
+
+spell・answer・play・sing・dance・watch・listen・look・hear・see・touch・open の12テーマを新しい構図で96文分追加。時制の絵くらべ40文を含むアプリ全体では473/938文。次の未作画テーマは close。
