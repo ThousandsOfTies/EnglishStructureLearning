@@ -99,7 +99,6 @@ if (typeof document !== 'undefined') {
   const $ = id => document.getElementById(id);
   const esc = value => String(value).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   const labels = { S: '主語', predicate: '述語', P1: '対象１', P2: '対象２', place: '場所', time: '時' };
-  const hints = { S: 'だれ・何が？', predicate: 'どうする・どんな状態？', P1: '述語につなぐ一つ目', P2: '述語につなぐ二つ目', place: 'どこで？', time: 'いつ？' };
   let saved = null, savedVoice = '', speechSpeed = 'normal', storageOK = true;
   try { saved = JSON.parse(localStorage.getItem(KEY)); savedVoice = JSON.parse(localStorage.getItem(VOICE_KEY))?.voiceURI || ''; }
   catch (error) { if (error.name !== 'SyntaxError') storageOK = false; }
@@ -113,7 +112,7 @@ if (typeof document !== 'undefined') {
   };
   const attempts = new Map();
   const selections = new Map();
-  let selected = null, feedback = null, passed = false, wrong = [], speechRun = 0;
+  let selected = null, passed = false, speechRun = 0;
   let drag = null, suppressClickUntil = 0;
   let feedbackAudio, feedbackSoundEnd = 0;
   const hasBasicImages = DATA.examples.some(q => q.level === 1 && q.image);
@@ -155,7 +154,24 @@ if (typeof document !== 'undefined') {
     $('storageStatus').textContent = storageOK ? '' : ' このブラウザーでは保存できません。開いている間は練習できます。';
   }
   function stopSpeech() { speechRun++; if (hasSpeech) speechSynthesis.cancel(); }
-  async function playFeedbackSound(correct) {
+  function answerIsComplete(q) {
+    return usingLists() ? Construction.choicesCorrect(q, picks()) : Construction.isCorrect(q, attempt());
+  }
+  function checkAnswer(q) {
+    const wasPassed = passed;
+    passed = answerIsComplete(q);
+    if (passed && !wasPassed) {
+      playSuccessSound();
+      if (!state.completed.includes(q.id)) {
+        state.completed.push(q.id);
+        const lesson = $('lessons').querySelector('[data-lesson][aria-current="true"]');
+        if (lesson) lesson.textContent = `✓ ${q.ja}`;
+        save();
+      }
+    }
+    return passed !== wasPassed;
+  }
+  async function playSuccessSound() {
     const AudioContext = window.AudioContext || window.webkitAudioContext;
     if (!AudioContext) return;
     try {
@@ -169,8 +185,7 @@ if (typeof document !== 'undefined') {
       tone.connect(envelope);
       envelope.connect(audio.destination);
 
-      const frequencies = correct ? [523.25, 659.25] : [440, 349.23];
-      const volume = correct ? 0.10 : 0.075;
+      const frequencies = [523.25, 659.25];
       const start = now + 0.01;
       const noteSpacing = 0.115;
       const noteLength = 0.108;
@@ -178,7 +193,7 @@ if (typeof document !== 'undefined') {
         const onset = start + index * noteSpacing;
         tone.frequency.setValueAtTime(frequency, onset);
         envelope.gain.setValueAtTime(0, onset);
-        envelope.gain.linearRampToValueAtTime(volume, onset + 0.016);
+        envelope.gain.linearRampToValueAtTime(0.10, onset + 0.016);
         envelope.gain.linearRampToValueAtTime(0, onset + noteLength);
       });
       feedbackSoundEnd = start + noteSpacing + noteLength;
@@ -194,7 +209,7 @@ if (typeof document !== 'undefined') {
   }
   function choose(id) {
     if (!DATA.examples.some(q => q.id === id)) return;
-    stopSpeech(); state.current = id; selected = null; feedback = null; passed = false; wrong = [];
+    stopSpeech(); state.current = id; selected = null; passed = answerIsComplete(getQ());
     save(); render();
     $('practicePane').scrollTop = 0;
   }
@@ -242,7 +257,7 @@ if (typeof document !== 'undefined') {
       </div>
       <figcaption class="scene-clue">${esc(q.imageClue)}</figcaption>`;
   }
-  function renderExercise() {
+  function renderExercise(updateResult = true) {
     cancelDrag();
     const q = getQ(), basic = q.level === 1, cards = Construction.cardsFor(q), placements = attempt();
     $('main').classList.toggle('advanced', !basic);
@@ -264,16 +279,16 @@ if (typeof document !== 'undefined') {
     $('pool').innerHTML = `<div class="pool-cards">${remaining.map(i => cardHTML(q, i)).join('') || '<span class="muted">カードを置けたね。使わない欄は、そのまま空欄にしよう。</span>'}</div>`;
     $('slots').innerHTML = Construction.targetsFor(q).map((target, n) => {
       const i = placements.indexOf(target), role = basic ? target : q.blocks[n][0], locked = !targetAllowed(target);
-      return `<section class="slot ${locked ? 'locked' : ''} ${wrong.includes(target) ? 'wrong' : ''}" aria-disabled="${locked}" data-drop="${esc(target)}" data-role="${esc(role)}"><button class="target" ${locked ? 'disabled' : ''} data-target="${esc(target)}" aria-label="${esc(basic ? labels[role] : `${n + 1}番 ${labels[role] || role.replace(/\bS\b/g, "主語")}`)}に置く">${esc(basic ? labels[role] : `${n + 1}. ${labels[role] || role.replace(/\bS\b/g, "主語")}`)}${basic ? '' : '<small>発音する順</small>'}</button>${i < 0 ? '<span class="empty">空欄</span>' : cardHTML(q, i)}</section>`;
+      return `<section class="slot ${locked ? 'locked' : ''}" aria-disabled="${locked}" data-drop="${esc(target)}" data-role="${esc(role)}"><button class="target" ${locked ? 'disabled' : ''} data-target="${esc(target)}" aria-label="${esc(basic ? labels[role] : `${n + 1}番 ${labels[role] || role.replace(/\bS\b/g, "主語")}`)}に置く">${esc(basic ? labels[role] : `${n + 1}. ${labels[role] || role.replace(/\bS\b/g, "主語")}`)}${basic ? '' : '<small>発音する順</small>'}</button>${i < 0 ? '<span class="empty">空欄</span>' : cardHTML(q, i)}</section>`;
     }).join('');
     if (usingLists()) {
-      $('slots').innerHTML = Construction.roles.map(role => `<section class="slot ${!targetAllowed(role) ? 'locked' : ''} ${wrong.includes(role) ? 'wrong' : ''}" data-role="${role}" aria-disabled="${!targetAllowed(role)}"><label class="target" for="choice-${role}">${labels[role]}</label><select class="${picks()[role] ? 'has-choice' : 'placeholder'}" id="choice-${role}" ${!targetAllowed(role) ? 'disabled' : ''} data-choice="${role}"><option value="__unanswered__" ${Object.hasOwn(picks(), role) ? '' : 'selected'}>えらんでね</option>${Construction.choicesFor(DATA, q, role).map(text => `<option value="${esc(text)}" ${Object.hasOwn(picks(), role) && picks()[role] === text ? 'selected' : ''}>${esc(text)}</option>`).join('')}</select></section>`).join('');
+      $('slots').innerHTML = Construction.roles.map(role => `<section class="slot ${!targetAllowed(role) ? 'locked' : ''}" data-role="${role}" aria-disabled="${!targetAllowed(role)}"><label class="target" for="choice-${role}">${labels[role]}</label><select class="${picks()[role] ? 'has-choice' : 'placeholder'}" id="choice-${role}" ${!targetAllowed(role) ? 'disabled' : ''} data-choice="${role}"><option value="__unanswered__" ${Object.hasOwn(picks(), role) ? '' : 'selected'}>えらんでね</option>${Construction.choicesFor(DATA, q, role).map(text => `<option value="${esc(text)}" ${Object.hasOwn(picks(), role) && picks()[role] === text ? 'selected' : ''}>${esc(text)}</option>`).join('')}</select></section>`).join('');
     }
     if (!$('pictureScene').hidden) renderPicture(q);
-    renderFeedback(q, basic);
+    if (updateResult) renderResult(q, basic);
   }
-  function renderFeedback(q, basic) {
-    $('feedback').innerHTML = feedback ? `<div class="feedback ${feedback.good ? 'good' : ''}">${esc(feedback.text)}</div>` : '';
+  function renderResult(q, basic) {
+    $('feedback').innerHTML = passed ? '<div class="feedback">正解！ ことばがつながったね。</div>' : '';
     $('result').innerHTML = passed ? `
       <div class="result">
         <p class="full-english" lang="en">${esc(q.en)}</p>
@@ -338,19 +353,20 @@ if (typeof document !== 'undefined') {
       select.classList.toggle('placeholder', !hasChoice);
       const slot = select.parentElement;
       slot.classList.toggle('locked', locked);
-      slot.classList.remove('wrong');
       slot.setAttribute('aria-disabled', String(locked));
     }
-    passed = false; feedback = null; wrong = [];
-    renderFeedback(getQ(), true);
+    const q = getQ();
+    if (checkAnswer(q)) renderResult(q, true);
   });
-  function moveCard(index, target) {
+  function moveCard(index, target, focusSelector = `[data-card="${index}"]`) {
     if (!targetAllowed(target)) return;
     stopSpeech();
-    attempts.set(state.current, Construction.place(getQ(), attempt(), index, target));
-    selected = null; feedback = null; passed = false; wrong = [];
+    const q = getQ();
+    attempts.set(state.current, Construction.place(q, attempt(), index, target));
+    selected = null;
+    checkAnswer(q);
     renderExercise();
-    document.querySelector(`[data-card="${index}"]`)?.focus({ preventScroll: true });
+    document.querySelector(focusSelector)?.focus({ preventScroll: true });
   }
   function dropZone(x, y) {
     const zone = document.elementFromPoint(x, y)?.closest('[data-drop]');
@@ -422,48 +438,20 @@ if (typeof document !== 'undefined') {
     if (button.dataset.lesson) { choose(button.dataset.lesson); return; }
     if (button.hasAttribute('data-card')) {
       const i = Number(button.dataset.card);
-      if (selected === i) { attempts.set(state.current, Construction.place(getQ(), attempt(), i, '')); selected = null; }
-      else selected = i;
-      passed = false; feedback = null; wrong = []; renderExercise();
+      if (selected === i) { moveCard(i, ''); return; }
+      selected = i;
+      renderExercise(false);
       document.querySelector(`[data-card="${i}"]`)?.focus({ preventScroll: true }); return;
     }
     if (button.hasAttribute('data-target')) {
-      if (!targetAllowed(button.dataset.target)) return;
-      if (selected === null) { feedback = { text: 'まず、動かしたいカードをえらぼう。' }; }
-      else { attempts.set(state.current, Construction.place(getQ(), attempt(), selected, button.dataset.target)); selected = null; feedback = null; }
-      passed = false; wrong = []; renderExercise();
-      document.querySelector(`[data-target="${button.dataset.target}"]`)?.focus({ preventScroll: true }); return;
+      if (selected !== null) moveCard(selected, button.dataset.target, `[data-target="${button.dataset.target}"]`);
+      return;
     }
     switch (button.id) {
       case 'cardsMode': case 'selectMode':
         stopSpeech(); state.mode = button.id === 'selectMode' ? 'select' : 'cards';
-        selected = null; passed = false; feedback = null; wrong = []; save(); renderExercise(); break;
-      case 'check': {
-        const q = getQ(); passed = usingLists() ? Construction.choicesCorrect(q, picks()) : Construction.isCorrect(q, attempt()); wrong = [];
-        playFeedbackSound(passed);
-        if (passed) {
-          if (!state.completed.includes(q.id)) state.completed.push(q.id);
-          feedback = { good: true, text: '正解！ ことばがつながったね。' }; save();
-        } else {
-          const cards = Construction.cardsFor(q);
-          if (usingLists()) wrong = Construction.roles.filter(role => !Construction.choiceMatches(q, picks(), role));
-          else cards.forEach((_, i) => { if (attempt()[i] !== Construction.expectedTarget(q, i)) wrong.push(Construction.expectedTarget(q, i)); });
-          feedback = { text: q.level === 1 ? 'もう少し。「だれが」「どうする」から考えてみよう。点線の欄を見直してね。' : 'もう少し。部品の役割と話す順を確かめてみよう。' };
-        }
-        renderNav(visibleExamples()); renderExercise(); break;
-      }
-      case 'hint': {
-        const q = getQ(), cards = Construction.cardsFor(q);
-        if (usingLists()) {
-          const role = Construction.roles.find(role => !Construction.choiceMatches(q, picks(), role));
-          feedback = { text: role ? q.slots[role].ja ? `${labels[role]}（${hints[role]}）には「${q.slots[role].ja}」をえらぼう。` : `${labels[role]}は使わないよ。「えらんでね」に戻そう。` : '全部えらべたね。「たしかめる」を押してみよう。' };
-          renderExercise(); break;
-        }
-        const i = selected ?? cards.findIndex((_, n) => attempt()[n] !== Construction.expectedTarget(q, n));
-        feedback = { text: i < 0 ? '全部置けたね。「たしかめる」を押してみよう。' : q.level === 1 ? `「${cards[i].text}」は ${labels[cards[i].role]}（${hints[cards[i].role]}）へ。${q.note || ''}` : `「${cards[i].text}」は${i + 1}番目。「${cards[i].role}」の部品だよ。${q.note || ''}` };
-        renderExercise(); break;
-      }
-      case 'reset': stopSpeech(); if (usingLists()) selections.delete(state.current); else attempts.delete(state.current); selected = null; passed = false; wrong = []; feedback = null; renderExercise(); break;
+        selected = null; passed = answerIsComplete(getQ()); save(); renderExercise(); break;
+      case 'reset': stopSpeech(); if (usingLists()) selections.delete(state.current); else attempts.delete(state.current); selected = null; passed = false; renderExercise(); break;
       case 'previous': case 'next': {
         const visible = visibleExamples(), i = Construction.navigationIndex(visible, getQ());
         const next = visible[i + (button.id === 'next' ? 1 : -1)]; if (next) choose(next.id); break;
