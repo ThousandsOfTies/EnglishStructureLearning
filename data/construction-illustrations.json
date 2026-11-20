@@ -2845,6 +2845,456 @@
       "alt": "話し手と同じ女の子が、家で友だちと紙の帽子を折っている。",
       "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "紙の帽子・二人の人物・家庭の場面を確認。"
+    },
+    "build-close-1": {
+      "file": "assets/construction/build-close-1.png",
+      "alt": "左側の話し手が右の場面を紹介する。彼らは毎日家で本を閉じます。",
+      "clue": "時間のヒント：毎日。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-close-1-ongoing": {
+      "file": "assets/construction/build-close-1-ongoing.png",
+      "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。彼らは今家で本を閉じています。",
+      "clue": "時間のヒント：今。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-close-1-past": {
+      "file": "assets/construction/build-close-1-past.png",
+      "alt": "右の話し手が左の場面を振り返る。彼らは昨日家で本を閉じました。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-close-2": {
+      "file": "assets/construction/build-close-2.png",
+      "alt": "左側の話し手が右の場面を紹介する。私は毎日家で箱を閉じます。",
+      "clue": "時間のヒント：毎日。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-close-2-ongoing": {
+      "file": "assets/construction/build-close-2-ongoing.png",
+      "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。私は今家で箱を閉じています。",
+      "clue": "時間のヒント：今。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-close-2-past": {
+      "file": "assets/construction/build-close-2-past.png",
+      "alt": "右の話し手が左の場面を振り返る。私は昨日家で箱を閉じました。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-close-3": {
+      "file": "assets/construction/build-close-3.png",
+      "alt": "左側の話し手が右の場面を紹介する。あなたは毎日家で目を閉じます。",
+      "clue": "時間のヒント：毎日。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-close-3-ongoing": {
+      "file": "assets/construction/build-close-3-ongoing.png",
+      "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。あなたは今家で目を閉じています。",
+      "clue": "時間のヒント：今。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-close-3-past": {
+      "file": "assets/construction/build-close-3-past.png",
+      "alt": "右の話し手が左の場面を振り返る。あなたは昨日家で目を閉じました。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-push-1": {
+      "file": "assets/construction/build-push-1.png",
+      "alt": "左側の話し手が右の場面を紹介する。彼は毎日家で青いボタンを押します。",
+      "clue": "時間のヒント：毎日。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-push-1-ongoing": {
+      "file": "assets/construction/build-push-1-ongoing.png",
+      "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。彼は今家で青いボタンを押しています。",
+      "clue": "時間のヒント：今。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-push-1-past": {
+      "file": "assets/construction/build-push-1-past.png",
+      "alt": "右の話し手が左の場面を振り返る。彼は昨日家で青いボタンを押しました。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-push-2": {
+      "file": "assets/construction/build-push-2.png",
+      "alt": "左側の話し手が右の場面を紹介する。彼女は毎日家で小さなカートを押します。",
+      "clue": "時間のヒント：毎日。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-push-2-ongoing": {
+      "file": "assets/construction/build-push-2-ongoing.png",
+      "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。彼女は今家で小さなカートを押しています。",
+      "clue": "時間のヒント：今。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-push-2-past": {
+      "file": "assets/construction/build-push-2-past.png",
+      "alt": "右の話し手が左の場面を振り返る。彼女は昨日家で小さなカートを押しました。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-push-3": {
+      "file": "assets/construction/build-push-3.png",
+      "alt": "左側の話し手が右の場面を紹介する。それは毎日家でおもちゃの車を押します。",
+      "clue": "時間のヒント：毎日。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-push-3-ongoing": {
+      "file": "assets/construction/build-push-3-ongoing.png",
+      "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。それは今家でおもちゃの車を押しています。",
+      "clue": "時間のヒント：今。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-push-3-past": {
+      "file": "assets/construction/build-push-3-past.png",
+      "alt": "右の話し手が左の場面を振り返る。それは昨日家でおもちゃの車を押しました。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-pull-1": {
+      "file": "assets/construction/build-pull-1.png",
+      "alt": "左側の話し手が右の場面を紹介する。私たちは毎日家でロープを引きます。",
+      "clue": "時間のヒント：毎日。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-pull-1-ongoing": {
+      "file": "assets/construction/build-pull-1-ongoing.png",
+      "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。私たちは今家でロープを引いています。",
+      "clue": "時間のヒント：今。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-pull-1-past": {
+      "file": "assets/construction/build-pull-1-past.png",
+      "alt": "右の話し手が左の場面を振り返る。私たちは昨日家でロープを引きました。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-pull-2": {
+      "file": "assets/construction/build-pull-2.png",
+      "alt": "左側の話し手が右の場面を紹介する。彼らは毎日家で小さなワゴンを引きます。",
+      "clue": "時間のヒント：毎日。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-pull-2-ongoing": {
+      "file": "assets/construction/build-pull-2-ongoing.png",
+      "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。彼らは今家で小さなワゴンを引いています。",
+      "clue": "時間のヒント：今。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-pull-2-past": {
+      "file": "assets/construction/build-pull-2-past.png",
+      "alt": "右の話し手が左の場面を振り返る。彼らは昨日家で小さなワゴンを引きました。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-pull-3": {
+      "file": "assets/construction/build-pull-3.png",
+      "alt": "左側の話し手が右の場面を紹介する。私は毎日家でいすを引きます。",
+      "clue": "時間のヒント：毎日。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-pull-3-ongoing": {
+      "file": "assets/construction/build-pull-3-ongoing.png",
+      "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。私は今家でいすを引いています。",
+      "clue": "時間のヒント：今。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-pull-3-past": {
+      "file": "assets/construction/build-pull-3-past.png",
+      "alt": "右の話し手が左の場面を振り返る。私は昨日家でいすを引きました。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-turn-1": {
+      "file": "assets/construction/build-turn-1.png",
+      "alt": "左側の話し手が右の場面を紹介する。あなたは毎日家でハンドルを回します。",
+      "clue": "時間のヒント：毎日。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-turn-1-ongoing": {
+      "file": "assets/construction/build-turn-1-ongoing.png",
+      "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。あなたは今家でハンドルを回しています。",
+      "clue": "時間のヒント：今。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-turn-1-past": {
+      "file": "assets/construction/build-turn-1-past.png",
+      "alt": "右の話し手が左の場面を振り返る。あなたは昨日家でハンドルを回しました。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-turn-2": {
+      "file": "assets/construction/build-turn-2.png",
+      "alt": "左側の話し手が右の場面を紹介する。彼は毎日家でドアのつまみを回します。",
+      "clue": "時間のヒント：毎日。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-turn-2-ongoing": {
+      "file": "assets/construction/build-turn-2-ongoing.png",
+      "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。彼は今家でドアのつまみを回しています。",
+      "clue": "時間のヒント：今。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-turn-2-past": {
+      "file": "assets/construction/build-turn-2-past.png",
+      "alt": "右の話し手が左の場面を振り返る。彼は昨日家でドアのつまみを回しました。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-turn-3": {
+      "file": "assets/construction/build-turn-3.png",
+      "alt": "左側の話し手が右の場面を紹介する。彼女は毎日家でおもちゃの車輪を回します。",
+      "clue": "時間のヒント：毎日。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-turn-3-ongoing": {
+      "file": "assets/construction/build-turn-3-ongoing.png",
+      "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。彼女は今家でおもちゃの車輪を回しています。",
+      "clue": "時間のヒント：今。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-turn-3-past": {
+      "file": "assets/construction/build-turn-3-past.png",
+      "alt": "右の話し手が左の場面を振り返る。彼女は昨日家でおもちゃの車輪を回しました。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-lift-1": {
+      "file": "assets/construction/build-lift-1.png",
+      "alt": "左側の話し手が右の場面を紹介する。それは毎日家で小さな箱を持ち上げます。",
+      "clue": "時間のヒント：毎日。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-lift-1-ongoing": {
+      "file": "assets/construction/build-lift-1-ongoing.png",
+      "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。それは今家で小さな箱を持ち上げています。",
+      "clue": "時間のヒント：今。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-lift-1-past": {
+      "file": "assets/construction/build-lift-1-past.png",
+      "alt": "右の話し手が左の場面を振り返る。それは昨日家で小さな箱を持ち上げました。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-lift-2": {
+      "file": "assets/construction/build-lift-2.png",
+      "alt": "左側の話し手が右の場面を紹介する。私たちは毎日家でかばんを持ち上げます。",
+      "clue": "時間のヒント：毎日。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-lift-2-ongoing": {
+      "file": "assets/construction/build-lift-2-ongoing.png",
+      "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。私たちは今家でかばんを持ち上げています。",
+      "clue": "時間のヒント：今。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-lift-2-past": {
+      "file": "assets/construction/build-lift-2-past.png",
+      "alt": "右の話し手が左の場面を振り返る。私たちは昨日家でかばんを持ち上げました。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-lift-3": {
+      "file": "assets/construction/build-lift-3.png",
+      "alt": "左側の話し手が右の場面を紹介する。彼らは毎日家でふたを持ち上げます。",
+      "clue": "時間のヒント：毎日。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-lift-3-ongoing": {
+      "file": "assets/construction/build-lift-3-ongoing.png",
+      "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。彼らは今家でふたを持ち上げています。",
+      "clue": "時間のヒント：今。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-lift-3-past": {
+      "file": "assets/construction/build-lift-3-past.png",
+      "alt": "右の話し手が左の場面を振り返る。彼らは昨日家でふたを持ち上げました。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-carry-1": {
+      "file": "assets/construction/build-carry-1.png",
+      "alt": "左側の話し手が右の場面を紹介する。私は毎日家で本を運びます。",
+      "clue": "時間のヒント：毎日。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-carry-1-ongoing": {
+      "file": "assets/construction/build-carry-1-ongoing.png",
+      "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。私は今家で本を運んでいます。",
+      "clue": "時間のヒント：今。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-carry-1-past": {
+      "file": "assets/construction/build-carry-1-past.png",
+      "alt": "右の話し手が左の場面を振り返る。私は昨日家で本を運びました。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-carry-2": {
+      "file": "assets/construction/build-carry-2.png",
+      "alt": "左側の話し手が右の場面を紹介する。あなたは毎日家でかごを運びます。",
+      "clue": "時間のヒント：毎日。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-carry-2-ongoing": {
+      "file": "assets/construction/build-carry-2-ongoing.png",
+      "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。あなたは今家でかごを運んでいます。",
+      "clue": "時間のヒント：今。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-carry-2-past": {
+      "file": "assets/construction/build-carry-2-past.png",
+      "alt": "右の話し手が左の場面を振り返る。あなたは昨日家でかごを運びました。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-carry-3": {
+      "file": "assets/construction/build-carry-3.png",
+      "alt": "左側の話し手が右の場面を紹介する。彼は毎日家で毛布を運びます。",
+      "clue": "時間のヒント：毎日。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-carry-3-ongoing": {
+      "file": "assets/construction/build-carry-3-ongoing.png",
+      "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。彼は今家で毛布を運んでいます。",
+      "clue": "時間のヒント：今。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-carry-3-past": {
+      "file": "assets/construction/build-carry-3-past.png",
+      "alt": "右の話し手が左の場面を振り返る。彼は昨日家で毛布を運びました。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-hold-1": {
+      "file": "assets/construction/build-hold-1.png",
+      "alt": "左側の話し手が右の場面を紹介する。彼女は毎日外で赤い風船を持ちます。",
+      "clue": "時間のヒント：毎日。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-hold-1-ongoing": {
+      "file": "assets/construction/build-hold-1-ongoing.png",
+      "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。彼女は今外で赤い風船を持っています。",
+      "clue": "時間のヒント：今。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-hold-1-past": {
+      "file": "assets/construction/build-hold-1-past.png",
+      "alt": "右の話し手が左の場面を振り返る。彼女は昨日外で赤い風船を持ちました。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-hold-2": {
+      "file": "assets/construction/build-hold-2.png",
+      "alt": "左側の話し手が右の場面を紹介する。彼は毎日外でかさを持ちます。",
+      "clue": "時間のヒント：毎日。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-hold-2-ongoing": {
+      "file": "assets/construction/build-hold-2-ongoing.png",
+      "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。彼は今外でかさを持っています。",
+      "clue": "時間のヒント：今。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-hold-2-past": {
+      "file": "assets/construction/build-hold-2-past.png",
+      "alt": "右の話し手が左の場面を振り返る。彼は昨日外でかさを持ちました。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-hold-3": {
+      "file": "assets/construction/build-hold-3.png",
+      "alt": "左側の話し手が右の場面を紹介する。私たちは毎日外で小さな旗を持ちます。",
+      "clue": "時間のヒント：毎日。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-hold-3-ongoing": {
+      "file": "assets/construction/build-hold-3-ongoing.png",
+      "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。私たちは今外で小さな旗を持っています。",
+      "clue": "時間のヒント：今。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-hold-3-past": {
+      "file": "assets/construction/build-hold-3-past.png",
+      "alt": "右の話し手が左の場面を振り返る。私たちは昨日外で小さな旗を持ちました。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-put-1": {
+      "file": "assets/construction/build-put-1.png",
+      "alt": "左側の話し手が右の場面を紹介する。彼らは毎日机の上に本を置きます。",
+      "clue": "時間のヒント：毎日。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-put-1-ongoing": {
+      "file": "assets/construction/build-put-1-ongoing.png",
+      "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。彼らは今机の上に本を置いています。",
+      "clue": "時間のヒント：今。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-put-1-past": {
+      "file": "assets/construction/build-put-1-past.png",
+      "alt": "右の話し手が左の場面を振り返る。彼らは昨日机の上に本を置きました。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-put-2": {
+      "file": "assets/construction/build-put-2.png",
+      "alt": "左側の話し手が右の場面を紹介する。私は毎日机の上にコップを置きます。",
+      "clue": "時間のヒント：毎日。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-put-2-ongoing": {
+      "file": "assets/construction/build-put-2-ongoing.png",
+      "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。私は今机の上にコップを置いています。",
+      "clue": "時間のヒント：今。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-put-2-past": {
+      "file": "assets/construction/build-put-2-past.png",
+      "alt": "右の話し手が左の場面を振り返る。私は昨日机の上にコップを置きました。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-put-3": {
+      "file": "assets/construction/build-put-3.png",
+      "alt": "左側の話し手が右の場面を紹介する。あなたは毎日机の上に鉛筆を置きます。",
+      "clue": "時間のヒント：毎日。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-put-3-ongoing": {
+      "file": "assets/construction/build-put-3-ongoing.png",
+      "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。あなたは今机の上に鉛筆を置いています。",
+      "clue": "時間のヒント：今。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-put-3-past": {
+      "file": "assets/construction/build-put-3-past.png",
+      "alt": "右の話し手が左の場面を振り返る。あなたは昨日机の上に鉛筆を置きました。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-feel-1": {
+      "file": "assets/construction/build-feel-1.png",
+      "alt": "左側の話し手が、感じていることを右側に示す。私は風を感じます。",
+      "clue": "絵の人物と、していることを見てえらぼう。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-feel-2": {
+      "file": "assets/construction/build-feel-2.png",
+      "alt": "左側の話し手が、感じていることを右側に示す。あなたは雨のしずくを感じます。",
+      "clue": "絵の人物と、していることを見てえらぼう。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "build-feel-3": {
+      "file": "assets/construction/build-feel-3.png",
+      "alt": "左側の話し手が、感じていることを右側に示す。彼は太陽のあたたかさを感じます。",
+      "clue": "絵の人物と、していることを見てえらぼう。",
+      "review": "場面の人物・動作・対象と各時制の構図を確認。"
     }
   }
 }
