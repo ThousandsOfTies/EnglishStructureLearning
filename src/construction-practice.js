@@ -95,11 +95,12 @@ if (typeof document !== 'undefined') {
   }
   const KEY = 'construction-workshop-original-v1', VOICE_KEY = 'sentence-workshop-voice-v1';
   const SPEED_KEY = 'construction-workshop-speech-speed-v1';
+  const speechRates = { fast: 1.2, normal: 1, slow: .6 };
   const $ = id => document.getElementById(id);
   const esc = value => String(value).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   const labels = { S: '主語', predicate: '述語', P1: '対象１', P2: '対象２', place: '場所', time: '時' };
   const hints = { S: 'だれ・何が？', predicate: 'どうする・どんな状態？', P1: '述語につなぐ一つ目', P2: '述語につなぐ二つ目', place: 'どこで？', time: 'いつ？' };
-  let saved = null, savedVoice = '', speechSpeed = 'fast', storageOK = true;
+  let saved = null, savedVoice = '', speechSpeed = 'normal', storageOK = true;
   try { saved = JSON.parse(localStorage.getItem(KEY)); savedVoice = JSON.parse(localStorage.getItem(VOICE_KEY))?.voiceURI || ''; }
   catch (error) { if (error.name !== 'SyntaxError') storageOK = false; }
   const restored = Construction.restore(DATA, saved);
@@ -121,7 +122,10 @@ if (typeof document !== 'undefined') {
     Object.assign(state, { levels: [1], group: first.group, scope: 'all', mode: 'select' });
     choose(first.id);
   }
-  try { if (localStorage.getItem(SPEED_KEY) === 'slow') speechSpeed = 'slow'; }
+  try {
+    const savedSpeed = localStorage.getItem(SPEED_KEY);
+    if (Object.hasOwn(speechRates, savedSpeed)) speechSpeed = savedSpeed;
+  }
   catch { storageOK = false; }
   const hasSpeech = 'speechSynthesis' in window && 'SpeechSynthesisUtterance' in window;
   const getQ = () => DATA.examples.find(q => q.id === state.current);
@@ -277,8 +281,9 @@ if (typeof document !== 'undefined') {
         <div class="actions speech-controls" role="group" aria-label="英文の読み上げ">
           <select id="voice" aria-label="読み上げる声"></select>
           <div class="speech-buttons">
-            <button id="speakFast" ${hasSpeech ? '' : 'disabled'}>はやく読む</button>
-            <button id="speakSlow" ${hasSpeech ? '' : 'disabled'}>ゆっくり読む</button>
+            <button id="speakFast" data-speed="fast" ${hasSpeech ? '' : 'disabled'}>はやく読む</button>
+            <button id="speakNormal" data-speed="normal" ${hasSpeech ? '' : 'disabled'}>普通に話す</button>
+            <button id="speakSlow" data-speed="slow" ${hasSpeech ? '' : 'disabled'}>ゆっくり読む</button>
           </div>
         </div>
         <div class="spoken">${q.blocks.map(([role, text], index) => {
@@ -463,8 +468,8 @@ if (typeof document !== 'undefined') {
         const visible = visibleExamples(), i = Construction.navigationIndex(visible, getQ());
         const next = visible[i + (button.id === 'next' ? 1 : -1)]; if (next) choose(next.id); break;
       }
-      case 'speakFast': case 'speakSlow': {
-        speechSpeed = button.id === 'speakSlow' ? 'slow' : 'fast';
+      case 'speakFast': case 'speakNormal': case 'speakSlow': {
+        speechSpeed = button.dataset.speed;
         speak(getQ().en);
         try { localStorage.setItem(SPEED_KEY, speechSpeed); } catch { storageOK = false; save(); }
         break;
@@ -511,7 +516,7 @@ if (typeof document !== 'undefined') {
     stopSpeech(); const run = speechRun, voice = preferredVoice(englishVoices());
     const utterance = new SpeechSynthesisUtterance(text); // Never derive speech from the internal question marker.
     if (voice) utterance.voice = voice;
-    utterance.lang = 'en-US'; utterance.rate = speechSpeed === 'slow' ? .6 : 1;
+    utterance.lang = 'en-US'; utterance.rate = speechRates[speechSpeed];
     const report = text => { if (run === speechRun && $('speechStatus')) $('speechStatus').textContent = text; };
     utterance.onstart = () => report('読み上げ中…'); utterance.onend = () => report('読み上げました。');
     utterance.onerror = event => { if (!['canceled', 'interrupted'].includes(event.error)) report('声を使えませんでした。別の声をえらぶか、端末の音声設定を確認してください。'); };

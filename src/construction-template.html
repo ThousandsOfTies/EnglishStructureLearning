@@ -30,6 +30,8 @@
 .day-calendar.tomorrow .day-orbit{color:#ff9ac3;transform:scaleX(-1) rotate(-9deg)}
 .speech-controls{gap:6px}.speech-controls select{min-width:4.5em;max-width:min(7em,100%);field-sizing:content;text-overflow:ellipsis}
 .speech-buttons{display:flex;flex-wrap:wrap;justify-content:center;gap:6px;max-width:100%}.speech-buttons button{white-space:nowrap;padding:8px 10px}
+.practice-toolbar{display:flex;align-items:flex-start;gap:8px;margin-bottom:12px}.practice-toolbar .mode-switcher{margin:0}.practice-toolbar #reset{margin-inline-start:auto;flex:none;white-space:nowrap}
+@media(max-width:540px){.practice-toolbar{flex-direction:column;align-items:stretch}.practice-toolbar #reset{align-self:flex-end;order:-1}}
 </style>
 </head>
 <body><div class="wrap">
@@ -39,13 +41,16 @@
 <p id="artworkProgress" class="muted"></p>
 <p class="muted wide" id="filterCount" aria-live="polite"></p><nav class="lessons wide" id="lessons" aria-label="例文一覧"></nav>
 </aside><div class="practice-pane" id="practicePane"><main class="sheet" id="main">
+<div class="practice-toolbar">
 <div class="mode-switcher" id="modeSwitcher" role="group" aria-label="練習のしかた"><button id="cardsMode" aria-pressed="true">カードを並べる</button><button id="selectMode" aria-pressed="false">絵を見てえらぶ</button></div>
+<button id="reset">初めに戻す</button>
+</div>
 <div id="advancedInstructions" hidden><h2>英語の部品を、話す順に並べよう。</h2><p class="muted">英語のカードをドラッグして、話す順に置こう。カード置き場へ戻すこともできるよ。</p></div>
 <div class="prompt"><p class="japanese" id="japanese"></p><p id="base" class="muted"></p></div>
 <figure id="pictureScene" class="picture-scene" hidden></figure>
 <p id="selectedStatus" class="muted" role="status"></p>
 <div id="pool" class="pool" data-drop="" role="group" aria-label="まだ置いていないカード・ここに戻せます"></div><div id="slots" class="slots" role="group" aria-label="英文を組み立てる欄"></div>
-<div class="actions"><button id="check" class="primary">たしかめる</button><button id="hint">ヒント</button><button id="reset">もう一度つくる</button></div>
+<div class="actions"><button id="check" class="primary">たしかめる</button><button id="hint">ヒント</button></div>
 <div id="feedback" role="status" aria-live="polite"></div><div id="result"></div>
 <div class="lesson-navigation"><button id="previous">← 前の場面</button><button id="next">次の場面 →</button></div>
 <details><summary>この練習の考え方</summary><p>主語 ＋ 述語 ＋ P1 ＋ P2 ＋ 場所 ＋ 時。使わない欄は空欄で大丈夫です。</p><p>PはParameterという、この教材での呼び名です。giveはP1に相手、P2にもの。callは対象と名前、keepは対象と状態をつなぎます。</p><p>go to・look at・listen toは、つなぐことばまで述語。be＋名詞・形容詞も、まとめて述語として扱います。</p><p>レベル2・3では、部品を分けて発音する順に並べます。Yes／Noの問いには内部の目印「黙疑問詞 whether」を考えますが、完成英文には書かず、読み上げもしません。</p><p></p></details>
