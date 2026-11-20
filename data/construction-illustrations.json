@@ -17,7 +17,7 @@
     "build-go-1-past": {
       "file": "assets/construction/build-go-1-past-rect.png",
       "alt": "右の話し手が左の場面を振り返る。私は昨日公園に行きました。",
-      "clue": "時間のヒント：昨日。右の話し手は今にいます。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。右の話し手は今にいます。",
       "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-give-1": {
@@ -47,7 +47,7 @@
     "build-go-2-past": {
       "file": "assets/construction/build-go-2-past-rect.png",
       "alt": "右の話し手が左の場面を振り返る。あなたは昨日図書館に行きました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-go-3-ongoing": {
@@ -59,7 +59,7 @@
     "build-go-3-past": {
       "file": "assets/construction/build-go-3-past-rect.png",
       "alt": "右の話し手が左の場面を振り返る。彼は昨日プールに行きました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-come-1": {
@@ -77,7 +77,7 @@
     "build-come-1-past": {
       "file": "assets/construction/build-come-1-past-rect.png",
       "alt": "右の話し手が左の場面を振り返る。彼女は昨日ここに来ました。",
-      "clue": "時間のヒント：昨日。話し手のいる場所へ近づいてきます。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。話し手のいる場所へ近づいてきます。",
       "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-come-2": {
@@ -95,7 +95,7 @@
     "build-come-2-past": {
       "file": "assets/construction/build-come-2-past-rect.png",
       "alt": "右の話し手が左の場面を振り返る。彼は昨日この部屋に来ました。",
-      "clue": "時間のヒント：昨日。話し手のいる場所へ近づいてきます。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。話し手のいる場所へ近づいてきます。",
       "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-come-3": {
@@ -107,7 +107,7 @@
     "build-come-3-past": {
       "file": "assets/construction/build-come-3-past-rect.png",
       "alt": "右の話し手が左の場面を振り返る。私たちは昨日公園に来ました。",
-      "clue": "時間のヒント：昨日。話し手のいる場所へ近づいてきます。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。話し手のいる場所へ近づいてきます。",
       "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-come-3-ongoing": {
@@ -131,7 +131,7 @@
     "build-walk-1-past": {
       "file": "assets/construction/build-walk-1-past-rect.png",
       "alt": "右の話し手が左の場面を振り返る。彼らは昨日川のそばを歩きました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-walk-2": {
@@ -149,7 +149,7 @@
     "build-walk-2-past": {
       "file": "assets/construction/build-walk-2-past-rect.png",
       "alt": "右の話し手が左の場面を振り返る。私は昨日学校まで歩きました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-walk-3": {
@@ -167,7 +167,7 @@
     "build-walk-3-past": {
       "file": "assets/construction/build-walk-3-past-rect.png",
       "alt": "右の話し手が左の場面を振り返る。あなたは昨日森の中を歩きました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-run-1": {
@@ -185,7 +185,7 @@
     "build-run-1-past": {
       "file": "assets/construction/build-run-1-past-rect.png",
       "alt": "右の話し手が左の場面を振り返る。彼は昨日公園で走りました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-run-2": {
@@ -203,7 +203,7 @@
     "build-run-2-past": {
       "file": "assets/construction/build-run-2-past-rect.png",
       "alt": "右の話し手が左の場面を振り返る。彼女は昨日校庭で走りました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-run-3": {
@@ -221,7 +221,7 @@
     "build-run-3-past": {
       "file": "assets/construction/build-run-3-past-rect.png",
       "alt": "右の話し手が左の場面を振り返る。それは昨日浜辺で走りました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-jump-1": {
@@ -239,7 +239,7 @@
     "build-jump-1-past": {
       "file": "assets/construction/build-jump-1-past-rect.png",
       "alt": "右の話し手が左の場面を振り返る。私たちは昨日公園で小さな水たまりをとびこえました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-jump-2-ongoing": {
@@ -251,7 +251,7 @@
     "build-jump-2-past": {
       "file": "assets/construction/build-jump-2-past-rect.png",
       "alt": "右の話し手が左の場面を振り返る。彼らは昨日公園でロープをとびこえました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-jump-3": {
@@ -269,7 +269,7 @@
     "build-jump-3-past": {
       "file": "assets/construction/build-jump-3-past-rect.png",
       "alt": "右の話し手が左の場面を振り返る。私は昨日公園で線をとびこえました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-jump-2": {
@@ -293,7 +293,7 @@
     "build-swim-1-past": {
       "file": "assets/construction/build-swim-1-past-rect.png",
       "alt": "右の話し手が左の場面を振り返る。あなたは昨日プールで泳ぎました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-swim-2": {
@@ -311,7 +311,7 @@
     "build-swim-2-past": {
       "file": "assets/construction/build-swim-2-past-rect.png",
       "alt": "右の話し手が左の場面を振り返る。彼は昨日海で泳ぎました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-swim-3": {
@@ -329,7 +329,7 @@
     "build-swim-3-past": {
       "file": "assets/construction/build-swim-3-past-rect.png",
       "alt": "右の話し手が左の場面を振り返る。彼女は昨日湖で泳ぎました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-fly-1-ongoing": {
@@ -341,7 +341,7 @@
     "build-fly-1-past": {
       "file": "assets/construction/build-fly-1-past-rect.png",
       "alt": "右の話し手が左の場面を振り返る。彼は昨日公園で赤いたこを飛ばしました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-fly-1": {
@@ -359,7 +359,7 @@
     "build-fly-2-past": {
       "file": "assets/construction/build-fly-2-past-rect.png",
       "alt": "右の話し手が左の場面を振り返る。私たちは昨日公園で青いたこを飛ばしました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-fly-2": {
@@ -377,7 +377,7 @@
     "build-fly-3-past": {
       "file": "assets/construction/build-fly-3-past-rect.png",
       "alt": "右の話し手が左の場面を振り返る。彼らは昨日公園で紙飛行機を飛ばしました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-fly-3": {
@@ -395,7 +395,7 @@
     "build-ride-1-past": {
       "file": "assets/construction/build-ride-1-past-rect.png",
       "alt": "右の話し手が左の場面を振り返る。私は昨日公園で自転車に乗りました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-ride-1": {
@@ -413,7 +413,7 @@
     "build-ride-2-past": {
       "file": "assets/construction/build-ride-2-past-rect.png",
       "alt": "右の話し手が左の場面を振り返る。あなたは昨日公園で小さな馬に乗りました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-ride-2": {
@@ -431,7 +431,7 @@
     "build-ride-3-past": {
       "file": "assets/construction/build-ride-3-past-rect.png",
       "alt": "右の話し手が左の場面を振り返る。彼は昨日公園でスクーターに乗りました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-ride-3": {
@@ -455,7 +455,7 @@
     "build-climb-1-past": {
       "file": "assets/construction/build-climb-1-past-rect.png",
       "alt": "右の話し手が左の場面を振り返る。彼女は昨日公園で小さな丘に登りました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-climb-2": {
@@ -473,7 +473,7 @@
     "build-climb-2-past": {
       "file": "assets/construction/build-climb-2-past-rect.png",
       "alt": "右の話し手が左の場面を振り返る。彼は昨日公園で木に登りました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-climb-3": {
@@ -491,7 +491,7 @@
     "build-climb-3-past": {
       "file": "assets/construction/build-climb-3-past-rect.png",
       "alt": "右の話し手が左の場面を振り返る。私たちは昨日公園ではしごに登りました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-sit-1": {
@@ -509,7 +509,7 @@
     "build-sit-1-past": {
       "file": "assets/construction/build-sit-1-past-rect.png",
       "alt": "右の話し手が左の場面を振り返る。彼らは昨日ベンチに座りました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-sit-2-ongoing": {
@@ -521,7 +521,7 @@
     "build-sit-2-past": {
       "file": "assets/construction/build-sit-2-past-rect.png",
       "alt": "右の話し手が左の場面を振り返る。私は昨日いすに座りました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-sit-3": {
@@ -539,7 +539,7 @@
     "build-sit-3-past": {
       "file": "assets/construction/build-sit-3-past-rect.png",
       "alt": "右の話し手が左の場面を振り返る。あなたは昨日芝生に座りました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-stand-1": {
@@ -557,7 +557,7 @@
     "build-stand-1-past": {
       "file": "assets/construction/build-stand-1-past-rect.png",
       "alt": "右の話し手が左の場面を振り返る。彼は昨日ドアのそばに立ちました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-stand-2": {
@@ -575,7 +575,7 @@
     "build-stand-2-past": {
       "file": "assets/construction/build-stand-2-past-rect.png",
       "alt": "右の話し手が左の場面を振り返る。彼女は昨日木の下に立ちました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-stand-3": {
@@ -593,7 +593,7 @@
     "build-stand-3-past": {
       "file": "assets/construction/build-stand-3-past-rect.png",
       "alt": "右の話し手が左の場面を振り返る。彼は昨日先生のとなりに立ちました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "元の文と照合し、人物・場所・動作・時制の配置を確認。"
     },
     "build-sit-2": {
@@ -857,7 +857,7 @@
     "build-sleep-1-past": {
       "file": "assets/construction/build-sleep-1-past.png",
       "alt": "右の話し手が左の場面を振り返る。私たちは昨日ベッドでねました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。"
     },
     "build-sleep-2": {
@@ -875,7 +875,7 @@
     "build-sleep-2-past": {
       "file": "assets/construction/build-sleep-2-past.png",
       "alt": "右の話し手が左の場面を振り返る。彼らは昨日テントでねました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。"
     },
     "build-sleep-3": {
@@ -893,7 +893,7 @@
     "build-sleep-3-past": {
       "file": "assets/construction/build-sleep-3-past.png",
       "alt": "右の話し手が左の場面を振り返る。私は昨日ふとんでねました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。"
     },
     "build-wake-1": {
@@ -911,7 +911,7 @@
     "build-wake-1-past": {
       "file": "assets/construction/build-wake-1-past.png",
       "alt": "右の話し手が左の場面を振り返る。あなたは昨日家で起きました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。"
     },
     "build-wake-2": {
@@ -929,7 +929,7 @@
     "build-wake-2-past": {
       "file": "assets/construction/build-wake-2-past.png",
       "alt": "右の話し手が左の場面を振り返る。彼は昨日家で起きました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。"
     },
     "build-wake-3": {
@@ -947,7 +947,7 @@
     "build-wake-3-past": {
       "file": "assets/construction/build-wake-3-past.png",
       "alt": "右の話し手が左の場面を振り返る。彼女は昨日家で起きました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。"
     },
     "build-rest-1": {
@@ -965,7 +965,7 @@
     "build-rest-1-past": {
       "file": "assets/construction/build-rest-1-past.png",
       "alt": "右の話し手が左の場面を振り返る。彼は昨日木の下で休みました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。"
     },
     "build-rest-2": {
@@ -983,7 +983,7 @@
     "build-rest-2-past": {
       "file": "assets/construction/build-rest-2-past.png",
       "alt": "右の話し手が左の場面を振り返る。私たちは昨日ソファで休みました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。"
     },
     "build-rest-3": {
@@ -1001,7 +1001,7 @@
     "build-rest-3-past": {
       "file": "assets/construction/build-rest-3-past.png",
       "alt": "右の話し手が左の場面を振り返る。彼らは昨日ベンチで休みました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。"
     },
     "build-stay-1": {
@@ -1019,7 +1019,7 @@
     "build-stay-1-past": {
       "file": "assets/construction/build-stay-1-past.png",
       "alt": "右の話し手が左の場面を振り返る。私は昨日おばあちゃんの家にとまりました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。"
     },
     "build-stay-2": {
@@ -1037,7 +1037,7 @@
     "build-stay-2-past": {
       "file": "assets/construction/build-stay-2-past.png",
       "alt": "右の話し手が左の場面を振り返る。あなたは昨日テントにとまりました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。"
     },
     "build-stay-3": {
@@ -1055,7 +1055,7 @@
     "build-stay-3-past": {
       "file": "assets/construction/build-stay-3-past.png",
       "alt": "右の話し手が左の場面を振り返る。彼は昨日ホテルにとまりました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。"
     },
     "build-live-1": {
@@ -1091,7 +1091,7 @@
     "build-move-1-past": {
       "file": "assets/construction/build-move-1-past.png",
       "alt": "右の話し手が左の場面を振り返る。彼らは昨日家で箱を動かしました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。"
     },
     "build-move-2": {
@@ -1109,7 +1109,7 @@
     "build-move-2-past": {
       "file": "assets/construction/build-move-2-past.png",
       "alt": "右の話し手が左の場面を振り返る。私は昨日家でいすを動かしました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。"
     },
     "build-move-3": {
@@ -1127,7 +1127,7 @@
     "build-move-3-past": {
       "file": "assets/construction/build-move-3-past.png",
       "alt": "右の話し手が左の場面を振り返る。あなたは昨日家で小さな机を動かしました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。"
     },
     "build-stop-1": {
@@ -1145,7 +1145,7 @@
     "build-stop-1-past": {
       "file": "assets/construction/build-stop-1-past.png",
       "alt": "右の話し手が左の場面を振り返る。彼は昨日家でおもちゃの電車を止めました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。"
     },
     "build-stop-2": {
@@ -1163,7 +1163,7 @@
     "build-stop-2-past": {
       "file": "assets/construction/build-stop-2-past.png",
       "alt": "右の話し手が左の場面を振り返る。彼女は昨日家で音楽を止めました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。"
     },
     "build-stop-3": {
@@ -1181,7 +1181,7 @@
     "build-stop-3-past": {
       "file": "assets/construction/build-stop-3-past.png",
       "alt": "右の話し手が左の場面を振り返る。それは昨日家でタイマーを止めました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。"
     },
     "build-start-1": {
@@ -1199,7 +1199,7 @@
     "build-start-1-past": {
       "file": "assets/construction/build-start-1-past.png",
       "alt": "右の話し手が左の場面を振り返る。私たちは昨日家でゲームを始めました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。"
     },
     "build-start-2": {
@@ -1217,7 +1217,7 @@
     "build-start-2-past": {
       "file": "assets/construction/build-start-2-past.png",
       "alt": "右の話し手が左の場面を振り返る。彼らは昨日家で宿題を始めました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。"
     },
     "build-start-3": {
@@ -1235,7 +1235,7 @@
     "build-start-3-past": {
       "file": "assets/construction/build-start-3-past.png",
       "alt": "右の話し手が左の場面を振り返る。私は昨日家でパズルを始めました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。"
     },
     "build-wait-1": {
@@ -1253,7 +1253,7 @@
     "build-wait-1-past": {
       "file": "assets/construction/build-wait-1-past.png",
       "alt": "右の話し手が左の場面を振り返る。あなたは昨日ここでバスを待ちました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。"
     },
     "build-wait-2": {
@@ -1271,7 +1271,7 @@
     "build-wait-2-past": {
       "file": "assets/construction/build-wait-2-past.png",
       "alt": "右の話し手が左の場面を振り返る。彼は昨日ここで友だちを待ちました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。"
     },
     "build-wait-3": {
@@ -1289,7 +1289,7 @@
     "build-wait-3-past": {
       "file": "assets/construction/build-wait-3-past.png",
       "alt": "右の話し手が左の場面を振り返る。彼女は昨日ここでお母さんを待ちました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。"
     },
     "build-eat-1": {
@@ -1307,7 +1307,7 @@
     "build-eat-1-past": {
       "file": "assets/construction/build-eat-1-past.png",
       "alt": "右の話し手が左の場面を振り返る。彼は昨日家でおにぎりを食べました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。"
     },
     "build-eat-2": {
@@ -1325,7 +1325,7 @@
     "build-eat-2-past": {
       "file": "assets/construction/build-eat-2-past.png",
       "alt": "右の話し手が左の場面を振り返る。私たちは昨日家でバナナを食べました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。"
     },
     "build-eat-3": {
@@ -1343,7 +1343,7 @@
     "build-eat-3-past": {
       "file": "assets/construction/build-eat-3-past.png",
       "alt": "右の話し手が左の場面を振り返る。彼らは昨日家でにんじんを食べました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。"
     },
     "build-drink-1": {
@@ -1361,7 +1361,7 @@
     "build-drink-1-past": {
       "file": "assets/construction/build-drink-1-past.png",
       "alt": "右の話し手が左の場面を振り返る。私は昨日家で水を飲みました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。"
     },
     "build-drink-2": {
@@ -1379,7 +1379,7 @@
     "build-drink-2-past": {
       "file": "assets/construction/build-drink-2-past.png",
       "alt": "右の話し手が左の場面を振り返る。あなたは昨日家で牛乳を飲みました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。"
     },
     "build-drink-3": {
@@ -1397,7 +1397,7 @@
     "build-drink-3-past": {
       "file": "assets/construction/build-drink-3-past.png",
       "alt": "右の話し手が左の場面を振り返る。彼は昨日家でりんごジュースを飲みました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。"
     },
     "build-cook-1": {
@@ -1415,7 +1415,7 @@
     "build-cook-1-past": {
       "file": "assets/construction/build-cook-1-past.png",
       "alt": "右の話し手が左の場面を振り返る。彼女は昨日家でお父さんとカレーを作りました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。"
     },
     "build-cook-2": {
@@ -1433,7 +1433,7 @@
     "build-cook-2-past": {
       "file": "assets/construction/build-cook-2-past.png",
       "alt": "右の話し手が左の場面を振り返る。彼は昨日家でお父さんとスープを作りました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。"
     },
     "build-cook-3": {
@@ -1451,7 +1451,7 @@
     "build-cook-3-past": {
       "file": "assets/construction/build-cook-3-past.png",
       "alt": "右の話し手が左の場面を振り返る。私たちは昨日家でお父さんとごはんを作りました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。"
     },
     "build-bake-1": {
@@ -1469,7 +1469,7 @@
     "build-bake-1-past": {
       "file": "assets/construction/build-bake-1-past.png",
       "alt": "右の話し手が左の場面を振り返る。彼らは昨日家でお母さんとバナナケーキを焼きました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-bake-2": {
@@ -1487,7 +1487,7 @@
     "build-bake-2-past": {
       "file": "assets/construction/build-bake-2-past.png",
       "alt": "右の話し手が左の場面を振り返る。私は昨日家でお母さんとクッキーを焼きました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-bake-3": {
@@ -1505,7 +1505,7 @@
     "build-bake-3-past": {
       "file": "assets/construction/build-bake-3-past.png",
       "alt": "右の話し手が左の場面を振り返る。あなたは昨日家でお母さんとパンを焼きました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-taste-1": {
@@ -1523,7 +1523,7 @@
     "build-taste-1-past": {
       "file": "assets/construction/build-taste-1-past.png",
       "alt": "右の話し手が左の場面を振り返る。彼は昨日家でスープを味見しました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-taste-2": {
@@ -1541,7 +1541,7 @@
     "build-taste-2-past": {
       "file": "assets/construction/build-taste-2-past.png",
       "alt": "右の話し手が左の場面を振り返る。彼女は昨日家でカレーを味見しました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-taste-3": {
@@ -1559,7 +1559,7 @@
     "build-taste-3-past": {
       "file": "assets/construction/build-taste-3-past.png",
       "alt": "右の話し手が左の場面を振り返る。彼は昨日家でソースを味見しました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-cut-1": {
@@ -1577,7 +1577,7 @@
     "build-cut-1-past": {
       "file": "assets/construction/build-cut-1-past.png",
       "alt": "右の話し手が左の場面を振り返る。私たちは昨日家でりんごを切りました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-cut-2": {
@@ -1595,7 +1595,7 @@
     "build-cut-2-past": {
       "file": "assets/construction/build-cut-2-past.png",
       "alt": "右の話し手が左の場面を振り返る。彼らは昨日家で紙を切りました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-cut-3": {
@@ -1613,7 +1613,7 @@
     "build-cut-3-past": {
       "file": "assets/construction/build-cut-3-past.png",
       "alt": "右の話し手が左の場面を振り返る。私は昨日家でパンを切りました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-peel-1": {
@@ -1631,7 +1631,7 @@
     "build-peel-1-past": {
       "file": "assets/construction/build-peel-1-past.png",
       "alt": "右の話し手が左の場面を振り返る。あなたは昨日家でバナナの皮をむきました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-peel-2": {
@@ -1649,7 +1649,7 @@
     "build-peel-2-past": {
       "file": "assets/construction/build-peel-2-past.png",
       "alt": "右の話し手が左の場面を振り返る。彼は昨日家でみかんの皮をむきました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-peel-3": {
@@ -1667,7 +1667,7 @@
     "build-peel-3-past": {
       "file": "assets/construction/build-peel-3-past.png",
       "alt": "右の話し手が左の場面を振り返る。彼女は昨日家でじゃがいもの皮をむきました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-mix-1": {
@@ -1685,7 +1685,7 @@
     "build-mix-1-past": {
       "file": "assets/construction/build-mix-1-past.png",
       "alt": "右の話し手が左の場面を振り返る。彼は昨日家で卵を混ぜました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-mix-2": {
@@ -1703,7 +1703,7 @@
     "build-mix-2-past": {
       "file": "assets/construction/build-mix-2-past.png",
       "alt": "右の話し手が左の場面を振り返る。私たちは昨日家でサラダを混ぜました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-mix-3": {
@@ -1721,7 +1721,7 @@
     "build-mix-3-past": {
       "file": "assets/construction/build-mix-3-past.png",
       "alt": "右の話し手が左の場面を振り返る。彼らは昨日家で絵の具を混ぜました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-pour-1": {
@@ -1739,7 +1739,7 @@
     "build-pour-1-past": {
       "file": "assets/construction/build-pour-1-past.png",
       "alt": "右の話し手が左の場面を振り返る。私は昨日コップに水をそそぎました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-pour-2": {
@@ -1757,7 +1757,7 @@
     "build-pour-2-past": {
       "file": "assets/construction/build-pour-2-past.png",
       "alt": "右の話し手が左の場面を振り返る。あなたは昨日コップに牛乳をそそぎました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-pour-3": {
@@ -1775,7 +1775,7 @@
     "build-pour-3-past": {
       "file": "assets/construction/build-pour-3-past.png",
       "alt": "右の話し手が左の場面を振り返る。彼は昨日コップにジュースをそそぎました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-wash-1": {
@@ -1793,7 +1793,7 @@
     "build-wash-1-past": {
       "file": "assets/construction/build-wash-1-past.png",
       "alt": "右の話し手が左の場面を振り返る。彼女は昨日家で手を洗いました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-wash-2": {
@@ -1811,7 +1811,7 @@
     "build-wash-2-past": {
       "file": "assets/construction/build-wash-2-past.png",
       "alt": "右の話し手が左の場面を振り返る。彼は昨日家でりんごを洗いました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-wash-3": {
@@ -1829,7 +1829,7 @@
     "build-wash-3-past": {
       "file": "assets/construction/build-wash-3-past.png",
       "alt": "右の話し手が左の場面を振り返る。私たちは昨日家でコップを洗いました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-read-1": {
@@ -1847,7 +1847,7 @@
     "build-read-1-past": {
       "file": "assets/construction/build-read-1-past.png",
       "alt": "右の話し手が左の場面を振り返る。彼らは昨日家で動物の本を読みました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-read-2": {
@@ -1865,7 +1865,7 @@
     "build-read-2-past": {
       "file": "assets/construction/build-read-2-past.png",
       "alt": "右の話し手が左の場面を振り返る。私は昨日家で短いお話を読みました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-read-3": {
@@ -1883,7 +1883,7 @@
     "build-read-3-past": {
       "file": "assets/construction/build-read-3-past.png",
       "alt": "右の話し手が左の場面を振り返る。あなたは昨日家でまんがを読みました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-write-1": {
@@ -1901,7 +1901,7 @@
     "build-write-1-past": {
       "file": "assets/construction/build-write-1-past.png",
       "alt": "右の話し手が左の場面を振り返る。彼は昨日学校で名前を書きました。",
-      "clue": "時間のヒント：昨日。机の紙は自分の名札です。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。机の紙は自分の名札です。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-write-2": {
@@ -1919,7 +1919,7 @@
     "build-write-2-past": {
       "file": "assets/construction/build-write-2-past.png",
       "alt": "右の話し手が左の場面を振り返る。彼女は昨日学校で短い手紙を書きました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-write-3": {
@@ -1937,7 +1937,7 @@
     "build-write-3-past": {
       "file": "assets/construction/build-write-3-past.png",
       "alt": "右の話し手が左の場面を振り返る。それは昨日学校で英語の単語を書きました。",
-      "clue": "時間のヒント：昨日。ロボットは英語のことばを一つ書きます。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。ロボットは英語のことばを一つ書きます。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-draw-1": {
@@ -1955,7 +1955,7 @@
     "build-draw-1-past": {
       "file": "assets/construction/build-draw-1-past.png",
       "alt": "右の話し手が左の場面を振り返る。私たちは昨日学校でうさぎをかきました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-draw-2": {
@@ -1973,7 +1973,7 @@
     "build-draw-2-past": {
       "file": "assets/construction/build-draw-2-past.png",
       "alt": "右の話し手が左の場面を振り返る。彼らは昨日学校で虹をかきました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-draw-3": {
@@ -1991,7 +1991,7 @@
     "build-draw-3-past": {
       "file": "assets/construction/build-draw-3-past.png",
       "alt": "右の話し手が左の場面を振り返る。私は昨日学校でロボットをかきました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-color-1": {
@@ -2009,7 +2009,7 @@
     "build-color-1-past": {
       "file": "assets/construction/build-color-1-past.png",
       "alt": "右の話し手が左の場面を振り返る。あなたは昨日学校で花の絵に色をぬりました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-color-2": {
@@ -2027,7 +2027,7 @@
     "build-color-2-past": {
       "file": "assets/construction/build-color-2-past.png",
       "alt": "右の話し手が左の場面を振り返る。彼は昨日学校で星の絵に色をぬりました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-color-3": {
@@ -2045,7 +2045,7 @@
     "build-color-3-past": {
       "file": "assets/construction/build-color-3-past.png",
       "alt": "右の話し手が左の場面を振り返る。彼女は昨日学校で魚の絵に色をぬりました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-count-1": {
@@ -2063,7 +2063,7 @@
     "build-count-1-past": {
       "file": "assets/construction/build-count-1-past.png",
       "alt": "右の話し手が左の場面を振り返る。それは昨日庭で星を数えました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-count-2": {
@@ -2081,7 +2081,7 @@
     "build-count-2-past": {
       "file": "assets/construction/build-count-2-past.png",
       "alt": "右の話し手が左の場面を振り返る。私たちは昨日学校でビー玉を数えました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-count-3": {
@@ -2099,7 +2099,7 @@
     "build-count-3-past": {
       "file": "assets/construction/build-count-3-past.png",
       "alt": "右の話し手が左の場面を振り返る。彼らは昨日学校でカードを数えました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-study-1": {
@@ -2117,7 +2117,7 @@
     "build-study-1-past": {
       "file": "assets/construction/build-study-1-past.png",
       "alt": "右の話し手が左の場面を振り返る。私は昨日学校で英語を勉強しました。",
-      "clue": "時間のヒント：昨日。絵カードは英語の授業で使います。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。絵カードは英語の授業で使います。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-study-2": {
@@ -2135,7 +2135,7 @@
     "build-study-2-past": {
       "file": "assets/construction/build-study-2-past.png",
       "alt": "右の話し手が左の場面を振り返る。あなたは昨日学校で算数を勉強しました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-study-3": {
@@ -2153,7 +2153,7 @@
     "build-study-3-past": {
       "file": "assets/construction/build-study-3-past.png",
       "alt": "右の話し手が左の場面を振り返る。彼は昨日学校で理科を勉強しました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-learn-1": {
@@ -2171,7 +2171,7 @@
     "build-learn-1-past": {
       "file": "assets/construction/build-learn-1-past.png",
       "alt": "右の話し手が左の場面を振り返る。彼女は昨日学校で新しい歌を覚えました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-learn-2": {
@@ -2189,7 +2189,7 @@
     "build-learn-2-past": {
       "file": "assets/construction/build-learn-2-past.png",
       "alt": "右の話し手が左の場面を振り返る。彼は昨日学校で新しい単語を覚えました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-learn-3": {
@@ -2207,7 +2207,7 @@
     "build-learn-3-past": {
       "file": "assets/construction/build-learn-3-past.png",
       "alt": "右の話し手が左の場面を振り返る。私たちは昨日学校で新しいダンスを覚えました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-practice-1": {
@@ -2225,7 +2225,7 @@
     "build-practice-1-past": {
       "file": "assets/construction/build-practice-1-past.png",
       "alt": "右の話し手が左の場面を振り返る。彼らは昨日家でピアノを練習しました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-practice-2": {
@@ -2243,7 +2243,7 @@
     "build-practice-2-past": {
       "file": "assets/construction/build-practice-2-past.png",
       "alt": "右の話し手が左の場面を振り返る。私は昨日家で英語を練習しました。",
-      "clue": "時間のヒント：昨日。ヘッドホンから聞こえるのは英語です。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。ヘッドホンから聞こえるのは英語です。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-practice-3": {
@@ -2261,7 +2261,7 @@
     "build-practice-3-past": {
       "file": "assets/construction/build-practice-3-past.png",
       "alt": "右の話し手が左の場面を振り返る。あなたは昨日家でダンスを練習しました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-spell-1": {
@@ -2279,7 +2279,7 @@
     "build-spell-1-past": {
       "file": "assets/construction/build-spell-1-past.png",
       "alt": "右の話し手が左の場面を振り返る。彼は昨日学校でcatのつづりを言いました。",
-      "clue": "時間のヒント：昨日。 カードに描かれた動物の英単語を、一文字ずつ口に出す練習です。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。 カードに描かれた動物の英単語を、一文字ずつ口に出す練習です。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-spell-2": {
@@ -2297,7 +2297,7 @@
     "build-spell-2-past": {
       "file": "assets/construction/build-spell-2-past.png",
       "alt": "右の話し手が左の場面を振り返る。彼女は昨日学校でdogのつづりを言いました。",
-      "clue": "時間のヒント：昨日。 カードに描かれた動物の英単語を、一文字ずつ口に出す練習です。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。 カードに描かれた動物の英単語を、一文字ずつ口に出す練習です。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-spell-3": {
@@ -2315,7 +2315,7 @@
     "build-spell-3-past": {
       "file": "assets/construction/build-spell-3-past.png",
       "alt": "右の話し手が左の場面を振り返る。それは昨日学校でbirdのつづりを言いました。",
-      "clue": "時間のヒント：昨日。 カードに描かれた動物の英単語を、一文字ずつ口に出す練習です。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。 カードに描かれた動物の英単語を、一文字ずつ口に出す練習です。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-answer-1": {
@@ -2333,7 +2333,7 @@
     "build-answer-1-past": {
       "file": "assets/construction/build-answer-1-past.png",
       "alt": "右の話し手が左の場面を振り返る。私たちは昨日学校で先生の質問に答えました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-answer-2": {
@@ -2351,7 +2351,7 @@
     "build-answer-2-past": {
       "file": "assets/construction/build-answer-2-past.png",
       "alt": "右の話し手が左の場面を振り返る。彼らは昨日学校でかんたんな質問に答えました。",
-      "clue": "時間のヒント：昨日。 りんごを数えるだけの問題です。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。 りんごを数えるだけの問題です。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-answer-3": {
@@ -2369,7 +2369,7 @@
     "build-answer-3-past": {
       "file": "assets/construction/build-answer-3-past.png",
       "alt": "右の話し手が左の場面を振り返る。私は昨日学校で最後の質問に答えました。",
-      "clue": "時間のヒント：昨日。 プリントのいちばん下の問いに注目。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。 プリントのいちばん下の問いに注目。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-play-1": {
@@ -2387,7 +2387,7 @@
     "build-play-1-past": {
       "file": "assets/construction/build-play-1-past.png",
       "alt": "右の話し手が左の場面を振り返る。あなたは昨日公園で友だちとサッカーをしました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-play-2": {
@@ -2405,7 +2405,7 @@
     "build-play-2-past": {
       "file": "assets/construction/build-play-2-past.png",
       "alt": "右の話し手が左の場面を振り返る。彼は昨日公園で友だちとかくれんぼをしました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-play-3": {
@@ -2423,7 +2423,7 @@
     "build-play-3-past": {
       "file": "assets/construction/build-play-3-past.png",
       "alt": "右の話し手が左の場面を振り返る。彼女は昨日家で友だちとカードゲームをしました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-sing-1": {
@@ -2441,7 +2441,7 @@
     "build-sing-1-past": {
       "file": "assets/construction/build-sing-1-past.png",
       "alt": "右の話し手が左の場面を振り返る。それは昨日家で好きな歌を歌いました。",
-      "clue": "時間のヒント：昨日。 ハートの印は、ロボットのお気に入りを表します。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。 ハートの印は、ロボットのお気に入りを表します。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-sing-2": {
@@ -2459,7 +2459,7 @@
     "build-sing-2-past": {
       "file": "assets/construction/build-sing-2-past.png",
       "alt": "右の話し手が左の場面を振り返る。私たちは昨日家で誕生日の歌を歌いました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-sing-3": {
@@ -2477,7 +2477,7 @@
     "build-sing-3-past": {
       "file": "assets/construction/build-sing-3-past.png",
       "alt": "右の話し手が左の場面を振り返る。彼らは昨日家で楽しい歌を歌いました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-dance-1": {
@@ -2495,7 +2495,7 @@
     "build-dance-1-past": {
       "file": "assets/construction/build-dance-1-past.png",
       "alt": "右の話し手が左の場面を振り返る。私は昨日家で音楽に合わせておどりました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-dance-2": {
@@ -2513,7 +2513,7 @@
     "build-dance-2-past": {
       "file": "assets/construction/build-dance-2-past.png",
       "alt": "右の話し手が左の場面を振り返る。あなたは昨日ステージでおどりました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-dance-3": {
@@ -2531,7 +2531,7 @@
     "build-dance-3-past": {
       "file": "assets/construction/build-dance-3-past.png",
       "alt": "右の話し手が左の場面を振り返る。彼は昨日部屋でおどりました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-watch-1": {
@@ -2549,7 +2549,7 @@
     "build-watch-1-past": {
       "file": "assets/construction/build-watch-1-past.png",
       "alt": "右の話し手が左の場面を振り返る。彼女は昨日家でテレビ番組を見ました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-watch-2": {
@@ -2567,7 +2567,7 @@
     "build-watch-2-past": {
       "file": "assets/construction/build-watch-2-past.png",
       "alt": "右の話し手が左の場面を振り返る。彼は昨日家でアニメを見ました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-watch-3": {
@@ -2585,7 +2585,7 @@
     "build-watch-3-past": {
       "file": "assets/construction/build-watch-3-past.png",
       "alt": "右の話し手が左の場面を振り返る。私たちは昨日家でサッカーの試合を見ました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-listen-1": {
@@ -2603,7 +2603,7 @@
     "build-listen-1-past": {
       "file": "assets/construction/build-listen-1-past.png",
       "alt": "右の話し手が左の場面を振り返る。彼らは昨日家で音楽を聞きました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-listen-2": {
@@ -2621,7 +2621,7 @@
     "build-listen-2-past": {
       "file": "assets/construction/build-listen-2-past.png",
       "alt": "右の話し手が左の場面を振り返る。私は昨日家で雨の音を聞きました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-listen-3": {
@@ -2639,7 +2639,7 @@
     "build-listen-3-past": {
       "file": "assets/construction/build-listen-3-past.png",
       "alt": "右の話し手が左の場面を振り返る。あなたは昨日家で鳥の歌を聞きました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-look-1": {
@@ -2657,7 +2657,7 @@
     "build-look-1-past": {
       "file": "assets/construction/build-look-1-past.png",
       "alt": "右の話し手が左の場面を振り返る。彼は昨日庭で月を見ました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-look-2": {
@@ -2675,7 +2675,7 @@
     "build-look-2-past": {
       "file": "assets/construction/build-look-2-past.png",
       "alt": "右の話し手が左の場面を振り返る。彼女は昨日家で小さな虫を見ました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-look-3": {
@@ -2693,7 +2693,7 @@
     "build-look-3-past": {
       "file": "assets/construction/build-look-3-past.png",
       "alt": "右の話し手が左の場面を振り返る。それは昨日家で地図を見ました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-hear-1": {
@@ -2747,7 +2747,7 @@
     "build-touch-1-past": {
       "file": "assets/construction/build-touch-1-past.png",
       "alt": "右の話し手が左の場面を振り返る。それは昨日家でやわらかい毛布にさわりました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-touch-2": {
@@ -2765,7 +2765,7 @@
     "build-touch-2-past": {
       "file": "assets/construction/build-touch-2-past.png",
       "alt": "右の話し手が左の場面を振り返る。私たちは昨日家で冷たい水にさわりました。",
-      "clue": "時間のヒント：昨日。 水の中の氷に注目。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。 水の中の氷に注目。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-touch-3": {
@@ -2783,7 +2783,7 @@
     "build-touch-3-past": {
       "file": "assets/construction/build-touch-3-past.png",
       "alt": "右の話し手が左の場面を振り返る。彼らは昨日家で木の葉にさわりました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-open-1": {
@@ -2801,7 +2801,7 @@
     "build-open-1-past": {
       "file": "assets/construction/build-open-1-past.png",
       "alt": "右の話し手が左の場面を振り返る。彼女は昨日学校でお弁当箱を開けました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-open-2": {
@@ -2819,7 +2819,7 @@
     "build-open-2-past": {
       "file": "assets/construction/build-open-2-past.png",
       "alt": "右の話し手が左の場面を振り返る。彼は昨日家で本を開けました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-open-3": {
@@ -2837,8 +2837,14 @@
     "build-open-3-past": {
       "file": "assets/construction/build-open-3-past.png",
       "alt": "右の話し手が左の場面を振り返る。私たちは昨日家で窓を開けました。",
-      "clue": "時間のヒント：昨日。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
+    },
+    "level2-02": {
+      "file": "assets/construction/level2-02.png",
+      "alt": "話し手と同じ女の子が、家で友だちと紙の帽子を折っている。",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
+      "review": "紙の帽子・二人の人物・家庭の場面を確認。"
     }
   }
 }

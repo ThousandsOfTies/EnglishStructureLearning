@@ -174,6 +174,24 @@ if (typeof document !== 'undefined') {
     const locked = attempt()[i] && !targetAllowed(attempt()[i]);
     return `<button class="card ${selected === i ? 'selected' : ''}" data-card="${i}" ${locked ? 'disabled' : ''} aria-pressed="${selected === i}" aria-label="${esc(card.text)}：移動するカードをえらぶ">${esc(card.text)}</button>`;
   }
+  function renderPicture(q) {
+    if (!q.image) {
+      $('pictureScene').innerHTML = `<div class="scene-pending japanese">${esc(q.ja)}</div>`;
+      return;
+    }
+    const time = q.slots?.time.en ?? q.blocks.find(([role]) => role === '時')?.[1];
+    const calendar = time === 'yesterday' || time === 'tomorrow' ? `
+      <span class="day-calendar ${time}" role="img" aria-label="地球儀を${time === 'yesterday' ? '左' : '右'}向きに一周するカレンダー">
+        <span class="day-orbit"></span>
+        <img src="assets/calendar/earth.png" alt="">
+      </span>` : '';
+    $('pictureScene').innerHTML = `
+      <div class="scene-visual">
+        <img class="scene-illustration" src="${esc(q.image)}" alt="${esc(q.imageAlt)}" width="1536" height="1024">
+        ${calendar}
+      </div>
+      <figcaption class="scene-clue">${esc(q.imageClue)}</figcaption>`;
+  }
   function renderExercise() {
     cancelDrag();
     const q = getQ(), basic = q.level === 1, cards = Construction.cardsFor(q), placements = attempt();
@@ -201,9 +219,7 @@ if (typeof document !== 'undefined') {
     if (usingLists()) {
       $('slots').innerHTML = Construction.roles.map(role => `<section class="slot ${!targetAllowed(role) ? 'locked' : ''} ${wrong.includes(role) ? 'wrong' : ''}" data-role="${role}" aria-disabled="${!targetAllowed(role)}"><label class="target" for="choice-${role}">${labels[role]}</label><select class="${picks()[role] ? 'has-choice' : 'placeholder'}" id="choice-${role}" ${!targetAllowed(role) ? 'disabled' : ''} data-choice="${role}"><option value="__unanswered__" ${Object.hasOwn(picks(), role) ? '' : 'selected'}>えらんでね</option>${Construction.choicesFor(DATA, q, role).map(text => `<option value="${esc(text)}" ${Object.hasOwn(picks(), role) && picks()[role] === text ? 'selected' : ''}>${esc(text)}</option>`).join('')}</select></section>`).join('');
     }
-    if (!$('pictureScene').hidden) $('pictureScene').innerHTML = q.image
-      ? `<img src="${esc(q.image)}" alt="${esc(q.imageAlt)}" width="1536" height="1024"><figcaption class="scene-clue">${esc(q.imageClue)}</figcaption>`
-      : `<div class="scene-pending japanese">${esc(q.ja)}</div>`;
+    if (!$('pictureScene').hidden) renderPicture(q);
     $('feedback').innerHTML = feedback ? `<div class="feedback ${feedback.good ? 'good' : ''}">${esc(feedback.text)}</div>` : '';
     $('result').innerHTML = passed ? `
       <div class="result">

@@ -127,6 +127,8 @@ def prepare():
             clue += '話し手のいる場所へ近づいてきます。'
         if q['level'] > 1:
             clue = q.get('focus', '')
+        if time in ('昨日', '明日') or any(role == '時' and text in ('yesterday', 'tomorrow') for role, text in q.get('blocks', [])):
+            clue = 'カレンダーの地球儀が回る向きを見てみよう。' + clue.removeprefix('時間のヒント：' + time + '。')
         registered = manifest['images'].get(q['id'])
         jobs.append({'id': q['id'], 'level': q['level'], 'group': q.get('group', 'level' + str(q['level'])),
                      'family': q.get('contrastFamily', q['id']), 'sentence': q['en'],
