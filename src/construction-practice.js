@@ -99,7 +99,7 @@ if (typeof document !== 'undefined') {
   const esc = value => String(value).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   const labels = { S: '主語', predicate: '述語', P1: '対象１', P2: '対象２', place: '場所', time: '時' };
   const hints = { S: 'だれ・何が？', predicate: 'どうする・どんな状態？', P1: '述語につなぐ一つ目', P2: '述語につなぐ二つ目', place: 'どこで？', time: 'いつ？' };
-  let saved = null, savedVoice = '', speechSpeed = 'normal', storageOK = true;
+  let saved = null, savedVoice = '', speechSpeed = 'fast', storageOK = true;
   try { saved = JSON.parse(localStorage.getItem(KEY)); savedVoice = JSON.parse(localStorage.getItem(VOICE_KEY))?.voiceURI || ''; }
   catch (error) { if (error.name !== 'SyntaxError') storageOK = false; }
   const restored = Construction.restore(DATA, saved);
@@ -274,13 +274,12 @@ if (typeof document !== 'undefined') {
       <div class="result">
         <p class="full-english" lang="en">${esc(q.en)}</p>
         ${q.note ? `<p>${esc(q.note)}</p>` : ''}
-        <div class="actions speech-controls">
-          <button id="speak" ${hasSpeech ? '' : 'disabled'}>英文を聞く</button>
-          <label for="speechSpeed">速さ</label>
-          <select id="speechSpeed" ${hasSpeech ? '' : 'disabled'}>
-            <option value="normal">ふつう</option>
-            <option value="slow" ${speechSpeed === 'slow' ? 'selected' : ''}>ゆっくり</option>
-          </select>
+        <div class="actions speech-controls" role="group" aria-label="英文の読み上げ">
+          <select id="voice" aria-label="読み上げる声"></select>
+          <div class="speech-buttons">
+            <button id="speakFast" ${hasSpeech ? '' : 'disabled'}>はやく読む</button>
+            <button id="speakSlow" ${hasSpeech ? '' : 'disabled'}>ゆっくり読む</button>
+          </div>
         </div>
         <div class="spoken">${q.blocks.map(([role, text], index) => {
           const label = labels[role] || role.replace(/\bS\b/g, '主語');
@@ -292,6 +291,7 @@ if (typeof document !== 'undefined') {
         }).join('')}</div>
         <p class="muted" id="speechStatus" role="status">${hasSpeech ? '' : 'このブラウザーでは音声を使えません。'}</p>
       </div>` : '';
+    if (passed) populateVoices();
   }
   function render() {
     const visible = visibleExamples();
@@ -463,43 +463,61 @@ if (typeof document !== 'undefined') {
         const visible = visibleExamples(), i = Construction.navigationIndex(visible, getQ());
         const next = visible[i + (button.id === 'next' ? 1 : -1)]; if (next) choose(next.id); break;
       }
-      case 'speak': speak(getQ().en); break;
-      case 'refreshVoices': populateVoices(); break;
+      case 'speakFast': case 'speakSlow': {
+        speechSpeed = button.id === 'speakSlow' ? 'slow' : 'fast';
+        speak(getQ().en);
+        try { localStorage.setItem(SPEED_KEY, speechSpeed); } catch { storageOK = false; save(); }
+        break;
+      }
     }
   });
-  function englishVoices() { return hasSpeech ? speechSynthesis.getVoices().filter(v => /^en(?:[-_]|$)/i.test(v.lang)) : []; }
-  function populateVoices() {
-    const voices = englishVoices();
-    $('voice').innerHTML = '<option value="">自動でえらぶ</option>' + voices.map(v => `<option value="${esc(v.voiceURI)}">${esc(v.name)}（${esc(v.lang)}）</option>`).join('');
-    if (savedVoice && !voices.some(v => v.voiceURI === savedVoice)) $('voice').insertAdjacentHTML('beforeend', `<option value="${esc(savedVoice)}">保存した声（現在は見つかりません）</option>`);
-    $('voice').value = savedVoice; $('voice').disabled = !hasSpeech;
-    $('voiceStatus').textContent = !hasSpeech ? 'このブラウザーでは音声を使えません。' : voices.length ? '聞きやすい声をえらんでね。' : '英語の声が見つかりません。声の一覧を更新するか、端末の音声設定を確認してください。';
+  function englishVoices() {
+    return hasSpeech ? speechSynthesis.getVoices().filter(voice => /^en[-_]us$/i.test(voice.lang)) : [];
   }
-  $('voice').addEventListener('change', () => {
-    stopSpeech(); savedVoice = $('voice').value;
-    try { localStorage.setItem(VOICE_KEY, JSON.stringify({ voiceURI: savedVoice })); } catch { storageOK = false; save(); }
-  });
+  function preferredVoice(voices) {
+    return voices.find(voice => voice.voiceURI === savedVoice) || voices.find(voice => voice.default) || voices[0];
+  }
+  function voiceName(name) {
+    return name.split(/\s+[-–—]\s+/)[0]
+      .replace(/^(?:Microsoft|Apple|Google)\s+/i, '')
+      .replace(/\s*\([^)]*\)/g, '')
+      .replace(/\s+(?:Online|Desktop|Natural|Neural|Enhanced|Premium)\b/gi, '')
+      .replace(/^(?:US\s+)?English(?:\s+(?:US|United States))?$/i, '')
+      .trim() || '標準';
+  }
+  function populateVoices() {
+    const picker = $('voice');
+    if (!picker) return;
+    const voices = englishVoices();
+    const preferred = preferredVoice(voices);
+    const options = new Map();
+    for (const voice of voices) {
+      const label = voiceName(voice.name);
+      if (!options.has(label) || voice === preferred) options.set(label, voice.voiceURI);
+    }
+    picker.replaceChildren(...(options.size ? [...options].map(([label, uri]) => new Option(label, uri)) : [new Option('自動', '')]));
+    picker.disabled = !preferred;
+    if (preferred) picker.value = preferred.voiceURI;
+  }
   $('result').addEventListener('change', event => {
-    if (event.target.id !== 'speechSpeed') return;
+    if (event.target.id !== 'voice') return;
     stopSpeech();
     $('speechStatus').textContent = '';
-    speechSpeed = event.target.value;
-    try { localStorage.setItem(SPEED_KEY, speechSpeed); } catch { storageOK = false; save(); }
+    savedVoice = event.target.value;
+    try { localStorage.setItem(VOICE_KEY, JSON.stringify({ voiceURI: savedVoice })); } catch { storageOK = false; save(); }
   });
   function speak(text) {
     if (!passed || !hasSpeech || !text) return;
-    stopSpeech(); const run = speechRun, voices = englishVoices();
-    const voice = voices.find(v => v.voiceURI === savedVoice) || voices.find(v => v.lang.toLowerCase() === 'en-us') || voices[0];
+    stopSpeech(); const run = speechRun, voice = preferredVoice(englishVoices());
     const utterance = new SpeechSynthesisUtterance(text); // Never derive speech from the internal question marker.
     if (voice) utterance.voice = voice;
-    utterance.lang = voice?.lang || 'en-US'; utterance.rate = speechSpeed === 'slow' ? .6 : .82;
+    utterance.lang = 'en-US'; utterance.rate = speechSpeed === 'slow' ? .6 : 1;
     const report = text => { if (run === speechRun && $('speechStatus')) $('speechStatus').textContent = text; };
     utterance.onstart = () => report('読み上げ中…'); utterance.onend = () => report('読み上げました。');
-    utterance.onerror = event => { if (!['canceled', 'interrupted'].includes(event.error)) report('声を使えませんでした。音声設定で別の声をえらんでください。'); };
+    utterance.onerror = event => { if (!['canceled', 'interrupted'].includes(event.error)) report('声を使えませんでした。別の声をえらぶか、端末の音声設定を確認してください。'); };
     try { speechSynthesis.speak(utterance); } catch { report('声を使えませんでした。端末の音声設定を確認してください。'); }
   }
   if (hasSpeech) speechSynthesis.addEventListener('voiceschanged', populateVoices);
-  populateVoices();
   if (location.hash === '#tense-pictures') openTensePictures();
   else {
     const visible = visibleExamples();
