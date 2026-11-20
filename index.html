@@ -280,6 +280,9 @@ if (typeof document !== 'undefined') {
       $('slots').innerHTML = Construction.roles.map(role => `<section class="slot ${!targetAllowed(role) ? 'locked' : ''} ${wrong.includes(role) ? 'wrong' : ''}" data-role="${role}" aria-disabled="${!targetAllowed(role)}"><label class="target" for="choice-${role}">${labels[role]}</label><select class="${picks()[role] ? 'has-choice' : 'placeholder'}" id="choice-${role}" ${!targetAllowed(role) ? 'disabled' : ''} data-choice="${role}"><option value="__unanswered__" ${Object.hasOwn(picks(), role) ? '' : 'selected'}>えらんでね</option>${Construction.choicesFor(DATA, q, role).map(text => `<option value="${esc(text)}" ${Object.hasOwn(picks(), role) && picks()[role] === text ? 'selected' : ''}>${esc(text)}</option>`).join('')}</select></section>`).join('');
     }
     if (!$('pictureScene').hidden) renderPicture(q);
+    renderFeedback(q, basic);
+  }
+  function renderFeedback(q, basic) {
     $('feedback').innerHTML = feedback ? `<div class="feedback ${feedback.good ? 'good' : ''}">${esc(feedback.text)}</div>` : '';
     $('result').innerHTML = passed ? `
       <div class="result">
@@ -326,13 +329,29 @@ if (typeof document !== 'undefined') {
   $('levels').addEventListener('change', changeFilters);
   $('scope').addEventListener('change', changeFilters);
   $('slots').addEventListener('change', event => {
-    const role = event.target.dataset.choice;
+    const choice = event.target;
+    const role = choice.dataset.choice;
     if (!usingLists() || !Construction.roles.includes(role) || !targetAllowed(role)) return;
     stopSpeech();
-    if (event.target.value === '__unanswered__') delete picks()[role];
-    else picks()[role] = event.target.value;
-    passed = false; feedback = null; wrong = []; renderExercise();
-    $('choice-' + role)?.focus({ preventScroll: true });
+    const values = picks();
+    if (choice.value === '__unanswered__') delete values[role];
+    else values[role] = choice.value;
+
+    // Keep the native selects in place so Safari can finish dismissing its picker.
+    const enabled = enabledTargets();
+    for (const select of $('slots').querySelectorAll('[data-choice]')) {
+      const locked = !enabled.includes(select.dataset.choice);
+      const hasChoice = Boolean(values[select.dataset.choice]);
+      select.disabled = locked;
+      select.classList.toggle('has-choice', hasChoice);
+      select.classList.toggle('placeholder', !hasChoice);
+      const slot = select.parentElement;
+      slot.classList.toggle('locked', locked);
+      slot.classList.remove('wrong');
+      slot.setAttribute('aria-disabled', String(locked));
+    }
+    passed = false; feedback = null; wrong = [];
+    renderFeedback(getQ(), true);
   });
   function moveCard(index, target) {
     if (!targetAllowed(target)) return;
