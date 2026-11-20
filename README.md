@@ -6,7 +6,7 @@ main へのプッシュごとに GitHub Actions が教材を再生成し、テ�
 
 現在の [`index.html`](index.html) は、身近なオリジナル例文938文を使う新教材版です。ブラウザーで直接開けます。データと操作部分は埋め込み済みで、サーバーは不要です。
 
-初めて開くと、作画済み845文を使う「絵を見てえらぶ」で始まります。絵を見て主語・述語などを選び、「たしかめる」で答え合わせをして「次の場面」へ進めます。「カードを並べる」に切り替えて練習することもできます。
+初めて開くと、レベル1の絵付き918文を使う「絵を見てえらぶ」で始まります。絵を見て主語・述語などを選び、「たしかめる」で答え合わせをして「次の場面」へ進めます。「カードを並べる」に切り替えて練習することもできます。
 
 - レベル1：主語 ＋ 述語 ＋ 対象１ ＋ 対象２ ＋ 場所 ＋ 時の六つの欄。日本語カードをドラッグして欄に置きます。マウス・タッチの両方に対応し、カードを押してから欄の見出しを押す方法でも使えます。使わない欄は空欄で正解です。
 - 左の「レベル」は複数選べます。「レベル1の文」はレベル1の例文だけを絞り込みます。
@@ -32,7 +32,7 @@ node --test tests/construction.test.cjs tests/construction-app.test.cjs tests/pr
 
 画面の編集元は `src/construction-template.html` と `src/construction-practice.js` です。原稿は `data/original-curriculum.txt`、レベル2・3は `data/advanced-examples.json`、生成データは `data/construction-examples.json` にあります。
 
-全例文の作画を順次進めています。最新の登録数とテーマ別の状況は [作画状況](docs/construction-artwork-status.md)、再開手順は [作業引き継ぎ](docs/work-continuation.md) を参照してください。画像は `assets/construction/`、対応表は `data/construction-illustrations.json`、生成に使ったプロンプトは `docs/illustration-prompts.json` に保存しています。`assets/tense/` のハイブリッド版は試作品で、最終承認済みのデザインではありません。自動派生した例文の自然さも引き続き確認が必要です。`.review-tmp/` は調査用で教材本体ではありません。
+全938文にイラストが付いています。テーマ別の登録状況は [作画状況](docs/construction-artwork-status.md)、再開手順は [作業引き継ぎ](docs/work-continuation.md) を参照してください。画像は `assets/construction/`、対応表は `data/construction-illustrations.json`、生成に使ったプロンプトは `docs/illustration-prompts.json` に保存しています。`assets/tense/` のハイブリッド版は試作品で、最終承認済みのデザインではありません。自動派生した例文の自然さも引き続き確認が必要です。`.review-tmp/` は調査用で教材本体ではありません。
 
 **注意：`scripts/build.py` は旧640文版で `index.html` を上書きします。新教材の生成に使わないでください。** 旧テンプレート・データ・582画像は残しています。`scripts/compile_original.py` も途中の旧4欄案です。
 

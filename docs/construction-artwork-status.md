@@ -1,9 +1,9 @@
 # オリジナル教材の作画状況
 
-全938文 / 作画・登録済み846文 / 未登録92文（うち生成済み・確認待ち0文）。
+全938文 / 作画・登録済み938文 / 未登録0文（うち生成済み・確認待ち0文）。
 
 生成には内蔵の画像生成を使います。この表と予定表の作成だけでは画像は生成されません。
-画像を目視で確認してから、対応表に登録して画面を再生成します。全件作画は進行中です。
+画像を目視で確認してから、対応表に登録して画面を再生成します。全件の作画・登録が完了しました。
 
 | テーマ | 登録済み | 全文 |
 | --- | ---: | ---: |
@@ -102,16 +102,16 @@
 | buy | 9 | 9 |
 | pay | 9 | 9 |
 | save | 9 | 9 |
-| keep | 0 | 7 |
-| find | 0 | 6 |
-| check | 0 | 9 |
-| be-noun | 0 | 6 |
-| be-adjective | 0 | 6 |
-| pronouns-subject | 0 | 8 |
-| pronouns-object | 0 | 8 |
-| pronouns-possessive | 0 | 8 |
-| pronouns-independent | 0 | 7 |
-| pronouns-reflexive | 0 | 8 |
+| keep | 7 | 7 |
+| find | 6 | 6 |
+| check | 9 | 9 |
+| be-noun | 6 | 6 |
+| be-adjective | 6 | 6 |
+| pronouns-subject | 8 | 8 |
+| pronouns-object | 8 | 8 |
+| pronouns-possessive | 8 | 8 |
+| pronouns-independent | 7 | 7 |
+| pronouns-reflexive | 8 | 8 |
 | tense-pictures | 40 | 40 |
-| level2 | 1 | 10 |
-| level3 | 0 | 10 |
+| level2 | 10 | 10 |
+| level3 | 10 | 10 |
