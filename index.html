@@ -9,7 +9,7 @@
 .card{touch-action:none;user-select:none;-webkit-user-select:none;cursor:grab}.card:active{cursor:grabbing}.drag-source{opacity:.3}.drag-ghost{position:fixed;z-index:1000;pointer-events:none;transform:translate(-40%,-50%) rotate(-2deg);box-shadow:0 12px 28px #263e5030;max-width:85vw;background:#fff}.drop-hover{outline:3px solid #3d83bd;outline-offset:3px;background:#e4f1fb!important}
 .mode-switcher{display:flex;flex-wrap:wrap;gap:9px;margin:0 0 12px}.mode-switcher button{border-radius:24px}.target{display:block}.picture-scene{max-width:680px;margin:0 auto 22px}.picture-scene img{display:block;width:100%;max-height:350px;object-fit:contain;border-radius:0}.scene-pending{padding:24px;border:1px dashed #b9c9d2;border-radius:15px;background:#f7f9fa;text-align:center}.slot select{font-size:15px;margin-top:0}.slot:not([data-drop]){min-height:0}.slot label.target{padding-bottom:4px}
 /* Keep navigation on the left and fit the six slots into the remaining width. */
-.wrap{max-width:none}.layout{grid-template-columns:clamp(180px,20vw,260px) minmax(0,1fr);align-items:start}.layout>aside{display:flex;flex-direction:column;gap:0;min-width:0;position:sticky;top:12px;max-height:calc(100dvh - 24px)}.layout>aside>div:first-child label{margin-top:0}.layout>aside>div,.layout>aside>p{flex-shrink:0}.lessons{display:flex;flex-direction:column;gap:6px;min-height:80px;max-height:none;overflow-y:auto;overflow-x:hidden;overscroll-behavior-y:contain;padding:3px 5px 5px 3px}.lessons button{flex-shrink:0;width:100%;overflow-wrap:anywhere}.slots{display:flex;flex-wrap:nowrap;width:100%;min-width:0;gap:clamp(3px,1vw,12px);padding:5px 0;align-items:stretch}.slots>.slot{flex:1 1 0;min-width:0;padding:clamp(3px,1vw,12px);overflow-wrap:anywhere}.slot .target{font-size:clamp(12px,1.6vw,20px)}.slot .target small{font-size:clamp(9px,1vw,12px)}.slot select{min-width:0;max-width:100%;font-size:clamp(11px,1.2vw,16px);padding:8px clamp(1px,.6vw,8px)}
+.wrap{max-width:none}.layout{grid-template-columns:clamp(180px,20vw,260px) minmax(0,1fr);align-items:start}.layout>aside{display:flex;flex-direction:column;gap:0;min-width:0;position:sticky;top:12px;max-height:calc(100dvh - 24px)}.levels{margin:0;padding:0;border:0;min-width:0}.levels legend{padding:0;font-size:13px;font-weight:bold}.level-choices{display:flex;gap:4px;margin-top:4px}.level-choices label{display:flex;justify-content:center;align-items:center;gap:3px;min-height:44px;flex:1;margin:0;cursor:pointer;border:1px solid #b9c9d2;border-radius:9px;background:#fff}.level-choices label:has(:checked){background:#e7f0f8;border-color:var(--blue)}.level-choices input{width:14px;height:14px;min-height:0;margin:0;padding:0;accent-color:var(--blue)}.layout>aside>div,.layout>aside>p{flex-shrink:0}.lessons{display:flex;flex-direction:column;gap:6px;min-height:80px;max-height:none;overflow-y:auto;overflow-x:hidden;overscroll-behavior-y:contain;padding:3px 5px 5px 3px}.lessons button{flex-shrink:0;width:100%;overflow-wrap:anywhere}.slots{display:flex;flex-wrap:nowrap;width:100%;min-width:0;gap:clamp(3px,1vw,12px);padding:5px 0;align-items:stretch}.slots>.slot{flex:1 1 0;min-width:0;padding:clamp(3px,1vw,12px);overflow-wrap:anywhere}.slot .target{font-size:clamp(12px,1.6vw,20px)}.slot .target small{font-size:clamp(9px,1vw,12px)}.slot select{min-width:0;max-width:100%;font-size:clamp(11px,1.2vw,16px);padding:8px clamp(1px,.6vw,8px)}
 @media(max-width:720px){.layout{grid-template-columns:125px minmax(0,1fr);gap:10px}.layout>aside{top:8px;max-height:calc(100dvh - 16px)}.layout>aside label,.layout>aside select,.layout>aside input,.lessons button{font-size:12px}.sheet{padding-left:8px;padding-right:8px}.slot .card{padding:6px 2px;font-size:12px}}
 @media(max-width:480px){.slot label.target{line-height:1.25;min-height:calc(3lh + 4px)}}
 .slot.locked{background:#eceeef;border-color:#d4d9dd;color:#8a939a}.slot.locked .target,.slot.locked .target small{color:#8a939a}.slot.locked select{background:#e2e5e7;color:#8a939a;border-color:#cdd3d7;cursor:not-allowed}.slot.locked button:disabled{opacity:1;cursor:not-allowed}
@@ -20,8 +20,8 @@
 </head>
 <body><div class="wrap">
 <div class="layout"><aside aria-label="例文をえらぶ">
-<div><label for="level">レベル</label><select id="level"></select></div>
-<div id="scopeField"><label for="scope">練習する文</label><select id="scope"><option value="core">まずは基本の場面</option><option value="all">時制の比較もすべて</option><option value="pronouns">代名詞の練習</option><option value="extension">発展：自分自身を表す</option></select></div>
+<fieldset id="levels" class="levels"><legend>レベル</legend><div id="levelChoices" class="level-choices"></div></fieldset>
+<div id="scopeField"><label for="scope">レベル1の文</label><select id="scope"><option value="all">すべて</option><option value="core">基本の場面</option><option value="pronouns">代名詞</option><option value="extension">自分自身を表す</option></select></div>
 <p id="artworkProgress" class="muted"></p>
 <p class="muted wide" id="filterCount" aria-live="polite"></p><nav class="lessons wide" id="lessons" aria-label="例文一覧"></nav>
 </aside><main class="sheet" id="main">
@@ -85,7 +85,8 @@ const Construction = (() => {
   }
   function visibleExamples(data, filters) {
     const term = filters.search.trim().toLowerCase();
-    return data.examples.filter(q => q.level === filters.level &&
+    const levels = filters.levels ?? [filters.level];
+    return data.examples.filter(q => levels.includes(q.level) &&
       (q.level !== 1 || ((filters.group === 'all' || q.group === filters.group) &&
         (filters.scope === 'all' || (filters.scope === 'core' && q.contrastFamily === q.id && !q.pronounFocus) ||
          (filters.scope === 'pronouns' && q.pronounFocus && !q.extension) ||
@@ -141,23 +142,22 @@ if (typeof document !== 'undefined') {
   let saved = null, savedVoice = '', speechSpeed = 'normal', storageOK = true;
   try { saved = JSON.parse(localStorage.getItem(KEY)); savedVoice = JSON.parse(localStorage.getItem(VOICE_KEY))?.voiceURI || ''; }
   catch (error) { if (error.name !== 'SyntaxError') storageOK = false; }
-  const state = { ...Construction.restore(DATA, saved), group: 'all', search: '' };
+  const restored = Construction.restore(DATA, saved);
+  const hasSavedLevels = saved?.version === 1 && Array.isArray(saved.levels);
+  const state = {
+    current: restored.current, completed: restored.completed,
+    levels: hasSavedLevels ? DATA.levels.map(level => level.id).filter(id => saved.levels.includes(id)) : [1],
+    group: 'all', scope: hasSavedLevels ? restored.scope : 'all', search: '',
+    mode: hasSavedLevels ? restored.mode : 'select',
+  };
   const attempts = new Map();
   const selections = new Map();
   let selected = null, feedback = null, passed = false, wrong = [], speechRun = 0;
   let drag = null, suppressClickUntil = 0;
-  // Start directly in the playable picture set, including when resuming an older save.
-  let illustratedOnly = DATA.examples.some(q => q.level === 1 && q.image);
-  if (illustratedOnly) {
-    Object.assign(state, { level: 1, scope: 'all', mode: 'select' });
-    if (!DATA.examples.some(q => q.id === state.current && q.level === 1 && q.image)) {
-      state.current = DATA.examples.find(q => q.level === 1 && q.image).id;
-    }
-  }
+  const hasBasicImages = DATA.examples.some(q => q.level === 1 && q.image);
   function openTensePictures() {
     const first = DATA.examples.find(q => q.group === 'tense-pictures');
-    illustratedOnly = true;
-    Object.assign(state, { level: 1, group: first.group, scope: 'all', search: '', mode: 'select' });
+    Object.assign(state, { levels: [1], group: first.group, scope: 'all', mode: 'select' });
     choose(first.id);
   }
   try { if (localStorage.getItem(SPEED_KEY) === 'slow') speechSpeed = 'slow'; }
@@ -165,7 +165,8 @@ if (typeof document !== 'undefined') {
   const hasSpeech = 'speechSynthesis' in window && 'SpeechSynthesisUtterance' in window;
   const getQ = () => DATA.examples.find(q => q.id === state.current);
   function visibleExamples() {
-    return Construction.visibleExamples(DATA, state).filter(q => !illustratedOnly || q.image);
+    const pictureScope = state.scope === 'all' || state.scope === 'core';
+    return Construction.visibleExamples(DATA, state).filter(q => q.level !== 1 || !hasBasicImages || !pictureScope || q.image);
   }
   const usingLists = () => getQ().level === 1 && state.mode === 'select';
   function picks() {
@@ -195,15 +196,15 @@ if (typeof document !== 'undefined') {
     save(); render();
   }
   function synchronizeFilters() {
-    $('level').value = state.level; $('scope').value = state.scope;
-    $('scopeField').hidden = state.level !== 1;
+    for (const checkbox of $('levelChoices').querySelectorAll('input')) checkbox.checked = state.levels.includes(Number(checkbox.value));
+    $('scope').value = state.scope;
+    $('scopeField').hidden = !state.levels.includes(1);
   }
-  function renderNav() {
-    const visible = visibleExamples();
-    const illustratedCount = DATA.examples.filter(q => q.level === state.level && q.image).length;
+  function renderNav(visible) {
     $('artworkProgress').textContent = `絵のある例文 ${Object.keys(ILLUSTRATIONS).length} / ${DATA.examples.length}文`;
-    $('filterCount').textContent = illustratedOnly ? `${visible.length}文を表示 ／ 絵のある${illustratedCount}文` : `${visible.length}文を表示 ／ 全${DATA.examples.length}文`;
-    $('lessons').innerHTML = visible.length ? visible.map(q => `<button data-lesson="${esc(q.id)}" aria-current="${state.current === q.id}">${state.completed.includes(q.id) ? '✓ ' : ''}${esc(q.ja)}</button>`).join('') : '<p class="muted">見つかりません。テーマや検索することばを変えてみよう。</p>';
+    $('filterCount').textContent = `${visible.length}文を表示`;
+    const emptyMessage = state.levels.length ? 'この条件の例文はありません。' : 'レベルをえらぶと、例文が表示されます。';
+    $('lessons').innerHTML = visible.length ? visible.map(q => `<button data-lesson="${esc(q.id)}" aria-current="${state.current === q.id}">${state.completed.includes(q.id) ? '✓ ' : ''}${esc(q.ja)}</button>`).join('') : `<p class="muted">${emptyMessage}</p>`;
     const index = Construction.navigationIndex(visible, getQ());
     $('previous').disabled = index <= 0; $('next').disabled = index < 0 || index >= visible.length - 1;
   }
@@ -241,7 +242,7 @@ if (typeof document !== 'undefined') {
     }
     if (!$('pictureScene').hidden) $('pictureScene').innerHTML = q.image
       ? `<img src="${esc(q.image)}" alt="${esc(q.imageAlt)}" width="1536" height="1024"><figcaption class="scene-clue">${esc(q.imageClue)}</figcaption>`
-      : '<div class="scene-pending"><b>この場面の絵は準備中です</b></div>';
+      : `<div class="scene-pending japanese">${esc(q.ja)}</div>`;
     $('feedback').innerHTML = feedback ? `<div class="feedback ${feedback.good ? 'good' : ''}">${esc(feedback.text)}</div>` : '';
     $('result').innerHTML = passed ? `
       <div class="result">
@@ -266,22 +267,27 @@ if (typeof document !== 'undefined') {
         <p class="muted" id="speechStatus" role="status">${hasSpeech ? '' : 'このブラウザーでは音声を使えません。'}</p>
       </div>` : '';
   }
-  function render() { synchronizeFilters(); renderNav(); renderExercise(); }
-  function changeFilters(event) {
-    if (event.target.id === 'level' && Number($('level').value) !== 1) illustratedOnly = false;
-    state.level = Number($('level').value);
+  function render() {
+    const visible = visibleExamples();
+    synchronizeFilters();
+    renderNav(visible);
+    $('main').hidden = !visible.length;
+    if (visible.length) renderExercise();
+  }
+  function changeFilters() {
+    state.levels = [...$('levelChoices').querySelectorAll('input:checked')].map(input => Number(input.value));
     state.scope = $('scope').value;
     state.group = 'all';
     const visible = visibleExamples();
     if (visible.length && !visible.some(q => q.id === state.current)) choose(visible[0].id);
     else {
-      // An empty scope must not leave a different level's exercise on screen.
-      if (getQ().level !== state.level) choose(DATA.examples.find(q => q.level === state.level).id);
-      else { save(); render(); }
+      if (!visible.length) stopSpeech();
+      save(); render();
     }
   }
-  $('level').innerHTML = DATA.levels.map(l => `<option value="${l.id}">${esc(l.label)}</option>`).join('');
-  for (const id of ['level', 'scope']) $(id).addEventListener('change', changeFilters);
+  $('levelChoices').innerHTML = DATA.levels.map(level => `<label><input type="checkbox" value="${level.id}" aria-label="${esc(level.label)}">${level.id}</label>`).join('');
+  $('levels').addEventListener('change', changeFilters);
+  $('scope').addEventListener('change', changeFilters);
   $('slots').addEventListener('change', event => {
     const role = event.target.dataset.choice;
     if (!usingLists() || !Construction.roles.includes(role) || !targetAllowed(role)) return;
@@ -396,7 +402,7 @@ if (typeof document !== 'undefined') {
           else cards.forEach((_, i) => { if (attempt()[i] !== Construction.expectedTarget(q, i)) wrong.push(Construction.expectedTarget(q, i)); });
           feedback = { text: q.level === 1 ? 'もう少し。「だれが」「どうする」から考えてみよう。点線の欄を見直してね。' : 'もう少し。部品の役割と話す順を確かめてみよう。' };
         }
-        renderNav(); renderExercise(); break;
+        renderNav(visibleExamples()); renderExercise(); break;
       }
       case 'hint': {
         const q = getQ(), cards = Construction.cardsFor(q);
@@ -450,11 +456,13 @@ if (typeof document !== 'undefined') {
     try { speechSynthesis.speak(utterance); } catch { report('声を使えませんでした。端末の音声設定を確認してください。'); }
   }
   if (hasSpeech) speechSynthesis.addEventListener('voiceschanged', populateVoices);
-  // A saved comparison can be outside the basic-scene filter; retain it for resuming.
-  if (getQ().level !== state.level) state.current = DATA.examples.find(q => q.level === state.level).id;
   populateVoices();
   if (location.hash === '#tense-pictures') openTensePictures();
-  else { save(); render(); }
+  else {
+    const visible = visibleExamples();
+    if (visible.length && !visible.some(q => q.id === state.current)) state.current = visible[0].id;
+    save(); render();
+  }
   window.addEventListener('hashchange', () => {
     if (location.hash === '#tense-pictures') openTensePictures();
   });

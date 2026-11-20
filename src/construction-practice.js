@@ -45,7 +45,8 @@ const Construction = (() => {
   }
   function visibleExamples(data, filters) {
     const term = filters.search.trim().toLowerCase();
-    return data.examples.filter(q => q.level === filters.level &&
+    const levels = filters.levels ?? [filters.level];
+    return data.examples.filter(q => levels.includes(q.level) &&
       (q.level !== 1 || ((filters.group === 'all' || q.group === filters.group) &&
         (filters.scope === 'all' || (filters.scope === 'core' && q.contrastFamily === q.id && !q.pronounFocus) ||
          (filters.scope === 'pronouns' && q.pronounFocus && !q.extension) ||
@@ -101,23 +102,22 @@ if (typeof document !== 'undefined') {
   let saved = null, savedVoice = '', speechSpeed = 'normal', storageOK = true;
   try { saved = JSON.parse(localStorage.getItem(KEY)); savedVoice = JSON.parse(localStorage.getItem(VOICE_KEY))?.voiceURI || ''; }
   catch (error) { if (error.name !== 'SyntaxError') storageOK = false; }
-  const state = { ...Construction.restore(DATA, saved), group: 'all', search: '' };
+  const restored = Construction.restore(DATA, saved);
+  const hasSavedLevels = saved?.version === 1 && Array.isArray(saved.levels);
+  const state = {
+    current: restored.current, completed: restored.completed,
+    levels: hasSavedLevels ? DATA.levels.map(level => level.id).filter(id => saved.levels.includes(id)) : [1],
+    group: 'all', scope: hasSavedLevels ? restored.scope : 'all', search: '',
+    mode: hasSavedLevels ? restored.mode : 'select',
+  };
   const attempts = new Map();
   const selections = new Map();
   let selected = null, feedback = null, passed = false, wrong = [], speechRun = 0;
   let drag = null, suppressClickUntil = 0;
-  // Start directly in the playable picture set, including when resuming an older save.
-  let illustratedOnly = DATA.examples.some(q => q.level === 1 && q.image);
-  if (illustratedOnly) {
-    Object.assign(state, { level: 1, scope: 'all', mode: 'select' });
-    if (!DATA.examples.some(q => q.id === state.current && q.level === 1 && q.image)) {
-      state.current = DATA.examples.find(q => q.level === 1 && q.image).id;
-    }
-  }
+  const hasBasicImages = DATA.examples.some(q => q.level === 1 && q.image);
   function openTensePictures() {
     const first = DATA.examples.find(q => q.group === 'tense-pictures');
-    illustratedOnly = true;
-    Object.assign(state, { level: 1, group: first.group, scope: 'all', search: '', mode: 'select' });
+    Object.assign(state, { levels: [1], group: first.group, scope: 'all', mode: 'select' });
     choose(first.id);
   }
   try { if (localStorage.getItem(SPEED_KEY) === 'slow') speechSpeed = 'slow'; }
@@ -125,7 +125,8 @@ if (typeof document !== 'undefined') {
   const hasSpeech = 'speechSynthesis' in window && 'SpeechSynthesisUtterance' in window;
   const getQ = () => DATA.examples.find(q => q.id === state.current);
   function visibleExamples() {
-    return Construction.visibleExamples(DATA, state).filter(q => !illustratedOnly || q.image);
+    const pictureScope = state.scope === 'all' || state.scope === 'core';
+    return Construction.visibleExamples(DATA, state).filter(q => q.level !== 1 || !hasBasicImages || !pictureScope || q.image);
   }
   const usingLists = () => getQ().level === 1 && state.mode === 'select';
   function picks() {
@@ -155,15 +156,15 @@ if (typeof document !== 'undefined') {
     save(); render();
   }
   function synchronizeFilters() {
-    $('level').value = state.level; $('scope').value = state.scope;
-    $('scopeField').hidden = state.level !== 1;
+    for (const checkbox of $('levelChoices').querySelectorAll('input')) checkbox.checked = state.levels.includes(Number(checkbox.value));
+    $('scope').value = state.scope;
+    $('scopeField').hidden = !state.levels.includes(1);
   }
-  function renderNav() {
-    const visible = visibleExamples();
-    const illustratedCount = DATA.examples.filter(q => q.level === state.level && q.image).length;
+  function renderNav(visible) {
     $('artworkProgress').textContent = `絵のある例文 ${Object.keys(ILLUSTRATIONS).length} / ${DATA.examples.length}文`;
-    $('filterCount').textContent = illustratedOnly ? `${visible.length}文を表示 ／ 絵のある${illustratedCount}文` : `${visible.length}文を表示 ／ 全${DATA.examples.length}文`;
-    $('lessons').innerHTML = visible.length ? visible.map(q => `<button data-lesson="${esc(q.id)}" aria-current="${state.current === q.id}">${state.completed.includes(q.id) ? '✓ ' : ''}${esc(q.ja)}</button>`).join('') : '<p class="muted">見つかりません。テーマや検索することばを変えてみよう。</p>';
+    $('filterCount').textContent = `${visible.length}文を表示`;
+    const emptyMessage = state.levels.length ? 'この条件の例文はありません。' : 'レベルをえらぶと、例文が表示されます。';
+    $('lessons').innerHTML = visible.length ? visible.map(q => `<button data-lesson="${esc(q.id)}" aria-current="${state.current === q.id}">${state.completed.includes(q.id) ? '✓ ' : ''}${esc(q.ja)}</button>`).join('') : `<p class="muted">${emptyMessage}</p>`;
     const index = Construction.navigationIndex(visible, getQ());
     $('previous').disabled = index <= 0; $('next').disabled = index < 0 || index >= visible.length - 1;
   }
@@ -201,7 +202,7 @@ if (typeof document !== 'undefined') {
     }
     if (!$('pictureScene').hidden) $('pictureScene').innerHTML = q.image
       ? `<img src="${esc(q.image)}" alt="${esc(q.imageAlt)}" width="1536" height="1024"><figcaption class="scene-clue">${esc(q.imageClue)}</figcaption>`
-      : '<div class="scene-pending"><b>この場面の絵は準備中です</b></div>';
+      : `<div class="scene-pending japanese">${esc(q.ja)}</div>`;
     $('feedback').innerHTML = feedback ? `<div class="feedback ${feedback.good ? 'good' : ''}">${esc(feedback.text)}</div>` : '';
     $('result').innerHTML = passed ? `
       <div class="result">
@@ -226,22 +227,27 @@ if (typeof document !== 'undefined') {
         <p class="muted" id="speechStatus" role="status">${hasSpeech ? '' : 'このブラウザーでは音声を使えません。'}</p>
       </div>` : '';
   }
-  function render() { synchronizeFilters(); renderNav(); renderExercise(); }
-  function changeFilters(event) {
-    if (event.target.id === 'level' && Number($('level').value) !== 1) illustratedOnly = false;
-    state.level = Number($('level').value);
+  function render() {
+    const visible = visibleExamples();
+    synchronizeFilters();
+    renderNav(visible);
+    $('main').hidden = !visible.length;
+    if (visible.length) renderExercise();
+  }
+  function changeFilters() {
+    state.levels = [...$('levelChoices').querySelectorAll('input:checked')].map(input => Number(input.value));
     state.scope = $('scope').value;
     state.group = 'all';
     const visible = visibleExamples();
     if (visible.length && !visible.some(q => q.id === state.current)) choose(visible[0].id);
     else {
-      // An empty scope must not leave a different level's exercise on screen.
-      if (getQ().level !== state.level) choose(DATA.examples.find(q => q.level === state.level).id);
-      else { save(); render(); }
+      if (!visible.length) stopSpeech();
+      save(); render();
     }
   }
-  $('level').innerHTML = DATA.levels.map(l => `<option value="${l.id}">${esc(l.label)}</option>`).join('');
-  for (const id of ['level', 'scope']) $(id).addEventListener('change', changeFilters);
+  $('levelChoices').innerHTML = DATA.levels.map(level => `<label><input type="checkbox" value="${level.id}" aria-label="${esc(level.label)}">${level.id}</label>`).join('');
+  $('levels').addEventListener('change', changeFilters);
+  $('scope').addEventListener('change', changeFilters);
   $('slots').addEventListener('change', event => {
     const role = event.target.dataset.choice;
     if (!usingLists() || !Construction.roles.includes(role) || !targetAllowed(role)) return;
@@ -356,7 +362,7 @@ if (typeof document !== 'undefined') {
           else cards.forEach((_, i) => { if (attempt()[i] !== Construction.expectedTarget(q, i)) wrong.push(Construction.expectedTarget(q, i)); });
           feedback = { text: q.level === 1 ? 'もう少し。「だれが」「どうする」から考えてみよう。点線の欄を見直してね。' : 'もう少し。部品の役割と話す順を確かめてみよう。' };
         }
-        renderNav(); renderExercise(); break;
+        renderNav(visibleExamples()); renderExercise(); break;
       }
       case 'hint': {
         const q = getQ(), cards = Construction.cardsFor(q);
@@ -410,11 +416,13 @@ if (typeof document !== 'undefined') {
     try { speechSynthesis.speak(utterance); } catch { report('声を使えませんでした。端末の音声設定を確認してください。'); }
   }
   if (hasSpeech) speechSynthesis.addEventListener('voiceschanged', populateVoices);
-  // A saved comparison can be outside the basic-scene filter; retain it for resuming.
-  if (getQ().level !== state.level) state.current = DATA.examples.find(q => q.level === state.level).id;
   populateVoices();
   if (location.hash === '#tense-pictures') openTensePictures();
-  else { save(); render(); }
+  else {
+    const visible = visibleExamples();
+    if (visible.length && !visible.some(q => q.id === state.current)) state.current = visible[0].id;
+    save(); render();
+  }
   window.addEventListener('hashchange', () => {
     if (location.hash === '#tense-pictures') openTensePictures();
   });

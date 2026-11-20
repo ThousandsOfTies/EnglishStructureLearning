@@ -92,6 +92,15 @@ test('basic-first navigation separates contrasts, pronouns, and advanced reflexi
   assert.equal(app.visibleExamples(data, { ...filters, search: 'not-a-real-sentence' }).length, 0);
 });
 
+test('selected levels are combined and the scope applies only to level 1', () => {
+  const filters = { levels: [1, 3], group: 'all', scope: 'pronouns', search: '' };
+  const mixed = app.visibleExamples(data, filters);
+  assert.equal(mixed.length, 41);
+  assert.equal(mixed.filter(q => q.level === 1 && q.pronounFocus).length, 31);
+  assert.equal(mixed.filter(q => q.level === 3).length, 10);
+  assert.deepEqual(app.visibleExamples(data, { ...filters, levels: [] }), []);
+});
+
 test('progress uses stable IDs and ignores legacy, stale, and duplicate completions', () => {
   assert.deepEqual(app.restore(data, { version: 1, answers: [], pictureDone: [true] }).completed, []);
   const restored = app.restore(data, { version: 1, current: 'level3-06', level: 3, group: 'invalid', scope: 'invalid', completed: ['level3-06', 'deleted', 'level3-06'] });
