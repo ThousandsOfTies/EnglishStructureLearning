@@ -101,7 +101,7 @@ if (typeof document !== 'undefined') {
   let saved = null, savedVoice = '', speechSpeed = 'normal', storageOK = true;
   try { saved = JSON.parse(localStorage.getItem(KEY)); savedVoice = JSON.parse(localStorage.getItem(VOICE_KEY))?.voiceURI || ''; }
   catch (error) { if (error.name !== 'SyntaxError') storageOK = false; }
-  let state = Construction.restore(DATA, saved);
+  const state = { ...Construction.restore(DATA, saved), group: 'all', search: '' };
   const attempts = new Map();
   const selections = new Map();
   let selected = null, feedback = null, passed = false, wrong = [], speechRun = 0;
@@ -109,7 +109,7 @@ if (typeof document !== 'undefined') {
   // Start directly in the playable picture set, including when resuming an older save.
   let illustratedOnly = DATA.examples.some(q => q.level === 1 && q.image);
   if (illustratedOnly) {
-    Object.assign(state, { level: 1, group: 'all', scope: 'all', search: '', mode: 'select' });
+    Object.assign(state, { level: 1, scope: 'all', mode: 'select' });
     if (!DATA.examples.some(q => q.id === state.current && q.level === 1 && q.image)) {
       state.current = DATA.examples.find(q => q.level === 1 && q.image).id;
     }
@@ -155,8 +155,8 @@ if (typeof document !== 'undefined') {
     save(); render();
   }
   function synchronizeFilters() {
-    $('level').value = state.level; $('group').value = state.group; $('scope').value = state.scope; $('search').value = state.search;
-    $('groupField').hidden = $('scopeField').hidden = state.level !== 1;
+    $('level').value = state.level; $('scope').value = state.scope;
+    $('scopeField').hidden = state.level !== 1;
   }
   function renderNav() {
     const visible = visibleExamples();
@@ -229,27 +229,19 @@ if (typeof document !== 'undefined') {
   function render() { synchronizeFilters(); renderNav(); renderExercise(); }
   function changeFilters(event) {
     if (event.target.id === 'level' && Number($('level').value) !== 1) illustratedOnly = false;
-    state.level = Number($('level').value); state.group = $('group').value; state.scope = $('scope').value; state.search = $('search').value;
-    if (state.level === 1 && event.target.id === 'group') {
-      if (state.group === 'tense-pictures') state.scope = 'all';
-      else if (state.group.startsWith('pronouns-')) state.scope = state.group === 'pronouns-reflexive' ? 'extension' : 'pronouns';
-      else if (state.group !== 'all' && ['pronouns', 'extension'].includes(state.scope)) state.scope = 'core';
-    }
-    if (event.target.id === 'scope' && state.group.startsWith('pronouns-') &&
-        (state.scope === 'core' || (state.scope === 'extension') !== (state.group === 'pronouns-reflexive'))) state.group = 'all';
-    if (['pronouns', 'extension'].includes(state.scope) && state.level === 1 && !state.group.startsWith('pronouns-')) state.group = 'all';
+    state.level = Number($('level').value);
+    state.scope = $('scope').value;
+    state.group = 'all';
     const visible = visibleExamples();
     if (visible.length && !visible.some(q => q.id === state.current)) choose(visible[0].id);
     else {
-      // An empty search must not leave a different level's exercise on screen.
+      // An empty scope must not leave a different level's exercise on screen.
       if (getQ().level !== state.level) choose(DATA.examples.find(q => q.level === state.level).id);
       else { save(); render(); }
     }
   }
   $('level').innerHTML = DATA.levels.map(l => `<option value="${l.id}">${esc(l.label)}</option>`).join('');
-  $('group').innerHTML = '<option value="all">すべてのテーマ</option>' + DATA.groups.map(g => `<option value="${esc(g.key)}">${esc(g.ja)} · ${esc(g.label)}</option>`).join('');
-  for (const id of ['level', 'group', 'scope']) $(id).addEventListener('change', changeFilters);
-  $('search').addEventListener('input', changeFilters);
+  for (const id of ['level', 'scope']) $(id).addEventListener('change', changeFilters);
   $('slots').addEventListener('change', event => {
     const role = event.target.dataset.choice;
     if (!usingLists() || !Construction.roles.includes(role) || !targetAllowed(role)) return;
