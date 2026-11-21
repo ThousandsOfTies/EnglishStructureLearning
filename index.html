@@ -54,8 +54,8 @@
 .scene-arrow::before{content:"";width:10px;height:10px;border:solid currentColor;border-width:2px 2px 0 0;transform:translateX(-2px) rotate(45deg)}
 #previous::before{transform:translateX(2px) rotate(-135deg)}
 #previous{grid-column:1}#next{grid-column:3}
-.sheet:not(.advanced) .slot-stack{display:grid;grid-template-areas:"pre-modifiers" "phrase" "post-modifiers";grid-template-rows:repeat(3,1fr);grid-template-columns:minmax(0,1fr)}
-.sheet:not(.advanced) .slot-stack .slots{grid-area:phrase}
+.slot-stack{display:grid;grid-template-areas:"pre-modifiers" "phrase" "post-modifiers";grid-template-rows:repeat(3,1fr);grid-template-columns:minmax(0,1fr)}
+.slot-stack>.slots{grid-area:phrase}
 .check-answer{display:block;width:100%;min-height:44px;margin-top:4px;padding:6px 12px;background:var(--blue);border-color:var(--blue);color:white;font-weight:600}
 .check-answer:hover:enabled{background:#204c74;color:white}
 .slots>:is(.list-choice,.card-slot){min-height:44px;padding:4px clamp(2px,.6vw,8px);border-radius:9px;font-size:clamp(11px,1.3vw,15px)}
@@ -377,7 +377,6 @@ if (typeof document !== 'undefined') {
     cancelDrag();
     const q = getQ(), basic = q.level === 1, cards = Construction.cardsFor(q), placements = attempt();
     const pictureMode = usingLists();
-    $('main').classList.toggle('advanced', !basic);
     $('sceneNavigation').classList.toggle('picture-mode', pictureMode);
     $('japanese').textContent = q.ja;
     $('japanese').parentElement.hidden = pictureMode;

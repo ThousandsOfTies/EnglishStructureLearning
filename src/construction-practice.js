@@ -274,7 +274,6 @@ if (typeof document !== 'undefined') {
     cancelDrag();
     const q = getQ(), basic = q.level === 1, cards = Construction.cardsFor(q), placements = attempt();
     const pictureMode = usingLists();
-    $('main').classList.toggle('advanced', !basic);
     $('sceneNavigation').classList.toggle('picture-mode', pictureMode);
     $('japanese').textContent = q.ja;
     $('japanese').parentElement.hidden = pictureMode;
