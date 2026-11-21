@@ -99,6 +99,8 @@ if (typeof document !== 'undefined') {
   const $ = id => document.getElementById(id);
   const esc = value => String(value).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   const labels = { S: '主語', predicate: '述語', P1: '対象１', P2: '対象２', place: '場所', time: '時' };
+  const compactChoices = window.matchMedia('(max-width: 720px)');
+  function choicePrompt(role) { return compactChoices.matches ? labels[role] : `${labels[role]}を選んでね`; }
   let saved = null, savedVoice = '', speechSpeed = 'normal', storageOK = true;
   try { saved = JSON.parse(localStorage.getItem(KEY)); savedVoice = JSON.parse(localStorage.getItem(VOICE_KEY))?.voiceURI || ''; }
   catch (error) { if (error.name !== 'SyntaxError') storageOK = false; }
@@ -278,20 +280,25 @@ if (typeof document !== 'undefined') {
     const order = basic ? japaneseOrder.map(role => cards.findIndex(card => card.role === role)).filter(i => i >= 0) : Construction.shuffledIndices(q);
     const remaining = order.filter(i => !placements[i]);
     $('pool').innerHTML = `<div class="pool-cards">${remaining.map(i => cardHTML(q, i)).join('') || '<span class="muted">カードを置けたね。使わない欄は、そのまま空欄にしよう。</span>'}</div>`;
-    $('slots').innerHTML = Construction.targetsFor(q).map((target, n) => {
-      const i = placements.indexOf(target), role = basic ? target : q.blocks[n][0], locked = !targetAllowed(target);
-      return `<section class="slot ${locked ? 'locked' : ''}" aria-disabled="${locked}" data-drop="${esc(target)}" data-role="${esc(role)}"><button class="target" ${locked ? 'disabled' : ''} data-target="${esc(target)}" aria-label="${esc(basic ? labels[role] : `${n + 1}番 ${labels[role] || role.replace(/\bS\b/g, "主語")}`)}に置く">${esc(basic ? labels[role] : `${n + 1}. ${labels[role] || role.replace(/\bS\b/g, "主語")}`)}${basic ? '' : '<small>発音する順</small>'}</button>${i < 0 ? '<span class="empty">空欄</span>' : cardHTML(q, i)}</section>`;
-    }).join('');
     if (pictureMode) {
-      $('slots').innerHTML = Construction.roles.map(role => `<section class="slot ${!targetAllowed(role) ? 'locked' : ''}" data-role="${role}" aria-disabled="${!targetAllowed(role)}"><label class="target" for="choice-${role}">${labels[role]}</label><select class="${picks()[role] ? 'has-choice' : 'placeholder'}" id="choice-${role}" ${!targetAllowed(role) ? 'disabled' : ''} data-choice="${role}"><option value="__unanswered__" ${Object.hasOwn(picks(), role) ? '' : 'selected'}>えらんでね</option>${Construction.choicesFor(DATA, q, role).map(text => `<option value="${esc(text)}" ${Object.hasOwn(picks(), role) && picks()[role] === text ? 'selected' : ''}>${esc(text)}</option>`).join('')}</select></section>`).join('');
+      const values = picks();
+      $('slots').innerHTML = Construction.roles.map(role => `
+        <select class="slot list-choice${values[role] ? '' : ' placeholder'}" id="choice-${role}"
+          data-choice="${role}" data-role="${role}" aria-label="${labels[role]}を選ぶ" ${!targetAllowed(role) ? 'disabled' : ''}>
+          <option value="__unanswered__" ${Object.hasOwn(values, role) ? '' : 'selected'}>${choicePrompt(role)}</option>
+          ${Construction.choicesFor(DATA, q, role).map(text => `<option value="${esc(text)}" ${values[role] === text ? 'selected' : ''}>${esc(text)}</option>`).join('')}
+        </select>`).join('');
+    } else {
+      $('slots').innerHTML = Construction.targetsFor(q).map((target, n) => {
+        const i = placements.indexOf(target), role = basic ? target : q.blocks[n][0], locked = !targetAllowed(target);
+        return `<section class="slot ${locked ? 'locked' : ''}" aria-disabled="${locked}" data-drop="${esc(target)}" data-role="${esc(role)}"><button class="target" ${locked ? 'disabled' : ''} data-target="${esc(target)}" aria-label="${esc(basic ? labels[role] : `${n + 1}番 ${labels[role] || role.replace(/\bS\b/g, "主語")}`)}に置く">${esc(basic ? labels[role] : `${n + 1}. ${labels[role] || role.replace(/\bS\b/g, "主語")}`)}${basic ? '' : '<small>発音する順</small>'}</button>${i < 0 ? '<span class="empty">空欄</span>' : cardHTML(q, i)}</section>`;
+      }).join('');
     }
     if (!$('pictureScene').hidden) renderPicture(q);
     if (updateResult) renderResult(q, basic);
   }
   function renderResult(q, basic) {
-    $('feedback').innerHTML = answerResult === null ? '' : answerResult
-      ? '<div class="feedback">正解！ ことばがつながったね。</div>'
-      : '<div class="feedback retry">もう少し。ことばを見直してみよう。</div>';
+    $('feedback').innerHTML = answerResult === false ? '<div class="feedback">もう少し。ことばを見直してみよう。</div>' : '';
     $('result').innerHTML = answerResult ? `
       <div class="result">
         <p class="full-english" lang="en">${esc(q.en)}</p>
@@ -358,6 +365,11 @@ if (typeof document !== 'undefined') {
     if (event.clientX < bounds.left || event.clientX > bounds.right ||
         event.clientY < bounds.top || event.clientY > bounds.bottom) lessonDrawer.close();
   });
+  compactChoices.addEventListener('change', () => {
+    for (const select of $('slots').querySelectorAll('[data-choice]')) {
+      select.options[0].textContent = choicePrompt(select.dataset.choice);
+    }
+  });
   $('slots').addEventListener('change', event => {
     const choice = event.target;
     const role = choice.dataset.choice;
@@ -370,14 +382,8 @@ if (typeof document !== 'undefined') {
     // Keep the native selects in place so Safari can finish dismissing its picker.
     const enabled = enabledTargets();
     for (const select of $('slots').querySelectorAll('[data-choice]')) {
-      const locked = !enabled.includes(select.dataset.choice);
-      const hasChoice = Boolean(values[select.dataset.choice]);
-      select.disabled = locked;
-      select.classList.toggle('has-choice', hasChoice);
-      select.classList.toggle('placeholder', !hasChoice);
-      const slot = select.parentElement;
-      slot.classList.toggle('locked', locked);
-      slot.setAttribute('aria-disabled', String(locked));
+      select.disabled = !enabled.includes(select.dataset.choice);
+      select.classList.toggle('placeholder', !values[select.dataset.choice]);
     }
     if (answerResult !== null) {
       answerResult = null;
