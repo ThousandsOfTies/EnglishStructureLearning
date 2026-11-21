@@ -84,7 +84,7 @@ test('list practice accepts untouched unused slots while requiring every filled 
 
 test('advanced picture choices and cards use Japanese with an English counterpart', () => {
   for (const q of data.examples.filter(q => q.level > 1)) {
-    const targets = app.targetsFor(q);
+    const targets = q.blocks.map((_, index) => app.expectedTarget(q, index));
     const answer = Object.fromEntries(targets.map((target, i) => [target, q.blocks[i][2]]));
     assert.deepEqual(app.cardsFor(q).map(card => card.text), Object.values(answer), q.id);
     assert.deepEqual(app.cardsFor(q).map(card => card.en), q.blocks.map(([, en]) => en), q.id);
@@ -105,6 +105,33 @@ test('advanced picture choices and cards use Japanese with an English counterpar
     assert.equal(app.choicesCorrect(q, { ...answer, 0: answer[1] }), false, q.id);
     delete answer[0];
     assert.equal(app.choicesCorrect(q, answer), false, q.id);
+  }
+});
+
+test('every level two exercise has one second object slot, which is empty when unused', () => {
+  for (const q of data.examples.filter(q => q.level === 2)) {
+    const targets = app.targetsFor(q);
+    const secondObjects = targets.filter(id => app.targetRole(q, id) === 'P2');
+    assert.equal(secondObjects.length, 1, q.id);
+    const [secondObject] = secondObjects;
+    const firstObject = targets.find(id => app.targetRole(q, id) === 'P1');
+    if (firstObject) assert.equal(targets.indexOf(secondObject), targets.indexOf(firstObject) + 1, q.id);
+
+    const placements = q.blocks.map((_, index) => app.expectedTarget(q, index));
+    const answer = Object.fromEntries(q.blocks.map(([, , text], i) => [placements[i], text]));
+    assert.ok(app.choicesCorrect(q, answer), q.id);
+    assert.ok(app.isCorrect(q, placements), q.id);
+    if (secondObject === 'P2') {
+      const options = app.choicesFor(data, q, secondObject);
+      assert.deepEqual(new Set(options), new Set(Object.values(data.level2Choices.P2)), q.id);
+      assert.equal(app.choicesCorrect(q, { ...answer, P2: options[0] }), false, q.id);
+      assert.equal(app.isCorrect(q, app.place(q, placements, 0, secondObject)), false, q.id);
+    } else {
+      assert.equal(answer[secondObject], '花を', q.id);
+      delete answer[secondObject];
+      assert.equal(app.choicesCorrect(q, answer), false, q.id);
+      assert.equal(app.isCorrect(q, app.place(q, placements, Number(secondObject), '')), false, q.id);
+    }
   }
 });
 

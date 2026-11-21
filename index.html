@@ -112,7 +112,18 @@ const Construction = (() => {
       ? roles.filter(r => q.slots[r].en).map(r => ({ text: q.slots[r].ja, role: r, en: q.slots[r].en }))
       : q.blocks.map(([role, en, text]) => ({ text, role, en }));
   }
-  function targetsFor(q) { return q.level === 1 ? roles : q.blocks.map((_, i) => String(i)); }
+  function targetsFor(q) {
+    if (q.level === 1) return roles;
+    const targets = q.blocks.map((_, i) => String(i));
+    if (q.level === 2 && !q.blocks.some(([role]) => role === 'P2')) {
+      const position = q.blocks.findIndex(([role]) => role === '場所' || role === '時');
+      targets.splice(position < 0 ? targets.length : position, 0, 'P2');
+    }
+    return targets;
+  }
+  function targetRole(q, id) {
+    return q.level === 1 || id === 'P2' ? id : q.blocks[Number(id)][0];
+  }
   function expectedTarget(q, i) { return q.level === 1 ? cardsFor(q)[i].role : String(i); }
   function isCorrect(q, placements) {
     return cardsFor(q).every((_, i) => placements[i] === expectedTarget(q, i));
@@ -124,6 +135,7 @@ const Construction = (() => {
   function choicesFor(data, q, role) {
     if (q.level === 3) return shuffledIndices(q).map(index => q.blocks[index][2]);
     if (q.level === 2) {
+      if (role === 'P2') return rotateChoices(Object.values(data.level2Choices.P2), q.id + role);
       const [category, english, correct] = q.blocks[Number(role)];
       const alternatives = [...new Set(Object.entries(data.level2Choices[category])
         .filter(([en, ja]) => en !== english && ja !== correct).map(([, ja]) => ja))];
@@ -144,16 +156,16 @@ const Construction = (() => {
     return targetsFor(q).every(role => choiceMatches(q, choices, role));
   }
   function choiceMatches(q, choices, role) {
+    if (q.level === 2 && role === 'P2') return !choices[role];
     if (q.level !== 1) return choices[role] === q.blocks[Number(role)][2];
     if (['P1', 'P2', 'place', 'time'].includes(role) && !q.slots[role].ja) return !choices[role];
     return Object.hasOwn(choices, role) && choices[role] === q.slots[role].ja;
   }
   function enabledTargets(q, filled) {
     const targets = targetsFor(q);
-    const roleFor = id => q.level === 1 ? id : q.blocks[Number(id)][0];
-    const subjects = targets.filter(id => subjectRoles.has(roleFor(id)));
+    const subjects = targets.filter(id => subjectRoles.has(targetRole(q, id)));
     if (subjects.some(id => !filled.includes(id))) return subjects;
-    const predicates = targets.filter(id => predicateRoles.has(roleFor(id)));
+    const predicates = targets.filter(id => predicateRoles.has(targetRole(q, id)));
     return predicates.some(id => !filled.includes(id)) ? [...subjects, ...predicates] : targets;
   }
   function place(q, placements, index, target) {
@@ -203,7 +215,7 @@ const Construction = (() => {
     if (indices.length > 1 && indices.every((value, i) => value === i)) indices.push(indices.shift());
     return indices;
   }
-  return { roles, cardsFor, targetsFor, expectedTarget, isCorrect, choicesFor, choicesCorrect, choiceMatches, enabledTargets, place, visibleExamples, restore, shuffledIndices, navigationIndex };
+  return { roles, cardsFor, targetsFor, targetRole, expectedTarget, isCorrect, choicesFor, choicesCorrect, choiceMatches, enabledTargets, place, visibleExamples, restore, shuffledIndices, navigationIndex };
 })();
 if (typeof module !== 'undefined' && module.exports) module.exports = Construction;
 
@@ -394,8 +406,8 @@ if (typeof document !== 'undefined') {
     const order = basic ? japaneseOrder.map(role => cards.findIndex(card => card.role === role)).filter(i => i >= 0) : Construction.shuffledIndices(q);
     const remaining = order.filter(i => !placements[i]);
     $('pool').innerHTML = `<div class="pool-cards">${remaining.map(i => poolCardHTML(cards[i], i)).join('') || '<span class="muted">使わない欄は空欄のまま。</span>'}</div>`;
-    const targets = Construction.targetsFor(q).map((id, index) => {
-      const role = basic ? id : q.blocks[index][0];
+    const targets = Construction.targetsFor(q).map(id => {
+      const role = Construction.targetRole(q, id);
       return { id, role, label: roleLabel(role) };
     });
     if (pictureMode) {
