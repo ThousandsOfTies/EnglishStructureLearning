@@ -1,0 +1,22 @@
+{
+  "generationTool": "built-in image_gen",
+  "references": {
+    "comparison": "assets/character-materials/set-01/02-girl-presenting-right.png",
+    "boy": "assets/character-materials/set-01/04-boy-speaking.png"
+  },
+  "comparisonPrompt": "Use case: illustration-story. Create one compact 2×2 comparison sheet of four new narrator pose studies for a Japanese children's English activity, using the local image solely as reference for the same character's identity and warm watercolor art. In every cell draw the same chestnut bob-haired girl, yellow star clip at the same temple, coral cardigan, cream shirt and teal skirt; waist-up, 3/4 facing right as if speaking to someone just to her right. Equally scaled, equally lit, clear silhouette; draw four separate, uncropped heads and hands, distinct poses legible as small thumbnails; four plain matching very light warm cream spaces separated by clean generous gutters. Top left: a large unmistakable one-handed thumbs-up, thumb pointing up and remaining fingers curled, confident friendly open smile and upright shoulders. Top right: uncertainty, eyebrows slightly pinched up at center, head tilted and fingers of one hand gently touching cheek, one small sky-blue manga sweat drop at the temple, modest hesitant mouth. Bottom left: calmly and firmly stressing an important rule, raise just one straight index finger beside the face, other fingers curled and thumb tucked, serious composed face and upright posture; the finger is to the side and kept well away from her lips. Bottom right: giving friendly advice, leaning slightly toward her listener with a small warm knowing smile, one relaxed hand extended palm up lower at chest height. No lettering, labels, captions, typography, balloons, extra objects, other people, frames or background scenery. Natural hands and a textured children's book watercolor look like the reference.",
+  "assets": {
+    "girl-modal-poses.png": {
+      "prompt": "Use case: illustration-story. Asset type: transparent sprite atlas for an existing children's educational app. The reference is a pose comparison sheet with four views of the same girl and its design is approved. Recreate that sheet as a clean 2×2 atlas on a genuinely transparent RGBA background; remove only the pale paper background and the divider lines. Preserve the four expressions, order, hairstyles, yellow star clip, coral cardigan, cream shirt, teal skirt, watercolor style and hand gestures. Same young face and head size, all waist-up looking right. Top left: happy confident thumbs-up. Top right: one blue sweat drop and hesitant hand to cheek. Bottom left: calmly serious, one index finger raised beside the shoulder, not touching lips. Bottom right: a friendly smile, head leaning slightly toward a listener, open upturned hand at chest height. Make each figure fit inside its own equal quadrant, with generous transparent gutters and around the hair, hands, and waist. Waist cutoffs at the same height within their quadrants. No surrounding visible backgrounds, divider lines, lettering, or shadows outside the character silhouette.",
+      "order": [
+        "can",
+        "might",
+        "must",
+        "should"
+      ]
+    },
+    "boy-should.png": {
+      "prompt": "Use case: illustration-story. Asset type: one transparent waist-up narrator sprite for a Japanese child's English learning app. Image 1 is the reference for the existing boy's identity and watercolor style. Image 2 bottom right is the reference for the 'should / recommendation' posture. Draw just the same short tousled chestnut-haired boy from image 1 with blue pullover hoodie and light drawstrings, facing right in a 3/4 view. Showing calm friendly advice: smile gently, lean a little toward the listener to his right, one relaxed hand extended palm up at lower-chest height, as if to say 'I recommend this'. The boy looks toward the other person to his right with both face and eyes, no pointing fingers or raised thumb, and keep his head raised rather than bowing the head. Accurate hands, expressive eyes, warm textured Japanese watercolor picture book, same costume and age. Upper body ends at waist at bottom, no clipping at hair or hand. Solidly colored sprite on truly transparent RGBA background. No cast shadow, lettering, captions, symbols, props, other figures or surrounding scenery."
+    }
+  }
+}
