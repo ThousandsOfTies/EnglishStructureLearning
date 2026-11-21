@@ -225,10 +225,8 @@ if (typeof document !== 'undefined') {
     const index = Construction.navigationIndex(visible, getQ());
     $('previous').disabled = index <= 0; $('next').disabled = index < 0 || index >= visible.length - 1;
   }
-  function cardHTML(q, i) {
-    const card = Construction.cardsFor(q)[i];
-    const locked = attempt()[i] && !targetAllowed(attempt()[i]);
-    return `<button class="card ${selected === i ? 'selected' : ''}" data-card="${i}" ${locked ? 'disabled' : ''} aria-pressed="${selected === i}" aria-label="${esc(card.text)}：移動するカードをえらぶ">${esc(card.text)}</button>`;
+  function poolCardHTML(card, i) {
+    return `<button class="card ${selected === i ? 'selected' : ''}" data-card="${i}" aria-pressed="${selected === i}" aria-label="${esc(card.text)}：移動するカードをえらぶ">${esc(card.text)}</button>`;
   }
   function calendarFor(time) {
     if (time === 'every day') {
@@ -274,12 +272,12 @@ if (typeof document !== 'undefined') {
     $('sceneClue').hidden = $('pictureScene').hidden || !q.imageClue;
     $('pool').hidden = pictureMode;
     $('selectedStatus').hidden = basic;
-    $('selectedStatus').textContent = selected === null ? 'カードを押してから欄の見出しを押す方法でも置けます。' : `「${cards[selected].text}」を、どの欄に置く？（同じカードを押すと元に戻せます）`;
+    $('selectedStatus').textContent = selected === null ? 'カードを押してから欄を押す方法でも置けます。' : `「${cards[selected].text}」を、どの欄に置く？（同じカードを押すと元に戻せます）`;
     const parameters = q.frame === 'object-location' ? ['P2', 'P1'] : ['P1', 'P2'];
     const japaneseOrder = ['S', 'time', 'place', ...parameters, 'predicate'];
     const order = basic ? japaneseOrder.map(role => cards.findIndex(card => card.role === role)).filter(i => i >= 0) : Construction.shuffledIndices(q);
     const remaining = order.filter(i => !placements[i]);
-    $('pool').innerHTML = `<div class="pool-cards">${remaining.map(i => cardHTML(q, i)).join('') || '<span class="muted">カードを置けたね。使わない欄は、そのまま空欄にしよう。</span>'}</div>`;
+    $('pool').innerHTML = `<div class="pool-cards">${remaining.map(i => poolCardHTML(cards[i], i)).join('') || '<span class="muted">使わない欄は空欄のまま。</span>'}</div>`;
     if (pictureMode) {
       const values = picks();
       $('slots').innerHTML = Construction.roles.map(role => `
@@ -290,8 +288,16 @@ if (typeof document !== 'undefined') {
         </select>`).join('');
     } else {
       $('slots').innerHTML = Construction.targetsFor(q).map((target, n) => {
-        const i = placements.indexOf(target), role = basic ? target : q.blocks[n][0], locked = !targetAllowed(target);
-        return `<section class="slot ${locked ? 'locked' : ''}" aria-disabled="${locked}" data-drop="${esc(target)}" data-role="${esc(role)}"><button class="target" ${locked ? 'disabled' : ''} data-target="${esc(target)}" aria-label="${esc(basic ? labels[role] : `${n + 1}番 ${labels[role] || role.replace(/\bS\b/g, "主語")}`)}に置く">${esc(basic ? labels[role] : `${n + 1}. ${labels[role] || role.replace(/\bS\b/g, "主語")}`)}${basic ? '' : '<small>発音する順</small>'}</button>${i < 0 ? '<span class="empty">空欄</span>' : cardHTML(q, i)}</section>`;
+        const i = placements.indexOf(target);
+        const role = basic ? target : q.blocks[n][0];
+        const label = labels[role] || role.replace(/\bS\b/g, '主語');
+        const slotName = basic ? label : `${n + 1}. ${label}`;
+        const contents = cards[i]?.text;
+        const accessibleLabel = contents ? `${slotName}：${contents}` : `${slotName}に置く`;
+        const cardState = contents ? ` data-card="${i}" aria-pressed="${selected === i}"` : '';
+        return `<button type="button" class="slot card-slot${contents ? ' card' : ''}${selected === i ? ' selected' : ''}"
+          data-drop="${esc(target)}" data-target="${esc(target)}" data-role="${esc(role)}"${cardState}
+          ${targetAllowed(target) ? '' : 'disabled'} aria-label="${esc(accessibleLabel)}">${esc(contents || slotName)}</button>`;
       }).join('');
     }
     if (!$('pictureScene').hidden) renderPicture(q);
@@ -470,16 +476,16 @@ if (typeof document !== 'undefined') {
     }
     if (button.hasAttribute('data-speak-part')) { speak(getQ().blocks[Number(button.dataset.speakPart)]?.[1]); return; }
     if (button.dataset.lesson) { lessonDrawer.close(); choose(button.dataset.lesson); return; }
+    const i = Number(button.dataset.card);
+    if (button.hasAttribute('data-target') && selected !== null && i !== selected) {
+      moveCard(selected, button.dataset.target, `[data-target="${button.dataset.target}"]`);
+      return;
+    }
     if (button.hasAttribute('data-card')) {
-      const i = Number(button.dataset.card);
       if (selected === i) { moveCard(i, ''); return; }
       selected = i;
       renderExercise(false);
       document.querySelector(`[data-card="${i}"]`)?.focus({ preventScroll: true }); return;
-    }
-    if (button.hasAttribute('data-target')) {
-      if (selected !== null) moveCard(selected, button.dataset.target, `[data-target="${button.dataset.target}"]`);
-      return;
     }
     switch (button.id) {
       case 'cardsMode': case 'selectMode':
