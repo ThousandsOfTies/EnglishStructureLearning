@@ -22,8 +22,12 @@ const Construction = (() => {
     return q.level === 1 || id === 'P2' ? id : q.blocks[Number(id)][0];
   }
   function expectedTarget(q, i) { return q.level === 1 ? cardsFor(q)[i].role : String(i); }
+  function wrongCardTargets(q, placements) {
+    const expected = cardsFor(q).map((_, i) => expectedTarget(q, i));
+    return targetsFor(q).filter(target => placements.indexOf(target) !== expected.indexOf(target));
+  }
   function isCorrect(q, placements) {
-    return cardsFor(q).every((_, i) => placements[i] === expectedTarget(q, i));
+    return wrongCardTargets(q, placements).length === 0;
   }
   function rotateChoices(options, seed) {
     const offset = [...seed].reduce((sum, char) => sum + char.charCodeAt(0), 0) % options.length;
@@ -113,7 +117,7 @@ const Construction = (() => {
     if (indices.length > 1 && indices.every((value, i) => value === i)) indices.push(indices.shift());
     return indices;
   }
-  return { roles, cardsFor, targetsFor, targetRole, expectedTarget, isCorrect, choicesFor, choicesCorrect, choiceMatches, enabledTargets, place, visibleExamples, restore, shuffledIndices, navigationIndex };
+  return { roles, cardsFor, targetsFor, targetRole, expectedTarget, wrongCardTargets, isCorrect, choicesFor, choicesCorrect, choiceMatches, enabledTargets, place, visibleExamples, restore, shuffledIndices, navigationIndex };
 })();
 if (typeof module !== 'undefined' && module.exports) module.exports = Construction;
 
@@ -330,9 +334,28 @@ if (typeof document !== 'undefined') {
     }
     if (!$('pictureScene').hidden) renderPicture(q);
     if (updateResult) renderResult(q);
+    else renderSlotFeedback(q);
+  }
+  function renderSlotFeedback(q) {
+    let wrong = [];
+    if (answerResult === false) {
+      if (usingLists()) {
+        const choices = picks();
+        wrong = Construction.targetsFor(q).filter(target => !Construction.choiceMatches(q, choices, target));
+      } else {
+        wrong = Construction.wrongCardTargets(q, attempt());
+      }
+    }
+    for (const slot of $('slots').children) {
+      const invalid = wrong.includes(slot.dataset.choice ?? slot.dataset.target);
+      slot.classList.toggle('wrong', invalid);
+      if (invalid) slot.setAttribute('aria-invalid', 'true');
+      else slot.removeAttribute('aria-invalid');
+    }
   }
   function renderResult(q) {
-    $('feedback').innerHTML = answerResult === false ? '<div class="feedback">もう少し。ことばを見直してみよう。</div>' : '';
+    renderSlotFeedback(q);
+    $('feedback').innerHTML = answerResult === false ? '<div class="feedback">もう少し。点線の欄を見直してみよう。</div>' : '';
     $('result').innerHTML = answerResult ? `
       <div class="result">
         <p class="full-english" lang="en">${esc(q.en)}</p>

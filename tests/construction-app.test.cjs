@@ -29,6 +29,7 @@ test('unused slots stay empty and misplaced cards cannot pass', () => {
   assert.ok(!correct.includes('P2'));
   const wrong = app.place(q, correct, 0, 'P2');
   assert.equal(app.isCorrect(q, wrong), false);
+  assert.deepEqual(app.wrongCardTargets(q, wrong), ['S', 'P2']);
   assert.equal(app.isCorrect(q, app.place(q, wrong, 0, 'S')), true);
 });
 
