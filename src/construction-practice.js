@@ -260,17 +260,19 @@ if (typeof document !== 'undefined') {
   function renderExercise(updateResult = true) {
     cancelDrag();
     const q = getQ(), basic = q.level === 1, cards = Construction.cardsFor(q), placements = attempt();
+    const pictureMode = usingLists();
     $('main').classList.toggle('advanced', !basic);
+    $('sceneNavigation').classList.toggle('picture-mode', pictureMode);
     $('advancedInstructions').hidden = basic;
     $('japanese').textContent = q.ja;
-    $('japanese').parentElement.hidden = basic;
+    $('japanese').parentElement.hidden = pictureMode;
     $('base').textContent = basic ? '' : `もとの文：${q.base}`;
     $('base').hidden = basic;
     $('modeSwitcher').hidden = !basic;
-    $('cardsMode').setAttribute('aria-pressed', !usingLists());
-    $('selectMode').setAttribute('aria-pressed', usingLists());
-    $('pictureScene').hidden = !usingLists() && !(q.image && (!basic || q.group === 'tense-pictures'));
-    $('pool').hidden = usingLists();
+    $('cardsMode').setAttribute('aria-pressed', !pictureMode);
+    $('selectMode').setAttribute('aria-pressed', pictureMode);
+    $('pictureScene').hidden = !pictureMode && !(q.image && (!basic || q.group === 'tense-pictures'));
+    $('pool').hidden = pictureMode;
     $('selectedStatus').hidden = basic;
     $('selectedStatus').textContent = selected === null ? 'カードを押してから欄の見出しを押す方法でも置けます。' : `「${cards[selected].text}」を、どの欄に置く？（同じカードを押すと元に戻せます）`;
     const japaneseOrder = ['S', 'time', 'place', 'P1', 'P2', 'predicate'];
@@ -281,7 +283,7 @@ if (typeof document !== 'undefined') {
       const i = placements.indexOf(target), role = basic ? target : q.blocks[n][0], locked = !targetAllowed(target);
       return `<section class="slot ${locked ? 'locked' : ''}" aria-disabled="${locked}" data-drop="${esc(target)}" data-role="${esc(role)}"><button class="target" ${locked ? 'disabled' : ''} data-target="${esc(target)}" aria-label="${esc(basic ? labels[role] : `${n + 1}番 ${labels[role] || role.replace(/\bS\b/g, "主語")}`)}に置く">${esc(basic ? labels[role] : `${n + 1}. ${labels[role] || role.replace(/\bS\b/g, "主語")}`)}${basic ? '' : '<small>発音する順</small>'}</button>${i < 0 ? '<span class="empty">空欄</span>' : cardHTML(q, i)}</section>`;
     }).join('');
-    if (usingLists()) {
+    if (pictureMode) {
       $('slots').innerHTML = Construction.roles.map(role => `<section class="slot ${!targetAllowed(role) ? 'locked' : ''}" data-role="${role}" aria-disabled="${!targetAllowed(role)}"><label class="target" for="choice-${role}">${labels[role]}</label><select class="${picks()[role] ? 'has-choice' : 'placeholder'}" id="choice-${role}" ${!targetAllowed(role) ? 'disabled' : ''} data-choice="${role}"><option value="__unanswered__" ${Object.hasOwn(picks(), role) ? '' : 'selected'}>えらんでね</option>${Construction.choicesFor(DATA, q, role).map(text => `<option value="${esc(text)}" ${Object.hasOwn(picks(), role) && picks()[role] === text ? 'selected' : ''}>${esc(text)}</option>`).join('')}</select></section>`).join('');
     }
     if (!$('pictureScene').hidden) renderPicture(q);
