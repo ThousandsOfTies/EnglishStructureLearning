@@ -33,11 +33,32 @@ test('unused slots stay empty and misplaced cards cannot pass', () => {
 });
 
 test('subject unlocks predicate and both unlock every remaining slot', () => {
-  assert.deepEqual(app.enabledRoles(false, false), ['S']);
-  assert.deepEqual(app.enabledRoles(true, false), ['S', 'predicate']);
-  assert.deepEqual(app.enabledRoles(true, true), app.roles);
-  assert.deepEqual(app.enabledRoles(false, true), ['S']);
-  assert.deepEqual(app.enabledRoles(Boolean(''), Boolean('行きます')), ['S']);
+  const q = get('build-go-1');
+  assert.deepEqual(app.enabledTargets(q, []), ['S']);
+  assert.deepEqual(app.enabledTargets(q, ['S']), ['S', 'predicate']);
+  assert.deepEqual(app.enabledTargets(q, ['S', 'predicate']), app.roles);
+  assert.deepEqual(app.enabledTargets(q, ['predicate']), ['S']);
+});
+
+test('advanced exercises unlock by grammatical role and relock after clearing a prerequisite', () => {
+  const cases = [
+    ['level2-01', '0', ['1', '2']],
+    ['level2-06', '0', ['1', '2']],
+    ['level2-07', '0', ['2']],
+    ['level2-10', '0', ['1', '3', '4']],
+    ['level3-03', '1', ['0', '2']],
+    ['level3-06', '0', ['1']],
+    ['level3-07', '2', ['1', '3']],
+  ];
+  for (const [id, subject, predicates] of cases) {
+    const q = get(id);
+    const core = [subject, ...predicates];
+    assert.deepEqual(app.enabledTargets(q, []), [subject], id);
+    assert.deepEqual(app.enabledTargets(q, [subject]), core, id);
+    assert.deepEqual(app.enabledTargets(q, core.slice(0, -1)), core, id);
+    assert.deepEqual(app.enabledTargets(q, core), app.targetsFor(q), id);
+    assert.deepEqual(app.enabledTargets(q, predicates), [subject], id);
+  }
 });
 
 test('list practice accepts untouched unused slots while requiring every filled slot', () => {

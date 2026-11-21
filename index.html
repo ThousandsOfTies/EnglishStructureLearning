@@ -105,6 +105,8 @@
 'use strict';
 const Construction = (() => {
   const roles = ['S', 'predicate', 'P1', 'P2', 'place', 'time'];
+  const subjectRoles = new Set(['S', '疑問詞＝S']);
+  const predicateRoles = new Set(['predicate', '述語', '助動詞', '助動詞＋否定', '否定', 'be', '述語の残り', '疑問の支え']);
   function cardsFor(q) {
     return q.level === 1
       ? roles.filter(r => q.slots[r].en).map(r => ({ text: q.slots[r].ja, role: r, en: q.slots[r].en }))
@@ -146,9 +148,13 @@ const Construction = (() => {
     if (['P1', 'P2', 'place', 'time'].includes(role) && !q.slots[role].ja) return !choices[role];
     return Object.hasOwn(choices, role) && choices[role] === q.slots[role].ja;
   }
-  function enabledRoles(subjectFilled, predicateFilled) {
-    if (!subjectFilled) return ['S'];
-    return predicateFilled ? [...roles] : ['S', 'predicate'];
+  function enabledTargets(q, filled) {
+    const targets = targetsFor(q);
+    const roleFor = id => q.level === 1 ? id : q.blocks[Number(id)][0];
+    const subjects = targets.filter(id => subjectRoles.has(roleFor(id)));
+    if (subjects.some(id => !filled.includes(id))) return subjects;
+    const predicates = targets.filter(id => predicateRoles.has(roleFor(id)));
+    return predicates.some(id => !filled.includes(id)) ? [...subjects, ...predicates] : targets;
   }
   function place(q, placements, index, target) {
     const cards = cardsFor(q);
@@ -197,7 +203,7 @@ const Construction = (() => {
     if (indices.length > 1 && indices.every((value, i) => value === i)) indices.push(indices.shift());
     return indices;
   }
-  return { roles, cardsFor, targetsFor, expectedTarget, isCorrect, choicesFor, choicesCorrect, choiceMatches, enabledRoles, place, visibleExamples, restore, shuffledIndices, navigationIndex };
+  return { roles, cardsFor, targetsFor, expectedTarget, isCorrect, choicesFor, choicesCorrect, choiceMatches, enabledTargets, place, visibleExamples, restore, shuffledIndices, navigationIndex };
 })();
 if (typeof module !== 'undefined' && module.exports) module.exports = Construction;
 
@@ -263,10 +269,7 @@ if (typeof document !== 'undefined') {
     return attempts.get(state.current);
   }
   function enabledTargets() {
-    if (getQ().level !== 1) return Construction.targetsFor(getQ());
-    return usingLists()
-      ? Construction.enabledRoles(Boolean(picks().S), Boolean(picks().predicate))
-      : Construction.enabledRoles(attempt().includes('S'), attempt().includes('predicate'));
+    return Construction.enabledTargets(getQ(), usingLists() ? Object.keys(picks()) : attempt());
   }
   function targetAllowed(target) { return target === '' || enabledTargets().includes(target); }
   function save() {
