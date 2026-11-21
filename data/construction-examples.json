@@ -63177,23 +63177,28 @@
       "blocks": [
         [
           "S",
-          "I"
+          "I",
+          "私は"
         ],
         [
           "助動詞",
-          "can"
+          "can",
+          "〜できる"
         ],
         [
           "述語",
-          "ride"
+          "ride",
+          "乗る"
         ],
         [
           "P1",
-          "a bike"
+          "a bike",
+          "自転車に"
         ],
         [
           "場所",
-          "in the park"
+          "in the park",
+          "公園で"
         ]
       ]
     },
@@ -63208,27 +63213,33 @@
       "blocks": [
         [
           "S",
-          "We"
+          "We",
+          "私たちは"
         ],
         [
           "助動詞",
-          "will"
+          "will",
+          "これから〜する"
         ],
         [
           "述語",
-          "make"
+          "make",
+          "作る"
         ],
         [
           "P1",
-          "a paper hat"
+          "a paper hat",
+          "紙のぼうしを"
         ],
         [
           "場所",
-          "at home"
+          "at home",
+          "家で"
         ],
         [
           "時",
-          "tomorrow"
+          "tomorrow",
+          "明日"
         ]
       ]
     },
@@ -63243,23 +63254,28 @@
       "blocks": [
         [
           "S",
-          "We"
+          "We",
+          "私たちは"
         ],
         [
           "助動詞",
-          "must"
+          "must",
+          "〜しなければならない"
         ],
         [
           "be",
-          "be"
+          "be",
+          "〜でいる"
         ],
         [
           "述語の残り",
-          "quiet"
+          "quiet",
+          "静かに"
         ],
         [
           "場所",
-          "in the library"
+          "in the library",
+          "図書館で"
         ]
       ]
     },
@@ -63274,23 +63290,28 @@
       "blocks": [
         [
           "S",
-          "You"
+          "You",
+          "あなたは"
         ],
         [
           "助動詞",
-          "should"
+          "should",
+          "〜したほうがいい"
         ],
         [
           "述語",
-          "wash"
+          "wash",
+          "洗う"
         ],
         [
           "P1",
-          "your hands"
+          "your hands",
+          "手を"
         ],
         [
           "時",
-          "before lunch"
+          "before lunch",
+          "昼食の前に"
         ]
       ]
     },
@@ -63305,27 +63326,28 @@
       "blocks": [
         [
           "S",
-          "My sister"
-        ],
-        [
-          "否定の支え",
-          "does"
+          "My sister",
+          "姉は"
         ],
         [
           "否定",
-          "not"
+          "does not",
+          "〜しない"
         ],
         [
           "述語",
-          "drink"
+          "drink",
+          "飲む"
         ],
         [
           "P1",
-          "milk"
+          "milk",
+          "牛乳を"
         ],
         [
           "時",
-          "at breakfast"
+          "at breakfast",
+          "朝食のときに"
         ]
       ],
       "note": "doesが付くと、drinksはdrinkになります。"
@@ -63341,23 +63363,23 @@
       "blocks": [
         [
           "S",
-          "I"
-        ],
-        [
-          "be",
-          "am"
+          "I",
+          "私は"
         ],
         [
           "否定",
-          "not"
+          "am not",
+          "〜ではない"
         ],
         [
           "述語の残り",
-          "busy"
+          "busy",
+          "いそがしい"
         ],
         [
           "時",
-          "today"
+          "today",
+          "今日"
         ]
       ]
     },
@@ -63372,27 +63394,33 @@
       "blocks": [
         [
           "S",
-          "I"
+          "I",
+          "私は"
         ],
         [
           "頻度",
-          "often"
+          "often",
+          "よく"
         ],
         [
           "述語",
-          "read"
+          "read",
+          "読む"
         ],
         [
           "P1",
-          "an animal book"
+          "an animal book",
+          "動物の本を"
         ],
         [
           "場所",
-          "at home"
+          "at home",
+          "家で"
         ],
         [
           "時",
-          "after school"
+          "after school",
+          "放課後に"
         ]
       ]
     },
@@ -63407,23 +63435,28 @@
       "blocks": [
         [
           "S",
-          "My sister"
+          "My sister",
+          "姉は"
         ],
         [
           "頻度",
-          "always"
+          "always",
+          "いつも"
         ],
         [
           "述語",
-          "checks"
+          "checks",
+          "確かめる"
         ],
         [
           "P1",
-          "her bag"
+          "her bag",
+          "自分のかばんを"
         ],
         [
           "時",
-          "in the morning"
+          "in the morning",
+          "朝に"
         ]
       ]
     },
@@ -63438,27 +63471,33 @@
       "blocks": [
         [
           "S",
-          "We"
+          "We",
+          "私たちは"
         ],
         [
           "頻度",
-          "sometimes"
+          "sometimes",
+          "ときどき"
         ],
         [
           "述語",
-          "give"
+          "give",
+          "あげる"
         ],
         [
           "P1",
-          "our sister"
+          "our sister",
+          "妹に"
         ],
         [
           "P2",
-          "a flower"
+          "a flower",
+          "花を"
         ],
         [
           "場所",
-          "at home"
+          "at home",
+          "家で"
         ]
       ]
     },
@@ -63473,23 +63512,28 @@
       "blocks": [
         [
           "S",
-          "I"
+          "I",
+          "私は"
         ],
         [
           "助動詞＋否定",
-          "cannot"
+          "cannot",
+          "〜できない"
         ],
         [
           "頻度",
-          "always"
+          "always",
+          "いつも"
         ],
         [
           "be",
-          "be"
+          "be",
+          "〜でいる"
         ],
         [
           "述語の残り",
-          "happy"
+          "happy",
+          "うれしい気持ちで"
         ]
       ],
       "note": "can＋notは普通cannotと続けて書きます。not alwaysは「いつも〜とは限らない」で、never「一度も〜ない」とは違います。"
@@ -63510,19 +63554,23 @@
       "blocks": [
         [
           "疑問の支え",
-          "Do"
+          "Do",
+          "〜ですか"
         ],
         [
           "S",
-          "you"
+          "you",
+          "あなたは"
         ],
         [
           "述語",
-          "like"
+          "like",
+          "好き"
         ],
         [
           "P1",
-          "strawberries"
+          "strawberries",
+          "いちごが"
         ]
       ]
     },
@@ -63542,23 +63590,28 @@
       "blocks": [
         [
           "疑問の支え",
-          "Does"
+          "Does",
+          "〜しますか"
         ],
         [
           "S",
-          "your sister"
+          "your sister",
+          "あなたのお姉さんは"
         ],
         [
           "述語",
-          "play"
+          "play",
+          "する"
         ],
         [
           "P1",
-          "soccer"
+          "soccer",
+          "サッカーを"
         ],
         [
           "場所",
-          "in the park"
+          "in the park",
+          "公園で"
         ]
       ],
       "note": "doesが付くと、playsはplayになります。"
@@ -63579,19 +63632,23 @@
       "blocks": [
         [
           "be",
-          "Are"
+          "Are",
+          "〜ですか"
         ],
         [
           "S",
-          "you"
+          "you",
+          "あなたは"
         ],
         [
           "述語の残り",
-          "happy"
+          "happy",
+          "うれしい"
         ],
         [
           "時",
-          "today"
+          "today",
+          "今日"
         ]
       ]
     },
@@ -63611,19 +63668,23 @@
       "blocks": [
         [
           "助動詞",
-          "Can"
+          "Can",
+          "〜できますか"
         ],
         [
           "S",
-          "you"
+          "you",
+          "あなたは"
         ],
         [
           "述語",
-          "ride"
+          "ride",
+          "乗る"
         ],
         [
           "P1",
-          "a bike"
+          "a bike",
+          "自転車に"
         ]
       ]
     },
@@ -63643,23 +63704,28 @@
       "blocks": [
         [
           "疑問詞＝P1",
-          "What"
+          "What",
+          "何を"
         ],
         [
           "疑問の支え",
-          "do"
+          "do",
+          "〜しますか"
         ],
         [
           "S",
-          "you"
+          "you",
+          "あなたは"
         ],
         [
           "述語",
-          "read"
+          "read",
+          "読む"
         ],
         [
           "場所",
-          "at home"
+          "at home",
+          "家で"
         ]
       ]
     },
@@ -63679,23 +63745,28 @@
       "blocks": [
         [
           "疑問詞＝S",
-          "Who"
+          "Who",
+          "だれが"
         ],
         [
           "述語",
-          "gives"
+          "gives",
+          "くれますか"
         ],
         [
           "P1",
-          "you"
+          "you",
+          "あなたに"
         ],
         [
           "P2",
-          "a sticker"
+          "a sticker",
+          "シールを"
         ],
         [
           "場所",
-          "at school"
+          "at school",
+          "学校で"
         ]
       ],
       "note": "だれが、をたずねるwhoはSの場所に入ります。この肯定の疑問文ではdoを足さず、Sと述語の順も入れ替えません。"
@@ -63716,27 +63787,33 @@
       "blocks": [
         [
           "疑問詞＝場所",
-          "Where"
+          "Where",
+          "どこで"
         ],
         [
           "疑問の支え",
-          "do"
+          "do",
+          "〜しますか"
         ],
         [
           "S",
-          "you"
+          "you",
+          "あなたは"
         ],
         [
           "述語",
-          "play"
+          "play",
+          "する"
         ],
         [
           "P1",
-          "soccer"
+          "soccer",
+          "サッカーを"
         ],
         [
           "時",
-          "after school"
+          "after school",
+          "放課後に"
         ]
       ]
     },
@@ -63756,23 +63833,28 @@
       "blocks": [
         [
           "疑問詞＝時",
-          "When"
+          "When",
+          "いつ"
         ],
         [
           "疑問の支え",
-          "do"
+          "do",
+          "〜しますか"
         ],
         [
           "S",
-          "you"
+          "you",
+          "あなたは"
         ],
         [
           "述語",
-          "clean"
+          "clean",
+          "そうじする"
         ],
         [
           "P1",
-          "your room"
+          "your room",
+          "自分の部屋を"
         ]
       ]
     },
@@ -63792,23 +63874,28 @@
       "blocks": [
         [
           "疑問詞＝P1",
-          "Who"
+          "Who",
+          "だれに"
         ],
         [
           "疑問の支え",
-          "do"
+          "do",
+          "〜しますか"
         ],
         [
           "S",
-          "you"
+          "you",
+          "あなたは"
         ],
         [
           "述語",
-          "call"
+          "call",
+          "電話する"
         ],
         [
           "時",
-          "on Sundays"
+          "on Sundays",
+          "日曜日に"
         ]
       ]
     },
@@ -63828,27 +63915,33 @@
       "blocks": [
         [
           "疑問詞＝P2",
-          "What"
+          "What",
+          "何を"
         ],
         [
           "疑問の支え",
-          "do"
+          "do",
+          "〜しますか"
         ],
         [
           "S",
-          "you"
+          "you",
+          "あなたは"
         ],
         [
           "述語",
-          "give"
+          "give",
+          "あげる"
         ],
         [
           "P1",
-          "your sister"
+          "your sister",
+          "妹に"
         ],
         [
           "場所",
-          "at home"
+          "at home",
+          "家で"
         ]
       ]
     }

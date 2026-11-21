@@ -61,15 +61,17 @@ test('list practice accepts untouched unused slots while requiring every filled 
   assert.equal(app.choicesCorrect(q, { ...picks, P2: 'シールを' }), false);
 });
 
-test('advanced picture practice uses the same English parts and order as the cards', () => {
+test('advanced picture choices and cards use Japanese with an English counterpart', () => {
   for (const q of data.examples.filter(q => q.level > 1)) {
     const targets = app.targetsFor(q);
-    const answer = Object.fromEntries(targets.map((target, i) => [target, q.blocks[i][1]]));
+    const answer = Object.fromEntries(targets.map((target, i) => [target, q.blocks[i][2]]));
+    assert.deepEqual(app.cardsFor(q).map(card => card.text), Object.values(answer), q.id);
+    assert.deepEqual(app.cardsFor(q).map(card => card.en), q.blocks.map(([, en]) => en), q.id);
     for (const target of targets) {
       const options = app.choicesFor(data, q, target);
       assert.deepEqual(new Set(options), new Set(Object.values(answer)), q.id);
       assert.equal(options.length, new Set(options).size, q.id);
-      assert.ok(!options.some(text => /\bwhether\b/i.test(text)), q.id);
+      assert.ok(options.every(text => /[\u3040-\u30ff\u3400-\u9fff]/u.test(text) && !/[a-z]/i.test(text)), q.id);
     }
     assert.ok(app.choicesCorrect(q, answer), q.id);
     assert.equal(app.choicesCorrect(q, { ...answer, 0: answer[1] }), false, q.id);
@@ -89,10 +91,10 @@ test('placing onto an occupied slot returns the previous card to the pool', () =
 });
 
 test('subject and object who retain their order and silent whether is never a card', () => {
-  assert.deepEqual(app.cardsFor(get('level3-06')).slice(0, 2).map(c => c.text), ['Who', 'gives']);
-  assert.deepEqual(app.cardsFor(get('level3-09')).slice(0, 3).map(c => c.text), ['Who', 'do', 'you']);
+  assert.deepEqual(app.cardsFor(get('level3-06')).slice(0, 2).map(c => [c.text, c.en]), [['だれが', 'Who'], ['くれますか', 'gives']]);
+  assert.deepEqual(app.cardsFor(get('level3-09')).slice(0, 3).map(c => [c.text, c.en]), [['だれに', 'Who'], ['〜しますか', 'do'], ['あなたは', 'you']]);
   for (const q of data.examples.filter(q => q.level === 3)) {
-    assert.ok(app.cardsFor(q).every(c => !/whether/i.test(c.text)));
+    assert.ok(app.cardsFor(q).every(c => !/whether/i.test(c.en)));
     assert.equal(new Set(app.shuffledIndices(q)).size, q.blocks.length);
   }
 });

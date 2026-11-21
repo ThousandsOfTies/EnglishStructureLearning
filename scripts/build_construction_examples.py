@@ -276,7 +276,9 @@ def build_examples():
         for q in examples:
             assert q['level'] == level and q['ja'] and q['focus'] and q['pictureHint']
             punctuation = '?' if level == 3 else '.'
-            assert ' '.join(text for _, text in q['blocks']) + punctuation == q['en'], q['id']
+            assert ' '.join(text for _, text, _ in q['blocks']) + punctuation == q['en'], q['id']
+            japanese_parts = [japanese for _, _, japanese in q['blocks']]
+            assert all(japanese_parts) and len(set(japanese_parts)) == len(japanese_parts), q['id']
             if level == 3:
                 assert q['question']['spoken'] == (q['question']['token'] != 'whether')
                 assert 'whether' not in q['en'].lower()
@@ -348,16 +350,17 @@ def build_examples():
         title = '助動詞・否定・頻度' if level == 2 else '疑問文'
         lines = [f'# レベル{level}：{title}・10文', '',
                  '元の文をどう変えるか、意味のブロックと完成した英文の両方で確かめます。', '',
-                 'ブロックは実際に発音する順です。beは主語や助動詞に合わせて変わり、否定・頻度の位置も調整します。', '']
+                 '日本語のカードは、対応する英語を発音する順に並べます。', '']
         if level == 3:
             lines.extend(['黙疑問詞 whether は「〜かどうか」を問う内部の目印です。下のブロックや完成英文には表示せず、読み上げもしません。これは本教材独自の構築モデルで、英文法上の省略された語という主張ではありません。', '',
                           'whoがSをたずねる場合は、肯定の文ではdoを足さず、Sと述語の順を入れ替えません。P1をたずねるwhoとは区別します。', ''])
         for number, q in enumerate(advanced[f'level{level}'], 1):
             lines.extend([f"## {number:02}　{q['focus']}", '', q['ja'], '',
                           f"**{q['en']}**", '', f"元の文：{q['base']}", '',
-                          '| ' + ' | '.join(role for role, _ in q['blocks']) + ' |',
+                          '| ' + ' | '.join(role for role, _, _ in q['blocks']) + ' |',
                           '| ' + ' | '.join('---' for _ in q['blocks']) + ' |',
-                          '| ' + ' | '.join(text for _, text in q['blocks']) + ' |', ''])
+                          '| ' + ' | '.join(japanese for _, _, japanese in q['blocks']) + ' |',
+                          '| ' + ' | '.join(text for _, text, _ in q['blocks']) + ' |', ''])
             if level == 3 and not q['question']['spoken']:
                 lines.extend(['内部の問い：whether「〜かどうか」（表示・発音なし）', ''])
             if q.get('note'):

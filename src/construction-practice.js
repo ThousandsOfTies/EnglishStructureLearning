@@ -5,7 +5,7 @@ const Construction = (() => {
   function cardsFor(q) {
     return q.level === 1
       ? roles.filter(r => q.slots[r].en).map(r => ({ text: q.slots[r].ja, role: r, en: q.slots[r].en }))
-      : q.blocks.map(([role, text]) => ({ text, role, en: text }));
+      : q.blocks.map(([role, en, text]) => ({ text, role, en }));
   }
   function targetsFor(q) { return q.level === 1 ? roles : q.blocks.map((_, i) => String(i)); }
   function expectedTarget(q, i) { return q.level === 1 ? cardsFor(q)[i].role : String(i); }
@@ -13,7 +13,7 @@ const Construction = (() => {
     return cardsFor(q).every((_, i) => placements[i] === expectedTarget(q, i));
   }
   function choicesFor(data, q, role) {
-    if (q.level !== 1) return [...new Set(shuffledIndices(q).map(index => q.blocks[index][1]))];
+    if (q.level !== 1) return shuffledIndices(q).map(index => q.blocks[index][2]);
     const family = q.group === 'tense-pictures' && role === 'predicate'
       ? data.examples.filter(item => item.contrastFamily === q.contrastFamily) : [];
     const candidates = [...family, ...data.examples.filter(item => item.level === 1 && item.group === q.group),
@@ -29,7 +29,7 @@ const Construction = (() => {
     return targetsFor(q).every(role => choiceMatches(q, choices, role));
   }
   function choiceMatches(q, choices, role) {
-    if (q.level !== 1) return choices[role] === q.blocks[Number(role)][1];
+    if (q.level !== 1) return choices[role] === q.blocks[Number(role)][2];
     if (['P1', 'P2', 'place', 'time'].includes(role) && !q.slots[role].ja) return !choices[role];
     return Object.hasOwn(choices, role) && choices[role] === q.slots[role].ja;
   }
@@ -100,7 +100,7 @@ if (typeof document !== 'undefined') {
   const speechRates = { fast: 1.2, normal: 1, slow: .6 };
   const $ = id => document.getElementById(id);
   const esc = value => String(value).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-  const labels = { S: '主語', predicate: '述語', P1: '対象１', P2: '対象２', place: '場所', time: '時' };
+  const labels = { S: '主語', predicate: '述語', P1: '対象１', P2: '対象２', place: '場所', time: '時', be: '状態のつなぎ' };
   const compactChoices = window.matchMedia('(max-width: 720px)');
   function roleLabel(role) {
     const [prefix, target] = role.split('＝');
@@ -174,7 +174,7 @@ if (typeof document !== 'undefined') {
         save();
       }
     }
-    renderResult(q, q.level === 1);
+    renderResult(q);
   }
   async function playSuccessSound() {
     const AudioContext = window.AudioContext || window.webkitAudioContext;
@@ -304,9 +304,9 @@ if (typeof document !== 'undefined') {
       }).join('');
     }
     if (!$('pictureScene').hidden) renderPicture(q);
-    if (updateResult) renderResult(q, basic);
+    if (updateResult) renderResult(q);
   }
-  function renderResult(q, basic) {
+  function renderResult(q) {
     $('feedback').innerHTML = answerResult === false ? '<div class="feedback">もう少し。ことばを見直してみよう。</div>' : '';
     $('result').innerHTML = answerResult ? `
       <div class="result">
@@ -321,11 +321,11 @@ if (typeof document !== 'undefined') {
             <button id="speakSlow" data-speed="slow" ${hasSpeech ? '' : 'disabled'}>ゆっくり読む</button>
           </div>
         </div>
-        <div class="spoken">${q.blocks.map(([role, text], index) => {
+        <div class="spoken">${q.blocks.map(([role, text, japanese], index) => {
           const label = roleLabel(role);
           return `<button type="button" class="answer-part" data-role="${esc(role)}" data-speak-part="${index}" aria-label="${esc(label)}「${esc(text)}」を聞く" ${hasSpeech ? '' : 'disabled'}>
             <span class="answer-label">${esc(label)}</span>
-            ${basic ? `<span class="answer-ja">${esc(q.slots[role].ja)}</span>` : ''}
+            <span class="answer-ja">${esc(q.slots?.[role]?.ja ?? japanese)}</span>
             <span lang="en">${esc(text)}</span>
           </button>`;
         }).join('')}</div>
@@ -398,7 +398,7 @@ if (typeof document !== 'undefined') {
     }
     if (answerResult !== null) {
       answerResult = null;
-      renderResult(q, q.level === 1);
+      renderResult(q);
     }
   });
   function moveCard(index, target, focusSelector = `[data-card="${index}"]`) {

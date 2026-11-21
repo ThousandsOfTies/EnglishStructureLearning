@@ -2,7 +2,7 @@
 
 元の文をどう変えるか、意味のブロックと完成した英文の両方で確かめます。
 
-ブロックは実際に発音する順です。beは主語や助動詞に合わせて変わり、否定・頻度の位置も調整します。
+日本語のカードは、対応する英語を発音する順に並べます。
 
 ## 01　can：できる
 
@@ -14,6 +14,7 @@
 
 | S | 助動詞 | 述語 | P1 | 場所 |
 | --- | --- | --- | --- | --- |
+| 私は | 〜できる | 乗る | 自転車に | 公園で |
 | I | can | ride | a bike | in the park |
 
 ## 02　will：これからする
@@ -26,6 +27,7 @@
 
 | S | 助動詞 | 述語 | P1 | 場所 | 時 |
 | --- | --- | --- | --- | --- | --- |
+| 私たちは | これから〜する | 作る | 紙のぼうしを | 家で | 明日 |
 | We | will | make | a paper hat | at home | tomorrow |
 
 ## 03　must＋be：そうしていなければならない
@@ -38,6 +40,7 @@
 
 | S | 助動詞 | be | 述語の残り | 場所 |
 | --- | --- | --- | --- | --- |
+| 私たちは | 〜しなければならない | 〜でいる | 静かに | 図書館で |
 | We | must | be | quiet | in the library |
 
 ## 04　should：したほうがよい
@@ -50,6 +53,7 @@
 
 | S | 助動詞 | 述語 | P1 | 時 |
 | --- | --- | --- | --- | --- |
+| あなたは | 〜したほうがいい | 洗う | 手を | 昼食の前に |
 | You | should | wash | your hands | before lunch |
 
 ## 05　does not：しない
@@ -60,9 +64,10 @@
 
 元の文：My sister drinks milk at breakfast.
 
-| S | 否定の支え | 否定 | 述語 | P1 | 時 |
-| --- | --- | --- | --- | --- | --- |
-| My sister | does | not | drink | milk | at breakfast |
+| S | 否定 | 述語 | P1 | 時 |
+| --- | --- | --- | --- | --- |
+| 姉は | 〜しない | 飲む | 牛乳を | 朝食のときに |
+| My sister | does not | drink | milk | at breakfast |
 
 doesが付くと、drinksはdrinkになります。
 
@@ -74,9 +79,10 @@ doesが付くと、drinksはdrinkになります。
 
 元の文：I am busy today.
 
-| S | be | 否定 | 述語の残り | 時 |
-| --- | --- | --- | --- | --- |
-| I | am | not | busy | today |
+| S | 否定 | 述語の残り | 時 |
+| --- | --- | --- | --- |
+| 私は | 〜ではない | いそがしい | 今日 |
+| I | am not | busy | today |
 
 ## 07　often：よくする
 
@@ -88,6 +94,7 @@ doesが付くと、drinksはdrinkになります。
 
 | S | 頻度 | 述語 | P1 | 場所 | 時 |
 | --- | --- | --- | --- | --- | --- |
+| 私は | よく | 読む | 動物の本を | 家で | 放課後に |
 | I | often | read | an animal book | at home | after school |
 
 ## 08　always：いつもする
@@ -100,6 +107,7 @@ doesが付くと、drinksはdrinkになります。
 
 | S | 頻度 | 述語 | P1 | 時 |
 | --- | --- | --- | --- | --- |
+| 姉は | いつも | 確かめる | 自分のかばんを | 朝に |
 | My sister | always | checks | her bag | in the morning |
 
 ## 09　sometimes＋P1・P2：ときどきする
@@ -112,6 +120,7 @@ doesが付くと、drinksはdrinkになります。
 
 | S | 頻度 | 述語 | P1 | P2 | 場所 |
 | --- | --- | --- | --- | --- | --- |
+| 私たちは | ときどき | あげる | 妹に | 花を | 家で |
 | We | sometimes | give | our sister | a flower | at home |
 
 ## 10　can＋not＋always＋be：いつもできるとは限らない
@@ -124,6 +133,7 @@ doesが付くと、drinksはdrinkになります。
 
 | S | 助動詞＋否定 | 頻度 | be | 述語の残り |
 | --- | --- | --- | --- | --- |
+| 私は | 〜できない | いつも | 〜でいる | うれしい気持ちで |
 | I | cannot | always | be | happy |
 
 can＋notは普通cannotと続けて書きます。not alwaysは「いつも〜とは限らない」で、never「一度も〜ない」とは違います。
