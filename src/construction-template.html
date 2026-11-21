@@ -42,6 +42,9 @@
 .scene-arrow::before{content:"";width:10px;height:10px;border:solid currentColor;border-width:2px 2px 0 0;transform:translateX(-2px) rotate(45deg)}
 #previous::before{transform:translateX(2px) rotate(-135deg)}
 #previous{grid-column:1}#next{grid-column:3}
+.check-answer{display:block;width:100%;min-height:44px;margin-top:4px;padding:6px 12px;background:var(--blue);border-color:var(--blue);color:white;font-weight:600}
+.check-answer:hover:enabled{background:#204c74;color:white}
+.feedback.retry{background:var(--paper);color:var(--ink)}
 </style>
 </head>
 <body><div class="wrap">
@@ -65,6 +68,7 @@
 </div>
 <p id="selectedStatus" class="muted" role="status"></p>
 <div id="pool" class="pool" data-drop="" role="group" aria-label="まだ置いていないカード・ここに戻せます"></div><div id="slots" class="slots" role="group" aria-label="英文を組み立てる欄"></div>
+<button id="check" class="check-answer" type="button"><span aria-hidden="true">✅</span> チェックする</button>
 <div id="feedback" role="status" aria-live="polite"></div><div id="result"></div>
 </main><footer>オリジナル教材・試作版。進み具合はこのブラウザーに保存されます。<span id="storageStatus"></span></footer></div></div>
 </div><script id="curriculum" type="application/json">__CONSTRUCTION_DATA__</script><script id="illustrations" type="application/json">__ILLUSTRATION_DATA__</script><script>

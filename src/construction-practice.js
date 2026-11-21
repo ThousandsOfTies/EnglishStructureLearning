@@ -112,7 +112,7 @@ if (typeof document !== 'undefined') {
   };
   const attempts = new Map();
   const selections = new Map();
-  let selected = null, passed = false, speechRun = 0;
+  let selected = null, answerResult = null, speechRun = 0;
   let drag = null, suppressClickUntil = 0;
   let feedbackAudio, feedbackSoundEnd = 0;
   const hasBasicImages = DATA.examples.some(q => q.level === 1 && q.image);
@@ -154,13 +154,10 @@ if (typeof document !== 'undefined') {
     $('storageStatus').textContent = storageOK ? '' : ' このブラウザーでは保存できません。開いている間は練習できます。';
   }
   function stopSpeech() { speechRun++; if (hasSpeech) speechSynthesis.cancel(); }
-  function answerIsComplete(q) {
-    return usingLists() ? Construction.choicesCorrect(q, picks()) : Construction.isCorrect(q, attempt());
-  }
   function checkAnswer(q) {
-    const wasPassed = passed;
-    passed = answerIsComplete(q);
-    if (passed && !wasPassed) {
+    const wasCorrect = answerResult === true;
+    answerResult = usingLists() ? Construction.choicesCorrect(q, picks()) : Construction.isCorrect(q, attempt());
+    if (answerResult && !wasCorrect) {
       playSuccessSound();
       if (!state.completed.includes(q.id)) {
         state.completed.push(q.id);
@@ -169,7 +166,7 @@ if (typeof document !== 'undefined') {
         save();
       }
     }
-    return passed !== wasPassed;
+    renderResult(q, q.level === 1);
   }
   async function playSuccessSound() {
     const AudioContext = window.AudioContext || window.webkitAudioContext;
@@ -209,7 +206,7 @@ if (typeof document !== 'undefined') {
   }
   function choose(id) {
     if (!DATA.examples.some(q => q.id === id)) return;
-    stopSpeech(); state.current = id; selected = null; passed = answerIsComplete(getQ());
+    stopSpeech(); state.current = id; selected = null; answerResult = null;
     save(); render();
     $('practicePane').scrollTop = 0;
   }
@@ -291,8 +288,10 @@ if (typeof document !== 'undefined') {
     if (updateResult) renderResult(q, basic);
   }
   function renderResult(q, basic) {
-    $('feedback').innerHTML = passed ? '<div class="feedback">正解！ ことばがつながったね。</div>' : '';
-    $('result').innerHTML = passed ? `
+    $('feedback').innerHTML = answerResult === null ? '' : answerResult
+      ? '<div class="feedback">正解！ ことばがつながったね。</div>'
+      : '<div class="feedback retry">もう少し。ことばを見直してみよう。</div>';
+    $('result').innerHTML = answerResult ? `
       <div class="result">
         <p class="full-english" lang="en">${esc(q.en)}</p>
         ${q.note ? `<p>${esc(q.note)}</p>` : ''}
@@ -314,7 +313,7 @@ if (typeof document !== 'undefined') {
         }).join('')}</div>
         <p class="muted" id="speechStatus" role="status">${hasSpeech ? '' : 'このブラウザーでは音声を使えません。'}</p>
       </div>` : '';
-    if (passed) populateVoices();
+    if (answerResult) populateVoices();
   }
   function render() {
     const visible = visibleExamples();
@@ -358,8 +357,10 @@ if (typeof document !== 'undefined') {
       slot.classList.toggle('locked', locked);
       slot.setAttribute('aria-disabled', String(locked));
     }
-    const q = getQ();
-    if (checkAnswer(q)) renderResult(q, true);
+    if (answerResult !== null) {
+      answerResult = null;
+      renderResult(getQ(), true);
+    }
   });
   function moveCard(index, target, focusSelector = `[data-card="${index}"]`) {
     if (!targetAllowed(target)) return;
@@ -367,7 +368,7 @@ if (typeof document !== 'undefined') {
     const q = getQ();
     attempts.set(state.current, Construction.place(q, attempt(), index, target));
     selected = null;
-    checkAnswer(q);
+    answerResult = null;
     renderExercise();
     document.querySelector(focusSelector)?.focus({ preventScroll: true });
   }
@@ -435,8 +436,10 @@ if (typeof document !== 'undefined') {
   document.addEventListener('keydown', event => { if (event.key === 'Escape') cancelDrag(); });
   window.addEventListener('blur', cancelDrag);
   document.addEventListener('click', event => {
-    if (event.detail !== 0 && Date.now() < suppressClickUntil) { event.preventDefault(); return; }
     const button = event.target.closest('button'); if (!button || button.disabled) return;
+    if (button.hasAttribute('data-card') && event.detail !== 0 && Date.now() < suppressClickUntil) {
+      event.preventDefault(); return;
+    }
     if (button.hasAttribute('data-speak-part')) { speak(getQ().blocks[Number(button.dataset.speakPart)]?.[1]); return; }
     if (button.dataset.lesson) { choose(button.dataset.lesson); return; }
     if (button.hasAttribute('data-card')) {
@@ -453,8 +456,9 @@ if (typeof document !== 'undefined') {
     switch (button.id) {
       case 'cardsMode': case 'selectMode':
         stopSpeech(); state.mode = button.id === 'selectMode' ? 'select' : 'cards';
-        selected = null; passed = answerIsComplete(getQ()); save(); renderExercise(); break;
-      case 'reset': stopSpeech(); if (usingLists()) selections.delete(state.current); else attempts.delete(state.current); selected = null; passed = false; renderExercise(); break;
+        selected = null; answerResult = null; save(); renderExercise(); break;
+      case 'check': checkAnswer(getQ()); break;
+      case 'reset': stopSpeech(); if (usingLists()) selections.delete(state.current); else attempts.delete(state.current); selected = null; answerResult = null; renderExercise(); break;
       case 'previous': case 'next': {
         const visible = visibleExamples(), i = Construction.navigationIndex(visible, getQ());
         const next = visible[i + (button.id === 'next' ? 1 : -1)]; if (next) choose(next.id); break;
@@ -503,7 +507,7 @@ if (typeof document !== 'undefined') {
     try { localStorage.setItem(VOICE_KEY, JSON.stringify({ voiceURI: savedVoice })); } catch { storageOK = false; save(); }
   });
   function speak(text) {
-    if (!passed || !hasSpeech || !text) return;
+    if (!answerResult || !hasSpeech || !text) return;
     stopSpeech(); const run = speechRun, voice = preferredVoice(englishVoices());
     const utterance = new SpeechSynthesisUtterance(text); // Never derive speech from the internal question marker.
     if (voice) utterance.voice = voice;
