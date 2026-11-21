@@ -12,8 +12,19 @@ const Construction = (() => {
   function isCorrect(q, placements) {
     return cardsFor(q).every((_, i) => placements[i] === expectedTarget(q, i));
   }
+  function rotateChoices(options, seed) {
+    const offset = [...seed].reduce((sum, char) => sum + char.charCodeAt(0), 0) % options.length;
+    return options.slice(offset).concat(options.slice(0, offset));
+  }
   function choicesFor(data, q, role) {
-    if (q.level !== 1) return shuffledIndices(q).map(index => q.blocks[index][2]);
+    if (q.level === 3) return shuffledIndices(q).map(index => q.blocks[index][2]);
+    if (q.level === 2) {
+      const [category, english, correct] = q.blocks[Number(role)];
+      const alternatives = [...new Set(Object.entries(data.level2Choices[category])
+        .filter(([en, ja]) => en !== english && ja !== correct).map(([, ja]) => ja))];
+      const limit = category === '助動詞' ? 4 : 3;
+      return rotateChoices([correct, ...alternatives.slice(0, limit)], q.id + role);
+    }
     const family = q.group === 'tense-pictures' && role === 'predicate'
       ? data.examples.filter(item => item.contrastFamily === q.contrastFamily) : [];
     const candidates = [...family, ...data.examples.filter(item => item.level === 1 && item.group === q.group),
@@ -22,8 +33,7 @@ const Construction = (() => {
     const alternatives = [...new Set(candidates.filter(item => q.group !== 'tense-pictures' || item.slots[role].en !== q.slots[role].en).map(item => item.slots[role].ja))].filter(text => text && text !== correct).slice(0, 3);
     const options = [...new Set([correct, ...alternatives])].filter(Boolean);
     // Vary where the correct answer appears instead of always placing it first.
-    const offset = [...q.id + role].reduce((n, c) => n + c.charCodeAt(0), 0) % options.length;
-    return options.slice(offset).concat(options.slice(0, offset));
+    return rotateChoices(options, q.id + role);
   }
   function choicesCorrect(q, choices) {
     return targetsFor(q).every(role => choiceMatches(q, choices, role));

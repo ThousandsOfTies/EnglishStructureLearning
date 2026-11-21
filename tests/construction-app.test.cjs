@@ -67,9 +67,16 @@ test('advanced picture choices and cards use Japanese with an English counterpar
     const answer = Object.fromEntries(targets.map((target, i) => [target, q.blocks[i][2]]));
     assert.deepEqual(app.cardsFor(q).map(card => card.text), Object.values(answer), q.id);
     assert.deepEqual(app.cardsFor(q).map(card => card.en), q.blocks.map(([, en]) => en), q.id);
-    for (const target of targets) {
+    for (const [index, target] of targets.entries()) {
       const options = app.choicesFor(data, q, target);
-      assert.deepEqual(new Set(options), new Set(Object.values(answer)), q.id);
+      assert.ok(options.includes(answer[target]), q.id);
+      if (q.level === 2) {
+        const [role] = q.blocks[index];
+        const roleChoices = Object.values(data.level2Choices[role]);
+        assert.ok(options.every(text => text === answer[target] || roleChoices.includes(text)), q.id);
+      } else {
+        assert.deepEqual(new Set(options), new Set(Object.values(answer)), q.id);
+      }
       assert.equal(options.length, new Set(options).size, q.id);
       assert.ok(options.every(text => /[\u3040-\u30ff\u3400-\u9fff]/u.test(text) && !/[a-z]/i.test(text)), q.id);
     }
@@ -78,6 +85,24 @@ test('advanced picture choices and cards use Japanese with an English counterpar
     delete answer[0];
     assert.equal(app.choicesCorrect(q, answer), false, q.id);
   }
+});
+
+test('level two modal choices include the meaning labels and exclude other parts of the sentence', () => {
+  const q = get('level2-01');
+  assert.deepEqual(new Set(app.choicesFor(data, q, '1')), new Set([
+    '〜できる（可能だと言える）', '〜するつもり（そうなると言い切る）',
+    '〜しなければならない（必要だと言える）', '〜したほうがいい（そう考えるのが自然）',
+    '〜するかもしれない（言い切れないが、ありえる）',
+  ]));
+  assert.ok(!app.choicesFor(data, q, '1').includes('自転車に'));
+  assert.ok(app.choicesFor(data, get('level2-07'), '1').includes('よく'));
+  assert.ok(app.choicesFor(data, get('level2-07'), '1').includes('ときどき'));
+
+  const conditional = { ...q, blocks: q.blocks.map(block => [...block]) };
+  conditional.blocks[1][2] = '条件しだいで大丈夫（可能だと言える）';
+  const conditionalChoices = app.choicesFor(data, conditional, '1');
+  assert.ok(conditionalChoices.includes(conditional.blocks[1][2]));
+  assert.ok(!conditionalChoices.includes(q.blocks[1][2]));
 });
 
 test('placing onto an occupied slot returns the previous card to the pool', () => {

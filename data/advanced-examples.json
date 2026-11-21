@@ -1,7 +1,23 @@
 {
+  "level2ModalMeanings": {
+    "can": "可能だと言える",
+    "will": "そうなると言い切る",
+    "must": "必要だと言える",
+    "should": "そう考えるのが自然",
+    "might": "言い切れないが、ありえる",
+    "cannot": "可能だとは言えない",
+    "will not": "そうならないと言い切る",
+    "might not": "言い切れないが、ありえる"
+  },
+  "level2ExtraChoices": {
+    "助動詞": {"might": "〜するかもしれない"},
+    "助動詞＋否定": {"will not": "〜しないつもり", "might not": "〜しないかもしれない"},
+    "be": {"become": "〜になる", "remain": "〜であり続ける"},
+    "P2": {"a sticker": "シールを", "a card": "カードを", "a photo": "写真を"}
+  },
   "level2": [
     {"id":"level2-01","level":2,"focus":"can：できる","ja":"私は公園で自転車に乗れます。","en":"I can ride a bike in the park.","base":"I ride a bike in the park.","blocks":[["S","I","私は"],["助動詞","can","〜できる"],["述語","ride","乗る"],["P1","a bike","自転車に"],["場所","in the park","公園で"]]},
-    {"id":"level2-02","level":2,"focus":"will：これからする","ja":"私たちは明日、家で紙のぼうしを作ります。","en":"We will make a paper hat at home tomorrow.","base":"We make a paper hat at home.","blocks":[["S","We","私たちは"],["助動詞","will","これから〜する"],["述語","make","作る"],["P1","a paper hat","紙のぼうしを"],["場所","at home","家で"],["時","tomorrow","明日"]]},
+    {"id":"level2-02","level":2,"focus":"will：これからする","ja":"私たちは明日、家で紙のぼうしを作ります。","en":"We will make a paper hat at home tomorrow.","base":"We make a paper hat at home.","blocks":[["S","We","私たちは"],["助動詞","will","〜するつもり"],["述語","make","作る"],["P1","a paper hat","紙のぼうしを"],["場所","at home","家で"],["時","tomorrow","明日"]]},
     {"id":"level2-03","level":2,"focus":"must＋be：そうしていなければならない","ja":"私たちは図書館では静かにしていなければなりません。","en":"We must be quiet in the library.","base":"We are quiet in the library.","blocks":[["S","We","私たちは"],["助動詞","must","〜しなければならない"],["be","be","〜でいる"],["述語の残り","quiet","静かに"],["場所","in the library","図書館で"]]},
     {"id":"level2-04","level":2,"focus":"should：したほうがよい","ja":"あなたは昼食の前に手を洗ったほうがよいです。","en":"You should wash your hands before lunch.","base":"You wash your hands before lunch.","blocks":[["S","You","あなたは"],["助動詞","should","〜したほうがいい"],["述語","wash","洗う"],["P1","your hands","手を"],["時","before lunch","昼食の前に"]]},
     {"id":"level2-05","level":2,"focus":"does not：しない","ja":"姉は朝食のときに牛乳を飲みません。","en":"My sister does not drink milk at breakfast.","base":"My sister drinks milk at breakfast.","blocks":[["S","My sister","姉は"],["否定","does not","〜しない"],["述語","drink","飲む"],["P1","milk","牛乳を"],["時","at breakfast","朝食のときに"]],"note":"doesが付くと、drinksはdrinkになります。"},

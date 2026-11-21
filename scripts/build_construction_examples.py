@@ -104,6 +104,25 @@ def tense_picture_examples():
             yield q
 
 
+def build_level2_choices(advanced):
+    meanings = advanced['level2ModalMeanings']
+    choices = {}
+
+    def label(role, english, japanese):
+        if role in {'助動詞', '助動詞＋否定'}:
+            return f'{japanese}（{meanings[english]}）'
+        return japanese
+
+    for q in advanced['level2']:
+        q['blocks'] = [[role, en, label(role, en, ja)] for role, en, ja in q['blocks']]
+        for role, en, ja in q['blocks']:
+            choices.setdefault(role, {}).setdefault(en, ja)
+    for role, alternatives in advanced['level2ExtraChoices'].items():
+        for en, ja in alternatives.items():
+            choices.setdefault(role, {}).setdefault(en, label(role, en, ja))
+    return choices
+
+
 def build_examples():
     rows, groups = [], []
     for line in (ROOT / 'data/original-curriculum.txt').read_text(encoding='utf-8').splitlines():
@@ -270,6 +289,7 @@ def build_examples():
         q['level'] = 1
         q['blocks'] = [[k, q['slots'][k]['en']] for k in SLOTS if q['slots'][k]['en']]
     advanced = json.loads((ROOT / 'data/advanced-examples.json').read_text(encoding='utf-8'))
+    level2_choices = build_level2_choices(advanced)
     for level in (2, 3):
         examples = advanced[f'level{level}']
         assert len(examples) == 10
@@ -311,6 +331,7 @@ def build_examples():
             {'id': 3, 'label': 'レベル3：疑問文', 'modals': True, 'negation': True, 'frequency': True, 'questions': True},
         ],
         'silentQuestionWord': {'token': 'whether', 'meaning': '〜かどうか', 'spoken': False, 'written': False},
+        'level2Choices': level2_choices,
         'counts': {'level1': len(rows), 'level2': 10, 'level3': 10, 'total': len(all_examples),
                    'core': sum(q.get('contrastFamily') == q['id'] for q in rows), 'pronounPractice': 39,
                    'ongoing': sum(q['meaning'] == 'ongoing' and not q.get('pronounFocus') for q in rows),
@@ -352,7 +373,9 @@ def build_examples():
         lines = [f'# レベル{level}：{title}・10文', '',
                  '元の文をどう変えるか、意味のブロックと完成した英文の両方で確かめます。', '',
                  '日本語のカードは、対応する英語を発音する順に並べます。', '']
-        if level == 3:
+        if level == 2:
+            lines.extend(['リストの候補は欄の役割ごとに用意します。助動詞は、場面に合う日本語に、その助動詞に共通する意味を括弧で添えます。', ''])
+        else:
             lines.extend(['黙疑問詞 whether は「〜かどうか」を問う内部の目印です。下のブロックや完成英文には表示せず、読み上げもしません。これは本教材独自の構築モデルで、英文法上の省略された語という主張ではありません。', '',
                           'whoがSをたずねる場合は、肯定の文ではdoを足さず、Sと述語の順を入れ替えません。P1をたずねるwhoとは区別します。', ''])
         for number, q in enumerate(advanced[f'level{level}'], 1):
