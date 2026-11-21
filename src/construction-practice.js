@@ -245,6 +245,7 @@ if (typeof document !== 'undefined') {
       </span>` : '';
   }
   function renderPicture(q) {
+    $('sceneClue').textContent = q.imageClue || '';
     if (!q.image) {
       $('pictureScene').innerHTML = `<div class="scene-pending japanese">${esc(q.ja)}</div>`;
       return;
@@ -252,10 +253,9 @@ if (typeof document !== 'undefined') {
     const time = q.slots?.time.en ?? q.blocks.find(([role]) => role === '時')?.[1];
     $('pictureScene').innerHTML = `
       <div class="scene-visual">
-        <img class="scene-illustration" src="${esc(q.image)}" alt="${esc(q.imageAlt)}" width="1536" height="1024">
+        <img class="scene-illustration" src="${esc(q.image)}" alt="${esc(q.imageAlt)}" aria-describedby="sceneClue" width="1536" height="1024">
         ${calendarFor(time)}
-      </div>
-      <figcaption class="scene-clue">${esc(q.imageClue)}</figcaption>`;
+      </div>`;
   }
   function renderExercise(updateResult = true) {
     cancelDrag();
@@ -272,6 +272,7 @@ if (typeof document !== 'undefined') {
     $('cardsMode').setAttribute('aria-pressed', !pictureMode);
     $('selectMode').setAttribute('aria-pressed', pictureMode);
     $('pictureScene').hidden = !pictureMode && !(q.image && (!basic || q.group === 'tense-pictures'));
+    $('sceneClue').hidden = $('pictureScene').hidden || !q.imageClue;
     $('pool').hidden = pictureMode;
     $('selectedStatus').hidden = basic;
     $('selectedStatus').textContent = selected === null ? 'カードを押してから欄の見出しを押す方法でも置けます。' : `「${cards[selected].text}」を、どの欄に置く？（同じカードを押すと元に戻せます）`;

@@ -32,16 +32,16 @@
 .speech-buttons{display:flex;flex-wrap:wrap;justify-content:center;gap:6px;max-width:100%}.speech-buttons button{white-space:nowrap;padding:8px 10px}
 .practice-toolbar{display:flex;align-items:flex-start;gap:8px;margin-bottom:12px}.practice-toolbar .mode-switcher{margin:0}.practice-toolbar #reset{margin-inline-start:auto;flex:none;white-space:nowrap}
 @media(max-width:540px){.practice-toolbar{flex-direction:column;align-items:stretch}.practice-toolbar #reset{align-self:flex-end;order:-1}}
-.scene-navigation{display:grid;grid-template-columns:44px minmax(0,1fr) 44px;align-items:center;gap:clamp(4px,1vw,12px);margin-bottom:18px}
+.scene-navigation{display:grid;grid-template-columns:44px minmax(0,1fr) 44px;align-items:center;column-gap:clamp(4px,1vw,12px);margin-bottom:18px}
 .scene-navigation .prompt,.scene-navigation .picture-scene{grid-column:2;grid-row:1;min-width:0;margin:0 auto}
 .scene-navigation .prompt{width:100%;padding:12px clamp(8px,2vw,20px);overflow-wrap:anywhere}
-.scene-navigation:not(.picture-mode) .picture-scene{grid-column:1/-1;grid-row:2}
-.scene-arrow{display:grid;place-items:center;width:44px;padding:0;grid-row:1;font-size:30px;line-height:1;color:var(--blue)}
+.scene-navigation .scene-clue{grid-column:2;grid-row:2;justify-self:center;width:100%;max-width:760px;margin:9px 0 0}
+.scene-navigation:not(.picture-mode) .picture-scene{grid-column:1/-1;grid-row:2;margin-top:8px}
+.scene-navigation:not(.picture-mode) .scene-clue{grid-column:1/-1;grid-row:3}
+.scene-arrow{display:grid;place-items:center;width:44px;height:44px;padding:0;grid-row:1;color:var(--blue)}
+.scene-arrow::before{content:"";width:10px;height:10px;border:solid currentColor;border-width:2px 2px 0 0;transform:translateX(-2px) rotate(45deg)}
+#previous::before{transform:translateX(2px) rotate(-135deg)}
 #previous{grid-column:1}#next{grid-column:3}
-@supports(grid-template-rows:subgrid){
-  .picture-mode .picture-scene{display:grid;grid-row:1/span 2;grid-template-rows:subgrid;align-self:stretch}
-  .picture-mode .scene-clue{margin-top:0}
-}
 </style>
 </head>
 <body><div class="wrap">
@@ -57,10 +57,11 @@
 </div>
 <div id="advancedInstructions" hidden><h2>英語の部品を、話す順に並べよう。</h2><p class="muted">英語のカードをドラッグして、話す順に置こう。カード置き場へ戻すこともできるよ。</p></div>
 <div class="scene-navigation" id="sceneNavigation" role="group" aria-label="場面を切り替える">
-<button id="previous" class="scene-arrow" type="button" aria-label="前の場面"><span aria-hidden="true">‹</span></button>
+<button id="previous" class="scene-arrow" type="button" aria-label="前の場面"></button>
 <div class="prompt"><p class="japanese" id="japanese"></p><p id="base" class="muted"></p></div>
-<figure id="pictureScene" class="picture-scene" hidden></figure>
-<button id="next" class="scene-arrow" type="button" aria-label="次の場面"><span aria-hidden="true">›</span></button>
+<div id="pictureScene" class="picture-scene" hidden></div>
+<button id="next" class="scene-arrow" type="button" aria-label="次の場面"></button>
+<p id="sceneClue" class="scene-clue" hidden></p>
 </div>
 <p id="selectedStatus" class="muted" role="status"></p>
 <div id="pool" class="pool" data-drop="" role="group" aria-label="まだ置いていないカード・ここに戻せます"></div><div id="slots" class="slots" role="group" aria-label="英文を組み立てる欄"></div>
@@ -314,6 +315,7 @@ if (typeof document !== 'undefined') {
       </span>` : '';
   }
   function renderPicture(q) {
+    $('sceneClue').textContent = q.imageClue || '';
     if (!q.image) {
       $('pictureScene').innerHTML = `<div class="scene-pending japanese">${esc(q.ja)}</div>`;
       return;
@@ -321,10 +323,9 @@ if (typeof document !== 'undefined') {
     const time = q.slots?.time.en ?? q.blocks.find(([role]) => role === '時')?.[1];
     $('pictureScene').innerHTML = `
       <div class="scene-visual">
-        <img class="scene-illustration" src="${esc(q.image)}" alt="${esc(q.imageAlt)}" width="1536" height="1024">
+        <img class="scene-illustration" src="${esc(q.image)}" alt="${esc(q.imageAlt)}" aria-describedby="sceneClue" width="1536" height="1024">
         ${calendarFor(time)}
-      </div>
-      <figcaption class="scene-clue">${esc(q.imageClue)}</figcaption>`;
+      </div>`;
   }
   function renderExercise(updateResult = true) {
     cancelDrag();
@@ -341,6 +342,7 @@ if (typeof document !== 'undefined') {
     $('cardsMode').setAttribute('aria-pressed', !pictureMode);
     $('selectMode').setAttribute('aria-pressed', pictureMode);
     $('pictureScene').hidden = !pictureMode && !(q.image && (!basic || q.group === 'tense-pictures'));
+    $('sceneClue').hidden = $('pictureScene').hidden || !q.imageClue;
     $('pool').hidden = pictureMode;
     $('selectedStatus').hidden = basic;
     $('selectedStatus').textContent = selected === null ? 'カードを押してから欄の見出しを押す方法でも置けます。' : `「${cards[selected].text}」を、どの欄に置く？（同じカードを押すと元に戻せます）`;
