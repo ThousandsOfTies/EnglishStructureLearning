@@ -320,8 +320,11 @@ if (typeof document !== 'undefined') {
     const visible = visibleExamples();
     synchronizeFilters();
     renderNav(visible);
-    $('main').hidden = !visible.length;
+    $('emptyPractice').hidden = Boolean(visible.length);
+    $('exercise').hidden = !visible.length;
+    $('reset').hidden = !visible.length;
     if (visible.length) renderExercise();
+    else $('modeSwitcher').hidden = true;
   }
   function changeFilters() {
     state.levels = [...$('levelChoices').querySelectorAll('input:checked')].map(input => Number(input.value));
@@ -337,6 +340,24 @@ if (typeof document !== 'undefined') {
   $('levelChoices').innerHTML = DATA.levels.map(level => `<label><input type="checkbox" value="${level.id}" aria-label="${esc(level.label)}">${level.id}</label>`).join('');
   $('levels').addEventListener('change', changeFilters);
   $('scope').addEventListener('change', changeFilters);
+  const lessonDrawer = $('lessonDrawer');
+  $('openMenu').addEventListener('click', () => {
+    lessonDrawer.showModal();
+    $('openMenu').setAttribute('aria-expanded', 'true');
+    $('lessons').querySelector('[aria-current="true"]')?.scrollIntoView({ block: 'nearest' });
+  });
+  $('closeMenu').addEventListener('click', () => lessonDrawer.close());
+  lessonDrawer.addEventListener('close', () => {
+    if (lessonDrawer.open) return;
+    $('openMenu').setAttribute('aria-expanded', 'false');
+    $('openMenu').focus({ preventScroll: true });
+  });
+  lessonDrawer.addEventListener('click', event => {
+    if (event.target !== lessonDrawer) return;
+    const bounds = lessonDrawer.getBoundingClientRect();
+    if (event.clientX < bounds.left || event.clientX > bounds.right ||
+        event.clientY < bounds.top || event.clientY > bounds.bottom) lessonDrawer.close();
+  });
   $('slots').addEventListener('change', event => {
     const choice = event.target;
     const role = choice.dataset.choice;
@@ -442,7 +463,7 @@ if (typeof document !== 'undefined') {
       event.preventDefault(); return;
     }
     if (button.hasAttribute('data-speak-part')) { speak(getQ().blocks[Number(button.dataset.speakPart)]?.[1]); return; }
-    if (button.dataset.lesson) { choose(button.dataset.lesson); return; }
+    if (button.dataset.lesson) { lessonDrawer.close(); choose(button.dataset.lesson); return; }
     if (button.hasAttribute('data-card')) {
       const i = Number(button.dataset.card);
       if (selected === i) { moveCard(i, ''); return; }
