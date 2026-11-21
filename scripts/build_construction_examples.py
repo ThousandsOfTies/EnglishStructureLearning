@@ -274,7 +274,7 @@ def build_examples():
         examples = advanced[f'level{level}']
         assert len(examples) == 10
         for q in examples:
-            assert q['level'] == level and q['ja'] and q['focus']
+            assert q['level'] == level and q['ja'] and q['focus'] and q['pictureHint']
             punctuation = '?' if level == 3 else '.'
             assert ' '.join(text for _, text in q['blocks']) + punctuation == q['en'], q['id']
             if level == 3:

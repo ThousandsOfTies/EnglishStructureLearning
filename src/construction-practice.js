@@ -13,6 +13,7 @@ const Construction = (() => {
     return cardsFor(q).every((_, i) => placements[i] === expectedTarget(q, i));
   }
   function choicesFor(data, q, role) {
+    if (q.level !== 1) return [...new Set(shuffledIndices(q).map(index => q.blocks[index][1]))];
     const family = q.group === 'tense-pictures' && role === 'predicate'
       ? data.examples.filter(item => item.contrastFamily === q.contrastFamily) : [];
     const candidates = [...family, ...data.examples.filter(item => item.level === 1 && item.group === q.group),
@@ -25,9 +26,10 @@ const Construction = (() => {
     return options.slice(offset).concat(options.slice(0, offset));
   }
   function choicesCorrect(q, choices) {
-    return q.level === 1 && roles.every(role => choiceMatches(q, choices, role));
+    return targetsFor(q).every(role => choiceMatches(q, choices, role));
   }
   function choiceMatches(q, choices, role) {
+    if (q.level !== 1) return choices[role] === q.blocks[Number(role)][1];
     if (['P1', 'P2', 'place', 'time'].includes(role) && !q.slots[role].ja) return !choices[role];
     return Object.hasOwn(choices, role) && choices[role] === q.slots[role].ja;
   }
@@ -100,7 +102,11 @@ if (typeof document !== 'undefined') {
   const esc = value => String(value).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   const labels = { S: '主語', predicate: '述語', P1: '対象１', P2: '対象２', place: '場所', time: '時' };
   const compactChoices = window.matchMedia('(max-width: 720px)');
-  function choicePrompt(role) { return compactChoices.matches ? labels[role] : `${labels[role]}を選んでね`; }
+  function roleLabel(role) {
+    const [prefix, target] = role.split('＝');
+    return target ? `${prefix}（${labels[target] || target}）` : labels[role] || role;
+  }
+  function choicePrompt(label) { return compactChoices.matches ? label : `${label}を選んでね`; }
   let saved = null, savedVoice = '', speechSpeed = 'normal', storageOK = true;
   try { saved = JSON.parse(localStorage.getItem(KEY)); savedVoice = JSON.parse(localStorage.getItem(VOICE_KEY))?.voiceURI || ''; }
   catch (error) { if (error.name !== 'SyntaxError') storageOK = false; }
@@ -134,7 +140,7 @@ if (typeof document !== 'undefined') {
     const pictureScope = state.scope === 'all' || state.scope === 'core';
     return Construction.visibleExamples(DATA, state).filter(q => q.level !== 1 || !hasBasicImages || !pictureScope || q.image);
   }
-  const usingLists = () => getQ().level === 1 && state.mode === 'select';
+  const usingLists = () => state.mode === 'select';
   function picks() {
     if (!selections.has(state.current)) selections.set(state.current, {});
     return selections.get(state.current);
@@ -260,37 +266,34 @@ if (typeof document !== 'undefined') {
     const pictureMode = usingLists();
     $('main').classList.toggle('advanced', !basic);
     $('sceneNavigation').classList.toggle('picture-mode', pictureMode);
-    $('advancedInstructions').hidden = basic;
     $('japanese').textContent = q.ja;
     $('japanese').parentElement.hidden = pictureMode;
-    $('base').textContent = basic ? '' : `もとの文：${q.base}`;
-    $('base').hidden = basic;
-    $('modeSwitcher').hidden = !basic;
+    $('modeSwitcher').hidden = false;
     $('cardsMode').setAttribute('aria-pressed', !pictureMode);
     $('selectMode').setAttribute('aria-pressed', pictureMode);
-    $('pictureScene').hidden = !pictureMode && !(q.image && (!basic || q.group === 'tense-pictures'));
+    $('pictureScene').hidden = !pictureMode && !(q.image && q.group === 'tense-pictures');
     $('sceneClue').hidden = $('pictureScene').hidden || !q.imageClue;
     $('pool').hidden = pictureMode;
-    $('selectedStatus').hidden = basic;
-    $('selectedStatus').textContent = selected === null ? 'カードを押してから欄を押す方法でも置けます。' : `「${cards[selected].text}」を、どの欄に置く？（同じカードを押すと元に戻せます）`;
     const parameters = q.frame === 'object-location' ? ['P2', 'P1'] : ['P1', 'P2'];
     const japaneseOrder = ['S', 'time', 'place', ...parameters, 'predicate'];
     const order = basic ? japaneseOrder.map(role => cards.findIndex(card => card.role === role)).filter(i => i >= 0) : Construction.shuffledIndices(q);
     const remaining = order.filter(i => !placements[i]);
     $('pool').innerHTML = `<div class="pool-cards">${remaining.map(i => poolCardHTML(cards[i], i)).join('') || '<span class="muted">使わない欄は空欄のまま。</span>'}</div>`;
+    const targets = Construction.targetsFor(q).map((id, index) => {
+      const role = basic ? id : q.blocks[index][0];
+      return { id, role, label: roleLabel(role) };
+    });
     if (pictureMode) {
       const values = picks();
-      $('slots').innerHTML = Construction.roles.map(role => `
-        <select class="slot list-choice${values[role] ? '' : ' placeholder'}" id="choice-${role}"
-          data-choice="${role}" data-role="${role}" aria-label="${labels[role]}を選ぶ" ${!targetAllowed(role) ? 'disabled' : ''}>
-          <option value="__unanswered__" ${Object.hasOwn(values, role) ? '' : 'selected'}>${choicePrompt(role)}</option>
-          ${Construction.choicesFor(DATA, q, role).map(text => `<option value="${esc(text)}" ${values[role] === text ? 'selected' : ''}>${esc(text)}</option>`).join('')}
+      $('slots').innerHTML = targets.map(({ id, role, label }) => `
+        <select class="slot list-choice${values[id] ? '' : ' placeholder'}" id="choice-${esc(id)}"
+          data-choice="${esc(id)}" data-role="${esc(role)}" aria-label="${esc(label)}を選ぶ" ${!targetAllowed(id) ? 'disabled' : ''}>
+          <option value="__unanswered__" ${Object.hasOwn(values, id) ? '' : 'selected'}>${esc(choicePrompt(label))}</option>
+          ${Construction.choicesFor(DATA, q, id).map(text => `<option value="${esc(text)}" ${values[id] === text ? 'selected' : ''}>${esc(text)}</option>`).join('')}
         </select>`).join('');
     } else {
-      $('slots').innerHTML = Construction.targetsFor(q).map((target, n) => {
+      $('slots').innerHTML = targets.map(({ id: target, role, label }, n) => {
         const i = placements.indexOf(target);
-        const role = basic ? target : q.blocks[n][0];
-        const label = labels[role] || role.replace(/\bS\b/g, '主語');
         const slotName = basic ? label : `${n + 1}. ${label}`;
         const contents = cards[i]?.text;
         const accessibleLabel = contents ? `${slotName}：${contents}` : `${slotName}に置く`;
@@ -308,6 +311,7 @@ if (typeof document !== 'undefined') {
     $('result').innerHTML = answerResult ? `
       <div class="result">
         <p class="full-english" lang="en">${esc(q.en)}</p>
+        ${q.base ? `<p class="muted">もとの文 <span lang="en">${esc(q.base)}</span></p>` : ''}
         ${q.note ? `<p>${esc(q.note)}</p>` : ''}
         <div class="actions speech-controls" role="group" aria-label="英文の読み上げ">
           <select id="voice" aria-label="読み上げる声"></select>
@@ -318,7 +322,7 @@ if (typeof document !== 'undefined') {
           </div>
         </div>
         <div class="spoken">${q.blocks.map(([role, text], index) => {
-          const label = labels[role] || role.replace(/\bS\b/g, '主語');
+          const label = roleLabel(role);
           return `<button type="button" class="answer-part" data-role="${esc(role)}" data-speak-part="${index}" aria-label="${esc(label)}「${esc(text)}」を聞く" ${hasSpeech ? '' : 'disabled'}>
             <span class="answer-label">${esc(label)}</span>
             ${basic ? `<span class="answer-ja">${esc(q.slots[role].ja)}</span>` : ''}
@@ -373,13 +377,14 @@ if (typeof document !== 'undefined') {
   });
   compactChoices.addEventListener('change', () => {
     for (const select of $('slots').querySelectorAll('[data-choice]')) {
-      select.options[0].textContent = choicePrompt(select.dataset.choice);
+      select.options[0].textContent = choicePrompt(roleLabel(select.dataset.role));
     }
   });
   $('slots').addEventListener('change', event => {
     const choice = event.target;
     const role = choice.dataset.choice;
-    if (!usingLists() || !Construction.roles.includes(role) || !targetAllowed(role)) return;
+    const q = getQ();
+    if (!usingLists() || !Construction.targetsFor(q).includes(role) || !targetAllowed(role)) return;
     stopSpeech();
     const values = picks();
     if (choice.value === '__unanswered__') delete values[role];
@@ -393,7 +398,7 @@ if (typeof document !== 'undefined') {
     }
     if (answerResult !== null) {
       answerResult = null;
-      renderResult(getQ(), true);
+      renderResult(q, q.level === 1);
     }
   });
   function moveCard(index, target, focusSelector = `[data-card="${index}"]`) {

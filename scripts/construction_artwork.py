@@ -126,7 +126,7 @@ def prepare():
         if q.get('group') == 'come':
             clue += '話し手のいる場所へ近づいてきます。'
         if q['level'] > 1:
-            clue = q.get('focus', '')
+            clue = q['pictureHint']
         if time in ('昨日', '明日') or any(role == '時' and text in ('yesterday', 'tomorrow') for role, text in q.get('blocks', [])):
             clue = 'カレンダーの地球儀が回る向きを見てみよう。' + clue.removeprefix('時間のヒント：' + time + '。')
         if time == '毎日':

@@ -61,6 +61,23 @@ test('list practice accepts untouched unused slots while requiring every filled 
   assert.equal(app.choicesCorrect(q, { ...picks, P2: 'シールを' }), false);
 });
 
+test('advanced picture practice uses the same English parts and order as the cards', () => {
+  for (const q of data.examples.filter(q => q.level > 1)) {
+    const targets = app.targetsFor(q);
+    const answer = Object.fromEntries(targets.map((target, i) => [target, q.blocks[i][1]]));
+    for (const target of targets) {
+      const options = app.choicesFor(data, q, target);
+      assert.deepEqual(new Set(options), new Set(Object.values(answer)), q.id);
+      assert.equal(options.length, new Set(options).size, q.id);
+      assert.ok(!options.some(text => /\bwhether\b/i.test(text)), q.id);
+    }
+    assert.ok(app.choicesCorrect(q, answer), q.id);
+    assert.equal(app.choicesCorrect(q, { ...answer, 0: answer[1] }), false, q.id);
+    delete answer[0];
+    assert.equal(app.choicesCorrect(q, answer), false, q.id);
+  }
+});
+
 test('placing onto an occupied slot returns the previous card to the pool', () => {
   const q = get('build-give-1');
   let placements = app.place(q, [], 0, 'S');
