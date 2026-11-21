@@ -3,7 +3,9 @@
 const Construction = (() => {
   const roles = ['S', 'support', 'predicate', 'P1', 'P2', 'place', 'time'];
   const subjectRoles = new Set(['S', '疑問詞＝S']);
-  const predicateRoles = new Set(['support', 'predicate', '述語', '助動詞', '助動詞＋否定', '否定', 'be', '述語の残り', '疑問の支え']);
+  const predicateSupportRoles = ['support', '助動詞', '助動詞＋否定', '否定', 'be', '疑問の支え'];
+  const predicateRoles = new Set([...predicateSupportRoles, 'predicate', '述語', '述語の残り']);
+  function isSupportRole(role) { return role === '頻度' || predicateSupportRoles.includes(role); }
   function cardsFor(q) {
     return q.level === 1
       ? roles.filter(r => q.slots[r].en).map(r => ({ text: q.slots[r].ja, role: r, en: q.slots[r].en }))
@@ -117,7 +119,7 @@ const Construction = (() => {
     if (indices.length > 1 && indices.every((value, i) => value === i)) indices.push(indices.shift());
     return indices;
   }
-  return { roles, cardsFor, targetsFor, targetRole, expectedTarget, wrongCardTargets, isCorrect, choicesFor, choicesCorrect, choiceMatches, enabledTargets, place, visibleExamples, restore, shuffledIndices, navigationIndex };
+  return { roles, cardsFor, targetsFor, targetRole, isSupportRole, expectedTarget, wrongCardTargets, isCorrect, choicesFor, choicesCorrect, choiceMatches, enabledTargets, place, visibleExamples, restore, shuffledIndices, navigationIndex };
 })();
 if (typeof module !== 'undefined' && module.exports) module.exports = Construction;
 
@@ -133,11 +135,31 @@ if (typeof document !== 'undefined') {
   const speechRates = { fast: 1.2, normal: 1, slow: .6 };
   const $ = id => document.getElementById(id);
   const esc = value => String(value).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-  const labels = { S: '主語', support: '助述部', predicate: '述語', P1: '対象１', P2: '対象２', place: '場所', time: '時', be: '状態のつなぎ' };
+  const labels = { S: '主語', support: '助述部', predicate: '述語', P1: '対象１', P2: '対象２', place: '場所', time: '時' };
   const compactChoices = window.matchMedia('(max-width: 720px)');
   function roleLabel(role) {
     const [prefix, target] = role.split('＝');
     return target ? `${prefix}（${labels[target] || target}）` : labels[role] || role;
+  }
+  function labelParts(parts) {
+    const support = parts.filter(part => Construction.isSupportRole(part.role));
+    return parts.map(part => {
+      const index = support.indexOf(part);
+      if (index < 0) return { ...part, label: roleLabel(part.role) };
+      const number = support.length > 1 ? (index + 1).toLocaleString('ja-JP-u-nu-fullwide') : '';
+      return { ...part, role: 'support', label: labels.support + number };
+    });
+  }
+  function renderPartGroups(parts, renderPart) {
+    const groups = [];
+    for (const part of parts) {
+      const previous = groups.at(-1);
+      if (part.role === 'support' && previous?.[0].role === 'support') previous.push(part);
+      else groups.push([part]);
+    }
+    return groups.map(group => group.length === 1 ? renderPart(group[0]) :
+      `<div class="support-stack" role="group" aria-label="${labels.support}">${group.map(renderPart).join('')}</div>`
+    ).join('');
   }
   function choicePrompt(label) { return compactChoices.matches ? label : `${label}を選んでね`; }
   let saved = null, savedVoice = '', speechSpeed = 'normal', storageOK = true;
@@ -308,29 +330,28 @@ if (typeof document !== 'undefined') {
     const order = basic ? japaneseOrder.map(role => cards.findIndex(card => card.role === role)).filter(i => i >= 0) : Construction.shuffledIndices(q);
     const remaining = order.filter(i => !placements[i]);
     $('pool').innerHTML = `<div class="pool-cards">${remaining.map(i => poolCardHTML(cards[i], i)).join('') || '<span class="muted">使わない欄は空欄のまま。</span>'}</div>`;
-    const targets = Construction.targetsFor(q).map(id => {
-      const role = Construction.targetRole(q, id);
-      return { id, role, label: roleLabel(role) };
-    });
+    const targets = labelParts(Construction.targetsFor(q).map((id, index) => ({
+      id, role: Construction.targetRole(q, id), index
+    })));
     if (pictureMode) {
       const values = picks();
-      $('slots').innerHTML = targets.map(({ id, role, label }) => `
+      $('slots').innerHTML = renderPartGroups(targets, ({ id, role, label }) => `
         <select class="slot list-choice${values[id] ? '' : ' placeholder'}" id="choice-${esc(id)}"
-          data-choice="${esc(id)}" data-role="${esc(role)}" aria-label="${esc(label)}を選ぶ" ${!targetAllowed(id) ? 'disabled' : ''}>
+          data-choice="${esc(id)}" data-role="${esc(role)}" data-label="${esc(label)}" aria-label="${esc(label)}を選ぶ" ${!targetAllowed(id) ? 'disabled' : ''}>
           <option value="__unanswered__" ${Object.hasOwn(values, id) ? '' : 'selected'}>${esc(choicePrompt(label))}</option>
           ${Construction.choicesFor(DATA, q, id).map(text => `<option value="${esc(text)}" ${values[id] === text ? 'selected' : ''}>${esc(text)}</option>`).join('')}
-        </select>`).join('');
+        </select>`);
     } else {
-      $('slots').innerHTML = targets.map(({ id: target, role, label }, n) => {
+      $('slots').innerHTML = renderPartGroups(targets, ({ id: target, role, label, index }) => {
         const i = placements.indexOf(target);
-        const slotName = basic ? label : `${n + 1}. ${label}`;
+        const slotName = basic || role === 'support' ? label : `${index + 1}. ${label}`;
         const contents = cards[i]?.text;
         const accessibleLabel = contents ? `${slotName}：${contents}` : `${slotName}に置く`;
         const cardState = contents ? ` data-card="${i}" aria-pressed="${selected === i}"` : '';
         return `<button type="button" class="slot card-slot${contents ? ' card' : ''}${selected === i ? ' selected' : ''}"
           data-drop="${esc(target)}" data-target="${esc(target)}" data-role="${esc(role)}"${cardState}
           ${targetAllowed(target) ? '' : 'disabled'} aria-label="${esc(accessibleLabel)}">${esc(contents || slotName)}</button>`;
-      }).join('');
+      });
     }
     if (!$('pictureScene').hidden) renderPicture(q);
     if (updateResult) renderResult(q);
@@ -346,7 +367,7 @@ if (typeof document !== 'undefined') {
         wrong = Construction.wrongCardTargets(q, attempt());
       }
     }
-    for (const slot of $('slots').children) {
+    for (const slot of $('slots').querySelectorAll('.slot')) {
       const invalid = wrong.includes(slot.dataset.choice ?? slot.dataset.target);
       slot.classList.toggle('wrong', invalid);
       if (invalid) slot.setAttribute('aria-invalid', 'true');
@@ -356,6 +377,9 @@ if (typeof document !== 'undefined') {
   function renderResult(q) {
     renderSlotFeedback(q);
     $('feedback').innerHTML = answerResult === false ? '<div class="feedback">もう少し。点線の欄を見直してみよう。</div>' : '';
+    const parts = labelParts(q.blocks.map(([role, text, japanese], index) => ({
+      role, text, japanese: q.slots?.[role]?.ja ?? japanese, index
+    })));
     $('result').innerHTML = answerResult ? `
       <div class="result">
         <p class="full-english" lang="en">${esc(q.en)}</p>
@@ -369,14 +393,13 @@ if (typeof document !== 'undefined') {
             <button id="speakSlow" data-speed="slow" ${hasSpeech ? '' : 'disabled'}>ゆっくり読む</button>
           </div>
         </div>
-        <div class="spoken">${q.blocks.map(([role, text, japanese], index) => {
-          const label = roleLabel(role);
-          return `<button type="button" class="answer-part" data-role="${esc(role)}" data-speak-part="${index}" aria-label="${esc(label)}「${esc(text)}」を聞く" ${hasSpeech ? '' : 'disabled'}>
+        <div class="spoken">${renderPartGroups(parts, ({ role, text, japanese, index, label }) =>
+          `<button type="button" class="answer-part" data-role="${esc(role)}" data-speak-part="${index}" aria-label="${esc(label)}「${esc(text)}」を聞く" ${hasSpeech ? '' : 'disabled'}>
             <span class="answer-label">${esc(label)}</span>
-            <span class="answer-ja">${esc(q.slots?.[role]?.ja ?? japanese)}</span>
+            <span class="answer-ja">${esc(japanese)}</span>
             <span lang="en">${esc(text)}</span>
-          </button>`;
-        }).join('')}</div>
+          </button>`
+        )}</div>
         <p class="muted" id="speechStatus" role="status">${hasSpeech ? '' : 'このブラウザーでは音声を使えません。'}</p>
       </div>` : '';
     if (answerResult) populateVoices();
@@ -425,7 +448,7 @@ if (typeof document !== 'undefined') {
   });
   compactChoices.addEventListener('change', () => {
     for (const select of $('slots').querySelectorAll('[data-choice]')) {
-      select.options[0].textContent = choicePrompt(roleLabel(select.dataset.role));
+      select.options[0].textContent = choicePrompt(select.dataset.label);
     }
   });
   $('slots').addEventListener('change', event => {
