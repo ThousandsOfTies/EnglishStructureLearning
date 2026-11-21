@@ -1,4 +1,4 @@
-"""Create the original 300-example draft using five construction slots.
+"""Build the curriculum with the English sentence parts used in practice.
 
 This is a learning representation, not a claim that its slots are traditional
 syntactic constituents. Empty slots are meaningful and remain empty.
@@ -8,10 +8,11 @@ import re
 from pathlib import Path
 
 from compile_original import SUBJECTS, pair, third_person
-from refine_curriculum import japanese_sentence, refine
+from refine_curriculum import SLOTS as SOURCE_SLOTS, japanese_sentence, refine
 
 ROOT = Path(__file__).resolve().parents[1]
-SLOTS = ('S', 'predicate', 'P1', 'P2', 'place', 'time')
+SLOTS = ('S', 'support', *SOURCE_SLOTS[1:])
+BE_FORMS = {'am', 'is', 'are', 'was', 'were', 'be', 'being', 'been'}
 
 # Keep the connectors used by the teaching model with the predicate. A
 # setting can stay together in the place slot, such as 'run in the park'.
@@ -71,7 +72,7 @@ def make_example(key, group, number, values):
     if group in {'put', 'pour', 'bring'} or (group == 'keep' and number != 1):
         values['P2'], values['place'] = values['place'], slot()
         frame = 'object-location'
-    en = ' '.join(values[k]['en'] for k in SLOTS if values[k]['en']) + '.'
+    en = ' '.join(values[k]['en'] for k in SOURCE_SLOTS if values[k]['en']) + '.'
     ja = japanese_sentence(values, frame)
     return {'id': key, 'group': group, 'variant': number, 'slots': values,
             'ja': ja, 'en': en, 'frame': frame, 'authorship': 'original-six-slots-v1'}
@@ -102,6 +103,31 @@ def tense_picture_examples():
                 'P': slot(ja_object, en_object), 'place': slot(), 'time': slot()})
             q.update(contrastFamily=family, meaning=meaning)
             yield q
+
+
+def split_be_predicate(q):
+    values = q['slots']
+    values['support'] = slot()
+    english = values['predicate']['en']
+    be, _, rest = english.partition(' ')
+    if be not in BE_FORMS:
+        return
+
+    japanese = values['predicate']['ja']
+    if q['meaning'] == 'ongoing':
+        if japanese.endswith('途中です'):
+            support, rest_ja = '〜途中です', japanese.removesuffix('途中です')
+        else:
+            support, rest_ja = '〜いる', re.sub(r'(?:います|いる)$', '', japanese)
+    elif q['meaning'] == 'past':
+        support = 'でした'
+        rest_ja = re.sub(r'かったです$', 'い', japanese).removesuffix('でした')
+    else:
+        support, rest_ja = 'です', japanese.removesuffix('です')
+
+    assert rest and rest_ja and rest_ja != japanese, q['id']
+    values['support'] = slot(support, be)
+    values['predicate'] = slot(rest_ja, rest)
 
 
 def build_level2_choices(advanced):
@@ -277,7 +303,7 @@ def build_examples():
     for q in rows:
         assert q['slots']['S']['en'] and q['slots']['predicate']['en']
         assert all(bool(p['ja']) == bool(p['en']) for p in q['slots'].values()), q['id']
-        assert q['en'] == ' '.join(q['slots'][k]['en'] for k in SLOTS if q['slots'][k]['en']) + '.'
+        assert q['en'] == ' '.join(q['slots'][k]['en'] for k in SOURCE_SLOTS if q['slots'][k]['en']) + '.'
         assert q['slots']['time']['en'] not in {'slowly', 'carefully'}
         if q['group'].startswith('be-'):
             assert q['slots']['P1'] == q['slots']['P2'] == slot()
@@ -287,7 +313,9 @@ def build_examples():
     rows.extend(tense_picture_examples())
     for q in rows:
         q['level'] = 1
+        split_be_predicate(q)
         q['blocks'] = [[k, q['slots'][k]['en']] for k in SLOTS if q['slots'][k]['en']]
+        assert ' '.join(text for _, text in q['blocks']) + '.' == q['en'], q['id']
     advanced = json.loads((ROOT / 'data/advanced-examples.json').read_text(encoding='utf-8'))
     level2_choices = build_level2_choices(advanced)
     for level in (2, 3):
@@ -310,13 +338,13 @@ def build_examples():
         'edition': 'original-six-slots-v2',
         'status': 'draft-for-content-review',
         'audience': '10歳ごろ。基本の単語で英文を組み立てる練習。',
-        'roles': {'S': 'だれ・何が', 'predicate': 'どうする・どんな・何である',
+        'roles': {'S': 'だれ・何が', 'support': '助述部', 'predicate': 'どうする・どんな・何である',
                   'P1': '述語につなぐ一つ目', 'P2': '述語につなぐ二つ目',
                   'place': '場所', 'time': '時'},
         'rules': [
-            '空欄は正しい。六つの欄を無理に埋めない。',
+            '使わない欄は空欄にする。',
             'go to / look at / listen to などは、つなぎ方まで述語に含める。',
-            'be＋名詞・be＋形容詞は、この練習では全体を述語に入れる。',
+            'be は助述部に置き、名詞・形容詞・動作の ing 形は述語に置く。',
             'PはParameter。P1・P2の役割は述語の部品ごとに決まる。',
             '場所は動作や状態の舞台。移動先・置き先・滞在先など、述語が表す意味を補う場所はP1・P2に入れる。',
             '場所・時は基本として文の後ろ。ほかの自然な語順を誤りとはしない。',
@@ -344,7 +372,8 @@ def build_examples():
              f"内訳：基本{result['counts']['core']}文＋今の動き{result['counts']['ongoing']}文＋過去{result['counts']['past']}文＋経験10文＋代名詞39文。レベル2・3は別に各10文です。", '',
              '全部を一度に練習する必要はありません。まず「いつもの動き／状態」の原型を使い、同じcontrastFamilyの「今」「昨日」と比べます。再帰代名詞8文は発展扱いです。', '',
              '「doに動作を渡す」は習慣・行為の捉え方を説明する比喩です。肯定文にdoを実際に追加するルールではありません。', '',
-             'S → 述語 → P1 → P2 → 場所 → 時。使わない欄は「—」。これは英文を作るための教材上の区切りです。', '',
+             'S → 助述部 → 述語 → P1 → P2 → 場所 → 時。使わない欄は「—」。これは英文を作るための教材上の区切りです。', '',
+             'be は助述部に置き、名詞・形容詞・動作の ing 形は述語に置きます。一般動詞だけの文では助述部を空欄にします。', '',
              'PはParameter（引数）の教材独自の呼び名です。go to の to は述語側、school はP1側。give は「だれに→何を」、keep は「何を→どんな状態に」をP1・P2に入れます。be＋名詞・形容詞の文ではP1・P2を空欄にします。', '',
              '場面全体の場所は［場所］へ入れます。come の行き先や live の居住先は［対象１］、put の置き先は［対象２］へ入れます。', '',
              '場所と時の両方を常に付ける必要はありません。主語に合う述語の形をそのまま練習します。', '',
@@ -354,7 +383,7 @@ def build_examples():
              '追加例文：[レベル2・10文](level2-examples.md) / [レベル3・10文](level3-examples.md)', '']
     for group in groups:
         lines.extend([f"## {group['label']}：{group['ja']}", '',
-                      '| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |', '| --- | --- | --- | --- | --- | --- | --- |'])
+                      '| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |', '| --- | --- | --- | --- | --- | --- | --- | --- |'])
         examples = [q for q in rows if q['group'] == group['key']]
         for q in examples:
             label = {'routine': 'いつもの動き', 'ongoing': '今している', 'past': '過去の動き' if q['group'] == 'tense-pictures' else '昨日した', 'experience': 'したことがある', 'state': '状態'}[q['meaning']]

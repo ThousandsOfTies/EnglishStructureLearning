@@ -8,7 +8,9 @@
 
 「doに動作を渡す」は習慣・行為の捉え方を説明する比喩です。肯定文にdoを実際に追加するルールではありません。
 
-S → 述語 → P1 → P2 → 場所 → 時。使わない欄は「—」。これは英文を作るための教材上の区切りです。
+S → 助述部 → 述語 → P1 → P2 → 場所 → 時。使わない欄は「—」。これは英文を作るための教材上の区切りです。
+
+be は助述部に置き、名詞・形容詞・動作の ing 形は述語に置きます。一般動詞だけの文では助述部を空欄にします。
 
 PはParameter（引数）の教材独自の呼び名です。go to の to は述語側、school はP1側。give は「だれに→何を」、keep は「何を→どんな状態に」をP1・P2に入れます。be＋名詞・形容詞の文ではP1・P2を空欄にします。
 
@@ -26,48 +28,48 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## 10の動作：時制の絵くらべ
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | I | ride | a bike | — | — | — |
-| 過去の動き | I | rode | a bike | — | — | — |
-| 今している | I | am riding | a bike | — | — | — |
-| したことがある | I | have ridden | a bike | — | — | — |
-| いつもの動き | I | ride | a pony | — | — | — |
-| 過去の動き | I | rode | a pony | — | — | — |
-| 今している | I | am riding | a pony | — | — | — |
-| したことがある | I | have ridden | a pony | — | — | — |
-| いつもの動き | I | fly | a kite | — | — | — |
-| 過去の動き | I | flew | a kite | — | — | — |
-| 今している | I | am flying | a kite | — | — | — |
-| したことがある | I | have flown | a kite | — | — | — |
-| いつもの動き | I | jump rope | — | — | — | — |
-| 過去の動き | I | jumped rope | — | — | — | — |
-| 今している | I | am jumping rope | — | — | — | — |
-| したことがある | I | have jumped rope | — | — | — | — |
-| いつもの動き | I | play | the violin | — | — | — |
-| 過去の動き | I | played | the violin | — | — | — |
-| 今している | I | am playing | the violin | — | — | — |
-| したことがある | I | have played | the violin | — | — | — |
-| いつもの動き | I | kick | a ball | — | — | — |
-| 過去の動き | I | kicked | a ball | — | — | — |
-| 今している | I | am kicking | a ball | — | — | — |
-| したことがある | I | have kicked | a ball | — | — | — |
-| いつもの動き | I | play | the piano | — | — | — |
-| 過去の動き | I | played | the piano | — | — | — |
-| 今している | I | am playing | the piano | — | — | — |
-| したことがある | I | have played | the piano | — | — | — |
-| いつもの動き | I | water | the flowers | — | — | — |
-| 過去の動き | I | watered | the flowers | — | — | — |
-| 今している | I | am watering | the flowers | — | — | — |
-| したことがある | I | have watered | the flowers | — | — | — |
-| いつもの動き | I | paint | a picture | — | — | — |
-| 過去の動き | I | painted | a picture | — | — | — |
-| 今している | I | am painting | a picture | — | — | — |
-| したことがある | I | have painted | a picture | — | — | — |
-| いつもの動き | I | make | sushi rolls | — | — | — |
-| 過去の動き | I | made | sushi rolls | — | — | — |
-| 今している | I | am making | sushi rolls | — | — | — |
-| したことがある | I | have made | sushi rolls | — | — | — |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | I | — | ride | a bike | — | — | — |
+| 過去の動き | I | — | rode | a bike | — | — | — |
+| 今している | I | am | riding | a bike | — | — | — |
+| したことがある | I | — | have ridden | a bike | — | — | — |
+| いつもの動き | I | — | ride | a pony | — | — | — |
+| 過去の動き | I | — | rode | a pony | — | — | — |
+| 今している | I | am | riding | a pony | — | — | — |
+| したことがある | I | — | have ridden | a pony | — | — | — |
+| いつもの動き | I | — | fly | a kite | — | — | — |
+| 過去の動き | I | — | flew | a kite | — | — | — |
+| 今している | I | am | flying | a kite | — | — | — |
+| したことがある | I | — | have flown | a kite | — | — | — |
+| いつもの動き | I | — | jump rope | — | — | — | — |
+| 過去の動き | I | — | jumped rope | — | — | — | — |
+| 今している | I | am | jumping rope | — | — | — | — |
+| したことがある | I | — | have jumped rope | — | — | — | — |
+| いつもの動き | I | — | play | the violin | — | — | — |
+| 過去の動き | I | — | played | the violin | — | — | — |
+| 今している | I | am | playing | the violin | — | — | — |
+| したことがある | I | — | have played | the violin | — | — | — |
+| いつもの動き | I | — | kick | a ball | — | — | — |
+| 過去の動き | I | — | kicked | a ball | — | — | — |
+| 今している | I | am | kicking | a ball | — | — | — |
+| したことがある | I | — | have kicked | a ball | — | — | — |
+| いつもの動き | I | — | play | the piano | — | — | — |
+| 過去の動き | I | — | played | the piano | — | — | — |
+| 今している | I | am | playing | the piano | — | — | — |
+| したことがある | I | — | have played | the piano | — | — | — |
+| いつもの動き | I | — | water | the flowers | — | — | — |
+| 過去の動き | I | — | watered | the flowers | — | — | — |
+| 今している | I | am | watering | the flowers | — | — | — |
+| したことがある | I | — | have watered | the flowers | — | — | — |
+| いつもの動き | I | — | paint | a picture | — | — | — |
+| 過去の動き | I | — | painted | a picture | — | — | — |
+| 今している | I | am | painting | a picture | — | — | — |
+| したことがある | I | — | have painted | a picture | — | — | — |
+| いつもの動き | I | — | make | sushi rolls | — | — | — |
+| 過去の動き | I | — | made | sushi rolls | — | — | — |
+| 今している | I | am | making | sushi rolls | — | — | — |
+| したことがある | I | — | have made | sushi rolls | — | — | — |
 
 - I ride a bike. — 私が自転車に乗る。
 - I rode a bike. — 私が自転車に乗った。
@@ -112,17 +114,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## go：行きます
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | I | go to | the park | — | — | on Sundays |
-| 今している | I | am going to | the park | — | — | now |
-| 昨日した | I | went to | the park | — | — | yesterday |
-| いつもの動き | You | go to | the library | — | — | on Sundays |
-| 今している | You | are going to | the library | — | — | now |
-| 昨日した | You | went to | the library | — | — | yesterday |
-| いつもの動き | He | goes to | the pool | — | — | on Sundays |
-| 今している | He | is going to | the pool | — | — | now |
-| 昨日した | He | went to | the pool | — | — | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | I | — | go to | the park | — | — | on Sundays |
+| 今している | I | am | going to | the park | — | — | now |
+| 昨日した | I | — | went to | the park | — | — | yesterday |
+| いつもの動き | You | — | go to | the library | — | — | on Sundays |
+| 今している | You | are | going to | the library | — | — | now |
+| 昨日した | You | — | went to | the library | — | — | yesterday |
+| いつもの動き | He | — | goes to | the pool | — | — | on Sundays |
+| 今している | He | is | going to | the pool | — | — | now |
+| 昨日した | He | — | went to | the pool | — | — | yesterday |
 
 - I go to the park on Sundays. — 私は日曜日に公園に行きます。
 - I am going to the park now. — 私は今公園に向かっています。
@@ -136,17 +138,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## come：来ます
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | She | comes | here | — | — | every day |
-| 今している | She | is coming | here | — | — | now |
-| 昨日した | She | came | here | — | — | yesterday |
-| いつもの動き | He | comes to | this room | — | — | every day |
-| 今している | He | is coming to | this room | — | — | now |
-| 昨日した | He | came to | this room | — | — | yesterday |
-| いつもの動き | We | come to | the park | — | — | every day |
-| 今している | We | are coming to | the park | — | — | now |
-| 昨日した | We | came to | the park | — | — | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | She | — | comes | here | — | — | every day |
+| 今している | She | is | coming | here | — | — | now |
+| 昨日した | She | — | came | here | — | — | yesterday |
+| いつもの動き | He | — | comes to | this room | — | — | every day |
+| 今している | He | is | coming to | this room | — | — | now |
+| 昨日した | He | — | came to | this room | — | — | yesterday |
+| いつもの動き | We | — | come to | the park | — | — | every day |
+| 今している | We | are | coming to | the park | — | — | now |
+| 昨日した | We | — | came to | the park | — | — | yesterday |
 
 - She comes here every day. — 彼女は毎日ここに来ます。
 - She is coming here now. — 彼女は今ここに来る途中です。
@@ -160,17 +162,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## walk：歩きます
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | They | walk | — | — | by the river | every day |
-| 今している | They | are walking | — | — | by the river | now |
-| 昨日した | They | walked | — | — | by the river | yesterday |
-| いつもの動き | I | walk to | school | — | — | every day |
-| 今している | I | am walking to | school | — | — | now |
-| 昨日した | I | walked to | school | — | — | yesterday |
-| いつもの動き | You | walk through | the woods | — | — | every day |
-| 今している | You | are walking through | the woods | — | — | now |
-| 昨日した | You | walked through | the woods | — | — | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | They | — | walk | — | — | by the river | every day |
+| 今している | They | are | walking | — | — | by the river | now |
+| 昨日した | They | — | walked | — | — | by the river | yesterday |
+| いつもの動き | I | — | walk to | school | — | — | every day |
+| 今している | I | am | walking to | school | — | — | now |
+| 昨日した | I | — | walked to | school | — | — | yesterday |
+| いつもの動き | You | — | walk through | the woods | — | — | every day |
+| 今している | You | are | walking through | the woods | — | — | now |
+| 昨日した | You | — | walked through | the woods | — | — | yesterday |
 
 - They walk by the river every day. — 彼らは毎日川のそばを歩きます。
 - They are walking by the river now. — 彼らは今川のそばを歩いています。
@@ -184,17 +186,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## run：走ります
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | He | runs | — | — | in the park | every day |
-| 今している | He | is running | — | — | in the park | now |
-| 昨日した | He | ran | — | — | in the park | yesterday |
-| いつもの動き | She | runs | — | — | in the schoolyard | every day |
-| 今している | She | is running | — | — | in the schoolyard | now |
-| 昨日した | She | ran | — | — | in the schoolyard | yesterday |
-| いつもの動き | It | runs | — | — | on the beach | every day |
-| 今している | It | is running | — | — | on the beach | now |
-| 昨日した | It | ran | — | — | on the beach | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | He | — | runs | — | — | in the park | every day |
+| 今している | He | is | running | — | — | in the park | now |
+| 昨日した | He | — | ran | — | — | in the park | yesterday |
+| いつもの動き | She | — | runs | — | — | in the schoolyard | every day |
+| 今している | She | is | running | — | — | in the schoolyard | now |
+| 昨日した | She | — | ran | — | — | in the schoolyard | yesterday |
+| いつもの動き | It | — | runs | — | — | on the beach | every day |
+| 今している | It | is | running | — | — | on the beach | now |
+| 昨日した | It | — | ran | — | — | on the beach | yesterday |
 
 - He runs in the park every day. — 彼は毎日公園で走ります。
 - He is running in the park now. — 彼は今公園で走っています。
@@ -208,17 +210,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## jump：とびこえます
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | We | jump over | a small puddle | — | in the park | every day |
-| 今している | We | are jumping over | a small puddle | — | in the park | now |
-| 昨日した | We | jumped over | a small puddle | — | in the park | yesterday |
-| いつもの動き | They | jump over | a rope | — | in the park | every day |
-| 今している | They | are jumping over | a rope | — | in the park | now |
-| 昨日した | They | jumped over | a rope | — | in the park | yesterday |
-| いつもの動き | I | jump over | a line | — | in the park | every day |
-| 今している | I | am jumping over | a line | — | in the park | now |
-| 昨日した | I | jumped over | a line | — | in the park | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | We | — | jump over | a small puddle | — | in the park | every day |
+| 今している | We | are | jumping over | a small puddle | — | in the park | now |
+| 昨日した | We | — | jumped over | a small puddle | — | in the park | yesterday |
+| いつもの動き | They | — | jump over | a rope | — | in the park | every day |
+| 今している | They | are | jumping over | a rope | — | in the park | now |
+| 昨日した | They | — | jumped over | a rope | — | in the park | yesterday |
+| いつもの動き | I | — | jump over | a line | — | in the park | every day |
+| 今している | I | am | jumping over | a line | — | in the park | now |
+| 昨日した | I | — | jumped over | a line | — | in the park | yesterday |
 
 - We jump over a small puddle in the park every day. — 私たちは毎日公園で小さな水たまりをとびこえます。
 - We are jumping over a small puddle in the park now. — 私たちは今公園で小さな水たまりをとびこえています。
@@ -232,17 +234,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## swim：泳ぎます
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | You | swim | — | — | in the pool | every day |
-| 今している | You | are swimming | — | — | in the pool | now |
-| 昨日した | You | swam | — | — | in the pool | yesterday |
-| いつもの動き | He | swims | — | — | in the sea | every day |
-| 今している | He | is swimming | — | — | in the sea | now |
-| 昨日した | He | swam | — | — | in the sea | yesterday |
-| いつもの動き | She | swims | — | — | in the lake | every day |
-| 今している | She | is swimming | — | — | in the lake | now |
-| 昨日した | She | swam | — | — | in the lake | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | You | — | swim | — | — | in the pool | every day |
+| 今している | You | are | swimming | — | — | in the pool | now |
+| 昨日した | You | — | swam | — | — | in the pool | yesterday |
+| いつもの動き | He | — | swims | — | — | in the sea | every day |
+| 今している | He | is | swimming | — | — | in the sea | now |
+| 昨日した | He | — | swam | — | — | in the sea | yesterday |
+| いつもの動き | She | — | swims | — | — | in the lake | every day |
+| 今している | She | is | swimming | — | — | in the lake | now |
+| 昨日した | She | — | swam | — | — | in the lake | yesterday |
 
 - You swim in the pool every day. — あなたは毎日プールで泳ぎます。
 - You are swimming in the pool now. — あなたは今プールで泳いでいます。
@@ -256,17 +258,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## fly：飛ばします
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | He | flies | a red kite | — | in the park | every day |
-| 今している | He | is flying | a red kite | — | in the park | now |
-| 昨日した | He | flew | a red kite | — | in the park | yesterday |
-| いつもの動き | We | fly | a blue kite | — | in the park | every day |
-| 今している | We | are flying | a blue kite | — | in the park | now |
-| 昨日した | We | flew | a blue kite | — | in the park | yesterday |
-| いつもの動き | They | fly | a paper plane | — | in the park | every day |
-| 今している | They | are flying | a paper plane | — | in the park | now |
-| 昨日した | They | flew | a paper plane | — | in the park | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | He | — | flies | a red kite | — | in the park | every day |
+| 今している | He | is | flying | a red kite | — | in the park | now |
+| 昨日した | He | — | flew | a red kite | — | in the park | yesterday |
+| いつもの動き | We | — | fly | a blue kite | — | in the park | every day |
+| 今している | We | are | flying | a blue kite | — | in the park | now |
+| 昨日した | We | — | flew | a blue kite | — | in the park | yesterday |
+| いつもの動き | They | — | fly | a paper plane | — | in the park | every day |
+| 今している | They | are | flying | a paper plane | — | in the park | now |
+| 昨日した | They | — | flew | a paper plane | — | in the park | yesterday |
 
 - He flies a red kite in the park every day. — 彼は毎日公園で赤いたこを飛ばします。
 - He is flying a red kite in the park now. — 彼は今公園で赤いたこを飛ばしています。
@@ -280,17 +282,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## ride：乗ります
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | I | ride | a bike | — | in the park | on Sundays |
-| 今している | I | am riding | a bike | — | in the park | now |
-| 昨日した | I | rode | a bike | — | in the park | yesterday |
-| いつもの動き | You | ride | a pony | — | in the park | on Sundays |
-| 今している | You | are riding | a pony | — | in the park | now |
-| 昨日した | You | rode | a pony | — | in the park | yesterday |
-| いつもの動き | He | rides | a scooter | — | in the park | on Sundays |
-| 今している | He | is riding | a scooter | — | in the park | now |
-| 昨日した | He | rode | a scooter | — | in the park | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | I | — | ride | a bike | — | in the park | on Sundays |
+| 今している | I | am | riding | a bike | — | in the park | now |
+| 昨日した | I | — | rode | a bike | — | in the park | yesterday |
+| いつもの動き | You | — | ride | a pony | — | in the park | on Sundays |
+| 今している | You | are | riding | a pony | — | in the park | now |
+| 昨日した | You | — | rode | a pony | — | in the park | yesterday |
+| いつもの動き | He | — | rides | a scooter | — | in the park | on Sundays |
+| 今している | He | is | riding | a scooter | — | in the park | now |
+| 昨日した | He | — | rode | a scooter | — | in the park | yesterday |
 
 - I ride a bike in the park on Sundays. — 私は日曜日に公園で自転車に乗ります。
 - I am riding a bike in the park now. — 私は今公園で自転車に乗っています。
@@ -304,17 +306,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## climb：登ります
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | She | climbs | a small hill | — | in the park | every day |
-| 今している | She | is climbing | a small hill | — | in the park | now |
-| 昨日した | She | climbed | a small hill | — | in the park | yesterday |
-| いつもの動き | He | climbs | a tree | — | in the park | every day |
-| 今している | He | is climbing | a tree | — | in the park | now |
-| 昨日した | He | climbed | a tree | — | in the park | yesterday |
-| いつもの動き | We | climb | a ladder | — | in the park | every day |
-| 今している | We | are climbing | a ladder | — | in the park | now |
-| 昨日した | We | climbed | a ladder | — | in the park | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | She | — | climbs | a small hill | — | in the park | every day |
+| 今している | She | is | climbing | a small hill | — | in the park | now |
+| 昨日した | She | — | climbed | a small hill | — | in the park | yesterday |
+| いつもの動き | He | — | climbs | a tree | — | in the park | every day |
+| 今している | He | is | climbing | a tree | — | in the park | now |
+| 昨日した | He | — | climbed | a tree | — | in the park | yesterday |
+| いつもの動き | We | — | climb | a ladder | — | in the park | every day |
+| 今している | We | are | climbing | a ladder | — | in the park | now |
+| 昨日した | We | — | climbed | a ladder | — | in the park | yesterday |
 
 - She climbs a small hill in the park every day. — 彼女は毎日公園で小さな丘に登ります。
 - She is climbing a small hill in the park now. — 彼女は今公園で小さな丘に登っています。
@@ -328,17 +330,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## sit：座ります
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | They | sit | — | — | on a bench | every day |
-| 今している | They | are sitting | — | — | on a bench | now |
-| 昨日した | They | sat | — | — | on a bench | yesterday |
-| いつもの動き | I | sit | — | — | on a chair | every day |
-| 今している | I | am sitting | — | — | on a chair | now |
-| 昨日した | I | sat | — | — | on a chair | yesterday |
-| いつもの動き | You | sit | — | — | on the grass | every day |
-| 今している | You | are sitting | — | — | on the grass | now |
-| 昨日した | You | sat | — | — | on the grass | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | They | — | sit | — | — | on a bench | every day |
+| 今している | They | are | sitting | — | — | on a bench | now |
+| 昨日した | They | — | sat | — | — | on a bench | yesterday |
+| いつもの動き | I | — | sit | — | — | on a chair | every day |
+| 今している | I | am | sitting | — | — | on a chair | now |
+| 昨日した | I | — | sat | — | — | on a chair | yesterday |
+| いつもの動き | You | — | sit | — | — | on the grass | every day |
+| 今している | You | are | sitting | — | — | on the grass | now |
+| 昨日した | You | — | sat | — | — | on the grass | yesterday |
 
 - They sit on a bench every day. — 彼らは毎日ベンチに座ります。
 - They are sitting on a bench now. — 彼らは今ベンチに座っています。
@@ -352,17 +354,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## stand：立ちます
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | He | stands | — | — | by the door | every day |
-| 今している | He | is standing | — | — | by the door | now |
-| 昨日した | He | stood | — | — | by the door | yesterday |
-| いつもの動き | She | stands | — | — | under a tree | every day |
-| 今している | She | is standing | — | — | under a tree | now |
-| 昨日した | She | stood | — | — | under a tree | yesterday |
-| いつもの動き | He | stands | — | — | next to the teacher | every day |
-| 今している | He | is standing | — | — | next to the teacher | now |
-| 昨日した | He | stood | — | — | next to the teacher | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | He | — | stands | — | — | by the door | every day |
+| 今している | He | is | standing | — | — | by the door | now |
+| 昨日した | He | — | stood | — | — | by the door | yesterday |
+| いつもの動き | She | — | stands | — | — | under a tree | every day |
+| 今している | She | is | standing | — | — | under a tree | now |
+| 昨日した | She | — | stood | — | — | under a tree | yesterday |
+| いつもの動き | He | — | stands | — | — | next to the teacher | every day |
+| 今している | He | is | standing | — | — | next to the teacher | now |
+| 昨日した | He | — | stood | — | — | next to the teacher | yesterday |
 
 - He stands by the door every day. — 彼は毎日ドアのそばに立ちます。
 - He is standing by the door now. — 彼は今ドアのそばに立っています。
@@ -376,17 +378,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## sleep：ねます
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | We | sleep | — | — | in a bed | every day |
-| 今している | We | are sleeping | — | — | in a bed | now |
-| 昨日した | We | slept | — | — | in a bed | yesterday |
-| いつもの動き | They | sleep | — | — | in a tent | every day |
-| 今している | They | are sleeping | — | — | in a tent | now |
-| 昨日した | They | slept | — | — | in a tent | yesterday |
-| いつもの動き | I | sleep | — | — | on a futon | every day |
-| 今している | I | am sleeping | — | — | on a futon | now |
-| 昨日した | I | slept | — | — | on a futon | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | We | — | sleep | — | — | in a bed | every day |
+| 今している | We | are | sleeping | — | — | in a bed | now |
+| 昨日した | We | — | slept | — | — | in a bed | yesterday |
+| いつもの動き | They | — | sleep | — | — | in a tent | every day |
+| 今している | They | are | sleeping | — | — | in a tent | now |
+| 昨日した | They | — | slept | — | — | in a tent | yesterday |
+| いつもの動き | I | — | sleep | — | — | on a futon | every day |
+| 今している | I | am | sleeping | — | — | on a futon | now |
+| 昨日した | I | — | slept | — | — | on a futon | yesterday |
 
 - We sleep in a bed every day. — 私たちは毎日ベッドでねます。
 - We are sleeping in a bed now. — 私たちは今ベッドでねています。
@@ -400,17 +402,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## wake up：起きます
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | You | wake up | — | — | at home | every day |
-| 今している | You | are waking up | — | — | at home | now |
-| 昨日した | You | woke up | — | — | at home | yesterday |
-| いつもの動き | He | wakes up | — | — | at home | every day |
-| 今している | He | is waking up | — | — | at home | now |
-| 昨日した | He | woke up | — | — | at home | yesterday |
-| いつもの動き | She | wakes up | — | — | at home | every day |
-| 今している | She | is waking up | — | — | at home | now |
-| 昨日した | She | woke up | — | — | at home | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | You | — | wake up | — | — | at home | every day |
+| 今している | You | are | waking up | — | — | at home | now |
+| 昨日した | You | — | woke up | — | — | at home | yesterday |
+| いつもの動き | He | — | wakes up | — | — | at home | every day |
+| 今している | He | is | waking up | — | — | at home | now |
+| 昨日した | He | — | woke up | — | — | at home | yesterday |
+| いつもの動き | She | — | wakes up | — | — | at home | every day |
+| 今している | She | is | waking up | — | — | at home | now |
+| 昨日した | She | — | woke up | — | — | at home | yesterday |
 
 - You wake up at home every day. — あなたは毎日家で起きます。
 - You are waking up at home now. — あなたは今家で目を覚ましかけています。
@@ -424,17 +426,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## rest：休みます
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | He | rests | — | — | under a tree | every day |
-| 今している | He | is resting | — | — | under a tree | now |
-| 昨日した | He | rested | — | — | under a tree | yesterday |
-| いつもの動き | We | rest | — | — | on the sofa | every day |
-| 今している | We | are resting | — | — | on the sofa | now |
-| 昨日した | We | rested | — | — | on the sofa | yesterday |
-| いつもの動き | They | rest | — | — | on a bench | every day |
-| 今している | They | are resting | — | — | on a bench | now |
-| 昨日した | They | rested | — | — | on a bench | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | He | — | rests | — | — | under a tree | every day |
+| 今している | He | is | resting | — | — | under a tree | now |
+| 昨日した | He | — | rested | — | — | under a tree | yesterday |
+| いつもの動き | We | — | rest | — | — | on the sofa | every day |
+| 今している | We | are | resting | — | — | on the sofa | now |
+| 昨日した | We | — | rested | — | — | on the sofa | yesterday |
+| いつもの動き | They | — | rest | — | — | on a bench | every day |
+| 今している | They | are | resting | — | — | on a bench | now |
+| 昨日した | They | — | rested | — | — | on a bench | yesterday |
 
 - He rests under a tree every day. — 彼は毎日木の下で休みます。
 - He is resting under a tree now. — 彼は今木の下で休んでいます。
@@ -448,17 +450,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## stay：とまります
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | I | stay | at Grandma's house | — | — | on Saturdays |
-| 今している | I | am staying | at Grandma's house | — | — | now |
-| 昨日した | I | stayed | at Grandma's house | — | — | yesterday |
-| いつもの動き | You | stay | in a tent | — | — | on Saturdays |
-| 今している | You | are staying | in a tent | — | — | now |
-| 昨日した | You | stayed | in a tent | — | — | yesterday |
-| いつもの動き | He | stays | at a hotel | — | — | on Saturdays |
-| 今している | He | is staying | at a hotel | — | — | now |
-| 昨日した | He | stayed | at a hotel | — | — | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | I | — | stay | at Grandma's house | — | — | on Saturdays |
+| 今している | I | am | staying | at Grandma's house | — | — | now |
+| 昨日した | I | — | stayed | at Grandma's house | — | — | yesterday |
+| いつもの動き | You | — | stay | in a tent | — | — | on Saturdays |
+| 今している | You | are | staying | in a tent | — | — | now |
+| 昨日した | You | — | stayed | in a tent | — | — | yesterday |
+| いつもの動き | He | — | stays | at a hotel | — | — | on Saturdays |
+| 今している | He | is | staying | at a hotel | — | — | now |
+| 昨日した | He | — | stayed | at a hotel | — | — | yesterday |
 
 - I stay at Grandma's house on Saturdays. — 私は土曜日におばあちゃんの家にとまります。
 - I am staying at Grandma's house now. — 私は今おばあちゃんの家にとまっています。
@@ -472,11 +474,11 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## live：住んでいます
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| 状態 | She | lives | in a small house | — | — | — |
-| 状態 | He | lives | near the sea | — | — | — |
-| 状態 | We | live | near a park | — | — | — |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 状態 | She | — | lives | in a small house | — | — | — |
+| 状態 | He | — | lives | near the sea | — | — | — |
+| 状態 | We | — | live | near a park | — | — | — |
 
 - She lives in a small house. — 彼女は小さな家に住んでいます。
 - He lives near the sea. — 彼は海の近くに住んでいます。
@@ -484,17 +486,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## move：動かします
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | They | move | a box | — | at home | every day |
-| 今している | They | are moving | a box | — | at home | now |
-| 昨日した | They | moved | a box | — | at home | yesterday |
-| いつもの動き | I | move | a chair | — | at home | every day |
-| 今している | I | am moving | a chair | — | at home | now |
-| 昨日した | I | moved | a chair | — | at home | yesterday |
-| いつもの動き | You | move | a small desk | — | at home | every day |
-| 今している | You | are moving | a small desk | — | at home | now |
-| 昨日した | You | moved | a small desk | — | at home | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | They | — | move | a box | — | at home | every day |
+| 今している | They | are | moving | a box | — | at home | now |
+| 昨日した | They | — | moved | a box | — | at home | yesterday |
+| いつもの動き | I | — | move | a chair | — | at home | every day |
+| 今している | I | am | moving | a chair | — | at home | now |
+| 昨日した | I | — | moved | a chair | — | at home | yesterday |
+| いつもの動き | You | — | move | a small desk | — | at home | every day |
+| 今している | You | are | moving | a small desk | — | at home | now |
+| 昨日した | You | — | moved | a small desk | — | at home | yesterday |
 
 - They move a box at home every day. — 彼らは毎日家で箱を動かします。
 - They are moving a box at home now. — 彼らは今家で箱を動かしています。
@@ -508,17 +510,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## stop：止めます
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | He | stops | a toy train | — | at home | every day |
-| 今している | He | is stopping | a toy train | — | at home | now |
-| 昨日した | He | stopped | a toy train | — | at home | yesterday |
-| いつもの動き | She | stops | the music | — | at home | every day |
-| 今している | She | is stopping | the music | — | at home | now |
-| 昨日した | She | stopped | the music | — | at home | yesterday |
-| いつもの動き | It | stops | the timer | — | at home | every day |
-| 今している | It | is stopping | the timer | — | at home | now |
-| 昨日した | It | stopped | the timer | — | at home | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | He | — | stops | a toy train | — | at home | every day |
+| 今している | He | is | stopping | a toy train | — | at home | now |
+| 昨日した | He | — | stopped | a toy train | — | at home | yesterday |
+| いつもの動き | She | — | stops | the music | — | at home | every day |
+| 今している | She | is | stopping | the music | — | at home | now |
+| 昨日した | She | — | stopped | the music | — | at home | yesterday |
+| いつもの動き | It | — | stops | the timer | — | at home | every day |
+| 今している | It | is | stopping | the timer | — | at home | now |
+| 昨日した | It | — | stopped | the timer | — | at home | yesterday |
 
 - He stops a toy train at home every day. — 彼は毎日家でおもちゃの電車を止めます。
 - He is stopping a toy train at home now. — 彼は今家でおもちゃの電車を止めています。
@@ -532,17 +534,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## start：始めます
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | We | start | a game | — | at home | every day |
-| 今している | We | are starting | a game | — | at home | now |
-| 昨日した | We | started | a game | — | at home | yesterday |
-| いつもの動き | They | start | their homework | — | at home | every day |
-| 今している | They | are starting | their homework | — | at home | now |
-| 昨日した | They | started | their homework | — | at home | yesterday |
-| いつもの動き | I | start | a puzzle | — | at home | every day |
-| 今している | I | am starting | a puzzle | — | at home | now |
-| 昨日した | I | started | a puzzle | — | at home | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | We | — | start | a game | — | at home | every day |
+| 今している | We | are | starting | a game | — | at home | now |
+| 昨日した | We | — | started | a game | — | at home | yesterday |
+| いつもの動き | They | — | start | their homework | — | at home | every day |
+| 今している | They | are | starting | their homework | — | at home | now |
+| 昨日した | They | — | started | their homework | — | at home | yesterday |
+| いつもの動き | I | — | start | a puzzle | — | at home | every day |
+| 今している | I | am | starting | a puzzle | — | at home | now |
+| 昨日した | I | — | started | a puzzle | — | at home | yesterday |
 
 - We start a game at home every day. — 私たちは毎日家でゲームを始めます。
 - We are starting a game at home now. — 私たちは今家でゲームを始めています。
@@ -556,17 +558,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## wait：待ちます
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | You | wait for | the bus | — | here | every day |
-| 今している | You | are waiting for | the bus | — | here | now |
-| 昨日した | You | waited for | the bus | — | here | yesterday |
-| いつもの動き | He | waits for | a friend | — | here | every day |
-| 今している | He | is waiting for | a friend | — | here | now |
-| 昨日した | He | waited for | a friend | — | here | yesterday |
-| いつもの動き | She | waits for | Mom | — | here | every day |
-| 今している | She | is waiting for | Mom | — | here | now |
-| 昨日した | She | waited for | Mom | — | here | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | You | — | wait for | the bus | — | here | every day |
+| 今している | You | are | waiting for | the bus | — | here | now |
+| 昨日した | You | — | waited for | the bus | — | here | yesterday |
+| いつもの動き | He | — | waits for | a friend | — | here | every day |
+| 今している | He | is | waiting for | a friend | — | here | now |
+| 昨日した | He | — | waited for | a friend | — | here | yesterday |
+| いつもの動き | She | — | waits for | Mom | — | here | every day |
+| 今している | She | is | waiting for | Mom | — | here | now |
+| 昨日した | She | — | waited for | Mom | — | here | yesterday |
 
 - You wait for the bus here every day. — あなたは毎日ここでバスを待ちます。
 - You are waiting for the bus here now. — あなたは今ここでバスを待っています。
@@ -580,17 +582,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## eat：食べます
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | He | eats | a rice ball | — | at home | every day |
-| 今している | He | is eating | a rice ball | — | at home | now |
-| 昨日した | He | ate | a rice ball | — | at home | yesterday |
-| いつもの動き | We | eat | a banana | — | at home | every day |
-| 今している | We | are eating | a banana | — | at home | now |
-| 昨日した | We | ate | a banana | — | at home | yesterday |
-| いつもの動き | They | eat | a carrot | — | at home | every day |
-| 今している | They | are eating | a carrot | — | at home | now |
-| 昨日した | They | ate | a carrot | — | at home | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | He | — | eats | a rice ball | — | at home | every day |
+| 今している | He | is | eating | a rice ball | — | at home | now |
+| 昨日した | He | — | ate | a rice ball | — | at home | yesterday |
+| いつもの動き | We | — | eat | a banana | — | at home | every day |
+| 今している | We | are | eating | a banana | — | at home | now |
+| 昨日した | We | — | ate | a banana | — | at home | yesterday |
+| いつもの動き | They | — | eat | a carrot | — | at home | every day |
+| 今している | They | are | eating | a carrot | — | at home | now |
+| 昨日した | They | — | ate | a carrot | — | at home | yesterday |
 
 - He eats a rice ball at home every day. — 彼は毎日家でおにぎりを食べます。
 - He is eating a rice ball at home now. — 彼は今家でおにぎりを食べています。
@@ -604,17 +606,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## drink：飲みます
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | I | drink | water | — | at home | every day |
-| 今している | I | am drinking | water | — | at home | now |
-| 昨日した | I | drank | water | — | at home | yesterday |
-| いつもの動き | You | drink | milk | — | at home | every day |
-| 今している | You | are drinking | milk | — | at home | now |
-| 昨日した | You | drank | milk | — | at home | yesterday |
-| いつもの動き | He | drinks | apple juice | — | at home | every day |
-| 今している | He | is drinking | apple juice | — | at home | now |
-| 昨日した | He | drank | apple juice | — | at home | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | I | — | drink | water | — | at home | every day |
+| 今している | I | am | drinking | water | — | at home | now |
+| 昨日した | I | — | drank | water | — | at home | yesterday |
+| いつもの動き | You | — | drink | milk | — | at home | every day |
+| 今している | You | are | drinking | milk | — | at home | now |
+| 昨日した | You | — | drank | milk | — | at home | yesterday |
+| いつもの動き | He | — | drinks | apple juice | — | at home | every day |
+| 今している | He | is | drinking | apple juice | — | at home | now |
+| 昨日した | He | — | drank | apple juice | — | at home | yesterday |
 
 - I drink water at home every day. — 私は毎日家で水を飲みます。
 - I am drinking water at home now. — 私は今家で水を飲んでいます。
@@ -628,17 +630,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## cook：作ります
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | She | cooks | curry with Dad | — | at home | every day |
-| 今している | She | is cooking | curry with Dad | — | at home | now |
-| 昨日した | She | cooked | curry with Dad | — | at home | yesterday |
-| いつもの動き | He | cooks | soup with Dad | — | at home | every day |
-| 今している | He | is cooking | soup with Dad | — | at home | now |
-| 昨日した | He | cooked | soup with Dad | — | at home | yesterday |
-| いつもの動き | We | cook | rice with Dad | — | at home | every day |
-| 今している | We | are cooking | rice with Dad | — | at home | now |
-| 昨日した | We | cooked | rice with Dad | — | at home | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | She | — | cooks | curry with Dad | — | at home | every day |
+| 今している | She | is | cooking | curry with Dad | — | at home | now |
+| 昨日した | She | — | cooked | curry with Dad | — | at home | yesterday |
+| いつもの動き | He | — | cooks | soup with Dad | — | at home | every day |
+| 今している | He | is | cooking | soup with Dad | — | at home | now |
+| 昨日した | He | — | cooked | soup with Dad | — | at home | yesterday |
+| いつもの動き | We | — | cook | rice with Dad | — | at home | every day |
+| 今している | We | are | cooking | rice with Dad | — | at home | now |
+| 昨日した | We | — | cooked | rice with Dad | — | at home | yesterday |
 
 - She cooks curry with Dad at home every day. — 彼女は毎日家でお父さんとカレーを作ります。
 - She is cooking curry with Dad at home now. — 彼女は今家でお父さんとカレーを作っています。
@@ -652,17 +654,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## bake：焼きます
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | They | bake | a banana cake with Mom | — | at home | every day |
-| 今している | They | are baking | a banana cake with Mom | — | at home | now |
-| 昨日した | They | baked | a banana cake with Mom | — | at home | yesterday |
-| いつもの動き | I | bake | cookies with Mom | — | at home | every day |
-| 今している | I | am baking | cookies with Mom | — | at home | now |
-| 昨日した | I | baked | cookies with Mom | — | at home | yesterday |
-| いつもの動き | You | bake | bread with Mom | — | at home | every day |
-| 今している | You | are baking | bread with Mom | — | at home | now |
-| 昨日した | You | baked | bread with Mom | — | at home | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | They | — | bake | a banana cake with Mom | — | at home | every day |
+| 今している | They | are | baking | a banana cake with Mom | — | at home | now |
+| 昨日した | They | — | baked | a banana cake with Mom | — | at home | yesterday |
+| いつもの動き | I | — | bake | cookies with Mom | — | at home | every day |
+| 今している | I | am | baking | cookies with Mom | — | at home | now |
+| 昨日した | I | — | baked | cookies with Mom | — | at home | yesterday |
+| いつもの動き | You | — | bake | bread with Mom | — | at home | every day |
+| 今している | You | are | baking | bread with Mom | — | at home | now |
+| 昨日した | You | — | baked | bread with Mom | — | at home | yesterday |
 
 - They bake a banana cake with Mom at home every day. — 彼らは毎日家でお母さんとバナナケーキを焼きます。
 - They are baking a banana cake with Mom at home now. — 彼らは今家でお母さんとバナナケーキを焼いています。
@@ -676,17 +678,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## taste：味見します
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | He | tastes | the soup | — | at home | every day |
-| 今している | He | is tasting | the soup | — | at home | now |
-| 昨日した | He | tasted | the soup | — | at home | yesterday |
-| いつもの動き | She | tastes | the curry | — | at home | every day |
-| 今している | She | is tasting | the curry | — | at home | now |
-| 昨日した | She | tasted | the curry | — | at home | yesterday |
-| いつもの動き | He | tastes | the sauce | — | at home | every day |
-| 今している | He | is tasting | the sauce | — | at home | now |
-| 昨日した | He | tasted | the sauce | — | at home | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | He | — | tastes | the soup | — | at home | every day |
+| 今している | He | is | tasting | the soup | — | at home | now |
+| 昨日した | He | — | tasted | the soup | — | at home | yesterday |
+| いつもの動き | She | — | tastes | the curry | — | at home | every day |
+| 今している | She | is | tasting | the curry | — | at home | now |
+| 昨日した | She | — | tasted | the curry | — | at home | yesterday |
+| いつもの動き | He | — | tastes | the sauce | — | at home | every day |
+| 今している | He | is | tasting | the sauce | — | at home | now |
+| 昨日した | He | — | tasted | the sauce | — | at home | yesterday |
 
 - He tastes the soup at home every day. — 彼は毎日家でスープを味見します。
 - He is tasting the soup at home now. — 彼は今家でスープを味見しています。
@@ -700,17 +702,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## cut：切ります
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | We | cut | an apple | — | at home | every day |
-| 今している | We | are cuting | an apple | — | at home | now |
-| 昨日した | We | cut | an apple | — | at home | yesterday |
-| いつもの動き | They | cut | paper | — | at home | every day |
-| 今している | They | are cuting | paper | — | at home | now |
-| 昨日した | They | cut | paper | — | at home | yesterday |
-| いつもの動き | I | cut | bread | — | at home | every day |
-| 今している | I | am cuting | bread | — | at home | now |
-| 昨日した | I | cut | bread | — | at home | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | We | — | cut | an apple | — | at home | every day |
+| 今している | We | are | cuting | an apple | — | at home | now |
+| 昨日した | We | — | cut | an apple | — | at home | yesterday |
+| いつもの動き | They | — | cut | paper | — | at home | every day |
+| 今している | They | are | cuting | paper | — | at home | now |
+| 昨日した | They | — | cut | paper | — | at home | yesterday |
+| いつもの動き | I | — | cut | bread | — | at home | every day |
+| 今している | I | am | cuting | bread | — | at home | now |
+| 昨日した | I | — | cut | bread | — | at home | yesterday |
 
 - We cut an apple at home every day. — 私たちは毎日家でりんごを切ります。
 - We are cuting an apple at home now. — 私たちは今家でりんごを切っています。
@@ -724,17 +726,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## peel：むきます
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | You | peel | a banana | — | at home | every day |
-| 今している | You | are peeling | a banana | — | at home | now |
-| 昨日した | You | peeled | a banana | — | at home | yesterday |
-| いつもの動き | He | peels | an orange | — | at home | every day |
-| 今している | He | is peeling | an orange | — | at home | now |
-| 昨日した | He | peeled | an orange | — | at home | yesterday |
-| いつもの動き | She | peels | a potato | — | at home | every day |
-| 今している | She | is peeling | a potato | — | at home | now |
-| 昨日した | She | peeled | a potato | — | at home | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | You | — | peel | a banana | — | at home | every day |
+| 今している | You | are | peeling | a banana | — | at home | now |
+| 昨日した | You | — | peeled | a banana | — | at home | yesterday |
+| いつもの動き | He | — | peels | an orange | — | at home | every day |
+| 今している | He | is | peeling | an orange | — | at home | now |
+| 昨日した | He | — | peeled | an orange | — | at home | yesterday |
+| いつもの動き | She | — | peels | a potato | — | at home | every day |
+| 今している | She | is | peeling | a potato | — | at home | now |
+| 昨日した | She | — | peeled | a potato | — | at home | yesterday |
 
 - You peel a banana at home every day. — あなたは毎日家でバナナの皮をむきます。
 - You are peeling a banana at home now. — あなたは今家でバナナの皮をむいています。
@@ -748,17 +750,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## mix：混ぜます
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | He | mixes | the eggs | — | at home | every day |
-| 今している | He | is mixing | the eggs | — | at home | now |
-| 昨日した | He | mixed | the eggs | — | at home | yesterday |
-| いつもの動き | We | mix | the salad | — | at home | every day |
-| 今している | We | are mixing | the salad | — | at home | now |
-| 昨日した | We | mixed | the salad | — | at home | yesterday |
-| いつもの動き | They | mix | the paint | — | at home | every day |
-| 今している | They | are mixing | the paint | — | at home | now |
-| 昨日した | They | mixed | the paint | — | at home | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | He | — | mixes | the eggs | — | at home | every day |
+| 今している | He | is | mixing | the eggs | — | at home | now |
+| 昨日した | He | — | mixed | the eggs | — | at home | yesterday |
+| いつもの動き | We | — | mix | the salad | — | at home | every day |
+| 今している | We | are | mixing | the salad | — | at home | now |
+| 昨日した | We | — | mixed | the salad | — | at home | yesterday |
+| いつもの動き | They | — | mix | the paint | — | at home | every day |
+| 今している | They | are | mixing | the paint | — | at home | now |
+| 昨日した | They | — | mixed | the paint | — | at home | yesterday |
 
 - He mixes the eggs at home every day. — 彼は毎日家で卵を混ぜます。
 - He is mixing the eggs at home now. — 彼は今家で卵を混ぜています。
@@ -772,17 +774,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## pour：そそぎます
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | I | pour | water | into a cup | — | every day |
-| 今している | I | am pouring | water | into a cup | — | now |
-| 昨日した | I | poured | water | into a cup | — | yesterday |
-| いつもの動き | You | pour | milk | into a cup | — | every day |
-| 今している | You | are pouring | milk | into a cup | — | now |
-| 昨日した | You | poured | milk | into a cup | — | yesterday |
-| いつもの動き | He | pours | juice | into a cup | — | every day |
-| 今している | He | is pouring | juice | into a cup | — | now |
-| 昨日した | He | poured | juice | into a cup | — | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | I | — | pour | water | into a cup | — | every day |
+| 今している | I | am | pouring | water | into a cup | — | now |
+| 昨日した | I | — | poured | water | into a cup | — | yesterday |
+| いつもの動き | You | — | pour | milk | into a cup | — | every day |
+| 今している | You | are | pouring | milk | into a cup | — | now |
+| 昨日した | You | — | poured | milk | into a cup | — | yesterday |
+| いつもの動き | He | — | pours | juice | into a cup | — | every day |
+| 今している | He | is | pouring | juice | into a cup | — | now |
+| 昨日した | He | — | poured | juice | into a cup | — | yesterday |
 
 - I pour water into a cup every day. — 私は毎日コップに水をそそぎます。
 - I am pouring water into a cup now. — 私は今コップに水をそそいでいます。
@@ -796,17 +798,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## wash：洗います
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | She | washes | her hands | — | at home | every day |
-| 今している | She | is washing | her hands | — | at home | now |
-| 昨日した | She | washed | her hands | — | at home | yesterday |
-| いつもの動き | He | washes | an apple | — | at home | every day |
-| 今している | He | is washing | an apple | — | at home | now |
-| 昨日した | He | washed | an apple | — | at home | yesterday |
-| いつもの動き | We | wash | a cup | — | at home | every day |
-| 今している | We | are washing | a cup | — | at home | now |
-| 昨日した | We | washed | a cup | — | at home | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | She | — | washes | her hands | — | at home | every day |
+| 今している | She | is | washing | her hands | — | at home | now |
+| 昨日した | She | — | washed | her hands | — | at home | yesterday |
+| いつもの動き | He | — | washes | an apple | — | at home | every day |
+| 今している | He | is | washing | an apple | — | at home | now |
+| 昨日した | He | — | washed | an apple | — | at home | yesterday |
+| いつもの動き | We | — | wash | a cup | — | at home | every day |
+| 今している | We | are | washing | a cup | — | at home | now |
+| 昨日した | We | — | washed | a cup | — | at home | yesterday |
 
 - She washes her hands at home every day. — 彼女は毎日家で手を洗います。
 - She is washing her hands at home now. — 彼女は今家で手を洗っています。
@@ -820,17 +822,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## read：読みます
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | They | read | an animal book | — | at home | every day |
-| 今している | They | are reading | an animal book | — | at home | now |
-| 昨日した | They | read | an animal book | — | at home | yesterday |
-| いつもの動き | I | read | a short story | — | at home | every day |
-| 今している | I | am reading | a short story | — | at home | now |
-| 昨日した | I | read | a short story | — | at home | yesterday |
-| いつもの動き | You | read | a comic | — | at home | every day |
-| 今している | You | are reading | a comic | — | at home | now |
-| 昨日した | You | read | a comic | — | at home | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | They | — | read | an animal book | — | at home | every day |
+| 今している | They | are | reading | an animal book | — | at home | now |
+| 昨日した | They | — | read | an animal book | — | at home | yesterday |
+| いつもの動き | I | — | read | a short story | — | at home | every day |
+| 今している | I | am | reading | a short story | — | at home | now |
+| 昨日した | I | — | read | a short story | — | at home | yesterday |
+| いつもの動き | You | — | read | a comic | — | at home | every day |
+| 今している | You | are | reading | a comic | — | at home | now |
+| 昨日した | You | — | read | a comic | — | at home | yesterday |
 
 - They read an animal book at home every day. — 彼らは毎日家で動物の本を読みます。
 - They are reading an animal book at home now. — 彼らは今家で動物の本を読んでいます。
@@ -847,17 +849,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## write：書きます
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | He | writes | his name | — | at school | every day |
-| 今している | He | is writing | his name | — | at school | now |
-| 昨日した | He | wrote | his name | — | at school | yesterday |
-| いつもの動き | She | writes | a short letter | — | at school | every day |
-| 今している | She | is writing | a short letter | — | at school | now |
-| 昨日した | She | wrote | a short letter | — | at school | yesterday |
-| いつもの動き | It | writes | an English word | — | at school | every day |
-| 今している | It | is writing | an English word | — | at school | now |
-| 昨日した | It | wrote | an English word | — | at school | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | He | — | writes | his name | — | at school | every day |
+| 今している | He | is | writing | his name | — | at school | now |
+| 昨日した | He | — | wrote | his name | — | at school | yesterday |
+| いつもの動き | She | — | writes | a short letter | — | at school | every day |
+| 今している | She | is | writing | a short letter | — | at school | now |
+| 昨日した | She | — | wrote | a short letter | — | at school | yesterday |
+| いつもの動き | It | — | writes | an English word | — | at school | every day |
+| 今している | It | is | writing | an English word | — | at school | now |
+| 昨日した | It | — | wrote | an English word | — | at school | yesterday |
 
 - He writes his name at school every day. — 彼は毎日学校で名前を書きます。
 - He is writing his name at school now. — 彼は今学校で名前を書いています。
@@ -871,17 +873,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## draw：かきます
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | We | draw | a rabbit | — | at school | every day |
-| 今している | We | are drawing | a rabbit | — | at school | now |
-| 昨日した | We | drew | a rabbit | — | at school | yesterday |
-| いつもの動き | They | draw | a rainbow | — | at school | every day |
-| 今している | They | are drawing | a rainbow | — | at school | now |
-| 昨日した | They | drew | a rainbow | — | at school | yesterday |
-| いつもの動き | I | draw | a robot | — | at school | every day |
-| 今している | I | am drawing | a robot | — | at school | now |
-| 昨日した | I | drew | a robot | — | at school | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | We | — | draw | a rabbit | — | at school | every day |
+| 今している | We | are | drawing | a rabbit | — | at school | now |
+| 昨日した | We | — | drew | a rabbit | — | at school | yesterday |
+| いつもの動き | They | — | draw | a rainbow | — | at school | every day |
+| 今している | They | are | drawing | a rainbow | — | at school | now |
+| 昨日した | They | — | drew | a rainbow | — | at school | yesterday |
+| いつもの動き | I | — | draw | a robot | — | at school | every day |
+| 今している | I | am | drawing | a robot | — | at school | now |
+| 昨日した | I | — | drew | a robot | — | at school | yesterday |
 
 - We draw a rabbit at school every day. — 私たちは毎日学校でうさぎをかきます。
 - We are drawing a rabbit at school now. — 私たちは今学校でうさぎをかいています。
@@ -895,17 +897,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## color：色をぬります
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | You | color | a flower | — | at school | every day |
-| 今している | You | are coloring | a flower | — | at school | now |
-| 昨日した | You | colored | a flower | — | at school | yesterday |
-| いつもの動き | He | colors | a star | — | at school | every day |
-| 今している | He | is coloring | a star | — | at school | now |
-| 昨日した | He | colored | a star | — | at school | yesterday |
-| いつもの動き | She | colors | a fish | — | at school | every day |
-| 今している | She | is coloring | a fish | — | at school | now |
-| 昨日した | She | colored | a fish | — | at school | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | You | — | color | a flower | — | at school | every day |
+| 今している | You | are | coloring | a flower | — | at school | now |
+| 昨日した | You | — | colored | a flower | — | at school | yesterday |
+| いつもの動き | He | — | colors | a star | — | at school | every day |
+| 今している | He | is | coloring | a star | — | at school | now |
+| 昨日した | He | — | colored | a star | — | at school | yesterday |
+| いつもの動き | She | — | colors | a fish | — | at school | every day |
+| 今している | She | is | coloring | a fish | — | at school | now |
+| 昨日した | She | — | colored | a fish | — | at school | yesterday |
 
 - You color a flower at school every day. — あなたは毎日学校で花の絵に色をぬります。
 - You are coloring a flower at school now. — あなたは今学校で花の絵に色をぬっています。
@@ -919,17 +921,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## count：数えます
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | It | counts | the stars | — | in the garden | every day |
-| 今している | It | is counting | the stars | — | in the garden | now |
-| 昨日した | It | counted | the stars | — | in the garden | yesterday |
-| いつもの動き | We | count | the marbles | — | at school | every day |
-| 今している | We | are counting | the marbles | — | at school | now |
-| 昨日した | We | counted | the marbles | — | at school | yesterday |
-| いつもの動き | They | count | the cards | — | at school | every day |
-| 今している | They | are counting | the cards | — | at school | now |
-| 昨日した | They | counted | the cards | — | at school | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | It | — | counts | the stars | — | in the garden | every day |
+| 今している | It | is | counting | the stars | — | in the garden | now |
+| 昨日した | It | — | counted | the stars | — | in the garden | yesterday |
+| いつもの動き | We | — | count | the marbles | — | at school | every day |
+| 今している | We | are | counting | the marbles | — | at school | now |
+| 昨日した | We | — | counted | the marbles | — | at school | yesterday |
+| いつもの動き | They | — | count | the cards | — | at school | every day |
+| 今している | They | are | counting | the cards | — | at school | now |
+| 昨日した | They | — | counted | the cards | — | at school | yesterday |
 
 - It counts the stars in the garden every day. — それは毎日庭で星を数えます。
 - It is counting the stars in the garden now. — それは今庭で星を数えています。
@@ -943,17 +945,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## study：勉強します
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | I | study | English | — | at school | every day |
-| 今している | I | am studying | English | — | at school | now |
-| 昨日した | I | studied | English | — | at school | yesterday |
-| いつもの動き | You | study | math | — | at school | every day |
-| 今している | You | are studying | math | — | at school | now |
-| 昨日した | You | studied | math | — | at school | yesterday |
-| いつもの動き | He | studies | science | — | at school | every day |
-| 今している | He | is studying | science | — | at school | now |
-| 昨日した | He | studied | science | — | at school | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | I | — | study | English | — | at school | every day |
+| 今している | I | am | studying | English | — | at school | now |
+| 昨日した | I | — | studied | English | — | at school | yesterday |
+| いつもの動き | You | — | study | math | — | at school | every day |
+| 今している | You | are | studying | math | — | at school | now |
+| 昨日した | You | — | studied | math | — | at school | yesterday |
+| いつもの動き | He | — | studies | science | — | at school | every day |
+| 今している | He | is | studying | science | — | at school | now |
+| 昨日した | He | — | studied | science | — | at school | yesterday |
 
 - I study English at school every day. — 私は毎日学校で英語を勉強します。
 - I am studying English at school now. — 私は今学校で英語を勉強しています。
@@ -967,17 +969,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## learn：覚えます
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | She | learns | a new song | — | at school | every day |
-| 今している | She | is learning | a new song | — | at school | now |
-| 昨日した | She | learned | a new song | — | at school | yesterday |
-| いつもの動き | He | learns | a new word | — | at school | every day |
-| 今している | He | is learning | a new word | — | at school | now |
-| 昨日した | He | learned | a new word | — | at school | yesterday |
-| いつもの動き | We | learn | a new dance | — | at school | every day |
-| 今している | We | are learning | a new dance | — | at school | now |
-| 昨日した | We | learned | a new dance | — | at school | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | She | — | learns | a new song | — | at school | every day |
+| 今している | She | is | learning | a new song | — | at school | now |
+| 昨日した | She | — | learned | a new song | — | at school | yesterday |
+| いつもの動き | He | — | learns | a new word | — | at school | every day |
+| 今している | He | is | learning | a new word | — | at school | now |
+| 昨日した | He | — | learned | a new word | — | at school | yesterday |
+| いつもの動き | We | — | learn | a new dance | — | at school | every day |
+| 今している | We | are | learning | a new dance | — | at school | now |
+| 昨日した | We | — | learned | a new dance | — | at school | yesterday |
 
 - She learns a new song at school every day. — 彼女は毎日学校で新しい歌を覚えます。
 - She is learning a new song at school now. — 彼女は今学校で新しい歌を覚えています。
@@ -991,17 +993,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## practice：練習します
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | They | practice | the piano | — | at home | every day |
-| 今している | They | are practicing | the piano | — | at home | now |
-| 昨日した | They | practiced | the piano | — | at home | yesterday |
-| いつもの動き | I | practice | English | — | at home | every day |
-| 今している | I | am practicing | English | — | at home | now |
-| 昨日した | I | practiced | English | — | at home | yesterday |
-| いつもの動き | You | practice | dancing | — | at home | every day |
-| 今している | You | are practicing | dancing | — | at home | now |
-| 昨日した | You | practiced | dancing | — | at home | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | They | — | practice | the piano | — | at home | every day |
+| 今している | They | are | practicing | the piano | — | at home | now |
+| 昨日した | They | — | practiced | the piano | — | at home | yesterday |
+| いつもの動き | I | — | practice | English | — | at home | every day |
+| 今している | I | am | practicing | English | — | at home | now |
+| 昨日した | I | — | practiced | English | — | at home | yesterday |
+| いつもの動き | You | — | practice | dancing | — | at home | every day |
+| 今している | You | are | practicing | dancing | — | at home | now |
+| 昨日した | You | — | practiced | dancing | — | at home | yesterday |
 
 - They practice the piano at home every day. — 彼らは毎日家でピアノを練習します。
 - They are practicing the piano at home now. — 彼らは今家でピアノを練習しています。
@@ -1015,17 +1017,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## spell：つづりを言います
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | He | spells | cat | — | at school | every day |
-| 今している | He | is spelling | cat | — | at school | now |
-| 昨日した | He | spelled | cat | — | at school | yesterday |
-| いつもの動き | She | spells | dog | — | at school | every day |
-| 今している | She | is spelling | dog | — | at school | now |
-| 昨日した | She | spelled | dog | — | at school | yesterday |
-| いつもの動き | It | spells | bird | — | at school | every day |
-| 今している | It | is spelling | bird | — | at school | now |
-| 昨日した | It | spelled | bird | — | at school | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | He | — | spells | cat | — | at school | every day |
+| 今している | He | is | spelling | cat | — | at school | now |
+| 昨日した | He | — | spelled | cat | — | at school | yesterday |
+| いつもの動き | She | — | spells | dog | — | at school | every day |
+| 今している | She | is | spelling | dog | — | at school | now |
+| 昨日した | She | — | spelled | dog | — | at school | yesterday |
+| いつもの動き | It | — | spells | bird | — | at school | every day |
+| 今している | It | is | spelling | bird | — | at school | now |
+| 昨日した | It | — | spelled | bird | — | at school | yesterday |
 
 - He spells cat at school every day. — 彼は毎日学校でcatのつづりを言います。
 - He is spelling cat at school now. — 彼は今学校でcatのつづりを言っています。
@@ -1039,17 +1041,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## answer：答えます
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | We | answer | the teacher's question | — | at school | every day |
-| 今している | We | are answering | the teacher's question | — | at school | now |
-| 昨日した | We | answered | the teacher's question | — | at school | yesterday |
-| いつもの動き | They | answer | an easy question | — | at school | every day |
-| 今している | They | are answering | an easy question | — | at school | now |
-| 昨日した | They | answered | an easy question | — | at school | yesterday |
-| いつもの動き | I | answer | the last question | — | at school | every day |
-| 今している | I | am answering | the last question | — | at school | now |
-| 昨日した | I | answered | the last question | — | at school | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | We | — | answer | the teacher's question | — | at school | every day |
+| 今している | We | are | answering | the teacher's question | — | at school | now |
+| 昨日した | We | — | answered | the teacher's question | — | at school | yesterday |
+| いつもの動き | They | — | answer | an easy question | — | at school | every day |
+| 今している | They | are | answering | an easy question | — | at school | now |
+| 昨日した | They | — | answered | an easy question | — | at school | yesterday |
+| いつもの動き | I | — | answer | the last question | — | at school | every day |
+| 今している | I | am | answering | the last question | — | at school | now |
+| 昨日した | I | — | answered | the last question | — | at school | yesterday |
 
 - We answer the teacher's question at school every day. — 私たちは毎日学校で先生の質問に答えます。
 - We are answering the teacher's question at school now. — 私たちは今学校で先生の質問に答えています。
@@ -1063,17 +1065,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## play：します
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | You | play | soccer with friends | — | in the park | every day |
-| 今している | You | are playing | soccer with friends | — | in the park | now |
-| 昨日した | You | played | soccer with friends | — | in the park | yesterday |
-| いつもの動き | He | plays | hide-and-seek with friends | — | in the park | every day |
-| 今している | He | is playing | hide-and-seek with friends | — | in the park | now |
-| 昨日した | He | played | hide-and-seek with friends | — | in the park | yesterday |
-| いつもの動き | She | plays | a card game with friends | — | at home | every day |
-| 今している | She | is playing | a card game with friends | — | at home | now |
-| 昨日した | She | played | a card game with friends | — | at home | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | You | — | play | soccer with friends | — | in the park | every day |
+| 今している | You | are | playing | soccer with friends | — | in the park | now |
+| 昨日した | You | — | played | soccer with friends | — | in the park | yesterday |
+| いつもの動き | He | — | plays | hide-and-seek with friends | — | in the park | every day |
+| 今している | He | is | playing | hide-and-seek with friends | — | in the park | now |
+| 昨日した | He | — | played | hide-and-seek with friends | — | in the park | yesterday |
+| いつもの動き | She | — | plays | a card game with friends | — | at home | every day |
+| 今している | She | is | playing | a card game with friends | — | at home | now |
+| 昨日した | She | — | played | a card game with friends | — | at home | yesterday |
 
 - You play soccer with friends in the park every day. — あなたは毎日公園で友だちとサッカーをします。
 - You are playing soccer with friends in the park now. — あなたは今公園で友だちとサッカーをしています。
@@ -1087,17 +1089,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## sing：歌います
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | It | sings | its favorite song | — | at home | every day |
-| 今している | It | is singing | its favorite song | — | at home | now |
-| 昨日した | It | sang | its favorite song | — | at home | yesterday |
-| いつもの動き | We | sing | a birthday song | — | at home | every day |
-| 今している | We | are singing | a birthday song | — | at home | now |
-| 昨日した | We | sang | a birthday song | — | at home | yesterday |
-| いつもの動き | They | sing | a happy song | — | at home | every day |
-| 今している | They | are singing | a happy song | — | at home | now |
-| 昨日した | They | sang | a happy song | — | at home | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | It | — | sings | its favorite song | — | at home | every day |
+| 今している | It | is | singing | its favorite song | — | at home | now |
+| 昨日した | It | — | sang | its favorite song | — | at home | yesterday |
+| いつもの動き | We | — | sing | a birthday song | — | at home | every day |
+| 今している | We | are | singing | a birthday song | — | at home | now |
+| 昨日した | We | — | sang | a birthday song | — | at home | yesterday |
+| いつもの動き | They | — | sing | a happy song | — | at home | every day |
+| 今している | They | are | singing | a happy song | — | at home | now |
+| 昨日した | They | — | sang | a happy song | — | at home | yesterday |
 
 - It sings its favorite song at home every day. — それは毎日家で好きな歌を歌います。
 - It is singing its favorite song at home now. — それは今家で好きな歌を歌っています。
@@ -1111,17 +1113,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## dance：おどります
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | I | dance to | the music | — | at home | every day |
-| 今している | I | am dancing to | the music | — | at home | now |
-| 昨日した | I | danced to | the music | — | at home | yesterday |
-| いつもの動き | You | dance | — | — | on the stage | every day |
-| 今している | You | are dancing | — | — | on the stage | now |
-| 昨日した | You | danced | — | — | on the stage | yesterday |
-| いつもの動き | He | dances | — | — | in his room | every day |
-| 今している | He | is dancing | — | — | in his room | now |
-| 昨日した | He | danced | — | — | in his room | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | I | — | dance to | the music | — | at home | every day |
+| 今している | I | am | dancing to | the music | — | at home | now |
+| 昨日した | I | — | danced to | the music | — | at home | yesterday |
+| いつもの動き | You | — | dance | — | — | on the stage | every day |
+| 今している | You | are | dancing | — | — | on the stage | now |
+| 昨日した | You | — | danced | — | — | on the stage | yesterday |
+| いつもの動き | He | — | dances | — | — | in his room | every day |
+| 今している | He | is | dancing | — | — | in his room | now |
+| 昨日した | He | — | danced | — | — | in his room | yesterday |
 
 - I dance to the music at home every day. — 私は毎日家で音楽に合わせておどります。
 - I am dancing to the music at home now. — 私は今家で音楽に合わせておどっています。
@@ -1135,17 +1137,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## watch：見ます
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | She | watches | a TV show | — | at home | every day |
-| 今している | She | is watching | a TV show | — | at home | now |
-| 昨日した | She | watched | a TV show | — | at home | yesterday |
-| いつもの動き | He | watches | a cartoon | — | at home | every day |
-| 今している | He | is watching | a cartoon | — | at home | now |
-| 昨日した | He | watched | a cartoon | — | at home | yesterday |
-| いつもの動き | We | watch | a soccer game | — | at home | every day |
-| 今している | We | are watching | a soccer game | — | at home | now |
-| 昨日した | We | watched | a soccer game | — | at home | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | She | — | watches | a TV show | — | at home | every day |
+| 今している | She | is | watching | a TV show | — | at home | now |
+| 昨日した | She | — | watched | a TV show | — | at home | yesterday |
+| いつもの動き | He | — | watches | a cartoon | — | at home | every day |
+| 今している | He | is | watching | a cartoon | — | at home | now |
+| 昨日した | He | — | watched | a cartoon | — | at home | yesterday |
+| いつもの動き | We | — | watch | a soccer game | — | at home | every day |
+| 今している | We | are | watching | a soccer game | — | at home | now |
+| 昨日した | We | — | watched | a soccer game | — | at home | yesterday |
 
 - She watches a TV show at home every day. — 彼女は毎日家でテレビ番組を見ます。
 - She is watching a TV show at home now. — 彼女は今家でテレビ番組を見ています。
@@ -1159,17 +1161,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## listen：聞きます
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | They | listen to | music | — | at home | every day |
-| 今している | They | are listening to | music | — | at home | now |
-| 昨日した | They | listened to | music | — | at home | yesterday |
-| いつもの動き | I | listen to | the rain | — | at home | every day |
-| 今している | I | am listening to | the rain | — | at home | now |
-| 昨日した | I | listened to | the rain | — | at home | yesterday |
-| いつもの動き | You | listen to | birds singing | — | at home | every day |
-| 今している | You | are listening to | birds singing | — | at home | now |
-| 昨日した | You | listened to | birds singing | — | at home | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | They | — | listen to | music | — | at home | every day |
+| 今している | They | are | listening to | music | — | at home | now |
+| 昨日した | They | — | listened to | music | — | at home | yesterday |
+| いつもの動き | I | — | listen to | the rain | — | at home | every day |
+| 今している | I | am | listening to | the rain | — | at home | now |
+| 昨日した | I | — | listened to | the rain | — | at home | yesterday |
+| いつもの動き | You | — | listen to | birds singing | — | at home | every day |
+| 今している | You | are | listening to | birds singing | — | at home | now |
+| 昨日した | You | — | listened to | birds singing | — | at home | yesterday |
 
 - They listen to music at home every day. — 彼らは毎日家で音楽を聞きます。
 - They are listening to music at home now. — 彼らは今家で音楽を聞いています。
@@ -1183,17 +1185,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## look：見ます
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | He | looks at | the moon | — | in the garden | every day |
-| 今している | He | is looking at | the moon | — | in the garden | now |
-| 昨日した | He | looked at | the moon | — | in the garden | yesterday |
-| いつもの動き | She | looks at | a little bug | — | at home | every day |
-| 今している | She | is looking at | a little bug | — | at home | now |
-| 昨日した | She | looked at | a little bug | — | at home | yesterday |
-| いつもの動き | It | looks at | a map | — | at home | every day |
-| 今している | It | is looking at | a map | — | at home | now |
-| 昨日した | It | looked at | a map | — | at home | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | He | — | looks at | the moon | — | in the garden | every day |
+| 今している | He | is | looking at | the moon | — | in the garden | now |
+| 昨日した | He | — | looked at | the moon | — | in the garden | yesterday |
+| いつもの動き | She | — | looks at | a little bug | — | at home | every day |
+| 今している | She | is | looking at | a little bug | — | at home | now |
+| 昨日した | She | — | looked at | a little bug | — | at home | yesterday |
+| いつもの動き | It | — | looks at | a map | — | at home | every day |
+| 今している | It | is | looking at | a map | — | at home | now |
+| 昨日した | It | — | looked at | a map | — | at home | yesterday |
 
 - He looks at the moon in the garden every day. — 彼は毎日庭で月を見ます。
 - He is looking at the moon in the garden now. — 彼は今庭で月を見ています。
@@ -1207,11 +1209,11 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## hear：聞こえます
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| 状態 | We | hear | birds singing | — | — | — |
-| 状態 | They | hear | a dog barking | — | — | — |
-| 状態 | I | hear | a piano | — | — | — |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 状態 | We | — | hear | birds singing | — | — | — |
+| 状態 | They | — | hear | a dog barking | — | — | — |
+| 状態 | I | — | hear | a piano | — | — | — |
 
 - We hear birds singing. — 私たちは鳥の歌が聞こえます。
 - They hear a dog barking. — 彼らは犬の声が聞こえます。
@@ -1219,11 +1221,11 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## see：見かけます
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| 状態 | You | see | a red bus | — | — | — |
-| 状態 | He | sees | a white cat | — | — | — |
-| 状態 | She | sees | a small bird | — | — | — |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 状態 | You | — | see | a red bus | — | — | — |
+| 状態 | He | — | sees | a white cat | — | — | — |
+| 状態 | She | — | sees | a small bird | — | — | — |
 
 - You see a red bus. — あなたは赤いバスを見かけます。
 - He sees a white cat. — 彼は白い猫を見かけます。
@@ -1231,17 +1233,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## touch：さわります
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | It | touches | a soft blanket | — | at home | every day |
-| 今している | It | is touching | a soft blanket | — | at home | now |
-| 昨日した | It | touched | a soft blanket | — | at home | yesterday |
-| いつもの動き | We | touch | cold water | — | at home | every day |
-| 今している | We | are touching | cold water | — | at home | now |
-| 昨日した | We | touched | cold water | — | at home | yesterday |
-| いつもの動き | They | touch | a leaf | — | at home | every day |
-| 今している | They | are touching | a leaf | — | at home | now |
-| 昨日した | They | touched | a leaf | — | at home | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | It | — | touches | a soft blanket | — | at home | every day |
+| 今している | It | is | touching | a soft blanket | — | at home | now |
+| 昨日した | It | — | touched | a soft blanket | — | at home | yesterday |
+| いつもの動き | We | — | touch | cold water | — | at home | every day |
+| 今している | We | are | touching | cold water | — | at home | now |
+| 昨日した | We | — | touched | cold water | — | at home | yesterday |
+| いつもの動き | They | — | touch | a leaf | — | at home | every day |
+| 今している | They | are | touching | a leaf | — | at home | now |
+| 昨日した | They | — | touched | a leaf | — | at home | yesterday |
 
 - It touches a soft blanket at home every day. — それは毎日家でやわらかい毛布にさわります。
 - It is touching a soft blanket at home now. — それは今家でやわらかい毛布にさわっています。
@@ -1255,11 +1257,11 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## feel：感じます
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| 状態 | I | feel | the wind | — | — | — |
-| 状態 | You | feel | raindrops | — | — | — |
-| 状態 | He | feels | the warmth of the sun | — | — | — |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 状態 | I | — | feel | the wind | — | — | — |
+| 状態 | You | — | feel | raindrops | — | — | — |
+| 状態 | He | — | feels | the warmth of the sun | — | — | — |
 
 - I feel the wind. — 私は風を感じます。
 - You feel raindrops. — あなたは雨のしずくを感じます。
@@ -1267,17 +1269,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## open：開けます
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | She | opens | her lunch box | — | at school | every day |
-| 今している | She | is opening | her lunch box | — | at school | now |
-| 昨日した | She | opened | her lunch box | — | at school | yesterday |
-| いつもの動き | He | opens | a book | — | at home | every day |
-| 今している | He | is opening | a book | — | at home | now |
-| 昨日した | He | opened | a book | — | at home | yesterday |
-| いつもの動き | We | open | a window | — | at home | every day |
-| 今している | We | are opening | a window | — | at home | now |
-| 昨日した | We | opened | a window | — | at home | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | She | — | opens | her lunch box | — | at school | every day |
+| 今している | She | is | opening | her lunch box | — | at school | now |
+| 昨日した | She | — | opened | her lunch box | — | at school | yesterday |
+| いつもの動き | He | — | opens | a book | — | at home | every day |
+| 今している | He | is | opening | a book | — | at home | now |
+| 昨日した | He | — | opened | a book | — | at home | yesterday |
+| いつもの動き | We | — | open | a window | — | at home | every day |
+| 今している | We | are | opening | a window | — | at home | now |
+| 昨日した | We | — | opened | a window | — | at home | yesterday |
 
 - She opens her lunch box at school every day. — 彼女は毎日学校でお弁当箱を開けます。
 - She is opening her lunch box at school now. — 彼女は今学校でお弁当箱を開けています。
@@ -1291,17 +1293,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## close：閉じます
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | They | close | their book | — | at home | every day |
-| 今している | They | are closing | their book | — | at home | now |
-| 昨日した | They | closed | their book | — | at home | yesterday |
-| いつもの動き | I | close | a box | — | at home | every day |
-| 今している | I | am closing | a box | — | at home | now |
-| 昨日した | I | closed | a box | — | at home | yesterday |
-| いつもの動き | You | close | your eyes | — | at home | every day |
-| 今している | You | are closing | your eyes | — | at home | now |
-| 昨日した | You | closed | your eyes | — | at home | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | They | — | close | their book | — | at home | every day |
+| 今している | They | are | closing | their book | — | at home | now |
+| 昨日した | They | — | closed | their book | — | at home | yesterday |
+| いつもの動き | I | — | close | a box | — | at home | every day |
+| 今している | I | am | closing | a box | — | at home | now |
+| 昨日した | I | — | closed | a box | — | at home | yesterday |
+| いつもの動き | You | — | close | your eyes | — | at home | every day |
+| 今している | You | are | closing | your eyes | — | at home | now |
+| 昨日した | You | — | closed | your eyes | — | at home | yesterday |
 
 - They close their book at home every day. — 彼らは毎日家で本を閉じます。
 - They are closing their book at home now. — 彼らは今家で本を閉じています。
@@ -1315,17 +1317,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## push：押します
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | He | pushes | a blue button | — | at home | every day |
-| 今している | He | is pushing | a blue button | — | at home | now |
-| 昨日した | He | pushed | a blue button | — | at home | yesterday |
-| いつもの動き | She | pushes | a small cart | — | at home | every day |
-| 今している | She | is pushing | a small cart | — | at home | now |
-| 昨日した | She | pushed | a small cart | — | at home | yesterday |
-| いつもの動き | It | pushes | a toy car | — | at home | every day |
-| 今している | It | is pushing | a toy car | — | at home | now |
-| 昨日した | It | pushed | a toy car | — | at home | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | He | — | pushes | a blue button | — | at home | every day |
+| 今している | He | is | pushing | a blue button | — | at home | now |
+| 昨日した | He | — | pushed | a blue button | — | at home | yesterday |
+| いつもの動き | She | — | pushes | a small cart | — | at home | every day |
+| 今している | She | is | pushing | a small cart | — | at home | now |
+| 昨日した | She | — | pushed | a small cart | — | at home | yesterday |
+| いつもの動き | It | — | pushes | a toy car | — | at home | every day |
+| 今している | It | is | pushing | a toy car | — | at home | now |
+| 昨日した | It | — | pushed | a toy car | — | at home | yesterday |
 
 - He pushes a blue button at home every day. — 彼は毎日家で青いボタンを押します。
 - He is pushing a blue button at home now. — 彼は今家で青いボタンを押しています。
@@ -1339,17 +1341,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## pull：引きます
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | We | pull | a rope | — | at home | every day |
-| 今している | We | are pulling | a rope | — | at home | now |
-| 昨日した | We | pulled | a rope | — | at home | yesterday |
-| いつもの動き | They | pull | a little wagon | — | at home | every day |
-| 今している | They | are pulling | a little wagon | — | at home | now |
-| 昨日した | They | pulled | a little wagon | — | at home | yesterday |
-| いつもの動き | I | pull | a chair | — | at home | every day |
-| 今している | I | am pulling | a chair | — | at home | now |
-| 昨日した | I | pulled | a chair | — | at home | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | We | — | pull | a rope | — | at home | every day |
+| 今している | We | are | pulling | a rope | — | at home | now |
+| 昨日した | We | — | pulled | a rope | — | at home | yesterday |
+| いつもの動き | They | — | pull | a little wagon | — | at home | every day |
+| 今している | They | are | pulling | a little wagon | — | at home | now |
+| 昨日した | They | — | pulled | a little wagon | — | at home | yesterday |
+| いつもの動き | I | — | pull | a chair | — | at home | every day |
+| 今している | I | am | pulling | a chair | — | at home | now |
+| 昨日した | I | — | pulled | a chair | — | at home | yesterday |
 
 - We pull a rope at home every day. — 私たちは毎日家でロープを引きます。
 - We are pulling a rope at home now. — 私たちは今家でロープを引いています。
@@ -1363,17 +1365,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## turn：回します
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | You | turn | the handle | — | at home | every day |
-| 今している | You | are turning | the handle | — | at home | now |
-| 昨日した | You | turned | the handle | — | at home | yesterday |
-| いつもの動き | He | turns | the doorknob | — | at home | every day |
-| 今している | He | is turning | the doorknob | — | at home | now |
-| 昨日した | He | turned | the doorknob | — | at home | yesterday |
-| いつもの動き | She | turns | a toy wheel | — | at home | every day |
-| 今している | She | is turning | a toy wheel | — | at home | now |
-| 昨日した | She | turned | a toy wheel | — | at home | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | You | — | turn | the handle | — | at home | every day |
+| 今している | You | are | turning | the handle | — | at home | now |
+| 昨日した | You | — | turned | the handle | — | at home | yesterday |
+| いつもの動き | He | — | turns | the doorknob | — | at home | every day |
+| 今している | He | is | turning | the doorknob | — | at home | now |
+| 昨日した | He | — | turned | the doorknob | — | at home | yesterday |
+| いつもの動き | She | — | turns | a toy wheel | — | at home | every day |
+| 今している | She | is | turning | a toy wheel | — | at home | now |
+| 昨日した | She | — | turned | a toy wheel | — | at home | yesterday |
 
 - You turn the handle at home every day. — あなたは毎日家でハンドルを回します。
 - You are turning the handle at home now. — あなたは今家でハンドルを回しています。
@@ -1387,17 +1389,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## lift：持ち上げます
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | It | lifts | a small box | — | at home | every day |
-| 今している | It | is lifting | a small box | — | at home | now |
-| 昨日した | It | lifted | a small box | — | at home | yesterday |
-| いつもの動き | We | lift | a bag | — | at home | every day |
-| 今している | We | are lifting | a bag | — | at home | now |
-| 昨日した | We | lifted | a bag | — | at home | yesterday |
-| いつもの動き | They | lift | the lid | — | at home | every day |
-| 今している | They | are lifting | the lid | — | at home | now |
-| 昨日した | They | lifted | the lid | — | at home | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | It | — | lifts | a small box | — | at home | every day |
+| 今している | It | is | lifting | a small box | — | at home | now |
+| 昨日した | It | — | lifted | a small box | — | at home | yesterday |
+| いつもの動き | We | — | lift | a bag | — | at home | every day |
+| 今している | We | are | lifting | a bag | — | at home | now |
+| 昨日した | We | — | lifted | a bag | — | at home | yesterday |
+| いつもの動き | They | — | lift | the lid | — | at home | every day |
+| 今している | They | are | lifting | the lid | — | at home | now |
+| 昨日した | They | — | lifted | the lid | — | at home | yesterday |
 
 - It lifts a small box at home every day. — それは毎日家で小さな箱を持ち上げます。
 - It is lifting a small box at home now. — それは今家で小さな箱を持ち上げています。
@@ -1411,17 +1413,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## carry：運びます
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | I | carry | books | — | at home | every day |
-| 今している | I | am carrying | books | — | at home | now |
-| 昨日した | I | carried | books | — | at home | yesterday |
-| いつもの動き | You | carry | a basket | — | at home | every day |
-| 今している | You | are carrying | a basket | — | at home | now |
-| 昨日した | You | carried | a basket | — | at home | yesterday |
-| いつもの動き | He | carries | a blanket | — | at home | every day |
-| 今している | He | is carrying | a blanket | — | at home | now |
-| 昨日した | He | carried | a blanket | — | at home | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | I | — | carry | books | — | at home | every day |
+| 今している | I | am | carrying | books | — | at home | now |
+| 昨日した | I | — | carried | books | — | at home | yesterday |
+| いつもの動き | You | — | carry | a basket | — | at home | every day |
+| 今している | You | are | carrying | a basket | — | at home | now |
+| 昨日した | You | — | carried | a basket | — | at home | yesterday |
+| いつもの動き | He | — | carries | a blanket | — | at home | every day |
+| 今している | He | is | carrying | a blanket | — | at home | now |
+| 昨日した | He | — | carried | a blanket | — | at home | yesterday |
 
 - I carry books at home every day. — 私は毎日家で本を運びます。
 - I am carrying books at home now. — 私は今家で本を運んでいます。
@@ -1435,17 +1437,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## hold：持ちます
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | She | holds | a red balloon | — | outside | every day |
-| 今している | She | is holding | a red balloon | — | outside | now |
-| 昨日した | She | held | a red balloon | — | outside | yesterday |
-| いつもの動き | He | holds | an umbrella | — | outside | every day |
-| 今している | He | is holding | an umbrella | — | outside | now |
-| 昨日した | He | held | an umbrella | — | outside | yesterday |
-| いつもの動き | We | hold | a little flag | — | outside | every day |
-| 今している | We | are holding | a little flag | — | outside | now |
-| 昨日した | We | held | a little flag | — | outside | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | She | — | holds | a red balloon | — | outside | every day |
+| 今している | She | is | holding | a red balloon | — | outside | now |
+| 昨日した | She | — | held | a red balloon | — | outside | yesterday |
+| いつもの動き | He | — | holds | an umbrella | — | outside | every day |
+| 今している | He | is | holding | an umbrella | — | outside | now |
+| 昨日した | He | — | held | an umbrella | — | outside | yesterday |
+| いつもの動き | We | — | hold | a little flag | — | outside | every day |
+| 今している | We | are | holding | a little flag | — | outside | now |
+| 昨日した | We | — | held | a little flag | — | outside | yesterday |
 
 - She holds a red balloon outside every day. — 彼女は毎日外で赤い風船を持ちます。
 - She is holding a red balloon outside now. — 彼女は今外で赤い風船を持っています。
@@ -1459,17 +1461,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## put：置きます
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | They | put | a book | on the desk | — | every day |
-| 今している | They | are putting | a book | on the desk | — | now |
-| 昨日した | They | put | a book | on the desk | — | yesterday |
-| いつもの動き | I | put | a cup | on the desk | — | every day |
-| 今している | I | am putting | a cup | on the desk | — | now |
-| 昨日した | I | put | a cup | on the desk | — | yesterday |
-| いつもの動き | You | put | a pencil | on the desk | — | every day |
-| 今している | You | are putting | a pencil | on the desk | — | now |
-| 昨日した | You | put | a pencil | on the desk | — | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | They | — | put | a book | on the desk | — | every day |
+| 今している | They | are | putting | a book | on the desk | — | now |
+| 昨日した | They | — | put | a book | on the desk | — | yesterday |
+| いつもの動き | I | — | put | a cup | on the desk | — | every day |
+| 今している | I | am | putting | a cup | on the desk | — | now |
+| 昨日した | I | — | put | a cup | on the desk | — | yesterday |
+| いつもの動き | You | — | put | a pencil | on the desk | — | every day |
+| 今している | You | are | putting | a pencil | on the desk | — | now |
+| 昨日した | You | — | put | a pencil | on the desk | — | yesterday |
 
 - They put a book on the desk every day. — 彼らは毎日机の上に本を置きます。
 - They are putting a book on the desk now. — 彼らは今机の上に本を置いています。
@@ -1483,17 +1485,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## take：とります
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | He | takes | a photo of a red car | — | on the street | every day |
-| 今している | He | is taking | a photo of a red car | — | on the street | now |
-| 昨日した | He | took | a photo of a red car | — | on the street | yesterday |
-| いつもの動き | She | takes | a photo of a cat | — | on the street | every day |
-| 今している | She | is taking | a photo of a cat | — | on the street | now |
-| 昨日した | She | took | a photo of a cat | — | on the street | yesterday |
-| いつもの動き | It | takes | a photo of a flower | — | on the street | every day |
-| 今している | It | is taking | a photo of a flower | — | on the street | now |
-| 昨日した | It | took | a photo of a flower | — | on the street | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | He | — | takes | a photo of a red car | — | on the street | every day |
+| 今している | He | is | taking | a photo of a red car | — | on the street | now |
+| 昨日した | He | — | took | a photo of a red car | — | on the street | yesterday |
+| いつもの動き | She | — | takes | a photo of a cat | — | on the street | every day |
+| 今している | She | is | taking | a photo of a cat | — | on the street | now |
+| 昨日した | She | — | took | a photo of a cat | — | on the street | yesterday |
+| いつもの動き | It | — | takes | a photo of a flower | — | on the street | every day |
+| 今している | It | is | taking | a photo of a flower | — | on the street | now |
+| 昨日した | It | — | took | a photo of a flower | — | on the street | yesterday |
 
 - He takes a photo of a red car on the street every day. — 彼は毎日通りで赤い車の写真をとります。
 - He is taking a photo of a red car on the street now. — 彼は今通りで赤い車の写真をとっています。
@@ -1507,17 +1509,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## give：あげます
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | We | give | our brother | a sticker | at home | every day |
-| 今している | We | are giving | our brother | a sticker | at home | now |
-| 昨日した | We | gave | our brother | a sticker | at home | yesterday |
-| いつもの動き | They | give | their friend | a card | at home | every day |
-| 今している | They | are giving | their friend | a card | at home | now |
-| 昨日した | They | gave | their friend | a card | at home | yesterday |
-| いつもの動き | I | give | my sister | a flower | at home | every day |
-| 今している | I | am giving | my sister | a flower | at home | now |
-| 昨日した | I | gave | my sister | a flower | at home | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | We | — | give | our brother | a sticker | at home | every day |
+| 今している | We | are | giving | our brother | a sticker | at home | now |
+| 昨日した | We | — | gave | our brother | a sticker | at home | yesterday |
+| いつもの動き | They | — | give | their friend | a card | at home | every day |
+| 今している | They | are | giving | their friend | a card | at home | now |
+| 昨日した | They | — | gave | their friend | a card | at home | yesterday |
+| いつもの動き | I | — | give | my sister | a flower | at home | every day |
+| 今している | I | am | giving | my sister | a flower | at home | now |
+| 昨日した | I | — | gave | my sister | a flower | at home | yesterday |
 
 - We give our brother a sticker at home every day. — 私たちは毎日家で弟にシールをあげます。
 - We are giving our brother a sticker at home now. — 私たちは今家で弟にシールをあげています。
@@ -1531,17 +1533,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## get：もらいます
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | You | get | a new pencil | — | at home | every day |
-| 今している | You | are getting | a new pencil | — | at home | now |
-| 昨日した | You | got | a new pencil | — | at home | yesterday |
-| いつもの動き | He | gets | a sticker | — | at home | every day |
-| 今している | He | is getting | a sticker | — | at home | now |
-| 昨日した | He | got | a sticker | — | at home | yesterday |
-| いつもの動き | She | gets | a postcard | — | at home | every day |
-| 今している | She | is getting | a postcard | — | at home | now |
-| 昨日した | She | got | a postcard | — | at home | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | You | — | get | a new pencil | — | at home | every day |
+| 今している | You | are | getting | a new pencil | — | at home | now |
+| 昨日した | You | — | got | a new pencil | — | at home | yesterday |
+| いつもの動き | He | — | gets | a sticker | — | at home | every day |
+| 今している | He | is | getting | a sticker | — | at home | now |
+| 昨日した | He | — | got | a sticker | — | at home | yesterday |
+| いつもの動き | She | — | gets | a postcard | — | at home | every day |
+| 今している | She | is | getting | a postcard | — | at home | now |
+| 昨日した | She | — | got | a postcard | — | at home | yesterday |
 
 - You get a new pencil at home every day. — あなたは毎日家で新しい鉛筆をもらいます。
 - You are getting a new pencil at home now. — あなたは今家で新しい鉛筆をもらっています。
@@ -1555,17 +1557,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## bring：持ってきます
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | It | brings | its lunch | to school | — | every day |
-| 今している | It | is bringing | its lunch | to school | — | now |
-| 昨日した | It | brought | its lunch | to school | — | yesterday |
-| いつもの動き | We | bring | our favorite book | to school | — | every day |
-| 今している | We | are bringing | our favorite book | to school | — | now |
-| 昨日した | We | brought | our favorite book | to school | — | yesterday |
-| いつもの動き | They | bring | a blue ball | to school | — | every day |
-| 今している | They | are bringing | a blue ball | to school | — | now |
-| 昨日した | They | brought | a blue ball | to school | — | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | It | — | brings | its lunch | to school | — | every day |
+| 今している | It | is | bringing | its lunch | to school | — | now |
+| 昨日した | It | — | brought | its lunch | to school | — | yesterday |
+| いつもの動き | We | — | bring | our favorite book | to school | — | every day |
+| 今している | We | are | bringing | our favorite book | to school | — | now |
+| 昨日した | We | — | brought | our favorite book | to school | — | yesterday |
+| いつもの動き | They | — | bring | a blue ball | to school | — | every day |
+| 今している | They | are | bringing | a blue ball | to school | — | now |
+| 昨日した | They | — | brought | a blue ball | to school | — | yesterday |
 
 - It brings its lunch to school every day. — それは毎日学校にお弁当を持ってきます。
 - It is bringing its lunch to school now. — それは今学校にお弁当を持ってきています。
@@ -1579,17 +1581,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## send：送ります
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | I | send | Grandma | a card | at home | every day |
-| 今している | I | am sending | Grandma | a card | at home | now |
-| 昨日した | I | sent | Grandma | a card | at home | yesterday |
-| いつもの動き | You | send | your friend | a letter | at home | every day |
-| 今している | You | are sending | your friend | a letter | at home | now |
-| 昨日した | You | sent | your friend | a letter | at home | yesterday |
-| いつもの動き | He | sends | Dad | a photo | at home | every day |
-| 今している | He | is sending | Dad | a photo | at home | now |
-| 昨日した | He | sent | Dad | a photo | at home | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | I | — | send | Grandma | a card | at home | every day |
+| 今している | I | am | sending | Grandma | a card | at home | now |
+| 昨日した | I | — | sent | Grandma | a card | at home | yesterday |
+| いつもの動き | You | — | send | your friend | a letter | at home | every day |
+| 今している | You | are | sending | your friend | a letter | at home | now |
+| 昨日した | You | — | sent | your friend | a letter | at home | yesterday |
+| いつもの動き | He | — | sends | Dad | a photo | at home | every day |
+| 今している | He | is | sending | Dad | a photo | at home | now |
+| 昨日した | He | — | sent | Dad | a photo | at home | yesterday |
 
 - I send Grandma a card at home every day. — 私は毎日家でおばあちゃんにカードを送ります。
 - I am sending Grandma a card at home now. — 私は今家でおばあちゃんにカードを送っています。
@@ -1603,17 +1605,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## show：見せます
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | She | shows | Mom | her picture | at home | every day |
-| 今している | She | is showing | Mom | her picture | at home | now |
-| 昨日した | She | showed | Mom | her picture | at home | yesterday |
-| いつもの動き | He | shows | his friend | a map | at home | every day |
-| 今している | He | is showing | his friend | a map | at home | now |
-| 昨日した | He | showed | his friend | a map | at home | yesterday |
-| いつもの動き | We | show | our brother | a robot | at home | every day |
-| 今している | We | are showing | our brother | a robot | at home | now |
-| 昨日した | We | showed | our brother | a robot | at home | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | She | — | shows | Mom | her picture | at home | every day |
+| 今している | She | is | showing | Mom | her picture | at home | now |
+| 昨日した | She | — | showed | Mom | her picture | at home | yesterday |
+| いつもの動き | He | — | shows | his friend | a map | at home | every day |
+| 今している | He | is | showing | his friend | a map | at home | now |
+| 昨日した | He | — | showed | his friend | a map | at home | yesterday |
+| いつもの動き | We | — | show | our brother | a robot | at home | every day |
+| 今している | We | are | showing | our brother | a robot | at home | now |
+| 昨日した | We | — | showed | our brother | a robot | at home | yesterday |
 
 - She shows Mom her picture at home every day. — 彼女は毎日家でお母さんに絵を見せます。
 - She is showing Mom her picture at home now. — 彼女は今家でお母さんに絵を見せています。
@@ -1627,17 +1629,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## tell：伝えます
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | They | tell | their sister | the plan | at home | every day |
-| 今している | They | are telling | their sister | the plan | at home | now |
-| 昨日した | They | told | their sister | the plan | at home | yesterday |
-| いつもの動き | I | tell | my friend | the answer | at home | every day |
-| 今している | I | am telling | my friend | the answer | at home | now |
-| 昨日した | I | told | my friend | the answer | at home | yesterday |
-| いつもの動き | You | tell | Dad | the time | at home | every day |
-| 今している | You | are telling | Dad | the time | at home | now |
-| 昨日した | You | told | Dad | the time | at home | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | They | — | tell | their sister | the plan | at home | every day |
+| 今している | They | are | telling | their sister | the plan | at home | now |
+| 昨日した | They | — | told | their sister | the plan | at home | yesterday |
+| いつもの動き | I | — | tell | my friend | the answer | at home | every day |
+| 今している | I | am | telling | my friend | the answer | at home | now |
+| 昨日した | I | — | told | my friend | the answer | at home | yesterday |
+| いつもの動き | You | — | tell | Dad | the time | at home | every day |
+| 今している | You | are | telling | Dad | the time | at home | now |
+| 昨日した | You | — | told | Dad | the time | at home | yesterday |
 
 - They tell their sister the plan at home every day. — 彼らは毎日家で妹に予定を伝えます。
 - They are telling their sister the plan at home now. — 彼らは今家で妹に予定を伝えています。
@@ -1651,17 +1653,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## ask：たずねます
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | He | asks | the teacher | a question | at school | every day |
-| 今している | He | is asking | the teacher | a question | at school | now |
-| 昨日した | He | asked | the teacher | a question | at school | yesterday |
-| いつもの動き | She | asks | Dad | a question | at home | every day |
-| 今している | She | is asking | Dad | a question | at home | now |
-| 昨日した | She | asked | Dad | a question | at home | yesterday |
-| いつもの動き | He | asks | his friend | their name | at school | every day |
-| 今している | He | is asking | his friend | their name | at school | now |
-| 昨日した | He | asked | his friend | their name | at school | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | He | — | asks | the teacher | a question | at school | every day |
+| 今している | He | is | asking | the teacher | a question | at school | now |
+| 昨日した | He | — | asked | the teacher | a question | at school | yesterday |
+| いつもの動き | She | — | asks | Dad | a question | at home | every day |
+| 今している | She | is | asking | Dad | a question | at home | now |
+| 昨日した | She | — | asked | Dad | a question | at home | yesterday |
+| いつもの動き | He | — | asks | his friend | their name | at school | every day |
+| 今している | He | is | asking | his friend | their name | at school | now |
+| 昨日した | He | — | asked | his friend | their name | at school | yesterday |
 
 - He asks the teacher a question at school every day. — 彼は毎日学校で先生に質問をします。
 - He is asking the teacher a question at school now. — 彼は今学校で先生に質問をしています。
@@ -1675,17 +1677,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## talk：話します
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | We | talk with | a friend | — | at home | every day |
-| 今している | We | are talking with | a friend | — | at home | now |
-| 昨日した | We | talked with | a friend | — | at home | yesterday |
-| いつもの動き | They | talk with | Mom | — | at home | every day |
-| 今している | They | are talking with | Mom | — | at home | now |
-| 昨日した | They | talked with | Mom | — | at home | yesterday |
-| いつもの動き | I | talk with | Grandpa | — | at home | every day |
-| 今している | I | am talking with | Grandpa | — | at home | now |
-| 昨日した | I | talked with | Grandpa | — | at home | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | We | — | talk with | a friend | — | at home | every day |
+| 今している | We | are | talking with | a friend | — | at home | now |
+| 昨日した | We | — | talked with | a friend | — | at home | yesterday |
+| いつもの動き | They | — | talk with | Mom | — | at home | every day |
+| 今している | They | are | talking with | Mom | — | at home | now |
+| 昨日した | They | — | talked with | Mom | — | at home | yesterday |
+| いつもの動き | I | — | talk with | Grandpa | — | at home | every day |
+| 今している | I | am | talking with | Grandpa | — | at home | now |
+| 昨日した | I | — | talked with | Grandpa | — | at home | yesterday |
 
 - We talk with a friend at home every day. — 私たちは毎日家で友だちと話します。
 - We are talking with a friend at home now. — 私たちは今家で友だちと話しています。
@@ -1699,17 +1701,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## speak：話します
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | You | speak | English | — | at home | every day |
-| 今している | You | are speaking | English | — | at home | now |
-| 昨日した | You | spoke | English | — | at home | yesterday |
-| いつもの動き | He | speaks | Japanese | — | at home | every day |
-| 今している | He | is speaking | Japanese | — | at home | now |
-| 昨日した | He | spoke | Japanese | — | at home | yesterday |
-| いつもの動き | She | speaks | English | — | at home | every day |
-| 今している | She | is speaking | English | — | at home | now |
-| 昨日した | She | spoke | English | — | at home | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | You | — | speak | English | — | at home | every day |
+| 今している | You | are | speaking | English | — | at home | now |
+| 昨日した | You | — | spoke | English | — | at home | yesterday |
+| いつもの動き | He | — | speaks | Japanese | — | at home | every day |
+| 今している | He | is | speaking | Japanese | — | at home | now |
+| 昨日した | He | — | spoke | Japanese | — | at home | yesterday |
+| いつもの動き | She | — | speaks | English | — | at home | every day |
+| 今している | She | is | speaking | English | — | at home | now |
+| 昨日した | She | — | spoke | English | — | at home | yesterday |
 
 - You speak English at home every day. — あなたは毎日家で英語を話します。
 - You are speaking English at home now. — あなたは今家で英語を話しています。
@@ -1723,15 +1725,15 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## call：電話します
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | He | calls | Grandma | — | — | on Sundays |
-| 今している | He | is calling | Grandma | — | — | now |
-| 昨日した | He | called | Grandma | — | — | yesterday |
-| いつもの動き | We | call | Grandpa | — | — | on Sundays |
-| 今している | We | are calling | Grandpa | — | — | now |
-| 昨日した | We | called | Grandpa | — | — | yesterday |
-| 状態 | They | call | their dog | Pochi | — | — |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | He | — | calls | Grandma | — | — | on Sundays |
+| 今している | He | is | calling | Grandma | — | — | now |
+| 昨日した | He | — | called | Grandma | — | — | yesterday |
+| いつもの動き | We | — | call | Grandpa | — | — | on Sundays |
+| 今している | We | are | calling | Grandpa | — | — | now |
+| 昨日した | We | — | called | Grandpa | — | — | yesterday |
+| 状態 | They | — | call | their dog | Pochi | — | — |
 
 - He calls Grandma on Sundays. — 彼は日曜日におばあちゃんに電話します。
 - He is calling Grandma now. — 彼は今おばあちゃんに電話しています。
@@ -1743,17 +1745,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## help：手伝います
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | I | help | Dad | — | at home | every day |
-| 今している | I | am helping | Dad | — | at home | now |
-| 昨日した | I | helped | Dad | — | at home | yesterday |
-| いつもの動き | You | help | a friend | — | at home | every day |
-| 今している | You | are helping | a friend | — | at home | now |
-| 昨日した | You | helped | a friend | — | at home | yesterday |
-| いつもの動き | He | helps | his sister | — | at home | every day |
-| 今している | He | is helping | his sister | — | at home | now |
-| 昨日した | He | helped | his sister | — | at home | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | I | — | help | Dad | — | at home | every day |
+| 今している | I | am | helping | Dad | — | at home | now |
+| 昨日した | I | — | helped | Dad | — | at home | yesterday |
+| いつもの動き | You | — | help | a friend | — | at home | every day |
+| 今している | You | are | helping | a friend | — | at home | now |
+| 昨日した | You | — | helped | a friend | — | at home | yesterday |
+| いつもの動き | He | — | helps | his sister | — | at home | every day |
+| 今している | He | is | helping | his sister | — | at home | now |
+| 昨日した | He | — | helped | his sister | — | at home | yesterday |
 
 - I help Dad at home every day. — 私は毎日家でお父さんを手伝います。
 - I am helping Dad at home now. — 私は今家でお父さんを手伝っています。
@@ -1767,17 +1769,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## share：分け合います
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | She | shares | cookies with a friend | — | at home | every day |
-| 今している | She | is sharing | cookies with a friend | — | at home | now |
-| 昨日した | She | shared | cookies with a friend | — | at home | yesterday |
-| いつもの動き | He | shares | colored pencils with a friend | — | at home | every day |
-| 今している | He | is sharing | colored pencils with a friend | — | at home | now |
-| 昨日した | He | shared | colored pencils with a friend | — | at home | yesterday |
-| いつもの動き | We | share | stickers with a friend | — | at home | every day |
-| 今している | We | are sharing | stickers with a friend | — | at home | now |
-| 昨日した | We | shared | stickers with a friend | — | at home | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | She | — | shares | cookies with a friend | — | at home | every day |
+| 今している | She | is | sharing | cookies with a friend | — | at home | now |
+| 昨日した | She | — | shared | cookies with a friend | — | at home | yesterday |
+| いつもの動き | He | — | shares | colored pencils with a friend | — | at home | every day |
+| 今している | He | is | sharing | colored pencils with a friend | — | at home | now |
+| 昨日した | He | — | shared | colored pencils with a friend | — | at home | yesterday |
+| いつもの動き | We | — | share | stickers with a friend | — | at home | every day |
+| 今している | We | are | sharing | stickers with a friend | — | at home | now |
+| 昨日した | We | — | shared | stickers with a friend | — | at home | yesterday |
 
 - She shares cookies with a friend at home every day. — 彼女は毎日家で友だちとクッキーを分け合います。
 - She is sharing cookies with a friend at home now. — 彼女は今家で友だちとクッキーを分け合っています。
@@ -1791,17 +1793,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## thank：お礼を言います
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | They | thank | their teacher | — | at school | every day |
-| 今している | They | are thanking | their teacher | — | at school | now |
-| 昨日した | They | thanked | their teacher | — | at school | yesterday |
-| いつもの動き | I | thank | Mom | — | at home | every day |
-| 今している | I | am thanking | Mom | — | at home | now |
-| 昨日した | I | thanked | Mom | — | at home | yesterday |
-| いつもの動き | You | thank | your friend | — | at school | every day |
-| 今している | You | are thanking | your friend | — | at school | now |
-| 昨日した | You | thanked | your friend | — | at school | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | They | — | thank | their teacher | — | at school | every day |
+| 今している | They | are | thanking | their teacher | — | at school | now |
+| 昨日した | They | — | thanked | their teacher | — | at school | yesterday |
+| いつもの動き | I | — | thank | Mom | — | at home | every day |
+| 今している | I | am | thanking | Mom | — | at home | now |
+| 昨日した | I | — | thanked | Mom | — | at home | yesterday |
+| いつもの動き | You | — | thank | your friend | — | at school | every day |
+| 今している | You | are | thanking | your friend | — | at school | now |
+| 昨日した | You | — | thanked | your friend | — | at school | yesterday |
 
 - They thank their teacher at school every day. — 彼らは毎日学校で先生にお礼を言います。
 - They are thanking their teacher at school now. — 彼らは今学校で先生にお礼を言っています。
@@ -1815,17 +1817,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## meet：会います
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | He | meets | a friend | — | at the station | every day |
-| 今している | He | is meeting | a friend | — | at the station | now |
-| 昨日した | He | met | a friend | — | at the station | yesterday |
-| いつもの動き | She | meets | her cousin | — | at the station | every day |
-| 今している | She | is meeting | her cousin | — | at the station | now |
-| 昨日した | She | met | her cousin | — | at the station | yesterday |
-| いつもの動き | He | meets | Grandma | — | at the station | every day |
-| 今している | He | is meeting | Grandma | — | at the station | now |
-| 昨日した | He | met | Grandma | — | at the station | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | He | — | meets | a friend | — | at the station | every day |
+| 今している | He | is | meeting | a friend | — | at the station | now |
+| 昨日した | He | — | met | a friend | — | at the station | yesterday |
+| いつもの動き | She | — | meets | her cousin | — | at the station | every day |
+| 今している | She | is | meeting | her cousin | — | at the station | now |
+| 昨日した | She | — | met | her cousin | — | at the station | yesterday |
+| いつもの動き | He | — | meets | Grandma | — | at the station | every day |
+| 今している | He | is | meeting | Grandma | — | at the station | now |
+| 昨日した | He | — | met | Grandma | — | at the station | yesterday |
 
 - He meets a friend at the station every day. — 彼は毎日駅で友だちに会います。
 - He is meeting a friend at the station now. — 彼は今駅で友だちに会っています。
@@ -1839,17 +1841,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## visit：遊びに行きます
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | We | visit | Grandma | — | — | on Sundays |
-| 今している | We | are visiting | Grandma | — | — | now |
-| 昨日した | We | visited | Grandma | — | — | yesterday |
-| いつもの動き | They | visit | their cousin | — | — | on Sundays |
-| 今している | They | are visiting | their cousin | — | — | now |
-| 昨日した | They | visited | their cousin | — | — | yesterday |
-| いつもの動き | I | visit | my friend | — | — | on Sundays |
-| 今している | I | am visiting | my friend | — | — | now |
-| 昨日した | I | visited | my friend | — | — | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | We | — | visit | Grandma | — | — | on Sundays |
+| 今している | We | are | visiting | Grandma | — | — | now |
+| 昨日した | We | — | visited | Grandma | — | — | yesterday |
+| いつもの動き | They | — | visit | their cousin | — | — | on Sundays |
+| 今している | They | are | visiting | their cousin | — | — | now |
+| 昨日した | They | — | visited | their cousin | — | — | yesterday |
+| いつもの動き | I | — | visit | my friend | — | — | on Sundays |
+| 今している | I | am | visiting | my friend | — | — | now |
+| 昨日した | I | — | visited | my friend | — | — | yesterday |
 
 - We visit Grandma on Sundays. — 私たちは日曜日におばあちゃんのところに遊びに行きます。
 - We are visiting Grandma now. — 私たちは今おばあちゃんのところに遊びに行っています。
@@ -1863,17 +1865,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## invite：招きます
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | You | invite | your friend to your birthday party | — | at home | every day |
-| 今している | You | are inviting | your friend to your birthday party | — | at home | now |
-| 昨日した | You | invited | your friend to your birthday party | — | at home | yesterday |
-| いつもの動き | He | invites | his cousin to his birthday party | — | at home | every day |
-| 今している | He | is inviting | his cousin to his birthday party | — | at home | now |
-| 昨日した | He | invited | his cousin to his birthday party | — | at home | yesterday |
-| いつもの動き | She | invites | her neighbor to her birthday party | — | at home | every day |
-| 今している | She | is inviting | her neighbor to her birthday party | — | at home | now |
-| 昨日した | She | invited | her neighbor to her birthday party | — | at home | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | You | — | invite | your friend to your birthday party | — | at home | every day |
+| 今している | You | are | inviting | your friend to your birthday party | — | at home | now |
+| 昨日した | You | — | invited | your friend to your birthday party | — | at home | yesterday |
+| いつもの動き | He | — | invites | his cousin to his birthday party | — | at home | every day |
+| 今している | He | is | inviting | his cousin to his birthday party | — | at home | now |
+| 昨日した | He | — | invited | his cousin to his birthday party | — | at home | yesterday |
+| いつもの動き | She | — | invites | her neighbor to her birthday party | — | at home | every day |
+| 今している | She | is | inviting | her neighbor to her birthday party | — | at home | now |
+| 昨日した | She | — | invited | her neighbor to her birthday party | — | at home | yesterday |
 
 - You invite your friend to your birthday party at home every day. — あなたは毎日家で誕生日会に友だちを招きます。
 - You are inviting your friend to your birthday party at home now. — あなたは今家で誕生日会に友だちを招いています。
@@ -1887,17 +1889,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## join：加わります
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | He | joins | the game | — | at school | every day |
-| 今している | He | is joining | the game | — | at school | now |
-| 昨日した | He | joined | the game | — | at school | yesterday |
-| いつもの動き | We | join | the team | — | at school | every day |
-| 今している | We | are joining | the team | — | at school | now |
-| 昨日した | We | joined | the team | — | at school | yesterday |
-| いつもの動き | They | join | the dance club | — | at school | every day |
-| 今している | They | are joining | the dance club | — | at school | now |
-| 昨日した | They | joined | the dance club | — | at school | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | He | — | joins | the game | — | at school | every day |
+| 今している | He | is | joining | the game | — | at school | now |
+| 昨日した | He | — | joined | the game | — | at school | yesterday |
+| いつもの動き | We | — | join | the team | — | at school | every day |
+| 今している | We | are | joining | the team | — | at school | now |
+| 昨日した | We | — | joined | the team | — | at school | yesterday |
+| いつもの動き | They | — | join | the dance club | — | at school | every day |
+| 今している | They | are | joining | the dance club | — | at school | now |
+| 昨日した | They | — | joined | the dance club | — | at school | yesterday |
 
 - He joins the game at school every day. — 彼は毎日学校でゲームに加わります。
 - He is joining the game at school now. — 彼は今学校でゲームに加わっています。
@@ -1911,17 +1913,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## teach：教えます
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | I | teach | my brother | a new game | at home | every day |
-| 今している | I | am teaching | my brother | a new game | at home | now |
-| 昨日した | I | taught | my brother | a new game | at home | yesterday |
-| いつもの動き | You | teach | your friend | a song | at home | every day |
-| 今している | You | are teaching | your friend | a song | at home | now |
-| 昨日した | You | taught | your friend | a song | at home | yesterday |
-| いつもの動き | He | teaches | his sister | a dance | at home | every day |
-| 今している | He | is teaching | his sister | a dance | at home | now |
-| 昨日した | He | taught | his sister | a dance | at home | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | I | — | teach | my brother | a new game | at home | every day |
+| 今している | I | am | teaching | my brother | a new game | at home | now |
+| 昨日した | I | — | taught | my brother | a new game | at home | yesterday |
+| いつもの動き | You | — | teach | your friend | a song | at home | every day |
+| 今している | You | are | teaching | your friend | a song | at home | now |
+| 昨日した | You | — | taught | your friend | a song | at home | yesterday |
+| いつもの動き | He | — | teaches | his sister | a dance | at home | every day |
+| 今している | He | is | teaching | his sister | a dance | at home | now |
+| 昨日した | He | — | taught | his sister | a dance | at home | yesterday |
 
 - I teach my brother a new game at home every day. — 私は毎日家で弟に新しいゲームを教えます。
 - I am teaching my brother a new game at home now. — 私は今家で弟に新しいゲームを教えています。
@@ -1935,17 +1937,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## follow：ついていきます
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | She | follows | her teacher | — | in the park | every day |
-| 今している | She | is following | her teacher | — | in the park | now |
-| 昨日した | She | followed | her teacher | — | in the park | yesterday |
-| いつもの動き | He | follows | Dad | — | in the park | every day |
-| 今している | He | is following | Dad | — | in the park | now |
-| 昨日した | He | followed | Dad | — | in the park | yesterday |
-| いつもの動き | We | follow | our friend | — | in the park | every day |
-| 今している | We | are following | our friend | — | in the park | now |
-| 昨日した | We | followed | our friend | — | in the park | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | She | — | follows | her teacher | — | in the park | every day |
+| 今している | She | is | following | her teacher | — | in the park | now |
+| 昨日した | She | — | followed | her teacher | — | in the park | yesterday |
+| いつもの動き | He | — | follows | Dad | — | in the park | every day |
+| 今している | He | is | following | Dad | — | in the park | now |
+| 昨日した | He | — | followed | Dad | — | in the park | yesterday |
+| いつもの動き | We | — | follow | our friend | — | in the park | every day |
+| 今している | We | are | following | our friend | — | in the park | now |
+| 昨日した | We | — | followed | our friend | — | in the park | yesterday |
 
 - She follows her teacher in the park every day. — 彼女は毎日公園で先生についていきます。
 - She is following her teacher in the park now. — 彼女は今公園で先生についていっています。
@@ -1959,11 +1961,11 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## like：好きです
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| 状態 | They | like | strawberries | — | — | — |
-| 状態 | I | like | puzzles | — | — | — |
-| 状態 | You | like | penguins | — | — | — |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 状態 | They | — | like | strawberries | — | — | — |
+| 状態 | I | — | like | puzzles | — | — | — |
+| 状態 | You | — | like | penguins | — | — | — |
 
 - They like strawberries. — 彼らはいちごが好きです。
 - I like puzzles. — 私はパズルが好きです。
@@ -1971,11 +1973,11 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## love：大好きです
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| 状態 | He | loves | snow | — | — | — |
-| 状態 | She | loves | music | — | — | — |
-| 状態 | He | loves | rabbits | — | — | — |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 状態 | He | — | loves | snow | — | — | — |
+| 状態 | She | — | loves | music | — | — | — |
+| 状態 | He | — | loves | rabbits | — | — | — |
 
 - He loves snow. — 彼は雪が大好きです。
 - She loves music. — 彼女は音楽が大好きです。
@@ -1983,11 +1985,11 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## want：ほしいです
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| 状態 | We | want | a green pencil | — | — | — |
-| 状態 | They | want | a little ball | — | — | — |
-| 状態 | I | want | a new notebook | — | — | — |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 状態 | We | — | want | a green pencil | — | — | — |
+| 状態 | They | — | want | a little ball | — | — | — |
+| 状態 | I | — | want | a new notebook | — | — | — |
 
 - We want a green pencil. — 私たちは緑の鉛筆がほしいです。
 - They want a little ball. — 彼らは小さなボールがほしいです。
@@ -1995,11 +1997,11 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## need：必要です
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| 状態 | You | need | scissors | — | — | — |
-| 状態 | He | needs | white paper | — | — | — |
-| 状態 | She | needs | water | — | — | — |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 状態 | You | — | need | scissors | — | — | — |
+| 状態 | He | — | needs | white paper | — | — | — |
+| 状態 | She | — | needs | water | — | — | — |
 
 - You need scissors. — あなたははさみが必要です。
 - He needs white paper. — 彼は白い紙が必要です。
@@ -2007,17 +2009,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## choose：選びます
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | It | chooses | a blue card | — | at home | every day |
-| 今している | It | is choosing | a blue card | — | at home | now |
-| 昨日した | It | chose | a blue card | — | at home | yesterday |
-| いつもの動き | We | choose | a small apple | — | at home | every day |
-| 今している | We | are choosing | a small apple | — | at home | now |
-| 昨日した | We | chose | a small apple | — | at home | yesterday |
-| いつもの動き | They | choose | an animal book | — | at home | every day |
-| 今している | They | are choosing | an animal book | — | at home | now |
-| 昨日した | They | chose | an animal book | — | at home | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | It | — | chooses | a blue card | — | at home | every day |
+| 今している | It | is | choosing | a blue card | — | at home | now |
+| 昨日した | It | — | chose | a blue card | — | at home | yesterday |
+| いつもの動き | We | — | choose | a small apple | — | at home | every day |
+| 今している | We | are | choosing | a small apple | — | at home | now |
+| 昨日した | We | — | chose | a small apple | — | at home | yesterday |
+| いつもの動き | They | — | choose | an animal book | — | at home | every day |
+| 今している | They | are | choosing | an animal book | — | at home | now |
+| 昨日した | They | — | chose | an animal book | — | at home | yesterday |
 
 - It chooses a blue card at home every day. — それは毎日家で青いカードを選びます。
 - It is choosing a blue card at home now. — それは今家で青いカードを選んでいます。
@@ -2031,17 +2033,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## try：やってみます
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | I | try | a new game | — | at school | every day |
-| 今している | I | am trying | a new game | — | at school | now |
-| 昨日した | I | tried | a new game | — | at school | yesterday |
-| いつもの動き | You | try | a puzzle | — | at school | every day |
-| 今している | You | are trying | a puzzle | — | at school | now |
-| 昨日した | You | tried | a puzzle | — | at school | yesterday |
-| いつもの動き | He | tries | a new sport | — | at school | every day |
-| 今している | He | is trying | a new sport | — | at school | now |
-| 昨日した | He | tried | a new sport | — | at school | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | I | — | try | a new game | — | at school | every day |
+| 今している | I | am | trying | a new game | — | at school | now |
+| 昨日した | I | — | tried | a new game | — | at school | yesterday |
+| いつもの動き | You | — | try | a puzzle | — | at school | every day |
+| 今している | You | are | trying | a puzzle | — | at school | now |
+| 昨日した | You | — | tried | a puzzle | — | at school | yesterday |
+| いつもの動き | He | — | tries | a new sport | — | at school | every day |
+| 今している | He | is | trying | a new sport | — | at school | now |
+| 昨日した | He | — | tried | a new sport | — | at school | yesterday |
 
 - I try a new game at school every day. — 私は毎日学校で新しいゲームをやってみます。
 - I am trying a new game at school now. — 私は今学校で新しいゲームをやってみています。
@@ -2055,17 +2057,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## make：作ります
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | She | makes | a paper hat | — | at home | every day |
-| 今している | She | is making | a paper hat | — | at home | now |
-| 昨日した | She | made | a paper hat | — | at home | yesterday |
-| いつもの動き | He | makes | a sandwich | — | at home | every day |
-| 今している | He | is making | a sandwich | — | at home | now |
-| 昨日した | He | made | a sandwich | — | at home | yesterday |
-| いつもの動き | We | make | our sister | happy | at home | every day |
-| 今している | We | are making | our sister | happy | at home | now |
-| 昨日した | We | made | our sister | happy | at home | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | She | — | makes | a paper hat | — | at home | every day |
+| 今している | She | is | making | a paper hat | — | at home | now |
+| 昨日した | She | — | made | a paper hat | — | at home | yesterday |
+| いつもの動き | He | — | makes | a sandwich | — | at home | every day |
+| 今している | He | is | making | a sandwich | — | at home | now |
+| 昨日した | He | — | made | a sandwich | — | at home | yesterday |
+| いつもの動き | We | — | make | our sister | happy | at home | every day |
+| 今している | We | are | making | our sister | happy | at home | now |
+| 昨日した | We | — | made | our sister | happy | at home | yesterday |
 
 - She makes a paper hat at home every day. — 彼女は毎日家で紙のぼうしを作ります。
 - She is making a paper hat at home now. — 彼女は今家で紙のぼうしを作っています。
@@ -2079,17 +2081,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## build：作ります
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | They | build | a sandcastle | — | on the beach | every day |
-| 今している | They | are building | a sandcastle | — | on the beach | now |
-| 昨日した | They | built | a sandcastle | — | on the beach | yesterday |
-| いつもの動き | I | build | a little house | — | at home | every day |
-| 今している | I | am building | a little house | — | at home | now |
-| 昨日した | I | built | a little house | — | at home | yesterday |
-| いつもの動き | You | build | a tall tower | — | at home | every day |
-| 今している | You | are building | a tall tower | — | at home | now |
-| 昨日した | You | built | a tall tower | — | at home | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | They | — | build | a sandcastle | — | on the beach | every day |
+| 今している | They | are | building | a sandcastle | — | on the beach | now |
+| 昨日した | They | — | built | a sandcastle | — | on the beach | yesterday |
+| いつもの動き | I | — | build | a little house | — | at home | every day |
+| 今している | I | am | building | a little house | — | at home | now |
+| 昨日した | I | — | built | a little house | — | at home | yesterday |
+| いつもの動き | You | — | build | a tall tower | — | at home | every day |
+| 今している | You | are | building | a tall tower | — | at home | now |
+| 昨日した | You | — | built | a tall tower | — | at home | yesterday |
 
 - They build a sandcastle on the beach every day. — 彼らは毎日浜辺で砂のお城を作ります。
 - They are building a sandcastle on the beach now. — 彼らは今浜辺で砂のお城を作っています。
@@ -2103,17 +2105,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## use：使います
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | He | uses | a red pen | — | at home | every day |
-| 今している | He | is using | a red pen | — | at home | now |
-| 昨日した | He | used | a red pen | — | at home | yesterday |
-| いつもの動き | She | uses | a ruler | — | at home | every day |
-| 今している | She | is using | a ruler | — | at home | now |
-| 昨日した | She | used | a ruler | — | at home | yesterday |
-| いつもの動き | It | uses | a little spoon | — | at home | every day |
-| 今している | It | is using | a little spoon | — | at home | now |
-| 昨日した | It | used | a little spoon | — | at home | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | He | — | uses | a red pen | — | at home | every day |
+| 今している | He | is | using | a red pen | — | at home | now |
+| 昨日した | He | — | used | a red pen | — | at home | yesterday |
+| いつもの動き | She | — | uses | a ruler | — | at home | every day |
+| 今している | She | is | using | a ruler | — | at home | now |
+| 昨日した | She | — | used | a ruler | — | at home | yesterday |
+| いつもの動き | It | — | uses | a little spoon | — | at home | every day |
+| 今している | It | is | using | a little spoon | — | at home | now |
+| 昨日した | It | — | used | a little spoon | — | at home | yesterday |
 
 - He uses a red pen at home every day. — 彼は毎日家で赤いペンを使います。
 - He is using a red pen at home now. — 彼は今家で赤いペンを使っています。
@@ -2127,17 +2129,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## fix：直します
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | We | fix | a toy car with Dad | — | at home | every day |
-| 今している | We | are fixing | a toy car with Dad | — | at home | now |
-| 昨日した | We | fixed | a toy car with Dad | — | at home | yesterday |
-| いつもの動き | They | fix | a little robot with Dad | — | at home | every day |
-| 今している | They | are fixing | a little robot with Dad | — | at home | now |
-| 昨日した | They | fixed | a little robot with Dad | — | at home | yesterday |
-| いつもの動き | I | fix | a broken box with Dad | — | at home | every day |
-| 今している | I | am fixing | a broken box with Dad | — | at home | now |
-| 昨日した | I | fixed | a broken box with Dad | — | at home | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | We | — | fix | a toy car with Dad | — | at home | every day |
+| 今している | We | are | fixing | a toy car with Dad | — | at home | now |
+| 昨日した | We | — | fixed | a toy car with Dad | — | at home | yesterday |
+| いつもの動き | They | — | fix | a little robot with Dad | — | at home | every day |
+| 今している | They | are | fixing | a little robot with Dad | — | at home | now |
+| 昨日した | They | — | fixed | a little robot with Dad | — | at home | yesterday |
+| いつもの動き | I | — | fix | a broken box with Dad | — | at home | every day |
+| 今している | I | am | fixing | a broken box with Dad | — | at home | now |
+| 昨日した | I | — | fixed | a broken box with Dad | — | at home | yesterday |
 
 - We fix a toy car with Dad at home every day. — 私たちは毎日家でお父さんとおもちゃの車を直します。
 - We are fixing a toy car with Dad at home now. — 私たちは今家でお父さんとおもちゃの車を直しています。
@@ -2151,17 +2153,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## clean：そうじします
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | You | clean | your room | — | at home | on Saturdays |
-| 今している | You | are cleaning | your room | — | at home | now |
-| 昨日した | You | cleaned | your room | — | at home | yesterday |
-| いつもの動き | He | cleans | his desk | — | at home | on Saturdays |
-| 今している | He | is cleaning | his desk | — | at home | now |
-| 昨日した | He | cleaned | his desk | — | at home | yesterday |
-| いつもの動き | She | cleans | the board | — | at school | every day |
-| 今している | She | is cleaning | the board | — | at school | now |
-| 昨日した | She | cleaned | the board | — | at school | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | You | — | clean | your room | — | at home | on Saturdays |
+| 今している | You | are | cleaning | your room | — | at home | now |
+| 昨日した | You | — | cleaned | your room | — | at home | yesterday |
+| いつもの動き | He | — | cleans | his desk | — | at home | on Saturdays |
+| 今している | He | is | cleaning | his desk | — | at home | now |
+| 昨日した | He | — | cleaned | his desk | — | at home | yesterday |
+| いつもの動き | She | — | cleans | the board | — | at school | every day |
+| 今している | She | is | cleaning | the board | — | at school | now |
+| 昨日した | She | — | cleaned | the board | — | at school | yesterday |
 
 - You clean your room at home on Saturdays. — あなたは土曜日に家で自分の部屋をそうじします。
 - You are cleaning your room at home now. — あなたは今家で自分の部屋をそうじしています。
@@ -2175,17 +2177,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## wear：身につけます
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | He | wears | a red hat | — | in the park | on Sundays |
-| 今している | He | is wearing | a red hat | — | in the park | now |
-| 昨日した | He | wore | a red hat | — | in the park | yesterday |
-| いつもの動き | We | wear | a blue shirt | — | in the park | on Sundays |
-| 今している | We | are wearing | a blue shirt | — | in the park | now |
-| 昨日した | We | wore | a blue shirt | — | in the park | yesterday |
-| いつもの動き | They | wear | a yellow coat | — | in the park | on Sundays |
-| 今している | They | are wearing | a yellow coat | — | in the park | now |
-| 昨日した | They | wore | a yellow coat | — | in the park | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | He | — | wears | a red hat | — | in the park | on Sundays |
+| 今している | He | is | wearing | a red hat | — | in the park | now |
+| 昨日した | He | — | wore | a red hat | — | in the park | yesterday |
+| いつもの動き | We | — | wear | a blue shirt | — | in the park | on Sundays |
+| 今している | We | are | wearing | a blue shirt | — | in the park | now |
+| 昨日した | We | — | wore | a blue shirt | — | in the park | yesterday |
+| いつもの動き | They | — | wear | a yellow coat | — | in the park | on Sundays |
+| 今している | They | are | wearing | a yellow coat | — | in the park | now |
+| 昨日した | They | — | wore | a yellow coat | — | in the park | yesterday |
 
 - He wears a red hat in the park on Sundays. — 彼は日曜日に公園で赤いぼうしをかぶっています。
 - He is wearing a red hat in the park now. — 彼は今公園で赤いぼうしをかぶっています。
@@ -2199,17 +2201,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## change：取りかえます
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | I | change | my shirt | — | at home | every day |
-| 今している | I | am changing | my shirt | — | at home | now |
-| 昨日した | I | changed | my shirt | — | at home | yesterday |
-| いつもの動き | You | change | your socks | — | at home | every day |
-| 今している | You | are changing | your socks | — | at home | now |
-| 昨日した | You | changed | your socks | — | at home | yesterday |
-| いつもの動き | He | changes | his jackets | — | at home | every day |
-| 今している | He | is changing | his jackets | — | at home | now |
-| 昨日した | He | changed | his jackets | — | at home | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | I | — | change | my shirt | — | at home | every day |
+| 今している | I | am | changing | my shirt | — | at home | now |
+| 昨日した | I | — | changed | my shirt | — | at home | yesterday |
+| いつもの動き | You | — | change | your socks | — | at home | every day |
+| 今している | You | are | changing | your socks | — | at home | now |
+| 昨日した | You | — | changed | your socks | — | at home | yesterday |
+| いつもの動き | He | — | changes | his jackets | — | at home | every day |
+| 今している | He | is | changing | his jackets | — | at home | now |
+| 昨日した | He | — | changed | his jackets | — | at home | yesterday |
 
 - I change my shirt at home every day. — 私は毎日家でシャツを取りかえます。
 - I am changing my shirt at home now. — 私は今家でシャツを取りかえています。
@@ -2223,17 +2225,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## buy：買います
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | She | buys | a notebook with Mom | — | at a shop | every day |
-| 今している | She | is buying | a notebook with Mom | — | at a shop | now |
-| 昨日した | She | bought | a notebook with Mom | — | at a shop | yesterday |
-| いつもの動き | He | buys | an eraser with Mom | — | at a shop | every day |
-| 今している | He | is buying | an eraser with Mom | — | at a shop | now |
-| 昨日した | He | bought | an eraser with Mom | — | at a shop | yesterday |
-| いつもの動き | We | buy | a small loaf of bread with Mom | — | at a shop | every day |
-| 今している | We | are buying | a small loaf of bread with Mom | — | at a shop | now |
-| 昨日した | We | bought | a small loaf of bread with Mom | — | at a shop | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | She | — | buys | a notebook with Mom | — | at a shop | every day |
+| 今している | She | is | buying | a notebook with Mom | — | at a shop | now |
+| 昨日した | She | — | bought | a notebook with Mom | — | at a shop | yesterday |
+| いつもの動き | He | — | buys | an eraser with Mom | — | at a shop | every day |
+| 今している | He | is | buying | an eraser with Mom | — | at a shop | now |
+| 昨日した | He | — | bought | an eraser with Mom | — | at a shop | yesterday |
+| いつもの動き | We | — | buy | a small loaf of bread with Mom | — | at a shop | every day |
+| 今している | We | are | buying | a small loaf of bread with Mom | — | at a shop | now |
+| 昨日した | We | — | bought | a small loaf of bread with Mom | — | at a shop | yesterday |
 
 - She buys a notebook with Mom at a shop every day. — 彼女は毎日お店でお母さんとノートを買います。
 - She is buying a notebook with Mom at a shop now. — 彼女は今お店でお母さんとノートを買っています。
@@ -2247,17 +2249,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## pay：お金を払います
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | They | pay for | a ticket | — | at the station | every day |
-| 今している | They | are paying for | a ticket | — | at the station | now |
-| 昨日した | They | paid for | a ticket | — | at the station | yesterday |
-| いつもの動き | I | pay for | a snack | — | at a shop | every day |
-| 今している | I | am paying for | a snack | — | at a shop | now |
-| 昨日した | I | paid for | a snack | — | at a shop | yesterday |
-| いつもの動き | You | pay for | a notebook | — | at a shop | every day |
-| 今している | You | are paying for | a notebook | — | at a shop | now |
-| 昨日した | You | paid for | a notebook | — | at a shop | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | They | — | pay for | a ticket | — | at the station | every day |
+| 今している | They | are | paying for | a ticket | — | at the station | now |
+| 昨日した | They | — | paid for | a ticket | — | at the station | yesterday |
+| いつもの動き | I | — | pay for | a snack | — | at a shop | every day |
+| 今している | I | am | paying for | a snack | — | at a shop | now |
+| 昨日した | I | — | paid for | a snack | — | at a shop | yesterday |
+| いつもの動き | You | — | pay for | a notebook | — | at a shop | every day |
+| 今している | You | are | paying for | a notebook | — | at a shop | now |
+| 昨日した | You | — | paid for | a notebook | — | at a shop | yesterday |
 
 - They pay for a ticket at the station every day. — 彼らは毎日駅で切符のお金を払います。
 - They are paying for a ticket at the station now. — 彼らは今駅で切符のお金を払っています。
@@ -2271,17 +2273,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## save：ためます
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | He | saves | his pocket money for a new book | — | — | every day |
-| 今している | He | is saving | his pocket money for a new book | — | — | now |
-| 昨日した | He | saved | his pocket money for a new book | — | — | yesterday |
-| いつもの動き | She | saves | her pocket money for a bike | — | — | every day |
-| 今している | She | is saving | her pocket money for a bike | — | — | now |
-| 昨日した | She | saved | her pocket money for a bike | — | — | yesterday |
-| いつもの動き | He | saves | his pocket money for a game | — | — | every day |
-| 今している | He | is saving | his pocket money for a game | — | — | now |
-| 昨日した | He | saved | his pocket money for a game | — | — | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | He | — | saves | his pocket money for a new book | — | — | every day |
+| 今している | He | is | saving | his pocket money for a new book | — | — | now |
+| 昨日した | He | — | saved | his pocket money for a new book | — | — | yesterday |
+| いつもの動き | She | — | saves | her pocket money for a bike | — | — | every day |
+| 今している | She | is | saving | her pocket money for a bike | — | — | now |
+| 昨日した | She | — | saved | her pocket money for a bike | — | — | yesterday |
+| いつもの動き | He | — | saves | his pocket money for a game | — | — | every day |
+| 今している | He | is | saving | his pocket money for a game | — | — | now |
+| 昨日した | He | — | saved | his pocket money for a game | — | — | yesterday |
 
 - He saves his pocket money for a new book every day. — 彼は毎日新しい本のためにおこづかいをためます。
 - He is saving his pocket money for a new book now. — 彼は今新しい本のためにおこづかいをためています。
@@ -2295,15 +2297,15 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## keep：しまっておきます
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| 状態 | We | keep | our room | clean | — | — |
-| いつもの動き | They | keep | their stones | in a little box | — | every day |
-| 今している | They | are keeping | their stones | in a little box | — | now |
-| 昨日した | They | kept | their stones | in a little box | — | yesterday |
-| いつもの動き | I | keep | my treasures | in a little box | — | every day |
-| 今している | I | am keeping | my treasures | in a little box | — | now |
-| 昨日した | I | kept | my treasures | in a little box | — | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 状態 | We | — | keep | our room | clean | — | — |
+| いつもの動き | They | — | keep | their stones | in a little box | — | every day |
+| 今している | They | are | keeping | their stones | in a little box | — | now |
+| 昨日した | They | — | kept | their stones | in a little box | — | yesterday |
+| いつもの動き | I | — | keep | my treasures | in a little box | — | every day |
+| 今している | I | am | keeping | my treasures | in a little box | — | now |
+| 昨日した | I | — | kept | my treasures | in a little box | — | yesterday |
 
 - We keep our room clean. — 私たちは自分の部屋をきれいに保ちます。
 - They keep their stones in a little box every day. — 彼らは毎日小さな箱に石をしまっておきます。
@@ -2315,14 +2317,14 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## find：見つけます
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | You | find | a red leaf | — | in the park | every day |
-| 昨日した | You | found | a red leaf | — | in the park | yesterday |
-| いつもの動き | He | finds | a little stone | — | in the park | every day |
-| 昨日した | He | found | a little stone | — | in the park | yesterday |
-| いつもの動き | She | finds | a pine cone | — | in the park | every day |
-| 昨日した | She | found | a pine cone | — | in the park | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | You | — | find | a red leaf | — | in the park | every day |
+| 昨日した | You | — | found | a red leaf | — | in the park | yesterday |
+| いつもの動き | He | — | finds | a little stone | — | in the park | every day |
+| 昨日した | He | — | found | a little stone | — | in the park | yesterday |
+| いつもの動き | She | — | finds | a pine cone | — | in the park | every day |
+| 昨日した | She | — | found | a pine cone | — | in the park | yesterday |
 
 - You find a red leaf in the park every day. — あなたは毎日公園で赤い葉っぱを見つけます。
 - You found a red leaf in the park yesterday. — あなたは昨日公園で赤い葉っぱを見つけました。
@@ -2333,17 +2335,17 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## check：確かめます
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | It | checks | its bag | — | at home | every day |
-| 今している | It | is checking | its bag | — | at home | now |
-| 昨日した | It | checked | its bag | — | at home | yesterday |
-| いつもの動き | We | check | our answer | — | at home | every day |
-| 今している | We | are checking | our answer | — | at home | now |
-| 昨日した | We | checked | our answer | — | at home | yesterday |
-| いつもの動き | They | check | their timetable | — | at home | every day |
-| 今している | They | are checking | their timetable | — | at home | now |
-| 昨日した | They | checked | their timetable | — | at home | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| いつもの動き | It | — | checks | its bag | — | at home | every day |
+| 今している | It | is | checking | its bag | — | at home | now |
+| 昨日した | It | — | checked | its bag | — | at home | yesterday |
+| いつもの動き | We | — | check | our answer | — | at home | every day |
+| 今している | We | are | checking | our answer | — | at home | now |
+| 昨日した | We | — | checked | our answer | — | at home | yesterday |
+| いつもの動き | They | — | check | their timetable | — | at home | every day |
+| 今している | They | are | checking | their timetable | — | at home | now |
+| 昨日した | They | — | checked | their timetable | — | at home | yesterday |
 
 - It checks its bag at home every day. — それは毎日家で自分のかばんを確かめます。
 - It is checking its bag at home now. — それは今家で自分のかばんを確かめています。
@@ -2357,14 +2359,14 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## be＋名詞：be＋名詞
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| 状態 | I | am a student | — | — | — | — |
-| 昨日した | I | was a student | — | — | — | yesterday |
-| 状態 | You | are a helper | — | — | at the library | — |
-| 昨日した | You | were a helper | — | — | at the library | yesterday |
-| 状態 | He | is a teammate | — | — | at school | — |
-| 昨日した | He | was a teammate | — | — | at school | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 状態 | I | am | a student | — | — | — | — |
+| 昨日した | I | was | a student | — | — | — | yesterday |
+| 状態 | You | are | a helper | — | — | at the library | — |
+| 昨日した | You | were | a helper | — | — | at the library | yesterday |
+| 状態 | He | is | a teammate | — | — | at school | — |
+| 昨日した | He | was | a teammate | — | — | at school | yesterday |
 
 - I am a student. — 私は生徒です。
 - I was a student yesterday. — 私は昨日は生徒でした。
@@ -2375,14 +2377,14 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## be＋形容詞：be＋形容詞
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| 状態 | She | is happy | — | — | at home | today |
-| 昨日した | She | was happy | — | — | at home | yesterday |
-| 状態 | He | is busy | — | — | at school | today |
-| 昨日した | He | was busy | — | — | at school | yesterday |
-| 状態 | We | are quiet | — | — | in the library | — |
-| 昨日した | We | were quiet | — | — | in the library | yesterday |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 状態 | She | is | happy | — | — | at home | today |
+| 昨日した | She | was | happy | — | — | at home | yesterday |
+| 状態 | He | is | busy | — | — | at school | today |
+| 昨日した | He | was | busy | — | — | at school | yesterday |
+| 状態 | We | are | quiet | — | — | in the library | — |
+| 昨日した | We | were | quiet | — | — | in the library | yesterday |
 
 - She is happy at home today. — 彼女は今日は家でうれしいです。
 - She was happy at home yesterday. — 彼女は昨日は家でうれしかったです。
@@ -2393,16 +2395,16 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## 代名詞：だれが：代名詞：だれが
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| 今している | I | am holding | a red ball | — | — | now |
-| 今している | You | are holding | a red ball | — | — | now |
-| 今している | He | is holding | a red ball | — | — | now |
-| 今している | She | is holding | a red ball | — | — | now |
-| 今している | It | is holding | a red ball | — | — | now |
-| 今している | We | are holding | a red ball | — | — | now |
-| 今している | They | are holding | a red ball | — | — | now |
-| 今している | You | are holding | a red ball | — | — | now |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 今している | I | am | holding | a red ball | — | — | now |
+| 今している | You | are | holding | a red ball | — | — | now |
+| 今している | He | is | holding | a red ball | — | — | now |
+| 今している | She | is | holding | a red ball | — | — | now |
+| 今している | It | is | holding | a red ball | — | — | now |
+| 今している | We | are | holding | a red ball | — | — | now |
+| 今している | They | are | holding | a red ball | — | — | now |
+| 今している | You | are | holding | a red ball | — | — | now |
 
 - I am holding a red ball now. — 私は今赤いボールを持っています。
   場面：ボールを持つのは話し手本人。話し手と聞き手を外に描き、吹き出しの中の対象と対応させる。
@@ -2423,16 +2425,16 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## 代名詞：だれを・だれに：代名詞：だれを・だれに
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| 今している | Mina | is looking at | me | — | — | now |
-| 今している | Mina | is looking at | you | — | — | now |
-| 今している | Mina | is looking at | him | — | — | now |
-| 今している | Mina | is looking at | her | — | — | now |
-| 今している | Mina | is looking at | it | — | — | now |
-| 今している | Mina | is looking at | us | — | — | now |
-| 今している | Mina | is looking at | them | — | — | now |
-| 今している | Mina | is looking at | you | — | — | now |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 今している | Mina | is | looking at | me | — | — | now |
+| 今している | Mina | is | looking at | you | — | — | now |
+| 今している | Mina | is | looking at | him | — | — | now |
+| 今している | Mina | is | looking at | her | — | — | now |
+| 今している | Mina | is | looking at | it | — | — | now |
+| 今している | Mina | is | looking at | us | — | — | now |
+| 今している | Mina | is | looking at | them | — | — | now |
+| 今している | Mina | is | looking at | you | — | — | now |
 
 - Mina is looking at me now. — ミナは今私を見ています。
   場面：話し手はミナとは別の人物。ミナが見る相手は話し手本人。
@@ -2453,16 +2455,16 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## 代名詞：だれの＋名詞：代名詞：だれの＋名詞
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| 今している | I | am carrying | my bag | — | — | now |
-| 今している | You | are carrying | your bag | — | — | now |
-| 今している | He | is carrying | his bag | — | — | now |
-| 今している | She | is carrying | her bag | — | — | now |
-| 今している | It | is carrying | its bag | — | — | now |
-| 今している | We | are carrying | our bags | — | — | now |
-| 今している | They | are carrying | their bags | — | — | now |
-| 今している | You | are carrying | your bags | — | — | now |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 今している | I | am | carrying | my bag | — | — | now |
+| 今している | You | are | carrying | your bag | — | — | now |
+| 今している | He | is | carrying | his bag | — | — | now |
+| 今している | She | is | carrying | her bag | — | — | now |
+| 今している | It | is | carrying | its bag | — | — | now |
+| 今している | We | are | carrying | our bags | — | — | now |
+| 今している | They | are | carrying | their bags | — | — | now |
+| 今している | You | are | carrying | your bags | — | — | now |
 
 - I am carrying my bag now. — 私は今自分のかばんを運んでいます。
   場面：かばんの持ち主は話し手本人。人物・かばんに同じ色の名札を付け、単なる持ち運びと所有を区別する。
@@ -2483,15 +2485,15 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## 代名詞：だれのもの：代名詞：だれのもの
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| 状態 | This bag | is mine | — | — | — | — |
-| 状態 | This bag | is yours | — | — | — | — |
-| 状態 | This bag | is his | — | — | — | — |
-| 状態 | This bag | is hers | — | — | — | — |
-| 状態 | This bag | is ours | — | — | — | — |
-| 状態 | This bag | is theirs | — | — | — | — |
-| 状態 | This bag | is yours | — | — | — | — |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 状態 | This bag | is | mine | — | — | — | — |
+| 状態 | This bag | is | yours | — | — | — | — |
+| 状態 | This bag | is | his | — | — | — | — |
+| 状態 | This bag | is | hers | — | — | — | — |
+| 状態 | This bag | is | ours | — | — | — | — |
+| 状態 | This bag | is | theirs | — | — | — | — |
+| 状態 | This bag | is | yours | — | — | — | — |
 
 - This bag is mine. — このかばんは私のものです。
   場面：話し手がかばんを指す。持ち主は話し手。名札と指さしで所有を示す。
@@ -2510,16 +2512,16 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 ## 代名詞の発展：自分自身：代名詞の発展：自分自身
 
-| 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
-| --- | --- | --- | --- | --- | --- | --- |
-| 今している | I | am drawing | myself | — | — | now |
-| 今している | You | are drawing | yourself | — | — | now |
-| 今している | He | is drawing | himself | — | — | now |
-| 今している | She | is drawing | herself | — | — | now |
-| 今している | It | is drawing | itself | — | — | now |
-| 今している | We | are drawing | ourselves | — | — | now |
-| 今している | They | are drawing | themselves | — | — | now |
-| 今している | You | are drawing | yourselves | — | — | now |
+| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 今している | I | am | drawing | myself | — | — | now |
+| 今している | You | are | drawing | yourself | — | — | now |
+| 今している | He | is | drawing | himself | — | — | now |
+| 今している | She | is | drawing | herself | — | — | now |
+| 今している | It | is | drawing | itself | — | — | now |
+| 今している | We | are | drawing | ourselves | — | — | now |
+| 今している | They | are | drawing | themselves | — | — | now |
+| 今している | You | are | drawing | yourselves | — | — | now |
 
 - I am drawing myself now. — 私は今自分をかいています。
   場面：絵をかくのは話し手本人。描かれている相手も同じ本人（または同じグループ）。鏡と描きかけの絵で対応を示す。

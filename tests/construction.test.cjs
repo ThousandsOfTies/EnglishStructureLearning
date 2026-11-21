@@ -25,9 +25,11 @@ test('connectors stay with the predicate and leave the target in P', () => {
   }
 });
 
-test('be nouns and adjectives are complete predicates with an empty P', () => {
-  assert.equal(get('be-noun-1').slots.predicate.en, 'am a student');
-  assert.match(get('be-adjective-1').slots.predicate.en, /^(?:am|is|are) happy$/);
+test('be goes in the support slot and nouns and adjectives stay in the predicate', () => {
+  assert.deepEqual(get('be-noun-1').slots.support, {ja: 'です', en: 'am'});
+  assert.deepEqual(get('be-noun-1').slots.predicate, {ja: '生徒', en: 'a student'});
+  assert.deepEqual(get('be-adjective-1').slots.support, {ja: 'です', en: 'is'});
+  assert.deepEqual(get('be-adjective-1').slots.predicate, {ja: 'うれしい', en: 'happy'});
   for (const q of basic.filter(q => q.group.startsWith('be-'))) {
     assert.deepEqual(q.slots.P1, {ja: '', en: ''});
     assert.deepEqual(q.slots.P2, {ja: '', en: ''});
@@ -59,8 +61,12 @@ test('verb complements and scene locations use different slots in every tense', 
 
 test('filled slots reconstruct the exact complete English sentence', () => {
   for (const q of basic) {
-    const slots = ['S', 'predicate', 'P1', 'P2', 'place', 'time'].map(k => q.slots[k].en).filter(Boolean);
+    const slots = ['S', 'support', 'predicate', 'P1', 'P2', 'place', 'time'].map(k => q.slots[k].en).filter(Boolean);
     assert.equal(slots.join(' ') + '.', q.en, q.id);
+    const leadingBe = q.en.slice(q.slots.S.en.length + 1).match(/^(am|is|are|was|were)\b/);
+    assert.equal(q.slots.support.en, leadingBe?.[0] ?? '', q.id);
+    assert.equal(Boolean(q.slots.support.ja), Boolean(leadingBe), q.id);
+    assert.ok(q.slots.predicate.ja, q.id);
   }
 });
 
@@ -86,7 +92,7 @@ test('state verbs stay simple while ongoing actions are be plus ing', () => {
   for (const q of basic.filter(q => q.meaning === 'ongoing')) {
     const subject = q.slots.S.en;
     const expectedBe = subject === 'I' ? 'am' : ['You','We','They'].includes(subject) ? 'are' : 'is';
-    assert.ok(q.slots.predicate.en.startsWith(expectedBe + ' '), q.id);
+    assert.equal(q.slots.support.en, expectedBe, q.id);
     assert.match(q.slots.predicate.en, /\b\w+ing\b/, q.id);
     assert.equal(q.slots.time.en, q.group === 'tense-pictures' ? '' : 'now');
   }
@@ -101,9 +107,11 @@ test('contrast families preserve the scene participants and include real irregul
     assert.equal(previous.scene.eventTime, '昨日');
   }
   assert.equal(get('read-1-past').note.includes('/red/'), true);
-  assert.equal(get('be-adjective-1-past').slots.predicate.ja, 'うれしかったです');
-  assert.equal(get('be-adjective-2-past').slots.predicate.ja, 'いそがしかったです');
-  assert.equal(get('be-adjective-3-past').slots.predicate.ja, '静かでした');
+  for (const [id, adjective, be] of [['be-adjective-1-past', 'うれしい', 'was'], ['be-adjective-2-past', 'いそがしい', 'was'], ['be-adjective-3-past', '静か', 'were']]) {
+    const q = get(id);
+    assert.deepEqual(q.slots.support, {ja: 'でした', en: be});
+    assert.equal(q.slots.predicate.ja, adjective);
+  }
 });
 
 test('personal pronouns cover subject, object, possessive and reflexive forms with explicit viewpoints', () => {

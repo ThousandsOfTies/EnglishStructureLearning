@@ -1,9 +1,9 @@
 /* Shared exercise rules are also used by the Node tests. */
 'use strict';
 const Construction = (() => {
-  const roles = ['S', 'predicate', 'P1', 'P2', 'place', 'time'];
+  const roles = ['S', 'support', 'predicate', 'P1', 'P2', 'place', 'time'];
   const subjectRoles = new Set(['S', '疑問詞＝S']);
-  const predicateRoles = new Set(['predicate', '述語', '助動詞', '助動詞＋否定', '否定', 'be', '述語の残り', '疑問の支え']);
+  const predicateRoles = new Set(['support', 'predicate', '述語', '助動詞', '助動詞＋否定', '否定', 'be', '述語の残り', '疑問の支え']);
   function cardsFor(q) {
     return q.level === 1
       ? roles.filter(r => q.slots[r].en).map(r => ({ text: q.slots[r].ja, role: r, en: q.slots[r].en }))
@@ -55,7 +55,7 @@ const Construction = (() => {
   function choiceMatches(q, choices, role) {
     if (q.level === 2 && role === 'P2') return !choices[role];
     if (q.level !== 1) return choices[role] === q.blocks[Number(role)][2];
-    if (['P1', 'P2', 'place', 'time'].includes(role) && !q.slots[role].ja) return !choices[role];
+    if (['support', 'P1', 'P2', 'place', 'time'].includes(role) && !q.slots[role].ja) return !choices[role];
     return Object.hasOwn(choices, role) && choices[role] === q.slots[role].ja;
   }
   function enabledTargets(q, filled) {
@@ -63,7 +63,8 @@ const Construction = (() => {
     const subjects = targets.filter(id => subjectRoles.has(targetRole(q, id)));
     if (subjects.some(id => !filled.includes(id))) return subjects;
     const predicates = targets.filter(id => predicateRoles.has(targetRole(q, id)));
-    return predicates.some(id => !filled.includes(id)) ? [...subjects, ...predicates] : targets;
+    const missingPredicate = predicates.some(id => !filled.includes(id) && (q.level !== 1 || q.slots[id].en));
+    return missingPredicate ? [...subjects, ...predicates] : targets;
   }
   function place(q, placements, index, target) {
     const cards = cardsFor(q);
@@ -128,7 +129,7 @@ if (typeof document !== 'undefined') {
   const speechRates = { fast: 1.2, normal: 1, slow: .6 };
   const $ = id => document.getElementById(id);
   const esc = value => String(value).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-  const labels = { S: '主語', predicate: '述語', P1: '対象１', P2: '対象２', place: '場所', time: '時', be: '状態のつなぎ' };
+  const labels = { S: '主語', support: '助述部', predicate: '述語', P1: '対象１', P2: '対象２', place: '場所', time: '時', be: '状態のつなぎ' };
   const compactChoices = window.matchMedia('(max-width: 720px)');
   function roleLabel(role) {
     const [prefix, target] = role.split('＝');
@@ -299,7 +300,7 @@ if (typeof document !== 'undefined') {
     $('sceneClue').hidden = $('pictureScene').hidden || !q.imageClue;
     $('pool').hidden = pictureMode;
     const parameters = q.frame === 'object-location' ? ['P2', 'P1'] : ['P1', 'P2'];
-    const japaneseOrder = ['S', 'time', 'place', ...parameters, 'predicate'];
+    const japaneseOrder = ['S', 'time', 'place', ...parameters, 'predicate', 'support'];
     const order = basic ? japaneseOrder.map(role => cards.findIndex(card => card.role === role)).filter(i => i >= 0) : Construction.shuffledIndices(q);
     const remaining = order.filter(i => !placements[i]);
     $('pool').innerHTML = `<div class="pool-cards">${remaining.map(i => poolCardHTML(cards[i], i)).join('') || '<span class="muted">使わない欄は空欄のまま。</span>'}</div>`;

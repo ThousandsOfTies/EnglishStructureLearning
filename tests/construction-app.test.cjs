@@ -35,9 +35,14 @@ test('unused slots stay empty and misplaced cards cannot pass', () => {
 test('subject unlocks predicate and both unlock every remaining slot', () => {
   const q = get('build-go-1');
   assert.deepEqual(app.enabledTargets(q, []), ['S']);
-  assert.deepEqual(app.enabledTargets(q, ['S']), ['S', 'predicate']);
+  const core = ['S', 'support', 'predicate'];
+  assert.deepEqual(app.enabledTargets(q, ['S']), core);
   assert.deepEqual(app.enabledTargets(q, ['S', 'predicate']), app.roles);
   assert.deepEqual(app.enabledTargets(q, ['predicate']), ['S']);
+  const be = get('build-be-noun-1');
+  assert.deepEqual(app.enabledTargets(be, ['S', 'predicate']), core);
+  assert.deepEqual(app.enabledTargets(be, ['S', 'support']), core);
+  assert.deepEqual(app.enabledTargets(be, core), app.roles);
 });
 
 test('advanced exercises unlock by grammatical role and relock after clearing a prerequisite', () => {
@@ -80,6 +85,22 @@ test('list practice accepts untouched unused slots while requiring every filled 
   const q = get('build-go-1');
   const picks = Object.fromEntries(app.roles.filter(role => q.slots[role].ja).map(role => [role, q.slots[role].ja]));
   assert.equal(app.choicesCorrect(q, { ...picks, P2: 'シールを' }), false);
+  assert.equal(app.choicesCorrect(q, { ...picks, support: 'です' }), false);
+});
+
+test('level one grades be in the support slot and rejects exchanging it with the predicate', () => {
+  for (const id of ['build-be-noun-1', 'build-be-adjective-1-past', 'pronoun-independent-1', 'tense-bicycle-ongoing', 'build-come-1-ongoing']) {
+    const q = get(id);
+    const picks = Object.fromEntries(app.roles.filter(role => q.slots[role].ja).map(role => [role, q.slots[role].ja]));
+    const cards = app.cardsFor(q);
+    const targets = cards.map((_, i) => app.expectedTarget(q, i));
+    assert.ok(app.choicesCorrect(q, picks), id);
+    assert.equal(app.choicesCorrect(q, { ...picks, support: picks.predicate, predicate: picks.support }), false, id);
+    assert.equal(app.choicesCorrect(q, { ...picks, support: '' }), false, id);
+    assert.ok(app.isCorrect(q, targets), id);
+    const beCard = cards.findIndex(card => card.role === 'support');
+    assert.equal(app.isCorrect(q, app.place(q, targets, beCard, 'predicate')), false, id);
+  }
 });
 
 test('advanced picture choices and cards use Japanese with an English counterpart', () => {
