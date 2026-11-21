@@ -274,12 +274,13 @@ def build_examples():
         examples = advanced[f'level{level}']
         assert len(examples) == 10
         for q in examples:
-            assert q['level'] == level and q['ja'] and q['focus'] and q['pictureHint']
+            assert q['level'] == level and q['ja'] and q['focus']
             punctuation = '?' if level == 3 else '.'
             assert ' '.join(text for _, text, _ in q['blocks']) + punctuation == q['en'], q['id']
             japanese_parts = [japanese for _, _, japanese in q['blocks']]
             assert all(japanese_parts) and len(set(japanese_parts)) == len(japanese_parts), q['id']
             if level == 3:
+                assert q['pictureHint'], q['id']
                 assert q['question']['spoken'] == (q['question']['token'] != 'whether')
                 assert 'whether' not in q['en'].lower()
     all_examples = rows + advanced['level2'] + advanced['level3']

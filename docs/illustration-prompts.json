@@ -14145,6 +14145,36 @@
       "narratorPose": "assets/character-materials/modal-speakers/boy-should.png",
       "posePrompts": "assets/character-materials/modal-speakers/prompts.json",
       "generationMethod": "Generated the narrator pose with built-in image_gen and recomposed the existing authoring layers."
+    },
+    {
+      "exampleId": "level2-07",
+      "file": "assets/construction/level2-07-visual.png",
+      "replaces": "assets/construction/level2-07.png",
+      "visualCue": "Four of five occasions show a green check.",
+      "generationMethod": "Preserved the existing illustration and composited a small, wordless frequency cue."
+    },
+    {
+      "exampleId": "level2-08",
+      "file": "assets/construction/level2-08-visual.png",
+      "replaces": "assets/construction/level2-08.png",
+      "visualCue": "All five occasions show a green check.",
+      "generationMethod": "Preserved the existing illustration and composited a small, wordless frequency cue."
+    },
+    {
+      "exampleId": "level2-09",
+      "file": "assets/construction/level2-09-visual.png",
+      "replaces": "assets/construction/level2-09.png",
+      "visualCue": "Two of five occasions show a green check.",
+      "generationMethod": "Preserved the existing illustration and composited a small, wordless frequency cue."
+    },
+    {
+      "exampleId": "level2-10",
+      "file": "assets/construction/level2-10-visual.png",
+      "replaces": "assets/construction/level2-10.png",
+      "visualCue": "The speaker opens both palms and an alternating row of smiling and unhappy faces suggests that moods vary.",
+      "narratorPose": "assets/character-materials/modal-speakers/girl-not-always.png",
+      "posePrompts": "assets/character-materials/modal-speakers/girl-not-always.json",
+      "generationMethod": "Built-in image_gen for the narrator with deterministic composition of the existing scene and mood symbols."
     }
   ],
   "sceneAtlases": {
