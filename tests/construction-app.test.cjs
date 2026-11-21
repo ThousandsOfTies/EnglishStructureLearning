@@ -132,7 +132,8 @@ test('the local-file page embeds the current curriculum and app source', () => {
   assert.ok(Object.keys(manifest.images).length >= 4);
   for (const [id, illustration] of Object.entries(manifest.images)) {
     assert.ok(get(id), id);
-    assert.ok(illustration.alt && illustration.clue);
+    assert.ok(illustration.alt);
+    assert.equal(typeof illustration.clue, 'string');
     const bytes = fs.readFileSync(path.join(__dirname, '..', illustration.file));
     assert.equal(bytes.subarray(1, 4).toString(), 'PNG');
     assert.ok(bytes.readUInt32BE(16) >= 512);

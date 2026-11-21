@@ -250,7 +250,7 @@ if (typeof document !== 'undefined') {
     const time = q.slots?.time.en ?? q.blocks.find(([role]) => role === '時')?.[1];
     $('pictureScene').innerHTML = `
       <div class="scene-visual">
-        <img class="scene-illustration" src="${esc(q.image)}" alt="${esc(q.imageAlt)}" aria-describedby="sceneClue" width="1536" height="1024">
+        <img class="scene-illustration" src="${esc(q.image)}" alt="${esc(q.imageAlt)}"${q.imageClue ? ' aria-describedby="sceneClue"' : ''} width="1536" height="1024">
         ${calendarFor(time)}
       </div>`;
   }
