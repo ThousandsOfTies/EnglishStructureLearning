@@ -12,6 +12,8 @@ S → 述語 → P1 → P2 → 場所 → 時。使わない欄は「—」。�
 
 PはParameter（引数）の教材独自の呼び名です。go to の to は述語側、school はP1側。give は「だれに→何を」、keep は「何を→どんな状態に」をP1・P2に入れます。be＋名詞・形容詞の文ではP1・P2を空欄にします。
 
+場面全体の場所は［場所］へ入れます。come の行き先や live の居住先は［対象１］、put の置き先は［対象２］へ入れます。
+
 場所と時の両方を常に付ける必要はありません。主語に合う述語の形をそのまま練習します。
 
 例文は本教材用に新しく作成したものです。画像の更新は行っていません。
@@ -136,9 +138,9 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 | 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
 | --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | She | comes | — | — | here | every day |
-| 今している | She | is coming | — | — | here | now |
-| 昨日した | She | came | — | — | here | yesterday |
+| いつもの動き | She | comes | here | — | — | every day |
+| 今している | She | is coming | here | — | — | now |
+| 昨日した | She | came | here | — | — | yesterday |
 | いつもの動き | He | comes to | this room | — | — | every day |
 | 今している | He | is coming to | this room | — | — | now |
 | 昨日した | He | came to | this room | — | — | yesterday |
@@ -448,15 +450,15 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 | 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
 | --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | I | stay | — | — | at Grandma's house | on Saturdays |
-| 今している | I | am staying | — | — | at Grandma's house | now |
-| 昨日した | I | stayed | — | — | at Grandma's house | yesterday |
-| いつもの動き | You | stay | — | — | in a tent | on Saturdays |
-| 今している | You | are staying | — | — | in a tent | now |
-| 昨日した | You | stayed | — | — | in a tent | yesterday |
-| いつもの動き | He | stays | — | — | at a hotel | on Saturdays |
-| 今している | He | is staying | — | — | at a hotel | now |
-| 昨日した | He | stayed | — | — | at a hotel | yesterday |
+| いつもの動き | I | stay | at Grandma's house | — | — | on Saturdays |
+| 今している | I | am staying | at Grandma's house | — | — | now |
+| 昨日した | I | stayed | at Grandma's house | — | — | yesterday |
+| いつもの動き | You | stay | in a tent | — | — | on Saturdays |
+| 今している | You | are staying | in a tent | — | — | now |
+| 昨日した | You | stayed | in a tent | — | — | yesterday |
+| いつもの動き | He | stays | at a hotel | — | — | on Saturdays |
+| 今している | He | is staying | at a hotel | — | — | now |
+| 昨日した | He | stayed | at a hotel | — | — | yesterday |
 
 - I stay at Grandma's house on Saturdays. — 私は土曜日におばあちゃんの家にとまります。
 - I am staying at Grandma's house now. — 私は今おばあちゃんの家にとまっています。
@@ -472,9 +474,9 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 | 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
 | --- | --- | --- | --- | --- | --- | --- |
-| 状態 | She | lives | — | — | in a small house | — |
-| 状態 | He | lives | — | — | near the sea | — |
-| 状態 | We | live | — | — | near a park | — |
+| 状態 | She | lives | in a small house | — | — | — |
+| 状態 | He | lives | near the sea | — | — | — |
+| 状態 | We | live | near a park | — | — | — |
 
 - She lives in a small house. — 彼女は小さな家に住んでいます。
 - He lives near the sea. — 彼は海の近くに住んでいます。
@@ -772,15 +774,15 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 | 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
 | --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | I | pour | water | — | into a cup | every day |
-| 今している | I | am pouring | water | — | into a cup | now |
-| 昨日した | I | poured | water | — | into a cup | yesterday |
-| いつもの動き | You | pour | milk | — | into a cup | every day |
-| 今している | You | are pouring | milk | — | into a cup | now |
-| 昨日した | You | poured | milk | — | into a cup | yesterday |
-| いつもの動き | He | pours | juice | — | into a cup | every day |
-| 今している | He | is pouring | juice | — | into a cup | now |
-| 昨日した | He | poured | juice | — | into a cup | yesterday |
+| いつもの動き | I | pour | water | into a cup | — | every day |
+| 今している | I | am pouring | water | into a cup | — | now |
+| 昨日した | I | poured | water | into a cup | — | yesterday |
+| いつもの動き | You | pour | milk | into a cup | — | every day |
+| 今している | You | are pouring | milk | into a cup | — | now |
+| 昨日した | You | poured | milk | into a cup | — | yesterday |
+| いつもの動き | He | pours | juice | into a cup | — | every day |
+| 今している | He | is pouring | juice | into a cup | — | now |
+| 昨日した | He | poured | juice | into a cup | — | yesterday |
 
 - I pour water into a cup every day. — 私は毎日コップに水をそそぎます。
 - I am pouring water into a cup now. — 私は今コップに水をそそいでいます。
@@ -1459,15 +1461,15 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 | 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
 | --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | They | put | a book | — | on the desk | every day |
-| 今している | They | are putting | a book | — | on the desk | now |
-| 昨日した | They | put | a book | — | on the desk | yesterday |
-| いつもの動き | I | put | a cup | — | on the desk | every day |
-| 今している | I | am putting | a cup | — | on the desk | now |
-| 昨日した | I | put | a cup | — | on the desk | yesterday |
-| いつもの動き | You | put | a pencil | — | on the desk | every day |
-| 今している | You | are putting | a pencil | — | on the desk | now |
-| 昨日した | You | put | a pencil | — | on the desk | yesterday |
+| いつもの動き | They | put | a book | on the desk | — | every day |
+| 今している | They | are putting | a book | on the desk | — | now |
+| 昨日した | They | put | a book | on the desk | — | yesterday |
+| いつもの動き | I | put | a cup | on the desk | — | every day |
+| 今している | I | am putting | a cup | on the desk | — | now |
+| 昨日した | I | put | a cup | on the desk | — | yesterday |
+| いつもの動き | You | put | a pencil | on the desk | — | every day |
+| 今している | You | are putting | a pencil | on the desk | — | now |
+| 昨日した | You | put | a pencil | on the desk | — | yesterday |
 
 - They put a book on the desk every day. — 彼らは毎日机の上に本を置きます。
 - They are putting a book on the desk now. — 彼らは今机の上に本を置いています。
@@ -1555,15 +1557,15 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 
 | 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
 | --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | It | brings | its lunch | — | to school | every day |
-| 今している | It | is bringing | its lunch | — | to school | now |
-| 昨日した | It | brought | its lunch | — | to school | yesterday |
-| いつもの動き | We | bring | our favorite book | — | to school | every day |
-| 今している | We | are bringing | our favorite book | — | to school | now |
-| 昨日した | We | brought | our favorite book | — | to school | yesterday |
-| いつもの動き | They | bring | a blue ball | — | to school | every day |
-| 今している | They | are bringing | a blue ball | — | to school | now |
-| 昨日した | They | brought | a blue ball | — | to school | yesterday |
+| いつもの動き | It | brings | its lunch | to school | — | every day |
+| 今している | It | is bringing | its lunch | to school | — | now |
+| 昨日した | It | brought | its lunch | to school | — | yesterday |
+| いつもの動き | We | bring | our favorite book | to school | — | every day |
+| 今している | We | are bringing | our favorite book | to school | — | now |
+| 昨日した | We | brought | our favorite book | to school | — | yesterday |
+| いつもの動き | They | bring | a blue ball | to school | — | every day |
+| 今している | They | are bringing | a blue ball | to school | — | now |
+| 昨日した | They | brought | a blue ball | to school | — | yesterday |
 
 - It brings its lunch to school every day. — それは毎日学校にお弁当を持ってきます。
 - It is bringing its lunch to school now. — それは今学校にお弁当を持ってきています。
@@ -2296,12 +2298,12 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 | 捉え方 | S | 述語 | P1 | P2 | 場所 | 時 |
 | --- | --- | --- | --- | --- | --- | --- |
 | 状態 | We | keep | our room | clean | — | — |
-| いつもの動き | They | keep | their stones | — | in a little box | every day |
-| 今している | They | are keeping | their stones | — | in a little box | now |
-| 昨日した | They | kept | their stones | — | in a little box | yesterday |
-| いつもの動き | I | keep | my treasures | — | in a little box | every day |
-| 今している | I | am keeping | my treasures | — | in a little box | now |
-| 昨日した | I | kept | my treasures | — | in a little box | yesterday |
+| いつもの動き | They | keep | their stones | in a little box | — | every day |
+| 今している | They | are keeping | their stones | in a little box | — | now |
+| 昨日した | They | kept | their stones | in a little box | — | yesterday |
+| いつもの動き | I | keep | my treasures | in a little box | — | every day |
+| 今している | I | am keeping | my treasures | in a little box | — | now |
+| 昨日した | I | kept | my treasures | in a little box | — | yesterday |
 
 - We keep our room clean. — 私たちは自分の部屋をきれいに保ちます。
 - They keep their stones in a little box every day. — 彼らは毎日小さな箱に石をしまっておきます。

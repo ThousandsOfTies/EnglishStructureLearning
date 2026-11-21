@@ -72,10 +72,16 @@ def ja_ongoing(text):
     raise ValueError(f'No ongoing form: {text}')
 
 
+def japanese_sentence(values, frame):
+    # Keep words for place before the object in the Japanese prompts.
+    parameters = ('P2', 'P1') if frame == 'object-location' else ('P1', 'P2')
+    return ''.join(values[k]['ja'] for k in ('S', 'time', 'place', *parameters, 'predicate')) + '。'
+
+
 def rebuild(q):
     values = q['slots']
     q['en'] = ' '.join(values[k]['en'] for k in SLOTS if values[k]['en']) + '.'
-    q['ja'] = ''.join(values[k]['ja'] for k in ('S', 'time', 'place', 'P1', 'P2', 'predicate')) + '。'
+    q['ja'] = japanese_sentence(values, q['frame'])
     q['level'] = 1
     q['blocks'] = [[k, values[k]['en']] for k in SLOTS if values[k]['en']]
     return q

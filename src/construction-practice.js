@@ -273,7 +273,8 @@ if (typeof document !== 'undefined') {
     $('pool').hidden = pictureMode;
     $('selectedStatus').hidden = basic;
     $('selectedStatus').textContent = selected === null ? 'カードを押してから欄の見出しを押す方法でも置けます。' : `「${cards[selected].text}」を、どの欄に置く？（同じカードを押すと元に戻せます）`;
-    const japaneseOrder = ['S', 'time', 'place', 'P1', 'P2', 'predicate'];
+    const parameters = q.frame === 'object-location' ? ['P2', 'P1'] : ['P1', 'P2'];
+    const japaneseOrder = ['S', 'time', 'place', ...parameters, 'predicate'];
     const order = basic ? japaneseOrder.map(role => cards.findIndex(card => card.role === role)).filter(i => i >= 0) : Construction.shuffledIndices(q);
     const remaining = order.filter(i => !placements[i]);
     $('pool').innerHTML = `<div class="pool-cards">${remaining.map(i => cardHTML(q, i)).join('') || '<span class="muted">カードを置けたね。使わない欄は、そのまま空欄にしよう。</span>'}</div>`;

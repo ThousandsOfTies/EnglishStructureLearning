@@ -15,6 +15,7 @@
     "go to / look at / listen to などは、つなぎ方まで述語に含める。",
     "be＋名詞・be＋形容詞は、この練習では全体を述語に入れる。",
     "PはParameter。P1・P2の役割は述語の部品ごとに決まる。",
+    "場所は動作や状態の舞台。移動先・置き先・滞在先など、述語が表す意味を補う場所はP1・P2に入れる。",
     "場所・時は基本として文の後ろ。ほかの自然な語順を誤りとはしない。",
     "述語は主語に合わせた形で渡す。三単現やbeの活用を推測させない。",
     "動作の現在形は「いつもの動き」。今している動作はbe＋動作ingという「今の状態」で扱う。",
@@ -1795,16 +1796,16 @@
           "en": "comes"
         },
         "place": {
-          "ja": "ここに",
-          "en": "here"
+          "ja": "",
+          "en": ""
         },
         "time": {
           "ja": "毎日",
           "en": "every day"
         },
         "P1": {
-          "ja": "",
-          "en": ""
+          "ja": "ここに",
+          "en": "here"
         },
         "P2": {
           "ja": "",
@@ -1813,7 +1814,7 @@
       },
       "ja": "彼女は毎日ここに来ます。",
       "en": "She comes here every day.",
-      "frame": "no-parameter",
+      "frame": "one-parameter",
       "authorship": "original-six-slots-v1",
       "meaning": "routine",
       "contrastFamily": "build-come-1",
@@ -1828,7 +1829,7 @@
           "comes"
         ],
         [
-          "place",
+          "P1",
           "here"
         ],
         [
@@ -1860,16 +1861,16 @@
           "en": "is coming"
         },
         "place": {
-          "ja": "ここに",
-          "en": "here"
+          "ja": "",
+          "en": ""
         },
         "time": {
           "ja": "今",
           "en": "now"
         },
         "P1": {
-          "ja": "",
-          "en": ""
+          "ja": "ここに",
+          "en": "here"
         },
         "P2": {
           "ja": "",
@@ -1878,7 +1879,7 @@
       },
       "ja": "彼女は今ここに来る途中です。",
       "en": "She is coming here now.",
-      "frame": "no-parameter",
+      "frame": "one-parameter",
       "authorship": "original-six-slots-v1",
       "meaning": "ongoing",
       "contrastFamily": "build-come-1",
@@ -1893,7 +1894,7 @@
           "is coming"
         ],
         [
-          "place",
+          "P1",
           "here"
         ],
         [
@@ -1925,16 +1926,16 @@
           "en": "came"
         },
         "place": {
-          "ja": "ここに",
-          "en": "here"
+          "ja": "",
+          "en": ""
         },
         "time": {
           "ja": "昨日",
           "en": "yesterday"
         },
         "P1": {
-          "ja": "",
-          "en": ""
+          "ja": "ここに",
+          "en": "here"
         },
         "P2": {
           "ja": "",
@@ -1943,7 +1944,7 @@
       },
       "ja": "彼女は昨日ここに来ました。",
       "en": "She came here yesterday.",
-      "frame": "no-parameter",
+      "frame": "one-parameter",
       "authorship": "original-six-slots-v1",
       "meaning": "past",
       "contrastFamily": "build-come-1",
@@ -1958,7 +1959,7 @@
           "came"
         ],
         [
-          "place",
+          "P1",
           "here"
         ],
         [
@@ -9544,16 +9545,16 @@
           "en": "stay"
         },
         "place": {
-          "ja": "おばあちゃんの家に",
-          "en": "at Grandma's house"
+          "ja": "",
+          "en": ""
         },
         "time": {
           "ja": "土曜日に",
           "en": "on Saturdays"
         },
         "P1": {
-          "ja": "",
-          "en": ""
+          "ja": "おばあちゃんの家に",
+          "en": "at Grandma's house"
         },
         "P2": {
           "ja": "",
@@ -9562,7 +9563,7 @@
       },
       "ja": "私は土曜日におばあちゃんの家にとまります。",
       "en": "I stay at Grandma's house on Saturdays.",
-      "frame": "no-parameter",
+      "frame": "one-parameter",
       "authorship": "original-six-slots-v1",
       "meaning": "routine",
       "contrastFamily": "build-stay-1",
@@ -9577,7 +9578,7 @@
           "stay"
         ],
         [
-          "place",
+          "P1",
           "at Grandma's house"
         ],
         [
@@ -9609,16 +9610,16 @@
           "en": "am staying"
         },
         "place": {
-          "ja": "おばあちゃんの家に",
-          "en": "at Grandma's house"
+          "ja": "",
+          "en": ""
         },
         "time": {
           "ja": "今",
           "en": "now"
         },
         "P1": {
-          "ja": "",
-          "en": ""
+          "ja": "おばあちゃんの家に",
+          "en": "at Grandma's house"
         },
         "P2": {
           "ja": "",
@@ -9627,7 +9628,7 @@
       },
       "ja": "私は今おばあちゃんの家にとまっています。",
       "en": "I am staying at Grandma's house now.",
-      "frame": "no-parameter",
+      "frame": "one-parameter",
       "authorship": "original-six-slots-v1",
       "meaning": "ongoing",
       "contrastFamily": "build-stay-1",
@@ -9642,7 +9643,7 @@
           "am staying"
         ],
         [
-          "place",
+          "P1",
           "at Grandma's house"
         ],
         [
@@ -9674,16 +9675,16 @@
           "en": "stayed"
         },
         "place": {
-          "ja": "おばあちゃんの家に",
-          "en": "at Grandma's house"
+          "ja": "",
+          "en": ""
         },
         "time": {
           "ja": "昨日",
           "en": "yesterday"
         },
         "P1": {
-          "ja": "",
-          "en": ""
+          "ja": "おばあちゃんの家に",
+          "en": "at Grandma's house"
         },
         "P2": {
           "ja": "",
@@ -9692,7 +9693,7 @@
       },
       "ja": "私は昨日おばあちゃんの家にとまりました。",
       "en": "I stayed at Grandma's house yesterday.",
-      "frame": "no-parameter",
+      "frame": "one-parameter",
       "authorship": "original-six-slots-v1",
       "meaning": "past",
       "contrastFamily": "build-stay-1",
@@ -9707,7 +9708,7 @@
           "stayed"
         ],
         [
-          "place",
+          "P1",
           "at Grandma's house"
         ],
         [
@@ -9739,16 +9740,16 @@
           "en": "stay"
         },
         "place": {
-          "ja": "テントに",
-          "en": "in a tent"
+          "ja": "",
+          "en": ""
         },
         "time": {
           "ja": "土曜日に",
           "en": "on Saturdays"
         },
         "P1": {
-          "ja": "",
-          "en": ""
+          "ja": "テントに",
+          "en": "in a tent"
         },
         "P2": {
           "ja": "",
@@ -9757,7 +9758,7 @@
       },
       "ja": "あなたは土曜日にテントにとまります。",
       "en": "You stay in a tent on Saturdays.",
-      "frame": "no-parameter",
+      "frame": "one-parameter",
       "authorship": "original-six-slots-v1",
       "meaning": "routine",
       "contrastFamily": "build-stay-2",
@@ -9772,7 +9773,7 @@
           "stay"
         ],
         [
-          "place",
+          "P1",
           "in a tent"
         ],
         [
@@ -9804,16 +9805,16 @@
           "en": "are staying"
         },
         "place": {
-          "ja": "テントに",
-          "en": "in a tent"
+          "ja": "",
+          "en": ""
         },
         "time": {
           "ja": "今",
           "en": "now"
         },
         "P1": {
-          "ja": "",
-          "en": ""
+          "ja": "テントに",
+          "en": "in a tent"
         },
         "P2": {
           "ja": "",
@@ -9822,7 +9823,7 @@
       },
       "ja": "あなたは今テントにとまっています。",
       "en": "You are staying in a tent now.",
-      "frame": "no-parameter",
+      "frame": "one-parameter",
       "authorship": "original-six-slots-v1",
       "meaning": "ongoing",
       "contrastFamily": "build-stay-2",
@@ -9837,7 +9838,7 @@
           "are staying"
         ],
         [
-          "place",
+          "P1",
           "in a tent"
         ],
         [
@@ -9869,16 +9870,16 @@
           "en": "stayed"
         },
         "place": {
-          "ja": "テントに",
-          "en": "in a tent"
+          "ja": "",
+          "en": ""
         },
         "time": {
           "ja": "昨日",
           "en": "yesterday"
         },
         "P1": {
-          "ja": "",
-          "en": ""
+          "ja": "テントに",
+          "en": "in a tent"
         },
         "P2": {
           "ja": "",
@@ -9887,7 +9888,7 @@
       },
       "ja": "あなたは昨日テントにとまりました。",
       "en": "You stayed in a tent yesterday.",
-      "frame": "no-parameter",
+      "frame": "one-parameter",
       "authorship": "original-six-slots-v1",
       "meaning": "past",
       "contrastFamily": "build-stay-2",
@@ -9902,7 +9903,7 @@
           "stayed"
         ],
         [
-          "place",
+          "P1",
           "in a tent"
         ],
         [
@@ -9934,16 +9935,16 @@
           "en": "stays"
         },
         "place": {
-          "ja": "ホテルに",
-          "en": "at a hotel"
+          "ja": "",
+          "en": ""
         },
         "time": {
           "ja": "土曜日に",
           "en": "on Saturdays"
         },
         "P1": {
-          "ja": "",
-          "en": ""
+          "ja": "ホテルに",
+          "en": "at a hotel"
         },
         "P2": {
           "ja": "",
@@ -9952,7 +9953,7 @@
       },
       "ja": "彼は土曜日にホテルにとまります。",
       "en": "He stays at a hotel on Saturdays.",
-      "frame": "no-parameter",
+      "frame": "one-parameter",
       "authorship": "original-six-slots-v1",
       "meaning": "routine",
       "contrastFamily": "build-stay-3",
@@ -9967,7 +9968,7 @@
           "stays"
         ],
         [
-          "place",
+          "P1",
           "at a hotel"
         ],
         [
@@ -9999,16 +10000,16 @@
           "en": "is staying"
         },
         "place": {
-          "ja": "ホテルに",
-          "en": "at a hotel"
+          "ja": "",
+          "en": ""
         },
         "time": {
           "ja": "今",
           "en": "now"
         },
         "P1": {
-          "ja": "",
-          "en": ""
+          "ja": "ホテルに",
+          "en": "at a hotel"
         },
         "P2": {
           "ja": "",
@@ -10017,7 +10018,7 @@
       },
       "ja": "彼は今ホテルにとまっています。",
       "en": "He is staying at a hotel now.",
-      "frame": "no-parameter",
+      "frame": "one-parameter",
       "authorship": "original-six-slots-v1",
       "meaning": "ongoing",
       "contrastFamily": "build-stay-3",
@@ -10032,7 +10033,7 @@
           "is staying"
         ],
         [
-          "place",
+          "P1",
           "at a hotel"
         ],
         [
@@ -10064,16 +10065,16 @@
           "en": "stayed"
         },
         "place": {
-          "ja": "ホテルに",
-          "en": "at a hotel"
+          "ja": "",
+          "en": ""
         },
         "time": {
           "ja": "昨日",
           "en": "yesterday"
         },
         "P1": {
-          "ja": "",
-          "en": ""
+          "ja": "ホテルに",
+          "en": "at a hotel"
         },
         "P2": {
           "ja": "",
@@ -10082,7 +10083,7 @@
       },
       "ja": "彼は昨日ホテルにとまりました。",
       "en": "He stayed at a hotel yesterday.",
-      "frame": "no-parameter",
+      "frame": "one-parameter",
       "authorship": "original-six-slots-v1",
       "meaning": "past",
       "contrastFamily": "build-stay-3",
@@ -10097,7 +10098,7 @@
           "stayed"
         ],
         [
-          "place",
+          "P1",
           "at a hotel"
         ],
         [
@@ -10129,16 +10130,16 @@
           "en": "lives"
         },
         "place": {
-          "ja": "小さな家に",
-          "en": "in a small house"
+          "ja": "",
+          "en": ""
         },
         "time": {
           "ja": "",
           "en": ""
         },
         "P1": {
-          "ja": "",
-          "en": ""
+          "ja": "小さな家に",
+          "en": "in a small house"
         },
         "P2": {
           "ja": "",
@@ -10147,7 +10148,7 @@
       },
       "ja": "彼女は小さな家に住んでいます。",
       "en": "She lives in a small house.",
-      "frame": "no-parameter",
+      "frame": "one-parameter",
       "authorship": "original-six-slots-v1",
       "meaning": "state",
       "contrastFamily": "build-live-1",
@@ -10162,7 +10163,7 @@
           "lives"
         ],
         [
-          "place",
+          "P1",
           "in a small house"
         ]
       ],
@@ -10190,16 +10191,16 @@
           "en": "lives"
         },
         "place": {
-          "ja": "海の近くに",
-          "en": "near the sea"
+          "ja": "",
+          "en": ""
         },
         "time": {
           "ja": "",
           "en": ""
         },
         "P1": {
-          "ja": "",
-          "en": ""
+          "ja": "海の近くに",
+          "en": "near the sea"
         },
         "P2": {
           "ja": "",
@@ -10208,7 +10209,7 @@
       },
       "ja": "彼は海の近くに住んでいます。",
       "en": "He lives near the sea.",
-      "frame": "no-parameter",
+      "frame": "one-parameter",
       "authorship": "original-six-slots-v1",
       "meaning": "state",
       "contrastFamily": "build-live-2",
@@ -10223,7 +10224,7 @@
           "lives"
         ],
         [
-          "place",
+          "P1",
           "near the sea"
         ]
       ],
@@ -10251,16 +10252,16 @@
           "en": "live"
         },
         "place": {
-          "ja": "公園の近くに",
-          "en": "near a park"
+          "ja": "",
+          "en": ""
         },
         "time": {
           "ja": "",
           "en": ""
         },
         "P1": {
-          "ja": "",
-          "en": ""
+          "ja": "公園の近くに",
+          "en": "near a park"
         },
         "P2": {
           "ja": "",
@@ -10269,7 +10270,7 @@
       },
       "ja": "私たちは公園の近くに住んでいます。",
       "en": "We live near a park.",
-      "frame": "no-parameter",
+      "frame": "one-parameter",
       "authorship": "original-six-slots-v1",
       "meaning": "state",
       "contrastFamily": "build-live-3",
@@ -10284,7 +10285,7 @@
           "live"
         ],
         [
-          "place",
+          "P1",
           "near a park"
         ]
       ],
@@ -17764,8 +17765,8 @@
           "en": "pour"
         },
         "place": {
-          "ja": "コップに",
-          "en": "into a cup"
+          "ja": "",
+          "en": ""
         },
         "time": {
           "ja": "毎日",
@@ -17776,13 +17777,13 @@
           "en": "water"
         },
         "P2": {
-          "ja": "",
-          "en": ""
+          "ja": "コップに",
+          "en": "into a cup"
         }
       },
       "ja": "私は毎日コップに水をそそぎます。",
       "en": "I pour water into a cup every day.",
-      "frame": "one-parameter",
+      "frame": "object-location",
       "authorship": "original-six-slots-v1",
       "meaning": "routine",
       "contrastFamily": "build-pour-1",
@@ -17801,7 +17802,7 @@
           "water"
         ],
         [
-          "place",
+          "P2",
           "into a cup"
         ],
         [
@@ -17833,8 +17834,8 @@
           "en": "am pouring"
         },
         "place": {
-          "ja": "コップに",
-          "en": "into a cup"
+          "ja": "",
+          "en": ""
         },
         "time": {
           "ja": "今",
@@ -17845,13 +17846,13 @@
           "en": "water"
         },
         "P2": {
-          "ja": "",
-          "en": ""
+          "ja": "コップに",
+          "en": "into a cup"
         }
       },
       "ja": "私は今コップに水をそそいでいます。",
       "en": "I am pouring water into a cup now.",
-      "frame": "one-parameter",
+      "frame": "object-location",
       "authorship": "original-six-slots-v1",
       "meaning": "ongoing",
       "contrastFamily": "build-pour-1",
@@ -17870,7 +17871,7 @@
           "water"
         ],
         [
-          "place",
+          "P2",
           "into a cup"
         ],
         [
@@ -17902,8 +17903,8 @@
           "en": "poured"
         },
         "place": {
-          "ja": "コップに",
-          "en": "into a cup"
+          "ja": "",
+          "en": ""
         },
         "time": {
           "ja": "昨日",
@@ -17914,13 +17915,13 @@
           "en": "water"
         },
         "P2": {
-          "ja": "",
-          "en": ""
+          "ja": "コップに",
+          "en": "into a cup"
         }
       },
       "ja": "私は昨日コップに水をそそぎました。",
       "en": "I poured water into a cup yesterday.",
-      "frame": "one-parameter",
+      "frame": "object-location",
       "authorship": "original-six-slots-v1",
       "meaning": "past",
       "contrastFamily": "build-pour-1",
@@ -17939,7 +17940,7 @@
           "water"
         ],
         [
-          "place",
+          "P2",
           "into a cup"
         ],
         [
@@ -17971,8 +17972,8 @@
           "en": "pour"
         },
         "place": {
-          "ja": "コップに",
-          "en": "into a cup"
+          "ja": "",
+          "en": ""
         },
         "time": {
           "ja": "毎日",
@@ -17983,13 +17984,13 @@
           "en": "milk"
         },
         "P2": {
-          "ja": "",
-          "en": ""
+          "ja": "コップに",
+          "en": "into a cup"
         }
       },
       "ja": "あなたは毎日コップに牛乳をそそぎます。",
       "en": "You pour milk into a cup every day.",
-      "frame": "one-parameter",
+      "frame": "object-location",
       "authorship": "original-six-slots-v1",
       "meaning": "routine",
       "contrastFamily": "build-pour-2",
@@ -18008,7 +18009,7 @@
           "milk"
         ],
         [
-          "place",
+          "P2",
           "into a cup"
         ],
         [
@@ -18040,8 +18041,8 @@
           "en": "are pouring"
         },
         "place": {
-          "ja": "コップに",
-          "en": "into a cup"
+          "ja": "",
+          "en": ""
         },
         "time": {
           "ja": "今",
@@ -18052,13 +18053,13 @@
           "en": "milk"
         },
         "P2": {
-          "ja": "",
-          "en": ""
+          "ja": "コップに",
+          "en": "into a cup"
         }
       },
       "ja": "あなたは今コップに牛乳をそそいでいます。",
       "en": "You are pouring milk into a cup now.",
-      "frame": "one-parameter",
+      "frame": "object-location",
       "authorship": "original-six-slots-v1",
       "meaning": "ongoing",
       "contrastFamily": "build-pour-2",
@@ -18077,7 +18078,7 @@
           "milk"
         ],
         [
-          "place",
+          "P2",
           "into a cup"
         ],
         [
@@ -18109,8 +18110,8 @@
           "en": "poured"
         },
         "place": {
-          "ja": "コップに",
-          "en": "into a cup"
+          "ja": "",
+          "en": ""
         },
         "time": {
           "ja": "昨日",
@@ -18121,13 +18122,13 @@
           "en": "milk"
         },
         "P2": {
-          "ja": "",
-          "en": ""
+          "ja": "コップに",
+          "en": "into a cup"
         }
       },
       "ja": "あなたは昨日コップに牛乳をそそぎました。",
       "en": "You poured milk into a cup yesterday.",
-      "frame": "one-parameter",
+      "frame": "object-location",
       "authorship": "original-six-slots-v1",
       "meaning": "past",
       "contrastFamily": "build-pour-2",
@@ -18146,7 +18147,7 @@
           "milk"
         ],
         [
-          "place",
+          "P2",
           "into a cup"
         ],
         [
@@ -18178,8 +18179,8 @@
           "en": "pours"
         },
         "place": {
-          "ja": "コップに",
-          "en": "into a cup"
+          "ja": "",
+          "en": ""
         },
         "time": {
           "ja": "毎日",
@@ -18190,13 +18191,13 @@
           "en": "juice"
         },
         "P2": {
-          "ja": "",
-          "en": ""
+          "ja": "コップに",
+          "en": "into a cup"
         }
       },
       "ja": "彼は毎日コップにジュースをそそぎます。",
       "en": "He pours juice into a cup every day.",
-      "frame": "one-parameter",
+      "frame": "object-location",
       "authorship": "original-six-slots-v1",
       "meaning": "routine",
       "contrastFamily": "build-pour-3",
@@ -18215,7 +18216,7 @@
           "juice"
         ],
         [
-          "place",
+          "P2",
           "into a cup"
         ],
         [
@@ -18247,8 +18248,8 @@
           "en": "is pouring"
         },
         "place": {
-          "ja": "コップに",
-          "en": "into a cup"
+          "ja": "",
+          "en": ""
         },
         "time": {
           "ja": "今",
@@ -18259,13 +18260,13 @@
           "en": "juice"
         },
         "P2": {
-          "ja": "",
-          "en": ""
+          "ja": "コップに",
+          "en": "into a cup"
         }
       },
       "ja": "彼は今コップにジュースをそそいでいます。",
       "en": "He is pouring juice into a cup now.",
-      "frame": "one-parameter",
+      "frame": "object-location",
       "authorship": "original-six-slots-v1",
       "meaning": "ongoing",
       "contrastFamily": "build-pour-3",
@@ -18284,7 +18285,7 @@
           "juice"
         ],
         [
-          "place",
+          "P2",
           "into a cup"
         ],
         [
@@ -18316,8 +18317,8 @@
           "en": "poured"
         },
         "place": {
-          "ja": "コップに",
-          "en": "into a cup"
+          "ja": "",
+          "en": ""
         },
         "time": {
           "ja": "昨日",
@@ -18328,13 +18329,13 @@
           "en": "juice"
         },
         "P2": {
-          "ja": "",
-          "en": ""
+          "ja": "コップに",
+          "en": "into a cup"
         }
       },
       "ja": "彼は昨日コップにジュースをそそぎました。",
       "en": "He poured juice into a cup yesterday.",
-      "frame": "one-parameter",
+      "frame": "object-location",
       "authorship": "original-six-slots-v1",
       "meaning": "past",
       "contrastFamily": "build-pour-3",
@@ -18353,7 +18354,7 @@
           "juice"
         ],
         [
-          "place",
+          "P2",
           "into a cup"
         ],
         [
@@ -35059,8 +35060,8 @@
           "en": "put"
         },
         "place": {
-          "ja": "机の上に",
-          "en": "on the desk"
+          "ja": "",
+          "en": ""
         },
         "time": {
           "ja": "毎日",
@@ -35071,13 +35072,13 @@
           "en": "a book"
         },
         "P2": {
-          "ja": "",
-          "en": ""
+          "ja": "机の上に",
+          "en": "on the desk"
         }
       },
       "ja": "彼らは毎日机の上に本を置きます。",
       "en": "They put a book on the desk every day.",
-      "frame": "one-parameter",
+      "frame": "object-location",
       "authorship": "original-six-slots-v1",
       "meaning": "routine",
       "contrastFamily": "build-put-1",
@@ -35096,7 +35097,7 @@
           "a book"
         ],
         [
-          "place",
+          "P2",
           "on the desk"
         ],
         [
@@ -35128,8 +35129,8 @@
           "en": "are putting"
         },
         "place": {
-          "ja": "机の上に",
-          "en": "on the desk"
+          "ja": "",
+          "en": ""
         },
         "time": {
           "ja": "今",
@@ -35140,13 +35141,13 @@
           "en": "a book"
         },
         "P2": {
-          "ja": "",
-          "en": ""
+          "ja": "机の上に",
+          "en": "on the desk"
         }
       },
       "ja": "彼らは今机の上に本を置いています。",
       "en": "They are putting a book on the desk now.",
-      "frame": "one-parameter",
+      "frame": "object-location",
       "authorship": "original-six-slots-v1",
       "meaning": "ongoing",
       "contrastFamily": "build-put-1",
@@ -35165,7 +35166,7 @@
           "a book"
         ],
         [
-          "place",
+          "P2",
           "on the desk"
         ],
         [
@@ -35197,8 +35198,8 @@
           "en": "put"
         },
         "place": {
-          "ja": "机の上に",
-          "en": "on the desk"
+          "ja": "",
+          "en": ""
         },
         "time": {
           "ja": "昨日",
@@ -35209,13 +35210,13 @@
           "en": "a book"
         },
         "P2": {
-          "ja": "",
-          "en": ""
+          "ja": "机の上に",
+          "en": "on the desk"
         }
       },
       "ja": "彼らは昨日机の上に本を置きました。",
       "en": "They put a book on the desk yesterday.",
-      "frame": "one-parameter",
+      "frame": "object-location",
       "authorship": "original-six-slots-v1",
       "meaning": "past",
       "contrastFamily": "build-put-1",
@@ -35234,7 +35235,7 @@
           "a book"
         ],
         [
-          "place",
+          "P2",
           "on the desk"
         ],
         [
@@ -35266,8 +35267,8 @@
           "en": "put"
         },
         "place": {
-          "ja": "机の上に",
-          "en": "on the desk"
+          "ja": "",
+          "en": ""
         },
         "time": {
           "ja": "毎日",
@@ -35278,13 +35279,13 @@
           "en": "a cup"
         },
         "P2": {
-          "ja": "",
-          "en": ""
+          "ja": "机の上に",
+          "en": "on the desk"
         }
       },
       "ja": "私は毎日机の上にコップを置きます。",
       "en": "I put a cup on the desk every day.",
-      "frame": "one-parameter",
+      "frame": "object-location",
       "authorship": "original-six-slots-v1",
       "meaning": "routine",
       "contrastFamily": "build-put-2",
@@ -35303,7 +35304,7 @@
           "a cup"
         ],
         [
-          "place",
+          "P2",
           "on the desk"
         ],
         [
@@ -35335,8 +35336,8 @@
           "en": "am putting"
         },
         "place": {
-          "ja": "机の上に",
-          "en": "on the desk"
+          "ja": "",
+          "en": ""
         },
         "time": {
           "ja": "今",
@@ -35347,13 +35348,13 @@
           "en": "a cup"
         },
         "P2": {
-          "ja": "",
-          "en": ""
+          "ja": "机の上に",
+          "en": "on the desk"
         }
       },
       "ja": "私は今机の上にコップを置いています。",
       "en": "I am putting a cup on the desk now.",
-      "frame": "one-parameter",
+      "frame": "object-location",
       "authorship": "original-six-slots-v1",
       "meaning": "ongoing",
       "contrastFamily": "build-put-2",
@@ -35372,7 +35373,7 @@
           "a cup"
         ],
         [
-          "place",
+          "P2",
           "on the desk"
         ],
         [
@@ -35404,8 +35405,8 @@
           "en": "put"
         },
         "place": {
-          "ja": "机の上に",
-          "en": "on the desk"
+          "ja": "",
+          "en": ""
         },
         "time": {
           "ja": "昨日",
@@ -35416,13 +35417,13 @@
           "en": "a cup"
         },
         "P2": {
-          "ja": "",
-          "en": ""
+          "ja": "机の上に",
+          "en": "on the desk"
         }
       },
       "ja": "私は昨日机の上にコップを置きました。",
       "en": "I put a cup on the desk yesterday.",
-      "frame": "one-parameter",
+      "frame": "object-location",
       "authorship": "original-six-slots-v1",
       "meaning": "past",
       "contrastFamily": "build-put-2",
@@ -35441,7 +35442,7 @@
           "a cup"
         ],
         [
-          "place",
+          "P2",
           "on the desk"
         ],
         [
@@ -35473,8 +35474,8 @@
           "en": "put"
         },
         "place": {
-          "ja": "机の上に",
-          "en": "on the desk"
+          "ja": "",
+          "en": ""
         },
         "time": {
           "ja": "毎日",
@@ -35485,13 +35486,13 @@
           "en": "a pencil"
         },
         "P2": {
-          "ja": "",
-          "en": ""
+          "ja": "机の上に",
+          "en": "on the desk"
         }
       },
       "ja": "あなたは毎日机の上に鉛筆を置きます。",
       "en": "You put a pencil on the desk every day.",
-      "frame": "one-parameter",
+      "frame": "object-location",
       "authorship": "original-six-slots-v1",
       "meaning": "routine",
       "contrastFamily": "build-put-3",
@@ -35510,7 +35511,7 @@
           "a pencil"
         ],
         [
-          "place",
+          "P2",
           "on the desk"
         ],
         [
@@ -35542,8 +35543,8 @@
           "en": "are putting"
         },
         "place": {
-          "ja": "机の上に",
-          "en": "on the desk"
+          "ja": "",
+          "en": ""
         },
         "time": {
           "ja": "今",
@@ -35554,13 +35555,13 @@
           "en": "a pencil"
         },
         "P2": {
-          "ja": "",
-          "en": ""
+          "ja": "机の上に",
+          "en": "on the desk"
         }
       },
       "ja": "あなたは今机の上に鉛筆を置いています。",
       "en": "You are putting a pencil on the desk now.",
-      "frame": "one-parameter",
+      "frame": "object-location",
       "authorship": "original-six-slots-v1",
       "meaning": "ongoing",
       "contrastFamily": "build-put-3",
@@ -35579,7 +35580,7 @@
           "a pencil"
         ],
         [
-          "place",
+          "P2",
           "on the desk"
         ],
         [
@@ -35611,8 +35612,8 @@
           "en": "put"
         },
         "place": {
-          "ja": "机の上に",
-          "en": "on the desk"
+          "ja": "",
+          "en": ""
         },
         "time": {
           "ja": "昨日",
@@ -35623,13 +35624,13 @@
           "en": "a pencil"
         },
         "P2": {
-          "ja": "",
-          "en": ""
+          "ja": "机の上に",
+          "en": "on the desk"
         }
       },
       "ja": "あなたは昨日机の上に鉛筆を置きました。",
       "en": "You put a pencil on the desk yesterday.",
-      "frame": "one-parameter",
+      "frame": "object-location",
       "authorship": "original-six-slots-v1",
       "meaning": "past",
       "contrastFamily": "build-put-3",
@@ -35648,7 +35649,7 @@
           "a pencil"
         ],
         [
-          "place",
+          "P2",
           "on the desk"
         ],
         [
@@ -37579,8 +37580,8 @@
           "en": "brings"
         },
         "place": {
-          "ja": "学校に",
-          "en": "to school"
+          "ja": "",
+          "en": ""
         },
         "time": {
           "ja": "毎日",
@@ -37591,13 +37592,13 @@
           "en": "its lunch"
         },
         "P2": {
-          "ja": "",
-          "en": ""
+          "ja": "学校に",
+          "en": "to school"
         }
       },
       "ja": "それは毎日学校にお弁当を持ってきます。",
       "en": "It brings its lunch to school every day.",
-      "frame": "one-parameter",
+      "frame": "object-location",
       "authorship": "original-six-slots-v1",
       "meaning": "routine",
       "contrastFamily": "build-bring-1",
@@ -37616,7 +37617,7 @@
           "its lunch"
         ],
         [
-          "place",
+          "P2",
           "to school"
         ],
         [
@@ -37648,8 +37649,8 @@
           "en": "is bringing"
         },
         "place": {
-          "ja": "学校に",
-          "en": "to school"
+          "ja": "",
+          "en": ""
         },
         "time": {
           "ja": "今",
@@ -37660,13 +37661,13 @@
           "en": "its lunch"
         },
         "P2": {
-          "ja": "",
-          "en": ""
+          "ja": "学校に",
+          "en": "to school"
         }
       },
       "ja": "それは今学校にお弁当を持ってきています。",
       "en": "It is bringing its lunch to school now.",
-      "frame": "one-parameter",
+      "frame": "object-location",
       "authorship": "original-six-slots-v1",
       "meaning": "ongoing",
       "contrastFamily": "build-bring-1",
@@ -37685,7 +37686,7 @@
           "its lunch"
         ],
         [
-          "place",
+          "P2",
           "to school"
         ],
         [
@@ -37717,8 +37718,8 @@
           "en": "brought"
         },
         "place": {
-          "ja": "学校に",
-          "en": "to school"
+          "ja": "",
+          "en": ""
         },
         "time": {
           "ja": "昨日",
@@ -37729,13 +37730,13 @@
           "en": "its lunch"
         },
         "P2": {
-          "ja": "",
-          "en": ""
+          "ja": "学校に",
+          "en": "to school"
         }
       },
       "ja": "それは昨日学校にお弁当を持ってきました。",
       "en": "It brought its lunch to school yesterday.",
-      "frame": "one-parameter",
+      "frame": "object-location",
       "authorship": "original-six-slots-v1",
       "meaning": "past",
       "contrastFamily": "build-bring-1",
@@ -37754,7 +37755,7 @@
           "its lunch"
         ],
         [
-          "place",
+          "P2",
           "to school"
         ],
         [
@@ -37786,8 +37787,8 @@
           "en": "bring"
         },
         "place": {
-          "ja": "学校に",
-          "en": "to school"
+          "ja": "",
+          "en": ""
         },
         "time": {
           "ja": "毎日",
@@ -37798,13 +37799,13 @@
           "en": "our favorite book"
         },
         "P2": {
-          "ja": "",
-          "en": ""
+          "ja": "学校に",
+          "en": "to school"
         }
       },
       "ja": "私たちは毎日学校にお気に入りの本を持ってきます。",
       "en": "We bring our favorite book to school every day.",
-      "frame": "one-parameter",
+      "frame": "object-location",
       "authorship": "original-six-slots-v1",
       "meaning": "routine",
       "contrastFamily": "build-bring-2",
@@ -37823,7 +37824,7 @@
           "our favorite book"
         ],
         [
-          "place",
+          "P2",
           "to school"
         ],
         [
@@ -37855,8 +37856,8 @@
           "en": "are bringing"
         },
         "place": {
-          "ja": "学校に",
-          "en": "to school"
+          "ja": "",
+          "en": ""
         },
         "time": {
           "ja": "今",
@@ -37867,13 +37868,13 @@
           "en": "our favorite book"
         },
         "P2": {
-          "ja": "",
-          "en": ""
+          "ja": "学校に",
+          "en": "to school"
         }
       },
       "ja": "私たちは今学校にお気に入りの本を持ってきています。",
       "en": "We are bringing our favorite book to school now.",
-      "frame": "one-parameter",
+      "frame": "object-location",
       "authorship": "original-six-slots-v1",
       "meaning": "ongoing",
       "contrastFamily": "build-bring-2",
@@ -37892,7 +37893,7 @@
           "our favorite book"
         ],
         [
-          "place",
+          "P2",
           "to school"
         ],
         [
@@ -37924,8 +37925,8 @@
           "en": "brought"
         },
         "place": {
-          "ja": "学校に",
-          "en": "to school"
+          "ja": "",
+          "en": ""
         },
         "time": {
           "ja": "昨日",
@@ -37936,13 +37937,13 @@
           "en": "our favorite book"
         },
         "P2": {
-          "ja": "",
-          "en": ""
+          "ja": "学校に",
+          "en": "to school"
         }
       },
       "ja": "私たちは昨日学校にお気に入りの本を持ってきました。",
       "en": "We brought our favorite book to school yesterday.",
-      "frame": "one-parameter",
+      "frame": "object-location",
       "authorship": "original-six-slots-v1",
       "meaning": "past",
       "contrastFamily": "build-bring-2",
@@ -37961,7 +37962,7 @@
           "our favorite book"
         ],
         [
-          "place",
+          "P2",
           "to school"
         ],
         [
@@ -37993,8 +37994,8 @@
           "en": "bring"
         },
         "place": {
-          "ja": "学校に",
-          "en": "to school"
+          "ja": "",
+          "en": ""
         },
         "time": {
           "ja": "毎日",
@@ -38005,13 +38006,13 @@
           "en": "a blue ball"
         },
         "P2": {
-          "ja": "",
-          "en": ""
+          "ja": "学校に",
+          "en": "to school"
         }
       },
       "ja": "彼らは毎日学校に青いボールを持ってきます。",
       "en": "They bring a blue ball to school every day.",
-      "frame": "one-parameter",
+      "frame": "object-location",
       "authorship": "original-six-slots-v1",
       "meaning": "routine",
       "contrastFamily": "build-bring-3",
@@ -38030,7 +38031,7 @@
           "a blue ball"
         ],
         [
-          "place",
+          "P2",
           "to school"
         ],
         [
@@ -38062,8 +38063,8 @@
           "en": "are bringing"
         },
         "place": {
-          "ja": "学校に",
-          "en": "to school"
+          "ja": "",
+          "en": ""
         },
         "time": {
           "ja": "今",
@@ -38074,13 +38075,13 @@
           "en": "a blue ball"
         },
         "P2": {
-          "ja": "",
-          "en": ""
+          "ja": "学校に",
+          "en": "to school"
         }
       },
       "ja": "彼らは今学校に青いボールを持ってきています。",
       "en": "They are bringing a blue ball to school now.",
-      "frame": "one-parameter",
+      "frame": "object-location",
       "authorship": "original-six-slots-v1",
       "meaning": "ongoing",
       "contrastFamily": "build-bring-3",
@@ -38099,7 +38100,7 @@
           "a blue ball"
         ],
         [
-          "place",
+          "P2",
           "to school"
         ],
         [
@@ -38131,8 +38132,8 @@
           "en": "brought"
         },
         "place": {
-          "ja": "学校に",
-          "en": "to school"
+          "ja": "",
+          "en": ""
         },
         "time": {
           "ja": "昨日",
@@ -38143,13 +38144,13 @@
           "en": "a blue ball"
         },
         "P2": {
-          "ja": "",
-          "en": ""
+          "ja": "学校に",
+          "en": "to school"
         }
       },
       "ja": "彼らは昨日学校に青いボールを持ってきました。",
       "en": "They brought a blue ball to school yesterday.",
-      "frame": "one-parameter",
+      "frame": "object-location",
       "authorship": "original-six-slots-v1",
       "meaning": "past",
       "contrastFamily": "build-bring-3",
@@ -38168,7 +38169,7 @@
           "a blue ball"
         ],
         [
-          "place",
+          "P2",
           "to school"
         ],
         [
@@ -56339,8 +56340,8 @@
           "en": "keep"
         },
         "place": {
-          "ja": "小さな箱に",
-          "en": "in a little box"
+          "ja": "",
+          "en": ""
         },
         "time": {
           "ja": "毎日",
@@ -56351,13 +56352,13 @@
           "en": "their stones"
         },
         "P2": {
-          "ja": "",
-          "en": ""
+          "ja": "小さな箱に",
+          "en": "in a little box"
         }
       },
       "ja": "彼らは毎日小さな箱に石をしまっておきます。",
       "en": "They keep their stones in a little box every day.",
-      "frame": "one-parameter",
+      "frame": "object-location",
       "authorship": "original-six-slots-v1",
       "meaning": "routine",
       "contrastFamily": "build-keep-2",
@@ -56376,7 +56377,7 @@
           "their stones"
         ],
         [
-          "place",
+          "P2",
           "in a little box"
         ],
         [
@@ -56408,8 +56409,8 @@
           "en": "are keeping"
         },
         "place": {
-          "ja": "小さな箱に",
-          "en": "in a little box"
+          "ja": "",
+          "en": ""
         },
         "time": {
           "ja": "今",
@@ -56420,13 +56421,13 @@
           "en": "their stones"
         },
         "P2": {
-          "ja": "",
-          "en": ""
+          "ja": "小さな箱に",
+          "en": "in a little box"
         }
       },
       "ja": "彼らは今小さな箱に石をしまっておいています。",
       "en": "They are keeping their stones in a little box now.",
-      "frame": "one-parameter",
+      "frame": "object-location",
       "authorship": "original-six-slots-v1",
       "meaning": "ongoing",
       "contrastFamily": "build-keep-2",
@@ -56445,7 +56446,7 @@
           "their stones"
         ],
         [
-          "place",
+          "P2",
           "in a little box"
         ],
         [
@@ -56477,8 +56478,8 @@
           "en": "kept"
         },
         "place": {
-          "ja": "小さな箱に",
-          "en": "in a little box"
+          "ja": "",
+          "en": ""
         },
         "time": {
           "ja": "昨日",
@@ -56489,13 +56490,13 @@
           "en": "their stones"
         },
         "P2": {
-          "ja": "",
-          "en": ""
+          "ja": "小さな箱に",
+          "en": "in a little box"
         }
       },
       "ja": "彼らは昨日小さな箱に石をしまっておきました。",
       "en": "They kept their stones in a little box yesterday.",
-      "frame": "one-parameter",
+      "frame": "object-location",
       "authorship": "original-six-slots-v1",
       "meaning": "past",
       "contrastFamily": "build-keep-2",
@@ -56514,7 +56515,7 @@
           "their stones"
         ],
         [
-          "place",
+          "P2",
           "in a little box"
         ],
         [
@@ -56546,8 +56547,8 @@
           "en": "keep"
         },
         "place": {
-          "ja": "小さな箱に",
-          "en": "in a little box"
+          "ja": "",
+          "en": ""
         },
         "time": {
           "ja": "毎日",
@@ -56558,13 +56559,13 @@
           "en": "my treasures"
         },
         "P2": {
-          "ja": "",
-          "en": ""
+          "ja": "小さな箱に",
+          "en": "in a little box"
         }
       },
       "ja": "私は毎日小さな箱に宝物をしまっておきます。",
       "en": "I keep my treasures in a little box every day.",
-      "frame": "one-parameter",
+      "frame": "object-location",
       "authorship": "original-six-slots-v1",
       "meaning": "routine",
       "contrastFamily": "build-keep-3",
@@ -56583,7 +56584,7 @@
           "my treasures"
         ],
         [
-          "place",
+          "P2",
           "in a little box"
         ],
         [
@@ -56615,8 +56616,8 @@
           "en": "am keeping"
         },
         "place": {
-          "ja": "小さな箱に",
-          "en": "in a little box"
+          "ja": "",
+          "en": ""
         },
         "time": {
           "ja": "今",
@@ -56627,13 +56628,13 @@
           "en": "my treasures"
         },
         "P2": {
-          "ja": "",
-          "en": ""
+          "ja": "小さな箱に",
+          "en": "in a little box"
         }
       },
       "ja": "私は今小さな箱に宝物をしまっておいています。",
       "en": "I am keeping my treasures in a little box now.",
-      "frame": "one-parameter",
+      "frame": "object-location",
       "authorship": "original-six-slots-v1",
       "meaning": "ongoing",
       "contrastFamily": "build-keep-3",
@@ -56652,7 +56653,7 @@
           "my treasures"
         ],
         [
-          "place",
+          "P2",
           "in a little box"
         ],
         [
@@ -56684,8 +56685,8 @@
           "en": "kept"
         },
         "place": {
-          "ja": "小さな箱に",
-          "en": "in a little box"
+          "ja": "",
+          "en": ""
         },
         "time": {
           "ja": "昨日",
@@ -56696,13 +56697,13 @@
           "en": "my treasures"
         },
         "P2": {
-          "ja": "",
-          "en": ""
+          "ja": "小さな箱に",
+          "en": "in a little box"
         }
       },
       "ja": "私は昨日小さな箱に宝物をしまっておきました。",
       "en": "I kept my treasures in a little box yesterday.",
-      "frame": "one-parameter",
+      "frame": "object-location",
       "authorship": "original-six-slots-v1",
       "meaning": "past",
       "contrastFamily": "build-keep-3",
@@ -56721,7 +56722,7 @@
           "my treasures"
         ],
         [
-          "place",
+          "P2",
           "in a little box"
         ],
         [

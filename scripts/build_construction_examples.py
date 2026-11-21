@@ -8,13 +8,13 @@ import re
 from pathlib import Path
 
 from compile_original import SUBJECTS, pair, third_person
-from refine_curriculum import refine
+from refine_curriculum import japanese_sentence, refine
 
 ROOT = Path(__file__).resolve().parents[1]
 SLOTS = ('S', 'predicate', 'P1', 'P2', 'place', 'time')
 
-# Prepositions that belong to the construction being practised. A location
-# after a posture/state verb is instead kept together in the place slot.
+# Keep the connectors used by the teaching model with the predicate. A
+# setting can stay together in the place slot, such as 'run in the park'.
 CONNECTORS = {
     'go': ('to ',), 'come': ('to ',),
     'walk': ('to ', 'through '), 'jump': ('over ',),
@@ -22,7 +22,7 @@ CONNECTORS = {
     'talk': ('with ',), 'call': (), 'pay': ('for ',),
     'dance': ('to ',),
 }
-LOCATION_VERBS = {'run', 'swim', 'sit', 'stand', 'sleep', 'rest', 'stay', 'live'}
+SETTING_VERBS = {'run', 'swim', 'sit', 'stand', 'sleep', 'rest'}
 SCHOOL_VERBS = {'write', 'draw', 'color', 'count', 'study', 'learn', 'spell',
                 'answer', 'ask', 'thank', 'join', 'teach'}
 OUTDOOR_VERBS = {'jump', 'fly', 'ride', 'climb', 'find'}
@@ -68,9 +68,11 @@ def make_example(key, group, number, values):
         values['predicate'] = slot('します', 'make')
         values['P1'], values['P2'] = slot('妹を', 'our sister'), slot('うれしい気持ちに', 'happy')
         frame = 'object-description'
+    if group in {'put', 'pour', 'bring'} or (group == 'keep' and number != 1):
+        values['P2'], values['place'] = values['place'], slot()
+        frame = 'object-location'
     en = ' '.join(values[k]['en'] for k in SLOTS if values[k]['en']) + '.'
-    # Japanese phrase order differs from the English construction order.
-    ja = ''.join(values[k]['ja'] for k in ('S', 'time', 'place', 'P1', 'P2', 'predicate')) + '。'
+    ja = japanese_sentence(values, frame)
     return {'id': key, 'group': group, 'variant': number, 'slots': values,
             'ja': ja, 'en': en, 'frame': frame, 'authorship': 'original-six-slots-v1'}
 
@@ -130,10 +132,7 @@ def build_examples():
             ja_m, en_m = modifiers[i if len(modifiers) == 3 else 0]
             en_m = own(en_m, i)
 
-            if verb in LOCATION_VERBS or (verb == 'walk' and en_p.startswith('by ')) or (verb == 'dance' and not en_p.startswith('to ')):
-                values['place'] = slot(ja_p, en_p)
-                ja_p = en_p = ''
-            elif verb == 'come' and en_p == 'here':
+            if verb in SETTING_VERBS or (verb == 'walk' and en_p.startswith('by ')) or (verb == 'dance' and not en_p.startswith('to ')):
                 values['place'] = slot(ja_p, en_p)
                 ja_p = en_p = ''
             else:
@@ -296,6 +295,7 @@ def build_examples():
             'go to / look at / listen to などは、つなぎ方まで述語に含める。',
             'be＋名詞・be＋形容詞は、この練習では全体を述語に入れる。',
             'PはParameter。P1・P2の役割は述語の部品ごとに決まる。',
+            '場所は動作や状態の舞台。移動先・置き先・滞在先など、述語が表す意味を補う場所はP1・P2に入れる。',
             '場所・時は基本として文の後ろ。ほかの自然な語順を誤りとはしない。',
             '述語は主語に合わせた形で渡す。三単現やbeの活用を推測させない。',
             '動作の現在形は「いつもの動き」。今している動作はbe＋動作ingという「今の状態」で扱う。',
@@ -322,6 +322,7 @@ def build_examples():
              '「doに動作を渡す」は習慣・行為の捉え方を説明する比喩です。肯定文にdoを実際に追加するルールではありません。', '',
              'S → 述語 → P1 → P2 → 場所 → 時。使わない欄は「—」。これは英文を作るための教材上の区切りです。', '',
              'PはParameter（引数）の教材独自の呼び名です。go to の to は述語側、school はP1側。give は「だれに→何を」、keep は「何を→どんな状態に」をP1・P2に入れます。be＋名詞・形容詞の文ではP1・P2を空欄にします。', '',
+             '場面全体の場所は［場所］へ入れます。come の行き先や live の居住先は［対象１］、put の置き先は［対象２］へ入れます。', '',
              '場所と時の両方を常に付ける必要はありません。主語に合う述語の形をそのまま練習します。', '',
              '例文は本教材用に新しく作成したものです。画像の更新は行っていません。', '',
              'レベル1：基本の文。レベル2：助動詞・否定・頻度。レベル3：疑問文。', '',

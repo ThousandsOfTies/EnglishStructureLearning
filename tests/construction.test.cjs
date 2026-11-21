@@ -40,6 +40,23 @@ test('location and invitation targets cannot leak into the time slot', () => {
   for (const q of basic) assert.match(q.slots.time.en, /^(?:$|on Sundays|every day|every morning|on Saturdays|today|now|yesterday)$/);
 });
 
+test('verb complements and scene locations use different slots in every tense', () => {
+  for (const [id, role, phrase] of [
+    ['come-1', 'P1', 'here'], ['come-2', 'P1', 'this room'],
+    ['stay-2', 'P1', 'in a tent'], ['live-1', 'P1', 'in a small house'],
+    ['put-1', 'P2', 'on the desk'], ['pour-1', 'P2', 'into a cup'],
+    ['bring-2', 'P2', 'to school'], ['keep-2', 'P2', 'in a little box'],
+    ['run-1', 'place', 'in the park'], ['wait-1', 'place', 'here'],
+    ['move-1', 'place', 'at home'], ['sit-1', 'place', 'on a bench'],
+  ]) {
+    const family = get(id).contrastFamily;
+    for (const q of basic.filter(example => example.contrastFamily === family)) {
+      assert.equal(q.slots[role].en, phrase, q.id);
+      if (role !== 'place') assert.equal(q.slots.place.en, '', q.id);
+    }
+  }
+});
+
 test('filled slots reconstruct the exact complete English sentence', () => {
   for (const q of basic) {
     const slots = ['S', 'predicate', 'P1', 'P2', 'place', 'time'].map(k => q.slots[k].en).filter(Boolean);
