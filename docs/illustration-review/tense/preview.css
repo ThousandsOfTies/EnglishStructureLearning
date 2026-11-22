@@ -1,0 +1,21 @@
+:root {
+  --background: #fff;
+  --foreground: #29394a;
+  --border: #94674b;
+  --muted: #fff3df;
+  --muted-foreground: #647382;
+  --viz-series-1: #326596;
+  font-family: system-ui, sans-serif;
+  color: var(--foreground);
+  background: var(--background);
+}
+
+body {
+  max-width: 64rem;
+  margin: 1.5rem auto;
+  padding: 0 1rem;
+}
+
+.text-small {
+  font-size: 0.85rem;
+}

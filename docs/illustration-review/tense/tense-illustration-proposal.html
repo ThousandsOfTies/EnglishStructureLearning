@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>部屋の掃除と時間の流れ</title>
+<link rel="stylesheet" href="preview.css">
+<style>
+  #tense-proposal {--mark:var(--viz-series-1,var(--foreground));--now:71%;color:var(--foreground);display:grid;gap:1em}
+  #tense-proposal .examples {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1em}
+  #tense-proposal h3 {margin:0}
+  #tense-proposal .scene {position:relative;margin-top:.6em;height:186px}
+  #tense-proposal .bubble {
+    position:absolute;top:3px;height:126px;border:2px solid var(--border);
+    border-radius:15px;background:var(--muted);
+  }
+  #tense-proposal .bubble::after {
+    content:"";position:absolute;bottom:-7px;left:var(--tail);width:11px;height:11px;
+    border-right:2px solid var(--border);border-bottom:2px solid var(--border);
+    background:var(--muted);transform:rotate(45deg)
+  }
+  #tense-proposal .past .bubble {left:1%;width:66%;--tail:94%}
+  #tense-proposal .ongoing .bubble {left:29%;right:2%;--tail:60%}
+  #tense-proposal .perfect .bubble {left:1%;width:29%;top:22px;height:80px}
+  #tense-proposal .perfect .bubble::after {display:none}
+  #tense-proposal .bubble img,#tense-proposal .result img {
+    position:absolute;inset:2%;width:96%;height:96%;object-fit:contain
+  }
+  #tense-proposal .bubble img.room-context {object-position:center bottom;opacity:.73}
+  #tense-proposal .without-background .room-context {visibility:hidden}
+  #tense-proposal .narrator {
+    position:absolute;bottom:0;left:var(--now);height:53px;width:42px;
+    object-fit:contain;transform:translateX(-50%)
+  }
+  #tense-proposal .result {position:absolute;left:33%;right:0;top:0;height:127px}
+  #tense-proposal .result img {object-position:center bottom}
+  #tense-proposal .timeline {position:relative;height:40px;margin-top:7px}
+  #tense-proposal .track {
+    position:absolute;left:6%;right:4%;top:12px;border-top:1px solid var(--muted-foreground)
+  }
+  #tense-proposal .track::after {
+    content:"";position:absolute;right:0;top:-3px;width:5px;height:5px;
+    border-top:1px solid var(--muted-foreground);border-right:1px solid var(--muted-foreground);
+    transform:rotate(45deg)
+  }
+  #tense-proposal .now-line {
+    position:absolute;left:var(--now);top:0;height:23px;border-left:2px solid var(--foreground)
+  }
+  #tense-proposal .when {position:absolute;top:24px;transform:translateX(-50%)}
+  #tense-proposal .earlier {left:16%}
+  #tense-proposal .present {left:var(--now);font-weight:500}
+  #tense-proposal .event {
+    position:absolute;left:16%;top:7px;width:11px;height:11px;border-radius:50%;
+    transform:translateX(-50%);background:var(--mark)
+  }
+  #tense-proposal .running {
+    position:absolute;left:36%;right:10%;top:8px;height:9px;border-radius:6px;background:var(--mark)
+  }
+  #tense-proposal .connection {
+    position:absolute;left:16%;width:calc(var(--now) - 16%);top:12px;
+    border-bottom:2px dashed var(--mark);background:var(--background);height:4px;transform:translateY(-2px)
+  }
+  #tense-proposal .state {
+    position:absolute;left:var(--now);top:6px;width:13px;height:13px;box-sizing:border-box;
+    transform:translateX(-50%);border:2px solid var(--mark);border-radius:2px;background:var(--background)
+  }
+  #tense-proposal .reading {margin-top:.55em}
+  @media(max-width:630px) {
+    #tense-proposal .examples {grid-template-columns:minmax(0,1fr);gap:1.5em}
+    #tense-proposal .example {max-width:420px;width:100%}
+  }
+</style>
+</head>
+<body>
+<div id="tense-proposal">
+  <div class="viz-controls">
+    <label class="form-check">
+      <input class="form-check-input" type="checkbox" id="tense-room-visible" checked>
+      <span>吹き出しに部屋の背景を入れる</span>
+    </label>
+  </div>
+  <div class="examples">
+    <section class="example past">
+      <h3>過去形</h3>
+      <p lang="en">I cleaned my room.</p>
+      <div class="scene" role="img" aria-label="左の吹き出しに掃除をしている女の子。今の話し手は左を振り返る。">
+        <div class="bubble">
+          <img class="room-context" src="../../../assets/tense/tidy-room.png" alt="">
+          <img src="../../../assets/tense/cleaning.png" alt="">
+        </div>
+        <img class="narrator" src="../../../assets/tense/looking-back.png" alt="">
+      </div>
+      <div class="timeline" role="img" aria-label="過去に点が一つある">
+        <span class="track"></span><span class="now-line"></span><span class="event"></span>
+        <span class="when earlier text-small">過去</span><span class="when present text-small">今</span>
+      </div>
+      <p class="reading">● 過去にあった出来事</p>
+    </section>
+    <section class="example ongoing">
+      <h3>現在進行形</h3>
+      <p lang="en">I'm cleaning my room.</p>
+      <div class="scene" role="img" aria-label="今の位置に掃除をしている女の子の吹き出し。">
+        <div class="bubble">
+          <img class="room-context" src="../../../assets/tense/tidy-room.png" alt="">
+          <img src="../../../assets/tense/cleaning.png" alt="">
+        </div>
+        <img class="narrator" src="../../../assets/tense/speaker.png" alt="">
+      </div>
+      <div class="timeline" role="img" aria-label="掃除している時間の帯が今と重なる">
+        <span class="track"></span><span class="running"></span><span class="now-line"></span>
+        <span class="when earlier text-small">過去</span><span class="when present text-small">今</span>
+      </div>
+      <p class="reading">━ 今は動作の途中</p>
+    </section>
+    <section class="example perfect">
+      <h3>現在完了形</h3>
+      <p lang="en">I've cleaned my room.</p>
+      <div class="scene" role="img" aria-label="左に小さく過去の掃除、今の位置に大きく片づいた部屋。">
+        <div class="bubble">
+          <img class="room-context" src="../../../assets/tense/tidy-room.png" alt="">
+          <img src="../../../assets/tense/cleaning.png" alt="">
+        </div>
+        <div class="result"><img src="../../../assets/tense/tidy-room.png" alt=""></div>
+        <img class="narrator" src="../../../assets/tense/speaker.png" alt="">
+      </div>
+      <div class="timeline" role="img" aria-label="過去の掃除を示す点から今の部屋の状態を示す四角へ点線が伸びる">
+        <span class="track"></span><span class="connection"></span><span class="now-line"></span>
+        <span class="event"></span><span class="state"></span>
+        <span class="when earlier text-small">過去</span><span class="when present text-small">今</span>
+      </div>
+      <p class="reading">● ··· □ 過去の掃除で、今きれい</p>
+    </section>
+  </div>
+</div>
+<script>
+  (() => {
+    const root = document.getElementById('tense-proposal');
+    const toggle = document.getElementById('tense-room-visible');
+    const examples = root.querySelector('.examples');
+    toggle.addEventListener('change', () => {
+      examples.classList.toggle('without-background', !toggle.checked);
+    });
+  })();
+</script>
+</body>
+</html>

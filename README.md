@@ -2,6 +2,8 @@
 
 [公開版を開く](https://thousandsofties.github.io/EnglishStructureLearning/) · [時制の絵くらべ（40問）](https://thousandsofties.github.io/EnglishStructureLearning/#tense-pictures)
 
+[How と Why のイラスト試作・検討メモ](docs/illustration-review/README.md)
+
 main へのプッシュごとに GitHub Actions が教材を再生成し、テスト成功後に GitHub Pages を更新します。
 
 現在の [`index.html`](index.html) は、身近なオリジナル例文953文を使う新教材版です。ブラウザーで直接開けます。データと操作部分は埋め込み済みで、サーバーは不要です。
