@@ -130,19 +130,14 @@ def prepare():
     data, manifest = read(ROOT / 'data/construction-examples.json'), read(MANIFEST)
     jobs = []
     for q in data['examples']:
-        time = q.get('slots', {}).get('time', {}).get('ja', '')
-        clue = ('カレンダーの絵も見て、ことばをえらぼう。' if any(day in time for day in WEEKDAY_ICONS)
-                else '時間のヒント：' + time + '。' if time else '絵の人物と、していることを見てえらぼう。')
+        time = q.get('slots', {}).get('time', {})
+        time_ja = time.get('ja', '')
+        calendar_time = time.get('en') in ('yesterday', 'tomorrow', 'every day') or any(day in time_ja for day in WEEKDAY_ICONS)
+        clue = f'時間のヒント：{time_ja}。' if time_ja and not calendar_time else ''
         if q.get('group') == 'come':
             clue += '話し手のいる場所へ近づいてきます。'
         if q['level'] > 1:
             clue = q.get('pictureHint', '')
-        has_relative_day = (time in ('昨日', '明日') or
-                            any(role == '時' and text in ('yesterday', 'tomorrow') for role, text, *_ in q.get('blocks', [])))
-        if q['level'] != 2 and has_relative_day:
-            clue = 'カレンダーの地球儀が回る向きを見てみよう。' + clue.removeprefix('時間のヒント：' + time + '。')
-        if time == '毎日':
-            clue = clue.removeprefix('時間のヒント：毎日。')
         registered = manifest['images'].get(q['id'])
         jobs.append({'id': q['id'], 'level': q['level'], 'group': q.get('group', 'level' + str(q['level'])),
                      'family': q.get('contrastFamily', q['id']), 'sentence': q['en'],
