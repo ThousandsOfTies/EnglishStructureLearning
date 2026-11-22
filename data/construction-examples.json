@@ -134,8 +134,8 @@
   "counts": {
     "level1": 918,
     "level2": 10,
-    "level3": 10,
-    "total": 938,
+    "level3": 11,
+    "total": 939,
     "core": 310,
     "pronounPractice": 39,
     "ongoing": 275,
@@ -68987,6 +68987,43 @@
           "家で"
         ]
       ]
+    },
+    {
+      "id": "level3-11",
+      "pictureHint": "知っていると思っていた相手が首をかしげています。驚いてたずねる場面です。",
+      "level": 3,
+      "focus": "否定疑問：Don't",
+      "ja": "あなたはそれを知らないの？",
+      "en": "Don't you know it?",
+      "base": "You know it.",
+      "question": {
+        "token": "whether",
+        "spoken": false,
+        "target": "truth"
+      },
+      "blocks": [
+        [
+          "助動詞＋否定",
+          "Don't",
+          "〜ないの？"
+        ],
+        [
+          "S",
+          "you",
+          "あなたは"
+        ],
+        [
+          "述語",
+          "know",
+          "知っている"
+        ],
+        [
+          "P1",
+          "it",
+          "それを"
+        ]
+      ],
+      "note": "この練習では、Don't を一つの助述部として主語の前に置きます。"
     }
   ]
 }

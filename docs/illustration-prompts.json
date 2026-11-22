@@ -14175,6 +14175,11 @@
       "narratorPose": "assets/character-materials/modal-speakers/girl-not-always.png",
       "posePrompts": "assets/character-materials/modal-speakers/girl-not-always.json",
       "generationMethod": "Built-in image_gen for the narrator with deterministic composition of the existing scene and mood symbols."
+    },
+    {
+      "exampleId": "level3-11",
+      "file": "assets/construction/level3-11.png",
+      "prompt": "Use case: illustration-story. Create one 3:2 landscape illustration for an existing Japanese children's English app teaching a friendly surprised question about whether the listener knows a pictured character. Match a polished Japanese children's book style, soft watercolor and gouache texture, gentle warm cream background and finely drawn warm-brown outlines. Two children outside the speech balloon, waist-up on the lower left of the picture: a chestnut bob-haired girl in coral cardigan and cream undershirt with a yellow star-shaped hair clip, speaking with a mildly surprised expression, and a short brown-haired boy in a blue hoodie, looking back at her with raised shoulders, a slightly tilted head, and an unsure expression. To the right of them is ONE large upright rectangular speech balloon with four crisp, square 90-degree corners and a single small triangular tail pointing visibly to the coral girl's mouth. Inside the rectangle, center one large picture of a distinct cute mint-green wind-up toy robot with a square head, amber eyes, a round yellow button on its chest and two stubby antennas. It is a picture of the recognizable thing the girl asks about. No child inside the rectangle. Show two children total, exactly one robot. The main figures and balloon should fill the composition, no unrelated objects and no background clutter. No letters, text, punctuation symbols, numbers, signs, captions, or watermarks anywhere. Large clear faces and calm friendly gestures. No rounded corners."
     }
   ],
   "sceneAtlases": {

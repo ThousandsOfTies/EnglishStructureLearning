@@ -320,7 +320,7 @@ def build_examples():
     level2_choices = build_level2_choices(advanced)
     for level in (2, 3):
         examples = advanced[f'level{level}']
-        assert len(examples) == 10
+        assert examples
         for q in examples:
             assert q['level'] == level and q['ja'] and q['focus']
             punctuation = '?' if level == 3 else '.'
@@ -332,7 +332,7 @@ def build_examples():
                 assert q['question']['spoken'] == (q['question']['token'] != 'whether')
                 assert 'whether' not in q['en'].lower()
     all_examples = rows + advanced['level2'] + advanced['level3']
-    assert len(all_examples) == len({q['id'] for q in all_examples}) == len(rows) + 20
+    assert len(all_examples) == len({q['id'] for q in all_examples})
 
     result = {
         'edition': 'original-six-slots-v2',
@@ -360,7 +360,7 @@ def build_examples():
         ],
         'silentQuestionWord': {'token': 'whether', 'meaning': '〜かどうか', 'spoken': False, 'written': False},
         'level2Choices': level2_choices,
-        'counts': {'level1': len(rows), 'level2': 10, 'level3': 10, 'total': len(all_examples),
+        'counts': {'level1': len(rows), 'level2': len(advanced['level2']), 'level3': len(advanced['level3']), 'total': len(all_examples),
                    'core': sum(q.get('contrastFamily') == q['id'] for q in rows), 'pronounPractice': 39,
                    'ongoing': sum(q['meaning'] == 'ongoing' and not q.get('pronounFocus') for q in rows),
                    'past': sum(q['meaning'] == 'past' for q in rows)},
@@ -369,7 +369,7 @@ def build_examples():
     (ROOT / 'data/construction-examples.json').write_text(json.dumps(result, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     lines = [f'# レベル1：英文を組み立てる{len(rows)}文', '',
              '基本動詞98種類と「be＋名詞」「be＋形容詞」の原型300文を土台に、いつもの動き・今の動き・昨日の動きを対比し、代名詞の39文も加えました。', '',
-             f"内訳：基本{result['counts']['core']}文＋今の動き{result['counts']['ongoing']}文＋過去{result['counts']['past']}文＋経験10文＋代名詞39文。レベル2・3は別に各10文です。", '',
+             f"内訳：基本{result['counts']['core']}文＋今の動き{result['counts']['ongoing']}文＋過去{result['counts']['past']}文＋経験10文＋代名詞39文。レベル2は{result['counts']['level2']}文、レベル3は{result['counts']['level3']}文です。", '',
              '全部を一度に練習する必要はありません。まず「いつもの動き／状態」の原型を使い、同じcontrastFamilyの「今」「昨日」と比べます。再帰代名詞8文は発展扱いです。', '',
              '「doに動作を渡す」は習慣・行為の捉え方を説明する比喩です。肯定文にdoを実際に追加するルールではありません。', '',
              'S → 助述部 → 述語 → P1 → P2 → 場所 → 時。使わない欄は「—」。これは英文を作るための教材上の区切りです。', '',
@@ -380,7 +380,7 @@ def build_examples():
              '例文は本教材用に新しく作成したものです。画像の更新は行っていません。', '',
              'レベル1：基本の文。レベル2：助動詞・否定・頻度。レベル3：疑問文。', '',
              'whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英文では書かず、発音もしません。S以外をたずねる直接疑問文では助動詞・be・doを主語の前に出します。SをたずねるwhoはSの位置に入ります。', '',
-             '追加例文：[レベル2・10文](level2-examples.md) / [レベル3・10文](level3-examples.md)', '']
+             f"追加例文：[レベル2・{result['counts']['level2']}文](level2-examples.md) / [レベル3・{result['counts']['level3']}文](level3-examples.md)", '']
     for group in groups:
         lines.extend([f"## {group['label']}：{group['ja']}", '',
                       '| 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |', '| --- | --- | --- | --- | --- | --- | --- | --- |'])
@@ -399,15 +399,17 @@ def build_examples():
     (ROOT / 'docs/construction-examples.md').write_text('\n'.join(lines), encoding='utf-8')
     for level in (2, 3):
         title = '助動詞・否定・頻度' if level == 2 else '疑問文'
-        lines = [f'# レベル{level}：{title}・10文', '',
+        exercises = advanced[f'level{level}']
+        lines = [f'# レベル{level}：{title}・{len(exercises)}文', '',
                  '元の文をどう変えるか、意味のブロックと完成した英文の両方で確かめます。', '',
                  '日本語のカードは、対応する英語を発音する順に並べます。', '']
         if level == 2:
             lines.extend(['リストの候補は欄の役割ごとに用意します。助動詞は、場面に合う日本語に、その助動詞に共通する意味を括弧で添えます。', ''])
         else:
             lines.extend(['黙疑問詞 whether は「〜かどうか」を問う内部の目印です。下のブロックや完成英文には表示せず、読み上げもしません。これは本教材独自の構築モデルで、英文法上の省略された語という主張ではありません。', '',
-                          'whoがSをたずねる場合は、肯定の文ではdoを足さず、Sと述語の順を入れ替えません。P1をたずねるwhoとは区別します。', ''])
-        for number, q in enumerate(advanced[f'level{level}'], 1):
+                          'whoがSをたずねる場合は、肯定の文ではdoを足さず、Sと述語の順を入れ替えません。P1をたずねるwhoとは区別します。', '',
+                          "否定疑問の練習では Don't のような短縮形を使い、一つの助述部として主語の前に置きます。", ''])
+        for number, q in enumerate(exercises, 1):
             lines.extend([f"## {number:02}　{q['focus']}", '', q['ja'], '',
                           f"**{q['en']}**", '', f"元の文：{q['base']}", '',
                           '| ' + ' | '.join(role for role, _, _ in q['blocks']) + ' |',
@@ -436,7 +438,7 @@ def build_examples():
                        '- 所有を表すitsは名詞とセットにする。独立した「それのもの」にitsを使う練習は作らない。', '',
                        '各例文のsceneに描画用の人物関係・時間の目印を保存しています。画像自体は生成・差し替えしていません。', ''])
     (ROOT / 'docs/action-state-contrasts.md').write_text('\n'.join(comparison), encoding='utf-8')
-    print(f'Wrote level 1: {len(rows)} examples; level 2: 10; level 3: 10. Total: {len(all_examples)}.')
+    print(f"Wrote level 1: {len(rows)} examples; level 2: {result['counts']['level2']}; level 3: {result['counts']['level3']}. Total: {len(all_examples)}.")
     print(json.dumps(result['counts'], ensure_ascii=False))
 
 
