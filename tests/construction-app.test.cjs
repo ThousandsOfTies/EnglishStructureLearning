@@ -232,8 +232,8 @@ test('level three negative questions keep one contracted support before the subj
 
 test('basic-first navigation separates contrasts, pronouns, and advanced reflexives', () => {
   const filters = { level: 1, group: 'all', scope: 'core', search: '' };
-  assert.equal(app.visibleExamples(data, filters).length, 310);
-  assert.equal(app.visibleExamples(data, { ...filters, scope: 'all' }).length, 918);
+  assert.equal(app.visibleExamples(data, filters).length, 313);
+  assert.equal(app.visibleExamples(data, { ...filters, scope: 'all' }).length, 924);
   assert.equal(app.visibleExamples(data, { ...filters, scope: 'pronouns' }).length, 31);
   assert.equal(app.visibleExamples(data, { ...filters, scope: 'extension' }).length, 8);
   assert.equal(app.visibleExamples(data, { ...filters, level: 2 }).length, 10);

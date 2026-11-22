@@ -1,8 +1,8 @@
-# レベル1：英文を組み立てる918文
+# レベル1：英文を組み立てる924文
 
 基本動詞98種類と「be＋名詞」「be＋形容詞」の原型300文を土台に、いつもの動き・今の動き・昨日の動きを対比し、代名詞の39文も加えました。
 
-内訳：基本310文＋今の動き275文＋過去284文＋経験10文＋代名詞39文。レベル2は10文、レベル3は14文です。
+内訳：基本313文＋今の動き275文＋過去287文＋経験10文＋代名詞39文。レベル2は10文、レベル3は14文です。
 
 全部を一度に練習する必要はありません。まず「いつもの動き／状態」の原型を使い、同じcontrastFamilyの「今」「昨日」と比べます。再帰代名詞8文は発展扱いです。
 
@@ -2367,6 +2367,8 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 | 昨日した | You | were | a helper | — | — | at the library | yesterday |
 | 状態 | He | is | a teammate | — | — | at school | — |
 | 昨日した | He | was | a teammate | — | — | at school | yesterday |
+| 状態 | I | am | the class helper | — | — | — | — |
+| 昨日した | I | was | the class helper | — | — | — | yesterday |
 
 - I am a student. — 私は生徒です。
 - I was a student yesterday. — 私は昨日は生徒でした。
@@ -2374,6 +2376,8 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 - You were a helper at the library yesterday. — あなたは昨日は図書館でお手伝い係でした。
 - He is a teammate at school. — 彼は学校ではチームメイトです。
 - He was a teammate at school yesterday. — 彼は昨日は学校ではチームメイトでした。
+- I am the class helper. — 私はクラスの当番です。
+- I was the class helper yesterday. — 私は昨日クラスの当番でした。
 
 ## be＋形容詞：be＋形容詞
 
@@ -2385,6 +2389,10 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 | 昨日した | He | was | busy | — | — | at school | yesterday |
 | 状態 | We | are | quiet | — | — | in the library | — |
 | 昨日した | We | were | quiet | — | — | in the library | yesterday |
+| 状態 | She | is | sleepy | — | — | — | — |
+| 昨日した | She | was | sleepy | — | — | — | yesterday |
+| 状態 | They | are | ready | — | — | — | — |
+| 昨日した | They | were | ready | — | — | — | yesterday |
 
 - She is happy at home today. — 彼女は今日は家でうれしいです。
 - She was happy at home yesterday. — 彼女は昨日は家でうれしかったです。
@@ -2392,6 +2400,10 @@ whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英
 - He was busy at school yesterday. — 彼は昨日は学校でいそがしかったです。
 - We are quiet in the library. — 私たちは図書館で静かです。
 - We were quiet in the library yesterday. — 私たちは昨日は図書館で静かでした。
+- She is sleepy. — 彼女は眠いです。
+- She was sleepy yesterday. — 彼女は昨日眠かったです。
+- They are ready. — 彼らは準備万端です。
+- They were ready yesterday. — 彼らは昨日準備万端でした。
 
 ## 代名詞：だれが：代名詞：だれが
 

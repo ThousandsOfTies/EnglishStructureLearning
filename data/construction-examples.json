@@ -133,14 +133,14 @@
     }
   },
   "counts": {
-    "level1": 918,
+    "level1": 924,
     "level2": 10,
     "level3": 14,
-    "total": 942,
-    "core": 310,
+    "total": 948,
+    "core": 313,
     "pronounPractice": 39,
     "ongoing": 275,
-    "past": 284
+    "past": 287
   },
   "groups": [
     {
@@ -68217,6 +68217,411 @@
         [
           "P1",
           "sushi rolls"
+        ]
+      ]
+    },
+    {
+      "id": "build-be-noun-4",
+      "group": "be-noun",
+      "variant": 4,
+      "slots": {
+        "S": {
+          "ja": "私は",
+          "en": "I"
+        },
+        "predicate": {
+          "ja": "クラスの当番",
+          "en": "the class helper"
+        },
+        "place": {
+          "ja": "",
+          "en": ""
+        },
+        "time": {
+          "ja": "",
+          "en": ""
+        },
+        "P1": {
+          "ja": "",
+          "en": ""
+        },
+        "P2": {
+          "ja": "",
+          "en": ""
+        },
+        "support": {
+          "ja": "である",
+          "en": "am"
+        }
+      },
+      "ja": "私はクラスの当番です。",
+      "en": "I am the class helper.",
+      "frame": "no-parameter",
+      "authorship": "original-six-slots-v1",
+      "contrastFamily": "build-be-noun-4",
+      "meaning": "state",
+      "scene": {
+        "speaker": "吹き出しの外にいる話し手",
+        "listener": "話しかけられている人",
+        "subjectReference": "I",
+        "viewpoint": "外の話し手と、吹き出しの中の主人公は同じ人。服・髪型・目印をそろえる。",
+        "speakerTime": "今",
+        "eventTime": "今の状態",
+        "timeCue": "今の気持ち・関係・身分・持続する状態。無理に動作の途中にしない。"
+      },
+      "level": 1,
+      "blocks": [
+        [
+          "S",
+          "I"
+        ],
+        [
+          "support",
+          "am"
+        ],
+        [
+          "predicate",
+          "the class helper"
+        ]
+      ]
+    },
+    {
+      "id": "build-be-noun-4-past",
+      "group": "be-noun",
+      "variant": 4,
+      "slots": {
+        "S": {
+          "ja": "私は",
+          "en": "I"
+        },
+        "predicate": {
+          "ja": "クラスの当番",
+          "en": "the class helper"
+        },
+        "place": {
+          "ja": "",
+          "en": ""
+        },
+        "time": {
+          "ja": "昨日",
+          "en": "yesterday"
+        },
+        "P1": {
+          "ja": "",
+          "en": ""
+        },
+        "P2": {
+          "ja": "",
+          "en": ""
+        },
+        "support": {
+          "ja": "であった",
+          "en": "was"
+        }
+      },
+      "ja": "私は昨日クラスの当番でした。",
+      "en": "I was the class helper yesterday.",
+      "frame": "no-parameter",
+      "authorship": "original-six-slots-v1",
+      "contrastFamily": "build-be-noun-4",
+      "meaning": "past",
+      "statePredicate": true,
+      "scene": {
+        "speaker": "吹き出しの外にいる話し手",
+        "listener": "話しかけられている人",
+        "subjectReference": "I",
+        "viewpoint": "外の話し手と、吹き出しの中の主人公は同じ人。服・髪型・目印をそろえる。",
+        "speakerTime": "今",
+        "eventTime": "昨日",
+        "timeCue": "外の話し手は「今日・今」、中の出来事は「昨日」。時点の違いを目印で示す。"
+      },
+      "level": 1,
+      "blocks": [
+        [
+          "S",
+          "I"
+        ],
+        [
+          "support",
+          "was"
+        ],
+        [
+          "predicate",
+          "the class helper"
+        ],
+        [
+          "time",
+          "yesterday"
+        ]
+      ]
+    },
+    {
+      "id": "build-be-adjective-4",
+      "group": "be-adjective",
+      "variant": 4,
+      "slots": {
+        "S": {
+          "ja": "彼女は",
+          "en": "She"
+        },
+        "predicate": {
+          "ja": "眠い",
+          "en": "sleepy"
+        },
+        "place": {
+          "ja": "",
+          "en": ""
+        },
+        "time": {
+          "ja": "",
+          "en": ""
+        },
+        "P1": {
+          "ja": "",
+          "en": ""
+        },
+        "P2": {
+          "ja": "",
+          "en": ""
+        },
+        "support": {
+          "ja": "である",
+          "en": "is"
+        }
+      },
+      "ja": "彼女は眠いです。",
+      "en": "She is sleepy.",
+      "frame": "no-parameter",
+      "authorship": "original-six-slots-v1",
+      "contrastFamily": "build-be-adjective-4",
+      "meaning": "state",
+      "scene": {
+        "speaker": "吹き出しの外にいる話し手",
+        "listener": "話しかけられている人",
+        "subjectReference": "She",
+        "viewpoint": "話し手・聞き手とは別の、sheで指す人物を吹き出しの中で示す。",
+        "speakerTime": "今",
+        "eventTime": "今の状態",
+        "timeCue": "今の気持ち・関係・身分・持続する状態。無理に動作の途中にしない。"
+      },
+      "level": 1,
+      "blocks": [
+        [
+          "S",
+          "She"
+        ],
+        [
+          "support",
+          "is"
+        ],
+        [
+          "predicate",
+          "sleepy"
+        ]
+      ]
+    },
+    {
+      "id": "build-be-adjective-4-past",
+      "group": "be-adjective",
+      "variant": 4,
+      "slots": {
+        "S": {
+          "ja": "彼女は",
+          "en": "She"
+        },
+        "predicate": {
+          "ja": "眠い",
+          "en": "sleepy"
+        },
+        "place": {
+          "ja": "",
+          "en": ""
+        },
+        "time": {
+          "ja": "昨日",
+          "en": "yesterday"
+        },
+        "P1": {
+          "ja": "",
+          "en": ""
+        },
+        "P2": {
+          "ja": "",
+          "en": ""
+        },
+        "support": {
+          "ja": "であった",
+          "en": "was"
+        }
+      },
+      "ja": "彼女は昨日眠かったです。",
+      "en": "She was sleepy yesterday.",
+      "frame": "no-parameter",
+      "authorship": "original-six-slots-v1",
+      "contrastFamily": "build-be-adjective-4",
+      "meaning": "past",
+      "statePredicate": true,
+      "scene": {
+        "speaker": "吹き出しの外にいる話し手",
+        "listener": "話しかけられている人",
+        "subjectReference": "She",
+        "viewpoint": "話し手・聞き手とは別の、sheで指す人物を吹き出しの中で示す。",
+        "speakerTime": "今",
+        "eventTime": "昨日",
+        "timeCue": "外の話し手は「今日・今」、中の出来事は「昨日」。時点の違いを目印で示す。"
+      },
+      "level": 1,
+      "blocks": [
+        [
+          "S",
+          "She"
+        ],
+        [
+          "support",
+          "was"
+        ],
+        [
+          "predicate",
+          "sleepy"
+        ],
+        [
+          "time",
+          "yesterday"
+        ]
+      ]
+    },
+    {
+      "id": "build-be-adjective-5",
+      "group": "be-adjective",
+      "variant": 5,
+      "slots": {
+        "S": {
+          "ja": "彼らは",
+          "en": "They"
+        },
+        "predicate": {
+          "ja": "準備万端",
+          "en": "ready"
+        },
+        "place": {
+          "ja": "",
+          "en": ""
+        },
+        "time": {
+          "ja": "",
+          "en": ""
+        },
+        "P1": {
+          "ja": "",
+          "en": ""
+        },
+        "P2": {
+          "ja": "",
+          "en": ""
+        },
+        "support": {
+          "ja": "である",
+          "en": "are"
+        }
+      },
+      "ja": "彼らは準備万端です。",
+      "en": "They are ready.",
+      "frame": "no-parameter",
+      "authorship": "original-six-slots-v1",
+      "contrastFamily": "build-be-adjective-5",
+      "meaning": "state",
+      "scene": {
+        "speaker": "吹き出しの外にいる話し手",
+        "listener": "話しかけられている人",
+        "subjectReference": "They",
+        "viewpoint": "吹き出しの中のグループには、話し手と聞き手を含めない。",
+        "speakerTime": "今",
+        "eventTime": "今の状態",
+        "timeCue": "今の気持ち・関係・身分・持続する状態。無理に動作の途中にしない。"
+      },
+      "level": 1,
+      "blocks": [
+        [
+          "S",
+          "They"
+        ],
+        [
+          "support",
+          "are"
+        ],
+        [
+          "predicate",
+          "ready"
+        ]
+      ]
+    },
+    {
+      "id": "build-be-adjective-5-past",
+      "group": "be-adjective",
+      "variant": 5,
+      "slots": {
+        "S": {
+          "ja": "彼らは",
+          "en": "They"
+        },
+        "predicate": {
+          "ja": "準備万端",
+          "en": "ready"
+        },
+        "place": {
+          "ja": "",
+          "en": ""
+        },
+        "time": {
+          "ja": "昨日",
+          "en": "yesterday"
+        },
+        "P1": {
+          "ja": "",
+          "en": ""
+        },
+        "P2": {
+          "ja": "",
+          "en": ""
+        },
+        "support": {
+          "ja": "であった",
+          "en": "were"
+        }
+      },
+      "ja": "彼らは昨日準備万端でした。",
+      "en": "They were ready yesterday.",
+      "frame": "no-parameter",
+      "authorship": "original-six-slots-v1",
+      "contrastFamily": "build-be-adjective-5",
+      "meaning": "past",
+      "statePredicate": true,
+      "scene": {
+        "speaker": "吹き出しの外にいる話し手",
+        "listener": "話しかけられている人",
+        "subjectReference": "They",
+        "viewpoint": "吹き出しの中のグループには、話し手と聞き手を含めない。",
+        "speakerTime": "今",
+        "eventTime": "昨日",
+        "timeCue": "外の話し手は「今日・今」、中の出来事は「昨日」。時点の違いを目印で示す。"
+      },
+      "level": 1,
+      "blocks": [
+        [
+          "S",
+          "They"
+        ],
+        [
+          "support",
+          "were"
+        ],
+        [
+          "predicate",
+          "ready"
+        ],
+        [
+          "time",
+          "yesterday"
         ]
       ]
     },

@@ -8,7 +8,7 @@ const basic = draft.examples.filter(q => q.level === 1);
 const get = id => basic.find(q => q.id === 'build-' + id);
 
 test('the original 100 groups keep three core scenes each, with contrasts added', () => {
-  const core = basic.filter(q => q.contrastFamily === q.id && q.group !== 'tense-pictures');
+  const core = basic.filter(q => q.contrastFamily === q.id && q.group !== 'tense-pictures' && q.variant <= 3);
   assert.equal(core.length, 300);
   const coreGroups = draft.groups.filter(q => !q.key.startsWith('pronouns-') && q.key !== 'tense-pictures');
   assert.equal(coreGroups.length, 100);
@@ -33,6 +33,27 @@ test('be goes in the support slot and nouns and adjectives stay in the predicate
   for (const q of basic.filter(q => q.group.startsWith('be-'))) {
     assert.deepEqual(q.slots.P1, {ja: '', en: ''});
     assert.deepEqual(q.slots.P2, {ja: '', en: ''});
+  }
+});
+
+test('the new be scenes pair present and past forms with the same subject and predicate', () => {
+  const scenes = [
+    ['be-noun-4', 'I', 'am', 'was', 'the class helper'],
+    ['be-adjective-4', 'She', 'is', 'was', 'sleepy'],
+    ['be-adjective-5', 'They', 'are', 'were', 'ready'],
+  ];
+  for (const [id, subject, presentBe, pastBe, predicate] of scenes) {
+    const present = get(id);
+    const past = get(id + '-past');
+    assert.equal(present.en, `${subject} ${presentBe} ${predicate}.`);
+    assert.equal(past.en, `${subject} ${pastBe} ${predicate} yesterday.`);
+    assert.deepEqual(present.slots.S, past.slots.S);
+    assert.deepEqual(present.slots.predicate, past.slots.predicate);
+    assert.deepEqual(present.slots.support, {ja: 'である', en: presentBe});
+    assert.deepEqual(past.slots.support, {ja: 'であった', en: pastBe});
+    assert.equal(present.meaning, 'state');
+    assert.equal(past.statePredicate, true);
+    assert.equal(past.contrastFamily, present.id);
   }
 });
 
@@ -79,9 +100,9 @@ test('P1 and P2 distinguish recipient/thing from object/description', () => {
 });
 
 test('each selectable level has its requested number of examples', () => {
-  assert.deepEqual([1,2,3].map(level => draft.examples.filter(q => q.level === level).length), [918,10,14]);
+  assert.deepEqual([1,2,3].map(level => draft.examples.filter(q => q.level === level).length), [924,10,14]);
   assert.deepEqual(draft.levels.map(q => q.id), [1,2,3]);
-  assert.equal(new Set(draft.examples.map(q => q.id)).size, 942);
+  assert.equal(new Set(draft.examples.map(q => q.id)).size, 948);
 });
 
 test('state verbs stay simple while ongoing actions are be plus ing', () => {

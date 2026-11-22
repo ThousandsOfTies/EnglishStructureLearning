@@ -8,7 +8,7 @@ import re
 from pathlib import Path
 
 from compile_original import SUBJECTS, pair, third_person
-from refine_curriculum import SLOTS as SOURCE_SLOTS, japanese_sentence, refine
+from refine_curriculum import SLOTS as SOURCE_SLOTS, annotate_scene, japanese_sentence, refine
 
 ROOT = Path(__file__).resolve().parents[1]
 SLOTS = ('S', 'support', *SOURCE_SLOTS[1:])
@@ -102,6 +102,29 @@ def tense_picture_examples():
                 'S': slot('私が', 'I'), 'predicate': slot(verb_ja, verb_en),
                 'P': slot(ja_object, en_object), 'place': slot(), 'time': slot()})
             q.update(contrastFamily=family, meaning=meaning)
+            yield q
+
+
+def additional_be_examples():
+    scenes = [
+        ('be-noun', 4, ('私は', 'I'), ('クラスの当番です', 'am the class helper'), ('クラスの当番でした', 'was the class helper')),
+        ('be-adjective', 4, ('彼女は', 'She'), ('眠いです', 'is sleepy'), ('眠かったです', 'was sleepy')),
+        ('be-adjective', 5, ('彼らは', 'They'), ('準備万端です', 'are ready'), ('準備万端でした', 'were ready')),
+    ]
+    for group, number, subject, current, past in scenes:
+        family = f'build-{group}-{number}'
+        for suffix, meaning, predicate, time in (
+            ('', 'state', current, slot()),
+            ('-past', 'past', past, slot('昨日', 'yesterday')),
+        ):
+            q = make_example(family + suffix, group, number, {
+                'S': slot(*subject), 'predicate': slot(*predicate),
+                'place': slot(), 'time': time,
+            })
+            q.update(contrastFamily=family, meaning=meaning)
+            if meaning == 'past':
+                q['statePredicate'] = True
+            annotate_scene(q)
             yield q
 
 
@@ -311,6 +334,7 @@ def build_examples():
     rows, groups = refine(rows, groups)
     groups.insert(0, {'key': 'tense-pictures', 'label': '10の動作', 'ja': '時制の絵くらべ'})
     rows.extend(tense_picture_examples())
+    rows.extend(additional_be_examples())
     for q in rows:
         q['level'] = 1
         set_predicate_support(q)

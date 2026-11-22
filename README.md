@@ -4,9 +4,9 @@
 
 main へのプッシュごとに GitHub Actions が教材を再生成し、テスト成功後に GitHub Pages を更新します。
 
-現在の [`index.html`](index.html) は、身近なオリジナル例文942文を使う新教材版です。ブラウザーで直接開けます。データと操作部分は埋め込み済みで、サーバーは不要です。
+現在の [`index.html`](index.html) は、身近なオリジナル例文948文を使う新教材版です。ブラウザーで直接開けます。データと操作部分は埋め込み済みで、サーバーは不要です。
 
-初めて開くと、レベル1の絵付き918文を使う「絵を見てえらぶ」で始まります。絵を見て主語・述語などを選びます。「カードを並べる」に切り替えて練習することもできます。絵や文章の両側にある矢印で、前後の場面へ移動できます。
+初めて開くと、レベル1の絵付き924文を使う「絵を見てえらぶ」で始まります。絵を見て主語・述語などを選びます。「カードを並べる」に切り替えて練習することもできます。絵や文章の両側にある矢印で、前後の場面へ移動できます。
 
 - レベル1は主語・助述部・述語・対象１・対象２・場所・時の七つの欄を使います。be は助述部に、後ろの名詞・形容詞・動作の ing 形は述語に入れます。日本語カードはドラッグするか、カードと欄を順に押して置きます。
 - 動作や状態の舞台は［場所］に入れます。述語が表す意味を補う行き先や置き先などは［対象１］・［対象２］に入れます。
@@ -22,7 +22,7 @@ main へのプッシュごとに GitHub Actions が教材を再生成し、テ�
 
 [時制の絵くらべ](https://thousandsofties.github.io/EnglishStructureLearning/#tense-pictures)では10の動作を現在・過去・進行・経験の4形で練習できます。
 
-元の基本300場面を中心に始め、比較例・代名詞・発展の再帰代名詞へ切り替えます。全件を最初から順に解く必要はありません。レベル1は918文、レベル2は10文、レベル3は14文です。
+元の基本300場面を中心に始め、比較例・代名詞・発展の再帰代名詞へ切り替えます。全件を最初から順に解く必要はありません。レベル1は924文、レベル2は10文、レベル3は14文です。
 
 **新教材アプリの再生成：**
 
@@ -35,7 +35,7 @@ node --test tests/construction.test.cjs tests/construction-app.test.cjs tests/pr
 
 画面の編集元は `src/construction-template.html` と `src/construction-practice.js` です。原稿は `data/original-curriculum.txt`、レベル2・3は `data/advanced-examples.json`、生成データは `data/construction-examples.json` にあります。
 
-全942文にイラストが付いています。テーマ別の登録状況は [作画状況](docs/construction-artwork-status.md)、再開手順は [作業引き継ぎ](docs/work-continuation.md) を参照してください。画像は `assets/construction/`、対応表は `data/construction-illustrations.json`、生成に使ったプロンプトは `docs/illustration-prompts.json` に保存しています。`assets/tense/` のハイブリッド版は試作品で、最終承認済みのデザインではありません。自動派生した例文の自然さも引き続き確認が必要です。`.review-tmp/` は調査用で教材本体ではありません。
+全948文にイラストが付いています。テーマ別の登録状況は [作画状況](docs/construction-artwork-status.md)、再開手順は [作業引き継ぎ](docs/work-continuation.md) を参照してください。画像は `assets/construction/`、対応表は `data/construction-illustrations.json`、生成に使ったプロンプトは `docs/illustration-prompts.json` に保存しています。`assets/tense/` のハイブリッド版は試作品で、最終承認済みのデザインではありません。自動派生した例文の自然さも引き続き確認が必要です。`.review-tmp/` は調査用で教材本体ではありません。
 
 **注意：`scripts/build.py` は旧640文版で `index.html` を上書きします。新教材の生成に使わないでください。** 旧テンプレート・データ・582画像は残しています。`scripts/compile_original.py` も途中の旧4欄案です。
 

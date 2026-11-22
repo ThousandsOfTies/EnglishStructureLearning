@@ -1,8 +1,8 @@
 {
   "version": 1,
   "generationTool": "built-in image_gen",
-  "total": 942,
-  "ready": 942,
+  "total": 948,
+  "ready": 948,
   "pending": 0,
   "jobs": [
     {
@@ -11020,6 +11020,78 @@
       "clue": "絵の人物と、していることを見てえらぼう。",
       "status": "ready",
       "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Experience: outside speaker on RIGHT looks LEFT at an earlier event. Four narrow bars outside the RIGHT edge of the balloon become shorter and paler toward the speaker. No timeline or arrows. Outside narrator is the main girl; the ONLY event actor inside the balloon is the SAME girl, identical clothes/hairclip. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"I have made sushi rolls.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"私がのり巻きを作ったことがある。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"I\", \"predicate\": \"have made\", \"P1\": \"sushi rolls\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage."
+    },
+    {
+      "id": "build-be-noun-4",
+      "level": 1,
+      "group": "be-noun",
+      "family": "build-be-noun-4",
+      "sentence": "I am the class helper.",
+      "file": "assets/construction/build-be-noun-4.png",
+      "alt": "私はクラスの当番です場面",
+      "clue": "絵の人物と、していることを見てえらぼう。",
+      "status": "ready",
+      "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Small outside present-day speaker/listener on LEFT; one large balloon on RIGHT illustrates the action concept or state. Tail points to the outside speaker. Use ONE event scene, no repeated mini-panels, no timeline. No calendar. Exact frequency/day will be supplied outside the picture. Outside narrator is the main girl; the ONLY event actor inside the balloon is the SAME girl, identical clothes/hairclip. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"I am the class helper.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"私はクラスの当番です。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"I\", \"predicate\": \"the class helper\", \"support\": \"am\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage."
+    },
+    {
+      "id": "build-be-noun-4-past",
+      "level": 1,
+      "group": "be-noun",
+      "family": "build-be-noun-4",
+      "sentence": "I was the class helper yesterday.",
+      "file": "assets/construction/build-be-noun-4-past.png",
+      "alt": "私は昨日クラスの当番でした場面",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
+      "status": "ready",
+      "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Place the NOW narrator(s) at the RIGHT, with body facing right and head looking back LEFT. Large balloon on LEFT contains the past event. No bars or timeline. Outside narrator is the main girl; the ONLY event actor inside the balloon is the SAME girl, identical clothes/hairclip. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"I was the class helper yesterday.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"私は昨日クラスの当番でした。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"I\", \"predicate\": \"the class helper\", \"time\": \"yesterday\", \"support\": \"was\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage."
+    },
+    {
+      "id": "build-be-adjective-4",
+      "level": 1,
+      "group": "be-adjective",
+      "family": "build-be-adjective-4",
+      "sentence": "She is sleepy.",
+      "file": "assets/construction/build-be-adjective-4.png",
+      "alt": "彼女は眠いです場面",
+      "clue": "絵の人物と、していることを見てえらぼう。",
+      "status": "ready",
+      "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Small outside present-day speaker/listener on LEFT; one large balloon on RIGHT illustrates the action concept or state. Tail points to the outside speaker. Use ONE event scene, no repeated mini-panels, no timeline. No calendar. Exact frequency/day will be supplied outside the picture. Outside speaker is the main girl addressing the blue-hoodie boy. They look/gesture towards a THIRD-PARTY lavender-shirt girl inside the scene. She is neither the speaker nor the listener. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"She is sleepy.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"彼女は眠いです。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"She\", \"predicate\": \"sleepy\", \"support\": \"is\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage."
+    },
+    {
+      "id": "build-be-adjective-4-past",
+      "level": 1,
+      "group": "be-adjective",
+      "family": "build-be-adjective-4",
+      "sentence": "She was sleepy yesterday.",
+      "file": "assets/construction/build-be-adjective-4-past.png",
+      "alt": "彼女は昨日眠かったです場面",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
+      "status": "ready",
+      "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Place the NOW narrator(s) at the RIGHT, with body facing right and head looking back LEFT. Large balloon on LEFT contains the past event. No bars or timeline. Outside speaker is the main girl addressing the blue-hoodie boy. They look/gesture towards a THIRD-PARTY lavender-shirt girl inside the scene. She is neither the speaker nor the listener. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"She was sleepy yesterday.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"彼女は昨日眠かったです。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"She\", \"predicate\": \"sleepy\", \"time\": \"yesterday\", \"support\": \"was\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage."
+    },
+    {
+      "id": "build-be-adjective-5",
+      "level": 1,
+      "group": "be-adjective",
+      "family": "build-be-adjective-5",
+      "sentence": "They are ready.",
+      "file": "assets/construction/build-be-adjective-5.png",
+      "alt": "彼らは準備万端です場面",
+      "clue": "絵の人物と、していることを見てえらぼう。",
+      "status": "ready",
+      "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Small outside present-day speaker/listener on LEFT; one large balloon on RIGHT illustrates the action concept or state. Tail points to the outside speaker. Use ONE event scene, no repeated mini-panels, no timeline. No calendar. Exact frequency/day will be supplied outside the picture. Outside main girl and blue-hoodie boy talk about the event group. INSIDE actors are a lavender-shirt girl and a green-shirt boy. Neither outside speaker nor listener is in that third-party group. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"They are ready.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"彼らは準備万端です。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"They\", \"predicate\": \"ready\", \"support\": \"are\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage."
+    },
+    {
+      "id": "build-be-adjective-5-past",
+      "level": 1,
+      "group": "be-adjective",
+      "family": "build-be-adjective-5",
+      "sentence": "They were ready yesterday.",
+      "file": "assets/construction/build-be-adjective-5-past.png",
+      "alt": "彼らは昨日準備万端でした場面",
+      "clue": "カレンダーの地球儀が回る向きを見てみよう。",
+      "status": "ready",
+      "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Place the NOW narrator(s) at the RIGHT, with body facing right and head looking back LEFT. Large balloon on LEFT contains the past event. No bars or timeline. Outside main girl and blue-hoodie boy talk about the event group. INSIDE actors are a lavender-shirt girl and a green-shirt boy. Neither outside speaker nor listener is in that third-party group. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"They were ready yesterday.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"彼らは昨日準備万端でした。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"They\", \"predicate\": \"ready\", \"time\": \"yesterday\", \"support\": \"were\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage."
     },
     {
       "id": "level2-01",
