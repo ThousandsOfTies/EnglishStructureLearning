@@ -160,8 +160,13 @@ if (typeof document !== 'undefined') {
     },
     2: {
       summary: 'できること、しないこと、よくすることなどを伝える文をつくる。',
-      examples: [{ id: 'level2-03' }, { id: 'level2-07' }],
-      note: '助述部が二つ以上あるときは、英語で言う順に上から並べます。',
+      examples: [{
+        id: 'level2-03',
+        heading: '話し手の顔と手を見よう',
+        showPicture: true,
+        explanation: '吹き出しの先にいる女の子は、真剣な顔で人さし指を立てています。図書館で守る決まりを伝えているので、助述部で「〜しなければならない」をえらびます。',
+      }, { id: 'level2-07' }],
+      note: '親指を立てて自信を見せる絵では「〜できる」、手のひらを差し出してすすめる絵では「〜したほうがいい」が手がかりです。助述部が二つ以上あるときは、英語で言う順に上から並べます。',
     },
     3: {
       summary: 'できるかどうかや、だれが・どこでなどを相手にたずねる文をつくる。',
@@ -174,8 +179,14 @@ if (typeof document !== 'undefined') {
           { role: '述語', en: 'ride', text: '乗る' },
           { role: 'P1', en: 'a bike', text: '自転車に' },
         ],
-      }, { id: 'level3-04' }],
-      note: '「できますか」とたずねるときは、can が主語の前に来ます。「だれが」と主語をたずねるときは、疑問詞を主語の位置に置きます。',
+      }, {
+        id: 'level3-04',
+        heading: '誰が、どんなふうにたずねている？',
+        showPicture: true,
+        explanation: '吹き出しの先の男の子が、女の子のほうを見て手を差し出しています。女の子に「乗れる？」とたずねているので、助述部の Can を主語の前に置きます。',
+        practice: '驚いた顔で「乗れないの？」と聞く場面なら、Can’t を一つの助述部として主語の前に置きます。',
+      }],
+      note: '「だれが」と主語をたずねるときは、疑問詞を主語の位置に置きます。',
     },
   };
   const compactChoices = window.matchMedia('(max-width: 720px)');
@@ -504,6 +515,7 @@ if (typeof document !== 'undefined') {
       return `<figure class="guide-example">
         <figcaption>
           ${example.heading ? `<h3>${esc(example.heading)}</h3>` : ''}
+          ${example.showPicture && q.image ? `<img class="guide-illustration" src="${esc(q.image)}" alt="${esc(q.imageAlt)}" width="860" height="644">` : ''}
           ${example.explanation ? `<p class="guide-explanation">${esc(example.explanation)}</p>` : ''}
           <span class="guide-sentence" lang="en">${esc(q.en)}</span><span class="muted">${esc(q.ja)}</span>
         </figcaption>
