@@ -167,6 +167,19 @@ if (typeof document !== 'undefined') {
         picture: 'speaker',
         explanation: '女の子がにっこり笑って親指を立てています。「大丈夫、私にできるよ」という気持ちです。',
       }, {
+        heading: '少し迷った顔 → 〜するかもしれない（might）',
+        picture: 'pose',
+        image: 'assets/character-materials/modal-speakers/girl-modal-poses.png',
+        imageAlt: 'ほおに手を当て、こめかみに汗を一粒浮かべている女の子。',
+        explanation: '女の子がほおに手を当て、少し迷った顔をしています。「来る可能性はあるけど、まだ分からない」という気持ちです。',
+        en: 'She might come.',
+        ja: '彼女は来るかもしれません。',
+        parts: [
+          { role: 'S', en: 'She', text: '彼女は' },
+          { role: 'support', en: 'might', text: '〜するかもしれない' },
+          { role: '述語', en: 'come', text: '来る' },
+        ],
+      }, {
         id: 'level2-03',
         heading: '真剣な顔 → 〜しなければならない（must）',
         picture: 'speaker',
@@ -525,12 +538,13 @@ if (typeof document !== 'undefined') {
     $('guideExamples').innerHTML = guide.examples.map(example => {
       const q = example.id ? DATA.examples.find(q => q.id === example.id) : example;
       const parts = labelParts(q.parts ?? Construction.cardsFor(q));
+      const pictureClass = { speaker: ' guide-illustration-speaker', pose: ' guide-illustration-pose' }[example.picture] ?? '';
       return `<figure class="guide-example">
         <figcaption>
           ${example.heading ? `<h3>${esc(example.heading)}</h3>` : ''}
           ${example.picture && q.image ? `
-            <div class="guide-illustration${example.picture === 'speaker' ? ' guide-illustration-speaker' : ''}">
-              <img src="${esc(q.image)}" alt="${esc(q.imageAlt)}" width="860" height="644">
+            <div class="guide-illustration${pictureClass}">
+              <img src="${esc(q.image)}" alt="${esc(q.imageAlt)}" ${example.picture === 'pose' ? 'width="1254" height="1254"' : 'width="860" height="644"'}>
             </div>` : ''}
           ${example.explanation ? `<p class="guide-explanation">${esc(example.explanation)}</p>` : ''}
           <span class="guide-sentence" lang="en">${esc(q.en)}</span><span class="muted">${esc(q.ja)}</span>

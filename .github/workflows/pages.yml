@@ -32,6 +32,7 @@ jobs:
             sort -u | xargs -d '\n' cp --parents -t _site --
           cp -r assets/tense/examples-10 _site/assets/tense/
           cp -r assets/calendar _site/assets/
+          cp --parents assets/character-materials/modal-speakers/girl-modal-poses.png _site/
       - uses: actions/upload-pages-artifact@v5
         with:
           path: _site
