@@ -134,8 +134,8 @@
   "counts": {
     "level1": 918,
     "level2": 10,
-    "level3": 11,
-    "total": 939,
+    "level3": 14,
+    "total": 942,
     "core": 310,
     "pronounPractice": 39,
     "ongoing": 275,
@@ -69024,6 +69024,112 @@
         ]
       ],
       "note": "この練習では、Don't を一つの助述部として主語の前に置きます。"
+    },
+    {
+      "id": "level3-12",
+      "pictureHint": "いちごのお皿を前に、女の子が手を上げて顔をそむけています。話し手がその様子を見てたずねています。",
+      "level": 3,
+      "focus": "否定疑問：Doesn't",
+      "ja": "彼女はいちごが好きじゃないの？",
+      "en": "Doesn't she like strawberries?",
+      "base": "She likes strawberries.",
+      "question": {
+        "token": "whether",
+        "spoken": false,
+        "target": "truth"
+      },
+      "blocks": [
+        [
+          "助動詞＋否定",
+          "Doesn't",
+          "〜じゃないの？"
+        ],
+        [
+          "S",
+          "she",
+          "彼女は"
+        ],
+        [
+          "述語",
+          "like",
+          "好き"
+        ],
+        [
+          "P1",
+          "strawberries",
+          "いちごが"
+        ]
+      ],
+      "note": "Doesn't を主語の前に置きます。後ろの動詞は like になります。"
+    },
+    {
+      "id": "level3-13",
+      "pictureHint": "ベンチの男の子を見て、話し手がその様子をたずねています。",
+      "level": 3,
+      "focus": "否定疑問：Isn't",
+      "ja": "彼は疲れているんじゃないの？",
+      "en": "Isn't he tired?",
+      "base": "He is tired.",
+      "question": {
+        "token": "whether",
+        "spoken": false,
+        "target": "truth"
+      },
+      "blocks": [
+        [
+          "否定",
+          "Isn't",
+          "〜じゃないの？"
+        ],
+        [
+          "S",
+          "he",
+          "彼は"
+        ],
+        [
+          "述語の残り",
+          "tired",
+          "疲れている"
+        ]
+      ],
+      "note": "Isn't を一つの助述部にし、主語の前に置きます。"
+    },
+    {
+      "id": "level3-14",
+      "pictureHint": "自転車のそばでためらう相手に、話し手がたずねています。",
+      "level": 3,
+      "focus": "否定疑問：Can't",
+      "ja": "あなたは自転車に乗れないの？",
+      "en": "Can't you ride a bike?",
+      "base": "You can ride a bike.",
+      "question": {
+        "token": "whether",
+        "spoken": false,
+        "target": "truth"
+      },
+      "blocks": [
+        [
+          "助動詞＋否定",
+          "Can't",
+          "〜できないの？"
+        ],
+        [
+          "S",
+          "you",
+          "あなたは"
+        ],
+        [
+          "述語",
+          "ride",
+          "乗る"
+        ],
+        [
+          "P1",
+          "a bike",
+          "自転車に"
+        ]
+      ],
+      "note": "Can't を一つの助述部にし、主語の前に置きます。"
     }
   ]
 }

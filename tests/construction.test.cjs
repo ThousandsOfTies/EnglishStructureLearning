@@ -78,9 +78,9 @@ test('P1 and P2 distinguish recipient/thing from object/description', () => {
 });
 
 test('each selectable level has its requested number of examples', () => {
-  assert.deepEqual([1,2,3].map(level => draft.examples.filter(q => q.level === level).length), [918,10,11]);
+  assert.deepEqual([1,2,3].map(level => draft.examples.filter(q => q.level === level).length), [918,10,14]);
   assert.deepEqual(draft.levels.map(q => q.id), [1,2,3]);
-  assert.equal(new Set(draft.examples.map(q => q.id)).size, 939);
+  assert.equal(new Set(draft.examples.map(q => q.id)).size, 942);
 });
 
 test('state verbs stay simple while ongoing actions are be plus ing', () => {
