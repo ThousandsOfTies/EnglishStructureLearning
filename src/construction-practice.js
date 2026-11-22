@@ -132,7 +132,7 @@ if (typeof document !== 'undefined') {
   }
   const KEY = 'construction-workshop-original-v1', VOICE_KEY = 'sentence-workshop-voice-v1';
   const SPEED_KEY = 'construction-workshop-speech-speed-v1';
-  const speechRates = { fast: 1.2, normal: 1, slow: .6 };
+  const speechRates = { normal: 1, slow: .6 };
   const $ = id => document.getElementById(id);
   const esc = value => String(value).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   const labels = { S: '主語', support: '助述部', predicate: '述語', P1: '対象１', P2: '対象２', place: '場所', time: '時' };
@@ -388,7 +388,6 @@ if (typeof document !== 'undefined') {
         <div class="actions speech-controls" role="group" aria-label="英文の読み上げ">
           <select id="voice" aria-label="読み上げる声"></select>
           <div class="speech-buttons">
-            <button id="speakFast" data-speed="fast" ${hasSpeech ? '' : 'disabled'}>はやく読む</button>
             <button id="speakNormal" data-speed="normal" ${hasSpeech ? '' : 'disabled'}>普通に話す</button>
             <button id="speakSlow" data-speed="slow" ${hasSpeech ? '' : 'disabled'}>ゆっくり読む</button>
           </div>
@@ -574,7 +573,7 @@ if (typeof document !== 'undefined') {
         const visible = visibleExamples(), i = Construction.navigationIndex(visible, getQ());
         const next = visible[i + (button.id === 'next' ? 1 : -1)]; if (next) choose(next.id); break;
       }
-      case 'speakFast': case 'speakNormal': case 'speakSlow': {
+      case 'speakNormal': case 'speakSlow': {
         speechSpeed = button.dataset.speed;
         speak(getQ().en);
         try { localStorage.setItem(SPEED_KEY, speechSpeed); } catch { storageOK = false; save(); }
