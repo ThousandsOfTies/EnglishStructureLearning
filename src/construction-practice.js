@@ -145,12 +145,22 @@ if (typeof document !== 'undefined') {
   const levelGuides = {
     1: {
       summary: 'ふだんの動きや、今のようすを伝える文をつくる。',
-      examples: ['tense-bicycle', 'build-be-noun-1'],
-      note: '一般動詞の文では「する」を日本語の目印にします。be で状態を表す文では、助述部で「である」をえらびます。',
+      examples: [{
+        id: 'tense-bicycle',
+        heading: '一般動詞で「すること・気持ち」を伝える',
+        explanation: '「箱を押す」なら箱に働きかけます。「走る」ならその人自身が動きます。「音楽が好き」の like も、気持ちを表す一般動詞です。',
+        practice: '助述部の「する」は文を組み立てる目印です。I run. は「私が走る」だけなので、「対象１」は空欄です。',
+      }, {
+        id: 'build-be-noun-1',
+        heading: 'be で「何者か・どんなようすか」をつなぐ',
+        explanation: '「私は生徒です」なら何者か、「彼女は眠いです」ならどんなようすかを、be で主語につなぎます。「私＝生徒」は、私が生徒の一人だというイメージです。',
+        practice: 'この例では、助述部で「である」、述語で「生徒」をえらびます。',
+      }],
+      note: '「今〜している」と伝える文では、助述部で「〜いる」をえらびます。',
     },
     2: {
       summary: 'できること、しないこと、よくすることなどを伝える文をつくる。',
-      examples: ['level2-03', 'level2-07'],
+      examples: [{ id: 'level2-03' }, { id: 'level2-07' }],
       note: '助述部が二つ以上あるときは、英語で言う順に上から並べます。',
     },
     3: {
@@ -164,7 +174,7 @@ if (typeof document !== 'undefined') {
           { role: '述語', en: 'ride', text: '乗る' },
           { role: 'P1', en: 'a bike', text: '自転車に' },
         ],
-      }, 'level3-04'],
+      }, { id: 'level3-04' }],
       note: '「できますか」とたずねるときは、can が主語の前に来ます。「だれが」と主語をたずねるときは、疑問詞を主語の位置に置きます。',
     },
   };
@@ -489,16 +499,21 @@ if (typeof document !== 'undefined') {
     $('guideSummary').textContent = guide.summary;
     $('guideNote').textContent = guide.note;
     $('guideExamples').innerHTML = guide.examples.map(example => {
-      const q = typeof example === 'string' ? DATA.examples.find(q => q.id === example) : example;
+      const q = example.id ? DATA.examples.find(q => q.id === example.id) : example;
       const parts = labelParts(q.parts ?? Construction.cardsFor(q));
       return `<figure class="guide-example">
-        <figcaption><span class="guide-sentence" lang="en">${esc(q.en)}</span><span class="muted">${esc(q.ja)}</span></figcaption>
+        <figcaption>
+          ${example.heading ? `<h3>${esc(example.heading)}</h3>` : ''}
+          ${example.explanation ? `<p class="guide-explanation">${esc(example.explanation)}</p>` : ''}
+          <span class="guide-sentence" lang="en">${esc(q.en)}</span><span class="muted">${esc(q.ja)}</span>
+        </figcaption>
         <div class="guide-parts">${renderPartGroups(parts, ({ role, label, en, text }) => `
           <div class="answer-part guide-part" data-role="${esc(role)}">
             <span class="answer-label">${esc(label)}</span>
             <span class="answer-ja">${esc(text)}</span>
             ${en ? `<span lang="en">${esc(en)}</span>` : ''}
           </div>`)}</div>
+        ${example.practice ? `<p class="guide-practice">${esc(example.practice)}</p>` : ''}
       </figure>`;
     }).join('');
     $('guideContinue').textContent = firstVisit ? 'はじめる' : '練習にもどる';
