@@ -18,7 +18,7 @@ test('all curriculum exercises can be completed by moving cards into their inten
     }
     assert.ok(app.isCorrect(q, placements), q.id);
     const spoken = cards.map(card => card.en).filter(Boolean);
-    assert.equal(spoken.join(' ') + (q.level === 3 ? '?' : '.'), q.en, q.id);
+    assert.equal(spoken.join(' ') + (q.question ? '?' : '.'), q.en, q.id);
   }
 });
 
@@ -249,6 +249,25 @@ test('why, which and how questions place the full question phrase before the sup
   }
 });
 
+test('Level 3 statements unlock There first and put be before the thing introduced', () => {
+  const exercises = [
+    ['level3-18', ['There', 'is', 'a cat']],
+    ['level3-19', ['There', 'are', 'two birds', 'in the tree']],
+  ];
+  for (const [id, parts] of exercises) {
+    const q = get(id);
+    const cards = app.cardsFor(q);
+    assert.equal(q.question, undefined, id);
+    assert.deepEqual(cards.map(card => card.en), parts, id);
+    assert.deepEqual(app.enabledTargets(q, []), ['0'], id);
+    assert.deepEqual(app.enabledTargets(q, ['0']), ['0', '1'], id);
+    assert.deepEqual(app.enabledTargets(q, ['0', '1']), app.targetsFor(q), id);
+    const picks = Object.fromEntries(cards.map((card, index) => [String(index), card.text]));
+    assert.ok(app.choicesCorrect(q, picks), id);
+    assert.deepEqual(app.wrongCardTargets(q, ['2', '1', '0', ...Object.keys(picks).slice(3)]), ['0', '2'], id);
+  }
+});
+
 test('basic-first navigation separates contrasts, pronouns, and advanced reflexives', () => {
   const filters = { level: 1, group: 'all', scope: 'core', search: '' };
   assert.equal(app.visibleExamples(data, filters).length, 313);
@@ -256,7 +275,7 @@ test('basic-first navigation separates contrasts, pronouns, and advanced reflexi
   assert.equal(app.visibleExamples(data, { ...filters, scope: 'pronouns' }).length, 31);
   assert.equal(app.visibleExamples(data, { ...filters, scope: 'extension' }).length, 8);
   assert.equal(app.visibleExamples(data, { ...filters, level: 2 }).length, 10);
-  assert.equal(app.visibleExamples(data, { ...filters, level: 3 }).length, 17);
+  assert.equal(app.visibleExamples(data, { ...filters, level: 3 }).length, 19);
   assert.equal(app.visibleExamples(data, { ...filters, group: 'go' }).length, 3);
   assert.equal(app.visibleExamples(data, { ...filters, search: 'not-a-real-sentence' }).length, 0);
 });
@@ -264,9 +283,9 @@ test('basic-first navigation separates contrasts, pronouns, and advanced reflexi
 test('selected levels are combined and the scope applies only to level 1', () => {
   const filters = { levels: [1, 3], group: 'all', scope: 'pronouns', search: '' };
   const mixed = app.visibleExamples(data, filters);
-  assert.equal(mixed.length, 48);
+  assert.equal(mixed.length, 50);
   assert.equal(mixed.filter(q => q.level === 1 && q.pronounFocus).length, 31);
-  assert.equal(mixed.filter(q => q.level === 3).length, 17);
+  assert.equal(mixed.filter(q => q.level === 3).length, 19);
   assert.deepEqual(app.visibleExamples(data, { ...filters, levels: [] }), []);
 });
 

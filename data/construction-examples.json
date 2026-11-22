@@ -135,8 +135,8 @@
   "counts": {
     "level1": 924,
     "level2": 10,
-    "level3": 17,
-    "total": 951,
+    "level3": 19,
+    "total": 953,
     "core": 313,
     "pronounPractice": 39,
     "ongoing": 275,
@@ -68895,6 +68895,63 @@
           "紙のぼうしを"
         ]
       ]
+    },
+    {
+      "id": "level3-18",
+      "pictureHint": "女の子が見つけた動物を伝えよう。",
+      "level": 3,
+      "focus": "There is：一匹の動物がいることを伝える",
+      "ja": "猫がいます。",
+      "en": "There is a cat.",
+      "blocks": [
+        [
+          "there",
+          "There",
+          "〜がいる・ある"
+        ],
+        [
+          "be",
+          "is",
+          "いる"
+        ],
+        [
+          "いるもの",
+          "a cat",
+          "猫"
+        ]
+      ],
+      "note": "猫が一匹なので、助述部は is です。There を先頭に置いて、猫がいることを伝えます。"
+    },
+    {
+      "id": "level3-19",
+      "pictureHint": "木にとまっている鳥の数と、いる場所を伝えよう。",
+      "level": 3,
+      "focus": "There are：何羽かの動物がいることを伝える",
+      "ja": "木に鳥が二羽います。",
+      "en": "There are two birds in the tree.",
+      "blocks": [
+        [
+          "there",
+          "There",
+          "〜がいる・ある"
+        ],
+        [
+          "be",
+          "are",
+          "いる"
+        ],
+        [
+          "いるもの",
+          "two birds",
+          "鳥が二羽"
+        ],
+        [
+          "場所",
+          "in the tree",
+          "木に"
+        ]
+      ],
+      "note": "鳥が二羽なので、助述部は are です。場所の in the tree は後ろに置きます。"
     }
   ]
 }

@@ -2,7 +2,7 @@
 'use strict';
 const Construction = (() => {
   const roles = ['S', 'support', 'predicate', 'P1', 'P2', 'place', 'time'];
-  const subjectRoles = new Set(['S', '疑問詞＝S']);
+  const openingRoles = new Set(['S', '疑問詞＝S', 'there']);
   const predicateSupportRoles = ['support', '助動詞', '助動詞＋否定', '否定', 'be', '疑問の支え'];
   const predicateRoles = new Set([...predicateSupportRoles, 'predicate', '述語', '述語の残り']);
   function isSupportRole(role) { return role === '頻度' || predicateSupportRoles.includes(role); }
@@ -66,11 +66,11 @@ const Construction = (() => {
   }
   function enabledTargets(q, filled) {
     const targets = targetsFor(q);
-    const subjects = targets.filter(id => subjectRoles.has(targetRole(q, id)));
-    if (subjects.some(id => !filled.includes(id))) return subjects;
+    const opening = targets.filter(id => openingRoles.has(targetRole(q, id)));
+    if (opening.some(id => !filled.includes(id))) return opening;
     const predicates = targets.filter(id => predicateRoles.has(targetRole(q, id)));
     const missingPredicate = predicates.some(id => !filled.includes(id) && (q.level !== 1 || q.slots[id].ja));
-    return missingPredicate ? [...subjects, ...predicates] : targets;
+    return missingPredicate ? [...opening, ...predicates] : targets;
   }
   function place(q, placements, index, target) {
     const cards = cardsFor(q);
@@ -221,16 +221,10 @@ if (typeof document !== 'undefined') {
           { role: '述語', en: 'a student', text: '生徒' },
         ],
       }, {
+        id: 'level3-18',
         heading: '「〜がいる・ある」と伝える There',
         explanation: 'A cat is there. は「あそこに猫がいる」と場所を指します。There is a cat. は「猫がいるよ」と、その存在を伝えます。この文でも is が a cat の前に来ます。',
         startingOrder: 'A cat is there.',
-        en: 'There is a cat.',
-        ja: '猫がいます。',
-        parts: [
-          { role: 'there', en: 'There', text: '〜がいる・ある' },
-          { role: 'support', en: 'is', text: 'いる' },
-          { role: 'いるもの', en: 'a cat', text: '猫' },
-        ],
       }, {
         id: 'level3-04',
         heading: '誰が、どんなふうにたずねている？',

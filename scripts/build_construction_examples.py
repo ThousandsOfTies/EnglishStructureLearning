@@ -347,13 +347,15 @@ def build_examples():
         assert examples
         for q in examples:
             assert q['level'] == level and q['ja'] and q['focus']
-            punctuation = '?' if level == 3 else '.'
+            question = q.get('question')
+            punctuation = '?' if question else '.'
             assert ' '.join(text for _, text, _ in q['blocks']) + punctuation == q['en'], q['id']
             japanese_parts = [japanese for _, _, japanese in q['blocks']]
             assert all(japanese_parts) and len(set(japanese_parts)) == len(japanese_parts), q['id']
             if level == 3:
                 assert q['pictureHint'], q['id']
-                assert q['question']['spoken'] == (q['question']['token'] != 'whether')
+            if question:
+                assert question['spoken'] == (question['token'] != 'whether'), q['id']
                 assert 'whether' not in q['en'].lower()
     all_examples = rows + advanced['level2'] + advanced['level3']
     assert len(all_examples) == len({q['id'] for q in all_examples})
@@ -435,16 +437,17 @@ def build_examples():
             lines.extend(['疑問詞がある文では、What can I buy? のように疑問詞を先頭に、最初の助述部を主語の前に置きます。', '',
                           '黙疑問詞 (whether) は「〜かどうか」を問う教材上の目印です。開始ガイドで語順を説明するときだけ使い、完成英文や読み上げには含めません。', '',
                           'whoがSをたずねる場合は、肯定の文ではdoを足さず、Sと述語の順を入れ替えません。P1をたずねるwhoとは区別します。', '',
-                          '開始ガイドでは、猫の存在を伝える There is a cat. も、be が a cat の前に来る例として紹介します。', '',
+                          'There is a cat. や There are two birds in the tree. では、文頭に There、続いて be と「いるもの」を置きます。', '',
                           "否定疑問の練習では Don't のような短縮形を使い、一つの助述部として主語の前に置きます。", ''])
         for number, q in enumerate(exercises, 1):
-            lines.extend([f"## {number:02}　{q['focus']}", '', q['ja'], '',
-                          f"**{q['en']}**", '', f"元の文：{q['base']}", '',
-                          '| ' + ' | '.join(role for role, _, _ in q['blocks']) + ' |',
+            lines.extend([f"## {number:02}　{q['focus']}", '', q['ja'], '', f"**{q['en']}**", ''])
+            if q.get('base'):
+                lines.extend([f"元の文：{q['base']}", ''])
+            lines.extend(['| ' + ' | '.join(role for role, _, _ in q['blocks']) + ' |',
                           '| ' + ' | '.join('---' for _ in q['blocks']) + ' |',
                           '| ' + ' | '.join(japanese for _, _, japanese in q['blocks']) + ' |',
                           '| ' + ' | '.join(text for _, text, _ in q['blocks']) + ' |', ''])
-            if level == 3 and not q['question']['spoken']:
+            if q.get('question') and not q['question']['spoken']:
                 lines.extend(['内部の問い：whether「〜かどうか」（表示・発音なし）', ''])
             if q.get('note'):
                 lines.extend([q['note'], ''])
