@@ -230,6 +230,25 @@ test('level three negative questions keep one contracted support before the subj
   }
 });
 
+test('why, which and how questions place the full question phrase before the support', () => {
+  const exercises = [
+    ['level3-15', 'why', ['Why', 'are', 'you', 'happy']],
+    ['level3-16', 'which', ['Which book', 'do', 'you', 'want']],
+    ['level3-17', 'how', ['How', 'do', 'you', 'make', 'a paper hat']],
+  ];
+  for (const [id, token, parts] of exercises) {
+    const q = get(id);
+    const cards = app.cardsFor(q);
+    assert.equal(q.question.token, token, id);
+    assert.deepEqual(cards.map(card => card.en), parts, id);
+    assert.ok(app.isSupportRole(cards[1].role), id);
+    assert.deepEqual(app.enabledTargets(q, []), ['2'], id);
+    const answer = Object.fromEntries(cards.map((card, index) => [String(index), card.text]));
+    assert.equal(app.choicesCorrect(q, { ...answer, 0: answer[1] }), false, id);
+    assert.ok(app.choicesCorrect(q, answer), id);
+  }
+});
+
 test('basic-first navigation separates contrasts, pronouns, and advanced reflexives', () => {
   const filters = { level: 1, group: 'all', scope: 'core', search: '' };
   assert.equal(app.visibleExamples(data, filters).length, 313);
@@ -237,7 +256,7 @@ test('basic-first navigation separates contrasts, pronouns, and advanced reflexi
   assert.equal(app.visibleExamples(data, { ...filters, scope: 'pronouns' }).length, 31);
   assert.equal(app.visibleExamples(data, { ...filters, scope: 'extension' }).length, 8);
   assert.equal(app.visibleExamples(data, { ...filters, level: 2 }).length, 10);
-  assert.equal(app.visibleExamples(data, { ...filters, level: 3 }).length, 14);
+  assert.equal(app.visibleExamples(data, { ...filters, level: 3 }).length, 17);
   assert.equal(app.visibleExamples(data, { ...filters, group: 'go' }).length, 3);
   assert.equal(app.visibleExamples(data, { ...filters, search: 'not-a-real-sentence' }).length, 0);
 });
@@ -245,9 +264,9 @@ test('basic-first navigation separates contrasts, pronouns, and advanced reflexi
 test('selected levels are combined and the scope applies only to level 1', () => {
   const filters = { levels: [1, 3], group: 'all', scope: 'pronouns', search: '' };
   const mixed = app.visibleExamples(data, filters);
-  assert.equal(mixed.length, 45);
+  assert.equal(mixed.length, 48);
   assert.equal(mixed.filter(q => q.level === 1 && q.pronounFocus).length, 31);
-  assert.equal(mixed.filter(q => q.level === 3).length, 14);
+  assert.equal(mixed.filter(q => q.level === 3).length, 17);
   assert.deepEqual(app.visibleExamples(data, { ...filters, levels: [] }), []);
 });
 

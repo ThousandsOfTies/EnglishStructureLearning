@@ -245,7 +245,7 @@ if (typeof document !== 'undefined') {
         ['where', 'どこで', 'Where do you play soccer?', 'あなたはどこでサッカーをしますか？'],
         ['why', 'なぜ', 'Why are you happy?', 'あなたはなぜうれしいのですか？'],
         ['which', 'どの', 'Which book do you want?', 'あなたはどの本がほしいですか？'],
-        ['how', 'どうやって', 'How do you make this?', 'これはどうやって作りますか？'],
+        ['how', 'どうやって', 'How do you make a paper hat?', 'あなたは紙のぼうしをどうやって作りますか？'],
       ],
       note: '「だれが」と主語をたずねる Who found it? のような文では、Who が主語になり、そのあとに述語が続きます。',
     },
