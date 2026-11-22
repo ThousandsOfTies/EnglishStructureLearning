@@ -542,7 +542,8 @@ if (typeof document !== 'undefined') {
     const target = guideForFirstVisit ? $('slots').querySelector('.slot:enabled') : $('openGuide');
     target?.focus({ preventScroll: true });
   });
-  $('openMenu').addEventListener('click', () => {
+  $('openMenu').addEventListener('click', event => {
+    if (event.detail > 0) event.currentTarget.blur();
     lessonDrawer.showModal();
     $('openMenu').setAttribute('aria-expanded', 'true');
     $('lessons').querySelector('[aria-current="true"]')?.scrollIntoView({ block: 'nearest' });
@@ -552,7 +553,6 @@ if (typeof document !== 'undefined') {
     if (lessonDrawer.open) return;
     $('openMenu').setAttribute('aria-expanded', 'false');
     maybeOpenLevelGuide();
-    if (!levelGuide.open) $('openMenu').focus({ preventScroll: true });
   });
   lessonDrawer.addEventListener('click', event => {
     if (event.target !== lessonDrawer) return;
