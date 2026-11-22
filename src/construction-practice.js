@@ -159,14 +159,25 @@ if (typeof document !== 'undefined') {
       note: '「今〜している」と伝える文では、助述部で「〜いる」をえらびます。',
     },
     2: {
-      summary: 'できること、しないこと、よくすることなどを伝える文をつくる。',
+      summary: 'レベル1の文に「程度」を加えます。',
+      introduction: '「自転車に乗る」に「できる」を加えると、「自転車に乗れる」になります。このアプリでは、その「程度」を吹き出しの先にいる話し手の表情やしぐさで表します。話し手の顔と手をよく見て、助述部に入れることばをえらびましょう。',
       examples: [{
+        id: 'level2-01',
+        heading: '自信のある笑顔 → 〜できる（can）',
+        picture: 'speaker',
+        explanation: '女の子がにっこり笑って親指を立てています。「大丈夫、私にできるよ」という気持ちです。',
+      }, {
         id: 'level2-03',
-        heading: '話し手の顔と手を見よう',
-        showPicture: true,
-        explanation: '吹き出しの先にいる女の子は、真剣な顔で人さし指を立てています。図書館で守る決まりを伝えているので、助述部で「〜しなければならない」をえらびます。',
-      }, { id: 'level2-07' }],
-      note: '親指を立てて自信を見せる絵では「〜できる」、手のひらを差し出してすすめる絵では「〜したほうがいい」が手がかりです。助述部が二つ以上あるときは、英語で言う順に上から並べます。',
+        heading: '真剣な顔 → 〜しなければならない（must）',
+        picture: 'speaker',
+        explanation: '女の子が真剣な顔で人さし指を立てています。「図書館では静かにしようね」と、守るべき決まりを伝えています。',
+      }, {
+        id: 'level2-04',
+        heading: 'やさしい笑顔 → 〜したほうがいい（should）',
+        picture: 'speaker',
+        explanation: '男の子がやさしく笑って、相手に手のひらを差し出しています。「手を洗っておくといいよ」とすすめています。',
+      }],
+      note: '「よく」「ときどき」など、どれくらいするかは絵の印も見ましょう。助述部は英語で言う順に上から並べます。',
     },
     3: {
       summary: 'できるかどうかや、だれが・どこでなどを相手にたずねる文をつくる。',
@@ -182,7 +193,7 @@ if (typeof document !== 'undefined') {
       }, {
         id: 'level3-04',
         heading: '誰が、どんなふうにたずねている？',
-        showPicture: true,
+        picture: 'scene',
         explanation: '吹き出しの先の男の子が、女の子のほうを見て手を差し出しています。女の子に「乗れる？」とたずねているので、助述部の Can を主語の前に置きます。',
         practice: '驚いた顔で「乗れないの？」と聞く場面なら、Can’t を一つの助述部として主語の前に置きます。',
       }],
@@ -508,6 +519,8 @@ if (typeof document !== 'undefined') {
     guideForFirstVisit = firstVisit;
     $('guideTitle').textContent = level.label;
     $('guideSummary').textContent = guide.summary;
+    $('guideIntroduction').textContent = guide.introduction ?? '';
+    $('guideIntroduction').hidden = !guide.introduction;
     $('guideNote').textContent = guide.note;
     $('guideExamples').innerHTML = guide.examples.map(example => {
       const q = example.id ? DATA.examples.find(q => q.id === example.id) : example;
@@ -515,7 +528,10 @@ if (typeof document !== 'undefined') {
       return `<figure class="guide-example">
         <figcaption>
           ${example.heading ? `<h3>${esc(example.heading)}</h3>` : ''}
-          ${example.showPicture && q.image ? `<img class="guide-illustration" src="${esc(q.image)}" alt="${esc(q.imageAlt)}" width="860" height="644">` : ''}
+          ${example.picture && q.image ? `
+            <div class="guide-illustration${example.picture === 'speaker' ? ' guide-illustration-speaker' : ''}">
+              <img src="${esc(q.image)}" alt="${esc(q.imageAlt)}" width="860" height="644">
+            </div>` : ''}
           ${example.explanation ? `<p class="guide-explanation">${esc(example.explanation)}</p>` : ''}
           <span class="guide-sentence" lang="en">${esc(q.en)}</span><span class="muted">${esc(q.ja)}</span>
         </figcaption>

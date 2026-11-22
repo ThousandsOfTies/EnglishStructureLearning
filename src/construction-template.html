@@ -60,7 +60,11 @@
 .guide-explanation{margin:5px 0 8px}
 .guide-practice{margin:8px 0 0}
 .guide-sentence{display:block;font-weight:600;overflow-wrap:anywhere}
-.guide-illustration{float:right;width:clamp(76px,28%,145px);height:auto;margin:5px 0 4px 9px;border:1px solid var(--line);border-radius:6px}
+.guide-illustration{float:right;width:clamp(76px,28%,145px);margin:5px 0 4px 9px;border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.guide-illustration img{display:block;width:100%;height:auto}
+/* The Level 2 modal pictures share the same narrator position. */
+.guide-illustration-speaker{position:relative;aspect-ratio:215 / 205}
+.guide-illustration-speaker img{position:absolute;left:-56%;top:-207%;width:400%}
 .guide-parts{clear:both;display:flex;flex-wrap:wrap;align-items:flex-start;gap:6px;margin-top:8px}
 .guide-part{font-size:14px;padding:3px 7px}
 .guide-part .answer-label{white-space:nowrap}
@@ -111,6 +115,7 @@
 <div class="guide-content" id="guideContent">
 <h2 id="guideTitle"></h2>
 <p id="guideSummary"></p>
+<p id="guideIntroduction" hidden></p>
 <div id="guideExamples"></div>
 <p id="guideNote" class="guide-note"></p>
 </div>
