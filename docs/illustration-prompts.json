@@ -14225,6 +14225,153 @@
       "exampleId": "build-be-adjective-5-past",
       "file": "assets/construction/build-be-adjective-5-past.png",
       "prompt": "Warm high-quality watercolor/gouache illustration, original Japanese children's book style, thin warm brown outlines, landscape 3:2 composition, cream field around the scene, simple color palette and expressive naturally drawn figures, keep all characters recognizable. ONE big rectangular outlined speech balloon with four sharp 90-degree corners and one simple triangular tail pointing visibly to the actual speaker's mouth, no rounded or cloud shapes. Nothing written anywhere: zero text, numbers, punctuation, logos, watermarks, calendars, arrows or decorative symbols. Frame a clear readable scene, not a timeline, not a strip of panels. Two children ready to leave. YESTERDAY composition: put the outside speaker on the lower RIGHT with any required listener next to them, looking left toward a large, sharp rectangular balloon in the upper LEFT. The single tail angles down and right to the speaker. Leave the upper right corner mostly cream so the app can add its own small calendar. Yesterday's scene is clear and large inside the rectangle. OUTSIDE the balloon, a chestnut bob-haired girl in coral cardigan and teal skirt with a yellow star hair clip is speaking to a brown-haired boy in a blue hoodie. INSIDE the balloon, two different children are ready to go on a school outing: a dark ponytail girl in a lavender top carrying a purple backpack and a black-haired boy in a green jacket and distinctive round glasses carrying a golden-yellow backpack. Their bags are packed and both are standing confidently by a simple school entryway, with one amber or green unchecked visual detail at most. Natural happy sense of readiness. Exactly two different actors inside and the two narrators outside, no other people."
+    },
+    {
+      "exampleId": "pronoun-subject-8",
+      "file": "assets/construction/pronoun-subject-8.png",
+      "sceneAtlas": "holding-subjects",
+      "cell": 6,
+      "sourceCrop": [
+        835,
+        423,
+        1239,
+        814
+      ],
+      "layout": "ongoing",
+      "reusedEvent": "pronoun-subject-6",
+      "generationMethod": "Recomposed the recorded scene crop with the existing star-clip and lavender listener portraits."
+    },
+    {
+      "exampleId": "pronoun-object-2",
+      "file": "assets/construction/pronoun-object-2.png",
+      "sceneAtlas": "looking-objects",
+      "cell": 1,
+      "sourceCrop": [
+        7,
+        7,
+        411,
+        411
+      ],
+      "layout": "ongoing",
+      "reusedEvent": "pronoun-object-1",
+      "generationMethod": "Recomposed the recorded scene crop with the existing star-clip and lavender listener portraits."
+    },
+    {
+      "exampleId": "pronoun-object-8",
+      "file": "assets/construction/pronoun-object-8.png",
+      "sceneAtlas": "looking-objects",
+      "cell": 6,
+      "sourceCrop": [
+        843,
+        425,
+        1247,
+        829
+      ],
+      "layout": "ongoing",
+      "reusedEvent": "pronoun-object-6",
+      "generationMethod": "Recomposed the recorded scene crop with the existing star-clip and lavender listener portraits."
+    },
+    {
+      "exampleId": "pronoun-possessive-8",
+      "file": "assets/construction/pronoun-possessive-8.png",
+      "sceneAtlas": "carrying-possessives",
+      "cell": 6,
+      "sourceCrop": [
+        843,
+        425,
+        1247,
+        829
+      ],
+      "layout": "ongoing",
+      "reusedEvent": "pronoun-possessive-6",
+      "generationMethod": "Recomposed the recorded scene crop with the existing star-clip and lavender listener portraits."
+    },
+    {
+      "exampleId": "pronoun-independent-2",
+      "file": "assets/construction/pronoun-independent-2.png",
+      "sceneAtlas": "bag-ownership",
+      "cell": 1,
+      "sourceCrop": [
+        7,
+        7,
+        411,
+        411
+      ],
+      "layout": "state",
+      "reusedEvent": "pronoun-independent-1",
+      "generationMethod": "Recomposed the recorded scene crop with the existing star-clip and lavender listener portraits."
+    },
+    {
+      "exampleId": "pronoun-independent-7",
+      "file": "assets/construction/pronoun-independent-7.png",
+      "sceneAtlas": "bag-ownership",
+      "cell": 5,
+      "sourceCrop": [
+        425,
+        425,
+        829,
+        829
+      ],
+      "layout": "state",
+      "reusedEvent": "pronoun-independent-5",
+      "generationMethod": "Recomposed the recorded scene crop with the existing star-clip and lavender listener portraits."
+    },
+    {
+      "exampleId": "pronoun-reflexive-8",
+      "file": "assets/construction/pronoun-reflexive-8.png",
+      "sceneAtlas": "drawing-reflexives",
+      "cell": 6,
+      "sourceCrop": [
+        843,
+        425,
+        1247,
+        829
+      ],
+      "layout": "ongoing",
+      "reusedEvent": "pronoun-reflexive-6",
+      "generationMethod": "Recomposed the recorded scene crop with the existing star-clip and lavender listener portraits."
+    },
+    {
+      "exampleId": "build-be-adjective-4",
+      "file": "assets/construction/build-be-adjective-4.png",
+      "prompt": "Remove ONLY the brown-haired boy in the blue hoodie standing outside the speech balloon near the bottom left, to the right of the coral-clad speaker. Replace the removed figure with the same nearby softly textured cream paper, seamless and empty. Preserve the speaker in the coral cardigan with star hair clip in her exact original position and size, and preserve the rectangular squared-corner speech balloon, tail directed to her, event artwork, temporal direction, colors, objects, and every other person. Only the outside speaker remains outside. Match the reference image landscape aspect ratio and watercolor style. No lettering, decorative replacement, extra marks, or additional characters.",
+      "generationMethod": "Edited the original illustration with built-in image_gen for the revised speaker and listener roles."
+    },
+    {
+      "exampleId": "build-be-adjective-4-past",
+      "file": "assets/construction/build-be-adjective-4-past.png",
+      "prompt": "Remove ONLY the brown-haired boy in the blue hoodie at the bottom, outside the speech balloon, to the left of the coral-clad speaker. Replace the removed figure with the same nearby softly textured cream paper, seamless and empty. Preserve the speaker in the coral cardigan with star hair clip in her exact original position and size, and preserve the rectangular squared-corner speech balloon, tail directed to her, event artwork, temporal direction, colors, objects, and every other person. Only the outside speaker remains outside. Match the reference image landscape aspect ratio and watercolor style. No lettering, decorative replacement, extra marks, or additional characters.",
+      "generationMethod": "Edited the original illustration with built-in image_gen for the revised speaker and listener roles."
+    },
+    {
+      "exampleId": "build-be-adjective-5",
+      "file": "assets/construction/build-be-adjective-5.png",
+      "prompt": "Remove ONLY the blue-hoodie boy outside the speech balloon near the lower left, beside the coral-clad speaker. Keep both children INSIDE the balloon, including the boy in a green jacket with a backpack. Replace the removed figure with the same nearby softly textured cream paper, seamless and empty. Preserve the speaker in the coral cardigan with star hair clip in her exact original position and size, and preserve the rectangular squared-corner speech balloon, tail directed to her, event artwork, temporal direction, colors, objects, and every other person. Only the outside speaker remains outside. Match the reference image landscape aspect ratio and watercolor style. No lettering, decorative replacement, extra marks, or additional characters.",
+      "generationMethod": "Edited the original illustration with built-in image_gen for the revised speaker and listener roles."
+    },
+    {
+      "exampleId": "build-be-adjective-5-past",
+      "file": "assets/construction/build-be-adjective-5-past.png",
+      "prompt": "Remove ONLY the blue-hoodie boy standing outside the speech balloon at the far right, to the right of the coral-clad speaker. Keep both of the backpacked children INSIDE the balloon. Replace the removed figure with the same nearby softly textured cream paper, seamless and empty. Preserve the speaker in the coral cardigan with star hair clip in her exact original position and size, and preserve the rectangular squared-corner speech balloon, tail directed to her, event artwork, temporal direction, colors, objects, and every other person. Only the outside speaker remains outside. Match the reference image landscape aspect ratio and watercolor style. No lettering, decorative replacement, extra marks, or additional characters.",
+      "generationMethod": "Edited the original illustration with built-in image_gen for the revised speaker and listener roles."
+    },
+    {
+      "exampleId": "level3-12",
+      "file": "assets/construction/level3-12.png",
+      "prompt": "Remove ONLY the brown-haired boy with the blue hoodie outside the speech balloon, beside the star-clip coral-clad speaker. Replace the removed figure with the same nearby softly textured cream paper, seamless and empty. Preserve the speaker in the coral cardigan with star hair clip in her exact original position and size, and preserve the rectangular squared-corner speech balloon, tail directed to her, event artwork, temporal direction, colors, objects, and every other person. Only the outside speaker remains outside. Match the reference image landscape aspect ratio and watercolor style. No lettering, decorative replacement, extra marks, or additional characters.",
+      "generationMethod": "Edited the original illustration with built-in image_gen for the revised speaker and listener roles."
+    },
+    {
+      "exampleId": "level3-13",
+      "file": "assets/construction/level3-13.png",
+      "prompt": "Remove ONLY the lavender-clad ponytail girl next to the coral-clad speaker below the balloon. The tired boy in the blue hoodie INSIDE the balloon must remain. Replace the removed figure with the same nearby softly textured cream paper, seamless and empty. Preserve the speaker in the coral cardigan with star hair clip in her exact original position and size, and preserve the rectangular squared-corner speech balloon, tail directed to her, event artwork, temporal direction, colors, objects, and every other person. Only the outside speaker remains outside. Match the reference image landscape aspect ratio and watercolor style. No lettering, decorative replacement, extra marks, or additional characters.",
+      "generationMethod": "Edited the original illustration with built-in image_gen for the revised speaker and listener roles."
+    },
+    {
+      "exampleId": "level3-11",
+      "file": "assets/construction/level3-11.png",
+      "prompt": "Edit this exact landscape Japanese children's book watercolor scene. Preserve the large square-cornered speech balloon on the right, the mint-green wind-up robot inside it with its amber eyes and yellow chest button, and the warm cream paper background. Make the blue hoodie boy the SPEAKER and the coral cardigan girl with the golden star hair clip the LISTENER. On the lower left, the short brown-haired boy in the blue hoodie should stand on the left, speaking with a friendly, mildly surprised questioning expression and gesturing toward the robot. The matching chestnut bob-haired star-clip girl is on his right, listening and slightly tilting her head because she doesn't recognize the robot. Adapt only the small speech tail so it clearly points toward the BOY'S mouth, not toward the girl. No extra person, no text or symbols, no rounded corners. Preserve the existing illustration style and landscape framing.",
+      "generationMethod": "Edited the original illustration with built-in image_gen for the revised speaker and listener roles."
     }
   ],
   "sceneAtlases": {
@@ -14407,5 +14554,11 @@
       "prompt": "A single isolated simple educational icon of the Earth globe, front view on East Asia and the western Pacific. Centered perfectly circular globe fills 90 percent width of its square image. Solid blue and cyan oceans, saturated green continents, distinct East Asia and Australia outlined by fill color only. Cheerful graphic flat color with a gentle lighter blue patch, crisp strong silhouette legible at 44x44 pixels in a Japanese elementary-school learning app. Genuine transparent background. Draw only the planet disk, no base or stand, no ring or orbit or arrow, no letters, calendar, border, shadow, cloud or other object.",
       "layout": "The app overlays the same globe with a single CSS orbit arrow pointing left for yesterday and right for tomorrow."
     }
+  },
+  "listenerLayout": {
+    "outside": "原則として、星の髪飾りの女の子が話し手として一人で立つ。",
+    "secondPerson": "青い服の男の子が話し手、星の髪飾りの女の子が聞き手。複数の聞き手では紫の服の女の子も加わる。",
+    "composedImages": 516,
+    "editedIllustrations": 7
   }
 }

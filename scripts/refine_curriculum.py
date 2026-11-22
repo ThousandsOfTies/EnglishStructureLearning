@@ -87,18 +87,24 @@ def rebuild(q):
     return q
 
 
+def has_second_person(sentence):
+    return re.search(r'\b(?:you|your|yours|yourself|yourselves)\b', sentence, re.IGNORECASE) is not None
+
+
 def viewpoint(subject):
     explanation = {
         'I': '外の話し手と、吹き出しの中の主人公は同じ人。服・髪型・目印をそろえる。',
-        'You': '外の話し手が聞き手に話す。吹き出しの中には、その聞き手を同じ目印で描く。',
-        'He': '話し手・聞き手とは別の、heで指す人物を吹き出しの中で示す。',
-        'She': '話し手・聞き手とは別の、sheで指す人物を吹き出しの中で示す。',
+        'You': '外の男の子が、主役の女の子に話す。吹き出しの中でも、聞き手には同じ目印を使う。',
+        'He': '主役の女の子が話し手。heで指す男の子を吹き出しの中に描く。',
+        'She': '主役の女の子が話し手。sheで指す別の女の子を吹き出しの中に描く。',
         'It': '話し手が指す小さなロボットを、吹き出しの中にも同じ目印で描く。人間にはitを使わない。',
         'We': '吹き出しの中のグループに、外の話し手と同じ人物を含める。',
-        'They': '吹き出しの中のグループには、話し手と聞き手を含めない。',
+        'They': '吹き出しの中には、外の話し手とは別のグループを描く。',
     }
-    return {'speaker': '吹き出しの外にいる話し手', 'listener': '話しかけられている人',
-            'subjectReference': subject, 'viewpoint': explanation[subject]}
+    result = {'speaker': '吹き出しの外にいる話し手', 'subjectReference': subject, 'viewpoint': explanation[subject]}
+    if subject == 'You':
+        result['listener'] = '星の髪飾りを付けた主役の女の子'
+    return result
 
 
 def annotate_scene(q):
@@ -229,7 +235,7 @@ def pronoun_examples():
     rows = []
     subjects = SUBJECTS + [('あなたたちは', 'You')]
     refs = ['話し手本人', '聞き手一人', '第三者の男の子', '第三者の女の子',
-            '小さなロボット', '話し手を含む二人', '話し手・聞き手を含まない二人', '聞き手二人']
+            '小さなロボット', '話し手を含む二人', '話し手とは別の二人', '聞き手二人']
 
     def add(category, n, subject, predicate, p1=('', ''), cue='', form='', meaning='ongoing'):
         values = {k: pair() for k in SLOTS}
@@ -239,16 +245,18 @@ def pronoun_examples():
                      'variant': n, 'slots': values, 'frame': 'one-parameter' if p1[1] else 'no-parameter',
                      'meaning': meaning, 'authorship': 'original-six-slots-v2',
                      'pronounFocus': {'category': category, 'form': form},
-                     'scene': {'speaker': '吹き出しの外の話し手', 'listener': '話しかけられている人',
+                     'scene': {'speaker': '吹き出しの外の話し手',
                                'speakerTime': '今', 'eventTime': '今',
                                'viewpoint': cue, 'timeCue': '外も中も「今」。服・色・目印で同じ人物やものを対応させる。'}})
+        if has_second_person(q['en']):
+            q['scene']['listener'] = ('主役の女の子と紫の服の女の子' if 'あなたたち' in q['ja'] else '星の髪飾りを付けた主役の女の子')
         rows.append(q)
 
     for i, (subject, reference) in enumerate(zip(subjects, refs), 1):
         en = subject[1]
         be = 'am' if en == 'I' else 'is' if en in {'He', 'She', 'It'} else 'are'
         add('subject', i, subject, ('持っています', be + ' holding'), ('赤いボールを', 'a red ball'),
-            f'ボールを持つのは{reference}。話し手と聞き手を外に描き、吹き出しの中の対象と対応させる。', en)
+            f'ボールを持つのは{reference}。人物が分かるよう、服と目印をはっきり描く。', en)
 
     objects = [('私を', 'me'), ('あなたを', 'you'), ('彼を', 'him'), ('彼女を', 'her'),
                ('それを', 'it'), ('私たちを', 'us'), ('彼らを', 'them'), ('あなたたちを', 'you')]
@@ -269,7 +277,7 @@ def pronoun_examples():
     independent = [('私のものです', 'mine', '話し手'), ('あなたのものです', 'yours', '聞き手一人'),
                    ('彼のものです', 'his', '第三者の男の子'), ('彼女のものです', 'hers', '第三者の女の子'),
                    ('私たちのものです', 'ours', '話し手を含むグループ'),
-                   ('彼らのものです', 'theirs', '話し手・聞き手以外のグループ'),
+                   ('彼らのものです', 'theirs', '話し手とは別のグループ'),
                    ('あなたたちのものです', 'yours', '聞き手二人')]
     for i, (ja, en, owner) in enumerate(independent, 1):
         add('independent', i, ('このかばんは', 'This bag'), (ja, 'is ' + en),

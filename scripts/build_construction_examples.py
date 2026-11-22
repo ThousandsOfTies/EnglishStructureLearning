@@ -457,12 +457,13 @@ def build_examples():
     comparison.extend(['', '## 状態を述べる文', '',
                        'like・love・want・need・liveなどの文や、be＋名詞・形容詞の文は、そのまま現在の状態を述べます。今回は機械的に進行形にしません。', '',
                        '## 絵の共通ルール', '',
+                       '- 吹き出しの外は原則として話し手一人。you や your などで相手を指すときは、星の髪飾りの女の子が聞き手になる。「あなたたち」では紫の服の女の子も聞き手に加わる。',
                        '- 話し手を吹き出しの外に置き、中の人物と同じ服・目印で結ぶとIになる。',
                        '- 聞き手ならyou。話し手を含むグループならwe、含まない第三者のグループならthey。',
                        '- 吹き出しは直角の四隅と三角の突起を保つ。枠線と背景の色は変更可。現在は話し手の右、過去は左。進行は左に同じ高さ・濃さの4本線、話し手は真下からやや上を見る。経験は左の場面から話し手に向けて4本線が低く薄くなる。',
                        '- 単語だけで一意に決まらない関係は、話し手・聞き手・指さし・持ち主の名札で補う。',
                        '- 所有を表すitsは名詞とセットにする。独立した「それのもの」にitsを使う練習は作らない。', '',
-                       '各例文のsceneに描画用の人物関係・時間の目印を保存しています。画像自体は生成・差し替えしていません。', ''])
+                       '各例文のsceneに描画用の人物関係・時間の目印を保存しています。', ''])
     (ROOT / 'docs/action-state-contrasts.md').write_text('\n'.join(comparison), encoding='utf-8')
     print(f"Wrote level 1: {len(rows)} examples; level 2: {result['counts']['level2']}; level 3: {result['counts']['level3']}. Total: {len(all_examples)}.")
     print(json.dumps(result['counts'], ensure_ascii=False))

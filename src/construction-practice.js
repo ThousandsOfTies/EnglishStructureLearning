@@ -128,7 +128,12 @@ if (typeof document !== 'undefined') {
   const ILLUSTRATIONS = JSON.parse(document.getElementById('illustrations').textContent).images;
   for (const q of DATA.examples) {
     const illustration = ILLUSTRATIONS[q.id];
-    if (illustration) { q.image = illustration.file; q.imageAlt = illustration.alt; q.imageClue = illustration.clue; }
+    if (illustration) {
+      const revision = illustration.revision ? `?v=${encodeURIComponent(illustration.revision)}` : '';
+      q.image = illustration.file + revision;
+      q.imageAlt = illustration.alt;
+      q.imageClue = illustration.clue;
+    }
   }
   const KEY = 'construction-workshop-original-v1', VOICE_KEY = 'sentence-workshop-voice-v1';
   const SPEED_KEY = 'construction-workshop-speech-speed-v1';

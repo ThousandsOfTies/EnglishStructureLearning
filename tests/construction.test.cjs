@@ -147,7 +147,11 @@ test('personal pronouns cover subject, object, possessive and reflexive forms wi
   for (const [category, forms] of Object.entries(expected)) {
     const examples = basic.filter(q => q.pronounFocus?.category === category);
     assert.deepEqual([...new Set(examples.map(q => q.pronounFocus.form))].sort(), forms.sort());
-    for (const q of examples) assert.ok(q.scene.speaker && q.scene.listener && q.scene.viewpoint, q.id);
+    for (const q of examples) {
+      assert.ok(q.scene.speaker && q.scene.viewpoint, q.id);
+      assert.equal(Boolean(q.scene.listener), /\b(?:you|your|yours|yourself|yourselves)\b/i.test(q.en), q.id);
+      if (q.scene.listener && q.ja.includes('あなたたち')) assert.match(q.scene.listener, /紫の服/, q.id);
+    }
   }
   assert.equal(basic.filter(q => q.pronounFocus?.category === 'independent' && q.pronounFocus.form === 'its').length, 0);
 });

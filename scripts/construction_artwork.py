@@ -11,6 +11,8 @@ import struct
 import tempfile
 import time
 
+from refine_curriculum import has_second_person
+
 ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = ROOT / 'data/construction-illustrations.json'
 PLAN = ROOT / 'data/construction-artwork-plan.json'
@@ -54,16 +56,24 @@ def write(path, value):
 
 def prompt_for(q):
     scene = q.get('scene', {})
-    subject = q.get('slots', {}).get('S', {}).get('en', '')
+    subject = q.get('slots', {}).get('S', {}).get('en') or next((text for role, text, *_ in q.get('blocks', []) if role == 'S'), '')
+    addressed = has_second_person(q['en'])
+    narrator = 'Exactly one person OUTSIDE the balloon: the star-clip girl in coral speaks and gestures toward the scene. '
+    if addressed:
+        narrator = ('Outside the balloon the boy in the blue hoodie is the speaker, and the star-clip girl in coral is the listener. '
+                    'The tail points to the speaking boy. The same listener is recognizable by her outfit and star clip '
+                    'whenever the listener is shown in the event. ')
+        if 'あなたたち' in q['ja']:
+            narrator += 'The lavender ponytail girl is the second listener. Match both listeners in the event when it depicts them. '
     viewpoint = {
-        'I': 'Outside narrator is the main girl; the ONLY event actor inside the balloon is the SAME girl, identical clothes/hairclip.',
-        'You': 'EXACTLY TWO outside figures: short-brown-haired blue-hoodie BOY speaking and the main GIRL listening, direct eye contact. Tail points to BOY MOUTH, never girl. INSIDE: ONLY ONE actor, the SAME listener GIRL, not the speaker. No companions inside.',
-        'He': 'Outside speaker is the main girl addressing a dark-ponytail lavender-shirt girl. They look/gesture towards a distinct THIRD-PARTY short-brown-haired blue-hoodie BOY, the ONLY actor inside the scene. He is neither the speaker nor the listener.',
-        'She': 'Outside speaker is the main girl addressing the blue-hoodie boy. They look/gesture towards a THIRD-PARTY lavender-shirt girl inside the scene. She is neither the speaker nor the listener.',
-        'It': 'The subject is a small friendly green toy robot, clearly non-human. Outside main girl talks to the blue-hoodie boy and points to the robot scene.',
-        'We': 'Outside speaker is the main girl. The event group INSIDE includes the SAME main girl and the lavender-shirt girl. Include both as actors, so the speaker is part of the group.',
-        'They': 'Outside main girl and blue-hoodie boy talk about the event group. INSIDE actors are a lavender-shirt girl and a green-shirt boy. Neither outside speaker nor listener is in that third-party group.',
-    }.get(subject, 'Use the exact subject and participants in the brief. ' + scene.get('viewpoint', ''))
+        'i': 'Inside the balloon, the actor is the same star-clip girl with matching clothes and hairclip. ',
+        'you': 'Inside the balloon, the actor is the same listener. Include people required by the event. ',
+        'he': 'Inside the balloon, the subject is a distinct third-party boy. ',
+        'she': 'Inside the balloon, the subject is a distinct third-party girl with a dark ponytail and lavender clothes. ',
+        'it': 'The subject is a small friendly green toy robot, clearly non-human. ',
+        'we': 'The event group includes the star-clip girl and the lavender ponytail girl, so the speaker is part of the group. ',
+        'they': 'The subject group includes the lavender ponytail girl and a green-shirt boy, distinct from the speaker. ',
+    }.get(subject.casefold(), 'Use the exact subject and participants in the brief. ' + scene.get('viewpoint', ''))
     meaning = q.get('meaning', '')
     weekday = next((day for day in WEEKDAY_ICONS if day in q.get('slots', {}).get('time', {}).get('ja', '')), None)
     if meaning == 'past':
@@ -78,7 +88,7 @@ def prompt_for(q):
         layout = ('Experience: outside speaker on RIGHT looks LEFT at an earlier event. Four narrow bars outside '
                   'the RIGHT edge of the balloon become shorter and paler toward the speaker. No timeline or arrows. ')
     else:
-        layout = ('Small outside present-day speaker/listener on LEFT; one large balloon on RIGHT illustrates the action concept or state. '
+        layout = ('Small outside present-day speaker on LEFT; one large balloon on RIGHT illustrates the action concept or state. '
                   'Tail points to the outside speaker. Use ONE event scene, no repeated mini-panels, no timeline. '
                   + ('' if weekday else 'No calendar. Exact frequency/day will be supplied outside the picture. '))
     if weekday:
@@ -107,7 +117,7 @@ def prompt_for(q):
     if q.get('level', 1) > 1:
         content['focus_DO_NOT_WRITE'] = q.get('focus', '')
         layout += 'Illustrate the communicative situation; do not turn the English sentence or grammar into visual text. '
-    return STYLE + layout + viewpoint + ' Event details: ' + json.dumps(content, ensure_ascii=False) + (
+    return STYLE + layout + narrator + viewpoint + ' Event details: ' + json.dumps(content, ensure_ascii=False) + (
         ' Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. '
         'Do not reverse giver/recipient. Use plausible hands, feet and object contact. '
         'For going/coming, show approach to the destination, not walking away. '
