@@ -73,6 +73,13 @@
 .guide-part{font-size:14px;padding:3px 7px}
 .guide-part .answer-label{white-space:nowrap}
 .guide-part[data-role="question-marker"]{border:1px dashed #738c9a;background:#fff}
+.guide-question-words{margin-top:16px}
+.guide-question-words h3{margin:0;font-size:16px}
+.guide-question-words dl{margin:6px 0 0}
+.guide-question-words dl>div{display:grid;grid-template-columns:7em minmax(0,1fr);align-items:start;gap:6px;padding:6px 0;border-top:1px solid var(--line)}
+.guide-question-words dd{margin:0}
+.guide-question-words dt .muted{display:block}
+@media(max-width:420px){.guide-question-words dl>div{grid-template-columns:4.25em minmax(0,1fr)}}
 .guide-note{margin:12px 0 0;font-size:13px;color:var(--muted)}
 .guide-actions{flex:none;display:flex;justify-content:flex-end;padding:10px clamp(14px,4vw,26px);border-top:1px solid var(--line)}
 .guide-actions button{background:var(--blue);border-color:var(--blue);color:#fff;font-weight:600}
@@ -122,6 +129,10 @@
 <p id="guideSummary"></p>
 <p id="guideIntroduction" hidden></p>
 <div id="guideExamples"></div>
+<section class="guide-question-words" id="guideQuestionWords" aria-labelledby="guideQuestionTitle" hidden>
+<h3 id="guideQuestionTitle">疑問詞の例</h3>
+<dl id="guideQuestionExamples"></dl>
+</section>
 <p id="guideNote" class="guide-note"></p>
 </div>
 <form method="dialog" class="guide-actions"><button id="guideContinue" type="submit" autofocus>はじめる</button></form>

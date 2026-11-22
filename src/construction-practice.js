@@ -238,6 +238,15 @@ if (typeof document !== 'undefined') {
         explanation: '吹き出しの先の男の子が、女の子のほうを見て手を差し出しています。女の子に「乗れる？」とたずねているので、助述部の Can を主語の前に置きます。',
         practice: '驚いた顔で「乗れないの？」と聞く場面なら、Can’t を一つの助述部として主語の前に置きます。',
       }],
+      questionWords: [
+        ['what', '何を', 'What can I buy?', '私は何を買えますか？'],
+        ['who', 'だれが', 'Who found it?', 'だれがそれを見つけましたか？'],
+        ['when', 'いつ', 'When do you clean your room?', 'あなたはいつ自分の部屋をそうじしますか？'],
+        ['where', 'どこで', 'Where do you play soccer?', 'あなたはどこでサッカーをしますか？'],
+        ['why', 'なぜ', 'Why are you happy?', 'あなたはなぜうれしいのですか？'],
+        ['which', 'どの', 'Which book do you want?', 'あなたはどの本がほしいですか？'],
+        ['how', 'どうやって', 'How do you make this?', 'これはどうやって作りますか？'],
+      ],
       note: '「だれが」と主語をたずねる Who found it? のような文では、Who が主語になり、そのあとに述語が続きます。',
     },
   };
@@ -563,6 +572,12 @@ if (typeof document !== 'undefined') {
     $('guideIntroduction').textContent = guide.introduction ?? '';
     $('guideIntroduction').hidden = !guide.introduction;
     $('guideNote').textContent = guide.note;
+    $('guideQuestionWords').hidden = !guide.questionWords;
+    $('guideQuestionExamples').innerHTML = (guide.questionWords ?? []).map(([word, meaning, en, ja]) => `
+      <div>
+        <dt><strong lang="en">${esc(word)}</strong> <span class="muted">${esc(meaning)}</span></dt>
+        <dd><span class="guide-sentence" lang="en">${esc(en)}</span><span class="muted">${esc(ja)}</span></dd>
+      </div>`).join('');
     $('guideExamples').innerHTML = guide.examples.map(example => {
       const q = example.id ? DATA.examples.find(q => q.id === example.id) : example;
       const parts = labelParts(q.parts ?? Construction.cardsFor(q));
