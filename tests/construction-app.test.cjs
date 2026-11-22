@@ -17,7 +17,7 @@ test('all curriculum exercises can be completed by moving cards into their inten
       placements = app.place(q, placements, i, app.expectedTarget(q, i));
     }
     assert.ok(app.isCorrect(q, placements), q.id);
-    const spoken = q.level === 1 ? app.roles.map(role => q.slots[role].en).filter(Boolean) : q.blocks.map(([, text]) => text);
+    const spoken = cards.map(card => card.en).filter(Boolean);
     assert.equal(spoken.join(' ') + (q.level === 3 ? '?' : '.'), q.en, q.id);
   }
 });
@@ -38,7 +38,8 @@ test('subject unlocks predicate and both unlock every remaining slot', () => {
   assert.deepEqual(app.enabledTargets(q, []), ['S']);
   const core = ['S', 'support', 'predicate'];
   assert.deepEqual(app.enabledTargets(q, ['S']), core);
-  assert.deepEqual(app.enabledTargets(q, ['S', 'predicate']), app.roles);
+  assert.deepEqual(app.enabledTargets(q, ['S', 'predicate']), core);
+  assert.deepEqual(app.enabledTargets(q, core), app.roles);
   assert.deepEqual(app.enabledTargets(q, ['predicate']), ['S']);
   const be = get('build-be-noun-1');
   assert.deepEqual(app.enabledTargets(be, ['S', 'predicate']), core);
@@ -86,7 +87,22 @@ test('list practice accepts untouched unused slots while requiring every filled 
   const q = get('build-go-1');
   const picks = Object.fromEntries(app.roles.filter(role => q.slots[role].ja).map(role => [role, q.slots[role].ja]));
   assert.equal(app.choicesCorrect(q, { ...picks, P2: 'シールを' }), false);
-  assert.equal(app.choicesCorrect(q, { ...picks, support: 'です' }), false);
+  assert.equal(app.choicesCorrect(q, { ...picks, support: 'である' }), false);
+});
+
+test('the level one action support is required in Japanese and silent in English', () => {
+  for (const id of ['build-go-1', 'build-go-1-past', 'tense-bicycle-experience']) {
+    const q = get(id);
+    const cards = app.cardsFor(q);
+    const support = cards.findIndex(card => card.role === 'support');
+    assert.deepEqual(cards[support], { role: 'support', text: 'する', en: '' }, id);
+    assert.ok(!q.blocks.some(([role]) => role === 'support'), id);
+    const placements = cards.map((_, i) => app.expectedTarget(q, i));
+    assert.equal(app.isCorrect(q, app.place(q, placements, support, '')), false, id);
+    const withoutSupport = Object.fromEntries(app.roles.filter(role => role !== 'support' && q.slots[role].ja).map(role => [role, q.slots[role].ja]));
+    assert.equal(app.choicesCorrect(q, withoutSupport), false, id);
+    assert.ok(app.choicesCorrect(q, { ...withoutSupport, support: 'する' }), id);
+  }
 });
 
 test('level one grades be in the support slot and rejects exchanging it with the predicate', () => {

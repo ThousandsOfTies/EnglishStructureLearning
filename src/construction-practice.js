@@ -8,7 +8,7 @@ const Construction = (() => {
   function isSupportRole(role) { return role === '頻度' || predicateSupportRoles.includes(role); }
   function cardsFor(q) {
     return q.level === 1
-      ? roles.filter(r => q.slots[r].en).map(r => ({ text: q.slots[r].ja, role: r, en: q.slots[r].en }))
+      ? roles.filter(r => q.slots[r].ja).map(r => ({ text: q.slots[r].ja, role: r, en: q.slots[r].en }))
       : q.blocks.map(([role, en, text]) => ({ text, role, en }));
   }
   function targetsFor(q) {
@@ -69,7 +69,7 @@ const Construction = (() => {
     const subjects = targets.filter(id => subjectRoles.has(targetRole(q, id)));
     if (subjects.some(id => !filled.includes(id))) return subjects;
     const predicates = targets.filter(id => predicateRoles.has(targetRole(q, id)));
-    const missingPredicate = predicates.some(id => !filled.includes(id) && (q.level !== 1 || q.slots[id].en));
+    const missingPredicate = predicates.some(id => !filled.includes(id) && (q.level !== 1 || q.slots[id].ja));
     return missingPredicate ? [...subjects, ...predicates] : targets;
   }
   function place(q, placements, index, target) {
@@ -377,8 +377,8 @@ if (typeof document !== 'undefined') {
   function renderResult(q) {
     renderSlotFeedback(q);
     $('feedback').innerHTML = answerResult === false ? '<div class="feedback">もう少し。点線の欄を見直してみよう。</div>' : '';
-    const parts = labelParts(q.blocks.map(([role, text, japanese], index) => ({
-      role, text, japanese: q.slots?.[role]?.ja ?? japanese, index
+    const parts = labelParts(Construction.cardsFor(q).map(({ role, en, text }, index) => ({
+      role, en, text, index
     })));
     $('result').innerHTML = answerResult ? `
       <div class="result">
@@ -393,13 +393,14 @@ if (typeof document !== 'undefined') {
             <button id="speakSlow" data-speed="slow" ${hasSpeech ? '' : 'disabled'}>ゆっくり読む</button>
           </div>
         </div>
-        <div class="spoken">${renderPartGroups(parts, ({ role, text, japanese, index, label }) =>
-          `<button type="button" class="answer-part" data-role="${esc(role)}" data-speak-part="${index}" aria-label="${esc(label)}「${esc(text)}」を聞く" ${hasSpeech ? '' : 'disabled'}>
+        <div class="spoken">${renderPartGroups(parts, ({ role, en, text, index, label }) => {
+          const content = `
             <span class="answer-label">${esc(label)}</span>
-            <span class="answer-ja">${esc(japanese)}</span>
-            <span lang="en">${esc(text)}</span>
-          </button>`
-        )}</div>
+            <span class="answer-ja">${esc(text)}</span>`;
+          return en
+            ? `<button type="button" class="answer-part" data-role="${esc(role)}" data-speak-part="${index}" aria-label="${esc(label)}「${esc(en)}」を聞く" ${hasSpeech ? '' : 'disabled'}>${content}<span lang="en">${esc(en)}</span></button>`
+            : `<div class="answer-part" data-role="${esc(role)}">${content}</div>`;
+        })}</div>
         <p class="muted" id="speechStatus" role="status">${hasSpeech ? '' : 'このブラウザーでは音声を使えません。'}</p>
       </div>` : '';
     if (answerResult) populateVoices();
@@ -550,7 +551,7 @@ if (typeof document !== 'undefined') {
     if (button.hasAttribute('data-card') && event.detail !== 0 && Date.now() < suppressClickUntil) {
       event.preventDefault(); return;
     }
-    if (button.hasAttribute('data-speak-part')) { speak(getQ().blocks[Number(button.dataset.speakPart)]?.[1]); return; }
+    if (button.hasAttribute('data-speak-part')) { speak(Construction.cardsFor(getQ())[Number(button.dataset.speakPart)]?.en); return; }
     if (button.dataset.lesson) { lessonDrawer.close(); choose(button.dataset.lesson); return; }
     const i = Number(button.dataset.card);
     if (button.hasAttribute('data-target') && selected !== null && i !== selected) {

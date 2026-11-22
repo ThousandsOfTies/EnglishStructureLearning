@@ -105,12 +105,12 @@ def tense_picture_examples():
             yield q
 
 
-def split_be_predicate(q):
+def set_predicate_support(q):
     values = q['slots']
-    values['support'] = slot()
     english = values['predicate']['en']
     be, _, rest = english.partition(' ')
     if be not in BE_FORMS:
+        values['support'] = slot('する')
         return
 
     japanese = values['predicate']['ja']
@@ -120,10 +120,10 @@ def split_be_predicate(q):
         else:
             support, rest_ja = '〜いる', re.sub(r'(?:います|いる)$', '', japanese)
     elif q['meaning'] == 'past':
-        support = 'でした'
+        support = 'であった'
         rest_ja = re.sub(r'かったです$', 'い', japanese).removesuffix('でした')
     else:
-        support, rest_ja = 'です', japanese.removesuffix('です')
+        support, rest_ja = 'である', japanese.removesuffix('です')
 
     assert rest and rest_ja and rest_ja != japanese, q['id']
     values['support'] = slot(support, be)
@@ -313,7 +313,7 @@ def build_examples():
     rows.extend(tense_picture_examples())
     for q in rows:
         q['level'] = 1
-        split_be_predicate(q)
+        set_predicate_support(q)
         q['blocks'] = [[k, q['slots'][k]['en']] for k in SLOTS if q['slots'][k]['en']]
         assert ' '.join(text for _, text in q['blocks']) + '.' == q['en'], q['id']
     advanced = json.loads((ROOT / 'data/advanced-examples.json').read_text(encoding='utf-8'))
@@ -344,7 +344,8 @@ def build_examples():
         'rules': [
             '使わない欄は空欄にする。',
             'go to / look at / listen to などは、つなぎ方まで述語に含める。',
-            'be は助述部に置き、名詞・形容詞・動作の ing 形は述語に置く。',
+            '一般動詞の助述部は「する」。完成英文には語を足さない。',
+            '状態の be は「である」、過去は「であった」を助述部に置く。動作の進行は「〜いる」などで表す。',
             'PはParameter。P1・P2の役割は述語の部品ごとに決まる。',
             '場所は動作や状態の舞台。移動先・置き先・滞在先など、述語が表す意味を補う場所はP1・P2に入れる。',
             '場所・時は基本として文の後ろ。ほかの自然な語順を誤りとはしない。',
@@ -373,7 +374,7 @@ def build_examples():
              '全部を一度に練習する必要はありません。まず「いつもの動き／状態」の原型を使い、同じcontrastFamilyの「今」「昨日」と比べます。再帰代名詞8文は発展扱いです。', '',
              '「doに動作を渡す」は習慣・行為の捉え方を説明する比喩です。肯定文にdoを実際に追加するルールではありません。', '',
              'S → 助述部 → 述語 → P1 → P2 → 場所 → 時。使わない欄は「—」。これは英文を作るための教材上の区切りです。', '',
-             'be は助述部に置き、名詞・形容詞・動作の ing 形は述語に置きます。一般動詞だけの文では助述部を空欄にします。', '',
+             '一般動詞の助述部は「する」です。これは日本語の並べ方を考えるためのブロックで、完成英文には語を足しません。状態の be は「である」、過去は「であった」を選びます。', '',
              'PはParameter（引数）の教材独自の呼び名です。go to の to は述語側、school はP1側。give は「だれに→何を」、keep は「何を→どんな状態に」をP1・P2に入れます。be＋名詞・形容詞の文ではP1・P2を空欄にします。', '',
              '場面全体の場所は［場所］へ入れます。come の行き先や live の居住先は［対象１］、put の置き先は［対象２］へ入れます。', '',
              '場所と時の両方を常に付ける必要はありません。主語に合う述語の形をそのまま練習します。', '',
@@ -387,7 +388,8 @@ def build_examples():
         examples = [q for q in rows if q['group'] == group['key']]
         for q in examples:
             label = {'routine': 'いつもの動き', 'ongoing': '今している', 'past': '過去の動き' if q['group'] == 'tense-pictures' else '昨日した', 'experience': 'したことがある', 'state': '状態'}[q['meaning']]
-            lines.append('| ' + label + ' | ' + ' | '.join(q['slots'][k]['en'] or '—' for k in SLOTS) + ' |')
+            parts = [q['slots'][k]['en'] or q['slots'][k]['ja'] or '—' for k in SLOTS]
+            lines.append('| ' + label + ' | ' + ' | '.join(parts) + ' |')
         lines.append('')
         for q in examples:
             lines.append(f"- {q['en']} — {q['ja']}")

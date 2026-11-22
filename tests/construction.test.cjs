@@ -26,9 +26,9 @@ test('connectors stay with the predicate and leave the target in P', () => {
 });
 
 test('be goes in the support slot and nouns and adjectives stay in the predicate', () => {
-  assert.deepEqual(get('be-noun-1').slots.support, {ja: 'です', en: 'am'});
+  assert.deepEqual(get('be-noun-1').slots.support, {ja: 'である', en: 'am'});
   assert.deepEqual(get('be-noun-1').slots.predicate, {ja: '生徒', en: 'a student'});
-  assert.deepEqual(get('be-adjective-1').slots.support, {ja: 'です', en: 'is'});
+  assert.deepEqual(get('be-adjective-1').slots.support, {ja: 'である', en: 'is'});
   assert.deepEqual(get('be-adjective-1').slots.predicate, {ja: 'うれしい', en: 'happy'});
   for (const q of basic.filter(q => q.group.startsWith('be-'))) {
     assert.deepEqual(q.slots.P1, {ja: '', en: ''});
@@ -65,7 +65,8 @@ test('filled slots reconstruct the exact complete English sentence', () => {
     assert.equal(slots.join(' ') + '.', q.en, q.id);
     const leadingBe = q.en.slice(q.slots.S.en.length + 1).match(/^(am|is|are|was|were)\b/);
     assert.equal(q.slots.support.en, leadingBe?.[0] ?? '', q.id);
-    assert.equal(Boolean(q.slots.support.ja), Boolean(leadingBe), q.id);
+    assert.ok(q.slots.support.ja, q.id);
+    if (!leadingBe) assert.equal(q.slots.support.ja, 'する', q.id);
     assert.ok(q.slots.predicate.ja, q.id);
   }
 });
@@ -109,7 +110,7 @@ test('contrast families preserve the scene participants and include real irregul
   assert.equal(get('read-1-past').note.includes('/red/'), true);
   for (const [id, adjective, be] of [['be-adjective-1-past', 'うれしい', 'was'], ['be-adjective-2-past', 'いそがしい', 'was'], ['be-adjective-3-past', '静か', 'were']]) {
     const q = get(id);
-    assert.deepEqual(q.slots.support, {ja: 'でした', en: be});
+    assert.deepEqual(q.slots.support, {ja: 'であった', en: be});
     assert.equal(q.slots.predicate.ja, adjective);
   }
 });
