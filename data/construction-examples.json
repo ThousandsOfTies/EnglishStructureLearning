@@ -43,7 +43,7 @@
     },
     {
       "id": 3,
-      "label": "レベル3：疑問文",
+      "label": "レベル3：疑問文と倒置",
       "modals": true,
       "negation": true,
       "frequency": true,

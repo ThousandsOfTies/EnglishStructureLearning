@@ -381,7 +381,7 @@ def build_examples():
         'levels': [
             {'id': 1, 'label': 'レベル1：基本の文', 'modals': False, 'negation': False, 'frequency': False, 'questions': False},
             {'id': 2, 'label': 'レベル2：助動詞・否定・頻度', 'modals': True, 'negation': True, 'frequency': True, 'questions': False},
-            {'id': 3, 'label': 'レベル3：疑問文', 'modals': True, 'negation': True, 'frequency': True, 'questions': True},
+            {'id': 3, 'label': 'レベル3：疑問文と倒置', 'modals': True, 'negation': True, 'frequency': True, 'questions': True},
         ],
         'silentQuestionWord': {'token': 'whether', 'meaning': '〜かどうか', 'spoken': False, 'written': False},
         'level2Choices': level2_choices,
@@ -403,7 +403,7 @@ def build_examples():
              '場面全体の場所は［場所］へ入れます。come の行き先や live の居住先は［対象１］、put の置き先は［対象２］へ入れます。', '',
              '場所と時の両方を常に付ける必要はありません。主語に合う述語の形をそのまま練習します。', '',
              '例文は本教材用に新しく作成したものです。画像の更新は行っていません。', '',
-             'レベル1：基本の文。レベル2：助動詞・否定・頻度。レベル3：疑問文。', '',
+             'レベル1：基本の文。レベル2：助動詞・否定・頻度。レベル3：疑問文と倒置。', '',
              'whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英文では書かず、発音もしません。S以外をたずねる直接疑問文では助動詞・be・doを主語の前に出します。SをたずねるwhoはSの位置に入ります。', '',
              f"追加例文：[レベル2・{result['counts']['level2']}文](level2-examples.md) / [レベル3・{result['counts']['level3']}文](level3-examples.md)", '']
     for group in groups:
@@ -424,7 +424,7 @@ def build_examples():
         lines.append('')
     (ROOT / 'docs/construction-examples.md').write_text('\n'.join(lines), encoding='utf-8')
     for level in (2, 3):
-        title = '助動詞・否定・頻度' if level == 2 else '疑問文'
+        title = '助動詞・否定・頻度' if level == 2 else '疑問文と倒置'
         exercises = advanced[f'level{level}']
         lines = [f'# レベル{level}：{title}・{len(exercises)}文', '',
                  '元の文をどう変えるか、意味のブロックと完成した英文の両方で確かめます。', '',
@@ -432,8 +432,10 @@ def build_examples():
         if level == 2:
             lines.extend(['リストの候補は欄の役割ごとに用意します。助動詞は、場面に合う日本語に、その助動詞に共通する意味を括弧で添えます。', ''])
         else:
-            lines.extend(['黙疑問詞 whether は「〜かどうか」を問う内部の目印です。下のブロックや完成英文には表示せず、読み上げもしません。これは本教材独自の構築モデルで、英文法上の省略された語という主張ではありません。', '',
+            lines.extend(['疑問詞がある文では、What can I buy? のように疑問詞を先頭に、最初の助述部を主語の前に置きます。', '',
+                          '黙疑問詞 (whether) は「〜かどうか」を問う教材上の目印です。開始ガイドで語順を説明するときだけ使い、完成英文や読み上げには含めません。', '',
                           'whoがSをたずねる場合は、肯定の文ではdoを足さず、Sと述語の順を入れ替えません。P1をたずねるwhoとは区別します。', '',
+                          '開始ガイドでは、猫の存在を伝える There is a cat. も、be が a cat の前に来る例として紹介します。', '',
                           "否定疑問の練習では Don't のような短縮形を使い、一つの助述部として主語の前に置きます。", ''])
         for number, q in enumerate(exercises, 1):
             lines.extend([f"## {number:02}　{q['focus']}", '', q['ja'], '',

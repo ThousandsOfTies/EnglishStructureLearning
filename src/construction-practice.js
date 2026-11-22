@@ -141,7 +141,8 @@ if (typeof document !== 'undefined') {
   const speechRates = { normal: 1, slow: .6 };
   const $ = id => document.getElementById(id);
   const esc = value => String(value).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-  const labels = { S: '主語', support: '助述部', predicate: '述語', P1: '対象１', P2: '対象２', place: '場所', time: '時' };
+  const labels = { S: '主語', support: '助述部', predicate: '述語', P1: '対象１', P2: '対象２', place: '場所', time: '時',
+    'question-marker': '声に出さない目印', there: '文頭の there' };
   const levelGuides = {
     1: {
       summary: 'ふだんの動きや、今のようすを伝える文をつくる。',
@@ -193,15 +194,42 @@ if (typeof document !== 'undefined') {
       note: '「よく」「ときどき」など、どれくらいするかは絵の印も見ましょう。助述部は英語で言う順に上から並べます。',
     },
     3: {
-      summary: 'できるかどうかや、だれが・どこでなどを相手にたずねる文をつくる。',
+      summary: '疑問文を中心に、ことばを前に出す「倒置」の並びを学びます。',
+      introduction: '疑問文は、まず疑問詞を先頭に置くと考えます。次に、最初の助述部（can や are など）を主語の前へ出します。一般動詞だけの文では、必要に応じて do・does・did を使います。',
       examples: [{
-        en: 'You can ride a bike.',
-        ja: 'あなたは自転車に乗れます。',
+        heading: '何を？　疑問詞を先頭へ',
+        explanation: '「何を買えるか」を聞くので、what を先頭に出し、その次に can を置きます。',
+        startingOrder: 'I can buy [what]',
+        en: 'What can I buy?',
+        ja: '私は何を買えますか？',
         parts: [
-          { role: 'S', en: 'You', text: 'あなたは' },
+          { role: '疑問詞＝P1', en: 'What', text: '何を' },
           { role: 'support', en: 'can', text: '〜できる' },
-          { role: '述語', en: 'ride', text: '乗る' },
-          { role: 'P1', en: 'a bike', text: '自転車に' },
+          { role: 'S', en: 'I', text: '私は' },
+          { role: '述語', en: 'buy', text: '買う' },
+        ],
+      }, {
+        heading: 'はい・いいえで聞くときは (whether)',
+        explanation: '「あなたが生徒かどうか」を聞く文です。この教材では「〜かどうか」の目印として (whether) を先頭に置いて考えます。完成英文では書かず、発音もしません。声に出す最初の語は Are です。',
+        startingOrder: 'You are a student.',
+        en: 'Are you a student?',
+        ja: 'あなたは生徒ですか？',
+        parts: [
+          { role: 'question-marker', en: '(whether)', text: '〜かどうか' },
+          { role: 'support', en: 'Are', text: 'である' },
+          { role: 'S', en: 'you', text: 'あなたは' },
+          { role: '述語', en: 'a student', text: '生徒' },
+        ],
+      }, {
+        heading: '「〜がいる・ある」と伝える There',
+        explanation: 'A cat is there. は「あそこに猫がいる」と場所を指します。There is a cat. は「猫がいるよ」と、その存在を伝えます。この文でも is が a cat の前に来ます。',
+        startingOrder: 'A cat is there.',
+        en: 'There is a cat.',
+        ja: '猫がいます。',
+        parts: [
+          { role: 'there', en: 'There', text: '〜がいる・ある' },
+          { role: 'support', en: 'is', text: 'いる' },
+          { role: 'いるもの', en: 'a cat', text: '猫' },
         ],
       }, {
         id: 'level3-04',
@@ -210,7 +238,7 @@ if (typeof document !== 'undefined') {
         explanation: '吹き出しの先の男の子が、女の子のほうを見て手を差し出しています。女の子に「乗れる？」とたずねているので、助述部の Can を主語の前に置きます。',
         practice: '驚いた顔で「乗れないの？」と聞く場面なら、Can’t を一つの助述部として主語の前に置きます。',
       }],
-      note: '「だれが」と主語をたずねるときは、疑問詞を主語の位置に置きます。',
+      note: '「だれが」と主語をたずねる Who found it? のような文では、Who が主語になり、そのあとに述語が続きます。',
     },
   };
   const compactChoices = window.matchMedia('(max-width: 720px)');
@@ -547,6 +575,7 @@ if (typeof document !== 'undefined') {
               <img src="${esc(q.image)}" alt="${esc(q.imageAlt)}" ${example.picture === 'pose' ? 'width="1254" height="1254"' : 'width="860" height="644"'}>
             </div>` : ''}
           ${example.explanation ? `<p class="guide-explanation">${esc(example.explanation)}</p>` : ''}
+          ${example.startingOrder ? `<span class="guide-starting-order">語順の比較 <span lang="en">${esc(example.startingOrder)}</span></span>` : ''}
           <span class="guide-sentence" lang="en">${esc(q.en)}</span><span class="muted">${esc(q.ja)}</span>
         </figcaption>
         <div class="guide-parts">${renderPartGroups(parts, ({ role, label, en, text }) => `
