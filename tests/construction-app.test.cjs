@@ -261,6 +261,11 @@ test('progress uses stable IDs and ignores legacy, stale, and duplicate completi
   assert.equal(app.restore(data, { version: 999 }).completed.length, 0);
 });
 
+test('level guides are remembered per level and old saves can start them', () => {
+  assert.deepEqual(app.restore(data, { version: 1, completed: ['build-go-1'] }).seenGuides, []);
+  assert.deepEqual(app.restore(data, { version: 1, seenGuides: [3, 1, 3, 9, '2'] }).seenGuides, [1, 3]);
+});
+
 test('the next-scene navigation stays in the core list after opening a contrast', () => {
   const visible = app.visibleExamples(data, { level: 1, group: 'go', scope: 'core', search: '' });
   const index = app.navigationIndex(visible, get('build-go-1-past'));

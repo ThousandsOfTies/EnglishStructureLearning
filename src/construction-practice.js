@@ -92,9 +92,10 @@ const Construction = (() => {
   }
   function restore(data, saved) {
     const ids = new Set(data.examples.map(q => q.id));
-    const initial = { current: data.examples[0].id, completed: [], level: 1, group: 'go', scope: 'core', search: '', mode: 'cards' };
+    const initial = { current: data.examples[0].id, completed: [], seenGuides: [], level: 1, group: 'go', scope: 'core', search: '', mode: 'cards' };
     if (!saved || saved.version !== 1) return initial;
     initial.completed = [...new Set(Array.isArray(saved.completed) ? saved.completed.filter(id => ids.has(id)) : [])];
+    if (Array.isArray(saved.seenGuides)) initial.seenGuides = data.levels.map(level => level.id).filter(id => saved.seenGuides.includes(id));
     if ([1, 2, 3].includes(saved.level)) initial.level = saved.level;
     if (saved.mode === 'select') initial.mode = 'select';
     if (saved.group === 'all' || data.groups.some(g => g.key === saved.group)) initial.group = saved.group;
@@ -141,6 +142,32 @@ if (typeof document !== 'undefined') {
   const $ = id => document.getElementById(id);
   const esc = value => String(value).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   const labels = { S: '主語', support: '助述部', predicate: '述語', P1: '対象１', P2: '対象２', place: '場所', time: '時' };
+  const levelGuides = {
+    1: {
+      summary: 'ふだんの動きや、今のようすを伝える文をつくる。',
+      examples: ['tense-bicycle', 'build-be-noun-1'],
+      note: '一般動詞の文では「する」を日本語の目印にします。be で状態を表す文では、助述部で「である」をえらびます。',
+    },
+    2: {
+      summary: 'できること、しないこと、よくすることなどを伝える文をつくる。',
+      examples: ['level2-03', 'level2-07'],
+      note: '助述部が二つ以上あるときは、英語で言う順に上から並べます。',
+    },
+    3: {
+      summary: 'できるかどうかや、だれが・どこでなどを相手にたずねる文をつくる。',
+      examples: [{
+        en: 'You can ride a bike.',
+        ja: 'あなたは自転車に乗れます。',
+        parts: [
+          { role: 'S', en: 'You', text: 'あなたは' },
+          { role: 'support', en: 'can', text: '〜できる' },
+          { role: '述語', en: 'ride', text: '乗る' },
+          { role: 'P1', en: 'a bike', text: '自転車に' },
+        ],
+      }, 'level3-04'],
+      note: '「できますか」とたずねるときは、can が主語の前に来ます。「だれが」と主語をたずねるときは、疑問詞を主語の位置に置きます。',
+    },
+  };
   const compactChoices = window.matchMedia('(max-width: 720px)');
   function roleLabel(role) {
     const [prefix, target] = role.split('＝');
@@ -173,7 +200,7 @@ if (typeof document !== 'undefined') {
   const restored = Construction.restore(DATA, saved);
   const hasSavedLevels = saved?.version === 1 && Array.isArray(saved.levels);
   const state = {
-    current: restored.current, completed: restored.completed,
+    current: restored.current, completed: restored.completed, seenGuides: restored.seenGuides,
     levels: hasSavedLevels ? DATA.levels.map(level => level.id).filter(id => saved.levels.includes(id)) : [1],
     group: 'all', scope: hasSavedLevels ? restored.scope : 'all', search: '',
     mode: hasSavedLevels ? restored.mode : 'select',
@@ -416,7 +443,11 @@ if (typeof document !== 'undefined') {
     $('emptyPractice').hidden = Boolean(visible.length);
     $('exercise').hidden = !visible.length;
     $('reset').hidden = !visible.length;
-    if (visible.length) renderExercise();
+    $('openGuide').hidden = !visible.length;
+    if (visible.length) {
+      renderExercise();
+      maybeOpenLevelGuide();
+    }
     else $('modeSwitcher').hidden = true;
   }
   function changeFilters() {
@@ -430,10 +461,72 @@ if (typeof document !== 'undefined') {
       save(); render();
     }
   }
-  $('levelChoices').innerHTML = DATA.levels.map(level => `<label><input type="checkbox" value="${level.id}" aria-label="${esc(level.label)}">${level.id}</label>`).join('');
+  $('levelChoices').innerHTML = DATA.levels.map(level => `
+    <label>
+      <input type="checkbox" value="${level.id}" aria-labelledby="levelName-${level.id}" aria-describedby="levelSummary-${level.id}">
+      <span>
+        <strong class="level-choice-name" id="levelName-${level.id}">${esc(level.label)}</strong>
+        <span class="level-choice-summary" id="levelSummary-${level.id}">${esc(levelGuides[level.id].summary)}</span>
+      </span>
+    </label>`).join('');
   $('levels').addEventListener('change', changeFilters);
   $('scope').addEventListener('change', changeFilters);
   const lessonDrawer = $('lessonDrawer');
+  const levelGuide = $('levelGuide');
+  let guideLevel = null, guideForFirstVisit = false;
+  function maybeOpenLevelGuide() {
+    if (lessonDrawer.open || $('exercise').hidden) return;
+    const level = getQ().level;
+    if (levelGuide.open && guideLevel !== level) levelGuide.close();
+    if (!levelGuide.open && !state.seenGuides.includes(level)) openLevelGuide(true);
+  }
+  function openLevelGuide(firstVisit) {
+    const level = DATA.levels.find(level => level.id === getQ().level);
+    const guide = levelGuides[level.id];
+    guideLevel = level.id;
+    guideForFirstVisit = firstVisit;
+    $('guideTitle').textContent = level.label;
+    $('guideSummary').textContent = guide.summary;
+    $('guideNote').textContent = guide.note;
+    $('guideExamples').innerHTML = guide.examples.map(example => {
+      const q = typeof example === 'string' ? DATA.examples.find(q => q.id === example) : example;
+      const parts = labelParts(q.parts ?? Construction.cardsFor(q));
+      return `<figure class="guide-example">
+        <figcaption><span class="guide-sentence" lang="en">${esc(q.en)}</span><span class="muted">${esc(q.ja)}</span></figcaption>
+        <div class="guide-parts">${renderPartGroups(parts, ({ role, label, en, text }) => `
+          <div class="answer-part guide-part" data-role="${esc(role)}">
+            <span class="answer-label">${esc(label)}</span>
+            <span class="answer-ja">${esc(text)}</span>
+            ${en ? `<span lang="en">${esc(en)}</span>` : ''}
+          </div>`)}</div>
+      </figure>`;
+    }).join('');
+    $('guideContinue').textContent = firstVisit ? 'はじめる' : '練習にもどる';
+    levelGuide.setAttribute('closedby', firstVisit ? 'none' : 'closerequest');
+    stopSpeech();
+    if (!levelGuide.open) levelGuide.showModal();
+    $('guideContent').scrollTop = 0;
+    $('openGuide').setAttribute('aria-expanded', 'true');
+  }
+  $('openGuide').addEventListener('click', () => openLevelGuide(false));
+  levelGuide.addEventListener('submit', () => {
+    if (guideForFirstVisit && !state.seenGuides.includes(guideLevel)) {
+      state.seenGuides.push(guideLevel);
+      save();
+    }
+  });
+  levelGuide.addEventListener('cancel', event => {
+    if (guideForFirstVisit) event.preventDefault();
+  });
+  levelGuide.addEventListener('keydown', event => {
+    if (guideForFirstVisit && event.key === 'Escape') event.preventDefault();
+  });
+  levelGuide.addEventListener('close', () => {
+    if (levelGuide.open) return;
+    $('openGuide').setAttribute('aria-expanded', 'false');
+    const target = guideForFirstVisit ? $('slots').querySelector('.slot:enabled') : $('openGuide');
+    target?.focus({ preventScroll: true });
+  });
   $('openMenu').addEventListener('click', () => {
     lessonDrawer.showModal();
     $('openMenu').setAttribute('aria-expanded', 'true');
@@ -443,7 +536,8 @@ if (typeof document !== 'undefined') {
   lessonDrawer.addEventListener('close', () => {
     if (lessonDrawer.open) return;
     $('openMenu').setAttribute('aria-expanded', 'false');
-    $('openMenu').focus({ preventScroll: true });
+    maybeOpenLevelGuide();
+    if (!levelGuide.open) $('openMenu').focus({ preventScroll: true });
   });
   lessonDrawer.addEventListener('click', event => {
     if (event.target !== lessonDrawer) return;

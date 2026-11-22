@@ -30,10 +30,10 @@
 .day-calendar.tomorrow .day-orbit{color:#ff9ac3;transform:scaleX(-1) rotate(-9deg)}
 .speech-controls{gap:6px}.speech-controls select{min-width:4.5em;max-width:min(7em,100%);field-sizing:content;text-overflow:ellipsis}
 .speech-buttons{display:flex;flex-wrap:wrap;justify-content:center;gap:6px;max-width:100%}.speech-buttons button{white-space:nowrap;padding:8px 10px}
-.practice-toolbar{display:grid;grid-template-columns:44px minmax(0,1fr) auto;align-items:start;gap:8px;margin-bottom:12px}.practice-toolbar .mode-switcher{margin:0}.practice-toolbar #reset{grid-column:3;white-space:nowrap}
+.practice-toolbar{display:grid;grid-template-columns:44px minmax(0,1fr) auto 44px;align-items:start;gap:8px;margin-bottom:12px}.practice-toolbar .mode-switcher{margin:0}.practice-toolbar #reset{grid-column:3;white-space:nowrap}.practice-toolbar #openGuide{grid-column:4}
 .menu-button{display:grid;place-items:center;width:44px;height:44px;padding:0;color:var(--blue);font-size:24px;line-height:1}
-@media(max-width:540px){.practice-toolbar .mode-switcher{grid-column:1/-1;grid-row:2}.practice-toolbar #reset{grid-row:1}}
-.lesson-drawer{position:fixed;inset:0 auto 0 0;margin:0;width:min(320px,calc(100% - 44px));height:100dvh;max-width:none;max-height:none;padding:0;border:0;background:var(--paper);color:var(--ink);box-shadow:4px 0 24px #263e5033}
+@media(max-width:540px){.practice-toolbar .mode-switcher{grid-column:1/-1;grid-row:2}.practice-toolbar :is(#reset,#openGuide){grid-row:1}}
+.lesson-drawer{position:fixed;inset:0 auto 0 0;margin:0;width:min(440px,calc(100% - 44px));height:100dvh;max-width:none;max-height:none;padding:0;border:0;background:var(--paper);color:var(--ink);box-shadow:4px 0 24px #263e5033}
 .lesson-drawer[open]{animation:slide-in .2s ease-out}
 .lesson-drawer::backdrop{background:#263e5040}
 @keyframes slide-in{from{transform:translateX(-100%)}to{transform:translateX(0)}}
@@ -44,6 +44,24 @@
 .drawer-heading{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:8px}
 .drawer-heading h2{margin:0;font-size:18px}
 .drawer-close{width:44px;padding:0;font-size:24px;line-height:1}
+.level-choices{display:grid;gap:6px}
+.level-choices label{display:grid;grid-template-columns:16px minmax(0,1fr);gap:10px;padding:5px 9px;line-height:1.35}
+.level-choice-name{display:block;font-size:14px}
+.level-choice-summary{display:block;margin-top:2px;font-size:12px;color:var(--muted)}
+.level-guide{width:min(620px,calc(100% - 24px));max-height:calc(100dvh - 24px);padding:0;border:1px solid var(--line);border-radius:16px;color:var(--ink);background:#fff;box-shadow:0 16px 48px #263e5033}
+.level-guide[open]{display:flex;flex-direction:column}
+.level-guide::backdrop{background:#263e5066}
+.guide-content{min-height:0;overflow:auto;padding:clamp(14px,4vw,26px)}
+.guide-content h2{margin:0}
+.guide-example{margin:10px 0 0;padding:10px 12px;background:var(--paper);border:1px solid var(--line);border-radius:10px}
+.guide-sentence{display:block;font-weight:600;overflow-wrap:anywhere}
+.guide-parts{display:flex;flex-wrap:wrap;align-items:flex-start;gap:6px;margin-top:8px}
+.guide-part{font-size:14px;padding:3px 7px}
+.guide-part .answer-label{white-space:nowrap}
+.guide-note{margin:12px 0 0;font-size:13px;color:var(--muted)}
+.guide-actions{flex:none;display:flex;justify-content:flex-end;padding:10px clamp(14px,4vw,26px);border-top:1px solid var(--line)}
+.guide-actions button{background:var(--blue);border-color:var(--blue);color:#fff;font-weight:600}
+.guide-actions button:hover:enabled{background:#204c74;color:#fff}
 .scene-navigation{display:grid;grid-template-columns:44px minmax(0,1fr) 44px;align-items:center;column-gap:clamp(4px,1vw,12px);margin-bottom:18px}
 .scene-navigation .prompt,.scene-navigation .picture-scene{grid-column:2;grid-row:1;min-width:0;margin:0 auto}
 .scene-navigation .prompt{width:100%;padding:12px clamp(8px,2vw,20px);overflow-wrap:anywhere}
@@ -83,11 +101,21 @@
 <p class="muted wide" id="filterCount" aria-live="polite"></p><nav class="lessons wide" id="lessons" aria-label="例文一覧"></nav>
 </div>
 </dialog>
+<dialog id="levelGuide" class="level-guide" aria-labelledby="guideTitle" aria-describedby="guideSummary">
+<div class="guide-content" id="guideContent">
+<h2 id="guideTitle"></h2>
+<p id="guideSummary"></p>
+<div id="guideExamples"></div>
+<p id="guideNote" class="guide-note"></p>
+</div>
+<form method="dialog" class="guide-actions"><button id="guideContinue" type="submit" autofocus>はじめる</button></form>
+</dialog>
 <div class="wrap"><div class="practice-pane" id="practicePane"><main class="sheet" id="main">
 <div class="practice-toolbar">
 <button id="openMenu" class="menu-button" type="button" aria-label="例文メニューを開く" aria-controls="lessonDrawer" aria-haspopup="dialog" aria-expanded="false">☰</button>
 <div class="mode-switcher" id="modeSwitcher" role="group" aria-label="練習のしかた"><button id="cardsMode" aria-pressed="true">カードを並べる</button><button id="selectMode" aria-pressed="false">絵を見てえらぶ</button></div>
 <button id="reset">初めに戻す</button>
+<button id="openGuide" class="menu-button" type="button" aria-label="このレベルの説明を開く" aria-controls="levelGuide" aria-haspopup="dialog" aria-expanded="false">？</button>
 </div>
 <p id="emptyPractice" class="muted" hidden>左上のメニューから、練習する例文をえらんでね。</p>
 <div id="exercise">
