@@ -787,8 +787,10 @@ if (typeof document !== 'undefined') {
     const target = guideForFirstVisit ? $('slots').querySelector('.slot:enabled') : $('openGuide');
     target?.focus({ preventScroll: true });
   });
+  let menuOpenedByPointer = false;
   $('openMenu').addEventListener('click', event => {
-    if (event.detail > 0) event.currentTarget.blur();
+    menuOpenedByPointer = Boolean(event.pointerType) || event.detail > 0;
+    if (menuOpenedByPointer) event.currentTarget.blur();
     lessonDrawer.showModal();
     $('openMenu').setAttribute('aria-expanded', 'true');
     $('lessons').querySelector('[aria-current="true"]')?.scrollIntoView({ block: 'nearest' });
@@ -796,7 +798,9 @@ if (typeof document !== 'undefined') {
   $('closeMenu').addEventListener('click', () => lessonDrawer.close());
   lessonDrawer.addEventListener('close', () => {
     if (lessonDrawer.open) return;
-    $('openMenu').setAttribute('aria-expanded', 'false');
+    const trigger = $('openMenu');
+    trigger.setAttribute('aria-expanded', 'false');
+    if (menuOpenedByPointer && document.activeElement === trigger) trigger.blur();
     maybeOpenLevelGuide();
   });
   lessonDrawer.addEventListener('click', event => {
