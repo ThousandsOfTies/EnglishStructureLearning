@@ -84,7 +84,17 @@ const Construction = (() => {
     const targets = targetsFor(q);
     const opening = targets.filter(id => openingRoles.has(targetRole(q, id)));
     if (opening.some(id => !filled.includes(id))) return opening;
-    const predicates = targets.filter(id => predicateRoles.has(targetRole(q, id)));
+    if (q.level === 2) {
+      const support = targets.filter(id => isSupportRole(targetRole(q, id)));
+      const firstEmpty = support.findIndex(id => !filled.includes(id));
+      if (support.length > 1 && firstEmpty >= 0) {
+        return [...opening, ...support.slice(0, firstEmpty + 1)];
+      }
+    }
+    const predicates = targets.filter(id => {
+      const role = targetRole(q, id);
+      return predicateRoles.has(role) || (q.level === 2 && role === '頻度');
+    });
     const missingPredicate = predicates.some(id => !filled.includes(id) && (q.level !== 1 || q.slots[id].ja));
     return missingPredicate ? [...opening, ...predicates] : targets;
   }
@@ -221,7 +231,7 @@ if (typeof document !== 'undefined') {
         picture: 'speaker',
         explanation: '男の子がやさしく笑って、相手に手のひらを差し出しています。「手を洗っておくといいよ」とすすめています。',
       }],
-      note: '「よく」「ときどき」など、どれくらいするかは絵の印も見ましょう。助述部は英語で言う順に上から並べます。',
+      note: '「よく」「ときどき」などは絵の印も見ましょう。助述部が複数あるときは上から順にえらびます。状態を表す be は、レベル1と同じ「である」です。',
     },
     3: {
       summary: '疑問文を中心に、ことばを前に出す「倒置」の並びを学びます。',

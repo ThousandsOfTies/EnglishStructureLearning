@@ -51,8 +51,7 @@ test('advanced exercises unlock by grammatical role and relock after clearing a 
   const cases = [
     ['level2-01', '0', ['1', '2']],
     ['level2-06', '0', ['1', '2']],
-    ['level2-07', '0', ['2']],
-    ['level2-10', '0', ['1', '3', '4']],
+    ['level2-07', '0', ['1', '2']],
     ['level3-03', '1', ['0', '2']],
     ['level3-06', '0', ['1']],
     ['level3-07', '2', ['1', '3']],
@@ -65,6 +64,21 @@ test('advanced exercises unlock by grammatical role and relock after clearing a 
     assert.deepEqual(app.enabledTargets(q, core.slice(0, -1)), core, id);
     assert.deepEqual(app.enabledTargets(q, core), app.targetsFor(q), id);
     assert.deepEqual(app.enabledTargets(q, predicates), [subject], id);
+  }
+});
+
+test('multiple level two supports unlock in order and use the Level 1 label for be', () => {
+  for (const [id, count] of [['level2-03', 2], ['level2-10', 3]]) {
+    const q = get(id);
+    const ordered = q.blocks.map((_, index) => String(index));
+    assert.deepEqual(app.enabledTargets(q, []), ['0'], id);
+    for (let i = 1; i <= count + 1; i++) {
+      assert.deepEqual(app.enabledTargets(q, ordered.slice(0, i)), ordered.slice(0, i + 1), id);
+    }
+    assert.deepEqual(app.enabledTargets(q, ['0', ...ordered.slice(2)]), ['0', '1'], id);
+    assert.deepEqual(app.enabledTargets(q, ordered.slice(0, count + 2)), app.targetsFor(q), id);
+    assert.deepEqual(app.choicesFor(data, q, String(count)), ['である'], id);
+    assert.deepEqual(q.blocks[count], ['be', 'be', 'である'], id);
   }
 });
 
