@@ -120,6 +120,19 @@ test('level one grades be in the support slot and rejects exchanging it with the
   }
 });
 
+test('level one progressive predicates keep the full Japanese expression with be in support', () => {
+  for (const q of data.examples.filter(q => q.level === 1 && q.meaning === 'ongoing')) {
+    assert.equal(q.slots.support.ja, 'である', q.id);
+    assert.match(q.slots.support.en, /^(am|is|are)$/);
+    assert.match(q.slots.predicate.ja, /(?:いる|途中)$/, q.id);
+  }
+  const q = get('build-eat-1-ongoing');
+  assert.deepEqual(q.slots.predicate, { ja: '食べている', en: 'eating' });
+  assert.ok(app.choicesFor(data, q, 'support').includes('する'));
+  assert.ok(!app.choicesFor(data, q, 'support').some(text => text.includes('いる') || text.includes('途中')));
+  assert.equal(get('build-come-1-ongoing').slots.predicate.ja, '来る途中');
+});
+
 test('advanced picture choices and cards use Japanese with an English counterpart', () => {
   for (const q of data.examples.filter(q => q.level > 1)) {
     const targets = q.blocks.map((_, index) => app.expectedTarget(q, index));

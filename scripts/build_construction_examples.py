@@ -143,17 +143,16 @@ def set_predicate_support(q):
 
     japanese = values['predicate']['ja']
     if q['meaning'] == 'ongoing':
-        if japanese.endswith('途中です'):
-            support, rest_ja = '〜途中です', japanese.removesuffix('途中です')
-        else:
-            support, rest_ja = '〜いる', re.sub(r'(?:います|いる)$', '', japanese)
+        support = 'である'
+        rest_ja = re.sub(r'います$', 'いる', japanese.removesuffix('です'))
+        assert rest_ja.endswith(('いる', '途中')), q['id']
     elif q['meaning'] == 'past':
         support = 'であった'
         rest_ja = re.sub(r'かったです$', 'い', japanese).removesuffix('でした')
     else:
         support, rest_ja = 'である', japanese.removesuffix('です')
 
-    assert rest and rest_ja and rest_ja != japanese, q['id']
+    assert rest and rest_ja and (q['meaning'] == 'ongoing' or rest_ja != japanese), q['id']
     values['support'] = slot(support, be)
     values['predicate'] = slot(rest_ja, rest)
 
@@ -407,7 +406,7 @@ def build_examples():
             '使わない欄は空欄にする。',
             'go to / look at / listen to などは、つなぎ方まで述語に含める。',
             '一般動詞の助述部は「する」。完成英文には語を足さない。',
-            '状態の be は「である」、過去は「であった」を助述部に置く。動作の進行は「〜いる」などで表す。',
+            '状態や進行形の be は「である」、過去の状態は「であった」を助述部に置く。「食べている」などは述語に入れる。',
             'PはParameter。P1・P2の役割は述語の部品ごとに決まる。',
             '場所は動作や状態の舞台。移動先・置き先・滞在先など、述語が表す意味を補う場所はP1・P2に入れる。',
             '場所・時は基本として文の後ろ。ほかの自然な語順を誤りとはしない。',
@@ -436,7 +435,7 @@ def build_examples():
              '全部を一度に練習する必要はありません。まず「いつもの動き／状態」の原型を使い、同じcontrastFamilyの「今」「昨日」と比べます。再帰代名詞8文は発展扱いです。', '',
              '「doに動作を渡す」は習慣・行為の捉え方を説明する比喩です。肯定文にdoを実際に追加するルールではありません。', '',
              'S → 助述部 → 述語 → P1 → P2 → 場所 → 時。使わない欄は「—」。これは英文を作るための教材上の区切りです。', '',
-             '一般動詞の助述部は「する」です。これは日本語の並べ方を考えるためのブロックで、完成英文には語を足しません。状態の be は「である」、過去は「であった」を選びます。', '',
+             '一般動詞の助述部は「する」です。これは日本語の並べ方を考えるためのブロックで、完成英文には語を足しません。状態や進行形の be は「である」、過去の状態は「であった」を選びます。「食べている」など、動作の進行を表す部分は述語に入れます。', '',
              'PはParameter（引数）の教材独自の呼び名です。go to の to は述語側、school はP1側。give は「だれに→何を」、keep は「何を→どんな状態に」をP1・P2に入れます。be＋名詞・形容詞の文ではP1・P2を空欄にします。', '',
              '場面全体の場所は［場所］へ入れます。come の行き先や live の居住先は［対象１］、put の置き先は［対象２］へ入れます。', '',
              '場所と時の両方を常に付ける必要はありません。主語に合う述語の形をそのまま練習します。', '',
