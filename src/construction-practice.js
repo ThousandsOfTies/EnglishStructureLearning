@@ -231,7 +231,7 @@ if (typeof document !== 'undefined') {
         picture: 'speaker',
         explanation: '男の子がやさしく笑って、相手に手のひらを差し出しています。「手を洗っておくといいよ」とすすめています。',
       }],
-      note: '「よく」「ときどき」などは絵の印も見ましょう。助述部が複数あるときは上から順にえらびます。状態を表す be は、レベル1と同じ「である」です。',
+      note: '「よく」「いつも」「ときどき」などは「助述部修飾」です。絵の印も見ましょう。同じ列に欄が複数あるときは、上から順にえらびます。状態を表す be は、レベル1と同じ「である」です。',
     },
     3: {
       summary: '疑問文を中心に、ことばを前に出す「倒置」の並びを学びます。',
@@ -290,8 +290,9 @@ if (typeof document !== 'undefined') {
     return target ? `${prefix}（${labels[target] || target}）` : labels[role] || role;
   }
   function labelParts(parts) {
-    const support = parts.filter(part => Construction.isSupportRole(part.role));
+    const support = parts.filter(part => part.role !== '頻度' && Construction.isSupportRole(part.role));
     return parts.map(part => {
+      if (part.role === '頻度') return { ...part, role: 'support', label: '助述部修飾' };
       const index = support.indexOf(part);
       if (index < 0) return { ...part, label: roleLabel(part.role) };
       const number = support.length > 1 ? (index + 1).toLocaleString('ja-JP-u-nu-fullwide') : '';
