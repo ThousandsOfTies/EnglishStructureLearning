@@ -524,13 +524,13 @@ if (typeof document !== 'undefined') {
     const currentIndex = Construction.navigationIndex(lessons, getQ());
     const next = currentIndex < 0 ? null : lessons[currentIndex + 1];
     if (next) return { id: next.id, label: '次の場面へ →' };
-    if (state.courseView !== 'mini') return { label: '例文をえらぶ' };
+    if (state.courseView !== 'mini') return { label: '次の場面へ →' };
     const unfinished = firstUnfinished(lessons);
     if (unfinished) return { id: unfinished.id, label: 'セットの残りの問題へ →' };
     const { sets, setIndex } = miniCourse();
     const nextSet = sets[setIndex + 1];
     if (nextSet) return { id: (firstUnfinished(nextSet) || nextSet[0]).id, label: '次のセットへ →' };
-    return { label: 'ミニセットをえらぶ' };
+    return { label: '次の場面へ →' };
   }
   function renderNav(visible) {
     renderCourse(visible);
@@ -673,7 +673,7 @@ if (typeof document !== 'undefined') {
           ${hasSpeech ? `<label class="check-option"><input id="resultAutoSpeak" type="checkbox" ${state.autoSpeak ? 'checked' : ''}> 正解時に自動で読む</label>` : ''}
           <label class="check-option"><input id="hideJapanese" type="checkbox" ${state.hideJapanese ? 'checked' : ''}> 対訳をかくす</label>
           ${review ? '' : '<button type="button" id="startReview">英語カードで復習</button>'}
-          <button type="button" id="resultNext" class="result-next"${next.id ? ` data-next-lesson="${esc(next.id)}"` : ''}>${esc(next.label)}</button>
+          <button type="button" id="resultNext" class="result-next"${next.id ? ` data-next-lesson="${esc(next.id)}"` : ' disabled'}>${esc(next.label)}</button>
         </div>
       </div>`;
     populateVoices();
@@ -970,12 +970,8 @@ if (typeof document !== 'undefined') {
         const next = visible[i + (button.id === 'next' ? 1 : -1)]; if (next) choose(next.id); break;
       }
       case 'resultNext':
-        if (button.dataset.nextLesson) {
-          choose(button.dataset.nextLesson);
-          if (!levelGuide.open) $('slots').querySelector('.slot:enabled')?.focus({ preventScroll: true });
-        } else {
-          $('openMenu').click();
-        }
+        choose(button.dataset.nextLesson);
+        if (!levelGuide.open) $('slots').querySelector('.slot:enabled')?.focus({ preventScroll: true });
         break;
       case 'speakNormal': case 'speakSlow': {
         speechSpeed = button.dataset.speed;
