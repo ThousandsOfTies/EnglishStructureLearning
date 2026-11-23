@@ -734,7 +734,7 @@ if (typeof document !== 'undefined') {
     const currentIndex = Construction.navigationIndex(lessons, getQ());
     const next = currentIndex < 0 ? null : lessons[currentIndex + 1];
     if (next) return { id: next.id, label: '次の場面へ →' };
-    if (state.courseView !== 'mini') return null;
+    if (state.courseView !== 'mini') return { label: '例文をえらぶ' };
     const unfinished = firstUnfinished(lessons);
     if (unfinished) return { id: unfinished.id, label: 'セットの残りの問題へ →' };
     const { sets, setIndex } = miniCourse();
@@ -883,7 +883,7 @@ if (typeof document !== 'undefined') {
           ${hasSpeech ? `<label class="check-option"><input id="resultAutoSpeak" type="checkbox" ${state.autoSpeak ? 'checked' : ''}> 正解時に自動で読む</label>` : ''}
           <label class="check-option"><input id="hideJapanese" type="checkbox" ${state.hideJapanese ? 'checked' : ''}> 対訳をかくす</label>
           ${review ? '' : '<button type="button" id="startReview">英語カードで復習</button>'}
-          ${next ? `<button type="button" id="resultNext" class="result-next"${next.id ? ` data-next-lesson="${esc(next.id)}"` : ''}>${esc(next.label)}</button>` : ''}
+          <button type="button" id="resultNext" class="result-next"${next.id ? ` data-next-lesson="${esc(next.id)}"` : ''}>${esc(next.label)}</button>
         </div>
       </div>`;
     populateVoices();
