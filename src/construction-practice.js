@@ -450,11 +450,7 @@ if (typeof document !== 'undefined') {
     const mini = state.courseView === 'mini';
     $('miniView').setAttribute('aria-pressed', mini);
     $('miniViewState').textContent = mini ? 'ON' : 'OFF';
-    $('courseFilters').hidden = !mini;
-    if (!mini) {
-      $('courseStatus').hidden = true;
-      return;
-    }
+    $('courseFilters').disabled = !mini;
     const { matching, sets, setIndex, lessons } = miniCourse(visible);
     $('courseTheme').replaceChildren(...sceneThemes.map(theme => {
       const items = Construction.sceneExamples(visible, theme.id);
@@ -462,18 +458,17 @@ if (typeof document !== 'undefined') {
     }));
     $('courseTheme').value = state.sceneTheme;
     const hasMatches = matching.length > 0;
-    $('courseSetControls').hidden = !hasMatches;
-    $('themeProgress').hidden = !hasMatches;
-    $('courseStatus').hidden = !hasMatches;
-    if (!hasMatches) return;
+    $('courseSet').disabled = !hasMatches;
+    $('courseStatus').setAttribute('aria-hidden', !mini || !hasMatches);
     const total = completionCount(matching);
-    $('themeProgress').max = matching.length;
+    $('themeProgress').max = Math.max(1, matching.length);
     $('themeProgress').value = total;
     $('themeProgress').textContent = `${total} / ${matching.length}問`;
     $('themeProgress').setAttribute('aria-valuetext', `${matching.length}問中${total}問クリア`);
-    $('courseSet').replaceChildren(...sets.map((set, i) =>
-      new Option(`セット ${i + 1}（${completionCount(set)}/${set.length}問）`, i)));
-    $('courseSet').value = setIndex;
+    const options = sets.map((set, i) => new Option(`セット ${i + 1}（${completionCount(set)}/${set.length}問）`, i));
+    $('courseSet').replaceChildren(...(hasMatches ? options : [new Option('該当するセットなし')]));
+    if (hasMatches) $('courseSet').value = setIndex;
+    if (!mini || !hasMatches) return;
     const done = completionCount(lessons);
     const number = lessons.findIndex(q => q.id === state.current) + 1;
     const theme = sceneThemes.find(item => item.id === state.sceneTheme);
@@ -701,12 +696,6 @@ if (typeof document !== 'undefined') {
   $('courseSet').addEventListener('change', event => {
     const set = miniCourse().sets[Number(event.target.value)];
     if (set) startAtUnfinished(set);
-  });
-  $('startSet').addEventListener('click', () => {
-    const { lessons } = miniCourse();
-    lessonDrawer.close();
-    startAtUnfinished(lessons);
-    if (!levelGuide.open) $('slots').querySelector('.slot:enabled')?.focus({ preventScroll: true });
   });
   $('autoSpeak').checked = state.autoSpeak;
   $('autoSpeak').disabled = !hasSpeech;

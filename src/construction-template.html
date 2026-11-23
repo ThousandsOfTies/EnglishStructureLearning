@@ -114,14 +114,21 @@
 .course-toggle{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:12px;padding:6px 10px;font-size:14px}
 .course-toggle-state{font-size:12px;font-weight:600;color:var(--muted)}
 .course-toggle[aria-pressed=true] .course-toggle-state{color:var(--blue)}
-.course-filters{display:grid;gap:4px;margin-top:10px}
+.course-filters{display:grid;gap:4px;margin:10px 0 0;padding:0;border:0;min-width:0}
 .course-filters label{font-size:13px;font-weight:600}
 .course-filters progress{margin:0 0 5px}
+.course-filters select{height:44px;text-overflow:ellipsis}
+.course-filters select:disabled{background:#eceeef;color:#687581;opacity:1}
+.course-filters:disabled label{color:var(--muted)}
+.course-filters:disabled progress{accent-color:#98a4ac}
+.lessons{scrollbar-gutter:stable}
 .course-progress{display:grid;gap:4px;margin:0 auto 10px;width:100%;max-width:760px}
-.course-progress p{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:0 12px;margin:0;color:var(--muted);font-size:13px}
-.course-progress strong{color:var(--ink)}
+.course-progress[aria-hidden=true]{visibility:hidden}
+.course-progress p{display:flex;justify-content:space-between;align-items:baseline;gap:0 12px;min-height:1.7em;margin:0;color:var(--muted);font-size:13px;white-space:nowrap}
+.course-progress strong{color:var(--ink);overflow:hidden;text-overflow:ellipsis}
+@media(max-width:480px){.course-progress p{display:grid;gap:0;min-height:3.4em}}
 .course-filters progress,.course-progress progress{display:block;width:100%;height:8px;accent-color:#34735e}
-.course-filters button,.result-actions button,.review-indicator{padding:6px 10px;font-size:14px}
+.result-actions button,.review-indicator{padding:6px 10px;font-size:14px}
 .review-indicator{align-self:center;border:1px solid var(--line);border-radius:24px;background:#edf4fa}
 .check-option{display:inline-flex;align-items:center;gap:7px;min-height:44px;font-size:14px;cursor:pointer}
 .check-option input{width:16px;height:16px;min-height:0;margin:0;padding:0;accent-color:var(--blue)}
@@ -140,14 +147,11 @@
 <fieldset id="levels" class="levels"><legend>レベル</legend><div id="levelChoices" class="level-choices"></div></fieldset>
 <div id="scopeField"><label for="scope">レベル1の文</label><select id="scope"><option value="all">すべて</option><option value="core">基本の場面</option><option value="pronouns">代名詞</option><option value="extension">自分自身を表す</option></select></div>
 <button id="miniView" class="course-toggle" type="button" aria-pressed="true" aria-controls="courseFilters lessons">ミニセット <span class="course-toggle-state" id="miniViewState" aria-hidden="true">ON</span></button>
-<div id="courseFilters" class="course-filters" hidden>
+<fieldset id="courseFilters" class="course-filters" aria-label="ミニセットの設定">
 <label for="courseTheme">場面のテーマ</label><select id="courseTheme"></select>
 <progress id="themeProgress" aria-label="選んだ場面の達成度"></progress>
-<div id="courseSetControls" class="course-filters" hidden>
 <label for="courseSet">ミニセット</label><select id="courseSet"></select>
-<button type="button" id="startSet">このセットを練習する</button>
-</div>
-</div>
+</fieldset>
 <label class="check-option"><input type="checkbox" id="autoSpeak"> 正解したら英文を読み上げる</label>
 <p id="artworkProgress" class="muted"></p>
 <p class="muted wide" id="filterCount" aria-live="polite"></p><nav class="lessons wide" id="lessons" aria-label="例文一覧"></nav>
@@ -176,7 +180,7 @@
 </div>
 <p id="emptyPractice" class="muted" hidden>左上のメニューから、練習する例文をえらんでね。</p>
 <div id="exercise">
-<div id="courseStatus" class="course-progress" hidden>
+<div id="courseStatus" class="course-progress" aria-hidden="true">
 <p aria-live="polite"><strong id="courseName"></strong><span id="coursePosition"></span></p>
 <progress id="setProgress" aria-label="ミニセットの達成度"></progress>
 </div>
