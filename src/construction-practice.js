@@ -231,7 +231,7 @@ if (typeof document !== 'undefined') {
         picture: 'speaker',
         explanation: '男の子がやさしく笑って、相手に手のひらを差し出しています。「手を洗っておくといいよ」とすすめています。',
       }],
-      note: '「よく」「いつも」「ときどき」などは「助述部修飾」です。絵の印も見ましょう。同じ列に欄が複数あるときは、上から順にえらびます。状態を表す be は、レベル1と同じ「である」です。',
+      note: '「よく」「いつも」「ときどき」などは「助述部修飾」です。助述部１の下に欄があるときは、１、修飾、２の順にえらびます。状態を表す be は、レベル1と同じ「である」です。',
     },
     3: {
       summary: '疑問文を中心に、ことばを前に出す「倒置」の並びを学びます。',
@@ -292,23 +292,28 @@ if (typeof document !== 'undefined') {
   function labelParts(parts) {
     const support = parts.filter(part => part.role !== '頻度' && Construction.isSupportRole(part.role));
     return parts.map(part => {
-      if (part.role === '頻度') return { ...part, role: 'support', label: '助述部修飾' };
+      if (part.role === '頻度') return { ...part, role: 'support', label: '助述部修飾', modifier: true };
       const index = support.indexOf(part);
       if (index < 0) return { ...part, label: roleLabel(part.role) };
       const number = support.length > 1 ? (index + 1).toLocaleString('ja-JP-u-nu-fullwide') : '';
       return { ...part, role: 'support', label: labels.support + number };
     });
   }
-  function renderPartGroups(parts, renderPart, groupClass = 'support-stack') {
+  function renderPartGroups(parts, renderPart) {
     const groups = [];
     for (const part of parts) {
       const previous = groups.at(-1);
       if (part.role === 'support' && previous?.[0].role === 'support') previous.push(part);
       else groups.push([part]);
     }
-    return groups.map(group => group.length === 1 ? renderPart(group[0]) :
-      `<div class="${groupClass}" role="group" aria-label="${labels.support}">${group.map(renderPart).join('')}</div>`
-    ).join('');
+    return groups.map(group => {
+      if (group.length === 1) return renderPart(group[0]);
+      const columns = Math.max(1, group.filter(part => !part.modifier).length);
+      const cells = group.map(part => part.modifier
+        ? `<div class="support-modifier">${renderPart(part)}</div>`
+        : renderPart(part)).join('');
+      return `<div class="support-group" style="--support-columns:${columns}" role="group" aria-label="${labels.support}">${cells}</div>`;
+    }).join('');
   }
   function choicePrompt(label) { return compactChoices.matches ? label : `${label}を選んでね`; }
   let saved = null, savedVoice = '', speechSpeed = 'normal', storageOK = true;
@@ -663,7 +668,7 @@ if (typeof document !== 'undefined') {
           return en
             ? `<button type="button" class="answer-part" data-role="${esc(role)}" data-speak-part="${index}" ${hasSpeech ? '' : 'disabled'}>${content}<span lang="en">${esc(en)}</span></button>`
             : `<div class="answer-part japanese-only" data-role="${esc(role)}">${content}</div>`;
-        }, 'answer-supports')}</div>
+        })}</div>
         <div class="result-actions">
           ${hasSpeech ? `<label class="check-option"><input id="resultAutoSpeak" type="checkbox" ${state.autoSpeak ? 'checked' : ''}> 正解時に自動で読む</label>` : ''}
           <label class="check-option"><input id="hideJapanese" type="checkbox" ${state.hideJapanese ? 'checked' : ''}> 対訳をかくす</label>
