@@ -101,7 +101,8 @@
 .slot-stack:has(>.slots>.support-stack){grid-template-rows:0 auto 54px}
 .slots:has(>.support-stack){display:grid;grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:minmax(0,1fr);align-items:end;min-height:108px}
 .support-stack{display:grid;grid-template-columns:minmax(0,1fr);gap:5px;min-width:0}
-.spoken:has(>.support-stack),.guide-parts:has(>.support-stack){flex-wrap:nowrap;align-items:flex-end}
+.guide-parts:has(>.support-stack){flex-wrap:nowrap;align-items:flex-end}
+.answer-supports{display:flex;gap:8px;min-width:0;max-width:100%}
 .check-answer{display:block;width:100%;min-height:44px;margin-top:4px;padding:6px 12px;background:var(--blue);border-color:var(--blue);color:white;font-weight:600}
 .check-answer:hover:enabled{background:#204c74;color:white}
 .slots :is(.list-choice,.card-slot){min-width:0;min-height:44px;padding:4px clamp(2px,.6vw,8px);border-radius:9px;font-size:clamp(11px,1.3vw,15px);overflow-wrap:anywhere}
@@ -502,7 +503,7 @@ if (typeof document !== 'undefined') {
       return { ...part, role: 'support', label: labels.support + number };
     });
   }
-  function renderPartGroups(parts, renderPart) {
+  function renderPartGroups(parts, renderPart, groupClass = 'support-stack') {
     const groups = [];
     for (const part of parts) {
       const previous = groups.at(-1);
@@ -510,7 +511,7 @@ if (typeof document !== 'undefined') {
       else groups.push([part]);
     }
     return groups.map(group => group.length === 1 ? renderPart(group[0]) :
-      `<div class="support-stack" role="group" aria-label="${labels.support}">${group.map(renderPart).join('')}</div>`
+      `<div class="${groupClass}" role="group" aria-label="${labels.support}">${group.map(renderPart).join('')}</div>`
     ).join('');
   }
   function choicePrompt(label) { return compactChoices.matches ? label : `${label}を選んでね`; }
@@ -866,7 +867,7 @@ if (typeof document !== 'undefined') {
           return en
             ? `<button type="button" class="answer-part" data-role="${esc(role)}" data-speak-part="${index}" ${hasSpeech ? '' : 'disabled'}>${content}<span lang="en">${esc(en)}</span></button>`
             : `<div class="answer-part japanese-only" data-role="${esc(role)}">${content}</div>`;
-        })}</div>
+        }, 'answer-supports')}</div>
         <div class="result-actions">
           ${hasSpeech ? `<label class="check-option"><input id="resultAutoSpeak" type="checkbox" ${state.autoSpeak ? 'checked' : ''}> 正解時に自動で読む</label>` : ''}
           <label class="check-option"><input id="hideJapanese" type="checkbox" ${state.hideJapanese ? 'checked' : ''}> 対訳をかくす</label>

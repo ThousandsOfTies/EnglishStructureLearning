@@ -298,7 +298,7 @@ if (typeof document !== 'undefined') {
       return { ...part, role: 'support', label: labels.support + number };
     });
   }
-  function renderPartGroups(parts, renderPart) {
+  function renderPartGroups(parts, renderPart, groupClass = 'support-stack') {
     const groups = [];
     for (const part of parts) {
       const previous = groups.at(-1);
@@ -306,7 +306,7 @@ if (typeof document !== 'undefined') {
       else groups.push([part]);
     }
     return groups.map(group => group.length === 1 ? renderPart(group[0]) :
-      `<div class="support-stack" role="group" aria-label="${labels.support}">${group.map(renderPart).join('')}</div>`
+      `<div class="${groupClass}" role="group" aria-label="${labels.support}">${group.map(renderPart).join('')}</div>`
     ).join('');
   }
   function choicePrompt(label) { return compactChoices.matches ? label : `${label}を選んでね`; }
@@ -662,7 +662,7 @@ if (typeof document !== 'undefined') {
           return en
             ? `<button type="button" class="answer-part" data-role="${esc(role)}" data-speak-part="${index}" ${hasSpeech ? '' : 'disabled'}>${content}<span lang="en">${esc(en)}</span></button>`
             : `<div class="answer-part japanese-only" data-role="${esc(role)}">${content}</div>`;
-        })}</div>
+        }, 'answer-supports')}</div>
         <div class="result-actions">
           ${hasSpeech ? `<label class="check-option"><input id="resultAutoSpeak" type="checkbox" ${state.autoSpeak ? 'checked' : ''}> 正解時に自動で読む</label>` : ''}
           <label class="check-option"><input id="hideJapanese" type="checkbox" ${state.hideJapanese ? 'checked' : ''}> 対訳をかくす</label>
