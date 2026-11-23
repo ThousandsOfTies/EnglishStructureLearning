@@ -661,14 +661,14 @@ if (typeof document !== 'undefined') {
             <span class="speech-status" id="speechStatus" role="status">${hasSpeech ? esc(speechStatus) : '音声非対応'}</span>
           </div>
         </div>
-        <div class="spoken">${renderPartGroups(parts, ({ role, en, text, index, label }) => {
+        <div class="spoken" role="group" aria-label="英文の対訳カード">${parts.map(({ role, en, text, index, label }) => {
           const content = `
             <span class="answer-label">${esc(label)}</span>
             <span class="answer-ja">${esc(text)}</span>`;
           return en
             ? `<button type="button" class="answer-part" data-role="${esc(role)}" data-speak-part="${index}" ${hasSpeech ? '' : 'disabled'}>${content}<span lang="en">${esc(en)}</span></button>`
             : `<div class="answer-part japanese-only" data-role="${esc(role)}">${content}</div>`;
-        })}</div>
+        }).join('')}</div>
         <div class="result-actions">
           ${hasSpeech ? `<label class="check-option"><input id="resultAutoSpeak" type="checkbox" ${state.autoSpeak ? 'checked' : ''}> 正解時に自動で読む</label>` : ''}
           <label class="check-option"><input id="hideJapanese" type="checkbox" ${state.hideJapanese ? 'checked' : ''}> 対訳をかくす</label>
