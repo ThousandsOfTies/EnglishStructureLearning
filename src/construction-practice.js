@@ -449,7 +449,7 @@ if (typeof document !== 'undefined') {
   function renderCourse(visible = visibleExamples()) {
     const mini = state.courseView === 'mini';
     $('miniView').setAttribute('aria-pressed', mini);
-    $('allView').setAttribute('aria-pressed', !mini);
+    $('miniViewState').textContent = mini ? 'ON' : 'OFF';
     $('courseFilters').hidden = !mini;
     if (!mini) {
       $('courseStatus').hidden = true;
@@ -925,9 +925,8 @@ if (typeof document !== 'undefined') {
       case 'cardsMode': case 'selectMode':
         stopSpeech(); state.mode = button.id === 'selectMode' ? 'select' : 'cards';
         review = null; selected = null; answerResult = null; save(); renderExercise(); break;
-      case 'miniView': case 'allView':
-        if (button.getAttribute('aria-pressed') === 'true') break;
-        state.courseView = button.id === 'miniView' ? 'mini' : 'all';
+      case 'miniView':
+        state.courseView = state.courseView === 'mini' ? 'all' : 'mini';
         applyFilters(); break;
       case 'startReview':
         stopSpeech(); review = Construction.englishReview(getQ());

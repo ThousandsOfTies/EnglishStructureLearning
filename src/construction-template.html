@@ -111,8 +111,9 @@
 :is(.list-choice,.card-slot):disabled{background:#eceeef;border-color:#d4d9dd;color:#687581;opacity:1}
 .slot.wrong{border-style:dashed;border-color:#b24b30}
 @media(max-width:365px){.slots .list-choice{appearance:none;text-align:center}}
-.course-view{display:flex;gap:6px;margin-top:12px}
-.course-view button{flex:1;padding:6px;font-size:14px}
+.course-toggle{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:12px;padding:6px 10px;font-size:14px}
+.course-toggle-state{font-size:12px;font-weight:600;color:var(--muted)}
+.course-toggle[aria-pressed=true] .course-toggle-state{color:var(--blue)}
 .course-filters{display:grid;gap:4px;margin-top:10px}
 .course-filters label{font-size:13px;font-weight:600}
 .course-filters progress{margin:0 0 5px}
@@ -138,7 +139,7 @@
 <div class="drawer-heading"><h2 id="drawerTitle">例文をえらぶ</h2><button id="closeMenu" class="drawer-close" type="button" aria-label="例文メニューを閉じる" autofocus>×</button></div>
 <fieldset id="levels" class="levels"><legend>レベル</legend><div id="levelChoices" class="level-choices"></div></fieldset>
 <div id="scopeField"><label for="scope">レベル1の文</label><select id="scope"><option value="all">すべて</option><option value="core">基本の場面</option><option value="pronouns">代名詞</option><option value="extension">自分自身を表す</option></select></div>
-<div class="course-view" role="group" aria-label="問題の見かた"><button id="miniView" type="button" aria-pressed="true">ミニセット</button><button id="allView" type="button" aria-pressed="false">全例文</button></div>
+<button id="miniView" class="course-toggle" type="button" aria-pressed="true" aria-controls="courseFilters lessons">ミニセット <span class="course-toggle-state" id="miniViewState" aria-hidden="true">ON</span></button>
 <div id="courseFilters" class="course-filters" hidden>
 <label for="courseTheme">場面のテーマ</label><select id="courseTheme"></select>
 <progress id="themeProgress" aria-label="選んだ場面の達成度"></progress>
