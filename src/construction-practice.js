@@ -35,8 +35,21 @@ const Construction = (() => {
     const offset = [...seed].reduce((sum, char) => sum + char.charCodeAt(0), 0) % options.length;
     return options.slice(offset).concat(options.slice(0, offset));
   }
+  const questionChoices = {
+    what: '何を', who: 'だれが', where: 'どこで', when: 'いつ',
+    why: 'なぜ', which: 'どれを', how: 'どうやって'
+  };
   function choicesFor(data, q, role) {
-    if (q.level === 3) return shuffledIndices(q).map(index => q.blocks[index][2]);
+    if (q.level === 3) {
+      const token = q.question?.token;
+      const [category, , correct] = q.blocks[Number(role)];
+      if (Object.hasOwn(questionChoices, token) && category.startsWith('疑問詞＝')) {
+        return rotateChoices(Object.values({ ...questionChoices, [token]: correct }), q.id + role);
+      }
+      return shuffledIndices(q)
+        .filter(index => !q.blocks[index][0].startsWith('疑問詞＝'))
+        .map(index => q.blocks[index][2]);
+    }
     if (q.level === 2) {
       if (role === 'P2') return rotateChoices(Object.values(data.level2Choices.P2), q.id + role);
       const [category, english, correct] = q.blocks[Number(role)];
@@ -90,6 +103,28 @@ const Construction = (() => {
          (filters.scope === 'extension' && q.extension)))) &&
       (!term || [q.ja, q.en, q.focus || '', q.id].some(s => s.toLowerCase().includes(term))));
   }
+  function practiceThemes(data, visible) {
+    const groupThemes = new Map(data.groups.map(group => [group.key, group.theme]));
+    const examples = new Map(data.themes.map(theme => [theme.id, []]));
+    for (const q of visible) {
+      const id = q.level === 1 ? groupThemes.get(q.group) : `level${q.level}`;
+      examples.get(id).push(q);
+    }
+    return data.themes.flatMap(theme => {
+      const lessons = examples.get(theme.id);
+      if (!lessons.length) return [];
+      const count = Math.ceil(lessons.length / 10);
+      const sets = Array.from({ length: count }, (_, index) =>
+        lessons.slice(Math.ceil(index * lessons.length / count), Math.ceil((index + 1) * lessons.length / count)));
+      return [{ ...theme, lessons, sets }];
+    });
+  }
+  function englishReview(q) {
+    return {
+      id: q.id + '-english', level: 3,
+      blocks: cardsFor(q).filter(card => card.en).map(card => [card.role, card.en, card.en])
+    };
+  }
   function restore(data, saved) {
     const ids = new Set(data.examples.map(q => q.id));
     const initial = { current: data.examples[0].id, completed: [], seenGuides: [], level: 1, group: 'go', scope: 'core', search: '', mode: 'cards' };
@@ -120,7 +155,7 @@ const Construction = (() => {
     if (indices.length > 1 && indices.every((value, i) => value === i)) indices.push(indices.shift());
     return indices;
   }
-  return { roles, cardsFor, targetsFor, targetRole, isSupportRole, expectedTarget, wrongCardTargets, isCorrect, choicesFor, choicesCorrect, choiceMatches, enabledTargets, place, visibleExamples, restore, shuffledIndices, navigationIndex };
+  return { roles, cardsFor, targetsFor, targetRole, isSupportRole, expectedTarget, wrongCardTargets, isCorrect, choicesFor, choicesCorrect, choiceMatches, enabledTargets, place, visibleExamples, practiceThemes, englishReview, restore, shuffledIndices, navigationIndex };
 })();
 if (typeof module !== 'undefined' && module.exports) module.exports = Construction;
 
@@ -280,16 +315,19 @@ if (typeof document !== 'undefined') {
     levels: hasSavedLevels ? DATA.levels.map(level => level.id).filter(id => saved.levels.includes(id)) : [1],
     group: 'all', scope: hasSavedLevels ? restored.scope : 'all', search: '',
     mode: hasSavedLevels ? restored.mode : 'select',
+    courseView: saved?.version === 1 && saved.courseView === 'all' ? 'all' : 'mini',
+    autoSpeak: saved?.version === 1 && saved.autoSpeak === true,
+    hideJapanese: saved?.version === 1 && saved.hideJapanese === true,
   };
   const attempts = new Map();
   const selections = new Map();
-  let selected = null, answerResult = null, speechRun = 0;
+  let selected = null, answerResult = null, speechRun = 0, review = null;
   let drag = null, suppressClickUntil = 0;
   let feedbackAudio, feedbackSoundEnd = 0;
   const hasBasicImages = DATA.examples.some(q => q.level === 1 && q.image);
   function openTensePictures() {
     const first = DATA.examples.find(q => q.group === 'tense-pictures');
-    Object.assign(state, { levels: [1], group: first.group, scope: 'all', mode: 'select' });
+    Object.assign(state, { levels: [1], group: first.group, scope: 'all', mode: 'select', courseView: 'all' });
     choose(first.id);
   }
   try {
@@ -303,38 +341,52 @@ if (typeof document !== 'undefined') {
     const pictureScope = state.scope === 'all' || state.scope === 'core';
     return Construction.visibleExamples(DATA, state).filter(q => q.level !== 1 || !hasBasicImages || !pictureScope || q.image);
   }
-  const usingLists = () => state.mode === 'select';
+  const usingLists = () => !review && state.mode === 'select';
+  const cardExercise = () => review || getQ();
   function picks() {
     if (!selections.has(state.current)) selections.set(state.current, {});
     return selections.get(state.current);
   }
   function attempt() {
-    if (!attempts.has(state.current)) attempts.set(state.current, Construction.cardsFor(getQ()).map(() => ''));
-    return attempts.get(state.current);
+    const q = cardExercise();
+    if (!attempts.has(q.id)) attempts.set(q.id, []);
+    return attempts.get(q.id);
   }
   function enabledTargets() {
     return Construction.enabledTargets(getQ(), usingLists() ? Object.keys(picks()) : attempt());
   }
-  function targetAllowed(target) { return target === '' || enabledTargets().includes(target); }
+  function targetAllowed(target) { return Boolean(review) || target === '' || enabledTargets().includes(target); }
   function save() {
     try { localStorage.setItem(KEY, JSON.stringify({ ...state, version: 1 })); }
     catch { storageOK = false; }
     $('storageStatus').textContent = storageOK ? '' : ' このブラウザーでは保存できません。開いている間は練習できます。';
   }
+  function setAutoSpeak(checked) {
+    state.autoSpeak = checked;
+    $('autoSpeak').checked = checked;
+    const resultOption = $('resultAutoSpeak');
+    if (resultOption) resultOption.checked = checked;
+    save();
+  }
   function stopSpeech() { speechRun++; if (hasSpeech) speechSynthesis.cancel(); }
   function checkAnswer(q) {
     const wasCorrect = answerResult === true;
-    answerResult = usingLists() ? Construction.choicesCorrect(q, picks()) : Construction.isCorrect(q, attempt());
+    answerResult = usingLists() ? Construction.choicesCorrect(q, picks()) : Construction.isCorrect(cardExercise(), attempt());
     if (answerResult && !wasCorrect) {
-      playSuccessSound();
       if (!state.completed.includes(q.id)) {
         state.completed.push(q.id);
         const lesson = $('lessons').querySelector('[data-lesson][aria-current="true"]');
         if (lesson) lesson.textContent = `✓ ${q.ja}`;
+        renderCourse();
         save();
       }
     }
     renderResult(q);
+    if (answerResult && !wasCorrect) {
+      if (state.autoSpeak && hasSpeech) speak(q.en);
+      else playSuccessSound();
+      $('result').scrollIntoView({ block: 'nearest' });
+    }
   }
   async function playSuccessSound() {
     const AudioContext = window.AudioContext || window.webkitAudioContext;
@@ -374,7 +426,7 @@ if (typeof document !== 'undefined') {
   }
   function choose(id) {
     if (!DATA.examples.some(q => q.id === id)) return;
-    stopSpeech(); state.current = id; selected = null; answerResult = null;
+    stopSpeech(); state.current = id; review = null; selected = null; answerResult = null;
     save(); render();
     $('practicePane').scrollTop = 0;
   }
@@ -383,7 +435,71 @@ if (typeof document !== 'undefined') {
     $('scope').value = state.scope;
     $('scopeField').hidden = !state.levels.includes(1);
   }
+  function miniCourse(visible = visibleExamples()) {
+    const themes = Construction.practiceThemes(DATA, visible);
+    const theme = themes.find(item => item.lessons.some(q => q.id === state.current)) || themes[0];
+    const setIndex = theme?.sets.findIndex(set => set.some(q => q.id === state.current)) ?? -1;
+    return { themes, theme, setIndex, lessons: theme?.sets[setIndex < 0 ? 0 : setIndex] || [] };
+  }
+  function completionCount(lessons) {
+    return lessons.filter(q => state.completed.includes(q.id)).length;
+  }
+  function firstUnfinished(lessons) {
+    return lessons.find(q => !state.completed.includes(q.id));
+  }
+  function startAtUnfinished(lessons) {
+    const q = firstUnfinished(lessons) || lessons[0];
+    if (q) choose(q.id);
+  }
+  function renderCourse(visible = visibleExamples()) {
+    const mini = state.courseView === 'mini';
+    $('miniView').setAttribute('aria-pressed', mini);
+    $('allView').setAttribute('aria-pressed', !mini);
+    $('courseFilters').hidden = !mini || !visible.length;
+    $('courseStatus').hidden = $('courseFilters').hidden;
+    if ($('courseFilters').hidden) return;
+    const { themes, theme, setIndex, lessons } = miniCourse(visible);
+    $('courseTheme').replaceChildren(...themes.map(item =>
+      new Option(`${item.label}（${completionCount(item.lessons)}/${item.lessons.length}）`, item.id)));
+    $('courseTheme').value = theme.id;
+    const total = completionCount(theme.lessons);
+    $('themeProgress').max = theme.lessons.length;
+    $('themeProgress').value = total;
+    $('themeProgress').textContent = `${total} / ${theme.lessons.length}問`;
+    $('themeProgress').setAttribute('aria-valuetext', `${theme.lessons.length}問中${total}問クリア`);
+    $('courseSet').replaceChildren(...theme.sets.map((set, i) =>
+      new Option(`セット ${i + 1}（${completionCount(set)}/${set.length}問）`, i)));
+    $('courseSet').value = Math.max(setIndex, 0);
+    const done = completionCount(lessons);
+    const number = lessons.findIndex(q => q.id === state.current) + 1;
+    $('courseName').textContent = `${theme.label} · セット ${Math.max(setIndex, 0) + 1}`;
+    $('coursePosition').textContent = done === lessons.length
+      ? `セットクリア！ ${done}/${lessons.length}問`
+      : `${number}問目 · ${done}/${lessons.length}問クリア`;
+    $('setProgress').max = lessons.length;
+    $('setProgress').value = done;
+    $('setProgress').textContent = `${done} / ${lessons.length}問`;
+    $('setProgress').setAttribute('aria-valuetext', `${lessons.length}問中${done}問クリア`);
+  }
+  function navigationLessons(visible = visibleExamples()) {
+    return state.courseView === 'mini' ? miniCourse(visible).lessons : visible;
+  }
+  function nextAfterAnswer() {
+    const lessons = navigationLessons();
+    const currentIndex = Construction.navigationIndex(lessons, getQ());
+    const next = currentIndex < 0 ? null : lessons[currentIndex + 1];
+    if (next) return { id: next.id, label: '次の場面へ →' };
+    if (state.courseView !== 'mini') return null;
+    const unfinished = firstUnfinished(lessons);
+    if (unfinished) return { id: unfinished.id, label: 'セットの残りの問題へ →' };
+    const { theme, setIndex } = miniCourse();
+    const nextSet = theme?.sets[setIndex + 1];
+    if (nextSet) return { id: (firstUnfinished(nextSet) || nextSet[0]).id, label: '次のセットへ →' };
+    return { label: 'ミニセットをえらぶ' };
+  }
   function renderNav(visible) {
+    renderCourse(visible);
+    visible = navigationLessons(visible);
     $('artworkProgress').textContent = `絵のある例文 ${Object.keys(ILLUSTRATIONS).length} / ${DATA.examples.length}文`;
     $('filterCount').textContent = `${visible.length}文を表示`;
     const emptyMessage = state.levels.length ? 'この条件の例文はありません。' : 'レベルをえらぶと、例文が表示されます。';
@@ -392,7 +508,7 @@ if (typeof document !== 'undefined') {
     $('previous').disabled = index <= 0; $('next').disabled = index < 0 || index >= visible.length - 1;
   }
   function poolCardHTML(card, i) {
-    return `<button class="card ${selected === i ? 'selected' : ''}" data-card="${i}" aria-pressed="${selected === i}" aria-label="${esc(card.text)}：移動するカードをえらぶ">${esc(card.text)}</button>`;
+    return `<button class="card ${selected === i ? 'selected' : ''}" data-card="${i}" aria-pressed="${selected === i}" ${review ? 'lang="en"' : ''}>${esc(card.text)}</button>`;
   }
   function calendarFor(time) {
     if (time === 'every day') {
@@ -422,43 +538,49 @@ if (typeof document !== 'undefined') {
   }
   function renderExercise(updateResult = true) {
     cancelDrag();
-    const q = getQ(), basic = q.level === 1, cards = Construction.cardsFor(q), placements = attempt();
+    const q = getQ(), active = cardExercise(), basic = active.level === 1;
+    const cards = Construction.cardsFor(active), placements = attempt();
     const pictureMode = usingLists();
     $('sceneNavigation').classList.toggle('picture-mode', pictureMode);
     $('japanese').textContent = q.ja;
     $('japanese').parentElement.hidden = pictureMode;
     $('modeSwitcher').hidden = false;
-    $('cardsMode').setAttribute('aria-pressed', !pictureMode);
+    $('cardsMode').setAttribute('aria-pressed', !pictureMode && !review);
     $('selectMode').setAttribute('aria-pressed', pictureMode);
+    $('reviewMode').hidden = !review;
     $('pictureScene').hidden = !pictureMode && !(q.image && q.group === 'tense-pictures');
     $('sceneClue').hidden = $('pictureScene').hidden || !q.imageClue;
     $('pool').hidden = pictureMode;
     const parameters = q.frame === 'object-location' ? ['P2', 'P1'] : ['P1', 'P2'];
     const japaneseOrder = ['S', 'time', 'place', ...parameters, 'predicate', 'support'];
-    const order = basic ? japaneseOrder.map(role => cards.findIndex(card => card.role === role)).filter(i => i >= 0) : Construction.shuffledIndices(q);
+    const order = basic ? japaneseOrder.map(role => cards.findIndex(card => card.role === role)).filter(i => i >= 0) : Construction.shuffledIndices(active);
     const remaining = order.filter(i => !placements[i]);
-    $('pool').innerHTML = `<div class="pool-cards">${remaining.map(i => poolCardHTML(cards[i], i)).join('') || '<span class="muted">使わない欄は空欄のまま。</span>'}</div>`;
-    const targets = labelParts(Construction.targetsFor(q).map((id, index) => ({
-      id, role: Construction.targetRole(q, id), index
+    const emptyPool = review ? 'すべてのカードを置きました。' : '使わない欄は空欄のまま。';
+    $('pool').innerHTML = `<div class="pool-cards">${remaining.map(i => poolCardHTML(cards[i], i)).join('') || `<span class="muted">${emptyPool}</span>`}</div>`;
+    const targets = labelParts(Construction.targetsFor(active).map((id, index) => ({
+      id, role: Construction.targetRole(active, id), index
     })));
     if (pictureMode) {
       const values = picks();
-      $('slots').innerHTML = renderPartGroups(targets, ({ id, role, label }) => `
+      $('slots').innerHTML = renderPartGroups(targets, ({ id, role, label }) => {
+        const prompt = role.startsWith('疑問詞＝') ? '疑問詞' : label;
+        return `
         <select class="slot list-choice${values[id] ? '' : ' placeholder'}" id="choice-${esc(id)}"
-          data-choice="${esc(id)}" data-role="${esc(role)}" data-label="${esc(label)}" aria-label="${esc(label)}を選ぶ" ${!targetAllowed(id) ? 'disabled' : ''}>
-          <option value="__unanswered__" ${Object.hasOwn(values, id) ? '' : 'selected'}>${esc(choicePrompt(label))}</option>
+          data-choice="${esc(id)}" data-role="${esc(role)}" data-label="${esc(prompt)}" aria-label="${esc(prompt)}を選ぶ" ${!targetAllowed(id) ? 'disabled' : ''}>
+          <option value="__unanswered__" ${Object.hasOwn(values, id) ? '' : 'selected'}>${esc(choicePrompt(prompt))}</option>
           ${Construction.choicesFor(DATA, q, id).map(text => `<option value="${esc(text)}" ${values[id] === text ? 'selected' : ''}>${esc(text)}</option>`).join('')}
-        </select>`);
+        </select>`;
+      });
     } else {
       $('slots').innerHTML = renderPartGroups(targets, ({ id: target, role, label, index }) => {
         const i = placements.indexOf(target);
-        const slotName = basic || role === 'support' ? label : `${index + 1}. ${label}`;
+        const slotName = review ? String(index + 1) : basic || role === 'support' ? label : `${index + 1}. ${label}`;
         const contents = cards[i]?.text;
         const accessibleLabel = contents ? `${slotName}：${contents}` : `${slotName}に置く`;
         const cardState = contents ? ` data-card="${i}" aria-pressed="${selected === i}"` : '';
         return `<button type="button" class="slot card-slot${contents ? ' card' : ''}${selected === i ? ' selected' : ''}"
           data-drop="${esc(target)}" data-target="${esc(target)}" data-role="${esc(role)}"${cardState}
-          ${targetAllowed(target) ? '' : 'disabled'} aria-label="${esc(accessibleLabel)}">${esc(contents || slotName)}</button>`;
+          ${targetAllowed(target) ? '' : 'disabled'} ${review && contents ? 'lang="en"' : ''} aria-label="${esc(accessibleLabel)}">${esc(contents || slotName)}</button>`;
       });
     }
     if (!$('pictureScene').hidden) renderPicture(q);
@@ -472,7 +594,7 @@ if (typeof document !== 'undefined') {
         const choices = picks();
         wrong = Construction.targetsFor(q).filter(target => !Construction.choiceMatches(q, choices, target));
       } else {
-        wrong = Construction.wrongCardTargets(q, attempt());
+        wrong = Construction.wrongCardTargets(cardExercise(), attempt());
       }
     }
     for (const slot of $('slots').querySelectorAll('.slot')) {
@@ -485,14 +607,17 @@ if (typeof document !== 'undefined') {
   function renderResult(q) {
     renderSlotFeedback(q);
     $('feedback').innerHTML = answerResult === false ? '<div class="feedback">もう少し。点線の欄を見直してみよう。</div>' : '';
-    const parts = labelParts(Construction.cardsFor(q).map(({ role, en, text }, index) => ({
-      role, en, text, index
-    })));
-    $('result').innerHTML = answerResult ? `
-      <div class="result">
+    if (!answerResult) {
+      $('result').replaceChildren();
+      return;
+    }
+    const parts = labelParts(Construction.cardsFor(q).map((card, index) => ({ ...card, index })));
+    const next = nextAfterAnswer();
+    $('result').innerHTML = `
+      <div class="result${state.hideJapanese ? ' hide-japanese' : ''}">
         <p class="full-english" lang="en">${esc(q.en)}</p>
-        ${q.base ? `<p class="muted">もとの文 <span lang="en">${esc(q.base)}</span></p>` : ''}
-        ${q.note ? `<p>${esc(q.note)}</p>` : ''}
+        ${q.base ? `<p class="muted"><span class="result-explanation">もとの文 </span><span lang="en">${esc(q.base)}</span></p>` : ''}
+        ${q.note ? `<p class="result-explanation">${esc(q.note)}</p>` : ''}
         <div class="actions speech-controls" role="group" aria-label="英文の読み上げ">
           <select id="voice" aria-label="読み上げる声"></select>
           <div class="speech-buttons">
@@ -505,12 +630,18 @@ if (typeof document !== 'undefined') {
             <span class="answer-label">${esc(label)}</span>
             <span class="answer-ja">${esc(text)}</span>`;
           return en
-            ? `<button type="button" class="answer-part" data-role="${esc(role)}" data-speak-part="${index}" aria-label="${esc(label)}「${esc(en)}」を聞く" ${hasSpeech ? '' : 'disabled'}>${content}<span lang="en">${esc(en)}</span></button>`
-            : `<div class="answer-part" data-role="${esc(role)}">${content}</div>`;
+            ? `<button type="button" class="answer-part" data-role="${esc(role)}" data-speak-part="${index}" ${hasSpeech ? '' : 'disabled'}>${content}<span lang="en">${esc(en)}</span></button>`
+            : `<div class="answer-part japanese-only" data-role="${esc(role)}">${content}</div>`;
         })}</div>
         <p class="muted" id="speechStatus" role="status">${hasSpeech ? '' : 'このブラウザーでは音声を使えません。'}</p>
-      </div>` : '';
-    if (answerResult) populateVoices();
+        <div class="result-actions">
+          ${hasSpeech ? `<label class="check-option"><input id="resultAutoSpeak" type="checkbox" ${state.autoSpeak ? 'checked' : ''}> 正解時に自動で読む</label>` : ''}
+          <label class="check-option"><input id="hideJapanese" type="checkbox" ${state.hideJapanese ? 'checked' : ''}> 対訳をかくす</label>
+          ${review ? '' : '<button type="button" id="startReview">英語カードで復習</button>'}
+          ${next ? `<button type="button" id="resultNext" class="result-next"${next.id ? ` data-next-lesson="${esc(next.id)}"` : ''}>${esc(next.label)}</button>` : ''}
+        </div>
+      </div>`;
+    populateVoices();
   }
   function render() {
     const visible = visibleExamples();
@@ -547,6 +678,23 @@ if (typeof document !== 'undefined') {
     </label>`).join('');
   $('levels').addEventListener('change', changeFilters);
   $('scope').addEventListener('change', changeFilters);
+  $('courseTheme').addEventListener('change', event => {
+    const theme = miniCourse().themes.find(item => item.id === event.target.value);
+    if (theme) startAtUnfinished(theme.lessons);
+  });
+  $('courseSet').addEventListener('change', event => {
+    const set = miniCourse().theme?.sets[Number(event.target.value)];
+    if (set) startAtUnfinished(set);
+  });
+  $('startSet').addEventListener('click', () => {
+    const { lessons } = miniCourse();
+    lessonDrawer.close();
+    startAtUnfinished(lessons);
+    if (!levelGuide.open) $('slots').querySelector('.slot:enabled')?.focus({ preventScroll: true });
+  });
+  $('autoSpeak').checked = state.autoSpeak;
+  $('autoSpeak').disabled = !hasSpeech;
+  $('autoSpeak').addEventListener('change', event => setAutoSpeak(event.target.checked));
   const lessonDrawer = $('lessonDrawer');
   const levelGuide = $('levelGuide');
   let guideLevel = null, guideForFirstVisit = false;
@@ -669,8 +817,8 @@ if (typeof document !== 'undefined') {
   function moveCard(index, target, focusSelector = `[data-card="${index}"]`) {
     if (!targetAllowed(target)) return;
     stopSpeech();
-    const q = getQ();
-    attempts.set(state.current, Construction.place(q, attempt(), index, target));
+    const q = cardExercise();
+    attempts.set(q.id, Construction.place(q, attempt(), index, target));
     selected = null;
     answerResult = null;
     renderExercise();
@@ -760,13 +908,36 @@ if (typeof document !== 'undefined') {
     switch (button.id) {
       case 'cardsMode': case 'selectMode':
         stopSpeech(); state.mode = button.id === 'selectMode' ? 'select' : 'cards';
-        selected = null; answerResult = null; save(); renderExercise(); break;
+        review = null; selected = null; answerResult = null; save(); renderExercise(); break;
+      case 'miniView': case 'allView':
+        if (button.getAttribute('aria-pressed') === 'true') break;
+        state.courseView = button.id === 'miniView' ? 'mini' : 'all';
+        save(); render(); break;
+      case 'startReview':
+        stopSpeech(); review = Construction.englishReview(getQ());
+        attempts.delete(review.id);
+        selected = null; answerResult = null; renderExercise();
+        $('pool').querySelector('[data-card]')?.focus({ preventScroll: true });
+        $('practicePane').scrollTop = 0;
+        break;
       case 'check': checkAnswer(getQ()); break;
-      case 'reset': stopSpeech(); if (usingLists()) selections.delete(state.current); else attempts.delete(state.current); selected = null; answerResult = null; renderExercise(); break;
+      case 'reset':
+        stopSpeech();
+        if (usingLists()) selections.delete(state.current);
+        else attempts.delete(cardExercise().id);
+        selected = null; answerResult = null; renderExercise(); break;
       case 'previous': case 'next': {
-        const visible = visibleExamples(), i = Construction.navigationIndex(visible, getQ());
+        const visible = navigationLessons(), i = Construction.navigationIndex(visible, getQ());
         const next = visible[i + (button.id === 'next' ? 1 : -1)]; if (next) choose(next.id); break;
       }
+      case 'resultNext':
+        if (button.dataset.nextLesson) {
+          choose(button.dataset.nextLesson);
+          if (!levelGuide.open) $('slots').querySelector('.slot:enabled')?.focus({ preventScroll: true });
+        } else {
+          $('openMenu').click();
+        }
+        break;
       case 'speakNormal': case 'speakSlow': {
         speechSpeed = button.dataset.speed;
         speak(getQ().en);
@@ -804,6 +975,16 @@ if (typeof document !== 'undefined') {
     if (preferred) picker.value = preferred.voiceURI;
   }
   $('result').addEventListener('change', event => {
+    if (event.target.id === 'resultAutoSpeak') {
+      setAutoSpeak(event.target.checked);
+      return;
+    }
+    if (event.target.id === 'hideJapanese') {
+      state.hideJapanese = event.target.checked;
+      event.target.closest('.result').classList.toggle('hide-japanese', state.hideJapanese);
+      save();
+      return;
+    }
     if (event.target.id !== 'voice') return;
     stopSpeech();
     $('speechStatus').textContent = '';

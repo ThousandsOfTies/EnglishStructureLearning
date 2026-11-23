@@ -174,15 +174,23 @@ def build_level2_choices(advanced):
 
 def build_examples():
     rows, groups = [], []
+    themes = []
+    theme = None
     for line in (ROOT / 'data/original-curriculum.txt').read_text(encoding='utf-8').splitlines():
-        if not line or line.startswith(('#', '@')):
+        if line.startswith('@'):
+            theme = {'id': '', 'label': line[1:].strip()}
+            themes.append(theme)
+            continue
+        if not line or line.startswith('#'):
             continue
         verb, ja_v, objects, *extra = line.split('|')
         # Keep 98 everyday lexical verbs plus two kinds of be predicates.
         if verb in {'greet', 'tidy'}:
             continue
+        if not theme['id']:
+            theme['id'] = 'theme-' + verb
         groups.append({'key': verb, 'label': 'wake up' if verb == 'wake' else verb,
-                       'ja': ja_v})
+                       'ja': ja_v, 'theme': theme['id']})
         objects = [pair(t) for t in objects.split(';')]
         modifiers = [pair(t) for t in extra[0].split(';')] if extra else [('', '')]
         for i, ((ja_s, en_s), (ja_p, en_p)) in enumerate(zip(SUBJECTS, objects)):
@@ -314,7 +322,7 @@ def build_examples():
         ]),
     ]
     for key, label, examples in be_examples:
-        groups.append({'key': key, 'label': label, 'ja': label})
+        groups.append({'key': key, 'label': label, 'ja': label, 'theme': 'be'})
         for i, (sj, se, rj, re_, lj, le, tj, te) in enumerate(examples, 1):
             rows.append(make_example(f'build-{key}-{i}', key, i, {
                 'S': slot(sj, se), 'predicate': slot(rj, re_), 'P': slot(),
@@ -332,7 +340,18 @@ def build_examples():
             assert q['slots']['P1'] == q['slots']['P2'] == slot()
 
     rows, groups = refine(rows, groups)
-    groups.insert(0, {'key': 'tense-pictures', 'label': '10の動作', 'ja': '時制の絵くらべ'})
+    for group in groups:
+        if group['key'].startswith('pronouns-'):
+            group['theme'] = 'pronouns'
+    groups.insert(0, {'key': 'tense-pictures', 'label': '10の動作', 'ja': '時制の絵くらべ',
+                      'theme': 'tense-pictures'})
+    themes.extend([
+        {'id': 'be', 'label': '気持ち・ようす・役わり'},
+        {'id': 'pronouns', 'label': '代名詞'},
+        {'id': 'tense-pictures', 'label': '時制の絵くらべ'},
+        {'id': 'level2', 'label': '助動詞・否定・頻度'},
+        {'id': 'level3', 'label': '疑問文と倒置'},
+    ])
     rows.extend(tense_picture_examples())
     rows.extend(additional_be_examples())
     for q in rows:
@@ -389,7 +408,7 @@ def build_examples():
                    'core': sum(q.get('contrastFamily') == q['id'] for q in rows), 'pronounPractice': 39,
                    'ongoing': sum(q['meaning'] == 'ongoing' and not q.get('pronounFocus') for q in rows),
                    'past': sum(q['meaning'] == 'past' for q in rows)},
-        'groups': groups, 'examples': all_examples,
+        'themes': themes, 'groups': groups, 'examples': all_examples,
     }
     (ROOT / 'data/construction-examples.json').write_text(json.dumps(result, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     lines = [f'# レベル1：英文を組み立てる{len(rows)}文', '',

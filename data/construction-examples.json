@@ -142,16 +142,80 @@
     "ongoing": 275,
     "past": 287
   },
+  "themes": [
+    {
+      "id": "theme-go",
+      "label": "おでかけと体の動き"
+    },
+    {
+      "id": "theme-stand",
+      "label": "一日のくらし"
+    },
+    {
+      "id": "theme-eat",
+      "label": "食べものと料理"
+    },
+    {
+      "id": "theme-read",
+      "label": "学校と学び"
+    },
+    {
+      "id": "theme-play",
+      "label": "遊びと五感"
+    },
+    {
+      "id": "theme-open",
+      "label": "ものを動かす"
+    },
+    {
+      "id": "theme-give",
+      "label": "伝える・受けわたす"
+    },
+    {
+      "id": "theme-help",
+      "label": "家族と友だち"
+    },
+    {
+      "id": "theme-like",
+      "label": "好きなもの・作ること"
+    },
+    {
+      "id": "theme-clean",
+      "label": "身の回りと買いもの"
+    },
+    {
+      "id": "be",
+      "label": "気持ち・ようす・役わり"
+    },
+    {
+      "id": "pronouns",
+      "label": "代名詞"
+    },
+    {
+      "id": "tense-pictures",
+      "label": "時制の絵くらべ"
+    },
+    {
+      "id": "level2",
+      "label": "助動詞・否定・頻度"
+    },
+    {
+      "id": "level3",
+      "label": "疑問文と倒置"
+    }
+  ],
   "groups": [
     {
       "key": "tense-pictures",
       "label": "10の動作",
-      "ja": "時制の絵くらべ"
+      "ja": "時制の絵くらべ",
+      "theme": "tense-pictures"
     },
     {
       "key": "go",
       "label": "go",
       "ja": "行きます",
+      "theme": "theme-go",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -163,6 +227,7 @@
       "key": "come",
       "label": "come",
       "ja": "来ます",
+      "theme": "theme-go",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -174,6 +239,7 @@
       "key": "walk",
       "label": "walk",
       "ja": "歩きます",
+      "theme": "theme-go",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -185,6 +251,7 @@
       "key": "run",
       "label": "run",
       "ja": "走ります",
+      "theme": "theme-go",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -196,6 +263,7 @@
       "key": "jump",
       "label": "jump",
       "ja": "とびこえます",
+      "theme": "theme-go",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -207,6 +275,7 @@
       "key": "swim",
       "label": "swim",
       "ja": "泳ぎます",
+      "theme": "theme-go",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -218,6 +287,7 @@
       "key": "fly",
       "label": "fly",
       "ja": "飛ばします",
+      "theme": "theme-go",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -229,6 +299,7 @@
       "key": "ride",
       "label": "ride",
       "ja": "乗ります",
+      "theme": "theme-go",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -240,6 +311,7 @@
       "key": "climb",
       "label": "climb",
       "ja": "登ります",
+      "theme": "theme-go",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -251,6 +323,7 @@
       "key": "sit",
       "label": "sit",
       "ja": "座ります",
+      "theme": "theme-go",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -262,6 +335,7 @@
       "key": "stand",
       "label": "stand",
       "ja": "立ちます",
+      "theme": "theme-stand",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -273,6 +347,7 @@
       "key": "sleep",
       "label": "sleep",
       "ja": "ねます",
+      "theme": "theme-stand",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -284,6 +359,7 @@
       "key": "wake",
       "label": "wake up",
       "ja": "起きます",
+      "theme": "theme-stand",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -295,6 +371,7 @@
       "key": "rest",
       "label": "rest",
       "ja": "休みます",
+      "theme": "theme-stand",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -306,6 +383,7 @@
       "key": "stay",
       "label": "stay",
       "ja": "とまります",
+      "theme": "theme-stand",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -317,6 +395,7 @@
       "key": "live",
       "label": "live",
       "ja": "住んでいます",
+      "theme": "theme-stand",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -328,6 +407,7 @@
       "key": "move",
       "label": "move",
       "ja": "動かします",
+      "theme": "theme-stand",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -339,6 +419,7 @@
       "key": "stop",
       "label": "stop",
       "ja": "止めます",
+      "theme": "theme-stand",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -350,6 +431,7 @@
       "key": "start",
       "label": "start",
       "ja": "始めます",
+      "theme": "theme-stand",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -361,6 +443,7 @@
       "key": "wait",
       "label": "wait",
       "ja": "待ちます",
+      "theme": "theme-stand",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -372,6 +455,7 @@
       "key": "eat",
       "label": "eat",
       "ja": "食べます",
+      "theme": "theme-eat",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -383,6 +467,7 @@
       "key": "drink",
       "label": "drink",
       "ja": "飲みます",
+      "theme": "theme-eat",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -394,6 +479,7 @@
       "key": "cook",
       "label": "cook",
       "ja": "作ります",
+      "theme": "theme-eat",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -405,6 +491,7 @@
       "key": "bake",
       "label": "bake",
       "ja": "焼きます",
+      "theme": "theme-eat",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -416,6 +503,7 @@
       "key": "taste",
       "label": "taste",
       "ja": "味見します",
+      "theme": "theme-eat",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -427,6 +515,7 @@
       "key": "cut",
       "label": "cut",
       "ja": "切ります",
+      "theme": "theme-eat",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -438,6 +527,7 @@
       "key": "peel",
       "label": "peel",
       "ja": "むきます",
+      "theme": "theme-eat",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -449,6 +539,7 @@
       "key": "mix",
       "label": "mix",
       "ja": "混ぜます",
+      "theme": "theme-eat",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -460,6 +551,7 @@
       "key": "pour",
       "label": "pour",
       "ja": "そそぎます",
+      "theme": "theme-eat",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -471,6 +563,7 @@
       "key": "wash",
       "label": "wash",
       "ja": "洗います",
+      "theme": "theme-eat",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -482,6 +575,7 @@
       "key": "read",
       "label": "read",
       "ja": "読みます",
+      "theme": "theme-read",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -493,6 +587,7 @@
       "key": "write",
       "label": "write",
       "ja": "書きます",
+      "theme": "theme-read",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -504,6 +599,7 @@
       "key": "draw",
       "label": "draw",
       "ja": "かきます",
+      "theme": "theme-read",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -515,6 +611,7 @@
       "key": "color",
       "label": "color",
       "ja": "色をぬります",
+      "theme": "theme-read",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -526,6 +623,7 @@
       "key": "count",
       "label": "count",
       "ja": "数えます",
+      "theme": "theme-read",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -537,6 +635,7 @@
       "key": "study",
       "label": "study",
       "ja": "勉強します",
+      "theme": "theme-read",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -548,6 +647,7 @@
       "key": "learn",
       "label": "learn",
       "ja": "覚えます",
+      "theme": "theme-read",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -559,6 +659,7 @@
       "key": "practice",
       "label": "practice",
       "ja": "練習します",
+      "theme": "theme-read",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -570,6 +671,7 @@
       "key": "spell",
       "label": "spell",
       "ja": "つづりを言います",
+      "theme": "theme-read",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -581,6 +683,7 @@
       "key": "answer",
       "label": "answer",
       "ja": "答えます",
+      "theme": "theme-read",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -592,6 +695,7 @@
       "key": "play",
       "label": "play",
       "ja": "します",
+      "theme": "theme-play",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -603,6 +707,7 @@
       "key": "sing",
       "label": "sing",
       "ja": "歌います",
+      "theme": "theme-play",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -614,6 +719,7 @@
       "key": "dance",
       "label": "dance",
       "ja": "おどります",
+      "theme": "theme-play",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -625,6 +731,7 @@
       "key": "watch",
       "label": "watch",
       "ja": "見ます",
+      "theme": "theme-play",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -636,6 +743,7 @@
       "key": "listen",
       "label": "listen",
       "ja": "聞きます",
+      "theme": "theme-play",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -647,6 +755,7 @@
       "key": "look",
       "label": "look",
       "ja": "見ます",
+      "theme": "theme-play",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -658,6 +767,7 @@
       "key": "hear",
       "label": "hear",
       "ja": "聞こえます",
+      "theme": "theme-play",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -669,6 +779,7 @@
       "key": "see",
       "label": "see",
       "ja": "見かけます",
+      "theme": "theme-play",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -680,6 +791,7 @@
       "key": "touch",
       "label": "touch",
       "ja": "さわります",
+      "theme": "theme-play",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -691,6 +803,7 @@
       "key": "feel",
       "label": "feel",
       "ja": "感じます",
+      "theme": "theme-play",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -702,6 +815,7 @@
       "key": "open",
       "label": "open",
       "ja": "開けます",
+      "theme": "theme-open",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -713,6 +827,7 @@
       "key": "close",
       "label": "close",
       "ja": "閉じます",
+      "theme": "theme-open",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -724,6 +839,7 @@
       "key": "push",
       "label": "push",
       "ja": "押します",
+      "theme": "theme-open",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -735,6 +851,7 @@
       "key": "pull",
       "label": "pull",
       "ja": "引きます",
+      "theme": "theme-open",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -746,6 +863,7 @@
       "key": "turn",
       "label": "turn",
       "ja": "回します",
+      "theme": "theme-open",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -757,6 +875,7 @@
       "key": "lift",
       "label": "lift",
       "ja": "持ち上げます",
+      "theme": "theme-open",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -768,6 +887,7 @@
       "key": "carry",
       "label": "carry",
       "ja": "運びます",
+      "theme": "theme-open",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -779,6 +899,7 @@
       "key": "hold",
       "label": "hold",
       "ja": "持ちます",
+      "theme": "theme-open",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -790,6 +911,7 @@
       "key": "put",
       "label": "put",
       "ja": "置きます",
+      "theme": "theme-open",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -801,6 +923,7 @@
       "key": "take",
       "label": "take",
       "ja": "とります",
+      "theme": "theme-open",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -812,6 +935,7 @@
       "key": "give",
       "label": "give",
       "ja": "あげます",
+      "theme": "theme-give",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -823,6 +947,7 @@
       "key": "get",
       "label": "get",
       "ja": "もらいます",
+      "theme": "theme-give",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -834,6 +959,7 @@
       "key": "bring",
       "label": "bring",
       "ja": "持ってきます",
+      "theme": "theme-give",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -845,6 +971,7 @@
       "key": "send",
       "label": "send",
       "ja": "送ります",
+      "theme": "theme-give",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -856,6 +983,7 @@
       "key": "show",
       "label": "show",
       "ja": "見せます",
+      "theme": "theme-give",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -867,6 +995,7 @@
       "key": "tell",
       "label": "tell",
       "ja": "伝えます",
+      "theme": "theme-give",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -878,6 +1007,7 @@
       "key": "ask",
       "label": "ask",
       "ja": "たずねます",
+      "theme": "theme-give",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -889,6 +1019,7 @@
       "key": "talk",
       "label": "talk",
       "ja": "話します",
+      "theme": "theme-give",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -900,6 +1031,7 @@
       "key": "speak",
       "label": "speak",
       "ja": "話します",
+      "theme": "theme-give",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -911,6 +1043,7 @@
       "key": "call",
       "label": "call",
       "ja": "電話します",
+      "theme": "theme-give",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -922,6 +1055,7 @@
       "key": "help",
       "label": "help",
       "ja": "手伝います",
+      "theme": "theme-help",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -933,6 +1067,7 @@
       "key": "share",
       "label": "share",
       "ja": "分け合います",
+      "theme": "theme-help",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -944,6 +1079,7 @@
       "key": "thank",
       "label": "thank",
       "ja": "お礼を言います",
+      "theme": "theme-help",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -955,6 +1091,7 @@
       "key": "meet",
       "label": "meet",
       "ja": "会います",
+      "theme": "theme-help",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -966,6 +1103,7 @@
       "key": "visit",
       "label": "visit",
       "ja": "遊びに行きます",
+      "theme": "theme-help",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -977,6 +1115,7 @@
       "key": "invite",
       "label": "invite",
       "ja": "招きます",
+      "theme": "theme-help",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -988,6 +1127,7 @@
       "key": "join",
       "label": "join",
       "ja": "加わります",
+      "theme": "theme-help",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -999,6 +1139,7 @@
       "key": "teach",
       "label": "teach",
       "ja": "教えます",
+      "theme": "theme-help",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -1010,6 +1151,7 @@
       "key": "follow",
       "label": "follow",
       "ja": "ついていきます",
+      "theme": "theme-help",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -1021,6 +1163,7 @@
       "key": "like",
       "label": "like",
       "ja": "好きです",
+      "theme": "theme-like",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -1032,6 +1175,7 @@
       "key": "love",
       "label": "love",
       "ja": "大好きです",
+      "theme": "theme-like",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -1043,6 +1187,7 @@
       "key": "want",
       "label": "want",
       "ja": "ほしいです",
+      "theme": "theme-like",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -1054,6 +1199,7 @@
       "key": "need",
       "label": "need",
       "ja": "必要です",
+      "theme": "theme-like",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -1065,6 +1211,7 @@
       "key": "choose",
       "label": "choose",
       "ja": "選びます",
+      "theme": "theme-like",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -1076,6 +1223,7 @@
       "key": "try",
       "label": "try",
       "ja": "やってみます",
+      "theme": "theme-like",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -1087,6 +1235,7 @@
       "key": "make",
       "label": "make",
       "ja": "作ります",
+      "theme": "theme-like",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -1098,6 +1247,7 @@
       "key": "build",
       "label": "build",
       "ja": "作ります",
+      "theme": "theme-like",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -1109,6 +1259,7 @@
       "key": "use",
       "label": "use",
       "ja": "使います",
+      "theme": "theme-like",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -1120,6 +1271,7 @@
       "key": "fix",
       "label": "fix",
       "ja": "直します",
+      "theme": "theme-like",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -1131,6 +1283,7 @@
       "key": "clean",
       "label": "clean",
       "ja": "そうじします",
+      "theme": "theme-clean",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -1142,6 +1295,7 @@
       "key": "wear",
       "label": "wear",
       "ja": "身につけます",
+      "theme": "theme-clean",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -1153,6 +1307,7 @@
       "key": "change",
       "label": "change",
       "ja": "取りかえます",
+      "theme": "theme-clean",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -1164,6 +1319,7 @@
       "key": "buy",
       "label": "buy",
       "ja": "買います",
+      "theme": "theme-clean",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -1175,6 +1331,7 @@
       "key": "pay",
       "label": "pay",
       "ja": "お金を払います",
+      "theme": "theme-clean",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -1186,6 +1343,7 @@
       "key": "save",
       "label": "save",
       "ja": "ためます",
+      "theme": "theme-clean",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -1197,6 +1355,7 @@
       "key": "keep",
       "label": "keep",
       "ja": "しまっておきます",
+      "theme": "theme-clean",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -1208,6 +1367,7 @@
       "key": "find",
       "label": "find",
       "ja": "見つけます",
+      "theme": "theme-clean",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -1219,6 +1379,7 @@
       "key": "check",
       "label": "check",
       "ja": "確かめます",
+      "theme": "theme-clean",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -1230,6 +1391,7 @@
       "key": "be-noun",
       "label": "be＋名詞",
       "ja": "be＋名詞",
+      "theme": "be",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -1241,6 +1403,7 @@
       "key": "be-adjective",
       "label": "be＋形容詞",
       "ja": "be＋形容詞",
+      "theme": "be",
       "meaningOrder": [
         "routine",
         "ongoing",
@@ -1251,27 +1414,32 @@
     {
       "key": "pronouns-subject",
       "label": "代名詞：だれが",
-      "ja": "代名詞：だれが"
+      "ja": "代名詞：だれが",
+      "theme": "pronouns"
     },
     {
       "key": "pronouns-object",
       "label": "代名詞：だれを・だれに",
-      "ja": "代名詞：だれを・だれに"
+      "ja": "代名詞：だれを・だれに",
+      "theme": "pronouns"
     },
     {
       "key": "pronouns-possessive",
       "label": "代名詞：だれの＋名詞",
-      "ja": "代名詞：だれの＋名詞"
+      "ja": "代名詞：だれの＋名詞",
+      "theme": "pronouns"
     },
     {
       "key": "pronouns-independent",
       "label": "代名詞：だれのもの",
-      "ja": "代名詞：だれのもの"
+      "ja": "代名詞：だれのもの",
+      "theme": "pronouns"
     },
     {
       "key": "pronouns-reflexive",
       "label": "代名詞の発展：自分自身",
-      "ja": "代名詞の発展：自分自身"
+      "ja": "代名詞の発展：自分自身",
+      "theme": "pronouns"
     }
   ],
   "examples": [

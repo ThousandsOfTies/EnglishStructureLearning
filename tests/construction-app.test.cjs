@@ -133,8 +133,18 @@ test('advanced picture choices and cards use Japanese with an English counterpar
         const [role] = q.blocks[index];
         const roleChoices = Object.values(data.level2Choices[role]);
         assert.ok(options.every(text => text === answer[target] || roleChoices.includes(text)), q.id);
+      } else if (q.blocks[index][0].startsWith('疑問詞＝')) {
+        const questionWords = {
+          what: '何を', who: 'だれが', where: 'どこで', when: 'いつ',
+          why: 'なぜ', which: 'どれを', how: 'どうやって'
+        };
+        questionWords[q.question.token] = answer[target];
+        assert.deepEqual(new Set(options), new Set(Object.values(questionWords)), q.id);
+        const distractor = options.find(option => option !== answer[target]);
+        assert.equal(app.choicesCorrect(q, { ...answer, [target]: distractor }), false, q.id);
       } else {
-        assert.deepEqual(new Set(options), new Set(Object.values(answer)), q.id);
+        const remaining = q.blocks.filter(([role]) => !role.startsWith('疑問詞＝')).map(([, , text]) => text);
+        assert.deepEqual(new Set(options), new Set(remaining), q.id);
       }
       assert.equal(options.length, new Set(options).size, q.id);
       assert.ok(options.every(text => /[\u3040-\u30ff\u3400-\u9fff]/u.test(text) && !/[a-z]/i.test(text)), q.id);
@@ -310,6 +320,35 @@ test('the next-scene navigation stays in the core list after opening a contrast'
   assert.equal(visible[index].id, 'build-go-1');
   assert.equal(visible[index + 1].id, 'build-go-2');
   assert.equal(app.navigationIndex([], get('build-go-1')), -1);
+});
+
+test('mini sets partition every filtered theme into short ordered practices', () => {
+  const filters = { levels: [1, 2, 3], group: 'all', scope: 'all', search: '' };
+  for (const options of [filters, { ...filters, scope: 'core' }, { ...filters, levels: [1], scope: 'extension' }]) {
+    const visible = app.visibleExamples(data, options);
+    const themes = app.practiceThemes(data, visible);
+    assert.deepEqual(themes.flatMap(theme => theme.lessons.map(q => q.id)).sort(), visible.map(q => q.id).sort());
+    for (const theme of themes) {
+      assert.deepEqual(theme.sets.flat(), theme.lessons);
+      assert.ok(theme.sets.every(set => set.length >= Math.min(5, theme.lessons.length) && set.length <= 10));
+    }
+  }
+  const courses = app.practiceThemes(data, [get('build-go-1'), get('build-run-1'), get('build-eat-1'), get('level3-17')]);
+  assert.deepEqual(courses.map(theme => theme.label), ['おでかけと体の動き', '食べものと料理', '疑問文と倒置']);
+});
+
+test('English review uses only spoken blocks and grades their sentence order', () => {
+  for (const q of data.examples) {
+    const review = app.englishReview(q);
+    const cards = app.cardsFor(review);
+    assert.notEqual(q.id, review.id);
+    assert.ok(cards.every(card => card.en && card.en === card.text), q.id);
+    assert.equal(cards.map(card => card.en).join(' ') + (q.question ? '?' : '.'), q.en, q.id);
+    const correct = app.targetsFor(review);
+    assert.ok(app.isCorrect(review, correct), q.id);
+    assert.equal(app.isCorrect(review, correct.slice(1)), false, q.id);
+    assert.equal(app.isCorrect(review, correct.slice().reverse()), false, q.id);
+  }
 });
 
 test('the local-file page embeds the current curriculum and app source', () => {
