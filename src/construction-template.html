@@ -140,10 +140,12 @@
 <div id="scopeField"><label for="scope">レベル1の文</label><select id="scope"><option value="all">すべて</option><option value="core">基本の場面</option><option value="pronouns">代名詞</option><option value="extension">自分自身を表す</option></select></div>
 <div class="course-view" role="group" aria-label="問題の見かた"><button id="miniView" type="button" aria-pressed="true">ミニセット</button><button id="allView" type="button" aria-pressed="false">全例文</button></div>
 <div id="courseFilters" class="course-filters" hidden>
-<label for="courseTheme">テーマ</label><select id="courseTheme"></select>
-<progress id="themeProgress" aria-label="テーマ全体の達成度"></progress>
+<label for="courseTheme">場面のテーマ</label><select id="courseTheme"></select>
+<progress id="themeProgress" aria-label="選んだ場面の達成度"></progress>
+<div id="courseSetControls" class="course-filters" hidden>
 <label for="courseSet">ミニセット</label><select id="courseSet"></select>
 <button type="button" id="startSet">このセットを練習する</button>
+</div>
 </div>
 <label class="check-option"><input type="checkbox" id="autoSpeak"> 正解したら英文を読み上げる</label>
 <p id="artworkProgress" class="muted"></p>

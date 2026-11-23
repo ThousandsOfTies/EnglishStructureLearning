@@ -322,19 +322,25 @@ test('the next-scene navigation stays in the core list after opening a contrast'
   assert.equal(app.navigationIndex([], get('build-go-1')), -1);
 });
 
-test('mini sets partition every filtered theme into short ordered practices', () => {
+test('mini sets partition the selected levels and scene themes into short ordered practices', () => {
   const filters = { levels: [1, 2, 3], group: 'all', scope: 'all', search: '' };
+  assert.equal(new Set(data.themes.map(theme => theme.id)).size, data.themes.length);
+  assert.ok(data.themes.every(theme => !/代名詞|時制|倒置|助動詞/.test(theme.label)));
   for (const options of [filters, { ...filters, scope: 'core' }, { ...filters, levels: [1], scope: 'extension' }]) {
     const visible = app.visibleExamples(data, options);
-    const themes = app.practiceThemes(data, visible);
-    assert.deepEqual(themes.flatMap(theme => theme.lessons.map(q => q.id)).sort(), visible.map(q => q.id).sort());
-    for (const theme of themes) {
-      assert.deepEqual(theme.sets.flat(), theme.lessons);
-      assert.ok(theme.sets.every(set => set.length >= Math.min(5, theme.lessons.length) && set.length <= 10));
+    const themes = data.themes.map(theme => app.sceneExamples(visible, theme.id));
+    assert.deepEqual(themes.flat().map(q => q.id).sort(), visible.map(q => q.id).sort());
+    for (const lessons of [...themes, app.sceneExamples(visible, 'all')]) {
+      const sets = app.practiceSets(lessons);
+      assert.deepEqual(sets.flat(), lessons);
+      assert.ok(sets.every(set => set.length >= Math.min(5, lessons.length) && set.length <= 10));
     }
   }
-  const courses = app.practiceThemes(data, [get('build-go-1'), get('build-run-1'), get('build-eat-1'), get('level3-17')]);
-  assert.deepEqual(courses.map(theme => theme.label), ['おでかけと体の動き', '食べものと料理', '疑問文と倒置']);
+  const foodAtLevel3 = app.sceneExamples(app.visibleExamples(data, { ...filters, levels: [3] }), 'theme-eat');
+  assert.deepEqual(foodAtLevel3.map(q => q.id), ['level3-01', 'level3-12']);
+  const paperHat = [get('build-make-1'), get('level2-02'), get('level3-17')];
+  assert.deepEqual(app.sceneExamples(paperHat, 'theme-like'), paperHat);
+  assert.equal(get('pronoun-reflexive-1').theme, get('tense-paint').theme);
 });
 
 test('English review uses only spoken blocks and grades their sentence order', () => {

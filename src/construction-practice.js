@@ -103,21 +103,13 @@ const Construction = (() => {
          (filters.scope === 'extension' && q.extension)))) &&
       (!term || [q.ja, q.en, q.focus || '', q.id].some(s => s.toLowerCase().includes(term))));
   }
-  function practiceThemes(data, visible) {
-    const groupThemes = new Map(data.groups.map(group => [group.key, group.theme]));
-    const examples = new Map(data.themes.map(theme => [theme.id, []]));
-    for (const q of visible) {
-      const id = q.level === 1 ? groupThemes.get(q.group) : `level${q.level}`;
-      examples.get(id).push(q);
-    }
-    return data.themes.flatMap(theme => {
-      const lessons = examples.get(theme.id);
-      if (!lessons.length) return [];
-      const count = Math.ceil(lessons.length / 10);
-      const sets = Array.from({ length: count }, (_, index) =>
-        lessons.slice(Math.ceil(index * lessons.length / count), Math.ceil((index + 1) * lessons.length / count)));
-      return [{ ...theme, lessons, sets }];
-    });
+  function sceneExamples(visible, theme) {
+    return theme === 'all' ? visible : visible.filter(q => q.theme === theme);
+  }
+  function practiceSets(lessons) {
+    const count = Math.ceil(lessons.length / 10);
+    return Array.from({ length: count }, (_, index) =>
+      lessons.slice(Math.ceil(index * lessons.length / count), Math.ceil((index + 1) * lessons.length / count)));
   }
   function englishReview(q) {
     return {
@@ -155,7 +147,7 @@ const Construction = (() => {
     if (indices.length > 1 && indices.every((value, i) => value === i)) indices.push(indices.shift());
     return indices;
   }
-  return { roles, cardsFor, targetsFor, targetRole, isSupportRole, expectedTarget, wrongCardTargets, isCorrect, choicesFor, choicesCorrect, choiceMatches, enabledTargets, place, visibleExamples, practiceThemes, englishReview, restore, shuffledIndices, navigationIndex };
+  return { roles, cardsFor, targetsFor, targetRole, isSupportRole, expectedTarget, wrongCardTargets, isCorrect, choicesFor, choicesCorrect, choiceMatches, enabledTargets, place, visibleExamples, sceneExamples, practiceSets, englishReview, restore, shuffledIndices, navigationIndex };
 })();
 if (typeof module !== 'undefined' && module.exports) module.exports = Construction;
 
@@ -310,12 +302,15 @@ if (typeof document !== 'undefined') {
   catch (error) { if (error.name !== 'SyntaxError') storageOK = false; }
   const restored = Construction.restore(DATA, saved);
   const hasSavedLevels = saved?.version === 1 && Array.isArray(saved.levels);
+  const sceneThemes = [{ id: 'all', label: 'すべての場面' }, ...DATA.themes];
   const state = {
     current: restored.current, completed: restored.completed, seenGuides: restored.seenGuides,
     levels: hasSavedLevels ? DATA.levels.map(level => level.id).filter(id => saved.levels.includes(id)) : [1],
     group: 'all', scope: hasSavedLevels ? restored.scope : 'all', search: '',
     mode: hasSavedLevels ? restored.mode : 'select',
     courseView: saved?.version === 1 && saved.courseView === 'all' ? 'all' : 'mini',
+    sceneTheme: saved?.version === 1 && sceneThemes.some(theme => theme.id === saved.sceneTheme)
+      ? saved.sceneTheme : DATA.examples.find(q => q.id === restored.current).theme,
     autoSpeak: saved?.version === 1 && saved.autoSpeak === true,
     hideJapanese: saved?.version === 1 && saved.hideJapanese === true,
   };
@@ -327,7 +322,7 @@ if (typeof document !== 'undefined') {
   const hasBasicImages = DATA.examples.some(q => q.level === 1 && q.image);
   function openTensePictures() {
     const first = DATA.examples.find(q => q.group === 'tense-pictures');
-    Object.assign(state, { levels: [1], group: first.group, scope: 'all', mode: 'select', courseView: 'all' });
+    Object.assign(state, { levels: [1], group: first.group, scope: 'all', mode: 'select', courseView: 'all', sceneTheme: 'all' });
     choose(first.id);
   }
   try {
@@ -436,10 +431,10 @@ if (typeof document !== 'undefined') {
     $('scopeField').hidden = !state.levels.includes(1);
   }
   function miniCourse(visible = visibleExamples()) {
-    const themes = Construction.practiceThemes(DATA, visible);
-    const theme = themes.find(item => item.lessons.some(q => q.id === state.current)) || themes[0];
-    const setIndex = theme?.sets.findIndex(set => set.some(q => q.id === state.current)) ?? -1;
-    return { themes, theme, setIndex, lessons: theme?.sets[setIndex < 0 ? 0 : setIndex] || [] };
+    const matching = Construction.sceneExamples(visible, state.sceneTheme);
+    const sets = Construction.practiceSets(matching);
+    const setIndex = Math.max(0, sets.findIndex(set => set.some(q => q.id === state.current)));
+    return { matching, sets, setIndex, lessons: sets[setIndex] || [] };
   }
   function completionCount(lessons) {
     return lessons.filter(q => state.completed.includes(q.id)).length;
@@ -455,24 +450,34 @@ if (typeof document !== 'undefined') {
     const mini = state.courseView === 'mini';
     $('miniView').setAttribute('aria-pressed', mini);
     $('allView').setAttribute('aria-pressed', !mini);
-    $('courseFilters').hidden = !mini || !visible.length;
-    $('courseStatus').hidden = $('courseFilters').hidden;
-    if ($('courseFilters').hidden) return;
-    const { themes, theme, setIndex, lessons } = miniCourse(visible);
-    $('courseTheme').replaceChildren(...themes.map(item =>
-      new Option(`${item.label}（${completionCount(item.lessons)}/${item.lessons.length}）`, item.id)));
-    $('courseTheme').value = theme.id;
-    const total = completionCount(theme.lessons);
-    $('themeProgress').max = theme.lessons.length;
+    $('courseFilters').hidden = !mini;
+    if (!mini) {
+      $('courseStatus').hidden = true;
+      return;
+    }
+    const { matching, sets, setIndex, lessons } = miniCourse(visible);
+    $('courseTheme').replaceChildren(...sceneThemes.map(theme => {
+      const items = Construction.sceneExamples(visible, theme.id);
+      return new Option(items.length ? `${theme.label}（${completionCount(items)}/${items.length}問）` : `${theme.label}（0問）`, theme.id);
+    }));
+    $('courseTheme').value = state.sceneTheme;
+    const hasMatches = matching.length > 0;
+    $('courseSetControls').hidden = !hasMatches;
+    $('themeProgress').hidden = !hasMatches;
+    $('courseStatus').hidden = !hasMatches;
+    if (!hasMatches) return;
+    const total = completionCount(matching);
+    $('themeProgress').max = matching.length;
     $('themeProgress').value = total;
-    $('themeProgress').textContent = `${total} / ${theme.lessons.length}問`;
-    $('themeProgress').setAttribute('aria-valuetext', `${theme.lessons.length}問中${total}問クリア`);
-    $('courseSet').replaceChildren(...theme.sets.map((set, i) =>
+    $('themeProgress').textContent = `${total} / ${matching.length}問`;
+    $('themeProgress').setAttribute('aria-valuetext', `${matching.length}問中${total}問クリア`);
+    $('courseSet').replaceChildren(...sets.map((set, i) =>
       new Option(`セット ${i + 1}（${completionCount(set)}/${set.length}問）`, i)));
-    $('courseSet').value = Math.max(setIndex, 0);
+    $('courseSet').value = setIndex;
     const done = completionCount(lessons);
     const number = lessons.findIndex(q => q.id === state.current) + 1;
-    $('courseName').textContent = `${theme.label} · セット ${Math.max(setIndex, 0) + 1}`;
+    const theme = sceneThemes.find(item => item.id === state.sceneTheme);
+    $('courseName').textContent = `${theme.label} · セット ${setIndex + 1}`;
     $('coursePosition').textContent = done === lessons.length
       ? `セットクリア！ ${done}/${lessons.length}問`
       : `${number}問目 · ${done}/${lessons.length}問クリア`;
@@ -484,6 +489,10 @@ if (typeof document !== 'undefined') {
   function navigationLessons(visible = visibleExamples()) {
     return state.courseView === 'mini' ? miniCourse(visible).lessons : visible;
   }
+  function eligibleExamples() {
+    return state.courseView === 'mini'
+      ? Construction.sceneExamples(visibleExamples(), state.sceneTheme) : visibleExamples();
+  }
   function nextAfterAnswer() {
     const lessons = navigationLessons();
     const currentIndex = Construction.navigationIndex(lessons, getQ());
@@ -492,8 +501,8 @@ if (typeof document !== 'undefined') {
     if (state.courseView !== 'mini') return null;
     const unfinished = firstUnfinished(lessons);
     if (unfinished) return { id: unfinished.id, label: 'セットの残りの問題へ →' };
-    const { theme, setIndex } = miniCourse();
-    const nextSet = theme?.sets[setIndex + 1];
+    const { sets, setIndex } = miniCourse();
+    const nextSet = sets[setIndex + 1];
     if (nextSet) return { id: (firstUnfinished(nextSet) || nextSet[0]).id, label: '次のセットへ →' };
     return { label: 'ミニセットをえらぶ' };
   }
@@ -502,7 +511,7 @@ if (typeof document !== 'undefined') {
     visible = navigationLessons(visible);
     $('artworkProgress').textContent = `絵のある例文 ${Object.keys(ILLUSTRATIONS).length} / ${DATA.examples.length}文`;
     $('filterCount').textContent = `${visible.length}文を表示`;
-    const emptyMessage = state.levels.length ? 'この条件の例文はありません。' : 'レベルをえらぶと、例文が表示されます。';
+    const emptyMessage = state.levels.length ? 'この組み合わせの問題はありません。ほかの場面かレベルをえらんでね。' : 'レベルをえらぶと、例文が表示されます。';
     $('lessons').innerHTML = visible.length ? visible.map(q => `<button data-lesson="${esc(q.id)}" aria-current="${state.current === q.id}">${state.completed.includes(q.id) ? '✓ ' : ''}${esc(q.ja)}</button>`).join('') : `<p class="muted">${emptyMessage}</p>`;
     const index = Construction.navigationIndex(visible, getQ());
     $('previous').disabled = index <= 0; $('next').disabled = index < 0 || index >= visible.length - 1;
@@ -647,26 +656,33 @@ if (typeof document !== 'undefined') {
     const visible = visibleExamples();
     synchronizeFilters();
     renderNav(visible);
-    $('emptyPractice').hidden = Boolean(visible.length);
-    $('exercise').hidden = !visible.length;
-    $('reset').hidden = !visible.length;
-    $('openGuide').hidden = !visible.length;
-    if (visible.length) {
+    const available = navigationLessons(visible).length > 0;
+    $('emptyPractice').hidden = available;
+    $('emptyPractice').textContent = state.levels.length && state.courseView === 'mini'
+      ? 'この組み合わせの問題はありません。左上のメニューから、場面かレベルをえらんでね。'
+      : '左上のメニューから、練習する例文をえらんでね。';
+    $('exercise').hidden = !available;
+    $('reset').hidden = !available;
+    $('openGuide').hidden = !available;
+    if (available) {
       renderExercise();
       maybeOpenLevelGuide();
     }
     else $('modeSwitcher').hidden = true;
   }
-  function changeFilters() {
-    state.levels = [...$('levelChoices').querySelectorAll('input:checked')].map(input => Number(input.value));
-    state.scope = $('scope').value;
-    state.group = 'all';
-    const visible = visibleExamples();
-    if (visible.length && !visible.some(q => q.id === state.current)) choose(visible[0].id);
+  function applyFilters() {
+    const visible = eligibleExamples();
+    if (visible.length && !visible.some(q => q.id === state.current)) startAtUnfinished(visible);
     else {
       if (!visible.length) stopSpeech();
       save(); render();
     }
+  }
+  function changeFilters() {
+    state.levels = [...$('levelChoices').querySelectorAll('input:checked')].map(input => Number(input.value));
+    state.scope = $('scope').value;
+    state.group = 'all';
+    applyFilters();
   }
   $('levelChoices').innerHTML = DATA.levels.map(level => `
     <label>
@@ -679,11 +695,11 @@ if (typeof document !== 'undefined') {
   $('levels').addEventListener('change', changeFilters);
   $('scope').addEventListener('change', changeFilters);
   $('courseTheme').addEventListener('change', event => {
-    const theme = miniCourse().themes.find(item => item.id === event.target.value);
-    if (theme) startAtUnfinished(theme.lessons);
+    state.sceneTheme = event.target.value;
+    applyFilters();
   });
   $('courseSet').addEventListener('change', event => {
-    const set = miniCourse().theme?.sets[Number(event.target.value)];
+    const set = miniCourse().sets[Number(event.target.value)];
     if (set) startAtUnfinished(set);
   });
   $('startSet').addEventListener('click', () => {
@@ -912,7 +928,7 @@ if (typeof document !== 'undefined') {
       case 'miniView': case 'allView':
         if (button.getAttribute('aria-pressed') === 'true') break;
         state.courseView = button.id === 'miniView' ? 'mini' : 'all';
-        save(); render(); break;
+        applyFilters(); break;
       case 'startReview':
         stopSpeech(); review = Construction.englishReview(getQ());
         attempts.delete(review.id);
@@ -1004,11 +1020,7 @@ if (typeof document !== 'undefined') {
   }
   if (hasSpeech) speechSynthesis.addEventListener('voiceschanged', populateVoices);
   if (location.hash === '#tense-pictures') openTensePictures();
-  else {
-    const visible = visibleExamples();
-    if (visible.length && !visible.some(q => q.id === state.current)) state.current = visible[0].id;
-    save(); render();
-  }
+  else applyFilters();
   window.addEventListener('hashchange', () => {
     if (location.hash === '#tense-pictures') openTensePictures();
   });

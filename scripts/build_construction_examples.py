@@ -92,6 +92,11 @@ def tense_picture_examples():
         ('paint', '絵を', 'a picture', ('描く', '描いた', '描いている'), ('paint', 'painted', 'painting', 'painted')),
         ('sushi', 'のり巻きを', 'sushi rolls', ('作る', '作った', '作っている'), ('make', 'made', 'making', 'made')),
     ]
+    themes = {
+        'bicycle': 'theme-go', 'pony': 'theme-go', 'kite': 'theme-play', 'rope': 'theme-play',
+        'violin': 'theme-like', 'ball': 'theme-play', 'piano': 'theme-like',
+        'flowers': 'theme-stand', 'paint': 'theme-like', 'sushi': 'theme-eat',
+    }
     for number, (key, ja_object, en_object, ja, en) in enumerate(actions, 1):
         family = 'tense-' + key
         forms = [('routine', ja[0], en[0]), ('past', ja[1], en[1]),
@@ -101,7 +106,7 @@ def tense_picture_examples():
             q = make_example(example_id, 'tense-pictures', number, {
                 'S': slot('私が', 'I'), 'predicate': slot(verb_ja, verb_en),
                 'P': slot(ja_object, en_object), 'place': slot(), 'time': slot()})
-            q.update(contrastFamily=family, meaning=meaning)
+            q.update(contrastFamily=family, meaning=meaning, theme=themes[key])
             yield q
 
 
@@ -322,7 +327,7 @@ def build_examples():
         ]),
     ]
     for key, label, examples in be_examples:
-        groups.append({'key': key, 'label': label, 'ja': label, 'theme': 'be'})
+        groups.append({'key': key, 'label': label, 'ja': label, 'theme': 'theme-read'})
         for i, (sj, se, rj, re_, lj, le, tj, te) in enumerate(examples, 1):
             rows.append(make_example(f'build-{key}-{i}', key, i, {
                 'S': slot(sj, se), 'predicate': slot(rj, re_), 'P': slot(),
@@ -340,22 +345,34 @@ def build_examples():
             assert q['slots']['P1'] == q['slots']['P2'] == slot()
 
     rows, groups = refine(rows, groups)
-    for group in groups:
-        if group['key'].startswith('pronouns-'):
-            group['theme'] = 'pronouns'
-    groups.insert(0, {'key': 'tense-pictures', 'label': '10の動作', 'ja': '時制の絵くらべ',
-                      'theme': 'tense-pictures'})
-    themes.extend([
-        {'id': 'be', 'label': '気持ち・ようす・役わり'},
-        {'id': 'pronouns', 'label': '代名詞'},
-        {'id': 'tense-pictures', 'label': '時制の絵くらべ'},
-        {'id': 'level2', 'label': '助動詞・否定・頻度'},
-        {'id': 'level3', 'label': '疑問文と倒置'},
-    ])
+    themes.append({'id': 'nature', 'label': '動物と自然'})
+    theme_ids = {theme['id'] for theme in themes}
+    group_themes = {group['key']: group['theme'] for group in groups if 'theme' in group}
+    group_themes.update({
+        'pronouns-subject': 'theme-play',
+        'pronouns-object': 'theme-play',
+        'pronouns-possessive': 'theme-clean',
+        'pronouns-independent': 'theme-clean',
+        'pronouns-reflexive': 'theme-like',
+    })
+    scene_themes = {
+        'build-be-adjective-1': 'theme-stand',
+        'build-be-adjective-4': 'theme-stand',
+        'build-like-1': 'theme-eat',
+        'build-like-3': 'nature',
+        'build-love-1': 'nature',
+        'build-love-3': 'nature',
+        'build-make-2': 'theme-eat',
+        'build-make-3': 'theme-help',
+        'build-take-2': 'nature',
+    }
+    groups.insert(0, {'key': 'tense-pictures', 'label': '10の動作', 'ja': '時制の絵くらべ'})
     rows.extend(tense_picture_examples())
     rows.extend(additional_be_examples())
     for q in rows:
         q['level'] = 1
+        if 'theme' not in q:
+            q['theme'] = scene_themes.get(q.get('contrastFamily'), group_themes[q['group']])
         set_predicate_support(q)
         q['blocks'] = [[k, q['slots'][k]['en']] for k in SLOTS if q['slots'][k]['en']]
         assert ' '.join(text for _, text in q['blocks']) + '.' == q['en'], q['id']
@@ -376,6 +393,8 @@ def build_examples():
                 assert 'whether' not in q['en'].lower()
     all_examples = rows + advanced['level2'] + advanced['level3']
     assert len(all_examples) == len({q['id'] for q in all_examples})
+    for q in all_examples:
+        assert q['theme'] in theme_ids, q['id']
 
     result = {
         'edition': 'original-six-slots-v2',
