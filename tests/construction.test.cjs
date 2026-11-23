@@ -87,7 +87,7 @@ test('filled slots reconstruct the exact complete English sentence', () => {
     const leadingBe = q.en.slice(q.slots.S.en.length + 1).match(/^(am|is|are|was|were)\b/);
     assert.equal(q.slots.support.en, leadingBe?.[0] ?? '', q.id);
     assert.ok(q.slots.support.ja, q.id);
-    if (!leadingBe) assert.equal(q.slots.support.ja, 'する', q.id);
+    if (!leadingBe) assert.equal(q.slots.support.ja, q.meaning === 'past' ? 'した' : 'する', q.id);
     assert.ok(q.slots.predicate.ja, q.id);
   }
 });

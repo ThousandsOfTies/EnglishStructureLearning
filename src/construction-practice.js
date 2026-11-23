@@ -58,6 +58,7 @@ const Construction = (() => {
       const limit = category === '助動詞' ? 4 : 3;
       return rotateChoices([correct, ...alternatives.slice(0, limit)], q.id + role);
     }
+    if (role === 'support') return ['する', 'した', 'である', 'であった'];
     const family = q.group === 'tense-pictures' && role === 'predicate'
       ? data.examples.filter(item => item.contrastFamily === q.contrastFamily) : [];
     const candidates = [...family, ...data.examples.filter(item => item.level === 1 && item.group === q.group),
@@ -177,12 +178,12 @@ if (typeof document !== 'undefined') {
         id: 'tense-bicycle',
         heading: '働きかけを表す文',
         explanation: '「何をするか」を伝える文です。述語には「乗る（ride）」のような一般動詞を使います。',
-        practice: 'この例では、助述部で「する」、述語で「乗る」をえらびます。',
+        practice: 'ふだんは「する」＋「乗る」で “I ride a bike.” 過去は「した」＋「乗る」で “I rode a bike.” 英語では ride が rode に変わります。',
       }, {
         id: 'build-be-noun-1',
         heading: '状態を表す文',
         explanation: '「何者か」や「どんなようすか」を伝えるときに、am・is・are などの be 動詞を使います。',
-        practice: 'この例では、助述部で「である」、述語で「生徒」をえらびます。',
+        practice: '今は「である」＋「生徒」で “I am a student.” 過去は「であった」＋「生徒」で “I was a student.” 英語では am が was に変わります。',
       }],
       note: '「今、食べている」のような文でも、助述部は「である」です。述語には「食べている」を入れます。まずは、この２つの形を練習していきましょう。',
     },

@@ -133,12 +133,16 @@ def additional_be_examples():
             yield q
 
 
-def set_predicate_support(q):
+def set_predicate_support(q, predicate_labels):
     values = q['slots']
     english = values['predicate']['en']
     be, _, rest = english.partition(' ')
     if be not in BE_FORMS:
-        values['support'] = slot('する')
+        if q['meaning'] == 'past':
+            values['support'] = slot('した')
+            values['predicate'] = slot(predicate_labels[q['contrastFamily']], english)
+        else:
+            values['support'] = slot('する')
         return
 
     japanese = values['predicate']['ja']
@@ -368,11 +372,12 @@ def build_examples():
     groups.insert(0, {'key': 'tense-pictures', 'label': '10の動作', 'ja': '時制の絵くらべ'})
     rows.extend(tense_picture_examples())
     rows.extend(additional_be_examples())
+    predicate_labels = {q['id']: q['slots']['predicate']['ja'] for q in rows}
     for q in rows:
         q['level'] = 1
         if 'theme' not in q:
             q['theme'] = scene_themes.get(q.get('contrastFamily'), group_themes[q['group']])
-        set_predicate_support(q)
+        set_predicate_support(q, predicate_labels)
         q['blocks'] = [[k, q['slots'][k]['en']] for k in SLOTS if q['slots'][k]['en']]
         assert ' '.join(text for _, text in q['blocks']) + '.' == q['en'], q['id']
     advanced = json.loads((ROOT / 'data/advanced-examples.json').read_text(encoding='utf-8'))
@@ -405,7 +410,7 @@ def build_examples():
         'rules': [
             '使わない欄は空欄にする。',
             'go to / look at / listen to などは、つなぎ方まで述語に含める。',
-            '一般動詞の助述部は「する」。完成英文には語を足さない。',
+            '一般動詞の助述部は現在の「する」と過去の「した」。過去の肯定文では ate など、述語に過去形を使う。',
             '状態や進行形の be は「である」、過去の状態は「であった」を助述部に置く。「食べている」などは述語に入れる。',
             'PはParameter。P1・P2の役割は述語の部品ごとに決まる。',
             '場所は動作や状態の舞台。移動先・置き先・滞在先など、述語が表す意味を補う場所はP1・P2に入れる。',
@@ -433,9 +438,8 @@ def build_examples():
              '基本動詞98種類と「be＋名詞」「be＋形容詞」の原型300文を土台に、いつもの動き・今の動き・昨日の動きを対比し、代名詞の39文も加えました。', '',
              f"内訳：基本{result['counts']['core']}文＋今の動き{result['counts']['ongoing']}文＋過去{result['counts']['past']}文＋経験10文＋代名詞39文。レベル2は{result['counts']['level2']}文、レベル3は{result['counts']['level3']}文です。", '',
              '全部を一度に練習する必要はありません。まず「いつもの動き／状態」の原型を使い、同じcontrastFamilyの「今」「昨日」と比べます。再帰代名詞8文は発展扱いです。', '',
-             '「doに動作を渡す」は習慣・行為の捉え方を説明する比喩です。肯定文にdoを実際に追加するルールではありません。', '',
              'S → 助述部 → 述語 → P1 → P2 → 場所 → 時。使わない欄は「—」。これは英文を作るための教材上の区切りです。', '',
-             '一般動詞の助述部は「する」です。これは日本語の並べ方を考えるためのブロックで、完成英文には語を足しません。状態や進行形の be は「である」、過去の状態は「であった」を選びます。「食べている」など、動作の進行を表す部分は述語に入れます。', '',
+             '一般動詞の文は、助述部で現在の「する」か過去の「した」を選びます。日本語の述語は同じラベルを使い、完成した肯定文では eat / ate のように動詞の形で表します。状態や進行形の be は「である」、過去の状態は「であった」を選び、完成英文では am / was などが助述部に現れます。「食べている」など、動作の進行を表す部分は述語に入れます。', '',
              'PはParameter（引数）の教材独自の呼び名です。go to の to は述語側、school はP1側。give は「だれに→何を」、keep は「何を→どんな状態に」をP1・P2に入れます。be＋名詞・形容詞の文ではP1・P2を空欄にします。', '',
              '場面全体の場所は［場所］へ入れます。come の行き先や live の居住先は［対象１］、put の置き先は［対象２］へ入れます。', '',
              '場所と時の両方を常に付ける必要はありません。主語に合う述語の形をそのまま練習します。', '',

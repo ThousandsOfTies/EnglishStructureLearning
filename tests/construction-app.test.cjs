@@ -91,18 +91,30 @@ test('list practice accepts untouched unused slots while requiring every filled 
 });
 
 test('the level one action support is required in Japanese and silent in English', () => {
-  for (const id of ['build-go-1', 'build-go-1-past', 'tense-bicycle-experience']) {
+  for (const [id, label] of [['build-go-1', 'する'], ['build-go-1-past', 'した'], ['tense-bicycle-experience', 'する']]) {
     const q = get(id);
     const cards = app.cardsFor(q);
     const support = cards.findIndex(card => card.role === 'support');
-    assert.deepEqual(cards[support], { role: 'support', text: 'する', en: '' }, id);
+    assert.deepEqual(cards[support], { role: 'support', text: label, en: '' }, id);
     assert.ok(!q.blocks.some(([role]) => role === 'support'), id);
     const placements = cards.map((_, i) => app.expectedTarget(q, i));
     assert.equal(app.isCorrect(q, app.place(q, placements, support, '')), false, id);
     const withoutSupport = Object.fromEntries(app.roles.filter(role => role !== 'support' && q.slots[role].ja).map(role => [role, q.slots[role].ja]));
     assert.equal(app.choicesCorrect(q, withoutSupport), false, id);
-    assert.ok(app.choicesCorrect(q, { ...withoutSupport, support: 'する' }), id);
+    assert.ok(app.choicesCorrect(q, { ...withoutSupport, support: label }), id);
   }
+});
+
+test('level one past actions keep their Japanese predicate and use the natural English past form', () => {
+  for (const q of data.examples.filter(q => q.level === 1 && q.meaning === 'past' && !q.slots.support.en)) {
+    assert.deepEqual(q.slots.support, { ja: 'した', en: '' }, q.id);
+    assert.equal(q.slots.predicate.ja, get(q.contrastFamily).slots.predicate.ja, q.id);
+    assert.deepEqual(app.choicesFor(data, q, 'support'), ['する', 'した', 'である', 'であった'], q.id);
+  }
+  const q = get('build-eat-1-past');
+  assert.deepEqual(q.slots.predicate, { ja: '食べます', en: 'ate' });
+  assert.equal(q.en, 'He ate a rice ball at home yesterday.');
+  assert.equal(get('build-be-noun-1-past').slots.support.en, 'was');
 });
 
 test('level one grades be in the support slot and rejects exchanging it with the predicate', () => {
