@@ -205,6 +205,7 @@
 'use strict';
 const Construction = (() => {
   const roles = ['S', 'support', 'predicate', 'P1', 'P2', 'place', 'time'];
+  const level2OptionalRoles = ['P1', 'P2', '場所', '時'];
   const openingRoles = new Set(['S', '疑問詞＝S', 'there']);
   const predicateSupportRoles = ['support', '助動詞', '助動詞＋否定', '否定', 'be', '疑問の支え'];
   const predicateRoles = new Set([...predicateSupportRoles, 'predicate', '述語', '述語の残り']);
@@ -217,14 +218,13 @@ const Construction = (() => {
   function targetsFor(q) {
     if (q.level === 1) return roles;
     const targets = q.blocks.map((_, i) => String(i));
-    if (q.level === 2 && !q.blocks.some(([role]) => role === 'P2')) {
-      const position = q.blocks.findIndex(([role]) => role === '場所' || role === '時');
-      targets.splice(position < 0 ? targets.length : position, 0, 'P2');
-    }
-    return targets;
+    if (q.level !== 2) return targets;
+    const core = targets.filter(id => !level2OptionalRoles.includes(targetRole(q, id)));
+    const optional = level2OptionalRoles.map(role => targets.find(id => targetRole(q, id) === role) ?? role);
+    return [...core, ...optional];
   }
   function targetRole(q, id) {
-    return q.level === 1 || id === 'P2' ? id : q.blocks[Number(id)][0];
+    return q.level === 1 || (q.level === 2 && level2OptionalRoles.includes(id)) ? id : q.blocks[Number(id)][0];
   }
   function expectedTarget(q, i) { return q.level === 1 ? cardsFor(q)[i].role : String(i); }
   function wrongCardTargets(q, placements) {
@@ -254,7 +254,9 @@ const Construction = (() => {
         .map(index => q.blocks[index][2]);
     }
     if (q.level === 2) {
-      if (role === 'P2') return rotateChoices(Object.values(data.level2Choices.P2), q.id + role);
+      if (level2OptionalRoles.includes(role)) {
+        return rotateChoices(Object.values(data.level2Choices[role]), q.id + role);
+      }
       const [category, english, correct] = q.blocks[Number(role)];
       const alternatives = [...new Set(Object.entries(data.level2Choices[category])
         .filter(([en, ja]) => en !== english && ja !== correct).map(([, ja]) => ja))];
@@ -276,7 +278,7 @@ const Construction = (() => {
     return targetsFor(q).every(role => choiceMatches(q, choices, role));
   }
   function choiceMatches(q, choices, role) {
-    if (q.level === 2 && role === 'P2') return !choices[role];
+    if (q.level === 2 && level2OptionalRoles.includes(role)) return !choices[role];
     if (q.level !== 1) return choices[role] === q.blocks[Number(role)][2];
     if (['support', 'P1', 'P2', 'place', 'time'].includes(role) && !q.slots[role].ja) return !choices[role];
     return Object.hasOwn(choices, role) && choices[role] === q.slots[role].ja;

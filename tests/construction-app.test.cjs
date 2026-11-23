@@ -181,29 +181,28 @@ test('advanced picture choices and cards use Japanese with an English counterpar
   }
 });
 
-test('every level two exercise has one second object slot, which is empty when unused', () => {
+test('level two keeps all four complement slots in order and grades unused slots as empty', () => {
+  const optionalRoles = ['P1', 'P2', '場所', '時'];
   for (const q of data.examples.filter(q => q.level === 2)) {
     const targets = app.targetsFor(q);
-    const secondObjects = targets.filter(id => app.targetRole(q, id) === 'P2');
-    assert.equal(secondObjects.length, 1, q.id);
-    const [secondObject] = secondObjects;
-    const firstObject = targets.find(id => app.targetRole(q, id) === 'P1');
-    if (firstObject) assert.equal(targets.indexOf(secondObject), targets.indexOf(firstObject) + 1, q.id);
+    assert.deepEqual(targets.slice(-4).map(id => app.targetRole(q, id)), optionalRoles, q.id);
+    assert.equal(new Set(targets).size, targets.length, q.id);
 
     const placements = q.blocks.map((_, index) => app.expectedTarget(q, index));
     const answer = Object.fromEntries(q.blocks.map(([, , text], i) => [placements[i], text]));
     assert.ok(app.choicesCorrect(q, answer), q.id);
     assert.ok(app.isCorrect(q, placements), q.id);
-    if (secondObject === 'P2') {
-      const options = app.choicesFor(data, q, secondObject);
-      assert.deepEqual(new Set(options), new Set(Object.values(data.level2Choices.P2)), q.id);
-      assert.equal(app.choicesCorrect(q, { ...answer, P2: options[0] }), false, q.id);
-      assert.equal(app.isCorrect(q, app.place(q, placements, 0, secondObject)), false, q.id);
-    } else {
-      assert.equal(answer[secondObject], '花を', q.id);
-      delete answer[secondObject];
-      assert.equal(app.choicesCorrect(q, answer), false, q.id);
-      assert.equal(app.isCorrect(q, app.place(q, placements, Number(secondObject), '')), false, q.id);
+    for (const [index, target] of targets.slice(-4).entries()) {
+      const role = optionalRoles[index];
+      if (target === role) {
+        const options = app.choicesFor(data, q, target);
+        assert.deepEqual(new Set(options), new Set(Object.values(data.level2Choices[role])), q.id);
+        assert.equal(app.choicesCorrect(q, { ...answer, [target]: options[0] }), false, q.id);
+        assert.equal(app.isCorrect(q, app.place(q, placements, 0, target)), false, q.id);
+      } else {
+        assert.equal(app.choicesCorrect(q, { ...answer, [target]: '' }), false, q.id);
+        assert.equal(app.isCorrect(q, app.place(q, placements, Number(target), '')), false, q.id);
+      }
     }
   }
 });
