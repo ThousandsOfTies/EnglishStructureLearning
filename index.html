@@ -29,7 +29,8 @@
 .day-orbit::after{content:"";position:absolute;left:3%;top:49%;width:18%;height:65%;background:currentColor;clip-path:polygon(0 28%,90% 0,100% 100%)}
 .day-calendar.tomorrow .day-orbit{color:#ff9ac3;transform:scaleX(-1) rotate(-9deg)}
 .speech-controls{gap:6px}.speech-controls select{min-width:4.5em;max-width:min(7em,100%);field-sizing:content;text-overflow:ellipsis}
-.speech-buttons{display:flex;flex-wrap:wrap;justify-content:center;gap:6px;max-width:100%}.speech-buttons button{white-space:nowrap;padding:8px 10px}
+.speech-buttons{display:flex;align-items:center;gap:6px;max-width:100%}.speech-buttons button{white-space:nowrap;padding:8px clamp(5px,1.4vw,10px);font-size:clamp(13px,3.5vw,16px)}
+.speech-status{flex:0 0 6.5em;min-height:1.7em;font-size:12px;text-align:left;color:var(--muted);white-space:nowrap}
 .practice-toolbar{display:grid;grid-template-columns:44px minmax(0,1fr) auto 44px;align-items:start;gap:8px;margin-bottom:12px}.practice-toolbar .mode-switcher{margin:0}.practice-toolbar #reset{grid-column:3;white-space:nowrap}.practice-toolbar #openGuide{grid-column:4}
 .menu-button{display:grid;place-items:center;width:44px;height:44px;padding:0;color:var(--blue);font-size:24px;line-height:1}
 @media(hover:none){#openMenu:hover:enabled{background:#fff;border-color:var(--line)}}
@@ -519,6 +520,7 @@ if (typeof document !== 'undefined') {
   const attempts = new Map();
   const selections = new Map();
   let selected = null, answerResult = null, speechRun = 0, review = null;
+  let speechStatus = '';
   let drag = null, suppressClickUntil = 0;
   let feedbackAudio, feedbackSoundEnd = 0;
   const hasBasicImages = DATA.examples.some(q => q.level === 1 && q.image);
@@ -565,7 +567,18 @@ if (typeof document !== 'undefined') {
     if (resultOption) resultOption.checked = checked;
     save();
   }
-  function stopSpeech() { speechRun++; if (hasSpeech) speechSynthesis.cancel(); }
+  function setSpeechStatus(text) {
+    speechStatus = text;
+    const status = $('speechStatus');
+    if (status) status.textContent = text;
+  }
+  function stopSpeech() {
+    speechRun++;
+    if (hasSpeech) {
+      setSpeechStatus('');
+      speechSynthesis.cancel();
+    }
+  }
   function checkAnswer(q) {
     const wasCorrect = answerResult === true;
     answerResult = usingLists() ? Construction.choicesCorrect(q, picks()) : Construction.isCorrect(cardExercise(), attempt());
@@ -827,8 +840,9 @@ if (typeof document !== 'undefined') {
         <div class="actions speech-controls" role="group" aria-label="英文の読み上げ">
           <select id="voice" aria-label="読み上げる声"></select>
           <div class="speech-buttons">
-            <button id="speakNormal" data-speed="normal" ${hasSpeech ? '' : 'disabled'}>普通に話す</button>
+            <button id="speakNormal" data-speed="normal" ${hasSpeech ? '' : 'disabled'}>普通に読む</button>
             <button id="speakSlow" data-speed="slow" ${hasSpeech ? '' : 'disabled'}>ゆっくり読む</button>
+            <span class="speech-status" id="speechStatus" role="status">${hasSpeech ? esc(speechStatus) : '音声非対応'}</span>
           </div>
         </div>
         <div class="spoken">${renderPartGroups(parts, ({ role, en, text, index, label }) => {
@@ -839,7 +853,6 @@ if (typeof document !== 'undefined') {
             ? `<button type="button" class="answer-part" data-role="${esc(role)}" data-speak-part="${index}" ${hasSpeech ? '' : 'disabled'}>${content}<span lang="en">${esc(en)}</span></button>`
             : `<div class="answer-part japanese-only" data-role="${esc(role)}">${content}</div>`;
         })}</div>
-        <p class="muted" id="speechStatus" role="status">${hasSpeech ? '' : 'このブラウザーでは音声を使えません。'}</p>
         <div class="result-actions">
           ${hasSpeech ? `<label class="check-option"><input id="resultAutoSpeak" type="checkbox" ${state.autoSpeak ? 'checked' : ''}> 正解時に自動で読む</label>` : ''}
           <label class="check-option"><input id="hideJapanese" type="checkbox" ${state.hideJapanese ? 'checked' : ''}> 対訳をかくす</label>
@@ -1193,7 +1206,6 @@ if (typeof document !== 'undefined') {
     }
     if (event.target.id !== 'voice') return;
     stopSpeech();
-    $('speechStatus').textContent = '';
     savedVoice = event.target.value;
     try { localStorage.setItem(VOICE_KEY, JSON.stringify({ voiceURI: savedVoice })); } catch { storageOK = false; save(); }
   });
@@ -1203,10 +1215,11 @@ if (typeof document !== 'undefined') {
     const utterance = new SpeechSynthesisUtterance(text); // Never derive speech from the internal question marker.
     if (voice) utterance.voice = voice;
     utterance.lang = 'en-US'; utterance.rate = speechRates[speechSpeed];
-    const report = text => { if (run === speechRun && $('speechStatus')) $('speechStatus').textContent = text; };
-    utterance.onstart = () => report('読み上げ中…'); utterance.onend = () => report('読み上げました。');
-    utterance.onerror = event => { if (!['canceled', 'interrupted'].includes(event.error)) report('声を使えませんでした。別の声をえらぶか、端末の音声設定を確認してください。'); };
-    try { speechSynthesis.speak(utterance); } catch { report('声を使えませんでした。端末の音声設定を確認してください。'); }
+    const report = text => { if (run === speechRun) setSpeechStatus(text); };
+    utterance.onstart = () => report('読み上げ中…');
+    utterance.onend = () => report('');
+    utterance.onerror = event => report(['canceled', 'interrupted'].includes(event.error) ? '' : '音声エラー');
+    try { speechSynthesis.speak(utterance); } catch { report('音声エラー'); }
   }
   if (hasSpeech) speechSynthesis.addEventListener('voiceschanged', populateVoices);
   if (location.hash === '#tense-pictures') openTensePictures();

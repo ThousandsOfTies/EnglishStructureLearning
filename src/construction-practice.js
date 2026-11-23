@@ -317,6 +317,7 @@ if (typeof document !== 'undefined') {
   const attempts = new Map();
   const selections = new Map();
   let selected = null, answerResult = null, speechRun = 0, review = null;
+  let speechStatus = '';
   let drag = null, suppressClickUntil = 0;
   let feedbackAudio, feedbackSoundEnd = 0;
   const hasBasicImages = DATA.examples.some(q => q.level === 1 && q.image);
@@ -363,7 +364,18 @@ if (typeof document !== 'undefined') {
     if (resultOption) resultOption.checked = checked;
     save();
   }
-  function stopSpeech() { speechRun++; if (hasSpeech) speechSynthesis.cancel(); }
+  function setSpeechStatus(text) {
+    speechStatus = text;
+    const status = $('speechStatus');
+    if (status) status.textContent = text;
+  }
+  function stopSpeech() {
+    speechRun++;
+    if (hasSpeech) {
+      setSpeechStatus('');
+      speechSynthesis.cancel();
+    }
+  }
   function checkAnswer(q) {
     const wasCorrect = answerResult === true;
     answerResult = usingLists() ? Construction.choicesCorrect(q, picks()) : Construction.isCorrect(cardExercise(), attempt());
@@ -625,8 +637,9 @@ if (typeof document !== 'undefined') {
         <div class="actions speech-controls" role="group" aria-label="英文の読み上げ">
           <select id="voice" aria-label="読み上げる声"></select>
           <div class="speech-buttons">
-            <button id="speakNormal" data-speed="normal" ${hasSpeech ? '' : 'disabled'}>普通に話す</button>
+            <button id="speakNormal" data-speed="normal" ${hasSpeech ? '' : 'disabled'}>普通に読む</button>
             <button id="speakSlow" data-speed="slow" ${hasSpeech ? '' : 'disabled'}>ゆっくり読む</button>
+            <span class="speech-status" id="speechStatus" role="status">${hasSpeech ? esc(speechStatus) : '音声非対応'}</span>
           </div>
         </div>
         <div class="spoken">${renderPartGroups(parts, ({ role, en, text, index, label }) => {
@@ -637,7 +650,6 @@ if (typeof document !== 'undefined') {
             ? `<button type="button" class="answer-part" data-role="${esc(role)}" data-speak-part="${index}" ${hasSpeech ? '' : 'disabled'}>${content}<span lang="en">${esc(en)}</span></button>`
             : `<div class="answer-part japanese-only" data-role="${esc(role)}">${content}</div>`;
         })}</div>
-        <p class="muted" id="speechStatus" role="status">${hasSpeech ? '' : 'このブラウザーでは音声を使えません。'}</p>
         <div class="result-actions">
           ${hasSpeech ? `<label class="check-option"><input id="resultAutoSpeak" type="checkbox" ${state.autoSpeak ? 'checked' : ''}> 正解時に自動で読む</label>` : ''}
           <label class="check-option"><input id="hideJapanese" type="checkbox" ${state.hideJapanese ? 'checked' : ''}> 対訳をかくす</label>
@@ -991,7 +1003,6 @@ if (typeof document !== 'undefined') {
     }
     if (event.target.id !== 'voice') return;
     stopSpeech();
-    $('speechStatus').textContent = '';
     savedVoice = event.target.value;
     try { localStorage.setItem(VOICE_KEY, JSON.stringify({ voiceURI: savedVoice })); } catch { storageOK = false; save(); }
   });
@@ -1001,10 +1012,11 @@ if (typeof document !== 'undefined') {
     const utterance = new SpeechSynthesisUtterance(text); // Never derive speech from the internal question marker.
     if (voice) utterance.voice = voice;
     utterance.lang = 'en-US'; utterance.rate = speechRates[speechSpeed];
-    const report = text => { if (run === speechRun && $('speechStatus')) $('speechStatus').textContent = text; };
-    utterance.onstart = () => report('読み上げ中…'); utterance.onend = () => report('読み上げました。');
-    utterance.onerror = event => { if (!['canceled', 'interrupted'].includes(event.error)) report('声を使えませんでした。別の声をえらぶか、端末の音声設定を確認してください。'); };
-    try { speechSynthesis.speak(utterance); } catch { report('声を使えませんでした。端末の音声設定を確認してください。'); }
+    const report = text => { if (run === speechRun) setSpeechStatus(text); };
+    utterance.onstart = () => report('読み上げ中…');
+    utterance.onend = () => report('');
+    utterance.onerror = event => report(['canceled', 'interrupted'].includes(event.error) ? '' : '音声エラー');
+    try { speechSynthesis.speak(utterance); } catch { report('音声エラー'); }
   }
   if (hasSpeech) speechSynthesis.addEventListener('voiceschanged', populateVoices);
   if (location.hash === '#tense-pictures') openTensePictures();
