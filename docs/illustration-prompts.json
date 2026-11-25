@@ -14397,6 +14397,392 @@
       "exampleId": "level3-19",
       "file": "assets/construction/level3-19.png",
       "prompt": "One landscape 3:2 illustration for an original Japanese children's English workbook. Original warm hand-painted watercolor/gouache picture book style, gentle brown outlines and cream paper with a subtle texture. Layout follows the app's established declarative scene: small solitary speaker at LOWER LEFT is the main chestnut bob-haired schoolgirl, with a yellow star hairclip, coral cardigan, cream shirt and teal skirt, noticing something and presenting the scene with a gentle open palm. She is the only human in the image. On her right, a large rectangular speech balloon with exactly four sharp square corners and one slim triangular tail pointing toward her mouth. Put the animal(s) in the rectangular window only. Keep the figures and animal(s) large and clearly countable, uncluttered. No lettering, numbers, labels, captions, logos, watermarks, calendar, punctuation, question mark symbols, or additional balloon. Inside the rectangle there are EXACTLY TWO small songbirds standing on the same sturdy branch of a deciduous TREE, one golden yellow and one soft blue. Show their beaks, feathered wings, and their feet on the branch clearly. The branch connects visibly to a tree trunk, with soft green foliage and pale sky establishing location. Birds clear and separated, equally in focus. Absolutely no additional animals, extra figures, or birdlike silhouettes."
+    },
+    {
+      "exampleId": "level3-15",
+      "file": "assets/construction/level3-15-cause.png",
+      "reference": "assets/construction/level3-15.png",
+      "generationMethod": "Built-in image generation, editing the reference illustration.",
+      "prompt": "Preserve the 3:2 watercolor canvas, the speech balloon with square corners and its tail pointing to the boy in blue, and the girl in coral listening alongside him. Inside the balloon place two aligned square panels with a straight arrow from left to right. Put a single large question mark in the empty left panel and the smiling girl without the present in the right panel. Do not reveal the cause. Use no other text."
+    },
+    {
+      "exampleId": "level3-17",
+      "file": "assets/construction/level3-17-process.png",
+      "reference": "assets/construction/level3-17-method.png",
+      "generationMethod": "Built-in image generation, editing the reference illustration.",
+      "prompt": "Preserve the two children, the warm watercolor style, and the square-corner speech balloon. Frame a flat yellow sheet of origami paper on the left and a finished yellow paper hat on the right. Connect them with one continuous arrow that tangles into overlapping spaghetti loops and ends in a right-pointing arrowhead. Put a large question mark above the loops. Use no gears or other text."
+    },
+    {
+      "exampleId": "level3-03",
+      "file": "assets/construction/level3-03-today.png",
+      "reference": "assets/construction/level3-03.png",
+      "generationMethod": "Built-in image generation, editing the reference illustration.",
+      "prompt": "Preserve the landscape cream background, square red speech balloon, and boy speaking to the star-clip girl. Make only the girl inside the balloon smile with delight. Keep her clothes, hands, table, window and warm watercolor style. Leave the upper-left margin blank for the app calendar and question mark. Use no text or symbols in the bitmap."
+    },
+    {
+      "exampleId": "level3-05",
+      "file": "assets/construction/level3-05-book-question.png",
+      "reference": "assets/construction/level3-05.png",
+      "generationMethod": "Built-in image generation, editing the reference illustration.",
+      "prompt": "Preserve the watercolor scene, the children, the sofa, and the square red speech balloon. Replace the book in the seated girl's hands with the same open-book outline, a blank warm cream interior, and one large dark brown question mark. Remove the cover details and keep all other objects and areas untouched."
+    },
+    {
+      "exampleId": "level3-27",
+      "file": "assets/construction/level3-27-rider-question.png",
+      "reference": "assets/construction/level3-04.png",
+      "generationMethod": "Built-in image generation, editing the reference illustration.",
+      "prompt": "Preserve the cream background, the two children outside the speech balloon, its square corners, tail and park. Replace the identified girl in the balloon with a muted blue silhouette riding the blue bicycle, hands on the handlebar, feet on the pedals. Give only the silhouette a large cream question mark centered on its head. Keep the park and bicycle in color and use no other symbols or text."
+    },
+    {
+      "exampleId": "level3-06",
+      "file": "assets/construction/level3-06-giver-question.png",
+      "reference": "assets/construction/level3-06.png",
+      "generationMethod": "Registered an earlier illustration prototype from the Level 3 visual grammar review.",
+      "prompt": "Use the earlier trial with a faceless blue sticker giver and a question mark on the head."
+    },
+    {
+      "exampleId": "level3-07",
+      "file": "assets/construction/level3-07-soccer-place-question.png",
+      "reference": "assets/construction/level3-07.png",
+      "generationMethod": "Built-in image generation, editing the reference illustration.",
+      "prompt": "Show the girl and soccer ball at school dismissal. Put the unknown playing area in a separate map-pin panel with a question mark."
+    },
+    {
+      "exampleId": "level3-08",
+      "file": "assets/construction/level3-08-cleaning-time-question.png",
+      "reference": "assets/construction/level3-08.png",
+      "generationMethod": "Registered an earlier illustration prototype from the Level 3 visual grammar review.",
+      "prompt": "Use the earlier cleaning trial. Replace the date inside the calendar with a question mark."
+    },
+    {
+      "exampleId": "level3-09",
+      "file": "assets/construction/level3-09-phone-person-question.png",
+      "reference": "assets/construction/level3-09.png",
+      "generationMethod": "Built-in image generation, editing the reference illustration.",
+      "prompt": "Show both ends of the phone call. Leave the Sunday calendar in view and put a question mark on the unknown recipient’s silhouette."
+    },
+    {
+      "exampleId": "level3-10",
+      "file": "assets/construction/level3-10-home-gift-question.png",
+      "reference": "assets/construction/level3-10.png",
+      "generationMethod": "Built-in image generation, editing the reference illustration.",
+      "prompt": "Leave the home and both girls visible. Blank out the item passing between their hands and put one question mark inside that shape."
+    },
+    {
+      "exampleId": "level3-16",
+      "file": "assets/construction/level3-16-book-choice-question.png",
+      "reference": "assets/construction/level3-16.png",
+      "generationMethod": "Built-in image generation, editing the reference illustration.",
+      "prompt": "Show both books clearly. Mark the unknown choice above a branching line pointing at the two covers."
+    },
+    {
+      "exampleId": "level3-24",
+      "file": "assets/construction/level3-24-paper-result-question.png",
+      "reference": "assets/construction/level3-17.png",
+      "generationMethod": "Built-in image generation, editing the reference illustration.",
+      "prompt": "Show the girl holding a sheet of paper. An arrow points to a blank panel with a question mark for what she can make."
+    },
+    {
+      "exampleId": "level3-25",
+      "file": "assets/construction/level3-25-reading-place-question.png",
+      "reference": "assets/construction/level3-05.png",
+      "generationMethod": "Built-in image generation, editing the reference illustration.",
+      "prompt": "Show a girl reading an open book. Remove the identifiable setting and place a question mark in the map pin beside her."
+    },
+    {
+      "exampleId": "level3-26",
+      "file": "assets/construction/level3-26-play-activity-question.png",
+      "reference": "assets/construction/level3-07.png",
+      "generationMethod": "Built-in image generation, editing the reference illustration.",
+      "prompt": "Show the girl with her school bag at the gate after dismissal. Hide the specific equipment for the activity behind a question-mark shape."
+    },
+    {
+      "exampleId": "level3-28",
+      "file": "assets/construction/level3-28-phone-time-question.png",
+      "reference": "assets/construction/level3-09.png",
+      "generationMethod": "Built-in image generation, editing the reference illustration.",
+      "prompt": "Show the girl on the phone and replace the known date in the calendar with a question mark."
+    },
+    {
+      "exampleId": "level3-29",
+      "file": "assets/construction/level3-29-handing-object-question.png",
+      "reference": "assets/construction/level3-10.png",
+      "generationMethod": "Built-in image generation, editing the reference illustration.",
+      "prompt": "Show a girl offering an unknown object to the other girl outdoors. Show both faces and place the question mark on the blank object."
+    },
+    {
+      "exampleId": "level3-01",
+      "file": "assets/construction/level3-01-strawberry-hearts.png",
+      "reference": "assets/construction/level3-01.png",
+      "generationMethod": "Built-in image generation, editing the reference illustration.",
+      "prompt": "Keep the rectangular speech balloon, the two children outside and the bowl of strawberries inside. Make the girl in the balloon look at the bowl with a big delighted smile and vivid rosy heart-shaped pupils. Leave the listener outside neutral. Use the original watercolor composition and add no text or question marks."
+    },
+    {
+      "exampleId": "level3-04",
+      "file": "assets/construction/level3-04-can-thumb.png",
+      "reference": "assets/construction/level3-04.png",
+      "generationMethod": "Built-in image generation, editing the reference illustration.",
+      "prompt": "Give the blue hoodie boy clearly visible thumbs-up to express can. Keep the listener, angular speech balloon and original watercolor style. Show the star-clip girl riding the bicycle in the park. Keep the area above the boy clear for the app question mark."
+    },
+    {
+      "exampleId": "level3-23",
+      "file": "assets/construction/level3-23-can-thumb.png",
+      "reference": "assets/construction/level3-17.png",
+      "generationMethod": "Built-in image generation, editing the reference illustration.",
+      "prompt": "Give the blue hoodie boy clearly visible thumbs-up to express can. Keep the listener, angular speech balloon and original watercolor style. Keep the girl with a finished paper hat and the sheet on the table. Keep the area above the boy clear."
+    },
+    {
+      "exampleId": "level3-24",
+      "file": "assets/construction/level3-24-paper-can-question.png",
+      "reference": "assets/construction/level3-24-paper-result-question.png",
+      "generationMethod": "Built-in image generation, editing the reference illustration.",
+      "prompt": "Give the blue hoodie boy clearly visible thumbs-up to express can. Keep the listener, angular speech balloon and original watercolor style. Keep the girl with a sheet, the arrow, and the box containing one question mark for the result."
+    },
+    {
+      "exampleId": "level3-27",
+      "file": "assets/construction/level3-27-rider-can-question.png",
+      "reference": "assets/construction/level3-27-rider-question.png",
+      "generationMethod": "Built-in image generation, editing the reference illustration.",
+      "prompt": "Give the blue hoodie boy clearly visible thumbs-up to express can. Keep the listener, angular speech balloon and original watercolor style. Keep the rider as a blue silhouette with the question mark on its head, and retain the colored bicycle and park."
+    },
+    {
+      "exampleId": "level3-17",
+      "file": "assets/construction/level3-17-process-maker.png",
+      "reference": "assets/construction/level3-17-process.png",
+      "generationMethod": "Built-in image generation, editing the reference illustration.",
+      "prompt": "Keep the square speech balloon and paper-to-hat diagram. Overlay the sole question mark directly on the center of the tangled arrow. Above the arrow, show the star-hairclip girl leaning over a worktable, with her hands working on the edges of the paper. Hide the folding method with the tangle. Use the earlier maker illustration as a reference for her pose."
+    },
+    {
+      "exampleId": "level3-17",
+      "file": "assets/construction/level3-17-process-outline.png",
+      "reference": "assets/construction/level3-17-process-maker.png",
+      "generationMethod": "Built-in image generation, editing the reference illustration.",
+      "prompt": "Remove the round disk behind the question mark. Reconnect the tangled brown lines across the center and overlay the dark question mark and dot directly on the lines. Outline only the edge of each glyph in white. Preserve the girl and paper-to-hat composition."
+    },
+    {
+      "exampleId": "level3-22",
+      "file": "assets/construction/level3-22-cleaning-past.png",
+      "reference": "assets/construction/level3-08.png",
+      "layoutReference": "assets/construction/build-clean-1-past.png",
+      "generationMethod": "Built-in image generation, editing the reference illustration.",
+      "prompt": "Keep the girl dusting her bedroom in the rectangular balloon. Move the balloon to the left for yesterday, and place the boy and listener on the right. Aim the tail at the speaking boy. Leave clear space for the app's question mark and yesterday calendar."
+    },
+    {
+      "exampleId": "level3-23",
+      "file": "assets/construction/level3-23-can-hand.png",
+      "reference": "assets/construction/level3-23-can-thumb.png",
+      "generationMethod": "Built-in image generation, editing the reference illustration.",
+      "prompt": "Fix only the raised hand of the boy in the blue hoodie. Draw a natural thumbs-up with one upright thumb and four curled fingers, at the same position and scale. Keep the boy, the listening girl, the paper-hat scene and the angular speech bubble in place, in the original watercolor style."
+    },
+    {
+      "exampleId": "level3-23",
+      "file": "assets/construction/level3-23-can-left-hand.png",
+      "reference": "assets/construction/level3-23-can-hand.png",
+      "generationMethod": "Built-in image generation, editing the reference illustration.",
+      "prompt": "Correct the raised hand to a natural left-hand thumbs-up. Show the palm partly toward the viewer, with the thumb toward the listening girl and the four curled fingers toward the boy. Connect the wrist to the existing blue cuff and preserve the watercolor composition."
+    },
+    {
+      "exampleId": "level3-23",
+      "file": "assets/construction/level3-23-can-relaxed-wrist.png",
+      "reference": "assets/construction/level3-23-can-left-hand.png",
+      "generationMethod": "Built-in image generation, editing the reference illustration.",
+      "prompt": "Redraw the raised left hand, wrist and cuff so the wrist and fist follow the diagonal of the forearm without a kink. Keep a relaxed oblique view of the fist with the thumb pointing slightly up and toward the listening girl. Preserve the original watercolor composition."
+    },
+    {
+      "exampleId": "level3-24",
+      "file": "assets/construction/level3-24-paper-relaxed-wrist.png",
+      "reference": "assets/construction/level3-24-paper-can-question.png",
+      "generationMethod": "Built-in image generation, editing the reference illustration.",
+      "prompt": "Match the relaxed left-hand thumbs-up and cuff in assets/construction/level3-23-can-relaxed-wrist.png. Preserve the girl holding the yellow square sheet, the arrow, and the boxed question mark in the original speech bubble."
+    },
+    {
+      "exampleId": "level3-26",
+      "file": "assets/construction/level3-26-after-school-play.png",
+      "reference": "assets/construction/level3-26-play-activity-question.png",
+      "generationMethod": "Built-in image generation, editing the reference illustration.",
+      "prompt": "Show the red-cardigan girl and her purple-cardigan friend actively playing in the schoolyard after school. Use their full-body movement to show play, the school bell and set-aside bags for the time, and one question mark between the players to conceal the game equipment. Preserve the conversation and angular speech bubble."
+    },
+    {
+      "exampleId": "level2-20",
+      "file": "assets/construction/level2-20.png",
+      "reference": "assets/construction/level2-01-modal.png",
+      "generationMethod": "Built-in image generation, editing the reference illustration.",
+      "prompt": "CAN, I can draw a cat. Replace the scene inside the bubble with the same red-cardigan girl actively drawing a big recognizable cat on white paper on a simple desk. Show a colored pencil exactly touching the cat drawing, and make it clear the cat is drawn on the paper. Outside the bubble the identical girl (same red cardigan and yellow star hair clip) is the only child and gives a confident smile and a natural left-hand thumbs-up, with wrist in line with forearm. Use one sharp-cornered rectangular speech bubble, familiar characters and warm watercolor, with no text or captions. The final pass matches the left-hand gesture and relaxed wrist in level3-23-can-relaxed-wrist.png."
+    },
+    {
+      "exampleId": "level2-21",
+      "file": "assets/construction/level2-21.png",
+      "reference": "assets/construction/level2-04-modal.png",
+      "generationMethod": "Built-in image generation, editing the reference illustration.",
+      "prompt": "SHOULD, You should wear a hat. Outside the bubble the same blue-hoodie boy advises the listening girl with a warm smile, tilted head and relaxed open palm. Inside the bubble depict that same listening girl actually wearing a broad-brimmed straw sun hat, adjusting the brim with a hand, in simple bright sunshine. Her red cardigan and star hairclip beneath the brim match the listener. The hat is the focal point. Use one sharp-cornered rectangular speech bubble, familiar characters and warm watercolor, with no text or captions."
+    },
+    {
+      "exampleId": "level2-22",
+      "file": "assets/construction/level2-22.png",
+      "reference": "assets/construction/level2-01-modal.png",
+      "generationMethod": "Built-in image generation, editing the reference illustration.",
+      "prompt": "MIGHT, I might go to the beach. Outside the bubble the only speaker is the same red-cardigan girl, with hesitant eyebrows, small half smile, open hands in a little shrug, and one small cartoon sweat drop beside her temple. Inside the bubble show the same girl from behind visibly walking down a short sandy path to the beach, with large ocean waves, sand, and blue sea ahead. Do not show a specific time, day, calendar, or anyone else. The girl's speaker expression is hesitant. Use one sharp-cornered rectangular speech bubble, familiar characters and warm watercolor, with no text or captions."
+    },
+    {
+      "exampleId": "level2-23",
+      "file": "assets/construction/level2-23.png",
+      "reference": "assets/construction/level2-04-modal.png",
+      "generationMethod": "Built-in image generation, editing the reference illustration.",
+      "prompt": "MUST, You must fasten your seat belt. Outside the bubble the blue-hoodie boy warns the listening red-cardigan girl with a serious caring expression and one raised index finger. Inside the bubble, show that same girl seated inside a stationary car as a passenger. The wide seat belt is across her chest, and she is visibly clicking its metal tongue into the buckle at her hip, with a small amber click burst at the buckle, which is big enough to read. Show clearly that it is a car seat belt. The scene is a simple close-up. Use one sharp-cornered rectangular speech bubble, familiar characters and warm watercolor, with no text or captions."
+    },
+    {
+      "exampleId": "level3-30",
+      "file": "assets/construction/level3-30.png",
+      "reference": "assets/construction/level3-26-after-school-play.png",
+      "generationMethod": "Built-in image generation, editing the reference illustration.",
+      "prompt": "WHAT, What do you eat for breakfast? Redraw only inside the frame: the same red-cardigan girl is clearly eating at a breakfast table, with a fork up near her open mouth. Early sunlight comes through a window with a sunrise and pale blue sky, and there is a simple glass of juice. One cream cutout with a clear dark blue question mark conceals the exact food on the plate and the small bite on the fork remains indistinct. Make eating and morning clear. No other question mark. Use one sharp-cornered rectangular speech bubble, familiar characters and warm watercolor, with no text or captions."
+    },
+    {
+      "exampleId": "level3-31",
+      "file": "assets/construction/level3-31.png",
+      "reference": "assets/construction/level3-25-reading-place-question.png",
+      "generationMethod": "Built-in image generation, editing the reference illustration.",
+      "prompt": "WHERE, Where do you swim? Inside the frame show the same red-cardigan girl recognizable by her face, short brown hair and red swimming costume, doing a clear horizontal freestyle stroke with one arm out of the water and kicking feet. Show only a small area of neutral light blue water immediately around her, without any landmarks, beach, lanes, walls, plants or visible place identity. On the open part of the frame place a recognizable map pin with one white question mark inside it, positioned near the swimmer. Only one question mark, in the map pin. Use one sharp-cornered rectangular speech bubble, familiar characters and warm watercolor, with no text or captions."
+    },
+    {
+      "exampleId": "level3-32",
+      "file": "assets/construction/level3-32.png",
+      "reference": "assets/construction/level3-06-giver-question.png",
+      "generationMethod": "Built-in image generation, editing the reference illustration.",
+      "prompt": "WHO, Who opens the door? Inside the frame show a single featureless slate-blue human silhouette, actively grasping a doorknob with one hand and opening a partly swung large wooden door. The open door and knob are immediately obvious, and take enough space in the frame. Put one obvious question mark on the face of the blue silhouette. No visible identifying features or other people inside the frame. The boy still speaks outside the bubble to the same red-cardigan girl as in the reference. Use one sharp-cornered rectangular speech bubble, familiar characters and warm watercolor, with no text or captions. The final pass keeps the door fully inside the bubble with an uninterrupted top border."
+    },
+    {
+      "exampleId": "level3-33",
+      "file": "assets/construction/level3-33.png",
+      "reference": "assets/construction/level3-16-book-choice-question.png",
+      "generationMethod": "Built-in image generation, editing the reference illustration.",
+      "prompt": "WHICH, Which umbrella do you want? Inside the frame, the star hairclip red-cardigan girl is clearly considering two unambiguously visible open umbrellas, one yellow and one blue, with visible handles. Lay the two umbrellas out at similar scale as two alternatives, with a clear single question mark centered between them; she has not chosen yet and looks at both. Very simple setting, no rain or location clue necessary. Preserve the boy asking the same girl outside the bubble. No other question mark. Use one sharp-cornered rectangular speech bubble, familiar characters and warm watercolor, with no text or captions."
+    },
+    {
+      "exampleId": "level3-32",
+      "file": "assets/construction/level3-32-door-knob.png",
+      "reference": "assets/construction/level3-32.png",
+      "generationMethod": "Built-in image generation, editing the reference illustration.",
+      "prompt": "Move the brass doorknob to the narrow stile by the free left edge of the door opposite the hinges. Adjust the mystery figure’s reaching hand and forearm to grip it. Keep the question mark on the face and preserve the surrounding watercolor composition."
+    },
+    {
+      "exampleId": "level2-24",
+      "file": "assets/construction/level2-24.png",
+      "reference": "assets/construction/level2-20.png",
+      "generationMethod": "Built-in image generation, using a reference for style and composition.",
+      "prompt": "I can jump rope. In the frame, same red cardigan star clip girl unmistakably skipping rope midair with a full visible rope arc down beneath her shoes, one handle in each hand, simple background. Keep the single confident smiling girl as speaker outside the frame, and her existing approved relaxed left thumbs-up pose and wrist exactly. Use warm watercolor, familiar characters and a sharp-cornered speech bubble. No text."
+    },
+    {
+      "exampleId": "level2-25",
+      "file": "assets/construction/level2-25.png",
+      "reference": "assets/construction/level2-21.png",
+      "generationMethod": "Built-in image generation, using a reference for style and composition.",
+      "prompt": "You should take an umbrella. Outside the frame keep the blue-hoodie boy gently recommending with a relaxed open palm to the listening red-cardigan star hairclip girl. Inside the frame the same red-cardigan girl takes a yellow closed umbrella by its curved handle from a stand next to a wide open front door, ready to go outside. Her hand is around the umbrella handle and the tip is above its stand. Outdoors through the door visible gray sky, rain and a puddle, strong visual cue for the advice. Do not show a hat. Use warm watercolor, familiar characters and a sharp-cornered speech bubble. No text."
+    },
+    {
+      "exampleId": "level2-26",
+      "file": "assets/construction/level2-26.png",
+      "reference": "assets/construction/level2-23.png",
+      "generationMethod": "Built-in image generation, using a reference for style and composition.",
+      "prompt": "You must stop at a red light. Outside the frame preserve the two small conversation figures exactly, the serious blue-boy speaker with a raised index finger and the listening star hairclip girl. Inside the frame she is a pedestrian on the near curb at a zebra crossing with both feet planted just before the first white stripe. Clear crosswalk destination on the other side, and one front-facing pedestrian signal adjacent to crosswalk at her eye level, the red standing figure brightly lit, lower signal unlit. She has clearly stopped at the red signal. No cars needed. Use warm watercolor, familiar characters and a sharp-cornered speech bubble. No text."
+    },
+    {
+      "exampleId": "level2-27",
+      "file": "assets/construction/level2-27.png",
+      "reference": "assets/construction/level2-22.png",
+      "generationMethod": "Built-in image generation, using a reference for style and composition.",
+      "prompt": "She might be tired. Outside the frame preserve one speaker, the red cardigan girl with subtly hesitant eyebrows, small shrug and sweat bead. Inside the frame explicitly a DIFFERENT purple-top girl with a dark purple ponytail and no star clip is visibly tired, yawning and rubbing one eye, shoulders drooping on a bench with her bag set down. No pillow, bedroom or clock. Show weariness rather than asleep. Use warm watercolor, familiar characters and a sharp-cornered speech bubble. No text. The final pass removes the incidental question mark beside the speaker and keeps the sweat drop."
+    },
+    {
+      "exampleId": "level3-34",
+      "file": "assets/construction/level3-34.png",
+      "reference": "assets/construction/level3-28-phone-time-question.png",
+      "generationMethod": "Built-in image generation, using a reference for style and composition.",
+      "prompt": "When do you water the flowers? Only the blue boy asks the red-cardigan star clip girl outside the bubble as in the reference. In the bubble the same girl actively tips a large watering can, with a clearly visible stream reaching pink and yellow flowers in a planter, and beside her a clearly visible small cream calendar icon containing ONE question mark in place of the date grid. Use neutral light, no clocks, day/date text, moon, or time-specific cues. The question mark stays in the calendar. Use warm watercolor, familiar characters and a sharp-cornered speech bubble. No text."
+    },
+    {
+      "exampleId": "level3-35",
+      "file": "assets/construction/level3-35.png",
+      "reference": "assets/construction/level3-15-cause.png",
+      "generationMethod": "Built-in image generation, using a reference for style and composition.",
+      "prompt": "Why are you crying? Preserve the two familiar conversation characters, boy asking the star hairclip girl outside. Within the angular speech bubble clearly render a simple two-step cause-and-result diagram: on the left a square empty cream panel with one single dark question mark in its center; one straight dark amber arrow from left to right; on the right a square panel with the same red-cardigan girl unmistakably crying, tears on both cheeks, seen waist up, neutral pastel background with no visible cause. The question mark is strictly inside the left panel. Keep panels separate, and all of this inside the rectangle. Use warm watercolor, familiar characters and a sharp-cornered speech bubble. No text."
+    },
+    {
+      "exampleId": "level3-36",
+      "file": "assets/construction/level3-36.png",
+      "reference": "assets/construction/level3-17-process-outline.png",
+      "generationMethod": "Built-in image generation, using a reference for style and composition.",
+      "prompt": "How do you make a paper airplane? Keep approved layout of one diagram inside a sharp-cornered speech bubble and boy asking listening girl outside. Inside the diagram: a square sheet of yellow paper in a box on left, clear yellow folded paper AIRPLANE in a box on right, wing symmetry and sharp forward-pointing nose (no hat), connected by the brown spaghetti line that loops in the middle then ends in an arrowhead pointing to the airplane. Draw a dark question mark with a white outline directly over the center of the tangled line, no circle or disc behind it. Above the tangle place the same red-cardigan star clip girl leaning over with both hands at work on paper, a hint of making without showing step-by-step instructions. Keep the two endpoints distinctly visible. One question mark only. Use warm watercolor, familiar characters and a sharp-cornered speech bubble. No text."
+    },
+    {
+      "exampleId": "level3-37",
+      "file": "assets/construction/level3-37.png",
+      "reference": "assets/construction/level3-23-can-relaxed-wrist.png",
+      "generationMethod": "Built-in image generation, using a reference for style and composition.",
+      "prompt": "Are you reading a book? Same blue-hoodie boy speaking to the red-cardigan star clip girl outside, angular red bubble directly above them, its tail pointing to the boy. In the bubble show the same girl actively reading an open book held in both hands, gaze fixed on the pages, simple room background. Keep the area above or next to the boy clear for an app overlay. Do not draw a question mark anywhere. Keep the main layout as in the reference. Use warm watercolor, familiar characters and a sharp-cornered speech bubble. No text. The final pass changes the boy's gesture to an open palm and adds four equal orange progress strokes near the reading scene; the app adds the question mark."
+    },
+    {
+      "exampleId": "level2-28",
+      "file": "assets/construction/level2-28.png",
+      "reference": "assets/construction/level2-24.png",
+      "generationMethod": "Built-in image generation, using a reference for style and composition.",
+      "prompt": "I can play the piano. Inside the frame, same coral-cardigan yellow star hair clip girl sitting at a recognizable upright acoustic piano in side view. Clearly show her hands playing black and white keys. Outside, preserve the only speaker, same girl smiling confidently and giving the same natural left thumbs-up. No music notes or sheet music. Use familiar characters, warm watercolor and a single sharp-cornered red speech bubble with no captions."
+    },
+    {
+      "exampleId": "level2-29",
+      "file": "assets/construction/level2-29.png",
+      "reference": "assets/construction/level2-25.png",
+      "generationMethod": "Built-in image generation, using a reference for style and composition.",
+      "prompt": "You should put on a coat. Outside, blue hoodie boy gently recommends with relaxed open palm to the listening coral-cardigan girl. Inside the frame, same listening girl wearing her star clip is at home by the doorway in winter, actually slipping one arm into the sleeve of a thick red coat she is putting on; the coat is not yet fully on and the other arm and sleeve hang visibly open. Beyond the door is light snow on the ground. Frame is a medium shot making the action unmistakable. Use familiar characters, warm watercolor and a single sharp-cornered red speech bubble with no captions."
+    },
+    {
+      "exampleId": "level2-30",
+      "file": "assets/construction/level2-30.png",
+      "reference": "assets/construction/level2-26.png",
+      "generationMethod": "Built-in image generation, using a reference for style and composition.",
+      "prompt": "You must put on your helmet. Outside, keep boy with serious expression and one raised index finger, speaking to the star-hairclip coral-cardigan girl. Inside the frame, the same girl puts a clearly recognizable bright bicycle helmet onto her head with two hands holding the sides, helmet held just above her hair, with blue bicycle parked beside her. No riding. Helmet is the largest focal detail and both hands meet the helmet naturally. Use familiar characters, warm watercolor and a single sharp-cornered red speech bubble with no captions."
+    },
+    {
+      "exampleId": "level2-31",
+      "file": "assets/construction/level2-31.png",
+      "reference": "assets/construction/level2-27.png",
+      "generationMethod": "Built-in image generation, using a reference for style and composition.",
+      "prompt": "We might build a snowman. Outside, keep the red cardigan star clip girl as sole speaker, small shrug and one blue sweat bead near her temple. This is a STATEMENT, no question mark. Inside frame the same coral girl and familiar purple-top ponytail friend are working together in the snow, lifting a small snowball toward the top of a clearly recognizable partly built snowman. Show at least two big snowballs already stacked, dark button eyes and a carrot nose visible on the snowball being added. No other figures or winter holiday icons. Use familiar characters, warm watercolor and a single sharp-cornered red speech bubble with no captions."
+    },
+    {
+      "exampleId": "level3-38",
+      "file": "assets/construction/level3-38.png",
+      "reference": "assets/construction/level3-26-after-school-play.png",
+      "generationMethod": "Built-in image generation, using a reference for style and composition.",
+      "prompt": "What is she holding? Outside the bubble use ONLY the familiar red-cardigan star-clip girl speaking, neutral face and open hand, no second person outside. Inside, a DIFFERENT girl in a purple top with dark ponytail shows the viewer something she is clearly holding with both hands at chest height. The exact object is hidden by one simple cream cutout containing a clear dark question mark, with her fingers visibly gripping the edges of the cutout. Plain warm interior. The question mark is only on the object. Avoid sparkles or extra marks. Use familiar characters, warm watercolor and a single sharp-cornered red speech bubble with no captions. Add four equal orange lines immediately left of the scene frame to show the action is in progress."
+    },
+    {
+      "exampleId": "level3-39",
+      "file": "assets/construction/level3-39.png",
+      "reference": "assets/construction/level3-33.png",
+      "generationMethod": "Built-in image generation, using a reference for style and composition.",
+      "prompt": "Which bus do you take? Same boy speaking to star-clip girl outside. Inside, girl with star clip and red cardigan stands at a curb with hand to chin, looking at two boldly colored clearly recognizable buses she can board, one yellow and one blue, shown equally sized like two options, doors facing the curb and legible at small size. ONE question mark in the blank space between the two buses. No route numbers, writing, or directional arrows. Use familiar characters, warm watercolor and a single sharp-cornered red speech bubble with no captions."
+    },
+    {
+      "exampleId": "level3-40",
+      "file": "assets/construction/level3-40.png",
+      "reference": "assets/construction/level3-31.png",
+      "generationMethod": "Built-in image generation, using a reference for style and composition.",
+      "prompt": "Where do you fly a kite? Same boy asks the girl below. In the bubble show the same red-cardigan girl holding a kite reel, a clearly visible thin string leading diagonally up to a large diamond-shaped brightly colored kite flying. Include a neutral pale background, with no identifiable location. Beside the scene show one blue map pin containing ONE white question mark. Location is unknown; girl, string, reel, kite visible and distinct. Use familiar characters, warm watercolor and a single sharp-cornered red speech bubble with no captions."
+    },
+    {
+      "exampleId": "level3-41",
+      "file": "assets/construction/level3-41.png",
+      "reference": "assets/construction/level3-37.png",
+      "generationMethod": "Built-in image generation, using a reference for style and composition.",
+      "prompt": "Are you cold? Same blue-hoodie boy asking the listening coral-cardigan girl with a friendly slightly concerned open-palmed gesture, no thumbs-up. In the bubble show the same red-cardigan star-clip girl unmistakably shivering with shoulders raised, hugging herself, small shiver motion lines near shoulders, visible frosty breath, cold outdoors. Remove any four orange lines from the reference as this is a state. Reserve blank space above the boy's head for a question mark the app will add. No question mark or writing in the raster artwork. Use familiar characters, warm watercolor and a single sharp-cornered red speech bubble with no captions."
+    },
+    {
+      "exampleId": "level3-40",
+      "file": "assets/construction/level3-40-kite-map.png",
+      "reference": "assets/construction/level3-40.png",
+      "generationMethod": "Built-in image generation, editing the reference illustration.",
+      "prompt": "Make a precise local edit to the provided Japanese educational watercolor illustration. Add a small, clearly recognizable unfolded paper map directly UNDER the existing blue map pin inside the red speech bubble, in the lower-right area. The map is a simple cream paper rectangle with two subtle accordion folds and a slight angled perspective, showing an abstract network of thin ocher roads and a small light-blue waterway, with no real identifiable location, buildings, labels, characters, numbers or icons. The lower tip of the original blue pin, with its white question mark, must touch the center of the paper map as though it is pointing to a spot on the map; keep the blue pin visibly in the foreground and keep the white question mark unchanged. The map must stay entirely inside the red frame, with breathing room at the right and bottom margins, and never overlap the girl's hands, her kite string or the kite. Preserve the red-cardigan girl flying the colorful kite, the kite, the other two characters, the square-cornered bubble, its tail, position, scale, framing, and all remaining parts of the existing illustration. Match the original soft colors and watercolor paper texture. No added words, labels, numbers, or extra question marks."
     }
   ],
   "sceneAtlases": {

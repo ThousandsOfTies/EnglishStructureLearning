@@ -52,7 +52,7 @@
   ],
   "silentQuestionWord": {
     "token": "whether",
-    "meaning": "〜かどうか",
+    "meaning": "かどうか",
     "spoken": false,
     "written": false
   },
@@ -61,45 +61,55 @@
       "I": "私は",
       "We": "私たちは",
       "You": "あなたは",
-      "My sister": "姉は"
+      "She": "彼女は"
     },
     "助動詞": {
       "can": "〜できる（可能だと言える）",
-      "will": "〜するつもり（そうなると言い切る）",
       "must": "〜しなければならない（必要だと言える）",
       "should": "〜したほうがいい（そう考えるのが自然）",
       "might": "〜するかもしれない（言い切れないが、ありえる）"
     },
     "述語": {
       "ride": "乗る",
-      "make": "作る",
       "wash": "洗う",
       "drink": "飲む",
       "read": "読む",
       "checks": "確かめる",
-      "give": "あげる"
+      "give": "あげる",
+      "make": "作る",
+      "draw": "描く",
+      "wear": "かぶる",
+      "go to": "行く",
+      "fasten": "しめる",
+      "jump rope": "なわとびをする",
+      "take": "持っていく",
+      "stop": "止まる",
+      "play": "ひく",
+      "put on": "着る",
+      "build": "作る"
     },
     "P1": {
       "a bike": "自転車に",
-      "a paper hat": "紙のぼうしを",
       "your hands": "手を",
       "milk": "牛乳を",
       "an animal book": "動物の本を",
       "her bag": "自分のかばんを",
-      "our sister": "妹に"
+      "her": "彼女に",
+      "a paper hat": "紙のぼうしを",
+      "a cat": "猫を",
+      "a hat": "ぼうしを",
+      "the beach": "海辺に",
+      "your seat belt": "シートベルトを",
+      "an umbrella": "傘を",
+      "the piano": "ピアノを",
+      "a coat": "コートを",
+      "your helmet": "ヘルメットを",
+      "a snowman": "雪だるまを"
     },
     "場所": {
       "in the park": "公園で",
-      "at home": "家で",
-      "in the library": "図書館で"
-    },
-    "時": {
-      "tomorrow": "明日",
-      "before lunch": "昼食の前に",
-      "at breakfast": "朝食のときに",
-      "today": "今日",
-      "after school": "放課後に",
-      "in the morning": "朝に"
+      "in the library": "図書館で",
+      "at home": "家で"
     },
     "be": {
       "be": "である"
@@ -107,11 +117,26 @@
     "述語の残り": {
       "quiet": "静か",
       "busy": "いそがしい",
-      "happy": "うれしい"
+      "happy": "うれしい",
+      "tired": "つかれている"
+    },
+    "時": {
+      "before lunch": "昼食の前に",
+      "at breakfast": "朝食のときに",
+      "today": "今日",
+      "after school": "放課後に",
+      "in the morning": "朝に",
+      "at a red light": "赤信号のときに"
     },
     "否定": {
       "does not": "〜しない",
       "am not": "〜ではない"
+    },
+    "support": {
+      "": "する",
+      "did": "した",
+      "be": "です",
+      "was": "だった"
     },
     "頻度": {
       "often": "よく",
@@ -126,15 +151,18 @@
     },
     "助動詞＋否定": {
       "cannot": "〜できない（可能だとは言えない）",
-      "will not": "〜しないつもり（そうならないと言い切る）",
       "might not": "〜しないかもしれない（言い切れないが、ありえる）"
     }
   },
+  "level2Units": {
+    "degree": "できる・かもしれない・必要・おすすめ",
+    "patterns": "否定・頻度"
+  },
   "counts": {
     "level1": 924,
-    "level2": 10,
-    "level3": 19,
-    "total": 953,
+    "level2": 29,
+    "level3": 37,
+    "total": 990,
     "core": 313,
     "pronounPractice": 39,
     "ongoing": 275,
@@ -1287,7 +1315,7 @@
     {
       "key": "change",
       "label": "change",
-      "ja": "取りかえます",
+      "ja": "着がえます",
       "theme": "theme-clean",
       "meaningOrder": [
         "routine",
@@ -13755,8 +13783,8 @@
           "en": "every day"
         },
         "P1": {
-          "ja": "お母さんを",
-          "en": "Mom"
+          "ja": "女の人を",
+          "en": "the woman"
         },
         "P2": {
           "ja": "",
@@ -13767,8 +13795,8 @@
           "en": ""
         }
       },
-      "ja": "彼女は毎日ここでお母さんを待ちます。",
-      "en": "She waits for Mom here every day.",
+      "ja": "彼女は毎日ここで女の人を待ちます。",
+      "en": "She waits for the woman here every day.",
       "frame": "one-parameter",
       "authorship": "original-six-slots-v1",
       "meaning": "routine",
@@ -13785,7 +13813,7 @@
         ],
         [
           "P1",
-          "Mom"
+          "the woman"
         ],
         [
           "place",
@@ -13828,8 +13856,8 @@
           "en": "now"
         },
         "P1": {
-          "ja": "お母さんを",
-          "en": "Mom"
+          "ja": "女の人を",
+          "en": "the woman"
         },
         "P2": {
           "ja": "",
@@ -13840,8 +13868,8 @@
           "en": "is"
         }
       },
-      "ja": "彼女は今ここでお母さんを待っています。",
-      "en": "She is waiting for Mom here now.",
+      "ja": "彼女は今ここで女の人を待っています。",
+      "en": "She is waiting for the woman here now.",
       "frame": "one-parameter",
       "authorship": "original-six-slots-v1",
       "meaning": "ongoing",
@@ -13862,7 +13890,7 @@
         ],
         [
           "P1",
-          "Mom"
+          "the woman"
         ],
         [
           "place",
@@ -13905,8 +13933,8 @@
           "en": "yesterday"
         },
         "P1": {
-          "ja": "お母さんを",
-          "en": "Mom"
+          "ja": "女の人を",
+          "en": "the woman"
         },
         "P2": {
           "ja": "",
@@ -13917,8 +13945,8 @@
           "en": ""
         }
       },
-      "ja": "彼女は昨日ここでお母さんを待ちました。",
-      "en": "She waited for Mom here yesterday.",
+      "ja": "彼女は昨日ここで女の人を待ちました。",
+      "en": "She waited for the woman here yesterday.",
       "frame": "one-parameter",
       "authorship": "original-six-slots-v1",
       "meaning": "past",
@@ -13935,7 +13963,7 @@
         ],
         [
           "P1",
-          "Mom"
+          "the woman"
         ],
         [
           "place",
@@ -17391,7 +17419,7 @@
         },
         "predicate": {
           "ja": "切っている",
-          "en": "cuting"
+          "en": "cutting"
         },
         "place": {
           "ja": "家で",
@@ -17415,7 +17443,7 @@
         }
       },
       "ja": "私たちは今家でりんごを切っています。",
-      "en": "We are cuting an apple at home now.",
+      "en": "We are cutting an apple at home now.",
       "frame": "one-parameter",
       "authorship": "original-six-slots-v1",
       "meaning": "ongoing",
@@ -17432,7 +17460,7 @@
         ],
         [
           "predicate",
-          "cuting"
+          "cutting"
         ],
         [
           "P1",
@@ -17614,7 +17642,7 @@
         },
         "predicate": {
           "ja": "切っている",
-          "en": "cuting"
+          "en": "cutting"
         },
         "place": {
           "ja": "家で",
@@ -17638,7 +17666,7 @@
         }
       },
       "ja": "彼らは今家で紙を切っています。",
-      "en": "They are cuting paper at home now.",
+      "en": "They are cutting paper at home now.",
       "frame": "one-parameter",
       "authorship": "original-six-slots-v1",
       "meaning": "ongoing",
@@ -17655,7 +17683,7 @@
         ],
         [
           "predicate",
-          "cuting"
+          "cutting"
         ],
         [
           "P1",
@@ -17837,7 +17865,7 @@
         },
         "predicate": {
           "ja": "切っている",
-          "en": "cuting"
+          "en": "cutting"
         },
         "place": {
           "ja": "家で",
@@ -17861,7 +17889,7 @@
         }
       },
       "ja": "私は今家でパンを切っています。",
-      "en": "I am cuting bread at home now.",
+      "en": "I am cutting bread at home now.",
       "frame": "one-parameter",
       "authorship": "original-six-slots-v1",
       "meaning": "ongoing",
@@ -17878,7 +17906,7 @@
         ],
         [
           "predicate",
-          "cuting"
+          "cutting"
         ],
         [
           "P1",
@@ -26047,7 +26075,7 @@
           "en": "every day"
         },
         "P1": {
-          "ja": "catの",
+          "ja": "「ねこ」を表す英単語の",
           "en": "cat"
         },
         "P2": {
@@ -26059,7 +26087,7 @@
           "en": ""
         }
       },
-      "ja": "彼は毎日学校でcatのつづりを言います。",
+      "ja": "彼は毎日学校で「ねこ」を表す英単語のつづりを言います。",
       "en": "He spells cat at school every day.",
       "frame": "one-parameter",
       "authorship": "original-six-slots-v1",
@@ -26120,7 +26148,7 @@
           "en": "now"
         },
         "P1": {
-          "ja": "catの",
+          "ja": "「ねこ」を表す英単語の",
           "en": "cat"
         },
         "P2": {
@@ -26132,7 +26160,7 @@
           "en": "is"
         }
       },
-      "ja": "彼は今学校でcatのつづりを言っています。",
+      "ja": "彼は今学校で「ねこ」を表す英単語のつづりを言っています。",
       "en": "He is spelling cat at school now.",
       "frame": "one-parameter",
       "authorship": "original-six-slots-v1",
@@ -26197,7 +26225,7 @@
           "en": "yesterday"
         },
         "P1": {
-          "ja": "catの",
+          "ja": "「ねこ」を表す英単語の",
           "en": "cat"
         },
         "P2": {
@@ -26209,7 +26237,7 @@
           "en": ""
         }
       },
-      "ja": "彼は昨日学校でcatのつづりを言いました。",
+      "ja": "彼は昨日学校で「ねこ」を表す英単語のつづりを言いました。",
       "en": "He spelled cat at school yesterday.",
       "frame": "one-parameter",
       "authorship": "original-six-slots-v1",
@@ -26270,7 +26298,7 @@
           "en": "every day"
         },
         "P1": {
-          "ja": "dogの",
+          "ja": "「いぬ」を表す英単語の",
           "en": "dog"
         },
         "P2": {
@@ -26282,7 +26310,7 @@
           "en": ""
         }
       },
-      "ja": "彼女は毎日学校でdogのつづりを言います。",
+      "ja": "彼女は毎日学校で「いぬ」を表す英単語のつづりを言います。",
       "en": "She spells dog at school every day.",
       "frame": "one-parameter",
       "authorship": "original-six-slots-v1",
@@ -26343,7 +26371,7 @@
           "en": "now"
         },
         "P1": {
-          "ja": "dogの",
+          "ja": "「いぬ」を表す英単語の",
           "en": "dog"
         },
         "P2": {
@@ -26355,7 +26383,7 @@
           "en": "is"
         }
       },
-      "ja": "彼女は今学校でdogのつづりを言っています。",
+      "ja": "彼女は今学校で「いぬ」を表す英単語のつづりを言っています。",
       "en": "She is spelling dog at school now.",
       "frame": "one-parameter",
       "authorship": "original-six-slots-v1",
@@ -26420,7 +26448,7 @@
           "en": "yesterday"
         },
         "P1": {
-          "ja": "dogの",
+          "ja": "「いぬ」を表す英単語の",
           "en": "dog"
         },
         "P2": {
@@ -26432,7 +26460,7 @@
           "en": ""
         }
       },
-      "ja": "彼女は昨日学校でdogのつづりを言いました。",
+      "ja": "彼女は昨日学校で「いぬ」を表す英単語のつづりを言いました。",
       "en": "She spelled dog at school yesterday.",
       "frame": "one-parameter",
       "authorship": "original-six-slots-v1",
@@ -26493,7 +26521,7 @@
           "en": "every day"
         },
         "P1": {
-          "ja": "birdの",
+          "ja": "「とり」を表す英単語の",
           "en": "bird"
         },
         "P2": {
@@ -26505,7 +26533,7 @@
           "en": ""
         }
       },
-      "ja": "それは毎日学校でbirdのつづりを言います。",
+      "ja": "それは毎日学校で「とり」を表す英単語のつづりを言います。",
       "en": "It spells bird at school every day.",
       "frame": "one-parameter",
       "authorship": "original-six-slots-v1",
@@ -26566,7 +26594,7 @@
           "en": "now"
         },
         "P1": {
-          "ja": "birdの",
+          "ja": "「とり」を表す英単語の",
           "en": "bird"
         },
         "P2": {
@@ -26578,7 +26606,7 @@
           "en": "is"
         }
       },
-      "ja": "それは今学校でbirdのつづりを言っています。",
+      "ja": "それは今学校で「とり」を表す英単語のつづりを言っています。",
       "en": "It is spelling bird at school now.",
       "frame": "one-parameter",
       "authorship": "original-six-slots-v1",
@@ -26643,7 +26671,7 @@
           "en": "yesterday"
         },
         "P1": {
-          "ja": "birdの",
+          "ja": "「とり」を表す英単語の",
           "en": "bird"
         },
         "P2": {
@@ -26655,7 +26683,7 @@
           "en": ""
         }
       },
-      "ja": "それは昨日学校でbirdのつづりを言いました。",
+      "ja": "それは昨日学校で「とり」を表す英単語のつづりを言いました。",
       "en": "It spelled bird at school yesterday.",
       "frame": "one-parameter",
       "authorship": "original-six-slots-v1",
@@ -39342,8 +39370,8 @@
           "en": "every day"
         },
         "P1": {
-          "ja": "弟に",
-          "en": "our brother"
+          "ja": "彼に",
+          "en": "him"
         },
         "P2": {
           "ja": "シールを",
@@ -39354,8 +39382,8 @@
           "en": ""
         }
       },
-      "ja": "私たちは毎日家で弟にシールをあげます。",
-      "en": "We give our brother a sticker at home every day.",
+      "ja": "私たちは毎日家で彼にシールをあげます。",
+      "en": "We give him a sticker at home every day.",
       "frame": "recipient-thing",
       "authorship": "original-six-slots-v1",
       "meaning": "routine",
@@ -39372,7 +39400,7 @@
         ],
         [
           "P1",
-          "our brother"
+          "him"
         ],
         [
           "P2",
@@ -39419,8 +39447,8 @@
           "en": "now"
         },
         "P1": {
-          "ja": "弟に",
-          "en": "our brother"
+          "ja": "彼に",
+          "en": "him"
         },
         "P2": {
           "ja": "シールを",
@@ -39431,8 +39459,8 @@
           "en": "are"
         }
       },
-      "ja": "私たちは今家で弟にシールをあげています。",
-      "en": "We are giving our brother a sticker at home now.",
+      "ja": "私たちは今家で彼にシールをあげています。",
+      "en": "We are giving him a sticker at home now.",
       "frame": "recipient-thing",
       "authorship": "original-six-slots-v1",
       "meaning": "ongoing",
@@ -39453,7 +39481,7 @@
         ],
         [
           "P1",
-          "our brother"
+          "him"
         ],
         [
           "P2",
@@ -39500,8 +39528,8 @@
           "en": "yesterday"
         },
         "P1": {
-          "ja": "弟に",
-          "en": "our brother"
+          "ja": "彼に",
+          "en": "him"
         },
         "P2": {
           "ja": "シールを",
@@ -39512,8 +39540,8 @@
           "en": ""
         }
       },
-      "ja": "私たちは昨日家で弟にシールをあげました。",
-      "en": "We gave our brother a sticker at home yesterday.",
+      "ja": "私たちは昨日家で彼にシールをあげました。",
+      "en": "We gave him a sticker at home yesterday.",
       "frame": "recipient-thing",
       "authorship": "original-six-slots-v1",
       "meaning": "past",
@@ -39530,7 +39558,7 @@
         ],
         [
           "P1",
-          "our brother"
+          "him"
         ],
         [
           "P2",
@@ -39812,8 +39840,8 @@
           "en": "every day"
         },
         "P1": {
-          "ja": "妹に",
-          "en": "my sister"
+          "ja": "彼女に",
+          "en": "her"
         },
         "P2": {
           "ja": "花を",
@@ -39824,8 +39852,8 @@
           "en": ""
         }
       },
-      "ja": "私は毎日家で妹に花をあげます。",
-      "en": "I give my sister a flower at home every day.",
+      "ja": "私は毎日家で彼女に花をあげます。",
+      "en": "I give her a flower at home every day.",
       "frame": "recipient-thing",
       "authorship": "original-six-slots-v1",
       "meaning": "routine",
@@ -39842,7 +39870,7 @@
         ],
         [
           "P1",
-          "my sister"
+          "her"
         ],
         [
           "P2",
@@ -39889,8 +39917,8 @@
           "en": "now"
         },
         "P1": {
-          "ja": "妹に",
-          "en": "my sister"
+          "ja": "彼女に",
+          "en": "her"
         },
         "P2": {
           "ja": "花を",
@@ -39901,8 +39929,8 @@
           "en": "am"
         }
       },
-      "ja": "私は今家で妹に花をあげています。",
-      "en": "I am giving my sister a flower at home now.",
+      "ja": "私は今家で彼女に花をあげています。",
+      "en": "I am giving her a flower at home now.",
       "frame": "recipient-thing",
       "authorship": "original-six-slots-v1",
       "meaning": "ongoing",
@@ -39923,7 +39951,7 @@
         ],
         [
           "P1",
-          "my sister"
+          "her"
         ],
         [
           "P2",
@@ -39970,8 +39998,8 @@
           "en": "yesterday"
         },
         "P1": {
-          "ja": "妹に",
-          "en": "my sister"
+          "ja": "彼女に",
+          "en": "her"
         },
         "P2": {
           "ja": "花を",
@@ -39982,8 +40010,8 @@
           "en": ""
         }
       },
-      "ja": "私は昨日家で妹に花をあげました。",
-      "en": "I gave my sister a flower at home yesterday.",
+      "ja": "私は昨日家で彼女に花をあげました。",
+      "en": "I gave her a flower at home yesterday.",
       "frame": "recipient-thing",
       "authorship": "original-six-slots-v1",
       "meaning": "past",
@@ -40000,7 +40028,7 @@
         ],
         [
           "P1",
-          "my sister"
+          "her"
         ],
         [
           "P2",
@@ -42566,8 +42594,8 @@
           "en": "every day"
         },
         "P1": {
-          "ja": "弟に",
-          "en": "our brother"
+          "ja": "彼に",
+          "en": "him"
         },
         "P2": {
           "ja": "ロボットを",
@@ -42578,8 +42606,8 @@
           "en": ""
         }
       },
-      "ja": "私たちは毎日家で弟にロボットを見せます。",
-      "en": "We show our brother a robot at home every day.",
+      "ja": "私たちは毎日家で彼にロボットを見せます。",
+      "en": "We show him a robot at home every day.",
       "frame": "recipient-thing",
       "authorship": "original-six-slots-v1",
       "meaning": "routine",
@@ -42596,7 +42624,7 @@
         ],
         [
           "P1",
-          "our brother"
+          "him"
         ],
         [
           "P2",
@@ -42643,8 +42671,8 @@
           "en": "now"
         },
         "P1": {
-          "ja": "弟に",
-          "en": "our brother"
+          "ja": "彼に",
+          "en": "him"
         },
         "P2": {
           "ja": "ロボットを",
@@ -42655,8 +42683,8 @@
           "en": "are"
         }
       },
-      "ja": "私たちは今家で弟にロボットを見せています。",
-      "en": "We are showing our brother a robot at home now.",
+      "ja": "私たちは今家で彼にロボットを見せています。",
+      "en": "We are showing him a robot at home now.",
       "frame": "recipient-thing",
       "authorship": "original-six-slots-v1",
       "meaning": "ongoing",
@@ -42677,7 +42705,7 @@
         ],
         [
           "P1",
-          "our brother"
+          "him"
         ],
         [
           "P2",
@@ -42724,8 +42752,8 @@
           "en": "yesterday"
         },
         "P1": {
-          "ja": "弟に",
-          "en": "our brother"
+          "ja": "彼に",
+          "en": "him"
         },
         "P2": {
           "ja": "ロボットを",
@@ -42736,8 +42764,8 @@
           "en": ""
         }
       },
-      "ja": "私たちは昨日家で弟にロボットを見せました。",
-      "en": "We showed our brother a robot at home yesterday.",
+      "ja": "私たちは昨日家で彼にロボットを見せました。",
+      "en": "We showed him a robot at home yesterday.",
       "frame": "recipient-thing",
       "authorship": "original-six-slots-v1",
       "meaning": "past",
@@ -42754,7 +42782,7 @@
         ],
         [
           "P1",
-          "our brother"
+          "him"
         ],
         [
           "P2",
@@ -42801,8 +42829,8 @@
           "en": "every day"
         },
         "P1": {
-          "ja": "妹に",
-          "en": "their sister"
+          "ja": "私に",
+          "en": "me"
         },
         "P2": {
           "ja": "予定を",
@@ -42813,8 +42841,8 @@
           "en": ""
         }
       },
-      "ja": "彼らは毎日家で妹に予定を伝えます。",
-      "en": "They tell their sister the plan at home every day.",
+      "ja": "彼らは毎日家で私に予定を伝えます。",
+      "en": "They tell me the plan at home every day.",
       "frame": "recipient-thing",
       "authorship": "original-six-slots-v1",
       "meaning": "routine",
@@ -42831,7 +42859,7 @@
         ],
         [
           "P1",
-          "their sister"
+          "me"
         ],
         [
           "P2",
@@ -42878,8 +42906,8 @@
           "en": "now"
         },
         "P1": {
-          "ja": "妹に",
-          "en": "their sister"
+          "ja": "私に",
+          "en": "me"
         },
         "P2": {
           "ja": "予定を",
@@ -42890,8 +42918,8 @@
           "en": "are"
         }
       },
-      "ja": "彼らは今家で妹に予定を伝えています。",
-      "en": "They are telling their sister the plan at home now.",
+      "ja": "彼らは今家で私に予定を伝えています。",
+      "en": "They are telling me the plan at home now.",
       "frame": "recipient-thing",
       "authorship": "original-six-slots-v1",
       "meaning": "ongoing",
@@ -42912,7 +42940,7 @@
         ],
         [
           "P1",
-          "their sister"
+          "me"
         ],
         [
           "P2",
@@ -42959,8 +42987,8 @@
           "en": "yesterday"
         },
         "P1": {
-          "ja": "妹に",
-          "en": "their sister"
+          "ja": "私に",
+          "en": "me"
         },
         "P2": {
           "ja": "予定を",
@@ -42971,8 +42999,8 @@
           "en": ""
         }
       },
-      "ja": "彼らは昨日家で妹に予定を伝えました。",
-      "en": "They told their sister the plan at home yesterday.",
+      "ja": "彼らは昨日家で私に予定を伝えました。",
+      "en": "They told me the plan at home yesterday.",
       "frame": "recipient-thing",
       "authorship": "original-six-slots-v1",
       "meaning": "past",
@@ -42989,7 +43017,7 @@
         ],
         [
           "P1",
-          "their sister"
+          "me"
         ],
         [
           "P2",
@@ -43971,16 +43999,16 @@
           "en": "asks"
         },
         "place": {
-          "ja": "学校で",
-          "en": "at school"
+          "ja": "",
+          "en": ""
         },
         "time": {
-          "ja": "毎日",
-          "en": "every day"
+          "ja": "登校初日に",
+          "en": "on the first day of school"
         },
         "P1": {
-          "ja": "友だちに",
-          "en": "his friend"
+          "ja": "新しいクラスメートに",
+          "en": "a new classmate"
         },
         "P2": {
           "ja": "名前を",
@@ -43991,8 +44019,8 @@
           "en": ""
         }
       },
-      "ja": "彼は毎日学校で友だちに名前をたずねます。",
-      "en": "He asks his friend their name at school every day.",
+      "ja": "彼は登校初日に新しいクラスメートに名前をたずねます。",
+      "en": "He asks a new classmate their name on the first day of school.",
       "frame": "recipient-thing",
       "authorship": "original-six-slots-v1",
       "meaning": "routine",
@@ -44009,19 +44037,15 @@
         ],
         [
           "P1",
-          "his friend"
+          "a new classmate"
         ],
         [
           "P2",
           "their name"
         ],
         [
-          "place",
-          "at school"
-        ],
-        [
           "time",
-          "every day"
+          "on the first day of school"
         ]
       ],
       "scene": {
@@ -44048,16 +44072,16 @@
           "en": "asking"
         },
         "place": {
-          "ja": "学校で",
-          "en": "at school"
+          "ja": "",
+          "en": ""
         },
         "time": {
           "ja": "今",
           "en": "now"
         },
         "P1": {
-          "ja": "友だちに",
-          "en": "his friend"
+          "ja": "新しいクラスメートに",
+          "en": "a new classmate"
         },
         "P2": {
           "ja": "名前を",
@@ -44068,8 +44092,8 @@
           "en": "is"
         }
       },
-      "ja": "彼は今学校で友だちに名前をたずねています。",
-      "en": "He is asking his friend their name at school now.",
+      "ja": "彼は今新しいクラスメートに名前をたずねています。",
+      "en": "He is asking a new classmate their name now.",
       "frame": "recipient-thing",
       "authorship": "original-six-slots-v1",
       "meaning": "ongoing",
@@ -44090,15 +44114,11 @@
         ],
         [
           "P1",
-          "his friend"
+          "a new classmate"
         ],
         [
           "P2",
           "their name"
-        ],
-        [
-          "place",
-          "at school"
         ],
         [
           "time",
@@ -44129,16 +44149,16 @@
           "en": "asked"
         },
         "place": {
-          "ja": "学校で",
-          "en": "at school"
+          "ja": "",
+          "en": ""
         },
         "time": {
           "ja": "昨日",
           "en": "yesterday"
         },
         "P1": {
-          "ja": "友だちに",
-          "en": "his friend"
+          "ja": "新しいクラスメートに",
+          "en": "a new classmate"
         },
         "P2": {
           "ja": "名前を",
@@ -44149,8 +44169,8 @@
           "en": ""
         }
       },
-      "ja": "彼は昨日学校で友だちに名前をたずねました。",
-      "en": "He asked his friend their name at school yesterday.",
+      "ja": "彼は昨日新しいクラスメートに名前をたずねました。",
+      "en": "He asked a new classmate their name yesterday.",
       "frame": "recipient-thing",
       "authorship": "original-six-slots-v1",
       "meaning": "past",
@@ -44167,15 +44187,11 @@
         ],
         [
           "P1",
-          "his friend"
+          "a new classmate"
         ],
         [
           "P2",
           "their name"
-        ],
-        [
-          "place",
-          "at school"
         ],
         [
           "time",
@@ -46495,8 +46511,8 @@
           "en": "every day"
         },
         "P1": {
-          "ja": "妹を",
-          "en": "his sister"
+          "ja": "彼女を",
+          "en": "her"
         },
         "P2": {
           "ja": "",
@@ -46507,8 +46523,8 @@
           "en": ""
         }
       },
-      "ja": "彼は毎日家で妹を手伝います。",
-      "en": "He helps his sister at home every day.",
+      "ja": "彼は毎日家で彼女を手伝います。",
+      "en": "He helps her at home every day.",
       "frame": "one-parameter",
       "authorship": "original-six-slots-v1",
       "meaning": "routine",
@@ -46525,7 +46541,7 @@
         ],
         [
           "P1",
-          "his sister"
+          "her"
         ],
         [
           "place",
@@ -46568,8 +46584,8 @@
           "en": "now"
         },
         "P1": {
-          "ja": "妹を",
-          "en": "his sister"
+          "ja": "彼女を",
+          "en": "her"
         },
         "P2": {
           "ja": "",
@@ -46580,8 +46596,8 @@
           "en": "is"
         }
       },
-      "ja": "彼は今家で妹を手伝っています。",
-      "en": "He is helping his sister at home now.",
+      "ja": "彼は今家で彼女を手伝っています。",
+      "en": "He is helping her at home now.",
       "frame": "one-parameter",
       "authorship": "original-six-slots-v1",
       "meaning": "ongoing",
@@ -46602,7 +46618,7 @@
         ],
         [
           "P1",
-          "his sister"
+          "her"
         ],
         [
           "place",
@@ -46645,8 +46661,8 @@
           "en": "yesterday"
         },
         "P1": {
-          "ja": "妹を",
-          "en": "his sister"
+          "ja": "彼女を",
+          "en": "her"
         },
         "P2": {
           "ja": "",
@@ -46657,8 +46673,8 @@
           "en": ""
         }
       },
-      "ja": "彼は昨日家で妹を手伝いました。",
-      "en": "He helped his sister at home yesterday.",
+      "ja": "彼は昨日家で彼女を手伝いました。",
+      "en": "He helped her at home yesterday.",
       "frame": "one-parameter",
       "authorship": "original-six-slots-v1",
       "meaning": "past",
@@ -46675,7 +46691,7 @@
         ],
         [
           "P1",
-          "his sister"
+          "her"
         ],
         [
           "place",
@@ -48282,8 +48298,8 @@
           "en": "every day"
         },
         "P1": {
-          "ja": "いとこに",
-          "en": "her cousin"
+          "ja": "私に",
+          "en": "me"
         },
         "P2": {
           "ja": "",
@@ -48294,8 +48310,8 @@
           "en": ""
         }
       },
-      "ja": "彼女は毎日駅でいとこに会います。",
-      "en": "She meets her cousin at the station every day.",
+      "ja": "彼女は毎日駅で私に会います。",
+      "en": "She meets me at the station every day.",
       "frame": "one-parameter",
       "authorship": "original-six-slots-v1",
       "meaning": "routine",
@@ -48312,7 +48328,7 @@
         ],
         [
           "P1",
-          "her cousin"
+          "me"
         ],
         [
           "place",
@@ -48355,8 +48371,8 @@
           "en": "now"
         },
         "P1": {
-          "ja": "いとこに",
-          "en": "her cousin"
+          "ja": "私に",
+          "en": "me"
         },
         "P2": {
           "ja": "",
@@ -48367,8 +48383,8 @@
           "en": "is"
         }
       },
-      "ja": "彼女は今駅でいとこに会っています。",
-      "en": "She is meeting her cousin at the station now.",
+      "ja": "彼女は今駅で私に会っています。",
+      "en": "She is meeting me at the station now.",
       "frame": "one-parameter",
       "authorship": "original-six-slots-v1",
       "meaning": "ongoing",
@@ -48389,7 +48405,7 @@
         ],
         [
           "P1",
-          "her cousin"
+          "me"
         ],
         [
           "place",
@@ -48432,8 +48448,8 @@
           "en": "yesterday"
         },
         "P1": {
-          "ja": "いとこに",
-          "en": "her cousin"
+          "ja": "私に",
+          "en": "me"
         },
         "P2": {
           "ja": "",
@@ -48444,8 +48460,8 @@
           "en": ""
         }
       },
-      "ja": "彼女は昨日駅でいとこに会いました。",
-      "en": "She met her cousin at the station yesterday.",
+      "ja": "彼女は昨日駅で私に会いました。",
+      "en": "She met me at the station yesterday.",
       "frame": "one-parameter",
       "authorship": "original-six-slots-v1",
       "meaning": "past",
@@ -48462,7 +48478,7 @@
         ],
         [
           "P1",
-          "her cousin"
+          "me"
         ],
         [
           "place",
@@ -48939,8 +48955,8 @@
           "en": "on Sundays"
         },
         "P1": {
-          "ja": "いとこのところに",
-          "en": "their cousin"
+          "ja": "彼のところに",
+          "en": "him"
         },
         "P2": {
           "ja": "",
@@ -48951,8 +48967,8 @@
           "en": ""
         }
       },
-      "ja": "彼らは日曜日にいとこのところに遊びに行きます。",
-      "en": "They visit their cousin on Sundays.",
+      "ja": "彼らは日曜日に彼のところに遊びに行きます。",
+      "en": "They visit him on Sundays.",
       "frame": "one-parameter",
       "authorship": "original-six-slots-v1",
       "meaning": "routine",
@@ -48969,7 +48985,7 @@
         ],
         [
           "P1",
-          "their cousin"
+          "him"
         ],
         [
           "time",
@@ -49008,8 +49024,8 @@
           "en": "now"
         },
         "P1": {
-          "ja": "いとこのところに",
-          "en": "their cousin"
+          "ja": "彼のところに",
+          "en": "him"
         },
         "P2": {
           "ja": "",
@@ -49020,8 +49036,8 @@
           "en": "are"
         }
       },
-      "ja": "彼らは今いとこのところに遊びに行っています。",
-      "en": "They are visiting their cousin now.",
+      "ja": "彼らは今彼のところに遊びに行っています。",
+      "en": "They are visiting him now.",
       "frame": "one-parameter",
       "authorship": "original-six-slots-v1",
       "meaning": "ongoing",
@@ -49042,7 +49058,7 @@
         ],
         [
           "P1",
-          "their cousin"
+          "him"
         ],
         [
           "time",
@@ -49081,8 +49097,8 @@
           "en": "yesterday"
         },
         "P1": {
-          "ja": "いとこのところに",
-          "en": "their cousin"
+          "ja": "彼のところに",
+          "en": "him"
         },
         "P2": {
           "ja": "",
@@ -49093,8 +49109,8 @@
           "en": ""
         }
       },
-      "ja": "彼らは昨日いとこのところに遊びに行きました。",
-      "en": "They visited their cousin yesterday.",
+      "ja": "彼らは昨日彼のところに遊びに行きました。",
+      "en": "They visited him yesterday.",
       "frame": "one-parameter",
       "authorship": "original-six-slots-v1",
       "meaning": "past",
@@ -49111,7 +49127,7 @@
         ],
         [
           "P1",
-          "their cousin"
+          "him"
         ],
         [
           "time",
@@ -49357,8 +49373,8 @@
           "en": "at home"
         },
         "time": {
-          "ja": "毎日",
-          "en": "every day"
+          "ja": "年に一度",
+          "en": "once a year"
         },
         "P1": {
           "ja": "誕生日会に友だちを",
@@ -49373,8 +49389,8 @@
           "en": ""
         }
       },
-      "ja": "あなたは毎日家で誕生日会に友だちを招きます。",
-      "en": "You invite your friend to your birthday party at home every day.",
+      "ja": "あなたは年に一度家で誕生日会に友だちを招きます。",
+      "en": "You invite your friend to your birthday party at home once a year.",
       "frame": "one-parameter",
       "authorship": "original-six-slots-v1",
       "meaning": "routine",
@@ -49399,7 +49415,7 @@
         ],
         [
           "time",
-          "every day"
+          "once a year"
         ]
       ],
       "scene": {
@@ -49583,12 +49599,12 @@
           "en": "at home"
         },
         "time": {
-          "ja": "毎日",
-          "en": "every day"
+          "ja": "年に一度",
+          "en": "once a year"
         },
         "P1": {
-          "ja": "誕生日会にいとこを",
-          "en": "his cousin to his birthday party"
+          "ja": "誕生日会に男の子を",
+          "en": "the boy to the birthday party"
         },
         "P2": {
           "ja": "",
@@ -49599,8 +49615,8 @@
           "en": ""
         }
       },
-      "ja": "彼は毎日家で誕生日会にいとこを招きます。",
-      "en": "He invites his cousin to his birthday party at home every day.",
+      "ja": "彼は年に一度家で誕生日会に男の子を招きます。",
+      "en": "He invites the boy to the birthday party at home once a year.",
       "frame": "one-parameter",
       "authorship": "original-six-slots-v1",
       "meaning": "routine",
@@ -49617,7 +49633,7 @@
         ],
         [
           "P1",
-          "his cousin to his birthday party"
+          "the boy to the birthday party"
         ],
         [
           "place",
@@ -49625,7 +49641,7 @@
         ],
         [
           "time",
-          "every day"
+          "once a year"
         ]
       ],
       "scene": {
@@ -49660,8 +49676,8 @@
           "en": "now"
         },
         "P1": {
-          "ja": "誕生日会にいとこを",
-          "en": "his cousin to his birthday party"
+          "ja": "誕生日会に男の子を",
+          "en": "the boy to the birthday party"
         },
         "P2": {
           "ja": "",
@@ -49672,8 +49688,8 @@
           "en": "is"
         }
       },
-      "ja": "彼は今家で誕生日会にいとこを招いています。",
-      "en": "He is inviting his cousin to his birthday party at home now.",
+      "ja": "彼は今家で誕生日会に男の子を招いています。",
+      "en": "He is inviting the boy to the birthday party at home now.",
       "frame": "one-parameter",
       "authorship": "original-six-slots-v1",
       "meaning": "ongoing",
@@ -49694,7 +49710,7 @@
         ],
         [
           "P1",
-          "his cousin to his birthday party"
+          "the boy to the birthday party"
         ],
         [
           "place",
@@ -49737,8 +49753,8 @@
           "en": "yesterday"
         },
         "P1": {
-          "ja": "誕生日会にいとこを",
-          "en": "his cousin to his birthday party"
+          "ja": "誕生日会に男の子を",
+          "en": "the boy to the birthday party"
         },
         "P2": {
           "ja": "",
@@ -49749,8 +49765,8 @@
           "en": ""
         }
       },
-      "ja": "彼は昨日家で誕生日会にいとこを招きました。",
-      "en": "He invited his cousin to his birthday party at home yesterday.",
+      "ja": "彼は昨日家で誕生日会に男の子を招きました。",
+      "en": "He invited the boy to the birthday party at home yesterday.",
       "frame": "one-parameter",
       "authorship": "original-six-slots-v1",
       "meaning": "past",
@@ -49767,7 +49783,7 @@
         ],
         [
           "P1",
-          "his cousin to his birthday party"
+          "the boy to the birthday party"
         ],
         [
           "place",
@@ -49806,8 +49822,8 @@
           "en": "at home"
         },
         "time": {
-          "ja": "毎日",
-          "en": "every day"
+          "ja": "年に一度",
+          "en": "once a year"
         },
         "P1": {
           "ja": "誕生日会におとなりさんを",
@@ -49822,8 +49838,8 @@
           "en": ""
         }
       },
-      "ja": "彼女は毎日家で誕生日会におとなりさんを招きます。",
-      "en": "She invites her neighbor to her birthday party at home every day.",
+      "ja": "彼女は年に一度家で誕生日会におとなりさんを招きます。",
+      "en": "She invites her neighbor to her birthday party at home once a year.",
       "frame": "one-parameter",
       "authorship": "original-six-slots-v1",
       "meaning": "routine",
@@ -49848,7 +49864,7 @@
         ],
         [
           "time",
-          "every day"
+          "once a year"
         ]
       ],
       "scene": {
@@ -50252,8 +50268,8 @@
           "en": "at school"
         },
         "time": {
-          "ja": "毎日",
-          "en": "every day"
+          "ja": "新学期に",
+          "en": "at the start of the school year"
         },
         "P1": {
           "ja": "チームに",
@@ -50268,8 +50284,8 @@
           "en": ""
         }
       },
-      "ja": "私たちは毎日学校でチームに加わります。",
-      "en": "We join the team at school every day.",
+      "ja": "私たちは新学期に学校でチームに加わります。",
+      "en": "We join the team at school at the start of the school year.",
       "frame": "one-parameter",
       "authorship": "original-six-slots-v1",
       "meaning": "routine",
@@ -50294,7 +50310,7 @@
         ],
         [
           "time",
-          "every day"
+          "at the start of the school year"
         ]
       ],
       "scene": {
@@ -50475,8 +50491,8 @@
           "en": "at school"
         },
         "time": {
-          "ja": "毎日",
-          "en": "every day"
+          "ja": "新学期に",
+          "en": "at the start of the school year"
         },
         "P1": {
           "ja": "ダンスクラブに",
@@ -50491,8 +50507,8 @@
           "en": ""
         }
       },
-      "ja": "彼らは毎日学校でダンスクラブに加わります。",
-      "en": "They join the dance club at school every day.",
+      "ja": "彼らは新学期に学校でダンスクラブに加わります。",
+      "en": "They join the dance club at school at the start of the school year.",
       "frame": "one-parameter",
       "authorship": "original-six-slots-v1",
       "meaning": "routine",
@@ -50517,7 +50533,7 @@
         ],
         [
           "time",
-          "every day"
+          "at the start of the school year"
         ]
       ],
       "scene": {
@@ -50702,8 +50718,8 @@
           "en": "every day"
         },
         "P1": {
-          "ja": "弟に",
-          "en": "my brother"
+          "ja": "彼に",
+          "en": "him"
         },
         "P2": {
           "ja": "新しいゲームを",
@@ -50714,8 +50730,8 @@
           "en": ""
         }
       },
-      "ja": "私は毎日家で弟に新しいゲームを教えます。",
-      "en": "I teach my brother a new game at home every day.",
+      "ja": "私は毎日家で彼に新しいゲームを教えます。",
+      "en": "I teach him a new game at home every day.",
       "frame": "recipient-thing",
       "authorship": "original-six-slots-v1",
       "meaning": "routine",
@@ -50732,7 +50748,7 @@
         ],
         [
           "P1",
-          "my brother"
+          "him"
         ],
         [
           "P2",
@@ -50779,8 +50795,8 @@
           "en": "now"
         },
         "P1": {
-          "ja": "弟に",
-          "en": "my brother"
+          "ja": "彼に",
+          "en": "him"
         },
         "P2": {
           "ja": "新しいゲームを",
@@ -50791,8 +50807,8 @@
           "en": "am"
         }
       },
-      "ja": "私は今家で弟に新しいゲームを教えています。",
-      "en": "I am teaching my brother a new game at home now.",
+      "ja": "私は今家で彼に新しいゲームを教えています。",
+      "en": "I am teaching him a new game at home now.",
       "frame": "recipient-thing",
       "authorship": "original-six-slots-v1",
       "meaning": "ongoing",
@@ -50813,7 +50829,7 @@
         ],
         [
           "P1",
-          "my brother"
+          "him"
         ],
         [
           "P2",
@@ -50860,8 +50876,8 @@
           "en": "yesterday"
         },
         "P1": {
-          "ja": "弟に",
-          "en": "my brother"
+          "ja": "彼に",
+          "en": "him"
         },
         "P2": {
           "ja": "新しいゲームを",
@@ -50872,8 +50888,8 @@
           "en": ""
         }
       },
-      "ja": "私は昨日家で弟に新しいゲームを教えました。",
-      "en": "I taught my brother a new game at home yesterday.",
+      "ja": "私は昨日家で彼に新しいゲームを教えました。",
+      "en": "I taught him a new game at home yesterday.",
       "frame": "recipient-thing",
       "authorship": "original-six-slots-v1",
       "meaning": "past",
@@ -50890,7 +50906,7 @@
         ],
         [
           "P1",
-          "my brother"
+          "him"
         ],
         [
           "P2",
@@ -51175,8 +51191,8 @@
           "en": "every day"
         },
         "P1": {
-          "ja": "妹に",
-          "en": "his sister"
+          "ja": "彼女に",
+          "en": "her"
         },
         "P2": {
           "ja": "ダンスを",
@@ -51187,8 +51203,8 @@
           "en": ""
         }
       },
-      "ja": "彼は毎日家で妹にダンスを教えます。",
-      "en": "He teaches his sister a dance at home every day.",
+      "ja": "彼は毎日家で彼女にダンスを教えます。",
+      "en": "He teaches her a dance at home every day.",
       "frame": "recipient-thing",
       "authorship": "original-six-slots-v1",
       "meaning": "routine",
@@ -51205,7 +51221,7 @@
         ],
         [
           "P1",
-          "his sister"
+          "her"
         ],
         [
           "P2",
@@ -51252,8 +51268,8 @@
           "en": "now"
         },
         "P1": {
-          "ja": "妹に",
-          "en": "his sister"
+          "ja": "彼女に",
+          "en": "her"
         },
         "P2": {
           "ja": "ダンスを",
@@ -51264,8 +51280,8 @@
           "en": "is"
         }
       },
-      "ja": "彼は今家で妹にダンスを教えています。",
-      "en": "He is teaching his sister a dance at home now.",
+      "ja": "彼は今家で彼女にダンスを教えています。",
+      "en": "He is teaching her a dance at home now.",
       "frame": "recipient-thing",
       "authorship": "original-six-slots-v1",
       "meaning": "ongoing",
@@ -51286,7 +51302,7 @@
         ],
         [
           "P1",
-          "his sister"
+          "her"
         ],
         [
           "P2",
@@ -51333,8 +51349,8 @@
           "en": "yesterday"
         },
         "P1": {
-          "ja": "妹に",
-          "en": "his sister"
+          "ja": "彼女に",
+          "en": "her"
         },
         "P2": {
           "ja": "ダンスを",
@@ -51345,8 +51361,8 @@
           "en": ""
         }
       },
-      "ja": "彼は昨日家で妹にダンスを教えました。",
-      "en": "He taught his sister a dance at home yesterday.",
+      "ja": "彼は昨日家で彼女にダンスを教えました。",
+      "en": "He taught her a dance at home yesterday.",
       "frame": "recipient-thing",
       "authorship": "original-six-slots-v1",
       "meaning": "past",
@@ -51363,7 +51379,7 @@
         ],
         [
           "P1",
-          "his sister"
+          "her"
         ],
         [
           "P2",
@@ -51471,7 +51487,7 @@
           "en": "She"
         },
         "predicate": {
-          "ja": "ついていっている",
+          "ja": "ついて行っている",
           "en": "following"
         },
         "place": {
@@ -51495,7 +51511,7 @@
           "en": "is"
         }
       },
-      "ja": "彼女は今公園で先生についていっています。",
+      "ja": "彼女は今公園で先生について行っています。",
       "en": "She is following her teacher in the park now.",
       "frame": "one-parameter",
       "authorship": "original-six-slots-v1",
@@ -51633,8 +51649,8 @@
           "en": "every day"
         },
         "P1": {
-          "ja": "お父さんに",
-          "en": "Dad"
+          "ja": "男の人に",
+          "en": "the man"
         },
         "P2": {
           "ja": "",
@@ -51645,8 +51661,8 @@
           "en": ""
         }
       },
-      "ja": "彼は毎日公園でお父さんについていきます。",
-      "en": "He follows Dad in the park every day.",
+      "ja": "彼は毎日公園で男の人についていきます。",
+      "en": "He follows the man in the park every day.",
       "frame": "one-parameter",
       "authorship": "original-six-slots-v1",
       "meaning": "routine",
@@ -51663,7 +51679,7 @@
         ],
         [
           "P1",
-          "Dad"
+          "the man"
         ],
         [
           "place",
@@ -51694,7 +51710,7 @@
           "en": "He"
         },
         "predicate": {
-          "ja": "ついていっている",
+          "ja": "ついて行っている",
           "en": "following"
         },
         "place": {
@@ -51706,8 +51722,8 @@
           "en": "now"
         },
         "P1": {
-          "ja": "お父さんに",
-          "en": "Dad"
+          "ja": "男の人に",
+          "en": "the man"
         },
         "P2": {
           "ja": "",
@@ -51718,8 +51734,8 @@
           "en": "is"
         }
       },
-      "ja": "彼は今公園でお父さんについていっています。",
-      "en": "He is following Dad in the park now.",
+      "ja": "彼は今公園で男の人について行っています。",
+      "en": "He is following the man in the park now.",
       "frame": "one-parameter",
       "authorship": "original-six-slots-v1",
       "meaning": "ongoing",
@@ -51740,7 +51756,7 @@
         ],
         [
           "P1",
-          "Dad"
+          "the man"
         ],
         [
           "place",
@@ -51783,8 +51799,8 @@
           "en": "yesterday"
         },
         "P1": {
-          "ja": "お父さんに",
-          "en": "Dad"
+          "ja": "男の人に",
+          "en": "the man"
         },
         "P2": {
           "ja": "",
@@ -51795,8 +51811,8 @@
           "en": ""
         }
       },
-      "ja": "彼は昨日公園でお父さんについていきました。",
-      "en": "He followed Dad in the park yesterday.",
+      "ja": "彼は昨日公園で男の人についていきました。",
+      "en": "He followed the man in the park yesterday.",
       "frame": "one-parameter",
       "authorship": "original-six-slots-v1",
       "meaning": "past",
@@ -51813,7 +51829,7 @@
         ],
         [
           "P1",
-          "Dad"
+          "the man"
         ],
         [
           "place",
@@ -51917,7 +51933,7 @@
           "en": "We"
         },
         "predicate": {
-          "ja": "ついていっている",
+          "ja": "ついて行っている",
           "en": "following"
         },
         "place": {
@@ -51941,7 +51957,7 @@
           "en": "are"
         }
       },
-      "ja": "私たちは今公園で友だちについていっています。",
+      "ja": "私たちは今公園で友だちについて行っています。",
       "en": "We are following our friend in the park now.",
       "frame": "one-parameter",
       "authorship": "original-six-slots-v1",
@@ -53591,7 +53607,7 @@
           "en": "I"
         },
         "predicate": {
-          "ja": "やってみている",
+          "ja": "試している",
           "en": "trying"
         },
         "place": {
@@ -53615,7 +53631,7 @@
           "en": "am"
         }
       },
-      "ja": "私は今学校で新しいゲームをやってみています。",
+      "ja": "私は今学校で新しいゲームを試しています。",
       "en": "I am trying a new game at school now.",
       "frame": "one-parameter",
       "authorship": "original-six-slots-v1",
@@ -53815,7 +53831,7 @@
           "en": "You"
         },
         "predicate": {
-          "ja": "やってみている",
+          "ja": "試している",
           "en": "trying"
         },
         "place": {
@@ -53839,7 +53855,7 @@
           "en": "are"
         }
       },
-      "ja": "あなたは今学校でパズルをやってみています。",
+      "ja": "あなたは今学校でパズルを試しています。",
       "en": "You are trying a puzzle at school now.",
       "frame": "one-parameter",
       "authorship": "original-six-slots-v1",
@@ -54040,7 +54056,7 @@
           "en": "He"
         },
         "predicate": {
-          "ja": "やってみている",
+          "ja": "試している",
           "en": "trying"
         },
         "place": {
@@ -54064,7 +54080,7 @@
           "en": "is"
         }
       },
-      "ja": "彼は今学校で新しいスポーツをやってみています。",
+      "ja": "彼は今学校で新しいスポーツを試しています。",
       "en": "He is trying a new sport at school now.",
       "frame": "one-parameter",
       "authorship": "original-six-slots-v1",
@@ -54648,8 +54664,8 @@
           "en": "every day"
         },
         "P1": {
-          "ja": "妹を",
-          "en": "our sister"
+          "ja": "彼女を",
+          "en": "her"
         },
         "P2": {
           "ja": "うれしい気持ちに",
@@ -54660,8 +54676,8 @@
           "en": ""
         }
       },
-      "ja": "私たちは毎日家で妹をうれしい気持ちにします。",
-      "en": "We make our sister happy at home every day.",
+      "ja": "私たちは毎日家で彼女をうれしい気持ちにします。",
+      "en": "We make her happy at home every day.",
       "frame": "object-description",
       "authorship": "original-six-slots-v1",
       "meaning": "routine",
@@ -54678,7 +54694,7 @@
         ],
         [
           "P1",
-          "our sister"
+          "her"
         ],
         [
           "P2",
@@ -54725,8 +54741,8 @@
           "en": "now"
         },
         "P1": {
-          "ja": "妹を",
-          "en": "our sister"
+          "ja": "彼女を",
+          "en": "her"
         },
         "P2": {
           "ja": "うれしい気持ちに",
@@ -54737,8 +54753,8 @@
           "en": "are"
         }
       },
-      "ja": "私たちは今家で妹をうれしい気持ちにしています。",
-      "en": "We are making our sister happy at home now.",
+      "ja": "私たちは今家で彼女をうれしい気持ちにしています。",
+      "en": "We are making her happy at home now.",
       "frame": "object-description",
       "authorship": "original-six-slots-v1",
       "meaning": "ongoing",
@@ -54759,7 +54775,7 @@
         ],
         [
           "P1",
-          "our sister"
+          "her"
         ],
         [
           "P2",
@@ -54806,8 +54822,8 @@
           "en": "yesterday"
         },
         "P1": {
-          "ja": "妹を",
-          "en": "our sister"
+          "ja": "彼女を",
+          "en": "her"
         },
         "P2": {
           "ja": "うれしい気持ちに",
@@ -54818,8 +54834,8 @@
           "en": ""
         }
       },
-      "ja": "私たちは昨日家で妹をうれしい気持ちにしました。",
-      "en": "We made our sister happy at home yesterday.",
+      "ja": "私たちは昨日家で彼女をうれしい気持ちにしました。",
+      "en": "We made her happy at home yesterday.",
       "frame": "object-description",
       "authorship": "original-six-slots-v1",
       "meaning": "past",
@@ -54836,7 +54852,7 @@
         ],
         [
           "P1",
-          "our sister"
+          "her"
         ],
         [
           "P2",
@@ -57789,7 +57805,7 @@
         },
         "P1": {
           "ja": "青いシャツを",
-          "en": "a blue shirt"
+          "en": "blue shirts"
         },
         "P2": {
           "ja": "",
@@ -57801,7 +57817,7 @@
         }
       },
       "ja": "私たちは日曜日に公園で青いシャツを着ています。",
-      "en": "We wear a blue shirt in the park on Sundays.",
+      "en": "We wear blue shirts in the park on Sundays.",
       "frame": "one-parameter",
       "authorship": "original-six-slots-v1",
       "meaning": "routine",
@@ -57818,7 +57834,7 @@
         ],
         [
           "P1",
-          "a blue shirt"
+          "blue shirts"
         ],
         [
           "place",
@@ -57862,7 +57878,7 @@
         },
         "P1": {
           "ja": "青いシャツを",
-          "en": "a blue shirt"
+          "en": "blue shirts"
         },
         "P2": {
           "ja": "",
@@ -57874,7 +57890,7 @@
         }
       },
       "ja": "私たちは今公園で青いシャツを着ています。",
-      "en": "We are wearing a blue shirt in the park now.",
+      "en": "We are wearing blue shirts in the park now.",
       "frame": "one-parameter",
       "authorship": "original-six-slots-v1",
       "meaning": "ongoing",
@@ -57895,7 +57911,7 @@
         ],
         [
           "P1",
-          "a blue shirt"
+          "blue shirts"
         ],
         [
           "place",
@@ -57939,7 +57955,7 @@
         },
         "P1": {
           "ja": "青いシャツを",
-          "en": "a blue shirt"
+          "en": "blue shirts"
         },
         "P2": {
           "ja": "",
@@ -57951,7 +57967,7 @@
         }
       },
       "ja": "私たちは昨日公園で青いシャツを着ていました。",
-      "en": "We wore a blue shirt in the park yesterday.",
+      "en": "We wore blue shirts in the park yesterday.",
       "frame": "one-parameter",
       "authorship": "original-six-slots-v1",
       "meaning": "past",
@@ -57968,7 +57984,7 @@
         ],
         [
           "P1",
-          "a blue shirt"
+          "blue shirts"
         ],
         [
           "place",
@@ -58012,7 +58028,7 @@
         },
         "P1": {
           "ja": "黄色いコートを",
-          "en": "a yellow coat"
+          "en": "yellow coats"
         },
         "P2": {
           "ja": "",
@@ -58024,7 +58040,7 @@
         }
       },
       "ja": "彼らは日曜日に公園で黄色いコートを着ています。",
-      "en": "They wear a yellow coat in the park on Sundays.",
+      "en": "They wear yellow coats in the park on Sundays.",
       "frame": "one-parameter",
       "authorship": "original-six-slots-v1",
       "meaning": "routine",
@@ -58041,7 +58057,7 @@
         ],
         [
           "P1",
-          "a yellow coat"
+          "yellow coats"
         ],
         [
           "place",
@@ -58085,7 +58101,7 @@
         },
         "P1": {
           "ja": "黄色いコートを",
-          "en": "a yellow coat"
+          "en": "yellow coats"
         },
         "P2": {
           "ja": "",
@@ -58097,7 +58113,7 @@
         }
       },
       "ja": "彼らは今公園で黄色いコートを着ています。",
-      "en": "They are wearing a yellow coat in the park now.",
+      "en": "They are wearing yellow coats in the park now.",
       "frame": "one-parameter",
       "authorship": "original-six-slots-v1",
       "meaning": "ongoing",
@@ -58118,7 +58134,7 @@
         ],
         [
           "P1",
-          "a yellow coat"
+          "yellow coats"
         ],
         [
           "place",
@@ -58162,7 +58178,7 @@
         },
         "P1": {
           "ja": "黄色いコートを",
-          "en": "a yellow coat"
+          "en": "yellow coats"
         },
         "P2": {
           "ja": "",
@@ -58174,7 +58190,7 @@
         }
       },
       "ja": "彼らは昨日公園で黄色いコートを着ていました。",
-      "en": "They wore a yellow coat in the park yesterday.",
+      "en": "They wore yellow coats in the park yesterday.",
       "frame": "one-parameter",
       "authorship": "original-six-slots-v1",
       "meaning": "past",
@@ -58191,7 +58207,7 @@
         ],
         [
           "P1",
-          "a yellow coat"
+          "yellow coats"
         ],
         [
           "place",
@@ -58222,7 +58238,7 @@
           "en": "I"
         },
         "predicate": {
-          "ja": "取りかえます",
+          "ja": "着がえます",
           "en": "change"
         },
         "place": {
@@ -58246,7 +58262,7 @@
           "en": ""
         }
       },
-      "ja": "私は毎日家でシャツを取りかえます。",
+      "ja": "私は毎日家でシャツを着がえます。",
       "en": "I change my shirt at home every day.",
       "frame": "one-parameter",
       "authorship": "original-six-slots-v1",
@@ -58295,7 +58311,7 @@
           "en": "I"
         },
         "predicate": {
-          "ja": "取りかえている",
+          "ja": "着がえている",
           "en": "changing"
         },
         "place": {
@@ -58319,7 +58335,7 @@
           "en": "am"
         }
       },
-      "ja": "私は今家でシャツを取りかえています。",
+      "ja": "私は今家でシャツを着がえています。",
       "en": "I am changing my shirt at home now.",
       "frame": "one-parameter",
       "authorship": "original-six-slots-v1",
@@ -58372,7 +58388,7 @@
           "en": "I"
         },
         "predicate": {
-          "ja": "取りかえます",
+          "ja": "着がえます",
           "en": "changed"
         },
         "place": {
@@ -58396,7 +58412,7 @@
           "en": ""
         }
       },
-      "ja": "私は昨日家でシャツを取りかえました。",
+      "ja": "私は昨日家でシャツを着がえました。",
       "en": "I changed my shirt at home yesterday.",
       "frame": "one-parameter",
       "authorship": "original-six-slots-v1",
@@ -58445,7 +58461,7 @@
           "en": "You"
         },
         "predicate": {
-          "ja": "取りかえます",
+          "ja": "はきかえます",
           "en": "change"
         },
         "place": {
@@ -58469,7 +58485,7 @@
           "en": ""
         }
       },
-      "ja": "あなたは毎日家で靴下を取りかえます。",
+      "ja": "あなたは毎日家で靴下をはきかえます。",
       "en": "You change your socks at home every day.",
       "frame": "one-parameter",
       "authorship": "original-six-slots-v1",
@@ -58519,7 +58535,7 @@
           "en": "You"
         },
         "predicate": {
-          "ja": "取りかえている",
+          "ja": "はきかえている",
           "en": "changing"
         },
         "place": {
@@ -58543,7 +58559,7 @@
           "en": "are"
         }
       },
-      "ja": "あなたは今家で靴下を取りかえています。",
+      "ja": "あなたは今家で靴下をはきかえています。",
       "en": "You are changing your socks at home now.",
       "frame": "one-parameter",
       "authorship": "original-six-slots-v1",
@@ -58597,7 +58613,7 @@
           "en": "You"
         },
         "predicate": {
-          "ja": "取りかえます",
+          "ja": "はきかえます",
           "en": "changed"
         },
         "place": {
@@ -58621,7 +58637,7 @@
           "en": ""
         }
       },
-      "ja": "あなたは昨日家で靴下を取りかえました。",
+      "ja": "あなたは昨日家で靴下をはきかえました。",
       "en": "You changed your socks at home yesterday.",
       "frame": "one-parameter",
       "authorship": "original-six-slots-v1",
@@ -58671,7 +58687,7 @@
           "en": "He"
         },
         "predicate": {
-          "ja": "取りかえます",
+          "ja": "着がえます",
           "en": "changes"
         },
         "place": {
@@ -58684,7 +58700,7 @@
         },
         "P1": {
           "ja": "上着を",
-          "en": "his jackets"
+          "en": "his jacket"
         },
         "P2": {
           "ja": "",
@@ -58695,8 +58711,8 @@
           "en": ""
         }
       },
-      "ja": "彼は毎日家で上着を取りかえます。",
-      "en": "He changes his jackets at home every day.",
+      "ja": "彼は毎日家で上着を着がえます。",
+      "en": "He changes his jacket at home every day.",
       "frame": "one-parameter",
       "authorship": "original-six-slots-v1",
       "meaning": "routine",
@@ -58713,7 +58729,7 @@
         ],
         [
           "P1",
-          "his jackets"
+          "his jacket"
         ],
         [
           "place",
@@ -58744,7 +58760,7 @@
           "en": "He"
         },
         "predicate": {
-          "ja": "取りかえている",
+          "ja": "着がえている",
           "en": "changing"
         },
         "place": {
@@ -58757,7 +58773,7 @@
         },
         "P1": {
           "ja": "上着を",
-          "en": "his jackets"
+          "en": "his jacket"
         },
         "P2": {
           "ja": "",
@@ -58768,8 +58784,8 @@
           "en": "is"
         }
       },
-      "ja": "彼は今家で上着を取りかえています。",
-      "en": "He is changing his jackets at home now.",
+      "ja": "彼は今家で上着を着がえています。",
+      "en": "He is changing his jacket at home now.",
       "frame": "one-parameter",
       "authorship": "original-six-slots-v1",
       "meaning": "ongoing",
@@ -58790,7 +58806,7 @@
         ],
         [
           "P1",
-          "his jackets"
+          "his jacket"
         ],
         [
           "place",
@@ -58821,7 +58837,7 @@
           "en": "He"
         },
         "predicate": {
-          "ja": "取りかえます",
+          "ja": "着がえます",
           "en": "changed"
         },
         "place": {
@@ -58834,7 +58850,7 @@
         },
         "P1": {
           "ja": "上着を",
-          "en": "his jackets"
+          "en": "his jacket"
         },
         "P2": {
           "ja": "",
@@ -58845,8 +58861,8 @@
           "en": ""
         }
       },
-      "ja": "彼は昨日家で上着を取りかえました。",
-      "en": "He changed his jackets at home yesterday.",
+      "ja": "彼は昨日家で上着を着がえました。",
+      "en": "He changed his jacket at home yesterday.",
       "frame": "one-parameter",
       "authorship": "original-six-slots-v1",
       "meaning": "past",
@@ -58863,7 +58879,7 @@
         ],
         [
           "P1",
-          "his jackets"
+          "his jacket"
         ],
         [
           "place",
@@ -61010,7 +61026,7 @@
           "en": "They"
         },
         "predicate": {
-          "ja": "しまっておいている",
+          "ja": "しまっている",
           "en": "keeping"
         },
         "place": {
@@ -61034,7 +61050,7 @@
           "en": "are"
         }
       },
-      "ja": "彼らは今小さな箱に石をしまっておいています。",
+      "ja": "彼らは今小さな箱に石をしまっています。",
       "en": "They are keeping their stones in a little box now.",
       "frame": "object-location",
       "authorship": "original-six-slots-v1",
@@ -61233,7 +61249,7 @@
           "en": "I"
         },
         "predicate": {
-          "ja": "しまっておいている",
+          "ja": "しまっている",
           "en": "keeping"
         },
         "place": {
@@ -61257,7 +61273,7 @@
           "en": "am"
         }
       },
-      "ja": "私は今小さな箱に宝物をしまっておいています。",
+      "ja": "私は今小さな箱に宝物をしまっています。",
       "en": "I am keeping my treasures in a little box now.",
       "frame": "object-location",
       "authorship": "original-six-slots-v1",
@@ -62565,8 +62581,8 @@
           "en": ""
         },
         "time": {
-          "ja": "昨日は",
-          "en": "yesterday"
+          "ja": "去年",
+          "en": "last year"
         },
         "P1": {
           "ja": "",
@@ -62581,8 +62597,8 @@
           "en": "was"
         }
       },
-      "ja": "私は昨日は生徒でした。",
-      "en": "I was a student yesterday.",
+      "ja": "私は去年生徒でした。",
+      "en": "I was a student last year.",
       "frame": "no-parameter",
       "authorship": "original-six-slots-v1",
       "meaning": "past",
@@ -62603,7 +62619,7 @@
         ],
         [
           "time",
-          "yesterday"
+          "last year"
         ]
       ],
       "scene": {
@@ -62611,8 +62627,8 @@
         "subjectReference": "I",
         "viewpoint": "外の話し手と、吹き出しの中の主人公は同じ人。服・髪型・目印をそろえる。",
         "speakerTime": "今",
-        "eventTime": "昨日",
-        "timeCue": "外の話し手は「今日・今」、中の出来事は「昨日」。時点の違いを目印で示す。"
+        "eventTime": "去年",
+        "timeCue": "外の話し手は「今日・今」、中の出来事は「去年」。時点の違いを目印で示す。"
       },
       "statePredicate": true,
       "theme": "theme-read"
@@ -62705,7 +62721,7 @@
           "en": "at the library"
         },
         "time": {
-          "ja": "昨日は",
+          "ja": "昨日",
           "en": "yesterday"
         },
         "P1": {
@@ -62721,7 +62737,7 @@
           "en": "were"
         }
       },
-      "ja": "あなたは昨日は図書館でお手伝い係でした。",
+      "ja": "あなたは昨日図書館でお手伝い係でした。",
       "en": "You were a helper at the library yesterday.",
       "frame": "no-parameter",
       "authorship": "original-six-slots-v1",
@@ -62849,7 +62865,7 @@
           "en": "at school"
         },
         "time": {
-          "ja": "昨日は",
+          "ja": "昨日",
           "en": "yesterday"
         },
         "P1": {
@@ -62865,7 +62881,7 @@
           "en": "was"
         }
       },
-      "ja": "彼は昨日は学校ではチームメイトでした。",
+      "ja": "彼は昨日学校ではチームメイトでした。",
       "en": "He was a teammate at school yesterday.",
       "frame": "no-parameter",
       "authorship": "original-six-slots-v1",
@@ -62923,7 +62939,7 @@
           "en": "at home"
         },
         "time": {
-          "ja": "今日は",
+          "ja": "今日",
           "en": "today"
         },
         "P1": {
@@ -62939,7 +62955,7 @@
           "en": "is"
         }
       },
-      "ja": "彼女は今日は家でうれしいです。",
+      "ja": "彼女は今日家でうれしいです。",
       "en": "She is happy at home today.",
       "frame": "no-parameter",
       "authorship": "original-six-slots-v1",
@@ -62996,7 +63012,7 @@
           "en": "at home"
         },
         "time": {
-          "ja": "昨日は",
+          "ja": "昨日",
           "en": "yesterday"
         },
         "P1": {
@@ -63012,7 +63028,7 @@
           "en": "was"
         }
       },
-      "ja": "彼女は昨日は家でうれしかったです。",
+      "ja": "彼女は昨日家でうれしかったです。",
       "en": "She was happy at home yesterday.",
       "frame": "no-parameter",
       "authorship": "original-six-slots-v1",
@@ -63070,7 +63086,7 @@
           "en": "at school"
         },
         "time": {
-          "ja": "今日は",
+          "ja": "今日",
           "en": "today"
         },
         "P1": {
@@ -63086,7 +63102,7 @@
           "en": "is"
         }
       },
-      "ja": "彼は今日は学校でいそがしいです。",
+      "ja": "彼は今日学校でいそがしいです。",
       "en": "He is busy at school today.",
       "frame": "no-parameter",
       "authorship": "original-six-slots-v1",
@@ -63143,7 +63159,7 @@
           "en": "at school"
         },
         "time": {
-          "ja": "昨日は",
+          "ja": "昨日",
           "en": "yesterday"
         },
         "P1": {
@@ -63159,7 +63175,7 @@
           "en": "was"
         }
       },
-      "ja": "彼は昨日は学校でいそがしかったです。",
+      "ja": "彼は昨日学校でいそがしかったです。",
       "en": "He was busy at school yesterday.",
       "frame": "no-parameter",
       "authorship": "original-six-slots-v1",
@@ -63286,7 +63302,7 @@
           "en": "in the library"
         },
         "time": {
-          "ja": "昨日は",
+          "ja": "昨日",
           "en": "yesterday"
         },
         "P1": {
@@ -63302,7 +63318,7 @@
           "en": "were"
         }
       },
-      "ja": "私たちは昨日は図書館で静かでした。",
+      "ja": "私たちは昨日図書館で静かでした。",
       "en": "We were quiet in the library yesterday.",
       "frame": "no-parameter",
       "authorship": "original-six-slots-v1",
@@ -65629,7 +65645,7 @@
           "en": "I"
         },
         "predicate": {
-          "ja": "かいている",
+          "ja": "絵にかいている",
           "en": "drawing"
         },
         "P1": {
@@ -65668,7 +65684,7 @@
         "timeCue": "外も中も「今」。服・色・目印で同じ人物やものを対応させる。"
       },
       "en": "I am drawing myself now.",
-      "ja": "私は今自分をかいています。",
+      "ja": "私は今自分を絵にかいています。",
       "level": 1,
       "blocks": [
         [
@@ -65705,7 +65721,7 @@
           "en": "You"
         },
         "predicate": {
-          "ja": "かいている",
+          "ja": "絵にかいている",
           "en": "drawing"
         },
         "P1": {
@@ -65745,7 +65761,7 @@
         "listener": "星の髪飾りを付けた主役の女の子"
       },
       "en": "You are drawing yourself now.",
-      "ja": "あなたは今自分をかいています。",
+      "ja": "あなたは今自分を絵にかいています。",
       "level": 1,
       "blocks": [
         [
@@ -65782,7 +65798,7 @@
           "en": "He"
         },
         "predicate": {
-          "ja": "かいている",
+          "ja": "絵にかいている",
           "en": "drawing"
         },
         "P1": {
@@ -65821,7 +65837,7 @@
         "timeCue": "外も中も「今」。服・色・目印で同じ人物やものを対応させる。"
       },
       "en": "He is drawing himself now.",
-      "ja": "彼は今自分をかいています。",
+      "ja": "彼は今自分を絵にかいています。",
       "level": 1,
       "blocks": [
         [
@@ -65858,7 +65874,7 @@
           "en": "She"
         },
         "predicate": {
-          "ja": "かいている",
+          "ja": "絵にかいている",
           "en": "drawing"
         },
         "P1": {
@@ -65897,7 +65913,7 @@
         "timeCue": "外も中も「今」。服・色・目印で同じ人物やものを対応させる。"
       },
       "en": "She is drawing herself now.",
-      "ja": "彼女は今自分をかいています。",
+      "ja": "彼女は今自分を絵にかいています。",
       "level": 1,
       "blocks": [
         [
@@ -65934,7 +65950,7 @@
           "en": "It"
         },
         "predicate": {
-          "ja": "かいている",
+          "ja": "絵にかいている",
           "en": "drawing"
         },
         "P1": {
@@ -65973,7 +65989,7 @@
         "timeCue": "外も中も「今」。服・色・目印で同じ人物やものを対応させる。"
       },
       "en": "It is drawing itself now.",
-      "ja": "それは今自分をかいています。",
+      "ja": "それは今自分を絵にかいています。",
       "level": 1,
       "blocks": [
         [
@@ -66010,7 +66026,7 @@
           "en": "We"
         },
         "predicate": {
-          "ja": "かいている",
+          "ja": "絵にかいている",
           "en": "drawing"
         },
         "P1": {
@@ -66049,7 +66065,7 @@
         "timeCue": "外も中も「今」。服・色・目印で同じ人物やものを対応させる。"
       },
       "en": "We are drawing ourselves now.",
-      "ja": "私たちは今自分たちをかいています。",
+      "ja": "私たちは今自分たちを絵にかいています。",
       "level": 1,
       "blocks": [
         [
@@ -66086,7 +66102,7 @@
           "en": "They"
         },
         "predicate": {
-          "ja": "かいている",
+          "ja": "絵にかいている",
           "en": "drawing"
         },
         "P1": {
@@ -66125,7 +66141,7 @@
         "timeCue": "外も中も「今」。服・色・目印で同じ人物やものを対応させる。"
       },
       "en": "They are drawing themselves now.",
-      "ja": "彼らは今自分たちをかいています。",
+      "ja": "彼らは今自分たちを絵にかいています。",
       "level": 1,
       "blocks": [
         [
@@ -66162,7 +66178,7 @@
           "en": "You"
         },
         "predicate": {
-          "ja": "かいている",
+          "ja": "絵にかいている",
           "en": "drawing"
         },
         "P1": {
@@ -66202,7 +66218,7 @@
         "listener": "主役の女の子と紫の服の女の子"
       },
       "en": "You are drawing yourselves now.",
-      "ja": "あなたたちは今自分たちをかいています。",
+      "ja": "あなたたちは今自分たちを絵にかいています。",
       "level": 1,
       "blocks": [
         [
@@ -68972,48 +68988,8 @@
           "in the park",
           "公園で"
         ]
-      ]
-    },
-    {
-      "id": "level2-02",
-      "theme": "theme-like",
-      "level": 2,
-      "focus": "will：これからする",
-      "ja": "私たちは明日、家で紙のぼうしを作ります。",
-      "en": "We will make a paper hat at home tomorrow.",
-      "base": "We make a paper hat at home.",
-      "blocks": [
-        [
-          "S",
-          "We",
-          "私たちは"
-        ],
-        [
-          "助動詞",
-          "will",
-          "〜するつもり（そうなると言い切る）"
-        ],
-        [
-          "述語",
-          "make",
-          "作る"
-        ],
-        [
-          "P1",
-          "a paper hat",
-          "紙のぼうしを"
-        ],
-        [
-          "場所",
-          "at home",
-          "家で"
-        ],
-        [
-          "時",
-          "tomorrow",
-          "明日"
-        ]
-      ]
+      ],
+      "unit": "degree"
     },
     {
       "id": "level2-03",
@@ -69049,7 +69025,8 @@
           "in the library",
           "図書館で"
         ]
-      ]
+      ],
+      "unit": "degree"
     },
     {
       "id": "level2-04",
@@ -69085,21 +69062,707 @@
           "before lunch",
           "昼食の前に"
         ]
-      ]
+      ],
+      "unit": "degree"
+    },
+    {
+      "id": "level2-11",
+      "theme": "theme-go",
+      "pictureHint": "行くかどうか、まだ決まっていません。",
+      "level": 2,
+      "focus": "might：するかもしれない",
+      "ja": "私は公園で自転車に乗るかもしれません。",
+      "en": "I might ride a bike in the park.",
+      "base": "I ride a bike in the park.",
+      "blocks": [
+        [
+          "S",
+          "I",
+          "私は"
+        ],
+        [
+          "助動詞",
+          "might",
+          "〜するかもしれない（言い切れないが、ありえる）"
+        ],
+        [
+          "述語",
+          "ride",
+          "乗る"
+        ],
+        [
+          "P1",
+          "a bike",
+          "自転車に"
+        ],
+        [
+          "場所",
+          "in the park",
+          "公園で"
+        ]
+      ],
+      "unit": "degree"
+    },
+    {
+      "id": "level2-12",
+      "theme": "theme-like",
+      "pictureHint": "家で何を作るか、まだ決まっていません。",
+      "level": 2,
+      "focus": "might：するかもしれない",
+      "ja": "私たちは家で紙のぼうしを作るかもしれません。",
+      "en": "We might make a paper hat at home.",
+      "base": "We make a paper hat at home.",
+      "blocks": [
+        [
+          "S",
+          "We",
+          "私たちは"
+        ],
+        [
+          "助動詞",
+          "might",
+          "〜するかもしれない（言い切れないが、ありえる）"
+        ],
+        [
+          "述語",
+          "make",
+          "作る"
+        ],
+        [
+          "P1",
+          "a paper hat",
+          "紙のぼうしを"
+        ],
+        [
+          "場所",
+          "at home",
+          "家で"
+        ]
+      ],
+      "unit": "degree"
+    },
+    {
+      "id": "level2-13",
+      "theme": "theme-like",
+      "level": 2,
+      "focus": "can：できる",
+      "ja": "私たちは家で紙のぼうしを作れます。",
+      "en": "We can make a paper hat at home.",
+      "base": "We make a paper hat at home.",
+      "blocks": [
+        [
+          "S",
+          "We",
+          "私たちは"
+        ],
+        [
+          "助動詞",
+          "can",
+          "〜できる（可能だと言える）"
+        ],
+        [
+          "述語",
+          "make",
+          "作る"
+        ],
+        [
+          "P1",
+          "a paper hat",
+          "紙のぼうしを"
+        ],
+        [
+          "場所",
+          "at home",
+          "家で"
+        ]
+      ],
+      "unit": "degree"
+    },
+    {
+      "id": "level2-14",
+      "theme": "theme-read",
+      "level": 2,
+      "focus": "should：したほうがいい",
+      "ja": "私たちは図書館で静かにしたほうがよいです。",
+      "en": "We should be quiet in the library.",
+      "base": "We are quiet in the library.",
+      "blocks": [
+        [
+          "S",
+          "We",
+          "私たちは"
+        ],
+        [
+          "助動詞",
+          "should",
+          "〜したほうがいい（そう考えるのが自然）"
+        ],
+        [
+          "be",
+          "be",
+          "である"
+        ],
+        [
+          "述語の残り",
+          "quiet",
+          "静か"
+        ],
+        [
+          "場所",
+          "in the library",
+          "図書館で"
+        ]
+      ],
+      "unit": "degree"
+    },
+    {
+      "id": "level2-15",
+      "theme": "theme-like",
+      "pictureHint": "明日、学校の工作でこのぼうしを使います。",
+      "level": 2,
+      "focus": "must：しなければならない",
+      "ja": "私たちは家で紙のぼうしを作らなければなりません。",
+      "en": "We must make a paper hat at home.",
+      "base": "We make a paper hat at home.",
+      "blocks": [
+        [
+          "S",
+          "We",
+          "私たちは"
+        ],
+        [
+          "助動詞",
+          "must",
+          "〜しなければならない（必要だと言える）"
+        ],
+        [
+          "述語",
+          "make",
+          "作る"
+        ],
+        [
+          "P1",
+          "a paper hat",
+          "紙のぼうしを"
+        ],
+        [
+          "場所",
+          "at home",
+          "家で"
+        ]
+      ],
+      "unit": "degree"
+    },
+    {
+      "id": "level2-17",
+      "theme": "theme-eat",
+      "pictureHint": "彼女は朝食で何を飲むか、まだ決めていません。",
+      "level": 2,
+      "focus": "might：するかもしれない",
+      "ja": "彼女は朝食のときに牛乳を飲むかもしれません。",
+      "en": "She might drink milk at breakfast.",
+      "base": "She drinks milk at breakfast.",
+      "blocks": [
+        [
+          "S",
+          "She",
+          "彼女は"
+        ],
+        [
+          "助動詞",
+          "might",
+          "〜するかもしれない（言い切れないが、ありえる）"
+        ],
+        [
+          "述語",
+          "drink",
+          "飲む"
+        ],
+        [
+          "P1",
+          "milk",
+          "牛乳を"
+        ],
+        [
+          "時",
+          "at breakfast",
+          "朝食のときに"
+        ]
+      ],
+      "unit": "degree"
+    },
+    {
+      "id": "level2-18",
+      "theme": "theme-read",
+      "level": 2,
+      "focus": "should：したほうがいい",
+      "ja": "私は放課後、家で動物の本を読んだほうがよいです。",
+      "en": "I should read an animal book at home after school.",
+      "base": "I read an animal book at home after school.",
+      "blocks": [
+        [
+          "S",
+          "I",
+          "私は"
+        ],
+        [
+          "助動詞",
+          "should",
+          "〜したほうがいい（そう考えるのが自然）"
+        ],
+        [
+          "述語",
+          "read",
+          "読む"
+        ],
+        [
+          "P1",
+          "an animal book",
+          "動物の本を"
+        ],
+        [
+          "場所",
+          "at home",
+          "家で"
+        ],
+        [
+          "時",
+          "after school",
+          "放課後に"
+        ]
+      ],
+      "unit": "degree"
+    },
+    {
+      "id": "level2-19",
+      "theme": "theme-go",
+      "pictureHint": "自転車教室の実技は、公園で行います。",
+      "level": 2,
+      "focus": "must：しなければならない",
+      "ja": "私は公園で自転車に乗らなければなりません。",
+      "en": "I must ride a bike in the park.",
+      "base": "I ride a bike in the park.",
+      "blocks": [
+        [
+          "S",
+          "I",
+          "私は"
+        ],
+        [
+          "助動詞",
+          "must",
+          "〜しなければならない（必要だと言える）"
+        ],
+        [
+          "述語",
+          "ride",
+          "乗る"
+        ],
+        [
+          "P1",
+          "a bike",
+          "自転車に"
+        ],
+        [
+          "場所",
+          "in the park",
+          "公園で"
+        ]
+      ],
+      "unit": "degree"
+    },
+    {
+      "id": "level2-20",
+      "theme": "theme-like",
+      "level": 2,
+      "focus": "can：できる",
+      "ja": "私は猫の絵を描けます。",
+      "en": "I can draw a cat.",
+      "base": "I draw a cat.",
+      "blocks": [
+        [
+          "S",
+          "I",
+          "私は"
+        ],
+        [
+          "助動詞",
+          "can",
+          "〜できる（可能だと言える）"
+        ],
+        [
+          "述語",
+          "draw",
+          "描く"
+        ],
+        [
+          "P1",
+          "a cat",
+          "猫を"
+        ]
+      ],
+      "unit": "degree"
+    },
+    {
+      "id": "level2-21",
+      "theme": "theme-go",
+      "level": 2,
+      "focus": "should：したほうがいい",
+      "ja": "あなたはぼうしをかぶったほうがいいです。",
+      "en": "You should wear a hat.",
+      "base": "You wear a hat.",
+      "blocks": [
+        [
+          "S",
+          "You",
+          "あなたは"
+        ],
+        [
+          "助動詞",
+          "should",
+          "〜したほうがいい（そう考えるのが自然）"
+        ],
+        [
+          "述語",
+          "wear",
+          "かぶる"
+        ],
+        [
+          "P1",
+          "a hat",
+          "ぼうしを"
+        ]
+      ],
+      "unit": "degree"
+    },
+    {
+      "id": "level2-22",
+      "theme": "theme-go",
+      "level": 2,
+      "focus": "might：するかもしれない",
+      "ja": "私は海辺に行くかもしれません。",
+      "en": "I might go to the beach.",
+      "base": "I go to the beach.",
+      "blocks": [
+        [
+          "S",
+          "I",
+          "私は"
+        ],
+        [
+          "助動詞",
+          "might",
+          "〜するかもしれない（言い切れないが、ありえる）"
+        ],
+        [
+          "述語",
+          "go to",
+          "行く"
+        ],
+        [
+          "P1",
+          "the beach",
+          "海辺に"
+        ]
+      ],
+      "unit": "degree"
+    },
+    {
+      "id": "level2-23",
+      "theme": "theme-go",
+      "level": 2,
+      "focus": "must：しなければならない",
+      "ja": "あなたはシートベルトをしめなければなりません。",
+      "en": "You must fasten your seat belt.",
+      "base": "You fasten your seat belt.",
+      "blocks": [
+        [
+          "S",
+          "You",
+          "あなたは"
+        ],
+        [
+          "助動詞",
+          "must",
+          "〜しなければならない（必要だと言える）"
+        ],
+        [
+          "述語",
+          "fasten",
+          "しめる"
+        ],
+        [
+          "P1",
+          "your seat belt",
+          "シートベルトを"
+        ]
+      ],
+      "unit": "degree"
+    },
+    {
+      "id": "level2-24",
+      "theme": "theme-play",
+      "level": 2,
+      "focus": "can：できる",
+      "ja": "私はなわとびができます。",
+      "en": "I can jump rope.",
+      "base": "I jump rope.",
+      "blocks": [
+        [
+          "S",
+          "I",
+          "私は"
+        ],
+        [
+          "助動詞",
+          "can",
+          "〜できる（可能だと言える）"
+        ],
+        [
+          "述語",
+          "jump rope",
+          "なわとびをする"
+        ]
+      ],
+      "unit": "degree"
+    },
+    {
+      "id": "level2-25",
+      "theme": "theme-go",
+      "level": 2,
+      "focus": "should：したほうがいい",
+      "ja": "あなたは傘を持っていったほうがいいです。",
+      "en": "You should take an umbrella.",
+      "base": "You take an umbrella.",
+      "blocks": [
+        [
+          "S",
+          "You",
+          "あなたは"
+        ],
+        [
+          "助動詞",
+          "should",
+          "〜したほうがいい（そう考えるのが自然）"
+        ],
+        [
+          "述語",
+          "take",
+          "持っていく"
+        ],
+        [
+          "P1",
+          "an umbrella",
+          "傘を"
+        ]
+      ],
+      "unit": "degree"
+    },
+    {
+      "id": "level2-26",
+      "theme": "theme-go",
+      "level": 2,
+      "focus": "must：しなければならない",
+      "ja": "あなたは赤信号のときに止まらなければなりません。",
+      "en": "You must stop at a red light.",
+      "base": "You stop at a red light.",
+      "blocks": [
+        [
+          "S",
+          "You",
+          "あなたは"
+        ],
+        [
+          "助動詞",
+          "must",
+          "〜しなければならない（必要だと言える）"
+        ],
+        [
+          "述語",
+          "stop",
+          "止まる"
+        ],
+        [
+          "時",
+          "at a red light",
+          "赤信号のときに"
+        ]
+      ],
+      "unit": "degree"
+    },
+    {
+      "id": "level2-27",
+      "theme": "theme-stand",
+      "level": 2,
+      "focus": "might＋be：かもしれない",
+      "ja": "彼女はつかれているかもしれません。",
+      "en": "She might be tired.",
+      "base": "She is tired.",
+      "blocks": [
+        [
+          "S",
+          "She",
+          "彼女は"
+        ],
+        [
+          "助動詞",
+          "might",
+          "〜かもしれない（言い切れないが、ありえる）"
+        ],
+        [
+          "be",
+          "be",
+          "である"
+        ],
+        [
+          "述語の残り",
+          "tired",
+          "つかれている"
+        ]
+      ],
+      "unit": "degree"
+    },
+    {
+      "id": "level2-28",
+      "theme": "theme-like",
+      "level": 2,
+      "focus": "can：できる",
+      "ja": "私はピアノをひけます。",
+      "en": "I can play the piano.",
+      "base": "I play the piano.",
+      "blocks": [
+        [
+          "S",
+          "I",
+          "私は"
+        ],
+        [
+          "助動詞",
+          "can",
+          "〜できる（可能だと言える）"
+        ],
+        [
+          "述語",
+          "play",
+          "ひく"
+        ],
+        [
+          "P1",
+          "the piano",
+          "ピアノを"
+        ]
+      ],
+      "unit": "degree"
+    },
+    {
+      "id": "level2-29",
+      "theme": "theme-stand",
+      "level": 2,
+      "focus": "should：したほうがいい",
+      "ja": "あなたはコートを着たほうがいいです。",
+      "en": "You should put on a coat.",
+      "base": "You put on a coat.",
+      "blocks": [
+        [
+          "S",
+          "You",
+          "あなたは"
+        ],
+        [
+          "助動詞",
+          "should",
+          "〜したほうがいい（そう考えるのが自然）"
+        ],
+        [
+          "述語",
+          "put on",
+          "着る"
+        ],
+        [
+          "P1",
+          "a coat",
+          "コートを"
+        ]
+      ],
+      "unit": "degree"
+    },
+    {
+      "id": "level2-30",
+      "theme": "theme-go",
+      "level": 2,
+      "focus": "must：しなければならない",
+      "ja": "あなたはヘルメットをかぶらなければなりません。",
+      "en": "You must put on your helmet.",
+      "base": "You put on your helmet.",
+      "blocks": [
+        [
+          "S",
+          "You",
+          "あなたは"
+        ],
+        [
+          "助動詞",
+          "must",
+          "〜しなければならない（必要だと言える）"
+        ],
+        [
+          "述語",
+          "put on",
+          "かぶる"
+        ],
+        [
+          "P1",
+          "your helmet",
+          "ヘルメットを"
+        ]
+      ],
+      "unit": "degree"
+    },
+    {
+      "id": "level2-31",
+      "theme": "theme-like",
+      "level": 2,
+      "focus": "might：するかもしれない",
+      "ja": "私たちは雪だるまを作るかもしれません。",
+      "en": "We might build a snowman.",
+      "base": "We build a snowman.",
+      "blocks": [
+        [
+          "S",
+          "We",
+          "私たちは"
+        ],
+        [
+          "助動詞",
+          "might",
+          "〜するかもしれない（言い切れないが、ありえる）"
+        ],
+        [
+          "述語",
+          "build",
+          "作る"
+        ],
+        [
+          "P1",
+          "a snowman",
+          "雪だるまを"
+        ]
+      ],
+      "unit": "degree"
     },
     {
       "id": "level2-05",
       "theme": "theme-eat",
       "level": 2,
       "focus": "does not：しない",
-      "ja": "姉は朝食のときに牛乳を飲みません。",
-      "en": "My sister does not drink milk at breakfast.",
-      "base": "My sister drinks milk at breakfast.",
+      "ja": "彼女は朝食のときに牛乳を飲みません。",
+      "en": "She does not drink milk at breakfast.",
+      "base": "She drinks milk at breakfast.",
       "blocks": [
         [
           "S",
-          "My sister",
-          "姉は"
+          "She",
+          "彼女は"
         ],
         [
           "否定",
@@ -69122,7 +69785,8 @@
           "朝食のときに"
         ]
       ],
-      "note": "doesが付くと、drinksはdrinkになります。"
+      "note": "doesが付くと、drinksはdrinkになります。",
+      "unit": "patterns"
     },
     {
       "id": "level2-06",
@@ -69153,7 +69817,8 @@
           "today",
           "今日"
         ]
-      ]
+      ],
+      "unit": "patterns"
     },
     {
       "id": "level2-07",
@@ -69168,6 +69833,11 @@
           "S",
           "I",
           "私は"
+        ],
+        [
+          "support",
+          "",
+          "する"
         ],
         [
           "頻度",
@@ -69194,21 +69864,27 @@
           "after school",
           "放課後に"
         ]
-      ]
+      ],
+      "unit": "patterns"
     },
     {
       "id": "level2-08",
       "theme": "theme-clean",
       "level": 2,
       "focus": "always：いつもする",
-      "ja": "姉は朝、いつも自分のかばんを確かめます。",
-      "en": "My sister always checks her bag in the morning.",
-      "base": "My sister checks her bag in the morning.",
+      "ja": "彼女は朝、いつも自分のかばんを確かめます。",
+      "en": "She always checks her bag in the morning.",
+      "base": "She checks her bag in the morning.",
       "blocks": [
         [
           "S",
-          "My sister",
-          "姉は"
+          "She",
+          "彼女は"
+        ],
+        [
+          "support",
+          "",
+          "する"
         ],
         [
           "頻度",
@@ -69230,21 +69906,27 @@
           "in the morning",
           "朝に"
         ]
-      ]
+      ],
+      "unit": "patterns"
     },
     {
       "id": "level2-09",
       "theme": "theme-give",
       "level": 2,
       "focus": "sometimes＋P1・P2：ときどきする",
-      "ja": "私たちは家で、ときどき妹に花をあげます。",
-      "en": "We sometimes give our sister a flower at home.",
-      "base": "We give our sister a flower at home.",
+      "ja": "私たちは家で、ときどき彼女に花をあげます。",
+      "en": "We sometimes give her a flower at home.",
+      "base": "We give her a flower at home.",
       "blocks": [
         [
           "S",
           "We",
           "私たちは"
+        ],
+        [
+          "support",
+          "",
+          "する"
         ],
         [
           "頻度",
@@ -69258,8 +69940,8 @@
         ],
         [
           "P1",
-          "our sister",
-          "妹に"
+          "her",
+          "彼女に"
         ],
         [
           "P2",
@@ -69271,7 +69953,8 @@
           "at home",
           "家で"
         ]
-      ]
+      ],
+      "unit": "patterns"
     },
     {
       "id": "level2-10",
@@ -69308,14 +69991,14 @@
           "うれしい"
         ]
       ],
-      "note": "can＋notは普通cannotと続けて書きます。not alwaysは「いつも〜とは限らない」で、never「一度も〜ない」とは違います。"
+      "note": "can＋notは普通cannotと続けて書きます。not alwaysは「いつも〜とは限らない」で、never「一度も〜ない」とは違います。",
+      "unit": "patterns"
     },
     {
       "id": "level3-01",
       "theme": "theme-eat",
-      "pictureHint": "いちごが好きかどうか、相手にたずねよう。",
       "level": 3,
-      "focus": "黙疑問詞whether＋do",
+      "focus": "黙疑問主部whether＋do",
       "ja": "あなたはいちごが好きですか。",
       "en": "Do you like strawberries?",
       "base": "You like strawberries.",
@@ -69326,9 +70009,14 @@
       },
       "blocks": [
         [
+          "question-marker",
+          "",
+          "かどうか"
+        ],
+        [
           "疑問の支え",
           "Do",
-          "〜ですか"
+          "する"
         ],
         [
           "S",
@@ -69350,12 +70038,12 @@
     {
       "id": "level3-02",
       "theme": "theme-play",
-      "pictureHint": "お姉さんがサッカーをするかどうか、相手にたずねよう。",
+      "pictureHint": "女の子が公園でサッカーをするかどうか、相手にたずねよう。",
       "level": 3,
-      "focus": "黙疑問詞whether＋does",
-      "ja": "あなたのお姉さんは公園でサッカーをしますか。",
-      "en": "Does your sister play soccer in the park?",
-      "base": "Your sister plays soccer in the park.",
+      "focus": "黙疑問主部whether＋does",
+      "ja": "彼女は公園でサッカーをしますか。",
+      "en": "Does she play soccer in the park?",
+      "base": "She plays soccer in the park.",
       "question": {
         "token": "whether",
         "spoken": false,
@@ -69363,19 +70051,24 @@
       },
       "blocks": [
         [
+          "question-marker",
+          "",
+          "かどうか"
+        ],
+        [
           "疑問の支え",
           "Does",
-          "〜しますか"
+          "する"
         ],
         [
           "S",
-          "your sister",
-          "あなたのお姉さんは"
+          "she",
+          "彼女は"
         ],
         [
           "述語",
           "play",
-          "する"
+          "プレーする"
         ],
         [
           "P1",
@@ -69393,9 +70086,8 @@
     {
       "id": "level3-03",
       "theme": "theme-stand",
-      "pictureHint": "今日うれしいかどうか、相手にたずねよう。",
       "level": 3,
-      "focus": "黙疑問詞whether＋be",
+      "focus": "黙疑問主部whether＋be",
       "ja": "あなたは今日、うれしいですか。",
       "en": "Are you happy today?",
       "base": "You are happy today.",
@@ -69406,9 +70098,14 @@
       },
       "blocks": [
         [
+          "question-marker",
+          "",
+          "かどうか"
+        ],
+        [
           "be",
           "Are",
-          "〜ですか"
+          "である"
         ],
         [
           "S",
@@ -69416,7 +70113,7 @@
           "あなたは"
         ],
         [
-          "述語の残り",
+          "述語",
           "happy",
           "うれしい"
         ],
@@ -69430,9 +70127,8 @@
     {
       "id": "level3-04",
       "theme": "theme-go",
-      "pictureHint": "自転車に乗れるかどうか、相手にたずねよう。",
       "level": 3,
-      "focus": "黙疑問詞whether＋can",
+      "focus": "黙疑問主部whether＋can",
       "ja": "あなたは自転車に乗れますか。",
       "en": "Can you ride a bike?",
       "base": "You can ride a bike.",
@@ -69443,9 +70139,14 @@
       },
       "blocks": [
         [
+          "question-marker",
+          "",
+          "かどうか"
+        ],
+        [
           "助動詞",
           "Can",
-          "〜できますか"
+          "〜できる（可能だと言える）"
         ],
         [
           "S",
@@ -69467,7 +70168,6 @@
     {
       "id": "level3-05",
       "theme": "theme-read",
-      "pictureHint": "家で何を読むか、相手にたずねよう。",
       "level": 3,
       "focus": "what：P1をたずねる",
       "ja": "あなたは家で何を読みますか。",
@@ -69480,14 +70180,14 @@
       },
       "blocks": [
         [
-          "疑問詞＝P1",
+          "疑問主部＝P1",
           "What",
-          "何を"
+          "なに（何）"
         ],
         [
           "疑問の支え",
           "do",
-          "〜しますか"
+          "する"
         ],
         [
           "S",
@@ -69509,12 +70209,11 @@
     {
       "id": "level3-06",
       "theme": "theme-read",
-      "pictureHint": "学校で、だれがシールをくれるかたずねよう。",
       "level": 3,
       "focus": "who：Sをたずねる",
       "ja": "学校で、だれがあなたにシールをくれますか。",
       "en": "Who gives you a sticker at school?",
-      "base": "My sister gives you a sticker at school.",
+      "base": "She gives you a sticker at school.",
       "question": {
         "token": "who",
         "spoken": true,
@@ -69522,14 +70221,19 @@
       },
       "blocks": [
         [
-          "疑問詞＝S",
+          "疑問主部＝S",
           "Who",
-          "だれが"
+          "だれ（誰）"
+        ],
+        [
+          "support",
+          "",
+          "する"
         ],
         [
           "述語",
           "gives",
-          "くれますか"
+          "くれる"
         ],
         [
           "P1",
@@ -69547,12 +70251,11 @@
           "学校で"
         ]
       ],
-      "note": "だれが、をたずねるwhoはSの場所に入ります。この肯定の疑問文ではdoを足さず、Sと述語の順も入れ替えません。"
+      "note": "Who が主語です。助述部の「する」は、レベル１と同じ黙助述部です。英文では Who gives … と続けます。"
     },
     {
       "id": "level3-07",
       "theme": "theme-play",
-      "pictureHint": "放課後、どこでサッカーをするかたずねよう。",
       "level": 3,
       "focus": "where：場所をたずねる",
       "ja": "あなたは放課後、どこでサッカーをしますか。",
@@ -69565,14 +70268,14 @@
       },
       "blocks": [
         [
-          "疑問詞＝場所",
+          "疑問主部＝場所",
           "Where",
-          "どこで"
+          "どこ（何処）"
         ],
         [
           "疑問の支え",
           "do",
-          "〜しますか"
+          "する"
         ],
         [
           "S",
@@ -69582,7 +70285,7 @@
         [
           "述語",
           "play",
-          "する"
+          "プレーする"
         ],
         [
           "P1",
@@ -69599,7 +70302,6 @@
     {
       "id": "level3-08",
       "theme": "theme-clean",
-      "pictureHint": "いつ部屋をそうじするか、相手にたずねよう。",
       "level": 3,
       "focus": "when：時をたずねる",
       "ja": "あなたはいつ自分の部屋をそうじしますか。",
@@ -69612,14 +70314,14 @@
       },
       "blocks": [
         [
-          "疑問詞＝時",
+          "疑問主部＝時",
           "When",
-          "いつ"
+          "いつ（何時）"
         ],
         [
           "疑問の支え",
           "do",
-          "〜しますか"
+          "する"
         ],
         [
           "S",
@@ -69641,7 +70343,6 @@
     {
       "id": "level3-09",
       "theme": "theme-give",
-      "pictureHint": "太陽のカレンダーは日曜日。電話をかける相手をたずねよう。",
       "level": 3,
       "focus": "who：P1の相手をたずねる",
       "ja": "あなたは日曜日にだれに電話しますか。",
@@ -69654,14 +70355,14 @@
       },
       "blocks": [
         [
-          "疑問詞＝P1",
+          "疑問主部＝P1",
           "Who",
-          "だれに"
+          "だれ（誰）"
         ],
         [
           "疑問の支え",
           "do",
-          "〜しますか"
+          "する"
         ],
         [
           "S",
@@ -69683,12 +70384,11 @@
     {
       "id": "level3-10",
       "theme": "theme-like",
-      "pictureHint": "妹に何をあげるか、相手にたずねよう。",
       "level": 3,
       "focus": "what：P2をたずねる",
-      "ja": "あなたは家で妹に何をあげますか。",
-      "en": "What do you give your sister at home?",
-      "base": "You give your sister a flower at home.",
+      "ja": "あなたは家で彼女に何をあげますか。",
+      "en": "What do you give her at home?",
+      "base": "You give her a flower at home.",
       "question": {
         "token": "what",
         "spoken": true,
@@ -69696,14 +70396,14 @@
       },
       "blocks": [
         [
-          "疑問詞＝P2",
+          "疑問主部＝P2",
           "What",
-          "何を"
+          "なに（何）"
         ],
         [
           "疑問の支え",
           "do",
-          "〜しますか"
+          "する"
         ],
         [
           "S",
@@ -69717,8 +70417,8 @@
         ],
         [
           "P1",
-          "your sister",
-          "妹に"
+          "her",
+          "彼女に"
         ],
         [
           "場所",
@@ -69728,156 +70428,8 @@
       ]
     },
     {
-      "id": "level3-11",
-      "theme": "theme-play",
-      "pictureHint": "知っていると思っていた相手が首をかしげています。驚いてたずねる場面です。",
-      "level": 3,
-      "focus": "否定疑問：Don't",
-      "ja": "あなたはそれを知らないの？",
-      "en": "Don't you know it?",
-      "base": "You know it.",
-      "question": {
-        "token": "whether",
-        "spoken": false,
-        "target": "truth"
-      },
-      "blocks": [
-        [
-          "助動詞＋否定",
-          "Don't",
-          "〜ないの？"
-        ],
-        [
-          "S",
-          "you",
-          "あなたは"
-        ],
-        [
-          "述語",
-          "know",
-          "知っている"
-        ],
-        [
-          "P1",
-          "it",
-          "それを"
-        ]
-      ],
-      "note": "この練習では、Don't を一つの助述部として主語の前に置きます。"
-    },
-    {
-      "id": "level3-12",
-      "theme": "theme-eat",
-      "pictureHint": "いちごのお皿を前に、女の子が手を上げて顔をそむけています。話し手がその様子を見てたずねています。",
-      "level": 3,
-      "focus": "否定疑問：Doesn't",
-      "ja": "彼女はいちごが好きじゃないの？",
-      "en": "Doesn't she like strawberries?",
-      "base": "She likes strawberries.",
-      "question": {
-        "token": "whether",
-        "spoken": false,
-        "target": "truth"
-      },
-      "blocks": [
-        [
-          "助動詞＋否定",
-          "Doesn't",
-          "〜じゃないの？"
-        ],
-        [
-          "S",
-          "she",
-          "彼女は"
-        ],
-        [
-          "述語",
-          "like",
-          "好き"
-        ],
-        [
-          "P1",
-          "strawberries",
-          "いちごが"
-        ]
-      ],
-      "note": "Doesn't を主語の前に置きます。後ろの動詞は like になります。"
-    },
-    {
-      "id": "level3-13",
-      "theme": "theme-stand",
-      "pictureHint": "ベンチの男の子を見て、話し手がその様子をたずねています。",
-      "level": 3,
-      "focus": "否定疑問：Isn't",
-      "ja": "彼は疲れているんじゃないの？",
-      "en": "Isn't he tired?",
-      "base": "He is tired.",
-      "question": {
-        "token": "whether",
-        "spoken": false,
-        "target": "truth"
-      },
-      "blocks": [
-        [
-          "否定",
-          "Isn't",
-          "〜じゃないの？"
-        ],
-        [
-          "S",
-          "he",
-          "彼は"
-        ],
-        [
-          "述語の残り",
-          "tired",
-          "疲れている"
-        ]
-      ],
-      "note": "Isn't を一つの助述部にし、主語の前に置きます。"
-    },
-    {
-      "id": "level3-14",
-      "theme": "theme-go",
-      "pictureHint": "自転車のそばでためらう相手に、話し手がたずねています。",
-      "level": 3,
-      "focus": "否定疑問：Can't",
-      "ja": "あなたは自転車に乗れないの？",
-      "en": "Can't you ride a bike?",
-      "base": "You can ride a bike.",
-      "question": {
-        "token": "whether",
-        "spoken": false,
-        "target": "truth"
-      },
-      "blocks": [
-        [
-          "助動詞＋否定",
-          "Can't",
-          "〜できないの？"
-        ],
-        [
-          "S",
-          "you",
-          "あなたは"
-        ],
-        [
-          "述語",
-          "ride",
-          "乗る"
-        ],
-        [
-          "P1",
-          "a bike",
-          "自転車に"
-        ]
-      ],
-      "note": "Can't を一つの助述部にし、主語の前に置きます。"
-    },
-    {
       "id": "level3-15",
       "theme": "theme-stand",
-      "pictureHint": "女の子がうれしそうです。その理由をたずねよう。",
       "level": 3,
       "focus": "why：理由をたずねる",
       "ja": "あなたはなぜうれしいのですか？",
@@ -69890,14 +70442,14 @@
       },
       "blocks": [
         [
-          "疑問詞＝理由",
+          "疑問主部＝理由",
           "Why",
-          "なぜ"
+          "なぜ（何故）"
         ],
         [
           "be",
           "are",
-          "〜ですか"
+          "である"
         ],
         [
           "S",
@@ -69905,7 +70457,7 @@
           "あなたは"
         ],
         [
-          "述語の残り",
+          "述語",
           "happy",
           "うれしい"
         ]
@@ -69914,7 +70466,6 @@
     {
       "id": "level3-16",
       "theme": "theme-read",
-      "pictureHint": "表紙のちがう二冊の本があります。どちらがほしいかたずねよう。",
       "level": 3,
       "focus": "which：選ぶものをたずねる",
       "ja": "あなたはどの本がほしいですか？",
@@ -69927,14 +70478,14 @@
       },
       "blocks": [
         [
-          "疑問詞＝P1",
+          "疑問主部＝P1",
           "Which book",
-          "どの本が"
+          "どの本"
         ],
         [
           "疑問の支え",
           "do",
-          "〜ですか"
+          "する"
         ],
         [
           "S",
@@ -69964,14 +70515,14 @@
       },
       "blocks": [
         [
-          "疑問詞＝方法",
+          "疑問主部＝方法",
           "How",
           "どうやって"
         ],
         [
           "疑問の支え",
           "do",
-          "〜しますか"
+          "する"
         ],
         [
           "S",
@@ -69992,6 +70543,7 @@
     },
     {
       "id": "level3-18",
+      "needsReview": true,
       "theme": "nature",
       "pictureHint": "女の子が見つけた動物を伝えよう。",
       "level": 3,
@@ -70002,7 +70554,7 @@
         [
           "there",
           "There",
-          "〜がいる・ある"
+          "ほら"
         ],
         [
           "be",
@@ -70015,10 +70567,11 @@
           "猫"
         ]
       ],
-      "note": "猫が一匹なので、助述部は is です。There を先頭に置いて、猫がいることを伝えます。"
+      "note": "「ほら」で相手の注意を向けます。猫が一匹なので、助述部「いる」は is です。"
     },
     {
       "id": "level3-19",
+      "needsReview": true,
       "theme": "nature",
       "pictureHint": "木にとまっている鳥の数と、いる場所を伝えよう。",
       "level": 3,
@@ -70029,7 +70582,7 @@
         [
           "there",
           "There",
-          "〜がいる・ある"
+          "ほら"
         ],
         [
           "be",
@@ -70047,7 +70600,880 @@
           "木に"
         ]
       ],
-      "note": "鳥が二羽なので、助述部は are です。場所の in the tree は後ろに置きます。"
+      "note": "鳥が二羽なので、助述部「いる」は are です。場所の in the tree は後ろに置きます。"
+    },
+    {
+      "id": "level3-20",
+      "theme": "theme-read",
+      "pictureHint": "家で本を読む習慣があるか、たずねよう。",
+      "level": 3,
+      "focus": "かどうか",
+      "ja": "あなたは家で本を読みますか。",
+      "en": "Do you read books at home?",
+      "question": {
+        "token": "whether",
+        "spoken": false,
+        "target": "truth"
+      },
+      "blocks": [
+        [
+          "question-marker",
+          "",
+          "かどうか"
+        ],
+        [
+          "疑問の支え",
+          "Do",
+          "する"
+        ],
+        [
+          "S",
+          "you",
+          "あなたは"
+        ],
+        [
+          "述語",
+          "read",
+          "読む"
+        ],
+        [
+          "P1",
+          "books",
+          "本を"
+        ],
+        [
+          "場所",
+          "at home",
+          "家で"
+        ]
+      ]
+    },
+    {
+      "id": "level3-21",
+      "theme": "theme-play",
+      "pictureHint": "放課後にサッカーをするかどうか、たずねよう。",
+      "level": 3,
+      "focus": "かどうか",
+      "ja": "あなたは放課後にサッカーをしますか。",
+      "en": "Do you play soccer after school?",
+      "question": {
+        "token": "whether",
+        "spoken": false,
+        "target": "truth"
+      },
+      "blocks": [
+        [
+          "question-marker",
+          "",
+          "かどうか"
+        ],
+        [
+          "疑問の支え",
+          "Do",
+          "する"
+        ],
+        [
+          "S",
+          "you",
+          "あなたは"
+        ],
+        [
+          "述語",
+          "play",
+          "プレーする"
+        ],
+        [
+          "P1",
+          "soccer",
+          "サッカーを"
+        ],
+        [
+          "時",
+          "after school",
+          "放課後に"
+        ]
+      ]
+    },
+    {
+      "id": "level3-22",
+      "theme": "theme-clean",
+      "pictureHint": "きのう部屋をそうじしたかどうか、たずねよう。",
+      "level": 3,
+      "focus": "かどうか",
+      "ja": "あなたは昨日、自分の部屋をそうじしましたか。",
+      "en": "Did you clean your room yesterday?",
+      "question": {
+        "token": "whether",
+        "spoken": false,
+        "target": "truth"
+      },
+      "blocks": [
+        [
+          "question-marker",
+          "",
+          "かどうか"
+        ],
+        [
+          "疑問の支え",
+          "Did",
+          "した"
+        ],
+        [
+          "S",
+          "you",
+          "あなたは"
+        ],
+        [
+          "述語",
+          "clean",
+          "そうじする"
+        ],
+        [
+          "P1",
+          "your room",
+          "自分の部屋を"
+        ],
+        [
+          "時",
+          "yesterday",
+          "昨日"
+        ]
+      ],
+      "note": "助述部に Did を置くと、述語は clean の形です。"
+    },
+    {
+      "id": "level3-23",
+      "theme": "theme-like",
+      "level": 3,
+      "focus": "かどうか",
+      "ja": "あなたは紙のぼうしを作れますか。",
+      "en": "Can you make a paper hat?",
+      "question": {
+        "token": "whether",
+        "spoken": false,
+        "target": "truth"
+      },
+      "blocks": [
+        [
+          "question-marker",
+          "",
+          "かどうか"
+        ],
+        [
+          "助動詞",
+          "Can",
+          "〜できる（可能だと言える）"
+        ],
+        [
+          "S",
+          "you",
+          "あなたは"
+        ],
+        [
+          "述語",
+          "make",
+          "作る"
+        ],
+        [
+          "P1",
+          "a paper hat",
+          "紙のぼうしを"
+        ]
+      ]
+    },
+    {
+      "id": "level3-24",
+      "theme": "theme-like",
+      "level": 3,
+      "focus": "what：なに（何）",
+      "ja": "あなたはこの紙で何を作れますか。",
+      "en": "What can you make with this paper?",
+      "question": {
+        "token": "what",
+        "spoken": true,
+        "target": "P1"
+      },
+      "blocks": [
+        [
+          "疑問主部＝P1",
+          "What",
+          "なに（何）"
+        ],
+        [
+          "助動詞",
+          "can",
+          "〜できる（可能だと言える）"
+        ],
+        [
+          "S",
+          "you",
+          "あなたは"
+        ],
+        [
+          "述語",
+          "make",
+          "作る"
+        ],
+        [
+          "P2",
+          "with this paper",
+          "この紙で"
+        ]
+      ]
+    },
+    {
+      "id": "level3-25",
+      "theme": "theme-read",
+      "level": 3,
+      "focus": "where：どこ（何処）",
+      "ja": "あなたはどこで本を読みますか。",
+      "en": "Where do you read books?",
+      "question": {
+        "token": "where",
+        "spoken": true,
+        "target": "place"
+      },
+      "blocks": [
+        [
+          "疑問主部＝場所",
+          "Where",
+          "どこ（何処）"
+        ],
+        [
+          "疑問の支え",
+          "do",
+          "する"
+        ],
+        [
+          "S",
+          "you",
+          "あなたは"
+        ],
+        [
+          "述語",
+          "read",
+          "読む"
+        ],
+        [
+          "P1",
+          "books",
+          "本を"
+        ]
+      ]
+    },
+    {
+      "id": "level3-26",
+      "theme": "theme-play",
+      "level": 3,
+      "focus": "what：なに（何）",
+      "ja": "あなたは放課後に何をして遊びますか。",
+      "en": "What do you play after school?",
+      "question": {
+        "token": "what",
+        "spoken": true,
+        "target": "P1"
+      },
+      "blocks": [
+        [
+          "疑問主部＝P1",
+          "What",
+          "なに（何）"
+        ],
+        [
+          "疑問の支え",
+          "do",
+          "する"
+        ],
+        [
+          "S",
+          "you",
+          "あなたは"
+        ],
+        [
+          "述語",
+          "play",
+          "遊ぶ"
+        ],
+        [
+          "時",
+          "after school",
+          "放課後に"
+        ]
+      ]
+    },
+    {
+      "id": "level3-27",
+      "theme": "theme-go",
+      "level": 3,
+      "focus": "who：だれ（誰）",
+      "ja": "だれが自転車に乗れますか。",
+      "en": "Who can ride a bike?",
+      "question": {
+        "token": "who",
+        "spoken": true,
+        "target": "S"
+      },
+      "blocks": [
+        [
+          "疑問主部＝S",
+          "Who",
+          "だれ（誰）"
+        ],
+        [
+          "助動詞",
+          "can",
+          "〜できる（可能だと言える）"
+        ],
+        [
+          "述語",
+          "ride",
+          "乗る"
+        ],
+        [
+          "P1",
+          "a bike",
+          "自転車に"
+        ]
+      ],
+      "note": "Who が主語です。助述部の can は Who のあとに続きます。"
+    },
+    {
+      "id": "level3-28",
+      "theme": "theme-give",
+      "level": 3,
+      "focus": "when：いつ（何時）",
+      "ja": "あなたはいつ電話をかけますか。",
+      "en": "When do you make phone calls?",
+      "question": {
+        "token": "when",
+        "spoken": true,
+        "target": "time"
+      },
+      "blocks": [
+        [
+          "疑問主部＝時",
+          "When",
+          "いつ（何時）"
+        ],
+        [
+          "疑問の支え",
+          "do",
+          "する"
+        ],
+        [
+          "S",
+          "you",
+          "あなたは"
+        ],
+        [
+          "述語",
+          "make",
+          "かける"
+        ],
+        [
+          "P1",
+          "phone calls",
+          "電話を"
+        ]
+      ]
+    },
+    {
+      "id": "level3-29",
+      "theme": "theme-help",
+      "level": 3,
+      "focus": "what：なに（何）",
+      "ja": "あなたは彼女に何をあげますか。",
+      "en": "What do you give her?",
+      "question": {
+        "token": "what",
+        "spoken": true,
+        "target": "P2"
+      },
+      "blocks": [
+        [
+          "疑問主部＝P2",
+          "What",
+          "なに（何）"
+        ],
+        [
+          "疑問の支え",
+          "do",
+          "する"
+        ],
+        [
+          "S",
+          "you",
+          "あなたは"
+        ],
+        [
+          "述語",
+          "give",
+          "あげる"
+        ],
+        [
+          "P1",
+          "her",
+          "彼女に"
+        ]
+      ]
+    },
+    {
+      "id": "level3-30",
+      "theme": "theme-eat",
+      "level": 3,
+      "focus": "what：朝食に食べるものをたずねる",
+      "ja": "あなたは朝ごはんに何を食べますか。",
+      "en": "What do you eat for breakfast?",
+      "base": "You eat toast for breakfast.",
+      "question": {
+        "token": "what",
+        "spoken": true,
+        "target": "P1"
+      },
+      "blocks": [
+        [
+          "疑問主部＝P1",
+          "What",
+          "なに（何）"
+        ],
+        [
+          "疑問の支え",
+          "do",
+          "する"
+        ],
+        [
+          "S",
+          "you",
+          "あなたは"
+        ],
+        [
+          "述語",
+          "eat",
+          "食べる"
+        ],
+        [
+          "時",
+          "for breakfast",
+          "朝ごはんに"
+        ]
+      ]
+    },
+    {
+      "id": "level3-31",
+      "theme": "theme-go",
+      "level": 3,
+      "focus": "where：泳ぐ場所をたずねる",
+      "ja": "あなたはどこで泳ぎますか。",
+      "en": "Where do you swim?",
+      "base": "You swim in the pool.",
+      "question": {
+        "token": "where",
+        "spoken": true,
+        "target": "place"
+      },
+      "blocks": [
+        [
+          "疑問主部＝場所",
+          "Where",
+          "どこ（何処）"
+        ],
+        [
+          "疑問の支え",
+          "do",
+          "する"
+        ],
+        [
+          "S",
+          "you",
+          "あなたは"
+        ],
+        [
+          "述語",
+          "swim",
+          "泳ぐ"
+        ]
+      ]
+    },
+    {
+      "id": "level3-32",
+      "theme": "theme-open",
+      "level": 3,
+      "focus": "who：ドアを開ける人をたずねる",
+      "ja": "だれがドアを開けますか。",
+      "en": "Who opens the door?",
+      "base": "She opens the door.",
+      "question": {
+        "token": "who",
+        "spoken": true,
+        "target": "S"
+      },
+      "blocks": [
+        [
+          "疑問主部＝S",
+          "Who",
+          "だれ（誰）"
+        ],
+        [
+          "support",
+          "",
+          "する"
+        ],
+        [
+          "述語",
+          "opens",
+          "開ける"
+        ],
+        [
+          "P1",
+          "the door",
+          "ドアを"
+        ]
+      ],
+      "note": "Who が主語です。助述部の「する」は声に出さず、Who opens … と続けます。"
+    },
+    {
+      "id": "level3-33",
+      "theme": "theme-clean",
+      "level": 3,
+      "focus": "which：どちらの傘がほしいかをたずねる",
+      "ja": "あなたはどの傘がほしいですか。",
+      "en": "Which umbrella do you want?",
+      "base": "You want the yellow umbrella.",
+      "question": {
+        "token": "which",
+        "spoken": true,
+        "target": "P1"
+      },
+      "blocks": [
+        [
+          "疑問主部＝P1",
+          "Which umbrella",
+          "どの傘"
+        ],
+        [
+          "疑問の支え",
+          "do",
+          "する"
+        ],
+        [
+          "S",
+          "you",
+          "あなたは"
+        ],
+        [
+          "述語",
+          "want",
+          "ほしい"
+        ]
+      ]
+    },
+    {
+      "id": "level3-34",
+      "theme": "nature",
+      "level": 3,
+      "focus": "when：花に水をやる時をたずねる",
+      "ja": "あなたはいつ花に水をやりますか。",
+      "en": "When do you water the flowers?",
+      "base": "You water the flowers in the morning.",
+      "question": {
+        "token": "when",
+        "spoken": true,
+        "target": "time"
+      },
+      "blocks": [
+        [
+          "疑問主部＝時",
+          "When",
+          "いつ（何時）"
+        ],
+        [
+          "疑問の支え",
+          "do",
+          "する"
+        ],
+        [
+          "S",
+          "you",
+          "あなたは"
+        ],
+        [
+          "述語",
+          "water",
+          "水をやる"
+        ],
+        [
+          "P1",
+          "the flowers",
+          "花に"
+        ]
+      ]
+    },
+    {
+      "id": "level3-35",
+      "theme": "theme-stand",
+      "level": 3,
+      "focus": "why：泣いている理由をたずねる",
+      "ja": "あなたはなぜ泣いているのですか。",
+      "en": "Why are you crying?",
+      "base": "You are crying because you fell.",
+      "question": {
+        "token": "why",
+        "spoken": true,
+        "target": "reason"
+      },
+      "blocks": [
+        [
+          "疑問主部＝理由",
+          "Why",
+          "なぜ（何故）"
+        ],
+        [
+          "be",
+          "are",
+          "である"
+        ],
+        [
+          "S",
+          "you",
+          "あなたは"
+        ],
+        [
+          "述語",
+          "crying",
+          "泣いている"
+        ]
+      ]
+    },
+    {
+      "id": "level3-36",
+      "theme": "theme-like",
+      "level": 3,
+      "focus": "how：紙ひこうきの作り方をたずねる",
+      "ja": "あなたは紙ひこうきをどうやって作りますか。",
+      "en": "How do you make a paper airplane?",
+      "base": "You make a paper airplane by folding paper.",
+      "question": {
+        "token": "how",
+        "spoken": true,
+        "target": "method"
+      },
+      "blocks": [
+        [
+          "疑問主部＝方法",
+          "How",
+          "どうやって"
+        ],
+        [
+          "疑問の支え",
+          "do",
+          "する"
+        ],
+        [
+          "S",
+          "you",
+          "あなたは"
+        ],
+        [
+          "述語",
+          "make",
+          "作る"
+        ],
+        [
+          "P1",
+          "a paper airplane",
+          "紙ひこうきを"
+        ]
+      ]
+    },
+    {
+      "id": "level3-37",
+      "theme": "theme-read",
+      "level": 3,
+      "focus": "黙疑問主部whether＋進行形",
+      "ja": "あなたは本を読んでいますか。",
+      "en": "Are you reading a book?",
+      "base": "You are reading a book.",
+      "question": {
+        "token": "whether",
+        "spoken": false,
+        "target": "truth"
+      },
+      "blocks": [
+        [
+          "question-marker",
+          "",
+          "かどうか"
+        ],
+        [
+          "be",
+          "Are",
+          "である"
+        ],
+        [
+          "S",
+          "you",
+          "あなたは"
+        ],
+        [
+          "述語",
+          "reading",
+          "読んでいる"
+        ],
+        [
+          "P1",
+          "a book",
+          "本を"
+        ]
+      ]
+    },
+    {
+      "id": "level3-38",
+      "theme": "theme-open",
+      "level": 3,
+      "focus": "what：持っている物をたずねる",
+      "ja": "彼女は何を持っていますか。",
+      "en": "What is she holding?",
+      "base": "She is holding a box.",
+      "question": {
+        "token": "what",
+        "spoken": true,
+        "target": "P1"
+      },
+      "blocks": [
+        [
+          "疑問主部＝P1",
+          "What",
+          "なに（何）"
+        ],
+        [
+          "be",
+          "is",
+          "である"
+        ],
+        [
+          "S",
+          "she",
+          "彼女は"
+        ],
+        [
+          "述語",
+          "holding",
+          "持っている"
+        ]
+      ]
+    },
+    {
+      "id": "level3-39",
+      "theme": "theme-go",
+      "level": 3,
+      "focus": "which：どのバスに乗るかをたずねる",
+      "ja": "あなたはどのバスに乗りますか。",
+      "en": "Which bus do you take?",
+      "base": "You take the blue bus.",
+      "question": {
+        "token": "which",
+        "spoken": true,
+        "target": "P1"
+      },
+      "blocks": [
+        [
+          "疑問主部＝P1",
+          "Which bus",
+          "どのバス"
+        ],
+        [
+          "疑問の支え",
+          "do",
+          "する"
+        ],
+        [
+          "S",
+          "you",
+          "あなたは"
+        ],
+        [
+          "述語",
+          "take",
+          "乗る"
+        ]
+      ]
+    },
+    {
+      "id": "level3-40",
+      "theme": "theme-play",
+      "level": 3,
+      "focus": "where：たこをあげる場所をたずねる",
+      "ja": "あなたはどこでたこをあげますか。",
+      "en": "Where do you fly a kite?",
+      "base": "You fly a kite in the park.",
+      "question": {
+        "token": "where",
+        "spoken": true,
+        "target": "place"
+      },
+      "blocks": [
+        [
+          "疑問主部＝場所",
+          "Where",
+          "どこ（何処）"
+        ],
+        [
+          "疑問の支え",
+          "do",
+          "する"
+        ],
+        [
+          "S",
+          "you",
+          "あなたは"
+        ],
+        [
+          "述語",
+          "fly",
+          "あげる"
+        ],
+        [
+          "P1",
+          "a kite",
+          "たこを"
+        ]
+      ]
+    },
+    {
+      "id": "level3-41",
+      "theme": "theme-stand",
+      "level": 3,
+      "focus": "黙疑問主部whether＋be：寒いかどうか",
+      "ja": "あなたは寒いですか。",
+      "en": "Are you cold?",
+      "base": "You are cold.",
+      "question": {
+        "token": "whether",
+        "spoken": false,
+        "target": "truth"
+      },
+      "blocks": [
+        [
+          "question-marker",
+          "",
+          "かどうか"
+        ],
+        [
+          "be",
+          "Are",
+          "である"
+        ],
+        [
+          "S",
+          "you",
+          "あなたは"
+        ],
+        [
+          "述語",
+          "cold",
+          "寒い"
+        ]
+      ]
     }
   ]
 }

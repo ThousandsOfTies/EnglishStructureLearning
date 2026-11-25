@@ -20,6 +20,22 @@ ROBOT_ACTIONS = {'go', 'come', 'walk', 'run', 'jump', 'move', 'stop', 'start',
                  'build', 'use', 'fix', 'clean', 'keep', 'find', 'check'}
 # Finding a single object is an achievement, not a sustained activity scene.
 NO_PROGRESSIVE = {'find'}
+# Refer to the people visible in the illustration when kinship has no visual cue.
+PICTURE_PERSON_REFERENCES = {
+    'build-wait-3': ('女の人を', 'the woman'),
+    'build-give-1': ('彼に', 'him'),
+    'build-give-3': ('彼女に', 'her'),
+    'build-show-3': ('彼に', 'him'),
+    'build-tell-1': ('私に', 'me'),
+    'build-help-3': ('彼女を', 'her'),
+    'build-meet-2': ('私に', 'me'),
+    'build-visit-2': ('彼のところに', 'him'),
+    'build-invite-2': ('誕生日会に男の子を', 'the boy to the birthday party'),
+    'build-teach-1': ('彼に', 'him'),
+    'build-teach-3': ('彼女に', 'her'),
+    'build-follow-2': ('男の人に', 'the man'),
+    'build-make-3': ('彼女を', 'her'),
+}
 IRREGULAR_PAST = dict(zip(
     'go come run swim fly ride sit stand sleep wake eat drink cut read write draw sing hear see feel hold put take give get bring send tell speak meet teach choose make build wear buy pay keep find'.split(),
     'went came ran swam flew rode sat stood slept woke ate drank cut read wrote drew sang heard saw felt held put took gave got brought sent told spoke met taught chose made built wore bought paid kept found'.split()))
@@ -48,7 +64,7 @@ def past(verb):
 
 
 def ing(verb):
-    if verb in {'run', 'swim', 'sit', 'stop', 'get', 'put'}:
+    if verb in {'run', 'swim', 'sit', 'stop', 'get', 'put', 'cut'}:
         return verb + verb[-1] + 'ing'
     if verb.endswith('e') and not verb.endswith('ee'):
         return verb[:-1] + 'ing'
@@ -59,7 +75,8 @@ def ja_ongoing(text):
     if text.endswith('ています'):
         return text
     for ending, replacement in [
-        ('持ってきます', '持ってきています'), ('やってみます', 'やってみています'),
+        ('持ってきます', '持ってきています'), ('やってみます', '試しています'),
+        ('しまっておきます', 'しまっています'), ('ついていきます', 'ついて行っています'),
         ('行きます', '行っています'), ('いきます', 'いっています'),
         ('来ます', '来ています'), ('起きます', '起きています'),
         ('ぎます', 'いでいます'), ('きます', 'いています'),
@@ -110,12 +127,13 @@ def viewpoint(subject):
 def annotate_scene(q):
     q['scene'] = viewpoint(q['slots']['S']['en'])
     mode = q['meaning']
+    past_time = q['slots']['time']['ja'] if mode == 'past' else ''
     q['scene'].update({
-        'speakerTime': '今', 'eventTime': {'routine': '繰り返す日々', 'ongoing': '今', 'past': '昨日', 'state': '今の状態'}[mode],
+        'speakerTime': '今', 'eventTime': {'routine': '繰り返す日々', 'ongoing': '今', 'past': past_time, 'state': '今の状態'}[mode],
         'timeCue': {
             'routine': '複数の日の小コマとカレンダーで、同じ動作を繰り返す。今一度だけの動作と混同しない。',
             'ongoing': '吹き出しの外も中も「今」。動作の途中を描く。',
-            'past': '外の話し手は「今日・今」、中の出来事は「昨日」。時点の違いを目印で示す。',
+            'past': f'外の話し手は「今日・今」、中の出来事は「{past_time}」。時点の違いを目印で示す。',
             'state': '今の気持ち・関係・身分・持続する状態。無理に動作の途中にしない。',
         }[mode],
     })
@@ -137,6 +155,14 @@ def refine(rows, groups):
         for role in ('P1', 'P2', 'place'):
             value = q['slots'][role]
             value['en'] = re.sub(r'\b' + previous_possessive + r'\b', possessive, value['en'])
+        if q['id'] in PICTURE_PERSON_REFERENCES:
+            q['slots']['P1'] = pair(*PICTURE_PERSON_REFERENCES[q['id']])
+        if q['group'] == 'wear' and en_s in {'We', 'They'}:
+            item = q['slots']['P1']
+            item['en'] = item['en'].removeprefix('a ') + 's'
+        if q['id'] == 'build-ask-3':
+            q['slots']['P1'] = pair('新しいクラスメートに', 'a new classmate')
+            q['slots']['place'] = pair()
         # 'our friend' refers to one common friend; do not require plural nouns.
         q['slots']['S'] = pair(ja_s, en_s)
         old_predicate = q['slots']['predicate']['en']
@@ -163,7 +189,13 @@ def refine(rows, groups):
             q['meaning'] = 'state' if stative else 'routine'
             if not stative:
                 time = q['slots']['time']
-                if not re.search(r'\b(?:every|on Sundays|on Saturdays)\b', time['en']):
+                if verb == 'invite':
+                    q['slots']['time'] = pair('年に一度', 'once a year')
+                elif verb == 'join' and q['variant'] in {2, 3}:
+                    q['slots']['time'] = pair('新学期に', 'at the start of the school year')
+                elif q['id'] == 'build-ask-3':
+                    q['slots']['time'] = pair('登校初日に', 'on the first day of school')
+                elif not re.search(r'\b(?:every|on Sundays|on Saturdays)\b', time['en']):
                     q['slots']['time'] = pair('毎日', 'every day')
         if q['meaning'] == 'state' and q['slots']['time']['en'] not in {'today', ''}:
             q['slots']['time'] = pair()
@@ -185,7 +217,8 @@ def refine(rows, groups):
                 changed['slots']['predicate']['ja'] = ja[:-4] + 'しかったです'
             else:
                 changed['slots']['predicate']['ja'] = ja[:-2] + 'でした' if ja.endswith('です') else ja
-            changed['slots']['time'] = pair('昨日は', 'yesterday')
+            changed['slots']['time'] = (pair('去年', 'last year') if q['id'] == 'build-be-noun-1'
+                                        else pair('昨日', 'yesterday'))
             rebuild(changed)
             annotate_scene(changed)
             refined.append(changed)
@@ -287,7 +320,7 @@ def pronoun_examples():
     for i, (subject, reflexive, reference) in enumerate(zip(subjects, reflexives, refs), 1):
         en = subject[1]
         be = 'am' if en == 'I' else 'is' if en in {'He', 'She', 'It'} else 'are'
-        add('reflexive', i, subject, ('かいています', be + ' drawing'),
+        add('reflexive', i, subject, ('絵にかいています', be + ' drawing'),
             ('自分たちを' if i in {6, 7, 8} else '自分を', reflexive),
             f'絵をかくのは{reference}。描かれている相手も同じ本人（または同じグループ）。鏡と描きかけの絵で対応を示す。', reflexive)
         rows[-1]['extension'] = True

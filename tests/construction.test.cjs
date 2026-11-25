@@ -60,7 +60,7 @@ test('the new be scenes pair present and past forms with the same subject and pr
 test('location and invitation targets cannot leak into the time slot', () => {
   assert.equal(get('wait-1').slots.place.en, 'here');
   assert.equal(get('invite-1').slots.P1.en, 'your friend to your birthday party');
-  for (const q of basic) assert.match(q.slots.time.en, /^(?:$|on Sundays|every day|every morning|on Saturdays|today|now|yesterday)$/);
+  for (const q of basic) assert.match(q.slots.time.en, /^(?:$|on Sundays|every day|every morning|on Saturdays|today|now|yesterday|last year|once a year|at the start of the school year|on the first day of school)$/);
 });
 
 test('verb complements and scene locations use different slots in every tense', () => {
@@ -93,16 +93,16 @@ test('filled slots reconstruct the exact complete English sentence', () => {
 });
 
 test('P1 and P2 distinguish recipient/thing from object/description', () => {
-  assert.deepEqual([get('give-1').slots.P1.en, get('give-1').slots.P2.en], ['our brother', 'a sticker']);
+  assert.deepEqual([get('give-1').slots.P1.en, get('give-1').slots.P2.en], ['him', 'a sticker']);
   assert.deepEqual([get('call-3').slots.P1.en, get('call-3').slots.P2.en], ['their dog', 'Pochi']);
   assert.deepEqual([get('keep-1').slots.P1.en, get('keep-1').slots.P2.en], ['our room', 'clean']);
-  assert.deepEqual([get('make-3').slots.P1.en, get('make-3').slots.P2.en], ['our sister', 'happy']);
+  assert.deepEqual([get('make-3').slots.P1.en, get('make-3').slots.P2.en], ['her', 'happy']);
 });
 
 test('each selectable level has its requested number of examples', () => {
-  assert.deepEqual([1,2,3].map(level => draft.examples.filter(q => q.level === level).length), [924,10,19]);
+  assert.deepEqual([1,2,3].map(level => draft.examples.filter(q => q.level === level).length), [924,29,37]);
   assert.deepEqual(draft.levels.map(q => q.id), [1,2,3]);
-  assert.equal(new Set(draft.examples.map(q => q.id)).size, 953);
+  assert.equal(new Set(draft.examples.map(q => q.id)).size, 990);
 });
 
 test('state verbs stay simple while ongoing actions are be plus ing', () => {
@@ -156,9 +156,17 @@ test('personal pronouns cover subject, object, possessive and reflexive forms wi
   assert.equal(basic.filter(q => q.pronounFocus?.category === 'independent' && q.pronounFocus.form === 'its').length, 0);
 });
 
-test('advanced blocks reconstruct spoken English and never speak silent whether', () => {
+test('advanced blocks reconstruct English with silent question and support blocks omitted', () => {
   for (const q of draft.examples.filter(q => q.level > 1)) {
-    assert.equal(q.blocks.map(([,text]) => text).join(' ') + (q.question ? '?' : '.'), q.en);
+    const silent = q.blocks.filter(([, text]) => !text);
+    const expected = q.question?.spoken === false ? [['question-marker', '', 'かどうか']] : [];
+    const firstSpokenAfterQuestion = q.blocks.slice(1).find(([, text]) => text);
+    const simpleFrequency = ['level2-07', 'level2-08', 'level2-09'].includes(q.id);
+    if (simpleFrequency || (q.question?.target === 'S' && firstSpokenAfterQuestion?.[0] === '述語')) {
+      expected.push(['support', '', 'する']);
+    }
+    assert.deepEqual(silent, expected, q.id);
+    assert.equal(q.blocks.map(([, text]) => text).filter(Boolean).join(' ') + (q.question ? '?' : '.'), q.en);
     assert.doesNotMatch(q.en, /\bwhether\b/i);
     if (q.question) assert.equal(q.question.spoken, q.question.token !== 'whether');
   }
@@ -169,6 +177,14 @@ test('questions about the subject preserve the subject position without do', () 
   assert.equal(subjectQuestion.question.target, 'S');
   assert.equal(subjectQuestion.en, 'Who gives you a sticker at school?');
   assert.doesNotMatch(subjectQuestion.en, /\bdo(?:es)?\b/i);
+});
+
+test('derived cutting, keeping and spelling exercises use corrected practice wording', () => {
+  for (const q of basic) {
+    if (q.group === 'cut' && q.meaning === 'ongoing') assert.equal(q.slots.predicate.en, 'cutting');
+    if (q.group === 'keep' && q.meaning === 'ongoing') assert.equal(q.slots.predicate.ja, 'しまっている');
+    assert.doesNotMatch(q.ja + Object.values(q.slots).map(slot => slot.ja).join(''), /[a-z]/i, q.id);
+  }
 });
 
 test('each picture activity has four complete forms using the same participants and object', () => {

@@ -211,8 +211,6 @@ def build_examples():
             en_p = own(en_p, i)
             if verb == 'play' and i == 0:
                 ja_p, en_p = 'サッカーを', 'soccer'
-            if verb == 'change' and i == 2:
-                en_p = 'our jackets'
             ja_m, en_m = modifiers[i if len(modifiers) == 3 else 0]
             en_m = own(en_m, i)
 
@@ -311,6 +309,8 @@ def build_examples():
                 values['predicate']['ja'] = 'かぶっています' if i == 0 else '着ています'
                 values['place'] = slot('公園で', 'in the park')
                 values['time'] = slot('日曜日に', 'on Sundays')
+            if verb == 'change' and i == 1:
+                values['predicate']['ja'] = 'はきかえます'
             if verb == 'buy':
                 values['place'] = slot('お店で', 'at a shop')
             if verb == 'pay':
@@ -324,8 +324,8 @@ def build_examples():
             ('私たちは', 'We', 'チームメイトです', 'are teammates', '学校では', 'at school', '', ''),
         ]),
         ('be-adjective', 'be＋形容詞', [
-            ('私は', 'I', 'うれしいです', 'am happy', '家で', 'at home', '今日は', 'today'),
-            ('姉は', 'My sister', 'いそがしいです', 'is busy', '学校で', 'at school', '今日は', 'today'),
+            ('私は', 'I', 'うれしいです', 'am happy', '家で', 'at home', '今日', 'today'),
+            ('姉は', 'My sister', 'いそがしいです', 'is busy', '学校で', 'at school', '今日', 'today'),
             ('私たちは', 'We', '静かです', 'are quiet', '図書館で', 'in the library', '放課後は', 'after school'),
         ]),
     ]
@@ -382,6 +382,14 @@ def build_examples():
         assert ' '.join(text for _, text in q['blocks']) + '.' == q['en'], q['id']
     advanced = json.loads((ROOT / 'data/advanced-examples.json').read_text(encoding='utf-8'))
     level2_choices = build_level2_choices(advanced)
+    level2_units = {
+        'degree': 'できる・かもしれない・必要・おすすめ',
+        'patterns': '否定・頻度',
+    }
+    for q in advanced['level2']:
+        q['unit'] = 'degree' if q['blocks'][1][0] == '助動詞' else 'patterns'
+    advanced['level2'].sort(key=lambda q: tuple(level2_units).index(q['unit']))
+    silent_question = {'token': 'whether', 'meaning': 'かどうか', 'spoken': False, 'written': False}
     for level in (2, 3):
         examples = advanced[f'level{level}']
         assert examples
@@ -389,7 +397,9 @@ def build_examples():
             assert q['level'] == level and q['ja'] and q['focus']
             question = q.get('question')
             punctuation = '?' if question else '.'
-            assert ' '.join(text for _, text, _ in q['blocks']) + punctuation == q['en'], q['id']
+            if question and not question['spoken']:
+                q['blocks'].insert(0, ['question-marker', '', silent_question['meaning']])
+            assert ' '.join(text for _, text, _ in q['blocks'] if text) + punctuation == q['en'], q['id']
             japanese_parts = [japanese for _, _, japanese in q['blocks']]
             assert all(japanese_parts) and len(set(japanese_parts)) == len(japanese_parts), q['id']
             if question:
@@ -425,8 +435,9 @@ def build_examples():
             {'id': 2, 'label': 'レベル2：助動詞・否定・頻度', 'modals': True, 'negation': True, 'frequency': True, 'questions': False},
             {'id': 3, 'label': 'レベル3：疑問文と倒置', 'modals': True, 'negation': True, 'frequency': True, 'questions': True},
         ],
-        'silentQuestionWord': {'token': 'whether', 'meaning': '〜かどうか', 'spoken': False, 'written': False},
+        'silentQuestionWord': silent_question,
         'level2Choices': level2_choices,
+        'level2Units': level2_units,
         'counts': {'level1': len(rows), 'level2': len(advanced['level2']), 'level3': len(advanced['level3']), 'total': len(all_examples),
                    'core': sum(q.get('contrastFamily') == q['id'] for q in rows), 'pronounPractice': 39,
                    'ongoing': sum(q['meaning'] == 'ongoing' and not q.get('pronounFocus') for q in rows),
@@ -445,7 +456,7 @@ def build_examples():
              '場所と時の両方を常に付ける必要はありません。主語に合う述語の形をそのまま練習します。', '',
              '例文は本教材用に新しく作成したものです。画像の更新は行っていません。', '',
              'レベル1：基本の文。レベル2：助動詞・否定・頻度。レベル3：疑問文と倒置。', '',
-             'whether は「〜かどうか」を問う内部の目印（黙疑問詞）。英文では書かず、発音もしません。S以外をたずねる直接疑問文では助動詞・be・doを主語の前に出します。SをたずねるwhoはSの位置に入ります。', '',
+             '「かどうか」は疑問文の先頭に置く教材上の目印（黙疑問主部）です。英文では書かず、発音もしません。S以外をたずねる直接疑問文では助動詞・be・doを主語の前に出します。SをたずねるwhoはSの位置に入ります。', '',
              f"追加例文：[レベル2・{result['counts']['level2']}文](level2-examples.md) / [レベル3・{result['counts']['level3']}文](level3-examples.md)", '']
     for group in groups:
         lines.extend([f"## {group['label']}：{group['ja']}", '',
@@ -468,26 +479,30 @@ def build_examples():
         title = '助動詞・否定・頻度' if level == 2 else '疑問文と倒置'
         exercises = advanced[f'level{level}']
         lines = [f'# レベル{level}：{title}・{len(exercises)}文', '',
-                 '元の文をどう変えるか、意味のブロックと完成した英文の両方で確かめます。', '',
-                 '日本語のカードは、対応する英語を発音する順に並べます。', '']
+                 '日本語のカードを、できあがる英文の順に並べます。', '']
         if level == 2:
-            lines.extend(['リストの候補は欄の役割ごとに用意します。助動詞は、場面に合う日本語に、その助動詞に共通する意味を括弧で添えます。', ''])
+            lines.extend(['can・might・must・should のグループから始め、そのあとで否定と頻度を練習します。', '',
+                          '助動詞は、場面に合う日本語に、その助動詞に共通する意味を括弧で添えます。', ''])
         else:
-            lines.extend(['疑問詞がある文では、What can I buy? のように疑問詞を先頭に、最初の助述部を主語の前に置きます。', '',
-                          '黙疑問詞 (whether) は「〜かどうか」を問う教材上の目印です。開始ガイドで語順を説明するときだけ使い、完成英文や読み上げには含めません。', '',
-                          'whoがSをたずねる場合は、肯定の文ではdoを足さず、Sと述語の順を入れ替えません。P1をたずねるwhoとは区別します。', '',
-                          'There is a cat. や There are two birds in the tree. では、文頭に There、続いて be と「いるもの」を置きます。', '',
-                          "否定疑問の練習では Don't のような短縮形を使い、一つの助述部として主語の前に置きます。", ''])
+            lines.extend(['疑問文の練習では、先頭に「なに（何）」「だれ（誰）」「かどうか」などの疑問主部を置きます。主語以外をたずねる文では、その次に最初の助述部を置きます。', '',
+                          '「かどうか」（黙疑問主部 whether）は練習用の目印です。完成英文や読み上げには含めません。', '',
+                          'Who が主語で一般動詞が続く文では、練習で黙助述部の「する」を置きます。完成英文は Who gives … のように続きます。Who can ride a bike? の can は声に出します。', '',
+                          'There で始まる文では、呼びかけの「ほら」、助述部の「いる」、続いて見つけたものを置きます。', ''])
+        active_unit = None
         for number, q in enumerate(exercises, 1):
-            lines.extend([f"## {number:02}　{q['focus']}", '', q['ja'], '', f"**{q['en']}**", ''])
+            if level == 2 and q['unit'] != active_unit:
+                active_unit = q['unit']
+                lines.extend([f"## {level2_units[active_unit]}", ''])
+            heading = '###' if level == 2 else '##'
+            review_mark = ' ［要見直し］' if q.get('needsReview') else ''
+            lines.extend([f"{heading} {number:02}　{q['focus']}{review_mark}", '', q['ja'], '', f"**{q['en']}**", ''])
             if q.get('base'):
                 lines.extend([f"元の文：{q['base']}", ''])
-            lines.extend(['| ' + ' | '.join(role for role, _, _ in q['blocks']) + ' |',
+            labels = {'question-marker': '疑問主部', 'support': '助述部', 'there': '呼びかけ'}
+            lines.extend(['| ' + ' | '.join(labels.get(role, role) for role, _, _ in q['blocks']) + ' |',
                           '| ' + ' | '.join('---' for _ in q['blocks']) + ' |',
                           '| ' + ' | '.join(japanese for _, _, japanese in q['blocks']) + ' |',
-                          '| ' + ' | '.join(text for _, text, _ in q['blocks']) + ' |', ''])
-            if q.get('question') and not q['question']['spoken']:
-                lines.extend(['内部の問い：whether「〜かどうか」（表示・発音なし）', ''])
+                          '| ' + ' | '.join(text or '（発音なし）' for _, text, _ in q['blocks']) + ' |', ''])
             if q.get('note'):
                 lines.extend([q['note'], ''])
         (ROOT / f'docs/level{level}-examples.md').write_text('\n'.join(lines), encoding='utf-8')

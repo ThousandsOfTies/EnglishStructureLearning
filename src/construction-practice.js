@@ -2,8 +2,8 @@
 'use strict';
 const Construction = (() => {
   const roles = ['S', 'support', 'predicate', 'P1', 'P2', 'place', 'time'];
-  const level2OptionalRoles = ['P1', 'P2', '場所', '時'];
-  const openingRoles = new Set(['S', '疑問詞＝S', 'there']);
+  const basicSupportChoices = ['する', 'した', 'である', 'であった'];
+  const advancedOptionalRoles = ['P1', 'P2', '場所', '時'];
   const predicateSupportRoles = ['support', '助動詞', '助動詞＋否定', '否定', 'be', '疑問の支え'];
   const predicateRoles = new Set([...predicateSupportRoles, 'predicate', '述語', '述語の残り']);
   function isSupportRole(role) { return role === '頻度' || predicateSupportRoles.includes(role); }
@@ -15,13 +15,13 @@ const Construction = (() => {
   function targetsFor(q) {
     if (q.level === 1) return roles;
     const targets = q.blocks.map((_, i) => String(i));
-    if (q.level !== 2) return targets;
-    const core = targets.filter(id => !level2OptionalRoles.includes(targetRole(q, id)));
-    const optional = level2OptionalRoles.map(role => targets.find(id => targetRole(q, id) === role) ?? role);
+    if (q.review) return targets;
+    const core = targets.filter(id => !advancedOptionalRoles.includes(targetRole(q, id)));
+    const optional = advancedOptionalRoles.map(role => targets.find(id => targetRole(q, id) === role) ?? role);
     return [...core, ...optional];
   }
   function targetRole(q, id) {
-    return q.level === 1 || (q.level === 2 && level2OptionalRoles.includes(id)) ? id : q.blocks[Number(id)][0];
+    return q.level === 1 || advancedOptionalRoles.includes(id) ? id : q.blocks[Number(id)][0];
   }
   function expectedTarget(q, i) { return q.level === 1 ? cardsFor(q)[i].role : String(i); }
   function wrongCardTargets(q, placements) {
@@ -36,31 +36,43 @@ const Construction = (() => {
     return options.slice(offset).concat(options.slice(0, offset));
   }
   const questionChoices = {
-    what: '何を', who: 'だれが', where: 'どこで', when: 'いつ',
-    why: 'なぜ', which: 'どれを', how: 'どうやって'
+    whether: 'かどうか', what: 'なに（何）', who: 'だれ（誰）', where: 'どこ（何処）',
+    when: 'いつ（何時）', why: 'なぜ（何故）', which: 'どれ', how: 'どうやって'
   };
+  function advancedChoices(data, category, english, correct, seed) {
+    const entries = Object.entries(data.level2Choices[category]);
+    if (!correct) return rotateChoices(entries.map(([, ja]) => ja), seed);
+    const alternatives = [...new Set(entries
+      .filter(([en, ja]) => en !== english && ja !== correct)
+      .map(([, ja]) => ja))];
+    const limit = category === '助動詞' ? 4 : 3;
+    return rotateChoices([correct, ...alternatives.slice(0, limit)], seed);
+  }
   function choicesFor(data, q, role) {
     if (q.level === 3) {
       const token = q.question?.token;
-      const [category, , correct] = q.blocks[Number(role)];
-      if (Object.hasOwn(questionChoices, token) && category.startsWith('疑問詞＝')) {
+      const [category, english, correct] = q.blocks[Number(role)] ?? [role];
+      if (Object.hasOwn(questionChoices, token) && (category === 'question-marker' || category.startsWith('疑問主部＝'))) {
         return rotateChoices(Object.values({ ...questionChoices, [token]: correct }), q.id + role);
       }
-      return shuffledIndices(q)
-        .filter(index => !q.blocks[index][0].startsWith('疑問詞＝'))
-        .map(index => q.blocks[index][2]);
+      if (category === 'support' || category === '疑問の支え' || category === 'be') {
+        return [...new Set([...basicSupportChoices, correct])];
+      }
+      if (isSupportRole(category)) return advancedChoices(data, category, english, correct, q.id + role);
+      const candidates = data.examples.filter(item => item.level === 3)
+        .flatMap(item => item.blocks.filter(([role]) => role === category)
+          .map(([, , text]) => text));
+      const options = [...new Set([correct, ...candidates, ...Object.values(data.level2Choices[category] ?? {})].filter(Boolean))];
+      const visibleOptions = category === '述語' && correct === 'ほしい'
+        ? options.filter(text => text !== '好き')
+        : options;
+      return rotateChoices(visibleOptions.slice(0, 4), q.id + role);
     }
     if (q.level === 2) {
-      if (level2OptionalRoles.includes(role)) {
-        return rotateChoices(Object.values(data.level2Choices[role]), q.id + role);
-      }
-      const [category, english, correct] = q.blocks[Number(role)];
-      const alternatives = [...new Set(Object.entries(data.level2Choices[category])
-        .filter(([en, ja]) => en !== english && ja !== correct).map(([, ja]) => ja))];
-      const limit = category === '助動詞' ? 4 : 3;
-      return rotateChoices([correct, ...alternatives.slice(0, limit)], q.id + role);
+      const [category, english, correct] = q.blocks[Number(role)] ?? [role];
+      return advancedChoices(data, category, english, correct, q.id + role);
     }
-    if (role === 'support') return ['する', 'した', 'である', 'であった'];
+    if (role === 'support') return [...basicSupportChoices];
     const family = q.group === 'tense-pictures' && role === 'predicate'
       ? data.examples.filter(item => item.contrastFamily === q.contrastFamily) : [];
     const candidates = [...family, ...data.examples.filter(item => item.level === 1 && item.group === q.group),
@@ -75,14 +87,19 @@ const Construction = (() => {
     return targetsFor(q).every(role => choiceMatches(q, choices, role));
   }
   function choiceMatches(q, choices, role) {
-    if (q.level === 2 && level2OptionalRoles.includes(role)) return !choices[role];
+    if (q.level !== 1 && advancedOptionalRoles.includes(role)) return !choices[role];
     if (q.level !== 1) return choices[role] === q.blocks[Number(role)][2];
     if (['support', 'P1', 'P2', 'place', 'time'].includes(role) && !q.slots[role].ja) return !choices[role];
     return Object.hasOwn(choices, role) && choices[role] === q.slots[role].ja;
   }
   function enabledTargets(q, filled) {
     const targets = targetsFor(q);
-    const opening = targets.filter(id => openingRoles.has(targetRole(q, id)));
+    if (q.level === 3) {
+      const required = targets.filter(id => !advancedOptionalRoles.includes(id));
+      const firstEmpty = required.findIndex(id => !filled.includes(id));
+      return firstEmpty < 0 ? targets : required.slice(0, firstEmpty + 1);
+    }
+    const opening = targets.filter(id => targetRole(q, id) === 'S');
     if (opening.some(id => !filled.includes(id))) return opening;
     if (q.level === 2) {
       const support = targets.filter(id => isSupportRole(targetRole(q, id)));
@@ -126,7 +143,7 @@ const Construction = (() => {
   }
   function englishReview(q) {
     return {
-      id: q.id + '-english', level: 3,
+      id: q.id + '-english', level: 3, review: true,
       blocks: cardsFor(q).filter(card => card.en).map(card => [card.role, card.en, card.en])
     };
   }
@@ -173,7 +190,10 @@ if (typeof document !== 'undefined') {
       const revision = illustration.revision ? `?v=${encodeURIComponent(illustration.revision)}` : '';
       q.image = illustration.file + revision;
       q.imageAlt = illustration.alt;
-      q.imageClue = illustration.clue;
+      q.imageQuestionMark = illustration.questionMark;
+      q.imageTodayCalendar = illustration.todayCalendar;
+      q.imageSpeakerPose = illustration.speakerPose;
+      q.imageSpeakerPlacement = illustration.speakerPlacement;
     }
   }
   const KEY = 'construction-workshop-original-v1', VOICE_KEY = 'sentence-workshop-voice-v1';
@@ -182,7 +202,7 @@ if (typeof document !== 'undefined') {
   const $ = id => document.getElementById(id);
   const esc = value => String(value).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   const labels = { S: '主語', support: '助述部', predicate: '述語', P1: '対象１', P2: '対象２', place: '場所', time: '時',
-    'question-marker': '声に出さない目印', there: '文頭の there' };
+    'question-marker': '疑問主部', there: '呼びかけ' };
   const levelGuides = {
     1: {
       summary: '英語の文には、大きく分けて、働きかけを表す文と、状態を表す文があります。',
@@ -195,12 +215,12 @@ if (typeof document !== 'undefined') {
         id: 'build-be-noun-1',
         heading: '状態を表す文',
         explanation: '「何者か」や「どんなようすか」を伝えるときに、am・is・are などの be 動詞を使います。',
-        practice: '今は「である」＋「生徒」で “I am a student.” 過去は「であった」＋「生徒」で “I was a student.” 英語では am が was に変わります。',
+        practice: '今は「である」＋「生徒」で “I am a student.” 去年なら「であった」＋「生徒」で “I was a student last year.” 英語では am が was に変わります。',
       }],
       note: '「今、食べている」のような文でも、助述部は「である」です。述語には「食べている」を入れます。まずは、この２つの形を練習していきましょう。',
     },
     2: {
-      summary: 'レベル1の文に「程度」を加えます。',
+      summary: '話し手の気持ちや判断を助述部に加えます。',
       introduction: '「自転車に乗る」に「できる」を加えると、「自転車に乗れる」になります。このアプリでは、その「程度」を吹き出しの先にいる話し手の表情やしぐさで表します。話し手の顔と手をよく見て、助述部に入れることばをえらびましょう。',
       examples: [{
         id: 'level2-01',
@@ -208,18 +228,10 @@ if (typeof document !== 'undefined') {
         picture: 'speaker',
         explanation: '女の子がにっこり笑って親指を立てています。「大丈夫、私にできるよ」という気持ちです。',
       }, {
+        id: 'level2-11',
         heading: '少し迷った顔 → 〜するかもしれない（might）',
-        picture: 'pose',
-        image: 'assets/character-materials/modal-speakers/girl-modal-poses.png',
-        imageAlt: 'ほおに手を当て、こめかみに汗を一粒浮かべている女の子。',
-        explanation: '女の子がほおに手を当て、少し迷った顔をしています。「来る可能性はあるけど、まだ分からない」という気持ちです。',
-        en: 'She might come.',
-        ja: '彼女は来るかもしれません。',
-        parts: [
-          { role: 'S', en: 'She', text: '彼女は' },
-          { role: 'support', en: 'might', text: '〜するかもしれない' },
-          { role: '述語', en: 'come', text: '来る' },
-        ],
+        explanation: '女の子がほおに手を当て、少し迷った顔をしています。「自転車に乗るかもしれないけど、まだ分からない」という気持ちです。',
+        picture: 'scene',
       }, {
         id: 'level2-03',
         heading: '真剣な顔 → 〜しなければならない（must）',
@@ -231,57 +243,54 @@ if (typeof document !== 'undefined') {
         picture: 'speaker',
         explanation: '男の子がやさしく笑って、相手に手のひらを差し出しています。「手を洗っておくといいよ」とすすめています。',
       }],
-      note: '「よく」「いつも」「ときどき」などは「助述部修飾」です。助述部１の下に欄があるときは、１、修飾、２の順にえらびます。状態を表す be は、レベル1と同じ「である」です。',
+      note: '「よく読む」などの文では、助述部１に「する」、その下の助述部修飾に「よく」を入れます。この「する」は英文では声に出しません。助述部が２つあるときは、助述部１、修飾、助述部２の順にえらびます。must be のような文では、助述部２の be は「である」です。',
     },
     3: {
-      summary: '疑問文を中心に、ことばを前に出す「倒置」の並びを学びます。',
-      introduction: '疑問文は、まず疑問詞を先頭に置くと考えます。次に、最初の助述部（can や are など）を主語の前へ出します。一般動詞だけの文では、必要に応じて do・does・did を使います。',
+      summary: '疑問文と、There で始まる「いる・ある」の文を作ります。',
+      introduction: '話し手のそばの「？」は「かどうか」の合図です。吹き出しの中に「？」があれば、その場所や人、物などをたずねます。疑問主部の欄で聞き方を選び、左からことばを入れます。使わない欄は空けておきましょう。',
       examples: [{
-        heading: '何を？　疑問詞を先頭へ',
-        explanation: '「何を買えるか」を聞くので、what を先頭に出し、その次に can を置きます。',
+        heading: '「何を？」と聞く文の作り方',
+        explanation: '「何を？」を表す what を先頭へ。そのすぐあと、２番目が最初の助述部（助述部１）の位置です。この文では can が入ります。do・does（「する」）や did（「した」）もここに入ります。',
         startingOrder: 'I can buy [what]',
         en: 'What can I buy?',
         ja: '私は何を買えますか？',
         parts: [
-          { role: '疑問詞＝P1', en: 'What', text: '何を' },
+          { role: '疑問主部＝P1', en: 'What', text: 'なに（何）' },
           { role: 'support', en: 'can', text: '〜できる' },
           { role: 'S', en: 'I', text: '私は' },
           { role: '述語', en: 'buy', text: '買う' },
         ],
       }, {
-        heading: 'はい・いいえで聞くときは (whether)',
-        explanation: '「あなたが生徒かどうか」を聞く文です。この教材では「〜かどうか」の目印として (whether) を先頭に置いて考えます。完成英文では書かず、発音もしません。声に出す最初の語は Are です。',
-        startingOrder: 'You are a student.',
+        heading: '「はい・いいえ」で答えられる文',
+        explanation: 'はい・いいえで答える質問は、先頭で「かどうか」を選びます。このカードは練習用の目印です。英文では次の助述部 Are から書き、Are から読みます。',
         en: 'Are you a student?',
         ja: 'あなたは生徒ですか？',
         parts: [
-          { role: 'question-marker', en: '(whether)', text: '〜かどうか' },
+          { role: 'question-marker', en: '(whether)', text: 'かどうか' },
           { role: 'support', en: 'Are', text: 'である' },
           { role: 'S', en: 'you', text: 'あなたは' },
           { role: '述語', en: 'a student', text: '生徒' },
         ],
       }, {
-        id: 'level3-18',
-        heading: '「〜がいる・ある」と伝える There',
-        explanation: 'A cat is there. は「あそこに猫がいる」と場所を指します。There is a cat. は「猫がいるよ」と、その存在を伝えます。この文でも is が a cat の前に来ます。',
-        startingOrder: 'A cat is there.',
-      }, {
         id: 'level3-04',
         heading: '誰が、どんなふうにたずねている？',
         picture: 'scene',
-        explanation: '吹き出しの先の男の子が、女の子のほうを見て手を差し出しています。女の子に「乗れる？」とたずねているので、助述部の Can を主語の前に置きます。',
-        practice: '驚いた顔で「乗れないの？」と聞く場面なら、Can’t を一つの助述部として主語の前に置きます。',
+        explanation: '話し手の男の子が親指を立てています。レベル２と同じ「できる」の合図です。そばに「？」があるので、「かどうか」のあとに Can を置きます。',
+      }, {
+        id: 'level3-18',
+        heading: '見つけたものを知らせる文',
+        explanation: '「ほら、猫がいるよ」と伝える文です。呼びかけの「ほら」に There、助述部の「いる」に is が入ります。',
       }],
       questionWords: [
-        ['what', '何を', 'What can I buy?', '私は何を買えますか？'],
-        ['who', 'だれが', 'Who found it?', 'だれがそれを見つけましたか？'],
-        ['when', 'いつ', 'When do you clean your room?', 'あなたはいつ自分の部屋をそうじしますか？'],
-        ['where', 'どこで', 'Where do you play soccer?', 'あなたはどこでサッカーをしますか？'],
-        ['why', 'なぜ', 'Why are you happy?', 'あなたはなぜうれしいのですか？'],
-        ['which', 'どの', 'Which book do you want?', 'あなたはどの本がほしいですか？'],
+        ['what', 'なに（何）', 'What can I buy?', '私は何を買えますか？'],
+        ['who', 'だれ（誰）', 'Who gives you a sticker at school?', '学校で、だれがあなたにシールをくれますか？'],
+        ['when', 'いつ（何時）', 'When do you clean your room?', 'あなたはいつ自分の部屋をそうじしますか？'],
+        ['where', 'どこ（何処）', 'Where do you play soccer?', 'あなたはどこでサッカーをしますか？'],
+        ['why', 'なぜ（何故）', 'Why are you happy?', 'あなたはなぜうれしいのですか？'],
+        ['which', 'どの本', 'Which book do you want?', 'あなたはどの本がほしいですか？'],
         ['how', 'どうやって', 'How do you make a paper hat?', 'あなたは紙のぼうしをどうやって作りますか？'],
       ],
-      note: '「だれが」と主語をたずねる Who found it? のような文では、Who が主語になり、そのあとに述語が続きます。',
+      note: '「だれが」と聞くときは Who が主語です。Who gives … では、練習で黙助述部の「する」を入れます。英文では Who の次に gives が来ます。Who can ride a bike? の can は声に出します。',
     },
   };
   const compactChoices = window.matchMedia('(max-width: 720px)');
@@ -291,11 +300,12 @@ if (typeof document !== 'undefined') {
   }
   function labelParts(parts) {
     const support = parts.filter(part => part.role !== '頻度' && Construction.isSupportRole(part.role));
+    const numberedSupport = support.length > 1 || parts.some(part => part.role === '頻度');
     return parts.map(part => {
       if (part.role === '頻度') return { ...part, role: 'support', label: '助述部修飾', modifier: true };
       const index = support.indexOf(part);
       if (index < 0) return { ...part, label: roleLabel(part.role) };
-      const number = support.length > 1 ? (index + 1).toLocaleString('ja-JP-u-nu-fullwide') : '';
+      const number = numberedSupport ? (index + 1).toLocaleString('ja-JP-u-nu-fullwide') : '';
       return { ...part, role: 'support', label: labels.support + number };
     });
   }
@@ -402,7 +412,7 @@ if (typeof document !== 'undefined') {
       if (!state.completed.includes(q.id)) {
         state.completed.push(q.id);
         const lesson = $('lessons').querySelector('[data-lesson][aria-current="true"]');
-        if (lesson) lesson.textContent = `✓ ${q.ja}`;
+        lesson?.prepend('✓ ');
         renderCourse();
         save();
       }
@@ -538,36 +548,55 @@ if (typeof document !== 'undefined') {
     $('artworkProgress').textContent = `絵のある例文 ${Object.keys(ILLUSTRATIONS).length} / ${DATA.examples.length}文`;
     $('filterCount').textContent = `${visible.length}文を表示`;
     const emptyMessage = state.levels.length ? 'この組み合わせの問題はありません。ほかの場面かレベルをえらんでね。' : 'レベルをえらぶと、例文が表示されます。';
-    $('lessons').innerHTML = visible.length ? visible.map(q => `<button data-lesson="${esc(q.id)}" aria-current="${state.current === q.id}">${state.completed.includes(q.id) ? '✓ ' : ''}${esc(q.ja)}</button>`).join('') : `<p class="muted">${emptyMessage}</p>`;
+    $('lessons').innerHTML = visible.length ? visible.map((q, index) => {
+      const heading = q.unit && q.unit !== visible[index - 1]?.unit
+        ? `<h3 class="lesson-unit">${esc(DATA.level2Units[q.unit])}</h3>` : '';
+      const reviewMark = q.needsReview ? ' <span class="muted">［要見直し］</span>' : '';
+      return `${heading}<button data-lesson="${esc(q.id)}" aria-current="${state.current === q.id}">${state.completed.includes(q.id) ? '✓ ' : ''}${esc(q.ja)}${reviewMark}</button>`;
+    }).join('') : `<p class="muted">${emptyMessage}</p>`;
     const index = Construction.navigationIndex(visible, getQ());
     $('previous').disabled = index <= 0; $('next').disabled = index < 0 || index >= visible.length - 1;
   }
   function poolCardHTML(card, i) {
     return `<button class="card ${selected === i ? 'selected' : ''}" data-card="${i}" aria-pressed="${selected === i}" ${review ? 'lang="en"' : ''}>${esc(card.text)}</button>`;
   }
-  function calendarFor(time) {
+  function calendarFor(time, position) {
     if (time === 'every day') {
       return `
         <span class="day-calendar daily-calendar" role="img" aria-label="二週間分の全ての日にチェックが付いたカレンダー">
           <span class="daily-checks">${'<span></span>'.repeat(14)}</span>
         </span>`;
     }
-    return time === 'yesterday' || time === 'tomorrow' ? `
-      <span class="day-calendar ${time}" role="img" aria-label="地球儀を${time === 'yesterday' ? '左' : '右'}向きに一周するカレンダー">
-        <span class="day-orbit"></span>
+    if (time !== 'yesterday' && time !== 'tomorrow' && !(time === 'today' && position)) return '';
+    const label = time === 'today' ? '地球儀の真ん中を矢印で指す、今日のカレンダー'
+      : `地球儀を${time === 'yesterday' ? '左' : '右'}向きに一周するカレンダー`;
+    const placement = position ? ` style="--today-x:${esc(position[0])}%;--today-y:${esc(position[1])}%"` : '';
+    return `
+      <span class="day-calendar ${time}"${placement} role="img" aria-label="${label}">
+        <span class="${time === 'today' ? 'day-pointer' : 'day-orbit'}" aria-hidden="true"></span>
         <img src="assets/calendar/earth.png" alt="">
-      </span>` : '';
+      </span>`;
+  }
+  function sceneArtwork(img, q) {
+    if (!q.imageQuestionMark && !q.imageSpeakerPose && !q.imageTodayCalendar) return img;
+    const [x, y] = q.imageQuestionMark ?? [];
+    return `<div class="marked-illustration">
+      ${img}
+      ${q.imageQuestionMark ? `<span class="scene-question-mark" style="--question-x:${esc(x)}%;--question-y:${esc(y)}%" aria-hidden="true">?</span>` : ''}
+      ${q.imageTodayCalendar ? calendarFor('today', q.imageTodayCalendar) : ''}
+      ${q.imageSpeakerPose ? `<span class="scene-speaker" data-pose="${esc(q.imageSpeakerPose)}" data-placement="${esc(q.imageSpeakerPlacement ?? '')}" aria-hidden="true"></span>` : ''}
+    </div>`;
   }
   function renderPicture(q) {
-    $('sceneClue').textContent = q.imageClue || '';
     if (!q.image) {
       $('pictureScene').innerHTML = `<div class="scene-pending japanese">${esc(q.ja)}</div>`;
       return;
     }
     const time = q.slots?.time.en ?? q.blocks.find(([role]) => role === '時')?.[1];
+    const img = `<img class="scene-illustration" src="${esc(q.image)}" alt="${esc(q.imageAlt)}" width="1536" height="1024">`;
     $('pictureScene').innerHTML = `
       <div class="scene-visual">
-        <img class="scene-illustration" src="${esc(q.image)}" alt="${esc(q.imageAlt)}"${q.imageClue ? ' aria-describedby="sceneClue"' : ''} width="1536" height="1024">
+        ${sceneArtwork(img, q)}
         ${calendarFor(time)}
       </div>`;
   }
@@ -584,7 +613,6 @@ if (typeof document !== 'undefined') {
     $('selectMode').setAttribute('aria-pressed', pictureMode);
     $('reviewMode').hidden = !review;
     $('pictureScene').hidden = !pictureMode && !(q.image && q.group === 'tense-pictures');
-    $('sceneClue').hidden = $('pictureScene').hidden || !q.imageClue;
     $('pool').hidden = pictureMode;
     const parameters = q.frame === 'object-location' ? ['P2', 'P1'] : ['P1', 'P2'];
     const japaneseOrder = ['S', 'time', 'place', ...parameters, 'predicate', 'support'];
@@ -598,7 +626,7 @@ if (typeof document !== 'undefined') {
     if (pictureMode) {
       const values = picks();
       $('slots').innerHTML = renderPartGroups(targets, ({ id, role, label }) => {
-        const prompt = role.startsWith('疑問詞＝') ? '疑問詞' : label;
+        const prompt = role.startsWith('疑問主部＝') ? '疑問主部' : label;
         return `
         <select class="slot list-choice${values[id] ? '' : ' placeholder'}" id="choice-${esc(id)}"
           data-choice="${esc(id)}" data-role="${esc(role)}" data-label="${esc(prompt)}" aria-label="${esc(prompt)}を選ぶ" ${!targetAllowed(id) ? 'disabled' : ''}>
@@ -609,7 +637,7 @@ if (typeof document !== 'undefined') {
     } else {
       $('slots').innerHTML = renderPartGroups(targets, ({ id: target, role, label, index }) => {
         const i = placements.indexOf(target);
-        const slotName = review ? String(index + 1) : basic || role === 'support' ? label : `${index + 1}. ${label}`;
+        const slotName = review ? String(index + 1) : active.level === 2 && role !== 'support' ? `${index + 1}. ${label}` : label;
         const contents = cards[i]?.text;
         const accessibleLabel = contents ? `${slotName}：${contents}` : `${slotName}に置く`;
         const cardState = contents ? ` data-card="${i}" aria-pressed="${selected === i}"` : '';
@@ -651,7 +679,7 @@ if (typeof document !== 'undefined') {
     $('result').innerHTML = `
       <div class="result${state.hideJapanese ? ' hide-japanese' : ''}">
         <p class="full-english" lang="en">${esc(q.en)}</p>
-        ${q.base ? `<p class="muted"><span class="result-explanation">もとの文 </span><span lang="en">${esc(q.base)}</span></p>` : ''}
+        ${q.base && q.level !== 3 ? `<p class="muted"><span class="result-explanation">もとの文 </span><span lang="en">${esc(q.base)}</span></p>` : ''}
         ${q.note ? `<p class="result-explanation">${esc(q.note)}</p>` : ''}
         <div class="actions speech-controls" role="group" aria-label="英文の読み上げ">
           <select id="voice" aria-label="読み上げる声"></select>
@@ -759,16 +787,16 @@ if (typeof document !== 'undefined') {
     $('guideExamples').innerHTML = guide.examples.map(example => {
       const q = example.id ? DATA.examples.find(q => q.id === example.id) : example;
       const parts = labelParts(q.parts ?? Construction.cardsFor(q));
-      const pictureClass = { speaker: ' guide-illustration-speaker', pose: ' guide-illustration-pose' }[example.picture] ?? '';
+      const pictureClass = example.picture === 'speaker' ? ' guide-illustration-speaker' : '';
       return `<figure class="guide-example">
         <figcaption>
           ${example.heading ? `<h3>${esc(example.heading)}</h3>` : ''}
           ${example.picture && q.image ? `
             <div class="guide-illustration${pictureClass}">
-              <img src="${esc(q.image)}" alt="${esc(q.imageAlt)}" ${example.picture === 'pose' ? 'width="1254" height="1254"' : 'width="860" height="644"'}>
+              ${sceneArtwork(`<img src="${esc(q.image)}" alt="${esc(q.imageAlt)}" width="860" height="644">`, q)}
             </div>` : ''}
           ${example.explanation ? `<p class="guide-explanation">${esc(example.explanation)}</p>` : ''}
-          ${example.startingOrder ? `<span class="guide-starting-order">語順の比較 <span lang="en">${esc(example.startingOrder)}</span></span>` : ''}
+          ${example.startingOrder ? `<span class="guide-starting-order"><span lang="en">${esc(example.startingOrder)}</span> →</span>` : ''}
           <span class="guide-sentence" lang="en">${esc(q.en)}</span><span class="muted">${esc(q.ja)}</span>
         </figcaption>
         <div class="guide-parts">${renderPartGroups(parts, ({ role, label, en, text }) => `

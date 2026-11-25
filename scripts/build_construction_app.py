@@ -12,12 +12,16 @@ def main():
     curriculum = json.loads((ROOT / 'data/construction-examples.json').read_text(encoding='utf-8'))
     illustrations = json.loads((ROOT / 'data/construction-illustrations.json').read_text(encoding='utf-8'))
     examples = {q['id']: q for q in curriculum['examples']}
+    # Keep sentence hints in the illustration authoring data only.
+    for q in examples.values():
+        q.pop('pictureHint', None)
     for key, illustration in illustrations['images'].items():
         if key not in examples:
             raise ValueError(f'Unknown illustration example: {key}')
         image = (ROOT / illustration['file']).resolve()
         if not image.is_relative_to((ROOT / 'assets/construction').resolve()) or not image.is_file():
             raise ValueError(f'Invalid illustration asset: {key}')
+        illustration.pop('clue', None)
     template = (ROOT / 'src/construction-template.html').read_text(encoding='utf-8')
     script = (ROOT / 'src/construction-practice.js').read_text(encoding='utf-8')
     for marker in ('__CONSTRUCTION_DATA__', '__ILLUSTRATION_DATA__', '__CONSTRUCTION_SCRIPT__'):

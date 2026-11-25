@@ -8,7 +8,7 @@
 | You swim in the pool every day. | You are swimming in the pool now. | You swam in the pool yesterday. |
 | They read an animal book at home every day. | They are reading an animal book at home now. | They read an animal book at home yesterday. |
 | He writes his name at school every day. | He is writing his name at school now. | He wrote his name at school yesterday. |
-| We give our brother a sticker at home every day. | We are giving our brother a sticker at home now. | We gave our brother a sticker at home yesterday. |
+| We give him a sticker at home every day. | We are giving him a sticker at home now. | We gave him a sticker at home yesterday. |
 | She makes a paper hat at home every day. | She is making a paper hat at home now. | She made a paper hat at home yesterday. |
 
 ## 状態を述べる文
