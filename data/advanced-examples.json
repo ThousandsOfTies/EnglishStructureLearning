@@ -14,7 +14,8 @@
     "P2": {"a sticker": "シールを", "a card": "カードを", "a photo": "写真を"}
   },
   "derivedReplacements": {
-    "level3-q-do-open-1": {"id":"level3-q-do-eat-lunch-at-school","theme":"theme-eat","level":3,"focus":"かどうか＋Does","ja":"彼女は毎日学校でお弁当を食べますか。","en":"Does she eat her lunch at school every day?","base":"She eats her lunch at school every day.","unit":"whether","question":{"token":"whether","spoken":false,"target":"truth"},"blocks":[["疑問の支え","Does","する"],["S","she","彼女は"],["述語","eat","食べる"],["P1","her lunch","お弁当を"],["場所","at school","学校で"],["時","every day","毎日"]]}
+    "level3-q-do-open-1": {"id":"level3-q-do-eat-lunch-at-school","theme":"theme-eat","level":3,"focus":"かどうか＋Does","ja":"彼女は毎日学校でお弁当を食べますか。","en":"Does she eat her lunch at school every day?","base":"She eats her lunch at school every day.","unit":"whether","question":{"token":"whether","spoken":false,"target":"truth"},"blocks":[["疑問の支え","Does","する"],["S","she","彼女は"],["述語","eat","食べる"],["P1","her lunch","お弁当を"],["場所","at school","学校で"],["時","every day","毎日"]]},
+    "level3-q-do-lift-3": {"id":"level3-q-do-read-picture-books-at-home","theme":"theme-read","level":3,"focus":"かどうか＋Do","ja":"彼らは毎日家で絵本を読みますか。","en":"Do they read picture books at home every day?","base":"They read picture books at home every day.","unit":"whether","question":{"token":"whether","spoken":false,"target":"truth"},"blocks":[["疑問の支え","Do","する"],["S","they","彼らは"],["述語","read","読む"],["P1","picture books","絵本を"],["場所","at home","家で"],["時","every day","毎日"]]}
   },
   "level2": [
     {"id":"level2-01","theme":"theme-go","level":2,"focus":"can：できる","ja":"私は公園で自転車に乗れます。","en":"I can ride a bike in the park.","base":"I ride a bike in the park.","blocks":[["S","I","私は"],["助動詞","can","〜できる"],["述語","ride","乗る"],["P1","a bike","自転車に"],["場所","in the park","公園で"]]},

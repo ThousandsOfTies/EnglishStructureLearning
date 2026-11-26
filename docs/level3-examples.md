@@ -209,16 +209,16 @@ doesが付くと、playsはplayになります。
 
 ### 16　かどうか＋Do
 
-彼らは毎日家でふたを持ち上げますか。
+彼らは毎日家で絵本を読みますか。
 
-**Do they lift the lid at home every day?**
+**Do they read picture books at home every day?**
 
-元の文：They lift the lid at home every day.
+元の文：They read picture books at home every day.
 
 | 疑問主部 | 疑問の支え | S | 述語 | P1 | 場所 | 時 |
 | --- | --- | --- | --- | --- | --- | --- |
-| かどうか | する | 彼らは | 持ち上げる | ふたを | 家で | 毎日 |
-| （発音なし） | Do | they | lift | the lid | at home | every day |
+| かどうか | する | 彼らは | 読む | 絵本を | 家で | 毎日 |
+| （発音なし） | Do | they | read | picture books | at home | every day |
 
 ### 17　かどうか＋Does
 

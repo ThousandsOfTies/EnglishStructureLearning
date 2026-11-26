@@ -7429,16 +7429,16 @@
       ],
       "source": "assets/construction/build-pull-2.png"
     },
-    "level3-q-do-lift-3": {
-      "file": "assets/construction/derived/level3-q-do-lift-3.webp",
-      "alt": "彼らは毎日家でふたを持ち上げますか。 話し手のそばに「？」があります。",
+    "level3-q-do-read-picture-books-at-home": {
+      "file": "assets/construction/build-read-1.png",
+      "alt": "男の子と女の子が家のソファで一緒に絵本を読んでいます。話し手のそばに「？」があります。",
       "clue": "",
-      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "review": "毎日の習慣として自然な読書に変更。確認済みのレベル1の絵に疑問符と毎日のカレンダーを表示する。",
       "questionMark": [
-        26,
+        23,
         64
       ],
-      "source": "assets/construction/build-lift-3.png"
+      "source": "assets/construction/build-read-1.png"
     },
     "level3-q-do-hold-2": {
       "file": "assets/construction/derived/level3-q-do-hold-2.webp",

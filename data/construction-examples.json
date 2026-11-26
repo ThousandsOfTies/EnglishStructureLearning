@@ -75409,13 +75409,19 @@
       }
     },
     {
-      "id": "level3-q-do-lift-3",
-      "theme": "theme-open",
+      "id": "level3-q-do-read-picture-books-at-home",
+      "theme": "theme-read",
       "level": 3,
       "focus": "かどうか＋Do",
-      "ja": "彼らは毎日家でふたを持ち上げますか。",
-      "en": "Do they lift the lid at home every day?",
-      "base": "They lift the lid at home every day.",
+      "ja": "彼らは毎日家で絵本を読みますか。",
+      "en": "Do they read picture books at home every day?",
+      "base": "They read picture books at home every day.",
+      "unit": "whether",
+      "question": {
+        "token": "whether",
+        "spoken": false,
+        "target": "truth"
+      },
       "blocks": [
         [
           "question-marker",
@@ -75434,13 +75440,13 @@
         ],
         [
           "述語",
-          "lift",
-          "持ち上げる"
+          "read",
+          "読む"
         ],
         [
           "P1",
-          "the lid",
-          "ふたを"
+          "picture books",
+          "絵本を"
         ],
         [
           "場所",
@@ -75452,14 +75458,7 @@
           "every day",
           "毎日"
         ]
-      ],
-      "unit": "whether",
-      "derivedFrom": "build-lift-3",
-      "question": {
-        "token": "whether",
-        "spoken": false,
-        "target": "truth"
-      }
+      ]
     },
     {
       "id": "level3-q-do-hold-2",

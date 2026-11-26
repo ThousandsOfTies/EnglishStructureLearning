@@ -119,6 +119,10 @@ test('derived practice fills every tense and support combination from the Level 
   assert.equal(lunchQuestion.en, 'Does she eat her lunch at school every day?');
   assert.ok(!draft.examples.some(q => q.id === 'level3-q-do-open-1'));
   cells['level3-q-do'].push(lunchQuestion);
+  const readingQuestion = draft.examples.find(q => q.id === 'level3-q-do-read-picture-books-at-home');
+  assert.equal(readingQuestion.en, 'Do they read picture books at home every day?');
+  assert.ok(!draft.examples.some(q => q.id === 'level3-q-do-lift-3'));
+  cells['level3-q-do'].push(readingQuestion);
   assert.deepEqual(Object.keys(cells).sort(), [
     'level2-be-not', 'level2-be-often', 'level2-can', 'level2-did-not', 'level2-have-not', 'level2-might',
     'level2-might-ing', 'level2-must', 'level2-not', 'level2-not-ing', 'level2-often', 'level2-should',

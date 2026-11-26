@@ -15639,6 +15639,13 @@
       "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
     },
     {
+      "exampleId": "level3-q-do-read-picture-books-at-home",
+      "file": "assets/construction/build-read-1.png",
+      "reference": "assets/construction/build-read-1.png",
+      "generationMethod": "Reuse reviewed Level 1 scene artwork.",
+      "prompt": "Show the boy and girl reading a picture book together at home. The app adds the question mark beside the speaker and the every-day calendar."
+    },
+    {
       "exampleId": "level3-q-do-hold-2",
       "file": "assets/construction/derived/level3-q-do-hold-2.webp",
       "reference": "assets/construction/build-hold-2.png",
