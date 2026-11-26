@@ -58,9 +58,23 @@ test('the new be scenes pair present and past forms with the same subject and pr
 });
 
 test('location and invitation targets cannot leak into the time slot', () => {
-  assert.equal(get('wait-1').slots.place.en, 'here');
-  assert.equal(get('invite-1').slots.P1.en, 'your friend to your birthday party');
+  assert.equal(get('wait-2').slots.place.en, 'here');
+  for (const q of draft.examples.filter(q => q.derivedFrom === 'build-wait-1')) {
+    assert.deepEqual(q.blocks.find(([role]) => role === '場所'), ['場所', 'at the bus stop', 'バス停で'], q.id);
+  }
   for (const q of basic) assert.match(q.slots.time.en, /^(?:$|on Sundays|every day|every morning|on Saturdays|today|now|yesterday|last year|once a year|at the start of the school year|on the first day of school)$/);
+  for (const q of basic.filter(q => q.group === 'invite')) {
+    const [person, party] = [
+      ['your friend', 'to your birthday party'], ['a friend', 'to the birthday party'],
+      ['her neighbor', 'to her birthday party'],
+    ][q.variant - 1];
+    assert.deepEqual([q.slots.P1.en, q.slots.P2.en, q.slots.place.en], [person, party, 'at home'], q.id);
+    assert.match(q.ja, /家で誕生日会に.+を招/, q.id);
+  }
+  const question = draft.examples.find(q => q.id === 'level3-q-did-invite-2-past');
+  assert.deepEqual(question.blocks.slice(4, 7), [
+    ['P1', 'a friend', '友だち'], ['P2', 'to the birthday party', '誕生日会に'], ['場所', 'at home', '家で'],
+  ]);
 });
 
 test('verb complements and scene locations use different slots in every tense', () => {
@@ -69,7 +83,7 @@ test('verb complements and scene locations use different slots in every tense', 
     ['stay-2', 'P1', 'in a tent'], ['live-1', 'P1', 'in a small house'],
     ['put-1', 'P2', 'on the desk'], ['pour-1', 'P2', 'into a cup'],
     ['bring-2', 'P2', 'to school'], ['keep-2', 'P2', 'in a little box'],
-    ['run-1', 'place', 'in the park'], ['wait-1', 'place', 'here'],
+    ['run-1', 'place', 'in the park'], ['wait-1', 'place', 'at the bus stop'], ['wait-2', 'place', 'here'],
     ['move-1', 'place', 'at home'], ['sit-1', 'place', 'on a bench'],
   ]) {
     const family = get(id).contrastFamily;
@@ -97,6 +111,15 @@ test('P1 and P2 distinguish recipient/thing from object/description', () => {
   assert.deepEqual([get('call-3').slots.P1.en, get('call-3').slots.P2.en], ['their dog', 'Pochi']);
   assert.deepEqual([get('keep-1').slots.P1.en, get('keep-1').slots.P2.en], ['our room', 'clean']);
   assert.deepEqual([get('make-3').slots.P1.en, get('make-3').slots.P2.en], ['her', 'happy']);
+  for (const q of basic.filter(q => q.group === 'bake')) {
+    assert.equal(q.slots.P1.en, ['a banana cake', 'cookies', 'bread'][q.variant - 1], q.id);
+    assert.deepEqual(q.slots.P2, {ja: 'お母さんと', en: 'with Mom'}, q.id);
+    assert.match(q.ja, /家でお母さんと.+を焼/, q.id);
+  }
+  const bakeQuestion = draft.examples.find(q => q.id === 'level3-q-can-bake-3');
+  assert.deepEqual(bakeQuestion.blocks.filter(([role]) => role === 'P1' || role === 'P2'), [
+    ['P1', 'bread', 'パン'], ['P2', 'with Mom', 'お母さんと'],
+  ]);
 });
 
 test('each selectable level has its requested number of examples', () => {
@@ -123,6 +146,21 @@ test('derived practice fills every tense and support combination from the Level 
   assert.equal(readingQuestion.en, 'Do they read picture books at home every day?');
   assert.ok(!draft.examples.some(q => q.id === 'level3-q-do-lift-3'));
   cells['level3-q-do'].push(readingQuestion);
+  const singingQuestion = draft.examples.find(q => q.id === 'level3-q-did-sing-at-school');
+  assert.equal(singingQuestion.en, 'Did she sing a song at school yesterday?');
+  assert.ok(!draft.examples.some(q => q.id === 'level3-q-did-learn-1-past'));
+  cells['level3-q-did'].push(singingQuestion);
+  const singTogether = draft.examples.find(q => q.id === 'level3-q-can-sing-with-a-friend');
+  assert.equal(singTogether.en, 'Can you sing a song with your friend at home?');
+  assert.deepEqual(singTogether.blocks.slice(3, 6), [
+    ['述語', 'sing', '歌う'], ['P1', 'a song', '歌'], ['P2', 'with your friend', '友だちと'],
+  ]);
+  assert.ok(!draft.examples.some(q => q.id === 'level3-q-can-teach-2'));
+  cells['level3-q-can'].push(singTogether);
+  const eatingQuestion = draft.examples.find(q => q.id === 'level3-what-do-eat-at-home');
+  assert.equal(eatingQuestion.en, 'What does she eat at home every day?');
+  assert.ok(!draft.examples.some(q => q.id === 'level3-what-do-taste-2'));
+  cells['level3-what-do'].push(eatingQuestion);
   assert.deepEqual(Object.keys(cells).sort(), [
     'level2-be-not', 'level2-be-often', 'level2-can', 'level2-did-not', 'level2-have-not', 'level2-might',
     'level2-might-ing', 'level2-must', 'level2-not', 'level2-not-ing', 'level2-often', 'level2-should',
@@ -255,4 +293,10 @@ test('each picture activity has four complete forms using the same participants 
       assert.equal(q.slots.S.en, 'I');
     }
   }
+  const rope = pictures.filter(q => q.contrastFamily === 'tense-rope');
+  assert.deepEqual(rope.map(q => q.slots.predicate.en), ['jump', 'jumped', 'jumping', 'jumped']);
+  assert.deepEqual(rope[3].slots.P1, {ja: 'ロープ', en: 'rope'});
+  const question = draft.examples.find(q => q.id === 'level3-q-have-tense-rope-experience');
+  assert.deepEqual(question.blocks.slice(-2), [['述語', 'jumped', '跳んだ'], ['P1', 'rope', 'ロープ']]);
+  assert.equal(question.ja, 'あなたは今までになわとびをしたことがありますか。');
 });

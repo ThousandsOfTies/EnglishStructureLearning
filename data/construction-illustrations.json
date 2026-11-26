@@ -1041,40 +1041,50 @@
       "file": "assets/construction/build-rest-2.png",
       "alt": "左側の話し手が右の場面を紹介する。私たちは毎日ソファで休みます。",
       "clue": "",
-      "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。"
+      "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。",
+      "detail": "rest-sofa"
     },
     "build-rest-2-ongoing": {
       "file": "assets/construction/build-rest-2-ongoing.png",
       "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。私たちは今ソファで休んでいます。",
       "clue": "時間のヒント：今。",
-      "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。"
+      "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。",
+      "detail": "rest-sofa",
+      "detailSide": "left"
     },
     "build-rest-2-past": {
       "file": "assets/construction/build-rest-2-past.png",
       "alt": "右の話し手が左の場面を振り返る。私たちは昨日ソファで休みました。",
       "clue": "",
-      "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。"
+      "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。",
+      "detail": "rest-sofa",
+      "detailSide": "left"
     },
     "build-rest-3": {
       "file": "assets/construction/build-rest-3.png",
       "alt": "左側の話し手が右の場面を紹介する。彼らは毎日ベンチで休みます。",
       "clue": "",
       "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。",
-      "revision": "listener-2"
+      "revision": "listener-2",
+      "detail": "rest-bench"
     },
     "build-rest-3-ongoing": {
       "file": "assets/construction/build-rest-3-ongoing.png",
       "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。彼らは今ベンチで休んでいます。",
       "clue": "時間のヒント：今。",
       "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。",
-      "revision": "listener-2"
+      "revision": "listener-2",
+      "detail": "rest-bench",
+      "detailSide": "left"
     },
     "build-rest-3-past": {
       "file": "assets/construction/build-rest-3-past.png",
       "alt": "右の話し手が左の場面を振り返る。彼らは昨日ベンチで休みました。",
       "clue": "",
       "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。",
-      "revision": "listener-2"
+      "revision": "listener-2",
+      "detail": "rest-bench",
+      "detailSide": "left"
     },
     "build-stay-1": {
       "file": "assets/construction/build-stay-1.png",
@@ -1277,74 +1287,89 @@
       "file": "assets/construction/build-start-1.png",
       "alt": "左側の話し手が右の場面を紹介する。私たちは毎日家でゲームを始めます。",
       "clue": "",
-      "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。"
+      "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。",
+      "detail": "start-game"
     },
     "build-start-1-ongoing": {
       "file": "assets/construction/build-start-1-ongoing.png",
       "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。私たちは今家でゲームを始めています。",
       "clue": "時間のヒント：今。",
-      "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。"
+      "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。",
+      "detail": "start-game",
+      "detailSide": "left"
     },
     "build-start-1-past": {
       "file": "assets/construction/build-start-1-past.png",
       "alt": "右の話し手が左の場面を振り返る。私たちは昨日家でゲームを始めました。",
       "clue": "",
-      "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。"
+      "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。",
+      "detail": "start-game",
+      "detailSide": "left"
     },
     "build-start-2": {
       "file": "assets/construction/build-start-2.png",
       "alt": "左側の話し手が右の場面を紹介する。彼らは毎日家で宿題を始めます。",
       "clue": "",
       "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。",
-      "revision": "listener-2"
+      "revision": "listener-2",
+      "detail": "start-homework"
     },
     "build-start-2-ongoing": {
       "file": "assets/construction/build-start-2-ongoing.png",
       "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。彼らは今家で宿題を始めています。",
       "clue": "時間のヒント：今。",
       "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。",
-      "revision": "listener-2"
+      "revision": "listener-2",
+      "detail": "start-homework",
+      "detailSide": "left"
     },
     "build-start-2-past": {
       "file": "assets/construction/build-start-2-past.png",
       "alt": "右の話し手が左の場面を振り返る。彼らは昨日家で宿題を始めました。",
       "clue": "",
       "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。",
-      "revision": "listener-2"
+      "revision": "listener-2",
+      "detail": "start-homework",
+      "detailSide": "left"
     },
     "build-start-3": {
       "file": "assets/construction/build-start-3.png",
       "alt": "左側の話し手が右の場面を紹介する。私は毎日家でパズルを始めます。",
       "clue": "",
-      "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。"
+      "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。",
+      "detail": "start-puzzle"
     },
     "build-start-3-ongoing": {
       "file": "assets/construction/build-start-3-ongoing.png",
       "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。私は今家でパズルを始めています。",
       "clue": "時間のヒント：今。",
-      "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。"
+      "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。",
+      "detail": "start-puzzle",
+      "detailSide": "left"
     },
     "build-start-3-past": {
       "file": "assets/construction/build-start-3-past.png",
       "alt": "右の話し手が左の場面を振り返る。私は昨日家でパズルを始めました。",
       "clue": "",
-      "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。"
+      "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。",
+      "detail": "start-puzzle",
+      "detailSide": "left"
     },
     "build-wait-1": {
       "file": "assets/construction/build-wait-1.png",
-      "alt": "左側の話し手が右の場面を紹介する。あなたは毎日ここでバスを待ちます。",
+      "alt": "左側の話し手が右の場面を紹介する。あなたは毎日バス停でバスを待ちます。",
       "clue": "",
       "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。"
     },
     "build-wait-1-ongoing": {
       "file": "assets/construction/build-wait-1-ongoing.png",
-      "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。あなたは今ここでバスを待っています。",
+      "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。あなたは今バス停でバスを待っています。",
       "clue": "時間のヒント：今。",
       "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。"
     },
     "build-wait-1-past": {
       "file": "assets/construction/build-wait-1-past.png",
-      "alt": "右の話し手が左の場面を振り返る。あなたは昨日ここでバスを待ちました。",
+      "alt": "右の話し手が左の場面を振り返る。あなたは昨日バス停でバスを待ちました。",
       "clue": "",
       "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。"
     },
@@ -1353,42 +1378,52 @@
       "alt": "左側の話し手が右の場面を紹介する。彼は毎日ここで友だちを待ちます。",
       "clue": "",
       "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。",
-      "revision": "listener-2"
+      "revision": "listener-2",
+      "detail": "wait-here"
     },
     "build-wait-2-ongoing": {
       "file": "assets/construction/build-wait-2-ongoing.png",
       "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。彼は今ここで友だちを待っています。",
       "clue": "時間のヒント：今。",
       "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。",
-      "revision": "listener-2"
+      "revision": "listener-2",
+      "detail": "wait-here",
+      "detailSide": "left"
     },
     "build-wait-2-past": {
       "file": "assets/construction/build-wait-2-past.png",
       "alt": "右の話し手が左の場面を振り返る。彼は昨日ここで友だちを待ちました。",
       "clue": "",
       "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。",
-      "revision": "listener-2"
+      "revision": "listener-2",
+      "detail": "wait-here",
+      "detailSide": "left"
     },
     "build-wait-3": {
       "file": "assets/construction/build-wait-3.png",
       "alt": "左側の話し手が右の場面を紹介する。彼女は毎日ここで女の人を待ちます。",
       "clue": "",
       "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。",
-      "revision": "listener-2"
+      "revision": "listener-2",
+      "detail": "wait-here"
     },
     "build-wait-3-ongoing": {
       "file": "assets/construction/build-wait-3-ongoing.png",
       "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。彼女は今ここで女の人を待っています。",
       "clue": "時間のヒント：今。",
       "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。",
-      "revision": "listener-2"
+      "revision": "listener-2",
+      "detail": "wait-here",
+      "detailSide": "left"
     },
     "build-wait-3-past": {
       "file": "assets/construction/build-wait-3-past.png",
       "alt": "右の話し手が左の場面を振り返る。彼女は昨日ここで女の人を待ちました。",
       "clue": "",
       "review": "登場人物・動作・対象・場所を元の文と照合し、時制別の構図を画像一覧で確認。",
-      "revision": "listener-2"
+      "revision": "listener-2",
+      "detail": "wait-here",
+      "detailSide": "left"
     },
     "build-eat-1": {
       "file": "assets/construction/build-eat-1.png",
@@ -1629,63 +1664,78 @@
       "alt": "左側の話し手が右の場面を紹介する。彼は毎日家でスープを味見します。",
       "clue": "",
       "review": "場面の人物・動作・対象と各時制の構図を確認。",
-      "revision": "listener-2"
+      "revision": "listener-2",
+      "detail": "taste"
     },
     "build-taste-1-ongoing": {
       "file": "assets/construction/build-taste-1-ongoing.png",
       "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。彼は今家でスープを味見しています。",
       "clue": "時間のヒント：今。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。",
-      "revision": "listener-2"
+      "revision": "listener-2",
+      "detail": "taste",
+      "detailSide": "left"
     },
     "build-taste-1-past": {
       "file": "assets/construction/build-taste-1-past.png",
       "alt": "右の話し手が左の場面を振り返る。彼は昨日家でスープを味見しました。",
       "clue": "",
       "review": "場面の人物・動作・対象と各時制の構図を確認。",
-      "revision": "listener-2"
+      "revision": "listener-2",
+      "detail": "taste",
+      "detailSide": "left"
     },
     "build-taste-2": {
       "file": "assets/construction/build-taste-2.png",
       "alt": "左側の話し手が右の場面を紹介する。彼女は毎日家でカレーを味見します。",
       "clue": "",
       "review": "場面の人物・動作・対象と各時制の構図を確認。",
-      "revision": "listener-2"
+      "revision": "listener-2",
+      "detail": "taste"
     },
     "build-taste-2-ongoing": {
       "file": "assets/construction/build-taste-2-ongoing.png",
       "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。彼女は今家でカレーを味見しています。",
       "clue": "時間のヒント：今。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。",
-      "revision": "listener-2"
+      "revision": "listener-2",
+      "detail": "taste",
+      "detailSide": "left"
     },
     "build-taste-2-past": {
       "file": "assets/construction/build-taste-2-past.png",
       "alt": "右の話し手が左の場面を振り返る。彼女は昨日家でカレーを味見しました。",
       "clue": "",
       "review": "場面の人物・動作・対象と各時制の構図を確認。",
-      "revision": "listener-2"
+      "revision": "listener-2",
+      "detail": "taste",
+      "detailSide": "left"
     },
     "build-taste-3": {
       "file": "assets/construction/build-taste-3.png",
       "alt": "左側の話し手が右の場面を紹介する。彼は毎日家でソースを味見します。",
       "clue": "",
       "review": "場面の人物・動作・対象と各時制の構図を確認。",
-      "revision": "listener-2"
+      "revision": "listener-2",
+      "detail": "taste"
     },
     "build-taste-3-ongoing": {
       "file": "assets/construction/build-taste-3-ongoing.png",
       "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。彼は今家でソースを味見しています。",
       "clue": "時間のヒント：今。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。",
-      "revision": "listener-2"
+      "revision": "listener-2",
+      "detail": "taste",
+      "detailSide": "left"
     },
     "build-taste-3-past": {
       "file": "assets/construction/build-taste-3-past.png",
       "alt": "右の話し手が左の場面を振り返る。彼は昨日家でソースを味見しました。",
       "clue": "",
       "review": "場面の人物・動作・対象と各時制の構図を確認。",
-      "revision": "listener-2"
+      "revision": "listener-2",
+      "detail": "taste",
+      "detailSide": "left"
     },
     "build-cut-1": {
       "file": "assets/construction/build-cut-1.png",
@@ -2043,21 +2093,26 @@
       "alt": "左側の話し手が右の場面を紹介する。彼は毎日学校で名前を書きます。",
       "clue": "机の紙は自分の名札です。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。",
-      "revision": "listener-2"
+      "revision": "listener-2",
+      "detail": "name"
     },
     "build-write-1-ongoing": {
       "file": "assets/construction/build-write-1-ongoing.png",
       "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。彼は今学校で名前を書いています。",
       "clue": "時間のヒント：今。机の紙は自分の名札です。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。",
-      "revision": "listener-2"
+      "revision": "listener-2",
+      "detail": "name",
+      "detailSide": "left"
     },
     "build-write-1-past": {
       "file": "assets/construction/build-write-1-past.png",
       "alt": "右の話し手が左の場面を振り返る。彼は昨日学校で名前を書きました。",
       "clue": "机の紙は自分の名札です。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。",
-      "revision": "listener-2"
+      "revision": "listener-2",
+      "detail": "name",
+      "detailSide": "left"
     },
     "build-write-2": {
       "file": "assets/construction/build-write-2.png",
@@ -2085,21 +2140,26 @@
       "alt": "左側の話し手が右の場面を紹介する。それは毎日学校で英語の単語を書きます。",
       "clue": "ロボットは英語のことばを一つ書きます。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。",
-      "revision": "listener-2"
+      "revision": "listener-2",
+      "detail": "word"
     },
     "build-write-3-ongoing": {
       "file": "assets/construction/build-write-3-ongoing.png",
       "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。それは今学校で英語の単語を書いています。",
       "clue": "時間のヒント：今。ロボットは英語のことばを一つ書きます。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。",
-      "revision": "listener-2"
+      "revision": "listener-2",
+      "detail": "word",
+      "detailSide": "left"
     },
     "build-write-3-past": {
       "file": "assets/construction/build-write-3-past.png",
       "alt": "右の話し手が左の場面を振り返る。それは昨日学校で英語の単語を書きました。",
       "clue": "ロボットは英語のことばを一つ書きます。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。",
-      "revision": "listener-2"
+      "revision": "listener-2",
+      "detail": "word",
+      "detailSide": "left"
     },
     "build-draw-1": {
       "file": "assets/construction/build-draw-1.png",
@@ -2340,60 +2400,75 @@
       "alt": "左側の話し手が右の場面を紹介する。彼女は毎日学校で新しい歌を覚えます。",
       "clue": "",
       "review": "場面の人物・動作・対象と各時制の構図を確認。",
-      "revision": "listener-2"
+      "revision": "listener-2",
+      "detail": "learn-song"
     },
     "build-learn-1-ongoing": {
       "file": "assets/construction/build-learn-1-ongoing.png",
       "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。彼女は今学校で新しい歌を覚えています。",
       "clue": "時間のヒント：今。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。",
-      "revision": "listener-2"
+      "revision": "listener-2",
+      "detail": "learn-song",
+      "detailSide": "left"
     },
     "build-learn-1-past": {
       "file": "assets/construction/build-learn-1-past.png",
       "alt": "右の話し手が左の場面を振り返る。彼女は昨日学校で新しい歌を覚えました。",
       "clue": "",
       "review": "場面の人物・動作・対象と各時制の構図を確認。",
-      "revision": "listener-2"
+      "revision": "listener-2",
+      "detail": "learn-song",
+      "detailSide": "left"
     },
     "build-learn-2": {
       "file": "assets/construction/build-learn-2.png",
       "alt": "左側の話し手が右の場面を紹介する。彼は毎日学校で新しい単語を覚えます。",
       "clue": "",
       "review": "場面の人物・動作・対象と各時制の構図を確認。",
-      "revision": "listener-2"
+      "revision": "listener-2",
+      "detail": "learn-word"
     },
     "build-learn-2-ongoing": {
       "file": "assets/construction/build-learn-2-ongoing.png",
       "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。彼は今学校で新しい単語を覚えています。",
       "clue": "時間のヒント：今。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。",
-      "revision": "listener-2"
+      "revision": "listener-2",
+      "detail": "learn-word",
+      "detailSide": "left"
     },
     "build-learn-2-past": {
       "file": "assets/construction/build-learn-2-past.png",
       "alt": "右の話し手が左の場面を振り返る。彼は昨日学校で新しい単語を覚えました。",
       "clue": "",
       "review": "場面の人物・動作・対象と各時制の構図を確認。",
-      "revision": "listener-2"
+      "revision": "listener-2",
+      "detail": "learn-word",
+      "detailSide": "left"
     },
     "build-learn-3": {
       "file": "assets/construction/build-learn-3.png",
       "alt": "左側の話し手が右の場面を紹介する。私たちは毎日学校で新しいダンスを覚えます。",
       "clue": "",
-      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+      "review": "場面の人物・動作・対象と各時制の構図を確認。",
+      "detail": "learn-dance"
     },
     "build-learn-3-ongoing": {
       "file": "assets/construction/build-learn-3-ongoing.png",
       "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。私たちは今学校で新しいダンスを覚えています。",
       "clue": "時間のヒント：今。",
-      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+      "review": "場面の人物・動作・対象と各時制の構図を確認。",
+      "detail": "learn-dance",
+      "detailSide": "left"
     },
     "build-learn-3-past": {
       "file": "assets/construction/build-learn-3-past.png",
       "alt": "右の話し手が左の場面を振り返る。私たちは昨日学校で新しいダンスを覚えました。",
       "clue": "",
-      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+      "review": "場面の人物・動作・対象と各時制の構図を確認。",
+      "detail": "learn-dance",
+      "detailSide": "left"
     },
     "build-practice-1": {
       "file": "assets/construction/build-practice-1.png",
@@ -2457,63 +2532,78 @@
       "alt": "左側の話し手が右の場面を紹介する。彼は毎日学校で「ねこ」を表す英単語のつづりを言います。",
       "clue": " カードに描かれた動物の英単語を、一文字ずつ口に出す練習です。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。",
-      "revision": "listener-2"
+      "revision": "listener-2",
+      "detail": "spell-cat"
     },
     "build-spell-1-ongoing": {
       "file": "assets/construction/build-spell-1-ongoing.png",
       "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。彼は今学校で「ねこ」を表す英単語のつづりを言っています。",
       "clue": "時間のヒント：今。 カードに描かれた動物の英単語を、一文字ずつ口に出す練習です。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。",
-      "revision": "listener-2"
+      "revision": "listener-2",
+      "detail": "spell-cat",
+      "detailSide": "left"
     },
     "build-spell-1-past": {
       "file": "assets/construction/build-spell-1-past.png",
       "alt": "右の話し手が左の場面を振り返る。彼は昨日学校で「ねこ」を表す英単語のつづりを言いました。",
       "clue": "カードに描かれた動物の英単語を、一文字ずつ口に出す練習です。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。",
-      "revision": "listener-2"
+      "revision": "listener-2",
+      "detail": "spell-cat",
+      "detailSide": "left"
     },
     "build-spell-2": {
       "file": "assets/construction/build-spell-2.png",
       "alt": "左側の話し手が右の場面を紹介する。彼女は毎日学校で「いぬ」を表す英単語のつづりを言います。",
       "clue": " カードに描かれた動物の英単語を、一文字ずつ口に出す練習です。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。",
-      "revision": "listener-2"
+      "revision": "listener-2",
+      "detail": "spell-dog"
     },
     "build-spell-2-ongoing": {
       "file": "assets/construction/build-spell-2-ongoing.png",
       "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。彼女は今学校で「いぬ」を表す英単語のつづりを言っています。",
       "clue": "時間のヒント：今。 カードに描かれた動物の英単語を、一文字ずつ口に出す練習です。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。",
-      "revision": "listener-2"
+      "revision": "listener-2",
+      "detail": "spell-dog",
+      "detailSide": "left"
     },
     "build-spell-2-past": {
       "file": "assets/construction/build-spell-2-past.png",
       "alt": "右の話し手が左の場面を振り返る。彼女は昨日学校で「いぬ」を表す英単語のつづりを言いました。",
       "clue": "カードに描かれた動物の英単語を、一文字ずつ口に出す練習です。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。",
-      "revision": "listener-2"
+      "revision": "listener-2",
+      "detail": "spell-dog",
+      "detailSide": "left"
     },
     "build-spell-3": {
       "file": "assets/construction/build-spell-3.png",
       "alt": "左側の話し手が右の場面を紹介する。それは毎日学校で「とり」を表す英単語のつづりを言います。",
       "clue": " カードに描かれた動物の英単語を、一文字ずつ口に出す練習です。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。",
-      "revision": "listener-2"
+      "revision": "listener-2",
+      "detail": "spell-bird"
     },
     "build-spell-3-ongoing": {
       "file": "assets/construction/build-spell-3-ongoing.png",
       "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。それは今学校で「とり」を表す英単語のつづりを言っています。",
       "clue": "時間のヒント：今。 カードに描かれた動物の英単語を、一文字ずつ口に出す練習です。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。",
-      "revision": "listener-2"
+      "revision": "listener-2",
+      "detail": "spell-bird",
+      "detailSide": "left"
     },
     "build-spell-3-past": {
       "file": "assets/construction/build-spell-3-past.png",
       "alt": "右の話し手が左の場面を振り返る。それは昨日学校で「とり」を表す英単語のつづりを言いました。",
       "clue": "カードに描かれた動物の英単語を、一文字ずつ口に出す練習です。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。",
-      "revision": "listener-2"
+      "revision": "listener-2",
+      "detail": "spell-bird",
+      "detailSide": "left"
     },
     "build-answer-1": {
       "file": "assets/construction/build-answer-1.png",
@@ -3054,21 +3144,26 @@
       "alt": "左側の話し手が右の場面を紹介する。彼は毎日家で本を開けます。",
       "clue": "",
       "review": "場面の人物・動作・対象と各時制の構図を確認。",
-      "revision": "listener-2"
+      "revision": "listener-2",
+      "detail": "open-book"
     },
     "build-open-2-ongoing": {
       "file": "assets/construction/build-open-2-ongoing.png",
       "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。彼は今家で本を開けています。",
       "clue": "時間のヒント：今。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。",
-      "revision": "listener-2"
+      "revision": "listener-2",
+      "detail": "open-book",
+      "detailSide": "left"
     },
     "build-open-2-past": {
       "file": "assets/construction/build-open-2-past.png",
       "alt": "右の話し手が左の場面を振り返る。彼は昨日家で本を開けました。",
       "clue": "",
       "review": "場面の人物・動作・対象と各時制の構図を確認。",
-      "revision": "listener-2"
+      "revision": "listener-2",
+      "detail": "open-book",
+      "detailSide": "left"
     },
     "build-open-3": {
       "file": "assets/construction/build-open-3.png",
@@ -3093,39 +3188,49 @@
       "alt": "左側の話し手が右の場面を紹介する。彼らは毎日家で本を閉じます。",
       "clue": "",
       "review": "場面の人物・動作・対象と各時制の構図を確認。",
-      "revision": "listener-2"
+      "revision": "listener-2",
+      "detail": "close-book"
     },
     "build-close-1-ongoing": {
       "file": "assets/construction/build-close-1-ongoing.png",
       "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。彼らは今家で本を閉じています。",
       "clue": "時間のヒント：今。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。",
-      "revision": "listener-2"
+      "revision": "listener-2",
+      "detail": "close-book",
+      "detailSide": "left"
     },
     "build-close-1-past": {
       "file": "assets/construction/build-close-1-past.png",
       "alt": "右の話し手が左の場面を振り返る。彼らは昨日家で本を閉じました。",
       "clue": "",
       "review": "場面の人物・動作・対象と各時制の構図を確認。",
-      "revision": "listener-2"
+      "revision": "listener-2",
+      "detail": "close-book",
+      "detailSide": "left"
     },
     "build-close-2": {
       "file": "assets/construction/build-close-2.png",
       "alt": "左側の話し手が右の場面を紹介する。私は毎日家で箱を閉じます。",
       "clue": "",
-      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+      "review": "場面の人物・動作・対象と各時制の構図を確認。",
+      "detail": "close-box"
     },
     "build-close-2-ongoing": {
       "file": "assets/construction/build-close-2-ongoing.png",
       "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。私は今家で箱を閉じています。",
       "clue": "時間のヒント：今。",
-      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+      "review": "場面の人物・動作・対象と各時制の構図を確認。",
+      "detail": "close-box",
+      "detailSide": "left"
     },
     "build-close-2-past": {
       "file": "assets/construction/build-close-2-past.png",
       "alt": "右の話し手が左の場面を振り返る。私は昨日家で箱を閉じました。",
       "clue": "",
-      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+      "review": "場面の人物・動作・対象と各時制の構図を確認。",
+      "detail": "close-box",
+      "detailSide": "left"
     },
     "build-close-3": {
       "file": "assets/construction/build-close-3.png",
@@ -3269,178 +3374,190 @@
       "file": "assets/construction/build-turn-1.png",
       "alt": "左側の話し手が右の場面を紹介する。あなたは毎日家でハンドルを回します。",
       "clue": "",
-      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+      "review": "場面の人物・動作・対象と各時制の構図を確認。",
+      "revision": "scene-crop-3"
     },
     "build-turn-1-ongoing": {
       "file": "assets/construction/build-turn-1-ongoing.png",
       "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。あなたは今家でハンドルを回しています。",
       "clue": "時間のヒント：今。",
-      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+      "review": "場面の人物・動作・対象と各時制の構図を確認。",
+      "revision": "scene-crop-3"
     },
     "build-turn-1-past": {
       "file": "assets/construction/build-turn-1-past.png",
       "alt": "右の話し手が左の場面を振り返る。あなたは昨日家でハンドルを回しました。",
       "clue": "",
-      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+      "review": "場面の人物・動作・対象と各時制の構図を確認。",
+      "revision": "scene-crop-3"
     },
     "build-turn-2": {
       "file": "assets/construction/build-turn-2.png",
       "alt": "左側の話し手が右の場面を紹介する。彼は毎日家でドアのつまみを回します。",
       "clue": "",
       "review": "場面の人物・動作・対象と各時制の構図を確認。",
-      "revision": "listener-2"
+      "revision": "scene-crop-3"
     },
     "build-turn-2-ongoing": {
       "file": "assets/construction/build-turn-2-ongoing.png",
       "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。彼は今家でドアのつまみを回しています。",
       "clue": "時間のヒント：今。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。",
-      "revision": "listener-2"
+      "revision": "scene-crop-3"
     },
     "build-turn-2-past": {
       "file": "assets/construction/build-turn-2-past.png",
       "alt": "右の話し手が左の場面を振り返る。彼は昨日家でドアのつまみを回しました。",
       "clue": "",
       "review": "場面の人物・動作・対象と各時制の構図を確認。",
-      "revision": "listener-2"
+      "revision": "scene-crop-3"
     },
     "build-turn-3": {
       "file": "assets/construction/build-turn-3.png",
       "alt": "左側の話し手が右の場面を紹介する。彼女は毎日家でおもちゃの車輪を回します。",
       "clue": "",
       "review": "場面の人物・動作・対象と各時制の構図を確認。",
-      "revision": "listener-2"
+      "revision": "scene-crop-3"
     },
     "build-turn-3-ongoing": {
       "file": "assets/construction/build-turn-3-ongoing.png",
       "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。彼女は今家でおもちゃの車輪を回しています。",
       "clue": "時間のヒント：今。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。",
-      "revision": "listener-2"
+      "revision": "scene-crop-3"
     },
     "build-turn-3-past": {
       "file": "assets/construction/build-turn-3-past.png",
       "alt": "右の話し手が左の場面を振り返る。彼女は昨日家でおもちゃの車輪を回しました。",
       "clue": "",
       "review": "場面の人物・動作・対象と各時制の構図を確認。",
-      "revision": "listener-2"
+      "revision": "scene-crop-3"
     },
     "build-lift-1": {
       "file": "assets/construction/build-lift-1.png",
       "alt": "左側の話し手が右の場面を紹介する。それは毎日家で小さな箱を持ち上げます。",
       "clue": "",
       "review": "場面の人物・動作・対象と各時制の構図を確認。",
-      "revision": "listener-2"
+      "revision": "scene-crop-3"
     },
     "build-lift-1-ongoing": {
       "file": "assets/construction/build-lift-1-ongoing.png",
       "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。それは今家で小さな箱を持ち上げています。",
       "clue": "時間のヒント：今。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。",
-      "revision": "listener-2"
+      "revision": "scene-crop-3"
     },
     "build-lift-1-past": {
       "file": "assets/construction/build-lift-1-past.png",
       "alt": "右の話し手が左の場面を振り返る。それは昨日家で小さな箱を持ち上げました。",
       "clue": "",
       "review": "場面の人物・動作・対象と各時制の構図を確認。",
-      "revision": "listener-2"
+      "revision": "scene-crop-3"
     },
     "build-lift-2": {
       "file": "assets/construction/build-lift-2.png",
       "alt": "左側の話し手が右の場面を紹介する。私たちは毎日家でかばんを持ち上げます。",
       "clue": "",
-      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+      "review": "場面の人物・動作・対象と各時制の構図を確認。",
+      "revision": "scene-crop-3"
     },
     "build-lift-2-ongoing": {
       "file": "assets/construction/build-lift-2-ongoing.png",
       "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。私たちは今家でかばんを持ち上げています。",
       "clue": "時間のヒント：今。",
-      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+      "review": "場面の人物・動作・対象と各時制の構図を確認。",
+      "revision": "scene-crop-3"
     },
     "build-lift-2-past": {
       "file": "assets/construction/build-lift-2-past.png",
       "alt": "右の話し手が左の場面を振り返る。私たちは昨日家でかばんを持ち上げました。",
       "clue": "",
-      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+      "review": "場面の人物・動作・対象と各時制の構図を確認。",
+      "revision": "scene-crop-3"
     },
     "build-lift-3": {
       "file": "assets/construction/build-lift-3.png",
       "alt": "左側の話し手が右の場面を紹介する。彼らは毎日家でふたを持ち上げます。",
       "clue": "",
       "review": "場面の人物・動作・対象と各時制の構図を確認。",
-      "revision": "listener-2"
+      "revision": "scene-crop-3"
     },
     "build-lift-3-ongoing": {
       "file": "assets/construction/build-lift-3-ongoing.png",
       "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。彼らは今家でふたを持ち上げています。",
       "clue": "時間のヒント：今。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。",
-      "revision": "listener-2"
+      "revision": "scene-crop-3"
     },
     "build-lift-3-past": {
       "file": "assets/construction/build-lift-3-past.png",
       "alt": "右の話し手が左の場面を振り返る。彼らは昨日家でふたを持ち上げました。",
       "clue": "",
       "review": "場面の人物・動作・対象と各時制の構図を確認。",
-      "revision": "listener-2"
+      "revision": "scene-crop-3"
     },
     "build-carry-1": {
       "file": "assets/construction/build-carry-1.png",
       "alt": "左側の話し手が右の場面を紹介する。私は毎日家で本を運びます。",
       "clue": "",
-      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+      "review": "場面の人物・動作・対象と各時制の構図を確認。",
+      "revision": "scene-crop-3"
     },
     "build-carry-1-ongoing": {
       "file": "assets/construction/build-carry-1-ongoing.png",
       "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。私は今家で本を運んでいます。",
       "clue": "時間のヒント：今。",
-      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+      "review": "場面の人物・動作・対象と各時制の構図を確認。",
+      "revision": "scene-crop-3"
     },
     "build-carry-1-past": {
       "file": "assets/construction/build-carry-1-past.png",
       "alt": "右の話し手が左の場面を振り返る。私は昨日家で本を運びました。",
       "clue": "",
-      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+      "review": "場面の人物・動作・対象と各時制の構図を確認。",
+      "revision": "scene-crop-3"
     },
     "build-carry-2": {
       "file": "assets/construction/build-carry-2.png",
       "alt": "左側の話し手が右の場面を紹介する。あなたは毎日家でかごを運びます。",
       "clue": "",
-      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+      "review": "場面の人物・動作・対象と各時制の構図を確認。",
+      "revision": "scene-crop-3"
     },
     "build-carry-2-ongoing": {
       "file": "assets/construction/build-carry-2-ongoing.png",
       "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。あなたは今家でかごを運んでいます。",
       "clue": "時間のヒント：今。",
-      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+      "review": "場面の人物・動作・対象と各時制の構図を確認。",
+      "revision": "scene-crop-3"
     },
     "build-carry-2-past": {
       "file": "assets/construction/build-carry-2-past.png",
       "alt": "右の話し手が左の場面を振り返る。あなたは昨日家でかごを運びました。",
       "clue": "",
-      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+      "review": "場面の人物・動作・対象と各時制の構図を確認。",
+      "revision": "scene-crop-3"
     },
     "build-carry-3": {
       "file": "assets/construction/build-carry-3.png",
       "alt": "左側の話し手が右の場面を紹介する。彼は毎日家で毛布を運びます。",
       "clue": "",
       "review": "場面の人物・動作・対象と各時制の構図を確認。",
-      "revision": "listener-2"
+      "revision": "scene-crop-3"
     },
     "build-carry-3-ongoing": {
       "file": "assets/construction/build-carry-3-ongoing.png",
       "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。彼は今家で毛布を運んでいます。",
       "clue": "時間のヒント：今。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。",
-      "revision": "listener-2"
+      "revision": "scene-crop-3"
     },
     "build-carry-3-past": {
       "file": "assets/construction/build-carry-3-past.png",
       "alt": "右の話し手が左の場面を振り返る。彼は昨日家で毛布を運びました。",
       "clue": "",
       "review": "場面の人物・動作・対象と各時制の構図を確認。",
-      "revision": "listener-2"
+      "revision": "scene-crop-3"
     },
     "build-hold-1": {
       "file": "assets/construction/build-hold-1.png",
@@ -3777,40 +3894,50 @@
       "file": "assets/construction/build-bring-2.png",
       "alt": "左側の話し手が右の場面を紹介する。私たちは毎日学校にお気に入りの本を持ってきます。",
       "clue": "",
-      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+      "review": "場面の人物・動作・対象と各時制の構図を確認。",
+      "detail": "bring-book"
     },
     "build-bring-2-ongoing": {
       "file": "assets/construction/build-bring-2-ongoing.png",
       "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。私たちは今学校にお気に入りの本を持ってきています。",
       "clue": "時間のヒント：今。",
-      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+      "review": "場面の人物・動作・対象と各時制の構図を確認。",
+      "detail": "bring-book",
+      "detailSide": "left"
     },
     "build-bring-2-past": {
       "file": "assets/construction/build-bring-2-past.png",
       "alt": "右の話し手が左の場面を振り返る。私たちは昨日学校にお気に入りの本を持ってきました。",
       "clue": "",
-      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+      "review": "場面の人物・動作・対象と各時制の構図を確認。",
+      "detail": "bring-book",
+      "detailSide": "left"
     },
     "build-bring-3": {
       "file": "assets/construction/build-bring-3.png",
       "alt": "左側の話し手が右の場面を紹介する。彼らは毎日学校に青いボールを持ってきます。",
       "clue": "",
       "review": "場面の人物・動作・対象と各時制の構図を確認。",
-      "revision": "listener-2"
+      "revision": "listener-2",
+      "detail": "bring-ball"
     },
     "build-bring-3-ongoing": {
       "file": "assets/construction/build-bring-3-ongoing.png",
       "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。彼らは今学校に青いボールを持ってきています。",
       "clue": "時間のヒント：今。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。",
-      "revision": "listener-2"
+      "revision": "listener-2",
+      "detail": "bring-ball",
+      "detailSide": "left"
     },
     "build-bring-3-past": {
       "file": "assets/construction/build-bring-3-past.png",
       "alt": "右の話し手が左の場面を振り返る。彼らは昨日学校に青いボールを持ってきました。",
       "clue": "",
       "review": "場面の人物・動作・対象と各時制の構図を確認。",
-      "revision": "listener-2"
+      "revision": "listener-2",
+      "detail": "bring-ball",
+      "detailSide": "left"
     },
     "build-send-1": {
       "file": "assets/construction/build-send-1.png",
@@ -4333,58 +4460,73 @@
       "file": "assets/construction/build-try-1.png",
       "alt": "左側の話し手が右の場面を紹介する。私は毎日学校で新しいゲームをやってみます。",
       "clue": "",
-      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+      "review": "場面の人物・動作・対象と各時制の構図を確認。",
+      "detail": "try-game"
     },
     "build-try-1-ongoing": {
       "file": "assets/construction/build-try-1-ongoing.png",
       "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。私は今学校で新しいゲームを試しています。",
       "clue": "時間のヒント：今。",
-      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+      "review": "場面の人物・動作・対象と各時制の構図を確認。",
+      "detail": "try-game",
+      "detailSide": "left"
     },
     "build-try-1-past": {
       "file": "assets/construction/build-try-1-past.png",
       "alt": "右の話し手が左の場面を振り返る。私は昨日学校で新しいゲームをやってみました。",
       "clue": "",
-      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+      "review": "場面の人物・動作・対象と各時制の構図を確認。",
+      "detail": "try-game",
+      "detailSide": "left"
     },
     "build-try-2": {
       "file": "assets/construction/build-try-2.png",
       "alt": "左側の話し手が右の場面を紹介する。あなたは毎日学校でパズルをやってみます。",
       "clue": "",
-      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+      "review": "場面の人物・動作・対象と各時制の構図を確認。",
+      "detail": "try-puzzle"
     },
     "build-try-2-ongoing": {
       "file": "assets/construction/build-try-2-ongoing.png",
       "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。あなたは今学校でパズルを試しています。",
       "clue": "時間のヒント：今。",
-      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+      "review": "場面の人物・動作・対象と各時制の構図を確認。",
+      "detail": "try-puzzle",
+      "detailSide": "left"
     },
     "build-try-2-past": {
       "file": "assets/construction/build-try-2-past.png",
       "alt": "右の話し手が左の場面を振り返る。あなたは昨日学校でパズルをやってみました。",
       "clue": "",
-      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+      "review": "場面の人物・動作・対象と各時制の構図を確認。",
+      "detail": "try-puzzle",
+      "detailSide": "left"
     },
     "build-try-3": {
       "file": "assets/construction/build-try-3.png",
       "alt": "左側の話し手が右の場面を紹介する。彼は毎日学校で新しいスポーツをやってみます。",
       "clue": "",
       "review": "場面の人物・動作・対象と各時制の構図を確認。",
-      "revision": "listener-2"
+      "revision": "listener-2",
+      "detail": "try-sport"
     },
     "build-try-3-ongoing": {
       "file": "assets/construction/build-try-3-ongoing.png",
       "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。彼は今学校で新しいスポーツを試しています。",
       "clue": "時間のヒント：今。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。",
-      "revision": "listener-2"
+      "revision": "listener-2",
+      "detail": "try-sport",
+      "detailSide": "left"
     },
     "build-try-3-past": {
       "file": "assets/construction/build-try-3-past.png",
       "alt": "右の話し手が左の場面を振り返る。彼は昨日学校で新しいスポーツをやってみました。",
       "clue": "",
       "review": "場面の人物・動作・対象と各時制の構図を確認。",
-      "revision": "listener-2"
+      "revision": "listener-2",
+      "detail": "try-sport",
+      "detailSide": "left"
     },
     "build-make-1": {
       "file": "assets/construction/build-make-1.png",
@@ -4805,117 +4947,147 @@
       "alt": "左側の話し手が右の場面を紹介する。彼女は毎日お店でお母さんとノートを買います。",
       "clue": "",
       "review": "場面の人物・動作・対象と各時制の構図を確認。",
-      "revision": "listener-2"
+      "revision": "listener-2",
+      "detail": "buy"
     },
     "build-buy-1-ongoing": {
       "file": "assets/construction/build-buy-1-ongoing.png",
       "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。彼女は今お店でお母さんとノートを買っています。",
       "clue": "時間のヒント：今。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。",
-      "revision": "listener-2"
+      "revision": "listener-2",
+      "detail": "buy",
+      "detailSide": "left"
     },
     "build-buy-1-past": {
       "file": "assets/construction/build-buy-1-past.png",
       "alt": "右の話し手が左の場面を振り返る。彼女は昨日お店でお母さんとノートを買いました。",
       "clue": "",
       "review": "場面の人物・動作・対象と各時制の構図を確認。",
-      "revision": "listener-2"
+      "revision": "listener-2",
+      "detail": "buy",
+      "detailSide": "left"
     },
     "build-buy-2": {
       "file": "assets/construction/build-buy-2.png",
       "alt": "左側の話し手が右の場面を紹介する。彼は毎日お店でお母さんと消しゴムを買います。",
       "clue": "",
       "review": "場面の人物・動作・対象と各時制の構図を確認。",
-      "revision": "listener-2"
+      "revision": "listener-2",
+      "detail": "buy"
     },
     "build-buy-2-ongoing": {
       "file": "assets/construction/build-buy-2-ongoing.png",
       "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。彼は今お店でお母さんと消しゴムを買っています。",
       "clue": "時間のヒント：今。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。",
-      "revision": "listener-2"
+      "revision": "listener-2",
+      "detail": "buy",
+      "detailSide": "left"
     },
     "build-buy-2-past": {
       "file": "assets/construction/build-buy-2-past.png",
       "alt": "右の話し手が左の場面を振り返る。彼は昨日お店でお母さんと消しゴムを買いました。",
       "clue": "",
       "review": "場面の人物・動作・対象と各時制の構図を確認。",
-      "revision": "listener-2"
+      "revision": "listener-2",
+      "detail": "buy",
+      "detailSide": "left"
     },
     "build-buy-3": {
       "file": "assets/construction/build-buy-3.png",
       "alt": "左側の話し手が右の場面を紹介する。私たちは毎日お店でお母さんと小さなパンを買います。",
       "clue": "",
-      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+      "review": "場面の人物・動作・対象と各時制の構図を確認。",
+      "detail": "buy"
     },
     "build-buy-3-ongoing": {
       "file": "assets/construction/build-buy-3-ongoing.png",
       "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。私たちは今お店でお母さんと小さなパンを買っています。",
       "clue": "時間のヒント：今。",
-      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+      "review": "場面の人物・動作・対象と各時制の構図を確認。",
+      "detail": "buy",
+      "detailSide": "left"
     },
     "build-buy-3-past": {
       "file": "assets/construction/build-buy-3-past.png",
       "alt": "右の話し手が左の場面を振り返る。私たちは昨日お店でお母さんと小さなパンを買いました。",
       "clue": "",
-      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+      "review": "場面の人物・動作・対象と各時制の構図を確認。",
+      "detail": "buy",
+      "detailSide": "left"
     },
     "build-pay-1": {
       "file": "assets/construction/build-pay-1.png",
       "alt": "左側の話し手が右の場面を紹介する。彼らは毎日駅で切符のお金を払います。",
       "clue": "",
       "review": "場面の人物・動作・対象と各時制の構図を確認。",
-      "revision": "listener-2"
+      "revision": "listener-2",
+      "detail": "pay"
     },
     "build-pay-1-ongoing": {
       "file": "assets/construction/build-pay-1-ongoing.png",
       "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。彼らは今駅で切符のお金を払っています。",
       "clue": "時間のヒント：今。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。",
-      "revision": "listener-2"
+      "revision": "listener-2",
+      "detail": "pay",
+      "detailSide": "left"
     },
     "build-pay-1-past": {
       "file": "assets/construction/build-pay-1-past.png",
       "alt": "右の話し手が左の場面を振り返る。彼らは昨日駅で切符のお金を払いました。",
       "clue": "",
       "review": "場面の人物・動作・対象と各時制の構図を確認。",
-      "revision": "listener-2"
+      "revision": "listener-2",
+      "detail": "pay",
+      "detailSide": "left"
     },
     "build-pay-2": {
       "file": "assets/construction/build-pay-2.png",
       "alt": "左側の話し手が右の場面を紹介する。私は毎日お店でおやつのお金を払います。",
       "clue": "",
-      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+      "review": "場面の人物・動作・対象と各時制の構図を確認。",
+      "detail": "pay"
     },
     "build-pay-2-ongoing": {
       "file": "assets/construction/build-pay-2-ongoing.png",
       "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。私は今お店でおやつのお金を払っています。",
       "clue": "時間のヒント：今。",
-      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+      "review": "場面の人物・動作・対象と各時制の構図を確認。",
+      "detail": "pay",
+      "detailSide": "left"
     },
     "build-pay-2-past": {
       "file": "assets/construction/build-pay-2-past.png",
       "alt": "右の話し手が左の場面を振り返る。私は昨日お店でおやつのお金を払いました。",
       "clue": "",
-      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+      "review": "場面の人物・動作・対象と各時制の構図を確認。",
+      "detail": "pay",
+      "detailSide": "left"
     },
     "build-pay-3": {
       "file": "assets/construction/build-pay-3.png",
       "alt": "左側の話し手が右の場面を紹介する。あなたは毎日お店でノートのお金を払います。",
       "clue": "",
-      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+      "review": "場面の人物・動作・対象と各時制の構図を確認。",
+      "detail": "pay"
     },
     "build-pay-3-ongoing": {
       "file": "assets/construction/build-pay-3-ongoing.png",
       "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。あなたは今お店でノートのお金を払っています。",
       "clue": "時間のヒント：今。",
-      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+      "review": "場面の人物・動作・対象と各時制の構図を確認。",
+      "detail": "pay",
+      "detailSide": "left"
     },
     "build-pay-3-past": {
       "file": "assets/construction/build-pay-3-past.png",
       "alt": "右の話し手が左の場面を振り返る。あなたは昨日お店でノートのお金を払いました。",
       "clue": "",
-      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+      "review": "場面の人物・動作・対象と各時制の構図を確認。",
+      "detail": "pay",
+      "detailSide": "left"
     },
     "build-save-1": {
       "file": "assets/construction/build-save-1.png",
@@ -5237,21 +5409,21 @@
     },
     "build-invite-2": {
       "file": "assets/construction/build-invite-2.png",
-      "alt": "左側の話し手が右の場面を紹介する。彼は年に一度家で誕生日会に男の子を招きます。",
+      "alt": "左側の話し手が右の場面を紹介する。彼は年に一度家で誕生日会に友だちを招きます。",
       "clue": "時間のヒント：年に一度。 招待状を受け取るのは緑の服の男の子です。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。",
       "revision": "listener-2"
     },
     "build-invite-2-ongoing": {
       "file": "assets/construction/build-invite-2-ongoing.png",
-      "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。彼は今家で誕生日会に男の子を招いています。",
+      "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。彼は今家で誕生日会に友だちを招いています。",
       "clue": "時間のヒント：今。 招待状を受け取るのは緑の服の男の子です。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。",
       "revision": "listener-2"
     },
     "build-invite-2-past": {
       "file": "assets/construction/build-invite-2-past.png",
-      "alt": "右の話し手が左の場面を振り返る。彼は昨日家で誕生日会に男の子を招きました。",
+      "alt": "右の話し手が左の場面を振り返る。彼は昨日家で誕生日会に友だちを招きました。",
       "clue": "招待状を受け取るのは緑の服の男の子です。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。",
       "revision": "listener-2"
@@ -5302,7 +5474,8 @@
       "file": "assets/construction/build-join-2.png",
       "alt": "左側の話し手が右の場面を紹介する。私たちは新学期に学校でチームに加わります。",
       "clue": "時間のヒント：新学期に。",
-      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+      "review": "場面の人物・動作・対象と各時制の構図を確認。",
+      "detail": "term"
     },
     "build-join-2-ongoing": {
       "file": "assets/construction/build-join-2-ongoing.png",
@@ -5321,7 +5494,8 @@
       "alt": "左側の話し手が右の場面を紹介する。彼らは新学期に学校でダンスクラブに加わります。",
       "clue": "時間のヒント：新学期に。",
       "review": "場面の人物・動作・対象と各時制の構図を確認。",
-      "revision": "listener-2"
+      "revision": "listener-2",
+      "detail": "term"
     },
     "build-join-3-ongoing": {
       "file": "assets/construction/build-join-3-ongoing.png",
@@ -5341,37 +5515,47 @@
       "file": "assets/construction/build-teach-1.png",
       "alt": "左側の話し手が右の場面を紹介する。私は毎日家で彼に新しいゲームを教えます。",
       "clue": "ゲームを教わるのは男の子です。",
-      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+      "review": "場面の人物・動作・対象と各時制の構図を確認。",
+      "detail": "teach-game"
     },
     "build-teach-1-ongoing": {
       "file": "assets/construction/build-teach-1-ongoing.png",
       "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。私は今家で彼に新しいゲームを教えています。",
       "clue": "時間のヒント：今。 ゲームを教わるのは男の子です。",
-      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+      "review": "場面の人物・動作・対象と各時制の構図を確認。",
+      "detail": "teach-game",
+      "detailSide": "left"
     },
     "build-teach-1-past": {
       "file": "assets/construction/build-teach-1-past.png",
       "alt": "右の話し手が左の場面を振り返る。私は昨日家で彼に新しいゲームを教えました。",
       "clue": "ゲームを教わるのは男の子です。",
-      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+      "review": "場面の人物・動作・対象と各時制の構図を確認。",
+      "detail": "teach-game",
+      "detailSide": "left"
     },
     "build-teach-2": {
       "file": "assets/construction/build-teach-2.png",
       "alt": "左側の話し手が右の場面を紹介する。あなたは毎日家で友だちに歌を教えます。",
       "clue": "",
-      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+      "review": "場面の人物・動作・対象と各時制の構図を確認。",
+      "detail": "teach-song"
     },
     "build-teach-2-ongoing": {
       "file": "assets/construction/build-teach-2-ongoing.png",
       "alt": "話し手が真下から見上げ、四角い吹き出しの左側に同じ長さの線が4本並ぶ。あなたは今家で友だちに歌を教えています。",
       "clue": "時間のヒント：今。",
-      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+      "review": "場面の人物・動作・対象と各時制の構図を確認。",
+      "detail": "teach-song",
+      "detailSide": "left"
     },
     "build-teach-2-past": {
       "file": "assets/construction/build-teach-2-past.png",
       "alt": "右の話し手が左の場面を振り返る。あなたは昨日家で友だちに歌を教えました。",
       "clue": "",
-      "review": "場面の人物・動作・対象と各時制の構図を確認。"
+      "review": "場面の人物・動作・対象と各時制の構図を確認。",
+      "detail": "teach-song",
+      "detailSide": "left"
     },
     "build-teach-3": {
       "file": "assets/construction/build-teach-3.png",
@@ -5515,20 +5699,20 @@
     },
     "build-need-1": {
       "file": "assets/construction/build-need-1.png",
-      "alt": "左側の話し手が右の場面を紹介する。あなたははさみが必要です。",
+      "alt": "左側の話し手が右の場面を紹介する。あなたははさみが要ります。",
       "clue": "",
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "build-need-2": {
       "file": "assets/construction/build-need-2.png",
-      "alt": "左側の話し手が右の場面を紹介する。彼は白い紙が必要です。",
+      "alt": "左側の話し手が右の場面を紹介する。彼は白い紙が要ります。",
       "clue": "",
       "review": "場面の人物・動作・対象と各時制の構図を確認。",
       "revision": "listener-2"
     },
     "build-need-3": {
       "file": "assets/construction/build-need-3.png",
-      "alt": "左側の話し手が右の場面を紹介する。彼女は水が必要です。",
+      "alt": "左側の話し手が右の場面を紹介する。彼女は水が要ります。",
       "clue": "",
       "review": "場面の人物・動作・対象と各時制の構図を確認。",
       "revision": "listener-2"
@@ -5787,16 +5971,18 @@
       "review": "場面の人物・動作・対象と各時制の構図を確認。"
     },
     "level2-07": {
-      "file": "assets/construction/level2-07-visual.png",
-      "alt": "5つのマスのうち4つにチェック。左側の話し手が右の場面を紹介する。私は放課後、家でよく動物の本を読みます。",
+      "file": "assets/construction/level2-07.png",
+      "alt": "8つのマスのうち5つにチェック。私は放課後、家でよく動物の本を読みます。",
       "clue": "",
-      "review": "吹き出し内の場面と、文章なしで読める意味の手がかりを確認。"
+      "review": "ほかの頻度の場面と同じ8マスで回数を比較できる。",
+      "frequencyPattern": "11010110"
     },
     "level2-08": {
-      "file": "assets/construction/level2-08-visual.png",
-      "alt": "5つのマスすべてにチェック。左側の話し手が右の場面を紹介する。彼女は朝、いつも自分のかばんを確かめます。",
+      "file": "assets/construction/level2-08.png",
+      "alt": "8つのマスのうち8つにチェック。彼女は朝、いつも自分のかばんを確かめます。",
       "clue": "",
-      "review": "吹き出し内の場面と、文章なしで読める意味の手がかりを確認。"
+      "review": "ほかの頻度の場面と同じ8マスで回数を比較できる。",
+      "frequencyPattern": "11111111"
     },
     "level2-10": {
       "file": "assets/construction/level2-10-visual.png",
@@ -6161,10 +6347,11 @@
       "revision": "listener-2"
     },
     "level2-09": {
-      "file": "assets/construction/level2-09-visual.png",
-      "alt": "5つのマスのうち2つにチェック。左側の話し手が右の場面を紹介する。私たちは家で、ときどき彼女に花をあげます。",
+      "file": "assets/construction/level2-09.png",
+      "alt": "8つのマスのうち3つにチェック。私たちは家で、ときどき彼女に花をあげます。",
       "clue": "",
-      "review": "吹き出し内の場面と、文章なしで読める意味の手がかりを確認。"
+      "review": "ほかの頻度の場面と同じ8マスで回数を比較できる。",
+      "frequencyPattern": "01001001"
     },
     "build-be-noun-4": {
       "file": "assets/construction/build-be-noun-4.png",
@@ -6278,11 +6465,10 @@
       "speakerPlacement": "near-left"
     },
     "level2-17": {
-      "file": "assets/construction/level2-05.png",
-      "alt": "彼女は朝食のときに牛乳を飲むかもしれません。",
-      "clue": "彼女は朝食で何を飲むか、まだ決めていません。",
-      "review": "既存の場面を使い、助述部に対応する話し手の姿勢または短い場面ヒントを加えた。",
-      "speakerPose": "might"
+      "file": "assets/construction/level2-17-might-drink-milk.webp",
+      "alt": "紫の服の女の子が朝食の席で牛乳を飲む様子を思い浮かべ、話し手が考え込んでいます。",
+      "clue": "",
+      "review": "朝食のパンと牛乳を飲む口元、可能性を考える話し手の姿を確認。"
     },
     "level2-18": {
       "file": "assets/construction/level2-07.png",
@@ -6419,11 +6605,13 @@
       "questionMarkInArt": true
     },
     "level3-32": {
-      "file": "assets/construction/level3-32-door-knob.png",
-      "alt": "顔に「？」がある人影が、ドアノブを握ってドアを開けています。",
+      "file": "assets/construction/level3-32-opening.webp",
+      "alt": "顔に「？」がある人影がドアノブを握っています。戸先が枠から離れる方向を曲線の矢印で示しています。",
       "clue": "",
-      "review": "ドアを開ける動作を見せ、開ける人の顔の位置を疑問符にした。",
-      "questionMarkInArt": true
+      "review": "半開きのドアに開く方向を示す矢印を加えた。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/level3-32-door-knob.png",
+      "revision": "action-3"
     },
     "level3-33": {
       "file": "assets/construction/level3-33.png",
@@ -6592,7 +6780,8 @@
       "alt": "私は家で彼に新しいゲームを教えることができます。",
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
-      "source": "assets/construction/build-teach-1.png"
+      "source": "assets/construction/build-teach-1.png",
+      "detail": "teach-game"
     },
     "level2-can-make-2": {
       "file": "assets/construction/derived/level2-can-make-2.webp",
@@ -6627,7 +6816,8 @@
       "alt": "彼女は家でカレーを味見するかもしれません。",
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
-      "source": "assets/construction/build-taste-2.png"
+      "source": "assets/construction/build-taste-2.png",
+      "detail": "taste"
     },
     "level2-might-mix-1": {
       "file": "assets/construction/derived/level2-might-mix-1.webp",
@@ -6641,7 +6831,8 @@
       "alt": "彼は学校で名前を書くかもしれません。",
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
-      "source": "assets/construction/build-write-1.png"
+      "source": "assets/construction/build-write-1.png",
+      "detail": "name"
     },
     "level2-might-thank-2": {
       "file": "assets/construction/derived/level2-might-thank-2.webp",
@@ -6669,7 +6860,8 @@
       "alt": "彼は学校で新しいスポーツをやってみるかもしれません。",
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
-      "source": "assets/construction/build-try-3.png"
+      "source": "assets/construction/build-try-3.png",
+      "detail": "try-sport"
     },
     "level2-might-change-1": {
       "file": "assets/construction/derived/level2-might-change-1.webp",
@@ -6683,11 +6875,12 @@
       "alt": "彼はお店でお母さんと消しゴムを買うかもしれません。",
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
-      "source": "assets/construction/build-buy-2.png"
+      "source": "assets/construction/build-buy-2.png",
+      "detail": "buy"
     },
     "level2-must-wait-1": {
       "file": "assets/construction/derived/level2-must-wait-1.webp",
-      "alt": "あなたはここでバスを待たなければなりません。",
+      "alt": "あなたはバス停でバスを待たなければなりません。",
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
       "source": "assets/construction/build-wait-1.png"
@@ -6718,7 +6911,8 @@
       "alt": "私たちは学校で新しいダンスを覚えなければなりません。",
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
-      "source": "assets/construction/build-learn-3.png"
+      "source": "assets/construction/build-learn-3.png",
+      "detail": "learn-dance"
     },
     "level2-must-open-3": {
       "file": "assets/construction/derived/level2-must-open-3.webp",
@@ -6739,7 +6933,8 @@
       "alt": "私たちは学校にお気に入りの本を持ってこなければなりません。",
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
-      "source": "assets/construction/build-bring-2.png"
+      "source": "assets/construction/build-bring-2.png",
+      "detail": "bring-book"
     },
     "level2-must-call-2": {
       "file": "assets/construction/derived/level2-must-call-2.webp",
@@ -6802,7 +6997,8 @@
       "alt": "あなたは家でかごを運んだほうがいいです。",
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
-      "source": "assets/construction/build-carry-2.png"
+      "source": "assets/construction/build-carry-2.png",
+      "revision": "scene-crop-3"
     },
     "level2-should-tell-3": {
       "file": "assets/construction/derived/level2-should-tell-3.webp",
@@ -6839,7 +7035,9 @@
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
       "source": "assets/construction/build-start-2-ongoing.png",
-      "revision": "centered-1"
+      "revision": "centered-1",
+      "detail": "start-homework",
+      "detailSide": "left"
     },
     "level2-might-ing-wash-1-ongoing": {
       "file": "assets/construction/derived/level2-might-ing-wash-1-ongoing.webp",
@@ -6871,7 +7069,9 @@
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
       "source": "assets/construction/build-close-1-ongoing.png",
-      "revision": "centered-1"
+      "revision": "centered-1",
+      "detail": "close-book",
+      "detailSide": "left"
     },
     "level2-might-ing-push-1-ongoing": {
       "file": "assets/construction/derived/level2-might-ing-push-1-ongoing.webp",
@@ -7001,7 +7201,8 @@
       "alt": "彼女は昨日家でおもちゃの車輪を回しませんでした。",
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
-      "source": "assets/construction/build-turn-3-past.png"
+      "source": "assets/construction/build-turn-3-past.png",
+      "revision": "scene-crop-3"
     },
     "level2-did-not-show-2-past": {
       "file": "assets/construction/derived/level2-did-not-show-2-past.webp",
@@ -7107,7 +7308,7 @@
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
       "source": "assets/construction/build-lift-3-ongoing.png",
-      "revision": "centered-1"
+      "revision": "scene-crop-3"
     },
     "level2-not-ing-send-3-ongoing": {
       "file": "assets/construction/derived/level2-not-ing-send-3-ongoing.webp",
@@ -7295,7 +7496,8 @@
       "alt": "彼らはよくベンチで休みます。",
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
-      "source": "assets/construction/build-rest-3.png"
+      "source": "assets/construction/build-rest-3.png",
+      "detail": "rest-bench"
     },
     "level2-often-cut-2": {
       "file": "assets/construction/derived/level2-often-cut-2.webp",
@@ -7316,7 +7518,8 @@
       "alt": "それはいつも学校で英語の単語を書きます。",
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
-      "source": "assets/construction/build-write-3.png"
+      "source": "assets/construction/build-write-3.png",
+      "detail": "word"
     },
     "level2-often-draw-1": {
       "file": "assets/construction/derived/level2-often-draw-1.webp",
@@ -7475,7 +7678,7 @@
     },
     "level3-q-do-need-3": {
       "file": "assets/construction/derived/level3-q-do-need-3.webp",
-      "alt": "彼女は水が必要ですか。 話し手のそばに「？」があります。",
+      "alt": "彼女は水が要りますか。 話し手のそばに「？」があります。",
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
       "questionMark": [
@@ -7528,11 +7731,11 @@
       ],
       "source": "assets/construction/build-wash-1-past.png"
     },
-    "level3-q-did-learn-1-past": {
+    "level3-q-did-sing-at-school": {
       "file": "assets/construction/derived/level3-q-did-learn-1-past.webp",
-      "alt": "彼女は昨日学校で新しい歌を覚えましたか。 話し手のそばに「？」があります。",
+      "alt": "女の子が学校で楽譜を見ながら歌っています。話し手のそばに「？」があります。",
       "clue": "",
-      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "review": "楽譜に向かって歌う姿に合わせて英文を差し替え、話し手のそばに疑問符を表示する。",
       "questionMark": [
         76,
         64
@@ -7585,7 +7788,7 @@
     },
     "level3-q-did-invite-2-past": {
       "file": "assets/construction/derived/level3-q-did-invite-2-past.webp",
-      "alt": "彼は昨日家で誕生日会に男の子を招きましたか。 話し手のそばに「？」があります。",
+      "alt": "彼は昨日家で誕生日会に友だちを招きましたか。 話し手のそばに「？」があります。",
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
       "questionMark": [
@@ -7845,7 +8048,7 @@
     },
     "level3-q-can-wait-1": {
       "file": "assets/construction/derived/level3-q-can-wait-1.webp",
-      "alt": "あなたはここでバスを待つことができますか。 話し手のそばに「？」があります。",
+      "alt": "あなたはバス停でバスを待つことができますか。 話し手のそばに「？」があります。",
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
       "questionMark": [
@@ -7885,7 +8088,8 @@
         26,
         64
       ],
-      "source": "assets/construction/build-carry-2.png"
+      "source": "assets/construction/build-carry-2.png",
+      "revision": "scene-crop-3"
     },
     "level3-q-can-send-2": {
       "file": "assets/construction/derived/level3-q-can-send-2.webp",
@@ -7898,11 +8102,11 @@
       ],
       "source": "assets/construction/build-send-2.png"
     },
-    "level3-q-can-teach-2": {
+    "level3-q-can-sing-with-a-friend": {
       "file": "assets/construction/derived/level3-q-can-teach-2.webp",
-      "alt": "あなたは家で友だちに歌を教えることができますか。 話し手のそばに「？」があります。",
+      "alt": "家で二人の女の子が楽譜を前に歌っています。話し手のそばに「？」があります。",
       "clue": "",
-      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "review": "二人が歌う絵に合わせ、友だちを一緒に歌う相手として対象２に置く。",
       "questionMark": [
         26,
         64
@@ -8115,27 +8319,27 @@
       "questionMarkInArt": true,
       "source": "assets/construction/build-fly-1-rect.png"
     },
-    "level3-what-do-taste-2": {
+    "level3-what-do-eat-at-home": {
       "file": "assets/construction/derived/level3-what-do-taste-2.webp",
-      "alt": "彼女は毎日家で何を味見しますか。 「？」が付いた場所に、たずねている物の手がかりがあります。",
+      "alt": "女の子が家の食卓でスプーンを口に運んでいます。食べ物の位置に「？」があります。",
       "clue": "",
-      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "review": "スプーンで食べる様子に合わせ、述語を食べるにした。食べ物は疑問符で示す。",
       "questionMarkInArt": true,
       "source": "assets/construction/build-taste-2.png"
     },
     "level3-what-do-read-3": {
-      "file": "assets/construction/derived/level3-what-do-read-3.webp",
-      "alt": "あなたは毎日家で何を読みますか。 「？」が付いた場所に、たずねている物の手がかりがあります。",
+      "file": "assets/construction/level3-what-do-read-3-open-book.webp",
+      "alt": "女の子が両手で持った見開きの本を読んでいます。白いページの中央に「？」があります。",
       "clue": "",
-      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "review": "読んでいる動作が分かるよう、本を持つ両手と見開きを描き、白いページに疑問符を載せた。",
       "questionMarkInArt": true,
       "source": "assets/construction/build-read-3.png"
     },
     "level3-what-do-count-3": {
-      "file": "assets/construction/derived/level3-what-do-count-3.webp",
-      "alt": "彼らは毎日学校で何を数えますか。 「？」が付いた場所に、たずねている物の手がかりがあります。",
+      "file": "assets/construction/level3-what-do-count-3-counting.webp",
+      "alt": "学校の机で女の子が並んだ物を指さし、男の子が三本の指を立てています。物の下に1、2、3があり、真ん中の物に「？」が付いています。",
       "clue": "",
-      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "review": "指さしと三本の指、1・2・3の順で数える動作を示し、数えている物の種類を「？」で伏せる。",
       "questionMarkInArt": true,
       "source": "assets/construction/build-count-3.png"
     },
@@ -8148,26 +8352,27 @@
       "source": "assets/construction/build-study-3.png"
     },
     "level3-what-do-sing-3": {
-      "file": "assets/construction/derived/level3-what-do-sing-3.webp",
-      "alt": "彼らは毎日家で何を歌いますか。 「？」が付いた場所に、たずねている物の手がかりがあります。",
+      "file": "assets/construction/level3-what-do-sing-3-songbook.webp",
+      "alt": "家で二人の子どもが、開いた歌の本を持って歌っています。二人の頭の上に音符があり、本の中央に「？」があります。",
       "clue": "",
-      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "review": "頭上のマスクを外して音符と歌う表情を見せ、本の中央のみに疑問符を置いた。",
       "questionMarkInArt": true,
       "source": "assets/construction/build-sing-3.png"
     },
     "level3-what-do-make-2": {
       "file": "assets/construction/derived/level3-what-do-make-2.webp",
-      "alt": "彼は毎日家で何を作りますか。 「？」が付いた場所に、たずねている物の手がかりがあります。",
+      "alt": "男の子が両手でパンを持ち、重ねた具の上に載せています。組み立てている物の中央に「？」があります。",
       "clue": "",
-      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "review": "仕上げている手と材料を見せ、できあがるものの一部だけを隠した。",
       "questionMarkInArt": true,
-      "source": "assets/construction/build-make-2.png"
+      "source": "assets/construction/build-make-2.png",
+      "revision": "action-3"
     },
     "level3-what-do-build-3": {
-      "file": "assets/construction/derived/level3-what-do-build-3.webp",
-      "alt": "あなたは毎日家で何を作りますか。 「？」が付いた場所に、たずねている物の手がかりがあります。",
+      "file": "assets/construction/level3-what-do-build-3-stacking-blocks.webp",
+      "alt": "家で女の子が片手で下の積み木を支え、もう片方の手で青い積み木を上に重ねています。積み木の途中に「？」があります。",
       "clue": "",
-      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "review": "積み木を載せる手と下で支える手を見せ、疑問符のマスクは積み木の途中だけに絞った。",
       "questionMarkInArt": true,
       "source": "assets/construction/build-build-3.png"
     },
@@ -8181,27 +8386,32 @@
     },
     "level3-what-do-check-1": {
       "file": "assets/construction/derived/level3-what-do-check-1.webp",
-      "alt": "それは毎日家で何を確かめますか。 「？」が付いた場所に、たずねている物の手がかりがあります。",
+      "alt": "ロボットがかばんを開けて中をのぞき込んでいます。中身に「？」があり、そばにチェックが二つ付いたリストがあります。",
       "clue": "",
-      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "review": "かばんの開口部とロボットの手元を見せ、チェックリストを加えた。",
       "questionMarkInArt": true,
-      "source": "assets/construction/build-check-1.png"
+      "source": "assets/construction/build-check-1.png",
+      "revision": "action-3"
     },
     "level3-what-did-start-2-past": {
       "file": "assets/construction/derived/level3-what-did-start-2-past.webp",
-      "alt": "彼らは昨日家で何を始めましたか。 「？」が付いた場所に、たずねている物の手がかりがあります。",
+      "alt": "二人が開いたノートに鉛筆を当てています。机に置いたノートの一部に「？」があります。",
       "clue": "",
-      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "review": "新しいページと鉛筆の先が見えるよう小さな対象マスクを置いた。",
       "questionMarkInArt": true,
-      "source": "assets/construction/build-start-2-past.png"
+      "source": "assets/construction/build-start-2-past.png",
+      "detail": "first-step",
+      "detailSide": "left",
+      "revision": "action-3"
     },
     "level3-what-did-cut-2-past": {
       "file": "assets/construction/derived/level3-what-did-cut-2-past.webp",
-      "alt": "彼らは昨日家で何を切りましたか。 「？」が付いた場所に、たずねている物の手がかりがあります。",
+      "alt": "二人がはさみを持ち、片手に持った物にはさみの先を当てています。左の子が持つ材料に「？」があります。",
       "clue": "",
-      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "review": "はさみと両手、切る接点が見えるよう材料の一部を隠した。",
       "questionMarkInArt": true,
-      "source": "assets/construction/build-cut-2-past.png"
+      "source": "assets/construction/build-cut-2-past.png",
+      "revision": "action-3"
     },
     "level3-what-did-mix-1-past": {
       "file": "assets/construction/derived/level3-what-did-mix-1-past.webp",
@@ -8221,11 +8431,12 @@
     },
     "level3-what-did-count-3-past": {
       "file": "assets/construction/derived/level3-what-did-count-3-past.webp",
-      "alt": "彼らは昨日学校で何を数えましたか。 「？」が付いた場所に、たずねている物の手がかりがあります。",
+      "alt": "女の子が机の上の物を順番に指さし、男の子が指を三本立てています。並べた物の下に1・2・3があり、中央の物に「？」があります。",
       "clue": "",
-      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "review": "数える指、並んだ物、番号を過去の場面の枠に配置した。",
       "questionMarkInArt": true,
-      "source": "assets/construction/build-count-3.png"
+      "source": "assets/construction/level3-what-do-count-3-counting.webp",
+      "revision": "action-3"
     },
     "level3-what-did-sing-1-past": {
       "file": "assets/construction/derived/level3-what-did-sing-1-past.webp",
@@ -8253,11 +8464,12 @@
     },
     "level3-what-did-use-3-past": {
       "file": "assets/construction/derived/level3-what-did-use-3-past.webp",
-      "alt": "それは昨日家で何を使いましたか。 「？」が付いた場所に、たずねている物の手がかりがあります。",
+      "alt": "ロボットが器の上で道具を動かしています。手に持つ道具の一部に「？」があります。",
       "clue": "",
-      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "review": "指と器、道具の先を残して何を使うかを問う印を持ち手の近くに配置した。",
       "questionMarkInArt": true,
-      "source": "assets/construction/build-use-3-past.png"
+      "source": "assets/construction/build-use-3-past.png",
+      "revision": "action-3"
     },
     "level3-what-did-wear-3-past": {
       "file": "assets/construction/derived/level3-what-did-wear-3-past.webp",
@@ -8278,12 +8490,14 @@
     },
     "level3-what-ing-taste-1-ongoing": {
       "file": "assets/construction/derived/level3-what-ing-taste-1-ongoing.webp",
-      "alt": "彼は今家で何を味見していますか。 「？」が付いた場所に、たずねている物の手がかりがあります。",
+      "alt": "男の子が小さなスプーンを口元に運んでいます。器の中のものに「？」があります。",
       "clue": "",
-      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "review": "スプーンの先と口元を残し、対象を器の中央で示した。",
       "questionMarkInArt": true,
       "source": "assets/construction/build-taste-1-ongoing.png",
-      "revision": "centered-1"
+      "revision": "action-3",
+      "detail": "taste-unknown",
+      "detailSide": "left"
     },
     "level3-what-ing-mix-1-ongoing": {
       "file": "assets/construction/derived/level3-what-ing-mix-1-ongoing.webp",
@@ -8305,12 +8519,12 @@
     },
     "level3-what-ing-read-3-ongoing": {
       "file": "assets/construction/derived/level3-what-ing-read-3-ongoing.webp",
-      "alt": "あなたは今家で何を読んでいますか。 「？」が付いた場所に、たずねている物の手がかりがあります。",
+      "alt": "女の子が両手で開いた本を読んでいます。見開きの中央に「？」があります。",
       "clue": "",
-      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "review": "承認済みの見開き・両手の場面を、この問題の時制・助動詞の枠へ配置した。",
       "questionMarkInArt": true,
-      "source": "assets/construction/build-read-3.png",
-      "revision": "centered-1"
+      "source": "assets/construction/level3-what-do-read-3-open-book.webp",
+      "revision": "action-3"
     },
     "level3-what-ing-write-1-ongoing": {
       "file": "assets/construction/derived/level3-what-ing-write-1-ongoing.webp",
@@ -8323,12 +8537,14 @@
     },
     "level3-what-ing-learn-1-ongoing": {
       "file": "assets/construction/derived/level3-what-ing-learn-1-ongoing.webp",
-      "alt": "彼女は今学校で何を覚えていますか。 「？」が付いた場所に、たずねている物の手がかりがあります。",
+      "alt": "先生が譜面を指し、女の子が口を開けて歌っています。音符の一部に「？」があります。",
       "clue": "",
-      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "review": "先生の指と譜面を残して、歌の内容に小さな疑問符を置いた。",
       "questionMarkInArt": true,
       "source": "assets/construction/build-learn-1-ongoing.png",
-      "revision": "centered-1"
+      "revision": "action-3",
+      "detail": "recall",
+      "detailSide": "left"
     },
     "level3-what-ing-watch-1-ongoing": {
       "file": "assets/construction/derived/level3-what-ing-watch-1-ongoing.webp",
@@ -8341,12 +8557,12 @@
     },
     "level3-what-ing-make-2-ongoing": {
       "file": "assets/construction/derived/level3-what-ing-make-2-ongoing.webp",
-      "alt": "彼は今家で何を作っていますか。 「？」が付いた場所に、たずねている物の手がかりがあります。",
+      "alt": "男の子が両手でパンを持ち、重ねた具の上に載せています。組み立てている物の中央に「？」があります。",
       "clue": "",
-      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "review": "仕上げている手と材料を見せ、できあがるものの一部だけを隠した。",
       "questionMarkInArt": true,
       "source": "assets/construction/build-make-2.png",
-      "revision": "centered-1"
+      "revision": "action-3"
     },
     "level3-what-ing-clean-1-ongoing": {
       "file": "assets/construction/derived/level3-what-ing-clean-1-ongoing-centered.webp",
@@ -8367,19 +8583,21 @@
     },
     "level3-what-can-read-3": {
       "file": "assets/construction/derived/level3-what-can-read-3.webp",
-      "alt": "あなたは家で何を読むことができますか。 「？」が付いた場所に、たずねている物の手がかりがあります。",
+      "alt": "女の子が両手で開いた本を読んでいます。見開きの中央に「？」があります。",
       "clue": "",
-      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "review": "承認済みの見開き・両手の場面を、この問題の時制・助動詞の枠へ配置した。",
       "questionMarkInArt": true,
-      "source": "assets/construction/build-read-3.png"
+      "source": "assets/construction/level3-what-do-read-3-open-book.webp",
+      "revision": "action-3"
     },
     "level3-what-can-study-2": {
       "file": "assets/construction/derived/level3-what-can-study-2.webp",
-      "alt": "あなたは学校で何を勉強することができますか。 「？」が付いた場所に、たずねている物の手がかりがあります。",
+      "alt": "女の子が教室の机で教材に取り組んでいます。教具とノートのある机で、開いているページに「？」があります。",
       "clue": "",
-      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "review": "勉強の手掛かりになる手・教具を残し、学習内容に疑問符を置いた。",
       "questionMarkInArt": true,
-      "source": "assets/construction/build-study-2.png"
+      "source": "assets/construction/build-study-2.png",
+      "revision": "action-3"
     },
     "level3-what-can-practice-3": {
       "file": "assets/construction/derived/level3-what-can-practice-3.webp",
@@ -8395,15 +8613,17 @@
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
       "questionMarkInArt": true,
-      "source": "assets/construction/build-carry-2.png"
+      "source": "assets/construction/build-carry-2.png",
+      "revision": "scene-crop-3"
     },
     "level3-what-can-build-3": {
       "file": "assets/construction/derived/level3-what-can-build-3.webp",
-      "alt": "あなたは家で何を作ることができますか。 「？」が付いた場所に、たずねている物の手がかりがあります。",
+      "alt": "女の子が片手で積み木を支えて、もう片方の手で青い積み木を重ねています。積み木の中央に「？」があります。",
       "clue": "",
-      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "review": "両手と上下の積み木を見せ、列の途中だけに疑問符を置いた。",
       "questionMarkInArt": true,
-      "source": "assets/construction/build-build-3.png"
+      "source": "assets/construction/build-build-3.png",
+      "revision": "action-3"
     },
     "level3-what-can-clean-1": {
       "file": "assets/construction/derived/level3-what-can-clean-1.webp",
@@ -8467,7 +8687,8 @@
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
       "questionMarkInArt": true,
-      "source": "assets/construction/build-turn-3.png"
+      "source": "assets/construction/build-turn-3.png",
+      "revision": "scene-crop-3"
     },
     "level3-who-do-tell-1": {
       "file": "assets/construction/derived/level3-who-do-tell-1.webp",
@@ -8479,7 +8700,7 @@
     },
     "level3-who-do-like-2": {
       "file": "assets/construction/derived/level3-who-do-like-2.webp",
-      "alt": "だれがパズルが好きですか。 人物の顔に「？」があります。",
+      "alt": "パズルが好きなのはだれですか。 人物の顔に「？」があります。",
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
       "questionMarkInArt": true,
@@ -8487,7 +8708,7 @@
     },
     "level3-who-do-want-3": {
       "file": "assets/construction/derived/level3-who-do-want-3.webp",
-      "alt": "だれが新しいノートがほしいですか。 人物の顔に「？」があります。",
+      "alt": "新しいノートがほしいのはだれですか。 人物の顔に「？」があります。",
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
       "questionMarkInArt": true,
@@ -8495,11 +8716,12 @@
     },
     "level3-who-do-need-3": {
       "file": "assets/construction/derived/level3-who-do-need-3.webp",
-      "alt": "だれが水が必要ですか。 人物の顔に「？」があります。",
+      "alt": "汗をかいた子どもがコップを持ち、水差しのそばに座っています。頭の上部に「？」があります。",
       "clue": "",
-      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "review": "汗と口元、コップ、水差しが見えるよう人物マスクを上へ移した。",
       "questionMarkInArt": true,
-      "source": "assets/construction/build-need-3.png"
+      "source": "assets/construction/build-need-3.png",
+      "revision": "action-3"
     },
     "level3-who-did-swim-1-past": {
       "file": "assets/construction/derived/level3-who-did-swim-1-past.webp",
@@ -8531,7 +8753,8 @@
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
       "questionMarkInArt": true,
-      "source": "assets/construction/build-turn-2-past.png"
+      "source": "assets/construction/build-turn-2-past.png",
+      "revision": "scene-crop-3"
     },
     "level3-who-did-show-3-past": {
       "file": "assets/construction/derived/level3-who-did-show-3-past.webp",
@@ -8551,11 +8774,12 @@
     },
     "level3-who-did-call-1-past": {
       "file": "assets/construction/derived/level3-who-did-call-1-past.webp",
-      "alt": "だれが昨日おばあちゃんに電話しましたか。 人物の顔に「？」があります。",
+      "alt": "電話を耳に当てて口を開ける人がいます。顔の上部に「？」があり、そばにおばあちゃんの写真があります。",
       "clue": "",
-      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "review": "受話器、手、口元が見えるよう人物の印を顔の上部に絞った。",
       "questionMarkInArt": true,
-      "source": "assets/construction/build-call-1-past.png"
+      "source": "assets/construction/build-call-1-past.png",
+      "revision": "action-3"
     },
     "level3-who-did-help-1-past": {
       "file": "assets/construction/derived/level3-who-did-help-1-past.webp",
@@ -8619,12 +8843,12 @@
     },
     "level3-who-ing-answer-1-ongoing": {
       "file": "assets/construction/derived/level3-who-ing-answer-1-ongoing.webp",
-      "alt": "だれが今学校で先生の質問に答えていますか。 人物の顔に「？」があります。",
+      "alt": "先生の前で二人の子どもが手を挙げ、口を開けています。二人の顔の上部に「？」があります。",
       "clue": "",
-      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "review": "答える人の手、口元、先生の呼びかけが見えるよう人物マスクを縮めた。",
       "questionMarkInArt": true,
       "source": "assets/construction/build-answer-1-ongoing.png",
-      "revision": "centered-1"
+      "revision": "action-3"
     },
     "level3-who-ing-pull-2-ongoing": {
       "file": "assets/construction/derived/level3-who-ing-pull-2-ongoing.webp",
@@ -8646,21 +8870,25 @@
     },
     "level3-who-ing-bring-3-ongoing": {
       "file": "assets/construction/derived/level3-who-ing-bring-3-ongoing.webp",
-      "alt": "だれが今学校に青いボールを持ってきていますか。 人物の顔に「？」があります。",
+      "alt": "学校の前で青いボールを抱えた二人の子どもが歩いています。二人の顔の上部に「？」があります。",
       "clue": "",
-      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "review": "ボールを運ぶ両手や周囲の校舎が見えるよう、人物マスクを縮めた。",
       "questionMarkInArt": true,
       "source": "assets/construction/build-bring-3-ongoing.png",
-      "revision": "centered-1"
+      "revision": "action-3",
+      "detail": "ball-route",
+      "detailSide": "left"
     },
     "level3-who-ing-teach-1-ongoing": {
       "file": "assets/construction/derived/level3-who-ing-teach-1-ongoing.webp",
-      "alt": "だれが今家で彼に新しいゲームを教えていますか。 人物の顔に「？」があります。",
+      "alt": "一人がゲーム盤のマスを指し、向かいの子がその手を見ています。指している人の顔の上側に「？」があります。",
       "clue": "",
-      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "review": "指さす手と教わる子の視線や表情を残し、人物の印を小さくした。",
       "questionMarkInArt": true,
       "source": "assets/construction/build-teach-1-ongoing.png",
-      "revision": "centered-1"
+      "revision": "action-3",
+      "detail": "teach-game-hands",
+      "detailSide": "left"
     },
     "level3-who-ing-pay-1-ongoing": {
       "file": "assets/construction/derived/level3-who-ing-pay-1-ongoing.webp",
@@ -8673,19 +8901,21 @@
     },
     "level3-two-who-must-be-adjective-3": {
       "file": "assets/construction/derived/level3-two-who-must-be-adjective-3.webp",
-      "alt": "だれが図書館で静かにしていなければなりませんか。 人物の顔に「？」があります。",
+      "alt": "図書館で本を開く二人のうち一人が、口に指を当てています。二人の額に「？」があります。",
       "clue": "",
-      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "review": "静かにするしぐさと指先を見せ、人物の印を額に置いた。",
       "questionMarkInArt": true,
-      "source": "assets/construction/build-be-adjective-3.png"
+      "source": "assets/construction/build-be-adjective-3.png",
+      "revision": "action-3"
     },
     "level3-two-who-can-always-be-adjective-1": {
       "file": "assets/construction/derived/level3-two-who-can-always-be-adjective-1.webp",
-      "alt": "だれが家でいつもうれしい気持ちでいられますか。 人物の顔に「？」があります。",
+      "alt": "子どもがにっこり笑い、胸の前で手を合わせています。頭の上部に「？」があります。",
       "clue": "",
-      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "review": "目と口の表情、胸元の手が見える位置に人物の疑問符を移した。",
       "questionMarkInArt": true,
-      "source": "assets/construction/build-be-adjective-1.png"
+      "source": "assets/construction/build-be-adjective-1.png",
+      "revision": "action-3"
     },
     "level3-where-do-climb-1": {
       "file": "assets/construction/derived/level3-where-do-climb-1.webp",
@@ -8890,7 +9120,7 @@
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
       "questionMarkInArt": true,
       "source": "assets/construction/build-lift-1-ongoing.png",
-      "revision": "centered-1"
+      "revision": "scene-crop-3"
     },
     "level3-where-ing-carry-3-ongoing": {
       "file": "assets/construction/derived/level3-where-ing-carry-3-ongoing.webp",
@@ -8899,7 +9129,7 @@
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
       "questionMarkInArt": true,
       "source": "assets/construction/build-carry-3-ongoing.png",
-      "revision": "centered-1"
+      "revision": "scene-crop-3"
     },
     "level3-where-ing-give-2-ongoing": {
       "file": "assets/construction/derived/level3-where-ing-give-2-ongoing.webp",
@@ -9023,7 +9253,9 @@
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
       "questionMarkInArt": true,
-      "source": "assets/construction/build-close-1-past.png"
+      "source": "assets/construction/build-close-1-past.png",
+      "detail": "close-book",
+      "detailSide": "left"
     },
     "level3-when-did-get-1-past": {
       "file": "assets/construction/derived/level3-when-did-get-1-past.webp",
@@ -9039,7 +9271,9 @@
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
       "questionMarkInArt": true,
-      "source": "assets/construction/build-bring-3-past.png"
+      "source": "assets/construction/build-bring-3-past.png",
+      "detail": "bring-ball",
+      "detailSide": "left"
     },
     "level3-when-did-thank-1-past": {
       "file": "assets/construction/derived/level3-when-did-thank-1-past.webp",
@@ -9096,6 +9330,180 @@
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
       "questionMarkInArt": true,
       "source": "assets/construction/build-be-adjective-3.png"
+    }
+  },
+  "details": {
+    "taste": {
+      "file": "assets/construction/action-details/taste.webp",
+      "label": "口と手の動き",
+      "alt": "ひとさじ味を確かめ、鍋に調味料を足す。"
+    },
+    "taste-unknown": {
+      "file": "assets/construction/action-details/taste-unknown.webp",
+      "label": "口と手の動き",
+      "alt": "小さなスプーンで少し口にし、指で調味料をつまむ。"
+    },
+    "learn-song": {
+      "file": "assets/construction/action-details/learn-song.webp",
+      "label": "お手本を閉じたあと",
+      "alt": "楽譜を閉じて、覚えた旋律を思い出す。"
+    },
+    "recall": {
+      "file": "assets/construction/action-details/recall.webp",
+      "label": "お手本を閉じたあと",
+      "alt": "目を閉じて、習ったことを思い出すしぐさ。"
+    },
+    "learn-dance": {
+      "file": "assets/construction/action-details/learn-dance.webp",
+      "label": "お手本のあと",
+      "alt": "お手本のポーズを思い出して、自分でも同じ動きをする。"
+    },
+    "teach-song": {
+      "file": "assets/construction/action-details/teach-song.webp",
+      "label": "お手本の場面",
+      "alt": "教える人が楽譜を指し、相手がそれを見て聞く。"
+    },
+    "teach-game": {
+      "file": "assets/construction/action-details/teach-game.webp",
+      "label": "駒の動かし方",
+      "alt": "指で盤の道筋を示し、相手に駒の動かし方を説明する。"
+    },
+    "teach-game-hands": {
+      "file": "assets/construction/action-details/teach-game-hands.webp",
+      "label": "駒の動かし方",
+      "alt": "指と矢印で、駒をどこへ進めるか相手に示す。"
+    },
+    "rest-bench": {
+      "file": "assets/construction/action-details/rest-bench.webp",
+      "label": "ひと息つく場面",
+      "alt": "汗をかいた子どもが肩の力を抜いてベンチでひと息つく。"
+    },
+    "pay": {
+      "file": "assets/construction/action-details/pay.webp",
+      "label": "手もと",
+      "alt": "硬貨を相手の手のひらに渡す。"
+    },
+    "buy": {
+      "file": "assets/construction/action-details/buy.webp",
+      "label": "手もと",
+      "alt": "代金を出した客が、店員から商品入りの袋を受け取る。"
+    },
+    "try-puzzle": {
+      "file": "assets/construction/action-details/try-puzzle.webp",
+      "label": "手もと",
+      "alt": "ピースをつまみ、どこのくぼみに合うか試す。"
+    },
+    "start-game": {
+      "file": "assets/construction/action-details/start-game.webp",
+      "label": "最初の一手",
+      "alt": "駒をゲーム盤の最初のマスに置く。"
+    },
+    "start-homework": {
+      "file": "assets/construction/action-details/start-homework.webp",
+      "label": "最初のひと筆",
+      "alt": "白いノートを開き、一行目に鉛筆を下ろす。"
+    },
+    "start-puzzle": {
+      "file": "assets/construction/action-details/start-puzzle.webp",
+      "label": "最初のピース",
+      "alt": "空のパズル枠の隅に最初のピースを置く。"
+    },
+    "try-game": {
+      "file": "assets/construction/action-details/try-game.webp",
+      "label": "初めての場面",
+      "alt": "遊び方の紙を見ながら、差し出された駒に手を伸ばす。"
+    },
+    "try-sport": {
+      "file": "assets/construction/action-details/try-sport.webp",
+      "label": "初めての場面",
+      "alt": "コーチからボールを受け取り、初めてシュートを試そうとする。"
+    },
+    "rest-sofa": {
+      "file": "assets/construction/action-details/rest-sofa.webp",
+      "label": "ひと息つく場面",
+      "alt": "汗をかいた子どもがソファに体を預けて息をつく。"
+    },
+    "bring-book": {
+      "file": "assets/construction/action-details/bring-book.webp",
+      "label": "移動の道すじ",
+      "alt": "本を携えて家から学校に向かう足跡。"
+    },
+    "bring-ball": {
+      "file": "assets/construction/action-details/bring-ball.webp",
+      "label": "移動の道すじ",
+      "alt": "青いボールを携えて家から学校に向かう足跡。"
+    },
+    "learn-word": {
+      "file": "assets/construction/action-details/learn-word.webp",
+      "label": "カードをふせたあと",
+      "alt": "絵カードを裏返し、さっき見たことばを思い出す。"
+    },
+    "open-book": {
+      "file": "assets/construction/action-details/open-book.png",
+      "label": "表紙の動き",
+      "alt": "閉じた本から開いた本へ、矢印が向かう。"
+    },
+    "close-book": {
+      "file": "assets/construction/action-details/close-book.png",
+      "label": "表紙の動き",
+      "alt": "開いた本から閉じた本へ、矢印が向かう。"
+    },
+    "close-box": {
+      "file": "assets/construction/action-details/close-box.png",
+      "label": "ふたの動き",
+      "alt": "ふたの開いた箱からふたの閉じた箱へ、矢印が向かう。"
+    },
+    "wait-here": {
+      "file": "assets/construction/action-details/wait-here.png",
+      "label": "待ち合わせの目印",
+      "alt": "待っている人の足元に、現在地を示すピン。"
+    },
+    "first-step": {
+      "file": "assets/construction/action-details/first-step.png",
+      "label": "動きの目印",
+      "alt": "スタートの旗の所に、最初の足跡がつく。"
+    },
+    "spell-cat": {
+      "kind": "spell",
+      "label": "声に出す順番",
+      "text": "cat",
+      "alt": "一文字ずつ順に声に出している。c・a・t"
+    },
+    "spell-dog": {
+      "kind": "spell",
+      "label": "声に出す順番",
+      "text": "dog",
+      "alt": "一文字ずつ順に声に出している。d・o・g"
+    },
+    "spell-bird": {
+      "kind": "spell",
+      "label": "声に出す順番",
+      "text": "bird",
+      "alt": "一文字ずつ順に声に出している。b・i・r・d"
+    },
+    "name": {
+      "kind": "name",
+      "label": "名札の記入欄",
+      "text": "Ken",
+      "alt": "名札に名前を書き込んでいる。"
+    },
+    "word": {
+      "kind": "word",
+      "label": "絵カードの記入欄",
+      "text": "apple",
+      "alt": "リンゴの絵に対応する英語のことばを書き込んでいる。"
+    },
+    "term": {
+      "kind": "term",
+      "label": "学校のカレンダー",
+      "text": "4月\n始業式",
+      "alt": "学校のカレンダーには4月の始業式。"
+    },
+    "ball-route": {
+      "kind": "route",
+      "label": "ボールを持って",
+      "text": "🏠 → 🏫",
+      "alt": "青いボールを家から学校まで持ってくる道のり。"
     }
   }
 }

@@ -1,5 +1,6 @@
 // Compose separate practice images from the approved Level 1 art and portraits.
 // Run after the app build. Pass --ongoing to recompose the current-progressive scenes.
+// Pass example IDs to recompose only those scenes, even if already registered.
 const fs = require('node:fs');
 const path = require('node:path');
 const { spawn } = require('node:child_process');
@@ -20,10 +21,23 @@ const ongoingPanels = {
   'level3-38': ['assets/construction/level3-38.png', [595, 36, 710, 647]],
   'level3-what-ing-clean-1-ongoing': ['assets/construction/derived/level3-what-ing-clean-1-ongoing.webp', [239, 24, 378, 378]],
 };
+// The approved What illustrations already mark the unknown object without hiding the action.
+const readingPanel = ['assets/construction/level3-what-do-read-3-open-book.webp', [661, 38, 641, 642]];
+const reviewedPanels = {
+  'level3-what-ing-read-3-ongoing': readingPanel,
+  'level3-what-can-read-3': readingPanel,
+  'level3-what-did-count-3-past': ['assets/construction/level3-what-do-count-3-counting.webp', [661, 38, 641, 642]],
+};
+const doorExample = 'level3-32';
+const doorArtwork = 'assets/construction/level3-32-door-knob.png';
 const ongoingOnly = process.argv.includes('--ongoing');
-const pending = curriculum.examples.filter(q => ongoingOnly
-  ? ongoingPanels[q.id] || byId.get(q.derivedFrom)?.meaning === 'ongoing'
-  : q.derivedFrom && !manifest[q.id]);
+const selectedIds = new Set(process.argv.slice(2).filter(arg => arg !== '--ongoing'));
+const pending = curriculum.examples.filter(q => {
+  if (selectedIds.size) return selectedIds.has(q.id) && (q.derivedFrom || ongoingPanels[q.id] || q.id === doorExample);
+  return ongoingOnly
+    ? ongoingPanels[q.id] || byId.get(q.derivedFrom)?.meaning === 'ongoing'
+    : q.derivedFrom && !manifest[q.id];
+});
 
 async function drawArtwork({ q, base, sourceBase, file, layout, panelCrop }, portraits) {
   const W = 860, H = 644, paper = '#fcf9f2', inset = '#fff3df', ink = '#a83c2b';
@@ -163,6 +177,25 @@ async function drawArtwork({ q, base, sourceBase, file, layout, panelCrop }, por
     return scene;
   }
 
+  if (q.id === 'level3-32') {
+    const source = await asset(file);
+    canvas.width = source.naturalWidth;
+    canvas.height = source.naturalHeight;
+    ctx.drawImage(source, 0, 0);
+    // Follow the latch edge from the jamb toward the open position.
+    ctx.beginPath();
+    ctx.moveTo(950, 421);
+    ctx.quadraticCurveTo(1016, 451, 1107, 411);
+    ctx.lineCap = 'round';
+    for (const [width, color] of [[16, '#fff8e8'], [9, '#35677a']]) {
+      ctx.lineWidth = width;
+      ctx.strokeStyle = color;
+      ctx.stroke();
+    }
+    poly([[1125, 402], [1105, 432], [1091, 402]], '#35677a', '#fff8e8', 3);
+    return { url: canvas.toDataURL('image/webp', .93), image: { questionMarkInArt: true } };
+  }
+
   const token = q.question?.token;
   const time = q.blocks.find(([role]) => role === '時')?.[1];
   const modal = q.blocks.find(([role]) => role === '助動詞')?.[1].toLowerCase();
@@ -264,6 +297,14 @@ async function drawArtwork({ q, base, sourceBase, file, layout, panelCrop }, por
       }
     }
     if (token === 'when' || time === 'on Sundays') framedCalendar(x + 299, y + 19, token === 'when');
+    if (q.id === 'level3-what-do-check-1') {
+      const left = ax + artWidth * .79, top = ay + artHeight * .08;
+      rounded(left, top, 61, 64, 6, '#fff9e9', '#9b7654');
+      for (const dy of [17, 42]) {
+        line([[left + 8, top + dy], [left + 14, top + dy + 5], [left + 23, top + dy - 6]], '#34745b', 4);
+        line([[left + 31, top + dy], [left + 51, top + dy]], '#96785f', 3);
+      }
+    }
   }
   const cueX = mode === 'experience' ? 591 : past ? 503 : ongoing ? x + size + 39 : 316;
   if (negated) barred(cueX, 238);
@@ -278,6 +319,8 @@ async function drawArtwork({ q, base, sourceBase, file, layout, panelCrop }, por
 }
 
 async function main() {
+  const uncomposable = [...selectedIds].filter(id => !pending.some(q => q.id === id));
+  if (uncomposable.length) throw Error('Cannot compose artwork for: ' + uncomposable.join(', '));
   if (!pending.length) { console.log('No unregistered derived scenes.'); return; }
   const referenceScenes = new Map();
   for (const q of curriculum.examples.filter(q => q.derivedFrom && layouts[q.question?.token])) {
@@ -291,9 +334,14 @@ async function main() {
       return { q, base: { meaning: 'ongoing' }, file, panelCrop };
     }
     const base = byId.get(q.derivedFrom);
+    if (q.id === doorExample) return { q, file: doorArtwork };
+    if (reviewedPanels[q.id]) {
+      const [file, panelCrop] = reviewedPanels[q.id];
+      return { q, base, file, panelCrop };
+    }
     const token = q.question?.token;
     const key = base.contrastFamily.replace(/^build-/, '');
-    const layout = layouts[token]?.[key];
+    const layout = layouts[token]?.[q.id] ?? layouts[token]?.[key];
     if (['who', 'what', 'where'].includes(token) && !layout) throw Error('Missing visual focus for ' + q.id);
     // Every tense of a masked scene refers to the same image the coordinates were drawn against.
     const sourceBase = referenceScenes.get(token + ':' + base.contrastFamily) ?? base;

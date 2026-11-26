@@ -7570,8 +7570,8 @@
       "sourceCrop": [
         9,
         9,
-        409,
-        409
+        413,
+        380
       ],
       "layout": "routine",
       "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Small outside present-day speaker/listener on LEFT; one large balloon on RIGHT illustrates the action concept or state. Tail points to the outside speaker. Use ONE event scene, no repeated mini-panels, no timeline. No calendar. Exact frequency/day will be supplied outside the picture. EXACTLY TWO outside figures: short-brown-haired blue-hoodie BOY speaking and the main GIRL listening, direct eye contact. Tail points to BOY MOUTH, never girl. INSIDE: ONLY ONE actor, the SAME listener GIRL, not the speaker. No companions inside. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"You turn the handle at home every day.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"あなたは毎日家でハンドルを回します。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"You\", \"predicate\": \"turn\", \"place\": \"at home\", \"time\": \"every day\", \"P1\": \"the handle\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage.",
@@ -7585,8 +7585,8 @@
       "sourceCrop": [
         9,
         9,
-        409,
-        409
+        413,
+        380
       ],
       "layout": "ongoing",
       "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Current action inside the balloon; place the outside speaker directly under its horizontal center, head and eyes lifted slightly UP toward the event. Triangle tail points down to this speaker. Immediately outside the LEFT edge place exactly four equally tall, equally dark vertical narrow bars. No timeline or arrows. EXACTLY TWO outside figures: short-brown-haired blue-hoodie BOY speaking and the main GIRL listening, direct eye contact. Tail points to BOY MOUTH, never girl. INSIDE: ONLY ONE actor, the SAME listener GIRL, not the speaker. No companions inside. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"You are turning the handle at home now.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"あなたは今家でハンドルを回しています。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"You\", \"predicate\": \"are turning\", \"place\": \"at home\", \"time\": \"now\", \"P1\": \"the handle\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage.",
@@ -7600,8 +7600,8 @@
       "sourceCrop": [
         9,
         9,
-        409,
-        409
+        413,
+        380
       ],
       "layout": "past",
       "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Place the NOW narrator(s) at the RIGHT, with body facing right and head looking back LEFT. Large balloon on LEFT contains the past event. No bars or timeline. EXACTLY TWO outside figures: short-brown-haired blue-hoodie BOY speaking and the main GIRL listening, direct eye contact. Tail points to BOY MOUTH, never girl. INSIDE: ONLY ONE actor, the SAME listener GIRL, not the speaker. No companions inside. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"You turned the handle at home yesterday.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"あなたは昨日家でハンドルを回しました。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"You\", \"predicate\": \"turned\", \"place\": \"at home\", \"time\": \"yesterday\", \"P1\": \"the handle\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage.",
@@ -7613,10 +7613,10 @@
       "sceneAtlas": "turn-lift-carry",
       "cell": 2,
       "sourceCrop": [
-        427,
+        422,
         9,
-        827,
-        409
+        833,
+        380
       ],
       "layout": "routine",
       "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Small outside present-day speaker/listener on LEFT; one large balloon on RIGHT illustrates the action concept or state. Tail points to the outside speaker. Use ONE event scene, no repeated mini-panels, no timeline. No calendar. Exact frequency/day will be supplied outside the picture. Outside speaker is the main girl addressing a dark-ponytail lavender-shirt girl. They look/gesture towards a distinct THIRD-PARTY short-brown-haired blue-hoodie BOY, the ONLY actor inside the scene. He is neither the speaker nor the listener. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"He turns the doorknob at home every day.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"彼は毎日家でドアのつまみを回します。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"He\", \"predicate\": \"turns\", \"place\": \"at home\", \"time\": \"every day\", \"P1\": \"the doorknob\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage.",
@@ -7628,10 +7628,10 @@
       "sceneAtlas": "turn-lift-carry",
       "cell": 2,
       "sourceCrop": [
-        427,
+        422,
         9,
-        827,
-        409
+        833,
+        380
       ],
       "layout": "ongoing",
       "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Current action inside the balloon; place the outside speaker directly under its horizontal center, head and eyes lifted slightly UP toward the event. Triangle tail points down to this speaker. Immediately outside the LEFT edge place exactly four equally tall, equally dark vertical narrow bars. No timeline or arrows. Outside speaker is the main girl addressing a dark-ponytail lavender-shirt girl. They look/gesture towards a distinct THIRD-PARTY short-brown-haired blue-hoodie BOY, the ONLY actor inside the scene. He is neither the speaker nor the listener. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"He is turning the doorknob at home now.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"彼は今家でドアのつまみを回しています。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"He\", \"predicate\": \"is turning\", \"place\": \"at home\", \"time\": \"now\", \"P1\": \"the doorknob\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage.",
@@ -7643,10 +7643,10 @@
       "sceneAtlas": "turn-lift-carry",
       "cell": 2,
       "sourceCrop": [
-        427,
+        422,
         9,
-        827,
-        409
+        833,
+        380
       ],
       "layout": "past",
       "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Place the NOW narrator(s) at the RIGHT, with body facing right and head looking back LEFT. Large balloon on LEFT contains the past event. No bars or timeline. Outside speaker is the main girl addressing a dark-ponytail lavender-shirt girl. They look/gesture towards a distinct THIRD-PARTY short-brown-haired blue-hoodie BOY, the ONLY actor inside the scene. He is neither the speaker nor the listener. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"He turned the doorknob at home yesterday.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"彼は昨日家でドアのつまみを回しました。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"He\", \"predicate\": \"turned\", \"place\": \"at home\", \"time\": \"yesterday\", \"P1\": \"the doorknob\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage.",
@@ -7658,10 +7658,10 @@
       "sceneAtlas": "turn-lift-carry",
       "cell": 3,
       "sourceCrop": [
-        845,
+        842,
         9,
         1245,
-        409
+        380
       ],
       "layout": "routine",
       "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Small outside present-day speaker/listener on LEFT; one large balloon on RIGHT illustrates the action concept or state. Tail points to the outside speaker. Use ONE event scene, no repeated mini-panels, no timeline. No calendar. Exact frequency/day will be supplied outside the picture. Outside speaker is the main girl addressing the blue-hoodie boy. They look/gesture towards a THIRD-PARTY lavender-shirt girl inside the scene. She is neither the speaker nor the listener. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"She turns a toy wheel at home every day.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"彼女は毎日家でおもちゃの車輪を回します。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"She\", \"predicate\": \"turns\", \"place\": \"at home\", \"time\": \"every day\", \"P1\": \"a toy wheel\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage.",
@@ -7673,10 +7673,10 @@
       "sceneAtlas": "turn-lift-carry",
       "cell": 3,
       "sourceCrop": [
-        845,
+        842,
         9,
         1245,
-        409
+        380
       ],
       "layout": "ongoing",
       "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Current action inside the balloon; place the outside speaker directly under its horizontal center, head and eyes lifted slightly UP toward the event. Triangle tail points down to this speaker. Immediately outside the LEFT edge place exactly four equally tall, equally dark vertical narrow bars. No timeline or arrows. Outside speaker is the main girl addressing the blue-hoodie boy. They look/gesture towards a THIRD-PARTY lavender-shirt girl inside the scene. She is neither the speaker nor the listener. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"She is turning a toy wheel at home now.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"彼女は今家でおもちゃの車輪を回しています。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"She\", \"predicate\": \"is turning\", \"place\": \"at home\", \"time\": \"now\", \"P1\": \"a toy wheel\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage.",
@@ -7688,10 +7688,10 @@
       "sceneAtlas": "turn-lift-carry",
       "cell": 3,
       "sourceCrop": [
-        845,
+        842,
         9,
         1245,
-        409
+        380
       ],
       "layout": "past",
       "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Place the NOW narrator(s) at the RIGHT, with body facing right and head looking back LEFT. Large balloon on LEFT contains the past event. No bars or timeline. Outside speaker is the main girl addressing the blue-hoodie boy. They look/gesture towards a THIRD-PARTY lavender-shirt girl inside the scene. She is neither the speaker nor the listener. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"She turned a toy wheel at home yesterday.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"彼女は昨日家でおもちゃの車輪を回しました。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"She\", \"predicate\": \"turned\", \"place\": \"at home\", \"time\": \"yesterday\", \"P1\": \"a toy wheel\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage.",
@@ -7704,9 +7704,9 @@
       "cell": 4,
       "sourceCrop": [
         9,
-        427,
-        409,
-        827
+        389,
+        413,
+        783
       ],
       "layout": "routine",
       "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Small outside present-day speaker/listener on LEFT; one large balloon on RIGHT illustrates the action concept or state. Tail points to the outside speaker. Use ONE event scene, no repeated mini-panels, no timeline. No calendar. Exact frequency/day will be supplied outside the picture. The subject is a small friendly green toy robot, clearly non-human. Outside main girl talks to the blue-hoodie boy and points to the robot scene. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"It lifts a small box at home every day.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"それは毎日家で小さな箱を持ち上げます。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"It\", \"predicate\": \"lifts\", \"place\": \"at home\", \"time\": \"every day\", \"P1\": \"a small box\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage.",
@@ -7719,9 +7719,9 @@
       "cell": 4,
       "sourceCrop": [
         9,
-        427,
-        409,
-        827
+        389,
+        413,
+        783
       ],
       "layout": "ongoing",
       "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Current action inside the balloon; place the outside speaker directly under its horizontal center, head and eyes lifted slightly UP toward the event. Triangle tail points down to this speaker. Immediately outside the LEFT edge place exactly four equally tall, equally dark vertical narrow bars. No timeline or arrows. The subject is a small friendly green toy robot, clearly non-human. Outside main girl talks to the blue-hoodie boy and points to the robot scene. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"It is lifting a small box at home now.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"それは今家で小さな箱を持ち上げています。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"It\", \"predicate\": \"is lifting\", \"place\": \"at home\", \"time\": \"now\", \"P1\": \"a small box\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage.",
@@ -7734,9 +7734,9 @@
       "cell": 4,
       "sourceCrop": [
         9,
-        427,
-        409,
-        827
+        389,
+        413,
+        783
       ],
       "layout": "past",
       "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Place the NOW narrator(s) at the RIGHT, with body facing right and head looking back LEFT. Large balloon on LEFT contains the past event. No bars or timeline. The subject is a small friendly green toy robot, clearly non-human. Outside main girl talks to the blue-hoodie boy and points to the robot scene. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"It lifted a small box at home yesterday.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"それは昨日家で小さな箱を持ち上げました。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"It\", \"predicate\": \"lifted\", \"place\": \"at home\", \"time\": \"yesterday\", \"P1\": \"a small box\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage.",
@@ -7748,10 +7748,10 @@
       "sceneAtlas": "turn-lift-carry",
       "cell": 5,
       "sourceCrop": [
-        427,
-        427,
-        827,
-        827
+        422,
+        389,
+        833,
+        783
       ],
       "layout": "routine",
       "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Small outside present-day speaker/listener on LEFT; one large balloon on RIGHT illustrates the action concept or state. Tail points to the outside speaker. Use ONE event scene, no repeated mini-panels, no timeline. No calendar. Exact frequency/day will be supplied outside the picture. Outside speaker is the main girl. The event group INSIDE includes the SAME main girl and the lavender-shirt girl. Include both as actors, so the speaker is part of the group. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"We lift a bag at home every day.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"私たちは毎日家でかばんを持ち上げます。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"We\", \"predicate\": \"lift\", \"place\": \"at home\", \"time\": \"every day\", \"P1\": \"a bag\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage.",
@@ -7763,10 +7763,10 @@
       "sceneAtlas": "turn-lift-carry",
       "cell": 5,
       "sourceCrop": [
-        427,
-        427,
-        827,
-        827
+        422,
+        389,
+        833,
+        783
       ],
       "layout": "ongoing",
       "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Current action inside the balloon; place the outside speaker directly under its horizontal center, head and eyes lifted slightly UP toward the event. Triangle tail points down to this speaker. Immediately outside the LEFT edge place exactly four equally tall, equally dark vertical narrow bars. No timeline or arrows. Outside speaker is the main girl. The event group INSIDE includes the SAME main girl and the lavender-shirt girl. Include both as actors, so the speaker is part of the group. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"We are lifting a bag at home now.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"私たちは今家でかばんを持ち上げています。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"We\", \"predicate\": \"are lifting\", \"place\": \"at home\", \"time\": \"now\", \"P1\": \"a bag\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage.",
@@ -7778,10 +7778,10 @@
       "sceneAtlas": "turn-lift-carry",
       "cell": 5,
       "sourceCrop": [
-        427,
-        427,
-        827,
-        827
+        422,
+        389,
+        833,
+        783
       ],
       "layout": "past",
       "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Place the NOW narrator(s) at the RIGHT, with body facing right and head looking back LEFT. Large balloon on LEFT contains the past event. No bars or timeline. Outside speaker is the main girl. The event group INSIDE includes the SAME main girl and the lavender-shirt girl. Include both as actors, so the speaker is part of the group. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"We lifted a bag at home yesterday.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"私たちは昨日家でかばんを持ち上げました。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"We\", \"predicate\": \"lifted\", \"place\": \"at home\", \"time\": \"yesterday\", \"P1\": \"a bag\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage.",
@@ -7793,10 +7793,10 @@
       "sceneAtlas": "turn-lift-carry",
       "cell": 6,
       "sourceCrop": [
-        845,
-        427,
+        842,
+        389,
         1245,
-        827
+        783
       ],
       "layout": "routine",
       "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Small outside present-day speaker/listener on LEFT; one large balloon on RIGHT illustrates the action concept or state. Tail points to the outside speaker. Use ONE event scene, no repeated mini-panels, no timeline. No calendar. Exact frequency/day will be supplied outside the picture. Outside main girl and blue-hoodie boy talk about the event group. INSIDE actors are a lavender-shirt girl and a green-shirt boy. Neither outside speaker nor listener is in that third-party group. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"They lift the lid at home every day.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"彼らは毎日家でふたを持ち上げます。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"They\", \"predicate\": \"lift\", \"place\": \"at home\", \"time\": \"every day\", \"P1\": \"the lid\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage.",
@@ -7808,10 +7808,10 @@
       "sceneAtlas": "turn-lift-carry",
       "cell": 6,
       "sourceCrop": [
-        845,
-        427,
+        842,
+        389,
         1245,
-        827
+        783
       ],
       "layout": "ongoing",
       "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Current action inside the balloon; place the outside speaker directly under its horizontal center, head and eyes lifted slightly UP toward the event. Triangle tail points down to this speaker. Immediately outside the LEFT edge place exactly four equally tall, equally dark vertical narrow bars. No timeline or arrows. Outside main girl and blue-hoodie boy talk about the event group. INSIDE actors are a lavender-shirt girl and a green-shirt boy. Neither outside speaker nor listener is in that third-party group. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"They are lifting the lid at home now.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"彼らは今家でふたを持ち上げています。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"They\", \"predicate\": \"are lifting\", \"place\": \"at home\", \"time\": \"now\", \"P1\": \"the lid\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage.",
@@ -7823,10 +7823,10 @@
       "sceneAtlas": "turn-lift-carry",
       "cell": 6,
       "sourceCrop": [
-        845,
-        427,
+        842,
+        389,
         1245,
-        827
+        783
       ],
       "layout": "past",
       "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Place the NOW narrator(s) at the RIGHT, with body facing right and head looking back LEFT. Large balloon on LEFT contains the past event. No bars or timeline. Outside main girl and blue-hoodie boy talk about the event group. INSIDE actors are a lavender-shirt girl and a green-shirt boy. Neither outside speaker nor listener is in that third-party group. Event details: {\"intended_sentence_DO_NOT_WRITE\": \"They lifted the lid at home yesterday.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"彼らは昨日家でふたを持ち上げました。\", \"semantic_parts_DO_NOT_WRITE\": {\"S\": \"They\", \"predicate\": \"lifted\", \"place\": \"at home\", \"time\": \"yesterday\", \"P1\": \"the lid\"}} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage.",
@@ -7839,8 +7839,8 @@
       "cell": 7,
       "sourceCrop": [
         9,
-        845,
-        409,
+        793,
+        413,
         1245
       ],
       "layout": "routine",
@@ -7854,8 +7854,8 @@
       "cell": 7,
       "sourceCrop": [
         9,
-        845,
-        409,
+        793,
+        413,
         1245
       ],
       "layout": "ongoing",
@@ -7869,8 +7869,8 @@
       "cell": 7,
       "sourceCrop": [
         9,
-        845,
-        409,
+        793,
+        413,
         1245
       ],
       "layout": "past",
@@ -7883,9 +7883,9 @@
       "sceneAtlas": "turn-lift-carry",
       "cell": 8,
       "sourceCrop": [
-        427,
-        845,
-        827,
+        422,
+        793,
+        833,
         1245
       ],
       "layout": "routine",
@@ -7898,9 +7898,9 @@
       "sceneAtlas": "turn-lift-carry",
       "cell": 8,
       "sourceCrop": [
-        427,
-        845,
-        827,
+        422,
+        793,
+        833,
         1245
       ],
       "layout": "ongoing",
@@ -7913,9 +7913,9 @@
       "sceneAtlas": "turn-lift-carry",
       "cell": 8,
       "sourceCrop": [
-        427,
-        845,
-        827,
+        422,
+        793,
+        833,
         1245
       ],
       "layout": "past",
@@ -7928,8 +7928,8 @@
       "sceneAtlas": "turn-lift-carry",
       "cell": 9,
       "sourceCrop": [
-        845,
-        845,
+        842,
+        793,
         1245,
         1245
       ],
@@ -7943,8 +7943,8 @@
       "sceneAtlas": "turn-lift-carry",
       "cell": 9,
       "sourceCrop": [
-        845,
-        845,
+        842,
+        793,
         1245,
         1245
       ],
@@ -7958,8 +7958,8 @@
       "sceneAtlas": "turn-lift-carry",
       "cell": 9,
       "sourceCrop": [
-        845,
-        845,
+        842,
+        793,
         1245,
         1245
       ],
@@ -13335,7 +13335,8 @@
       ],
       "layout": "state",
       "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Small outside present-day speaker/listener on LEFT; one large balloon on RIGHT illustrates the action concept or state. Tail points to the outside speaker. Use ONE event scene, no repeated mini-panels, no timeline. No calendar. Exact frequency/day will be supplied outside the picture. Illustrate the communicative situation; do not turn the English sentence or grammar into visual text. Use the exact subject and participants in the brief.  Event details: {\"intended_sentence_DO_NOT_WRITE\": \"I often read an animal book at home after school.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"私は放課後、家でよく動物の本を読みます。\", \"focus_DO_NOT_WRITE\": \"often：よくする\"} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage.",
-      "generationMethod": "Generated event art using sceneAtlas prompt and composed rectangular balloon with narrator poses."
+      "generationMethod": "Generated event art using sceneAtlas prompt and composed rectangular balloon with narrator poses.",
+      "visualCue": "学習画面で8マス中5マスにチェックを表示。"
     },
     {
       "exampleId": "level2-08",
@@ -13350,7 +13351,8 @@
       ],
       "layout": "state",
       "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Small outside present-day speaker/listener on LEFT; one large balloon on RIGHT illustrates the action concept or state. Tail points to the outside speaker. Use ONE event scene, no repeated mini-panels, no timeline. No calendar. Exact frequency/day will be supplied outside the picture. Illustrate the communicative situation; do not turn the English sentence or grammar into visual text. Use the exact subject and participants in the brief.  Event details: {\"intended_sentence_DO_NOT_WRITE\": \"My sister always checks her bag in the morning.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"姉は朝、いつも自分のかばんを確かめます。\", \"focus_DO_NOT_WRITE\": \"always：いつもする\"} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage.",
-      "generationMethod": "Generated event art using sceneAtlas prompt and composed rectangular balloon with narrator poses."
+      "generationMethod": "Generated event art using sceneAtlas prompt and composed rectangular balloon with narrator poses.",
+      "visualCue": "学習画面で8マス中8マスにチェックを表示。"
     },
     {
       "exampleId": "level2-10",
@@ -14115,7 +14117,8 @@
       ],
       "layout": "state",
       "prompt": "Use case: illustration-story. Single landscape 3:2 wordless educational illustration for a Japanese 10-year-old. Polished warm children's book watercolor/gouache, soft dark outlines, cream background, large readable figures, cohesive dense composition. Absolutely no text, letters, numerals, signage, logos or watermarks, even on books/buildings. Main speaker character: chestnut bob-haired girl, yellow star hairclip, coral cardigan, cream shirt, teal skirt. Use supporting characters ONLY when explicitly required by the viewpoint below. Never add companions to a solo actor. Use a rectangular speech balloon with four sharp 90-degree corners and a triangular tail to the speaker. Never round the balloon corners. Border and fill colors may vary. Keep identities/outfits consistent across the scene and temporal variants. Small outside present-day speaker/listener on LEFT; one large balloon on RIGHT illustrates the action concept or state. Tail points to the outside speaker. Use ONE event scene, no repeated mini-panels, no timeline. No calendar. Exact frequency/day will be supplied outside the picture. Illustrate the communicative situation; do not turn the English sentence or grammar into visual text. Use the exact subject and participants in the brief.  Event details: {\"intended_sentence_DO_NOT_WRITE\": \"We sometimes give our sister a flower at home.\", \"Japanese_scene_brief_DO_NOT_WRITE\": \"私たちは家で、ときどき妹に花をあげます。\", \"focus_DO_NOT_WRITE\": \"sometimes＋P1・P2：ときどきする\"} Show exact action/state, destination, objects, recipient and ownership. No unrelated extra actions or objects. Do not reverse giver/recipient. Use plausible hands, feet and object contact. For going/coming, show approach to the destination, not walking away. For states like like/want/need, convey feeling/desire without replacing with an ongoing action. For negative/modal sentences convey the intended situation without text; UI supplies disambiguating hints. Fill frame with clear characters and scene; no tiny figures, large empty margins, or decorative collage.",
-      "generationMethod": "Generated event art using sceneAtlas prompt and composed rectangular balloon with narrator poses."
+      "generationMethod": "Generated event art using sceneAtlas prompt and composed rectangular balloon with narrator poses.",
+      "visualCue": "学習画面で8マス中3マスにチェックを表示。"
     },
     {
       "exampleId": "level2-01",
@@ -16080,11 +16083,25 @@
       "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
     },
     {
+      "exampleId": "level3-what-do-read-3",
+      "file": "assets/construction/level3-what-do-read-3-open-book.webp",
+      "reference": "assets/construction/build-read-3.png",
+      "generationMethod": "Built-in image editing with the original and the previous masked illustration as references.",
+      "prompt": "Keep the original watercolor composition and dialogue. Erase the pictures and text from the open book, preserving both hands, curved facing pages, spine and page edges. Show the girl looking down at the pages. Place one navy question mark on the blank pages, with no overlay or rectangle. The app supplies the every-day calendar."
+    },
+    {
       "exampleId": "level3-what-do-count-3",
       "file": "assets/construction/derived/level3-what-do-count-3.webp",
       "reference": "assets/construction/build-count-3.png",
       "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
       "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-what-do-count-3",
+      "file": "assets/construction/level3-what-do-count-3-counting.webp",
+      "reference": "assets/construction/build-count-3.png",
+      "generationMethod": "Built-in image editing with the original and the previous masked illustration as references.",
+      "prompt": "Keep the school scene and the original watercolor speech balloon. Show three unidentified silhouettes with 1, 2, and 3 below them. The girl points at the third one and the boy holds up three fingers. Put one question mark on the middle silhouette so the items remain unknown. Keep all hands visible. The app supplies the every-day calendar."
     },
     {
       "exampleId": "level3-what-do-study-3",
@@ -16095,24 +16112,24 @@
     },
     {
       "exampleId": "level3-what-do-sing-3",
-      "file": "assets/construction/derived/level3-what-do-sing-3.webp",
+      "file": "assets/construction/level3-what-do-sing-3-songbook.webp",
       "reference": "assets/construction/build-sing-3.png",
-      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
-      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+      "generationMethod": "Composition from the reviewed Level 1 scene using scripts/compose_advanced_art.cjs.",
+      "prompt": "Keep the original scene and leave the children's faces, musical notes, hands, and the outline of the open songbook visible. Put a single question mark on a small mask at the center of the book. Do not cover the notes."
     },
     {
       "exampleId": "level3-what-do-make-2",
       "file": "assets/construction/derived/level3-what-do-make-2.webp",
       "reference": "assets/construction/build-make-2.png",
       "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
-      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+      "prompt": "仕上げている手と材料を見せ、できあがるものの一部だけを隠した。"
     },
     {
       "exampleId": "level3-what-do-build-3",
-      "file": "assets/construction/derived/level3-what-do-build-3.webp",
+      "file": "assets/construction/level3-what-do-build-3-stacking-blocks.webp",
       "reference": "assets/construction/build-build-3.png",
-      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
-      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+      "generationMethod": "Composition from the reviewed Level 1 scene using scripts/compose_advanced_art.cjs.",
+      "prompt": "Make the act of building visible by preserving the hand placing the top block and the hand supporting the lower blocks. Keep the upper and lower blocks visible; mask only the middle of the stack with one question mark."
     },
     {
       "exampleId": "level3-what-do-wear-3",
@@ -16126,21 +16143,21 @@
       "file": "assets/construction/derived/level3-what-do-check-1.webp",
       "reference": "assets/construction/build-check-1.png",
       "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
-      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+      "prompt": "かばんの開口部とロボットの手元を見せ、チェックリストを加えた。"
     },
     {
       "exampleId": "level3-what-did-start-2-past",
       "file": "assets/construction/derived/level3-what-did-start-2-past.webp",
       "reference": "assets/construction/build-start-2-past.png",
       "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
-      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+      "prompt": "新しいページと鉛筆の先が見えるよう小さな対象マスクを置いた。"
     },
     {
       "exampleId": "level3-what-did-cut-2-past",
       "file": "assets/construction/derived/level3-what-did-cut-2-past.webp",
       "reference": "assets/construction/build-cut-2-past.png",
       "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
-      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+      "prompt": "はさみと両手、切る接点が見えるよう材料の一部を隠した。"
     },
     {
       "exampleId": "level3-what-did-mix-1-past",
@@ -16159,9 +16176,9 @@
     {
       "exampleId": "level3-what-did-count-3-past",
       "file": "assets/construction/derived/level3-what-did-count-3-past.webp",
-      "reference": "assets/construction/build-count-3.png",
+      "reference": "assets/construction/level3-what-do-count-3-counting.webp",
       "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
-      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+      "prompt": "数える指、並んだ物、番号を過去の場面の枠に配置した。"
     },
     {
       "exampleId": "level3-what-did-sing-1-past",
@@ -16189,7 +16206,7 @@
       "file": "assets/construction/derived/level3-what-did-use-3-past.webp",
       "reference": "assets/construction/build-use-3-past.png",
       "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
-      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+      "prompt": "指と器、道具の先を残して何を使うかを問う印を持ち手の近くに配置した。"
     },
     {
       "exampleId": "level3-what-did-wear-3-past",
@@ -16210,7 +16227,7 @@
       "file": "assets/construction/derived/level3-what-ing-taste-1-ongoing.webp",
       "reference": "assets/construction/build-taste-1-ongoing.png",
       "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
-      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+      "prompt": "スプーンの先と口元を残し、対象を器の中央で示した。"
     },
     {
       "exampleId": "level3-what-ing-mix-1-ongoing",
@@ -16229,9 +16246,9 @@
     {
       "exampleId": "level3-what-ing-read-3-ongoing",
       "file": "assets/construction/derived/level3-what-ing-read-3-ongoing.webp",
-      "reference": "assets/construction/build-read-3.png",
+      "reference": "assets/construction/level3-what-do-read-3-open-book.webp",
       "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
-      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+      "prompt": "承認済みの見開き・両手の場面を、この問題の時制・助動詞の枠へ配置した。"
     },
     {
       "exampleId": "level3-what-ing-write-1-ongoing",
@@ -16245,7 +16262,7 @@
       "file": "assets/construction/derived/level3-what-ing-learn-1-ongoing.webp",
       "reference": "assets/construction/build-learn-1-ongoing.png",
       "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
-      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+      "prompt": "先生の指と譜面を残して、歌の内容に小さな疑問符を置いた。"
     },
     {
       "exampleId": "level3-what-ing-watch-1-ongoing",
@@ -16259,7 +16276,7 @@
       "file": "assets/construction/derived/level3-what-ing-make-2-ongoing.webp",
       "reference": "assets/construction/build-make-2.png",
       "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
-      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+      "prompt": "仕上げている手と材料を見せ、できあがるものの一部だけを隠した。"
     },
     {
       "exampleId": "level3-what-ing-clean-1-ongoing",
@@ -16278,16 +16295,16 @@
     {
       "exampleId": "level3-what-can-read-3",
       "file": "assets/construction/derived/level3-what-can-read-3.webp",
-      "reference": "assets/construction/build-read-3.png",
+      "reference": "assets/construction/level3-what-do-read-3-open-book.webp",
       "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
-      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+      "prompt": "承認済みの見開き・両手の場面を、この問題の時制・助動詞の枠へ配置した。"
     },
     {
       "exampleId": "level3-what-can-study-2",
       "file": "assets/construction/derived/level3-what-can-study-2.webp",
       "reference": "assets/construction/build-study-2.png",
       "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
-      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+      "prompt": "勉強の手掛かりになる手・教具を残し、学習内容に疑問符を置いた。"
     },
     {
       "exampleId": "level3-what-can-practice-3",
@@ -16308,7 +16325,7 @@
       "file": "assets/construction/derived/level3-what-can-build-3.webp",
       "reference": "assets/construction/build-build-3.png",
       "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
-      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+      "prompt": "両手と上下の積み木を見せ、列の途中だけに疑問符を置いた。"
     },
     {
       "exampleId": "level3-what-can-clean-1",
@@ -16392,7 +16409,7 @@
       "file": "assets/construction/derived/level3-who-do-need-3.webp",
       "reference": "assets/construction/build-need-3.png",
       "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
-      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+      "prompt": "汗と口元、コップ、水差しが見えるよう人物マスクを上へ移した。"
     },
     {
       "exampleId": "level3-who-did-swim-1-past",
@@ -16441,7 +16458,7 @@
       "file": "assets/construction/derived/level3-who-did-call-1-past.webp",
       "reference": "assets/construction/build-call-1-past.png",
       "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
-      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+      "prompt": "受話器、手、口元が見えるよう人物の印を顔の上部に絞った。"
     },
     {
       "exampleId": "level3-who-did-help-1-past",
@@ -16497,7 +16514,7 @@
       "file": "assets/construction/derived/level3-who-ing-answer-1-ongoing.webp",
       "reference": "assets/construction/build-answer-1-ongoing.png",
       "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
-      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+      "prompt": "答える人の手、口元、先生の呼びかけが見えるよう人物マスクを縮めた。"
     },
     {
       "exampleId": "level3-who-ing-pull-2-ongoing",
@@ -16518,14 +16535,14 @@
       "file": "assets/construction/derived/level3-who-ing-bring-3-ongoing.webp",
       "reference": "assets/construction/build-bring-3-ongoing.png",
       "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
-      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+      "prompt": "ボールを運ぶ両手や周囲の校舎が見えるよう、人物マスクを縮めた。"
     },
     {
       "exampleId": "level3-who-ing-teach-1-ongoing",
       "file": "assets/construction/derived/level3-who-ing-teach-1-ongoing.webp",
       "reference": "assets/construction/build-teach-1-ongoing.png",
       "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
-      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+      "prompt": "指さす手と教わる子の視線や表情を残し、人物の印を小さくした。"
     },
     {
       "exampleId": "level3-who-ing-pay-1-ongoing",
@@ -16539,14 +16556,14 @@
       "file": "assets/construction/derived/level3-two-who-must-be-adjective-3.webp",
       "reference": "assets/construction/build-be-adjective-3.png",
       "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
-      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+      "prompt": "静かにするしぐさと指先を見せ、人物の印を額に置いた。"
     },
     {
       "exampleId": "level3-two-who-can-always-be-adjective-1",
       "file": "assets/construction/derived/level3-two-who-can-always-be-adjective-1.webp",
       "reference": "assets/construction/build-be-adjective-1.png",
       "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
-      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+      "prompt": "目と口の表情、胸元の手が見える位置に人物の疑問符を移した。"
     },
     {
       "exampleId": "level3-where-do-climb-1",
@@ -16929,6 +16946,20 @@
       "layoutReference": "assets/construction/build-read-3-ongoing.png",
       "generationMethod": "Composed the existing event panel and approved portraits.",
       "prompt": "Match the Level 1 progressive layout. Use four equal-height, outlined rectangles to the left of the speech bubble. Center the speaker beneath the bubble and point its tail straight down. Retain the illustrated event and its question cue."
+    },
+    {
+      "exampleId": "level3-32",
+      "file": "assets/construction/level3-32-opening.webp",
+      "reference": "assets/construction/level3-32-door-knob.png",
+      "prompt": "半開きのドアに開く方向を示す矢印を加えた。",
+      "generationMethod": "既存の教材の絵に、戸の動きを示す矢印を合成。"
+    },
+    {
+      "exampleId": "level2-17",
+      "file": "assets/construction/level2-17-might-drink-milk.webp",
+      "reference": "assets/construction/level2-05.png",
+      "generationMethod": "built-in image_gen",
+      "prompt": "女の子が朝食のパンを前に、牛乳の入った透明なコップを傾けて実際に飲む。外側の話し手は考え込む姿。"
     }
   ],
   "sceneAtlases": {
@@ -17117,5 +17148,38 @@
     "secondPerson": "青い服の男の子が話し手、星の髪飾りの女の子が聞き手。複数の聞き手では紫の服の女の子も加わる。",
     "composedImages": 516,
     "editedIllustrations": 7
+  },
+  "actionDetails": {
+    "watercolors": "内蔵の画像生成で作成した水彩の動作見本を、一場面ずつ切り出した。疑問詞で隠す対象には、手元や表情の部分を使用。",
+    "diagrams": "本と箱の開閉、待ち合わせ場所、スタートの図は scripts/build_action_detail_icons.py で作成。",
+    "files": {
+      "assets/construction/action-details/taste.webp": "ひとさじ味を確かめ、鍋に調味料を足す。",
+      "assets/construction/action-details/taste-unknown.webp": "小さなスプーンで少し口にし、指で調味料をつまむ。",
+      "assets/construction/action-details/learn-song.webp": "楽譜を閉じて、覚えた旋律を思い出す。",
+      "assets/construction/action-details/recall.webp": "目を閉じて、習ったことを思い出すしぐさ。",
+      "assets/construction/action-details/learn-dance.webp": "お手本のポーズを思い出して、自分でも同じ動きをする。",
+      "assets/construction/action-details/teach-song.webp": "教える人が楽譜を指し、相手がそれを見て聞く。",
+      "assets/construction/action-details/teach-game.webp": "指で盤の道筋を示し、相手に駒の動かし方を説明する。",
+      "assets/construction/action-details/teach-game-hands.webp": "指と矢印で、駒をどこへ進めるか相手に示す。",
+      "assets/construction/action-details/rest-bench.webp": "汗をかいた子どもが肩の力を抜いてベンチでひと息つく。",
+      "assets/construction/action-details/pay.webp": "硬貨を相手の手のひらに渡す。",
+      "assets/construction/action-details/buy.webp": "代金を出した客が、店員から商品入りの袋を受け取る。",
+      "assets/construction/action-details/try-puzzle.webp": "ピースをつまみ、どこのくぼみに合うか試す。",
+      "assets/construction/action-details/start-game.webp": "駒をゲーム盤の最初のマスに置く。",
+      "assets/construction/action-details/start-homework.webp": "白いノートを開き、一行目に鉛筆を下ろす。",
+      "assets/construction/action-details/start-puzzle.webp": "空のパズル枠の隅に最初のピースを置く。",
+      "assets/construction/action-details/try-game.webp": "遊び方の紙を見ながら、差し出された駒に手を伸ばす。",
+      "assets/construction/action-details/try-sport.webp": "コーチからボールを受け取り、初めてシュートを試そうとする。",
+      "assets/construction/action-details/rest-sofa.webp": "汗をかいた子どもがソファに体を預けて息をつく。",
+      "assets/construction/action-details/bring-book.webp": "本を携えて家から学校に向かう足跡。",
+      "assets/construction/action-details/bring-ball.webp": "青いボールを携えて家から学校に向かう足跡。",
+      "assets/construction/action-details/learn-word.webp": "絵カードを裏返し、さっき見たことばを思い出す。",
+      "assets/construction/action-details/open-book.png": "閉じた本から開いた本へ、矢印が向かう。",
+      "assets/construction/action-details/close-book.png": "開いた本から閉じた本へ、矢印が向かう。",
+      "assets/construction/action-details/close-box.png": "ふたの開いた箱からふたの閉じた箱へ、矢印が向かう。",
+      "assets/construction/action-details/come-here.png": "足跡と矢印が、待っている人の立つ場所に向かう。",
+      "assets/construction/action-details/wait-here.png": "待っている人の足元に、現在地を示すピン。",
+      "assets/construction/action-details/first-step.png": "スタートの旗の所に、最初の足跡がつく。"
+    }
   }
 }

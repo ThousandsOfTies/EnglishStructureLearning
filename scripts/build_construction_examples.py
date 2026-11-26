@@ -8,8 +8,9 @@ import re
 from pathlib import Path
 
 from compile_original import SUBJECTS, pair, third_person
-from refine_curriculum import SLOTS as SOURCE_SLOTS, annotate_scene, japanese_sentence, refine
-from advanced_variants import PER_CELL, derive
+from refine_curriculum import SLOTS as SOURCE_SLOTS, annotate_scene, japanese_sentence, past, refine, third
+from refine_curriculum import pair as slot
+from advanced_variants import PER_CELL, card, derive
 
 ROOT = Path(__file__).resolve().parents[1]
 SLOTS = ('S', 'support', *SOURCE_SLOTS[1:])
@@ -67,8 +68,36 @@ NO_DEFAULTS = {'go', 'come', 'walk', 'stay', 'live', 'like', 'love', 'want',
                'need', 'see', 'hear', 'feel', 'visit', 'meet', 'call', 'save'}
 
 
-def slot(ja='', en=''):
-    return {'ja': ja, 'en': en}
+# Scene wording applied after the default place and time. Variant keys use
+# the one-based number in the exercise ID.
+SCENE_CONTEXTS = {
+    'bring': {'place': ('学校に', 'to school'), 'time': ('毎日', 'every day')},
+    'put': {'time': ('放課後に', 'after school')},
+    'wake': {'place': ('家で', 'at home')},
+    'eat': {'place': ('家で', 'at home')},
+    'wait': {'time': ('放課後に', 'after school')},
+    'play': {'place': ('公園で', 'in the park')},
+    'hold': {'place': ('外で', 'outside')},
+    'take': {'place': ('通りで', 'on the street')},
+    'invite': {'place': ('家で', 'at home'), 'time': ('放課後に', 'after school')},
+    'teach': {'place': ('家で', 'at home'), 'time': ('放課後に', 'after school')},
+    'follow': {'place': ('公園で', 'in the park')},
+    'try': {'place': ('学校で', 'at school')},
+    'wear': {'place': ('公園で', 'in the park'), 'time': ('日曜日に', 'on Sundays')},
+    'buy': {'place': ('お店で', 'at a shop')},
+    'pay': {'place': ('お店で', 'at a shop')},
+}
+VARIANT_CONTEXTS = {
+    ('count', 1): {'place': ('庭で', 'in the garden'), 'time': ('夜に', 'at night')},
+    ('look', 1): {'place': ('庭で', 'in the garden'), 'time': ('夜に', 'at night')},
+    ('play', 3): {'place': ('家で', 'at home')},
+    ('open', 1): {'place': ('学校で', 'at school'), 'time': ('昼食のときに', 'at lunchtime')},
+    ('ask', 2): {'place': ('家で', 'at home'), 'time': ('夕食のあとに', 'after dinner')},
+    ('thank', 2): {'place': ('家で', 'at home'), 'time': ('夕食のあとに', 'after dinner')},
+    ('build', 1): {'place': ('浜辺で', 'on the beach')},
+    ('clean', 3): {'place': ('学校で', 'at school'), 'time': ('放課後に', 'after school')},
+    ('pay', 1): {'place': ('駅で', 'at the station')},
+}
 
 
 def own(text, variant):
@@ -77,7 +106,7 @@ def own(text, variant):
 
 def make_example(key, group, number, values):
     values['P1'] = values.pop('P', slot())
-    values['P2'] = slot()
+    values.setdefault('P2', slot())
     double = {
         'give': [('弟に', 'my brother', 'シールを', 'a sticker'), ('友だちに', 'her friend', 'カードを', 'a card'), ('妹に', 'our sister', '花を', 'a flower')],
         'send': [('おばあちゃんに', 'Grandma', 'カードを', 'a card'), ('友だちに', 'her friend', '手紙を', 'a letter'), ('お父さんに', 'Dad', '写真を', 'a photo')],
@@ -87,6 +116,10 @@ def make_example(key, group, number, values):
         'teach': [('弟に', 'my brother', '新しいゲームを', 'a new game'), ('友だちに', 'her friend', '歌を', 'a song'), ('妹に', 'our sister', 'ダンスを', 'a dance')],
     }
     frame = 'one-parameter' if values['P1']['en'] else 'no-parameter'
+    if group == 'invite':
+        frame = 'object-location'
+    if group == 'bake' and values['P2']['en']:
+        frame = 'object-companion'
     if group in double:
         j1, e1, j2, e2 = double[group][number - 1]
         values['P1'], values['P2'] = slot(j1, e1), slot(j2, e2)
@@ -120,7 +153,7 @@ def tense_picture_examples():
         ('bicycle', '自転車に', 'a bike', ('乗る', '乗った', '乗っている'), ('ride', 'rode', 'riding', 'ridden')),
         ('pony', 'ポニーに', 'a pony', ('乗る', '乗った', '乗っている'), ('ride', 'rode', 'riding', 'ridden')),
         ('kite', 'たこを', 'a kite', ('あげる', 'あげた', 'あげている'), ('fly', 'flew', 'flying', 'flown')),
-        ('rope', '', '', ('なわとびをする', 'なわとびをした', 'なわとびをしている'), ('jump rope', 'jumped rope', 'jumping rope', 'jumped rope')),
+        ('rope', 'ロープを', 'rope', ('跳ぶ', '跳んだ', '跳んでいる'), ('jump', 'jumped', 'jumping', 'jumped')),
         ('violin', 'バイオリンを', 'the violin', ('弾く', '弾いた', '弾いている'), ('play', 'played', 'playing', 'played')),
         ('ball', 'ボールを', 'a ball', ('ける', 'けった', 'けっている'), ('kick', 'kicked', 'kicking', 'kicked')),
         ('piano', 'ピアノを', 'the piano', ('弾く', '弾いた', '弾いている'), ('play', 'played', 'playing', 'played')),
@@ -143,6 +176,9 @@ def tense_picture_examples():
                 'S': slot('私が', 'I'), 'predicate': slot(verb_ja, verb_en),
                 'P': slot(ja_object, en_object), 'place': slot(), 'time': slot()})
             q.update(contrastFamily=family, meaning=meaning, theme=themes[key])
+            if key == 'rope':
+                action = {'routine': 'する', 'past': 'した', 'ongoing': 'している', 'experience': 'したことがある'}
+                q['ja'] = f"私がなわとびを{action[meaning]}。"
             yield q
 
 
@@ -202,6 +238,49 @@ def set_predicate_support(q, predicate_labels):
     values['predicate'] = slot(rest_ja, rest)
 
 
+# The full sentence can use する or describe a continuing state. The card
+# names the action and follows the form of the English predicate.
+SIMPLE_PREDICATE_LABELS = {
+    'play': {'する': '遊ぶ'}, 'ask': {'する': 'たずねる'}, 'make': {'する': 'させる'},
+    'live': {'住んでいる': '住む'}, 'wear': {'かぶっている': 'かぶる', '着ている': '着る'},
+}
+PREDICATE_LABELS = {form: labels for verb, labels in SIMPLE_PREDICATE_LABELS.items()
+                    for form in (verb, third(verb), past(verb))}
+PREDICATE_LABELS.update({
+    'playing': {'している': '遊んでいる'}, 'asking': {'している': 'たずねている'},
+    'making': {'している': 'させている'}, 'coming': {'来る途中': '来ている'},
+})
+
+# In "talk with | Mom" the second card is just お母さん. In "bread | with Mom"
+# the preposition belongs to the second card, so its label is お母さんと.
+PREPOSITION_PREFIXES = ('after ', 'at ', 'before ', 'by ', 'for ', 'from ', 'in ', 'inside ', 'into ',
+                        'near ', 'next to ', 'on ', 'over ', 'through ', 'to ', 'under ', 'with ')
+
+
+def japanese_card_label(role, english, japanese):
+    word = english.lower().partition(' ')[0]
+    if role in {'predicate', '述語', '述語の残り'}:
+        if english.lower() in ('walk through', 'walks through', 'walked through'):
+            return '歩いて通る'
+        if english.lower() == 'walking through':
+            return '歩いて通っている'
+        label = card(japanese) if japanese.endswith(('ます', 'です')) else japanese
+        return PREDICATE_LABELS.get(word, {}).get(label, label)
+    if role == 'S':
+        return re.sub(r'[はが]$', '', japanese)
+    if role in {'P1', 'P2'} and not english.lower().startswith(PREPOSITION_PREFIXES):
+        if english == 'happy' and japanese == 'うれしい気持ちに':
+            return 'うれしい'
+        return re.sub(r'(?:に合わせて|まで|[をにがとの])$', '', japanese)
+    if role in {'place', '場所'}:
+        if word in {'here', 'outside'}:
+            return japanese.removesuffix('で')
+        return japanese.removesuffix('は').removesuffix('を')
+    if role == '頻度' and word == 'ever':
+        return japanese.removesuffix('に')
+    return japanese
+
+
 def build_level2_choices(advanced):
     meanings = advanced['level2ModalMeanings']
     choices = {}
@@ -217,7 +296,7 @@ def build_level2_choices(advanced):
             choices.setdefault(role, {}).setdefault(en, ja)
     for role, alternatives in advanced['level2ExtraChoices'].items():
         for en, ja in alternatives.items():
-            choices.setdefault(role, {}).setdefault(en, label(role, en, ja))
+            choices.setdefault(role, {}).setdefault(en, label(role, en, japanese_card_label(role, en, ja)))
     return choices
 
 
@@ -252,6 +331,8 @@ def build_examples():
             en_p = own(en_p, i)
             if verb == 'play' and i == 0:
                 ja_p, en_p = 'サッカーを', 'soccer'
+            if verb == 'walk' and en_p.startswith('through '):
+                values['predicate']['ja'] = '歩いていきます'
             ja_m, en_m = modifiers[i if len(modifiers) == 3 else 0]
             en_m = own(en_m, i)
 
@@ -266,7 +347,9 @@ def build_examples():
                         break
 
             if en_m:
-                if en_m.startswith(('with ', 'for a new ', 'for a bike', 'for a game')) and not (verb == 'wash' and en_m == 'with water'):
+                if verb == 'bake' and en_m.startswith('with '):
+                    values['P2'] = slot(ja_m, en_m)
+                elif en_m.startswith(('with ', 'for a new ', 'for a bike', 'for a game')) and not (verb == 'wash' and en_m == 'with water'):
                     # P may be a phrase, including another participant or a
                     # purpose. It need not be one noun or a direct object.
                     ja_p = ja_m + ja_p
@@ -292,70 +375,16 @@ def build_examples():
                 if not values['time']['en']:
                     values['time'] = slot('授業中に', 'in class') if verb in SCHOOL_VERBS else slot('放課後に', 'after school')
 
-            # Context-specific wording: do not mechanically add a location to
-            # a destination, a home, or an already complete time expression.
-            if verb == 'bring':
-                values['place'] = slot('学校に', 'to school')
-                values['time'] = slot('毎日', 'every day')
-            if verb == 'put':
-                values['time'] = slot('放課後に', 'after school')
-            if verb == 'wake':
-                values['place'] = slot('家で', 'at home')
-            if verb == 'eat':
-                values['place'] = slot('家で', 'at home')
-            if verb == 'wait':
-                values['time'] = slot('放課後に', 'after school')
-            if verb == 'count' and i == 0:
-                values['place'] = slot('庭で', 'in the garden')
-                values['time'] = slot('夜に', 'at night')
-            if verb == 'look' and i == 0:
-                values['place'] = slot('庭で', 'in the garden')
-                values['time'] = slot('夜に', 'at night')
-            if verb == 'play':
-                values['place'] = slot('公園で', 'in the park') if i < 2 else slot('家で', 'at home')
-            if verb == 'open' and i == 0:
-                values['place'] = slot('学校で', 'at school')
-                values['time'] = slot('昼食のときに', 'at lunchtime')
-            if verb == 'hold':
-                values['place'] = slot('外で', 'outside')
-            if verb == 'take':
-                values['place'] = slot('通りで', 'on the street')
-            if verb == 'ask':
-                if i < 2:
-                    values['predicate']['ja'] = 'します'
-                if i == 1:
-                    values['place'] = slot('家で', 'at home')
-                    values['time'] = slot('夕食のあとに', 'after dinner')
-            if verb == 'thank' and i == 1:
-                values['place'] = slot('家で', 'at home')
-                values['time'] = slot('夕食のあとに', 'after dinner')
+            context = SCENE_CONTEXTS.get(verb, {}) | VARIANT_CONTEXTS.get((verb, i + 1), {})
+            values.update({role: slot(*text) for role, text in context.items()})
+            if verb == 'ask' and i < 2:
+                values['predicate']['ja'] = 'します'
             if verb == 'invite':
-                # 'to my birthday party' is an invitation target, not a time.
-                values['P'] = slot(ja_m + ja_p, en_p + ' ' + en_m)
-                values['place'] = slot('家で', 'at home')
-                values['time'] = slot('放課後に', 'after school')
-            if verb == 'teach':
-                values['place'] = slot('家で', 'at home')
-                values['time'] = slot('放課後に', 'after school')
-            if verb == 'follow':
-                values['place'] = slot('公園で', 'in the park')
-            if verb == 'try':
-                values['place'] = slot('学校で', 'at school')
-            if verb == 'build' and i == 0:
-                values['place'] = slot('浜辺で', 'on the beach')
-            if verb == 'clean' and i == 2:
-                values['place'] = slot('学校で', 'at school')
-                values['time'] = slot('放課後に', 'after school')
+                values['P2'] = slot(ja_m, en_m)
             if verb == 'wear':
                 values['predicate']['ja'] = 'かぶっています' if i == 0 else '着ています'
-                values['place'] = slot('公園で', 'in the park')
-                values['time'] = slot('日曜日に', 'on Sundays')
             if verb == 'change' and i == 1:
                 values['predicate']['ja'] = 'はきかえます'
-            if verb == 'buy':
-                values['place'] = slot('お店で', 'at a shop')
-            if verb == 'pay':
-                values['place'] = slot('駅で', 'at the station') if i == 0 else slot('お店で', 'at a shop')
             rows.append(make_example(f'build-{verb}-{i+1}', verb, i+1, values))
 
     be_examples = [
@@ -429,6 +458,13 @@ def build_examples():
     assert replacements.keys() <= {q['id'] for q in derived2 + derived3}, 'Unknown derived exercise replacement'
     advanced['level2'] += [replacements.get(q['id'], q) for q in derived2]
     advanced['level3'] += [replacements.get(q['id'], q) for q in derived3]
+    # Derivation uses the particles in the full Japanese sentence. Convert to
+    # stand-alone cards only after every exercise and its translation exist.
+    for q in rows:
+        for role, part in q['slots'].items():
+            part['ja'] = japanese_card_label(role, part['en'], part['ja'])
+    for q in advanced['level2'] + advanced['level3']:
+        q['blocks'] = [[role, en, japanese_card_label(role, en, ja)] for role, en, ja in q['blocks']]
     level2_choices = build_level2_choices(advanced)
     for q in advanced['level2']:
         q.setdefault('unit', level2_unit(q))
@@ -468,6 +504,8 @@ def build_examples():
             '使わない欄は空欄にする。',
             'go to / look at / listen to などは、つなぎ方まで述語に含める。',
             '一般動詞の助述部は現在の「する」と過去の「した」。過去の肯定文では ate など、述語に過去形を使う。',
+            '全レベルの日本語の動詞カードは現在・過去とも辞書形。進行形は「食べている」、現在完了の経験は「食べた」の形にする。',
+            '主語と対象のカードでは日本語の文をつなぐ助詞を外す。with Mom の「お母さんと」のように、同じカードの英語が表す関係は残す。',
             '状態や進行形の be は「である」、過去の状態は「であった」を助述部に置く。「食べている」などは述語に入れる。',
             'PはParameter。P1・P2の役割は述語の部品ごとに決まる。',
             '場所は動作や状態の舞台。移動先・置き先・滞在先など、述語が表す意味を補う場所はP1・P2に入れる。',
@@ -497,7 +535,7 @@ def build_examples():
              f"内訳：基本{result['counts']['core']}文＋今の動き{result['counts']['ongoing']}文＋過去{result['counts']['past']}文＋経験10文＋代名詞39文。レベル2は{result['counts']['level2']}文、レベル3は{result['counts']['level3']}文です。", '',
              '全部を一度に練習する必要はありません。まず「いつもの動き／状態」の原型を使い、同じcontrastFamilyの「今」「昨日」と比べます。再帰代名詞8文は発展扱いです。', '',
              'S → 助述部 → 述語 → P1 → P2 → 場所 → 時。使わない欄は「—」。これは英文を作るための教材上の区切りです。', '',
-             '一般動詞の文は、助述部で現在の「する」か過去の「した」を選びます。日本語の述語は同じラベルを使い、完成した肯定文では eat / ate のように動詞の形で表します。状態や進行形の be は「である」、過去の状態は「であった」を選び、完成英文では am / was などが助述部に現れます。「食べている」など、動作の進行を表す部分は述語に入れます。', '',
+             '一般動詞の文は、助述部で現在の「する」か過去の「した」を選びます。どちらも日本語の述語は「食べる」のような辞書形で、英文では eat / ate と変わります。現在進行形の述語は「食べている」、現在完了の経験は「乗った」の形です。状態や進行形の be は「である」、過去の状態は「であった」を助述部で選びます。', '',
              'PはParameter（引数）の教材独自の呼び名です。go to の to は述語側、school はP1側。give は「だれに→何を」、keep は「何を→どんな状態に」をP1・P2に入れます。be＋名詞・形容詞の文ではP1・P2を空欄にします。', '',
              '場面全体の場所は［場所］へ入れます。come の行き先や live の居住先は［対象１］、put の置き先は［対象２］へ入れます。', '',
              '場所と時の両方を常に付ける必要はありません。主語に合う述語の形をそのまま練習します。', '',

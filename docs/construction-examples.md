@@ -8,7 +8,7 @@
 
 S → 助述部 → 述語 → P1 → P2 → 場所 → 時。使わない欄は「—」。これは英文を作るための教材上の区切りです。
 
-一般動詞の文は、助述部で現在の「する」か過去の「した」を選びます。日本語の述語は同じラベルを使い、完成した肯定文では eat / ate のように動詞の形で表します。状態や進行形の be は「である」、過去の状態は「であった」を選び、完成英文では am / was などが助述部に現れます。「食べている」など、動作の進行を表す部分は述語に入れます。
+一般動詞の文は、助述部で現在の「する」か過去の「した」を選びます。どちらも日本語の述語は「食べる」のような辞書形で、英文では eat / ate と変わります。現在進行形の述語は「食べている」、現在完了の経験は「乗った」の形です。状態や進行形の be は「である」、過去の状態は「であった」を助述部で選びます。
 
 PはParameter（引数）の教材独自の呼び名です。go to の to は述語側、school はP1側。give は「だれに→何を」、keep は「何を→どんな状態に」をP1・P2に入れます。be＋名詞・形容詞の文ではP1・P2を空欄にします。
 
@@ -40,10 +40,10 @@ PはParameter（引数）の教材独自の呼び名です。go to の to は述
 | 過去の動き | I | した | flew | a kite | — | — | — |
 | 今している | I | am | flying | a kite | — | — | — |
 | したことがある | I | have | flown | a kite | — | — | — |
-| いつもの動き | I | する | jump rope | — | — | — | — |
-| 過去の動き | I | した | jumped rope | — | — | — | — |
-| 今している | I | am | jumping rope | — | — | — | — |
-| したことがある | I | have | jumped rope | — | — | — | — |
+| いつもの動き | I | する | jump | rope | — | — | — |
+| 過去の動き | I | した | jumped | rope | — | — | — |
+| 今している | I | am | jumping | rope | — | — | — |
+| したことがある | I | have | jumped | rope | — | — | — |
 | いつもの動き | I | する | play | the violin | — | — | — |
 | 過去の動き | I | した | played | the violin | — | — | — |
 | 今している | I | am | playing | the violin | — | — | — |
@@ -178,9 +178,9 @@ PはParameter（引数）の教材独自の呼び名です。go to の to は述
 - I walk to school every day. — 私は毎日学校まで歩きます。
 - I am walking to school now. — 私は今学校まで歩いています。
 - I walked to school yesterday. — 私は昨日学校まで歩きました。
-- You walk through the woods every day. — あなたは毎日森の中を歩きます。
-- You are walking through the woods now. — あなたは今森の中を歩いています。
-- You walked through the woods yesterday. — あなたは昨日森の中を歩きました。
+- You walk through the woods every day. — あなたは毎日森の中を歩いていきます。
+- You are walking through the woods now. — あなたは今森の中を歩いて進んでいます。
+- You walked through the woods yesterday. — あなたは昨日森の中を歩いていきました。
 
 ## run：走ります
 
@@ -558,9 +558,9 @@ PはParameter（引数）の教材独自の呼び名です。go to の to は述
 
 | 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | You | する | wait for | the bus | — | here | every day |
-| 今している | You | are | waiting for | the bus | — | here | now |
-| 昨日した | You | した | waited for | the bus | — | here | yesterday |
+| いつもの動き | You | する | wait for | the bus | — | at the bus stop | every day |
+| 今している | You | are | waiting for | the bus | — | at the bus stop | now |
+| 昨日した | You | した | waited for | the bus | — | at the bus stop | yesterday |
 | いつもの動き | He | する | waits for | a friend | — | here | every day |
 | 今している | He | is | waiting for | a friend | — | here | now |
 | 昨日した | He | した | waited for | a friend | — | here | yesterday |
@@ -568,9 +568,9 @@ PはParameter（引数）の教材独自の呼び名です。go to の to は述
 | 今している | She | is | waiting for | the woman | — | here | now |
 | 昨日した | She | した | waited for | the woman | — | here | yesterday |
 
-- You wait for the bus here every day. — あなたは毎日ここでバスを待ちます。
-- You are waiting for the bus here now. — あなたは今ここでバスを待っています。
-- You waited for the bus here yesterday. — あなたは昨日ここでバスを待ちました。
+- You wait for the bus at the bus stop every day. — あなたは毎日バス停でバスを待ちます。
+- You are waiting for the bus at the bus stop now. — あなたは今バス停でバスを待っています。
+- You waited for the bus at the bus stop yesterday. — あなたは昨日バス停でバスを待ちました。
 - He waits for a friend here every day. — 彼は毎日ここで友だちを待ちます。
 - He is waiting for a friend here now. — 彼は今ここで友だちを待っています。
 - He waited for a friend here yesterday. — 彼は昨日ここで友だちを待ちました。
@@ -654,15 +654,15 @@ PはParameter（引数）の教材独自の呼び名です。go to の to は述
 
 | 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | They | する | bake | a banana cake with Mom | — | at home | every day |
-| 今している | They | are | baking | a banana cake with Mom | — | at home | now |
-| 昨日した | They | した | baked | a banana cake with Mom | — | at home | yesterday |
-| いつもの動き | I | する | bake | cookies with Mom | — | at home | every day |
-| 今している | I | am | baking | cookies with Mom | — | at home | now |
-| 昨日した | I | した | baked | cookies with Mom | — | at home | yesterday |
-| いつもの動き | You | する | bake | bread with Mom | — | at home | every day |
-| 今している | You | are | baking | bread with Mom | — | at home | now |
-| 昨日した | You | した | baked | bread with Mom | — | at home | yesterday |
+| いつもの動き | They | する | bake | a banana cake | with Mom | at home | every day |
+| 今している | They | are | baking | a banana cake | with Mom | at home | now |
+| 昨日した | They | した | baked | a banana cake | with Mom | at home | yesterday |
+| いつもの動き | I | する | bake | cookies | with Mom | at home | every day |
+| 今している | I | am | baking | cookies | with Mom | at home | now |
+| 昨日した | I | した | baked | cookies | with Mom | at home | yesterday |
+| いつもの動き | You | する | bake | bread | with Mom | at home | every day |
+| 今している | You | are | baking | bread | with Mom | at home | now |
+| 昨日した | You | した | baked | bread | with Mom | at home | yesterday |
 
 - They bake a banana cake with Mom at home every day. — 彼らは毎日家でお母さんとバナナケーキを焼きます。
 - They are baking a banana cake with Mom at home now. — 彼らは今家でお母さんとバナナケーキを焼いています。
@@ -1865,22 +1865,22 @@ PはParameter（引数）の教材独自の呼び名です。go to の to は述
 
 | 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| いつもの動き | You | する | invite | your friend to your birthday party | — | at home | once a year |
-| 今している | You | are | inviting | your friend to your birthday party | — | at home | now |
-| 昨日した | You | した | invited | your friend to your birthday party | — | at home | yesterday |
-| いつもの動き | He | する | invites | the boy to the birthday party | — | at home | once a year |
-| 今している | He | is | inviting | the boy to the birthday party | — | at home | now |
-| 昨日した | He | した | invited | the boy to the birthday party | — | at home | yesterday |
-| いつもの動き | She | する | invites | her neighbor to her birthday party | — | at home | once a year |
-| 今している | She | is | inviting | her neighbor to her birthday party | — | at home | now |
-| 昨日した | She | した | invited | her neighbor to her birthday party | — | at home | yesterday |
+| いつもの動き | You | する | invite | your friend | to your birthday party | at home | once a year |
+| 今している | You | are | inviting | your friend | to your birthday party | at home | now |
+| 昨日した | You | した | invited | your friend | to your birthday party | at home | yesterday |
+| いつもの動き | He | する | invites | a friend | to the birthday party | at home | once a year |
+| 今している | He | is | inviting | a friend | to the birthday party | at home | now |
+| 昨日した | He | した | invited | a friend | to the birthday party | at home | yesterday |
+| いつもの動き | She | する | invites | her neighbor | to her birthday party | at home | once a year |
+| 今している | She | is | inviting | her neighbor | to her birthday party | at home | now |
+| 昨日した | She | した | invited | her neighbor | to her birthday party | at home | yesterday |
 
 - You invite your friend to your birthday party at home once a year. — あなたは年に一度家で誕生日会に友だちを招きます。
 - You are inviting your friend to your birthday party at home now. — あなたは今家で誕生日会に友だちを招いています。
 - You invited your friend to your birthday party at home yesterday. — あなたは昨日家で誕生日会に友だちを招きました。
-- He invites the boy to the birthday party at home once a year. — 彼は年に一度家で誕生日会に男の子を招きます。
-- He is inviting the boy to the birthday party at home now. — 彼は今家で誕生日会に男の子を招いています。
-- He invited the boy to the birthday party at home yesterday. — 彼は昨日家で誕生日会に男の子を招きました。
+- He invites a friend to the birthday party at home once a year. — 彼は年に一度家で誕生日会に友だちを招きます。
+- He is inviting a friend to the birthday party at home now. — 彼は今家で誕生日会に友だちを招いています。
+- He invited a friend to the birthday party at home yesterday. — 彼は昨日家で誕生日会に友だちを招きました。
 - She invites her neighbor to her birthday party at home once a year. — 彼女は年に一度家で誕生日会におとなりさんを招きます。
 - She is inviting her neighbor to her birthday party at home now. — 彼女は今家で誕生日会におとなりさんを招いています。
 - She invited her neighbor to her birthday party at home yesterday. — 彼女は昨日家で誕生日会におとなりさんを招きました。
@@ -1993,7 +1993,7 @@ PはParameter（引数）の教材独自の呼び名です。go to の to は述
 - They want a little ball. — 彼らは小さなボールがほしいです。
 - I want a new notebook. — 私は新しいノートがほしいです。
 
-## need：必要です
+## need：要ります
 
 | 捉え方 | S | 助述部 | 述語 | P1 | P2 | 場所 | 時 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -2001,9 +2001,9 @@ PはParameter（引数）の教材独自の呼び名です。go to の to は述
 | 状態 | He | する | needs | white paper | — | — | — |
 | 状態 | She | する | needs | water | — | — | — |
 
-- You need scissors. — あなたははさみが必要です。
-- He needs white paper. — 彼は白い紙が必要です。
-- She needs water. — 彼女は水が必要です。
+- You need scissors. — あなたははさみが要ります。
+- He needs white paper. — 彼は白い紙が要ります。
+- She needs water. — 彼女は水が要ります。
 
 ## choose：選びます
 

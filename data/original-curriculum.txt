@@ -21,7 +21,7 @@ live|住んでいます|小さな家に=in a small house;海の近くに=near th
 move|動かします|箱を=a box;いすを=a chair;小さな机を=a small desk|ゆっくり=slowly
 stop|止めます|おもちゃの電車を=a toy train;音楽を=the music;タイマーを=the timer
 start|始めます|ゲームを=a game;宿題を=my homework;パズルを=a puzzle|夕食のあとに=after dinner
-wait|待ちます|バスを=for the bus;友だちを=for a friend;お母さんを=for Mom|ここで=here
+wait|待ちます|バスを=for the bus;友だちを=for a friend;お母さんを=for Mom|バス停で=at the bus stop;ここで=here;ここで=here
 @食べものと料理
 eat|食べます|おにぎりを=a rice ball;バナナを=a banana;にんじんを=a carrot|昼食に=for lunch
 drink|飲みます|水を=water;牛乳を=milk;りんごジュースを=apple juice|朝食のときに=at breakfast
@@ -84,7 +84,7 @@ thank|お礼を言います|先生に=my teacher;お母さんに=Mom;友だち�
 greet|あいさつします|先生に=my teacher;友だちに=my friend;おとなりさんに=my neighbor|毎朝=every morning
 meet|会います|友だちに=a friend;いとこに=my cousin;おばあちゃんに=Grandma|駅で=at the station
 visit|遊びに行きます|おばあちゃんのところに=Grandma;いとこのところに=my cousin;友だちのところに=my friend|日曜日に=on Sundays
-invite|招きます|友だちを=my friend;いとこを=my cousin;おとなりさんを=my neighbor|誕生日会に=to my birthday party
+invite|招きます|友だちを=my friend;友だちを=a friend;おとなりさんを=my neighbor|誕生日会に=to my birthday party;誕生日会に=to the birthday party;誕生日会に=to my birthday party
 join|加わります|ゲームに=the game;チームに=the team;ダンスクラブに=the dance club
 teach|教えます|弟に新しいゲームを=my brother a new game;友だちに歌を=my friend a song;妹にダンスを=my sister a dance
 follow|ついていきます|先生に=my teacher;お父さんに=Dad;友だちに=my friend|ゆっくり=slowly
@@ -92,7 +92,7 @@ follow|ついていきます|先生に=my teacher;お父さんに=Dad;友だち�
 like|好きです|いちごが=strawberries;パズルが=puzzles;ペンギンが=penguins
 love|大好きです|雪が=snow;音楽が=music;うさぎが=rabbits
 want|ほしいです|緑の鉛筆が=a green pencil;小さなボールが=a little ball;新しいノートが=a new notebook
-need|必要です|はさみが=scissors;白い紙が=white paper;水が=water
+need|要ります|はさみが=scissors;白い紙が=white paper;水が=water
 choose|選びます|青いカードを=a blue card;小さなりんごを=a small apple;動物の本を=an animal book
 try|やってみます|新しいゲームを=a new game;パズルを=a puzzle;新しいスポーツを=a new sport
 make|作ります|紙のぼうしを=a paper hat;サンドイッチを=a sandwich;誕生日カードを=a birthday card

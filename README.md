@@ -14,7 +14,7 @@ main へのプッシュごとに GitHub Actions が教材を再生成し、テ�
 
 - レベル1は主語・助述部・述語・対象１・対象２・場所・時の七つの欄を使います。be は助述部に、後ろの名詞・形容詞・動作の ing 形は述語に入れます。進行形では「である」を助述部に、「食べている」のような動作のかたまりを述語に入れます。日本語カードはドラッグするか、カードと欄を順に押して置きます。
 - 動作や状態の舞台は［場所］に入れます。述語が表す意味を補う行き先や置き先などは［対象１］・［対象２］に入れます。
-- 左上の「☰」で例文メニューを開きます。説明を見ながらレベルを複数選べます。「レベル1の文」はレベル1の例文だけを絞り込みます。
+- 左上の「☰」で例文メニューを開きます。練習したいレベルを複数選べます。
 - 「ミニセット」がオンのときは「場面のテーマ」と「レベル」を組み合わせ、原則5〜10問ずつ練習できます。「すべての場面」を選ぶと、レベルだけで絞れます。「ミニセット」をオフにすると、選んだレベルの全例文が表示されます。
 - 各レベルの問題を初めて開くと、例文とブロックの並びを説明します。「はじめる」で練習に入り、右上の「？」で説明を見返せます。
 - 同じ場面の「基本・今・過去」は、例文一覧から順に選べます。例文を選ぶとメニューが閉じます。
@@ -46,7 +46,7 @@ node --test tests/construction.test.cjs tests/construction-app.test.cjs tests/pr
 
 再ビルドは必ず `python scripts/build_construction_app.py` を使い（`scripts/build.py` は旧640文版のため使用禁止）、`node --test tests/construction.test.cjs tests/construction-app.test.cjs tests/progress.test.cjs` を通すこと。
 
-画面の編集元は `src/construction-template.html` と `src/construction-practice.js` です。原稿は `data/original-curriculum.txt`、レベル2・3は `data/advanced-examples.json`、生成データは `data/construction-examples.json` にあります。
+画面の構造は `src/construction-template.html`、レイアウトは `src/construction.css`、表示と操作は `src/construction-ui.js` で編集します。出題・選択肢・採点のルールは `src/construction-practice.js` にあります。原稿は `data/original-curriculum.txt`、レベル2・3は `data/advanced-examples.json`、生成データは `data/construction-examples.json` にあります。
 
 全1290文にイラストが付いています。レベル1から派生した300文は、元の場面を使い、話し手のしぐさや否定・頻度、「？」の目印を加えた個別の画像を用意しました。テーマ別の登録状況は [作画状況](docs/construction-artwork-status.md)、再開手順は [作業引き継ぎ](docs/work-continuation.md) を参照してください。画像は `assets/construction/`、対応表は `data/construction-illustrations.json`、生成に使ったプロンプトは `docs/illustration-prompts.json` に保存しています。`.review-tmp/` は確認画像の一時置き場です。
 

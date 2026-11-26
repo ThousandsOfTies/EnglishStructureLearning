@@ -1,10 +1,18 @@
 """Build the original curriculum app; never run the legacy 640-lesson builder."""
 import json
 from pathlib import Path
+import re
 import subprocess
 import sys
 
 ROOT = Path(__file__).resolve().parents[1]
+ART_ROOT = (ROOT / 'assets/construction').resolve()
+
+
+def check_image(key, filename):
+    image = (ROOT / filename).resolve()
+    if not image.is_relative_to(ART_ROOT) or not image.is_file():
+        raise ValueError(f'Invalid illustration asset for {key}: {filename}')
 
 
 def main():
@@ -15,21 +23,30 @@ def main():
     # Keep sentence hints in the illustration authoring data only.
     for q in examples.values():
         q.pop('pictureHint', None)
+    details = illustrations['details']
+    for key, detail in details.items():
+        if 'file' in detail:
+            check_image(key, detail['file'])
     for key, illustration in illustrations['images'].items():
         if key not in examples:
             raise ValueError(f'Unknown illustration example: {key}')
-        image = (ROOT / illustration['file']).resolve()
-        if not image.is_relative_to((ROOT / 'assets/construction').resolve()) or not image.is_file():
-            raise ValueError(f'Invalid illustration asset: {key}')
+        check_image(key, illustration['file'])
+        if 'detail' in illustration and illustration['detail'] not in details:
+            raise ValueError(f'Unknown illustration detail for {key}: {illustration["detail"]}')
         illustration.pop('clue', None)
-    template = (ROOT / 'src/construction-template.html').read_text(encoding='utf-8')
-    script = (ROOT / 'src/construction-practice.js').read_text(encoding='utf-8')
-    for marker in ('__CONSTRUCTION_DATA__', '__ILLUSTRATION_DATA__', '__CONSTRUCTION_SCRIPT__'):
+    src = ROOT / 'src'
+    template = (src / 'construction-template.html').read_text(encoding='utf-8')
+    sections = {
+        '__CONSTRUCTION_CSS__': (src / 'construction.css').read_text(encoding='utf-8'),
+        '__CONSTRUCTION_DATA__': json.dumps(curriculum, ensure_ascii=False).replace('</', '<\\/'),
+        '__ILLUSTRATION_DATA__': json.dumps(illustrations, ensure_ascii=False).replace('</', '<\\/'),
+        '__CONSTRUCTION_SCRIPT__': '\n'.join((src / filename).read_text(encoding='utf-8')
+                                             for filename in ('construction-practice.js', 'construction-ui.js')),
+    }
+    for marker in sections:
         if template.count(marker) != 1:
             raise ValueError(f'Expected one {marker}')
-    output = template.replace('__CONSTRUCTION_DATA__', json.dumps(curriculum, ensure_ascii=False).replace('</', '<\\/'))
-    output = output.replace('__ILLUSTRATION_DATA__', json.dumps(illustrations, ensure_ascii=False).replace('</', '<\\/'))
-    output = output.replace('__CONSTRUCTION_SCRIPT__', script)
+    output = re.sub('|'.join(sections), lambda match: sections[match[0]], template)
     (ROOT / 'index.html').write_text(output, encoding='utf-8')
     print(f'Built original curriculum app: {len(curriculum["examples"])} examples, {len(illustrations["images"])} illustrated.')
 

@@ -28,7 +28,7 @@ jobs:
         run: |
           mkdir -p _site/assets/tense
           cp index.html _site/
-          jq -r '.images[].file' data/construction-illustrations.json |
+          jq -r '(.images[], .details[]) | .file // empty' data/construction-illustrations.json |
             sort -u | xargs -d '\n' cp --parents -t _site --
           cp -r assets/tense/examples-10 _site/assets/tense/
           cp -r assets/calendar _site/assets/

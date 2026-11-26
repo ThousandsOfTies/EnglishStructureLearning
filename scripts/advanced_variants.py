@@ -10,7 +10,7 @@ from collections import Counter
 import re
 import zlib
 
-from refine_curriculum import third
+from refine_curriculum import japanese_sentence, third
 
 PER_CELL = 10
 THIRD_PERSON = {'He', 'She', 'It'}
@@ -53,7 +53,8 @@ AVOID = {
     'what': {'see', 'feel', 'turn', 'speak', 'choose', 'try', 'get', 'change', 'pull', 'push', 'lift', 'close',
              'open', 'move', 'peel', 'take', 'stop'},
     'who': {'hear'},
-    'where': {'tell', 'thank', 'buy', 'join', 'turn', 'get', 'try', 'close', 'pull'},
+    # In the bus scene, the bus already suggests the stop when the place is hidden.
+    'where': {'tell', 'thank', 'buy', 'join', 'turn', 'get', 'try', 'close', 'pull', 'wait'},
     'when': {'stand', 'sit', 'turn'},
 }
 # At most this many 'like / want / need' sentences in one cell, so actions stay the majority.
@@ -106,11 +107,7 @@ def negative(polite):
 
 
 def japanese(q, predicate, lead='', question=False, **replacements):
-    values = {role: q['slots'][role]['ja'] for role in ('S', 'time', 'place', 'P1', 'P2')}
-    values.update(replacements)
-    parameters = ('P2', 'P1') if q['frame'] == 'object-location' else ('P1', 'P2')
-    words = [values['S'], lead, *(values[role] for role in ('time', 'place', *parameters)), predicate]
-    return ''.join(words) + ('か' if question else '') + '。'
+    return japanese_sentence(q['slots'], q['frame'], lead=lead, question=question, predicate=predicate, **replacements)
 
 
 def polite(q):
@@ -280,10 +277,15 @@ def derive(rows, modal_meanings, existing):
         return make(2, 'be-not', q, blocks, japanese(q, negative(polite(q))), focus, 'not-state')
     level2 += fill('be-not', be_now + be_past, build_be_not, balance=lambda q: q['meaning'] == 'state', unique='id')
 
+    def experience_japanese(q, subject, ending, lead=''):
+        # A full Japanese sentence may name an activity that spans two cards.
+        action = q['ja'].removeprefix(q['slots']['S']['ja']).removesuffix('ことがある。')
+        return subject + lead + action + ending + '。'
+
     def build_have_not(q, _):
         predicate = q['slots']['predicate']
         blocks = [['S', 'I', '私は'], ['否定', 'have not', '〜ことがない'], ['述語', predicate['en'], predicate['ja']], *complements(q)]
-        return make(2, 'have-not', q, blocks, japanese(q, predicate['ja'] + 'ことがありません', S='私は'),
+        return make(2, 'have-not', q, blocks, experience_japanese(q, '私は', 'ことがありません'),
                     'have not：したことがない', 'not-experience')
     level2 += fill('have-not', experience, build_have_not, unique='id')
 
@@ -313,9 +315,12 @@ def derive(rows, modal_meanings, existing):
     level3 += fill('q-do', askable(routine + states), lambda q, _: yes_no(
         'q-do', ['疑問の支え', 'Does' if is_third(q) else 'Do', 'する'], ['述語', lemma(q), card(polite(q))],
         q, japanese(q, polite(q), question=True)), balance=is_third)
-    level3 += fill('q-did', askable(past), lambda q, _: yes_no(
-        'q-did', ['疑問の支え', 'Did', 'した'], ['述語', lemma(q), card(polite(root(q)))],
-        q, japanese(q, polite(q), question=True)))
+    def build_did_question(q, _):
+        label = '遊ぶ' if q['id'] == 'build-play-2-past' else card(polite(root(q)))
+        return yes_no('q-did', ['疑問の支え', 'Did', 'した'], ['述語', lemma(q), label],
+                      q, japanese(q, polite(q), question=True))
+
+    level3 += fill('q-did', askable(past), build_did_question)
     level3 += fill('q-ing', askable(ongoing), lambda q, _: yes_no(
         'q-ing', ['be', q['slots']['support']['en'].capitalize(), 'である'],
         ['述語', q['slots']['predicate']['en'], q['slots']['predicate']['ja']], q, japanese(q, polite(q), question=True)))
@@ -336,7 +341,7 @@ def derive(rows, modal_meanings, existing):
         predicate = q['slots']['predicate']
         blocks = [['support', 'Have', 'ことがある'], ['S', 'you', 'あなたは'], ['頻度', 'ever', '今までに'],
                   ['述語', predicate['en'], predicate['ja']], *complements(q)]
-        ja = japanese(q, predicate['ja'] + 'ことがあります', lead='今までに', question=True, S='あなたは')
+        ja = experience_japanese(q, 'あなたは', 'ことがありますか', lead='今までに')
         return make(3, 'q-have', q, blocks, ja, 'かどうか＋Have', 'whether', ('whether', 'truth'),
                     q['en'].replace('I have', 'You have', 1))
     level3 += fill('q-have', experience, build_have_question, unique='id')
@@ -381,7 +386,13 @@ def derive(rows, modal_meanings, existing):
 
     def who(cell, q, support, predicate):
         blocks = [[QUESTION_ROLES['S'], 'Who', QUESTION_WORDS['who']], support, predicate, *complements(q)]
-        return make(3, cell, q, blocks, japanese(q, polite(q), question=True, S='だれが'),
+        if q['group'] in {'like', 'love', 'want', 'need'}:
+            # 「だれが水が要りますか」 has two が phrases. Ask with のは instead.
+            state = predicate[2] + ('な' if q['group'] in {'like', 'love'} else '')
+            ja = japanese(q, state + 'のはだれです', question=True, S='')
+        else:
+            ja = japanese(q, polite(q), question=True, S='だれが')
+        return make(3, cell, q, blocks, ja,
                     f"who＋{support[1] or support[2]}", 'who', ('who', 'S'))
     level3 += fill('who-do', [q for q in routine + states if asks_subject(q)], lambda q, _: who(
         'who-do', q, ['support', '', 'する'], ['述語', third_form(q), card(polite(q))]))

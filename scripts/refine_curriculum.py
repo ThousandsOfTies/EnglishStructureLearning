@@ -30,7 +30,6 @@ PICTURE_PERSON_REFERENCES = {
     'build-help-3': ('彼女を', 'her'),
     'build-meet-2': ('私に', 'me'),
     'build-visit-2': ('彼のところに', 'him'),
-    'build-invite-2': ('誕生日会に男の子を', 'the boy to the birthday party'),
     'build-teach-1': ('彼に', 'him'),
     'build-teach-3': ('彼女に', 'her'),
     'build-follow-2': ('男の人に', 'the man'),
@@ -49,6 +48,12 @@ def third(verb):
     if verb.endswith('y') and verb[-2] not in 'aeiou':
         return verb[:-1] + 'ies'
     return verb + ('es' if verb.endswith(('s', 'sh', 'ch', 'x', 'o')) else 's')
+
+
+def present_be(subject):
+    if subject == 'I':
+        return 'am'
+    return 'are' if subject in {'You', 'We', 'They'} else 'is'
 
 
 def past(verb):
@@ -76,6 +81,7 @@ def ja_ongoing(text):
         return text
     for ending, replacement in [
         ('持ってきます', '持ってきています'), ('やってみます', '試しています'),
+        ('歩いていきます', '歩いて進んでいます'),
         ('しまっておきます', 'しまっています'), ('ついていきます', 'ついて行っています'),
         ('行きます', '行っています'), ('いきます', 'いっています'),
         ('来ます', '来ています'), ('起きます', '起きています'),
@@ -89,10 +95,11 @@ def ja_ongoing(text):
     raise ValueError(f'No ongoing form: {text}')
 
 
-def japanese_sentence(values, frame):
-    # Keep words for place before the object in the Japanese prompts.
-    parameters = ('P2', 'P1') if frame == 'object-location' else ('P1', 'P2')
-    return ''.join(values[k]['ja'] for k in ('S', 'time', 'place', *parameters, 'predicate')) + '。'
+def japanese_sentence(values, frame, *, lead='', question=False, **replacements):
+    parameters = ('P2', 'P1') if frame in {'object-location', 'object-companion'} else ('P1', 'P2')
+    subject = replacements.get('S', values['S']['ja'])
+    parts = (replacements.get(role, values[role]['ja']) for role in ('time', 'place', *parameters, 'predicate'))
+    return ''.join((subject, lead, *parts, 'か' if question else '', '。'))
 
 
 def rebuild(q):
@@ -177,8 +184,7 @@ def refine(rows, groups):
                         rest = {'students': 'a student', 'helpers': 'a helper', 'teammates': 'a teammate'}.get(rest, rest)
                 else:
                     rest = 'a teammate' if rest == 'teammates' else rest
-            be = 'am' if en_s == 'I' else 'are' if en_s in {'You', 'We', 'They'} else 'is'
-            q['slots']['predicate']['en'] = be + ' ' + rest
+            q['slots']['predicate']['en'] = present_be(en_s) + ' ' + rest
             q['meaning'] = 'state'
         else:
             verb = q['group']
@@ -210,8 +216,8 @@ def refine(rows, groups):
             changed['id'] += '-past'
             changed['meaning'] = 'past'
             changed['statePredicate'] = True
-            old_be, rest = changed['slots']['predicate']['en'].split(' ', 1)
-            changed['slots']['predicate']['en'] = ('were' if en_s in {'You', 'We', 'They'} else 'was') + ' ' + rest
+            be, rest = changed['slots']['predicate']['en'].split(' ', 1)
+            changed['slots']['predicate']['en'] = ('were' if be == 'are' else 'was') + ' ' + rest
             ja = changed['slots']['predicate']['ja']
             if ja.endswith('しいです'):
                 changed['slots']['predicate']['ja'] = ja[:-4] + 'しかったです'
@@ -233,8 +239,7 @@ def refine(rows, groups):
             verb = q['group']
             rest = q['slots']['predicate']['en'].partition(' ')[2]
             if mode == 'ongoing':
-                be = 'am' if en_s == 'I' else 'are' if en_s in {'You', 'We', 'They'} else 'is'
-                pred = be + ' ' + ing(verb)
+                pred = present_be(en_s) + ' ' + ing(verb)
                 changed['slots']['predicate']['ja'] = ja_ongoing(q['slots']['predicate']['ja'])
                 if verb == 'go':
                     changed['slots']['predicate']['ja'] = '向かっています'
@@ -287,8 +292,7 @@ def pronoun_examples():
 
     for i, (subject, reference) in enumerate(zip(subjects, refs), 1):
         en = subject[1]
-        be = 'am' if en == 'I' else 'is' if en in {'He', 'She', 'It'} else 'are'
-        add('subject', i, subject, ('持っています', be + ' holding'), ('赤いボールを', 'a red ball'),
+        add('subject', i, subject, ('持っています', present_be(en) + ' holding'), ('赤いボールを', 'a red ball'),
             f'ボールを持つのは{reference}。人物が分かるよう、服と目印をはっきり描く。', en)
 
     objects = [('私を', 'me'), ('あなたを', 'you'), ('彼を', 'him'), ('彼女を', 'her'),
@@ -300,10 +304,8 @@ def pronoun_examples():
 
     possessives = POSSESSIVES + ['your']
     for i, (subject, owner, reference) in enumerate(zip(subjects, possessives, refs), 1):
-        en = subject[1]
-        be = 'am' if en == 'I' else 'is' if en in {'He', 'She', 'It'} else 'are'
         plural = i in {6, 7, 8}
-        add('possessive', i, subject, ('運んでいます', be + ' carrying'),
+        add('possessive', i, subject, ('運んでいます', present_be(subject[1]) + ' carrying'),
             ('自分たちのかばんを' if plural else '自分のかばんを', owner + (' bags' if plural else ' bag')),
             f'かばんの持ち主は{reference}。人物・かばんに同じ色の名札を付け、単なる持ち運びと所有を区別する。', owner)
 
@@ -318,9 +320,7 @@ def pronoun_examples():
 
     reflexives = ['myself', 'yourself', 'himself', 'herself', 'itself', 'ourselves', 'themselves', 'yourselves']
     for i, (subject, reflexive, reference) in enumerate(zip(subjects, reflexives, refs), 1):
-        en = subject[1]
-        be = 'am' if en == 'I' else 'is' if en in {'He', 'She', 'It'} else 'are'
-        add('reflexive', i, subject, ('絵にかいています', be + ' drawing'),
+        add('reflexive', i, subject, ('絵にかいています', present_be(subject[1]) + ' drawing'),
             ('自分たちを' if i in {6, 7, 8} else '自分を', reflexive),
             f'絵をかくのは{reference}。描かれている相手も同じ本人（または同じグループ）。鏡と描きかけの絵で対応を示す。', reflexive)
         rows[-1]['extension'] = True
