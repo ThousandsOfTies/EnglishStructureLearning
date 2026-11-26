@@ -16883,6 +16883,38 @@
       "reference": "assets/construction/build-be-adjective-3.png",
       "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
       "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-37",
+      "file": "assets/construction/level3-37-centered.webp",
+      "reference": "assets/construction/level3-37.png",
+      "layoutReference": "assets/construction/build-read-3-ongoing.png",
+      "generationMethod": "Composed the existing event panel and approved portraits.",
+      "prompt": "Match the Level 1 progressive layout. Use four equal-height, outlined rectangles to the left of the speech bubble. Center the speaker beneath the bubble and point its tail straight down. Retain the illustrated event and its question cue."
+    },
+    {
+      "exampleId": "level3-38",
+      "file": "assets/construction/level3-38-centered.webp",
+      "reference": "assets/construction/level3-38.png",
+      "layoutReference": "assets/construction/build-read-3-ongoing.png",
+      "generationMethod": "Composed the existing event panel and approved portraits.",
+      "prompt": "Match the Level 1 progressive layout. Use four equal-height, outlined rectangles to the left of the speech bubble. Center the speaker beneath the bubble and point its tail straight down. Retain the illustrated event and its question cue."
+    },
+    {
+      "exampleId": "level3-what-ing-clean-1-ongoing",
+      "file": "assets/construction/derived/level3-what-ing-clean-1-ongoing-centered.webp",
+      "reference": "assets/construction/derived/level3-what-ing-clean-1-ongoing.webp",
+      "layoutReference": "assets/construction/build-read-3-ongoing.png",
+      "generationMethod": "Composed the existing event panel and approved portraits.",
+      "prompt": "Match the Level 1 progressive layout. Use four equal-height, outlined rectangles to the left of the speech bubble. Center the speaker beneath the bubble and point its tail straight down. Retain the illustrated event and its question cue."
+    },
+    {
+      "exampleId": "level3-35",
+      "file": "assets/construction/level3-35-centered.webp",
+      "reference": "assets/construction/level3-35.png",
+      "layoutReference": "assets/construction/build-read-3-ongoing.png",
+      "generationMethod": "Composed the existing event panel and approved portraits.",
+      "prompt": "Match the Level 1 progressive layout. Use four equal-height, outlined rectangles to the left of the speech bubble. Center the speaker beneath the bubble and point its tail straight down. Retain the illustrated event and its question cue."
     }
   ],
   "sceneAtlases": {

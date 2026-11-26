@@ -33,32 +33,33 @@ test('unused slots stay empty and misplaced cards cannot pass', () => {
   assert.equal(app.isCorrect(q, app.place(q, wrong, 0, 'S')), true);
 });
 
-test('subject unlocks predicate and both unlock every remaining slot', () => {
+test('subject unlocks predicate and both unlock the remaining slots used by the sentence', () => {
   const q = get('build-go-1');
   assert.deepEqual(app.enabledTargets(q, []), ['S']);
   const core = ['S', 'support', 'predicate'];
   assert.deepEqual(app.enabledTargets(q, ['S']), core);
   assert.deepEqual(app.enabledTargets(q, ['S', 'predicate']), core);
-  assert.deepEqual(app.enabledTargets(q, core), app.roles);
+  assert.deepEqual(app.enabledTargets(q, core), [...core, 'P1', 'time']);
   assert.deepEqual(app.enabledTargets(q, ['predicate']), ['S']);
   const be = get('build-be-noun-1');
   assert.deepEqual(app.enabledTargets(be, ['S', 'predicate']), core);
   assert.deepEqual(app.enabledTargets(be, ['S', 'support']), core);
-  assert.deepEqual(app.enabledTargets(be, core), app.roles);
+  assert.deepEqual(app.enabledTargets(be, core), core);
 });
 
 test('level two unlocks by grammatical role and relocks after clearing a prerequisite', () => {
   const cases = [
-    ['level2-01', '0', ['1', '2']],
-    ['level2-06', '0', ['1', '2']],
+    ['level2-01', ['3', '4']],
+    ['level2-06', ['3']],
   ];
-  for (const [id, subject, predicates] of cases) {
+  for (const [id, complements] of cases) {
     const q = get(id);
+    const subject = '0', predicates = ['1', '2'];
     const core = [subject, ...predicates];
     assert.deepEqual(app.enabledTargets(q, []), [subject], id);
     assert.deepEqual(app.enabledTargets(q, [subject]), core, id);
     assert.deepEqual(app.enabledTargets(q, core.slice(0, -1)), core, id);
-    assert.deepEqual(app.enabledTargets(q, core), app.targetsFor(q), id);
+    assert.deepEqual(app.enabledTargets(q, core), [...core, ...complements], id);
     assert.deepEqual(app.enabledTargets(q, predicates), [subject], id);
   }
 });
@@ -72,7 +73,7 @@ test('level three starts with the first spoken block and unlocks the rest in Eng
       assert.deepEqual(app.enabledTargets(q, required.slice(0, i)), required.slice(0, i + 1), q.id);
       assert.deepEqual(app.enabledTargets(q, targets.filter(id => id !== required[i])), required.slice(0, i + 1), q.id);
     }
-    assert.deepEqual(app.enabledTargets(q, required), targets, q.id);
+    assert.deepEqual(app.enabledTargets(q, required), required, q.id);
 
     const roles = targets.map(id => app.targetRole(q, id));
     if (!q.question) {
@@ -89,6 +90,21 @@ test('level three starts with the first spoken block and unlocks the rest in Eng
       assert.ok(app.isSupportRole(roles[1]), q.id);
       assert.equal(roles[2], 'S', q.id);
     }
+  }
+});
+
+test('only slots with cards can be enabled across the whole curriculum', () => {
+  for (const q of data.examples) {
+    const required = app.cardsFor(q).map((_, index) => app.expectedTarget(q, index));
+    const filled = [];
+    while (filled.length < required.length) {
+      const enabled = app.enabledTargets(q, filled);
+      assert.ok(enabled.every(id => required.includes(id)), q.id);
+      const next = enabled.find(id => !filled.includes(id));
+      assert.notEqual(next, undefined, q.id);
+      filled.push(next);
+    }
+    assert.deepEqual(new Set(app.enabledTargets(q, app.targetsFor(q))), new Set(required), q.id);
   }
 });
 
@@ -132,7 +148,7 @@ test('multiple level two supports unlock in order and use the Level 1 label for 
       assert.deepEqual(app.enabledTargets(q, ordered.slice(0, i)), ordered.slice(0, i + 1), id);
     }
     assert.deepEqual(app.enabledTargets(q, ['0', ...ordered.slice(2)]), ['0', '1'], id);
-    assert.deepEqual(app.enabledTargets(q, ordered.slice(0, count + 2)), app.targetsFor(q), id);
+    assert.deepEqual(app.enabledTargets(q, ordered.slice(0, count + 2)), ordered, id);
     assert.deepEqual(app.choicesFor(data, q, String(count)), ['である'], id);
     assert.deepEqual(q.blocks[count], ['be', 'be', 'である'], id);
   }

@@ -6464,11 +6464,12 @@
       "questionMarkInArt": true
     },
     "level3-35": {
-      "file": "assets/construction/level3-35.png",
+      "file": "assets/construction/level3-35-centered.webp",
       "alt": "左の「？」の枠から、右の泣いている女の子の絵へ矢印が伸びています。",
       "clue": "",
       "review": "結果の絵を見せ、泣いている理由を疑問符で隠した。",
-      "questionMarkInArt": true
+      "questionMarkInArt": true,
+      "revision": "centered-1"
     },
     "level3-36": {
       "file": "assets/construction/level3-36.png",
@@ -6478,14 +6479,15 @@
       "questionMarkInArt": true
     },
     "level3-37": {
-      "file": "assets/construction/level3-37.png",
+      "file": "assets/construction/level3-37-centered.webp",
       "alt": "男の子が女の子に話しかけています。吹き出しの中では、同じ女の子が開いた本を読んでいます。",
       "clue": "",
       "review": "読んでいる姿に進行形の4本線を添え、話し手のそばに「かどうか」の疑問符を表示する。",
       "questionMark": [
-        10,
-        40
-      ]
+        42,
+        69
+      ],
+      "revision": "centered-1"
     },
     "level2-28": {
       "file": "assets/construction/level2-28.png",
@@ -6512,11 +6514,12 @@
       "review": "話し手の表情と汗で might を示し、吹き出しの中に話し手を含む二人を描いた。"
     },
     "level3-38": {
-      "file": "assets/construction/level3-38.png",
+      "file": "assets/construction/level3-38-centered.webp",
       "alt": "赤い服の女の子が話しています。吹き出しの中の紫の服の女の子は、「？」が描かれた物を両手で持っています。",
       "clue": "",
       "review": "持つ動作を見せ、何を持つかは疑問符で隠した。",
-      "questionMarkInArt": true
+      "questionMarkInArt": true,
+      "revision": "centered-1"
     },
     "level3-39": {
       "file": "assets/construction/level3-39.png",
@@ -6827,70 +6830,80 @@
       "alt": "彼らは今ベンチに座っているかもしれません。",
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
-      "source": "assets/construction/build-sit-1-ongoing-rect.png"
+      "source": "assets/construction/build-sit-1-ongoing-rect.png",
+      "revision": "centered-1"
     },
     "level2-might-ing-start-2-ongoing": {
       "file": "assets/construction/derived/level2-might-ing-start-2-ongoing.webp",
       "alt": "彼らは今家で宿題を始めているかもしれません。",
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
-      "source": "assets/construction/build-start-2-ongoing.png"
+      "source": "assets/construction/build-start-2-ongoing.png",
+      "revision": "centered-1"
     },
     "level2-might-ing-wash-1-ongoing": {
       "file": "assets/construction/derived/level2-might-ing-wash-1-ongoing.webp",
       "alt": "彼女は今家で手を洗っているかもしれません。",
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
-      "source": "assets/construction/build-wash-1-ongoing.png"
+      "source": "assets/construction/build-wash-1-ongoing.png",
+      "revision": "centered-1"
     },
     "level2-might-ing-count-1-ongoing": {
       "file": "assets/construction/derived/level2-might-ing-count-1-ongoing.webp",
       "alt": "それは今庭で星を数えているかもしれません。",
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
-      "source": "assets/construction/build-count-1-ongoing.png"
+      "source": "assets/construction/build-count-1-ongoing.png",
+      "revision": "centered-1"
     },
     "level2-might-ing-answer-2-ongoing": {
       "file": "assets/construction/derived/level2-might-ing-answer-2-ongoing.webp",
       "alt": "彼らは今学校でかんたんな質問に答えているかもしれません。",
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
-      "source": "assets/construction/build-answer-2-ongoing.png"
+      "source": "assets/construction/build-answer-2-ongoing.png",
+      "revision": "centered-1"
     },
     "level2-might-ing-close-1-ongoing": {
       "file": "assets/construction/derived/level2-might-ing-close-1-ongoing.webp",
       "alt": "彼らは今家で本を閉じているかもしれません。",
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
-      "source": "assets/construction/build-close-1-ongoing.png"
+      "source": "assets/construction/build-close-1-ongoing.png",
+      "revision": "centered-1"
     },
     "level2-might-ing-push-1-ongoing": {
       "file": "assets/construction/derived/level2-might-ing-push-1-ongoing.webp",
       "alt": "彼は今家で青いボタンを押しているかもしれません。",
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
-      "source": "assets/construction/build-push-1-ongoing.png"
+      "source": "assets/construction/build-push-1-ongoing.png",
+      "revision": "centered-1"
     },
     "level2-might-ing-give-2-ongoing": {
       "file": "assets/construction/derived/level2-might-ing-give-2-ongoing.webp",
       "alt": "彼らは今家で友だちにカードをあげているかもしれません。",
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
-      "source": "assets/construction/build-give-2-ongoing.png"
+      "source": "assets/construction/build-give-2-ongoing.png",
+      "revision": "centered-1"
     },
     "level2-might-ing-ask-1-ongoing": {
       "file": "assets/construction/derived/level2-might-ing-ask-1-ongoing.webp",
       "alt": "彼は今学校で先生に質問をしているかもしれません。",
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
-      "source": "assets/construction/build-ask-1-ongoing.png"
+      "source": "assets/construction/build-ask-1-ongoing.png",
+      "revision": "centered-1"
     },
     "level2-might-ing-use-2-ongoing": {
       "file": "assets/construction/derived/level2-might-ing-use-2-ongoing.webp",
       "alt": "彼女は今家で定規を使っているかもしれません。",
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
-      "source": "assets/construction/build-use-2-ongoing.png"
+      "source": "assets/construction/build-use-2-ongoing.png",
+      "revision": "centered-1"
     },
     "level2-not-stand-3": {
       "file": "assets/construction/derived/level2-not-stand-3.webp",
@@ -7037,70 +7050,80 @@
       "alt": "私は今公園に向かっていません。",
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
-      "source": "assets/construction/build-go-1-ongoing-rect.png"
+      "source": "assets/construction/build-go-1-ongoing-rect.png",
+      "revision": "centered-1"
     },
     "level2-not-ing-jump-2-ongoing": {
       "file": "assets/construction/derived/level2-not-ing-jump-2-ongoing.webp",
       "alt": "彼らは今公園でロープをとびこえていません。",
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
-      "source": "assets/construction/build-jump-2-ongoing-rect.png"
+      "source": "assets/construction/build-jump-2-ongoing-rect.png",
+      "revision": "centered-1"
     },
     "level2-not-ing-ride-1-ongoing": {
       "file": "assets/construction/derived/level2-not-ing-ride-1-ongoing.webp",
       "alt": "私は今公園で自転車に乗っていません。",
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
-      "source": "assets/construction/build-ride-1-ongoing-rect.png"
+      "source": "assets/construction/build-ride-1-ongoing-rect.png",
+      "revision": "centered-1"
     },
     "level2-not-ing-climb-2-ongoing": {
       "file": "assets/construction/derived/level2-not-ing-climb-2-ongoing.webp",
       "alt": "彼は今公園で木に登っていません。",
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
-      "source": "assets/construction/build-climb-2-ongoing-rect.png"
+      "source": "assets/construction/build-climb-2-ongoing-rect.png",
+      "revision": "centered-1"
     },
     "level2-not-ing-sleep-1-ongoing": {
       "file": "assets/construction/derived/level2-not-ing-sleep-1-ongoing.webp",
       "alt": "私たちは今ベッドでねていません。",
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
-      "source": "assets/construction/build-sleep-1-ongoing.png"
+      "source": "assets/construction/build-sleep-1-ongoing.png",
+      "revision": "centered-1"
     },
     "level2-not-ing-color-1-ongoing": {
       "file": "assets/construction/derived/level2-not-ing-color-1-ongoing.webp",
       "alt": "あなたは今学校で花の絵に色をぬっていません。",
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
-      "source": "assets/construction/build-color-1-ongoing.png"
+      "source": "assets/construction/build-color-1-ongoing.png",
+      "revision": "centered-1"
     },
     "level2-not-ing-look-3-ongoing": {
       "file": "assets/construction/derived/level2-not-ing-look-3-ongoing.webp",
       "alt": "それは今家で地図を見ていません。",
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
-      "source": "assets/construction/build-look-3-ongoing.png"
+      "source": "assets/construction/build-look-3-ongoing.png",
+      "revision": "centered-1"
     },
     "level2-not-ing-lift-3-ongoing": {
       "file": "assets/construction/derived/level2-not-ing-lift-3-ongoing.webp",
       "alt": "彼らは今家でふたを持ち上げていません。",
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
-      "source": "assets/construction/build-lift-3-ongoing.png"
+      "source": "assets/construction/build-lift-3-ongoing.png",
+      "revision": "centered-1"
     },
     "level2-not-ing-send-3-ongoing": {
       "file": "assets/construction/derived/level2-not-ing-send-3-ongoing.webp",
       "alt": "彼は今家でお父さんに写真を送っていません。",
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
-      "source": "assets/construction/build-send-3-ongoing.png"
+      "source": "assets/construction/build-send-3-ongoing.png",
+      "revision": "centered-1"
     },
     "level2-not-ing-invite-3-ongoing": {
       "file": "assets/construction/derived/level2-not-ing-invite-3-ongoing.webp",
       "alt": "彼女は今家で誕生日会におとなりさんを招いていません。",
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
-      "source": "assets/construction/build-invite-3-ongoing.png"
+      "source": "assets/construction/build-invite-3-ongoing.png",
+      "revision": "centered-1"
     },
     "level2-be-not-be-noun-1": {
       "file": "assets/construction/derived/level2-be-not-be-noun-1.webp",
@@ -7577,10 +7600,11 @@
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
       "questionMark": [
-        43,
-        64
+        42,
+        69
       ],
-      "source": "assets/construction/build-swim-1-ongoing-rect.png"
+      "source": "assets/construction/build-swim-1-ongoing-rect.png",
+      "revision": "centered-1"
     },
     "level3-q-ing-stop-2-ongoing": {
       "file": "assets/construction/derived/level3-q-ing-stop-2-ongoing.webp",
@@ -7588,10 +7612,11 @@
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
       "questionMark": [
-        50,
-        64
+        42,
+        69
       ],
-      "source": "assets/construction/build-stop-2-ongoing.png"
+      "source": "assets/construction/build-stop-2-ongoing.png",
+      "revision": "centered-1"
     },
     "level3-q-ing-eat-1-ongoing": {
       "file": "assets/construction/derived/level3-q-ing-eat-1-ongoing.webp",
@@ -7599,10 +7624,11 @@
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
       "questionMark": [
-        50,
-        64
+        42,
+        69
       ],
-      "source": "assets/construction/build-eat-1-ongoing.png"
+      "source": "assets/construction/build-eat-1-ongoing.png",
+      "revision": "centered-1"
     },
     "level3-q-ing-play-2-ongoing": {
       "file": "assets/construction/derived/level3-q-ing-play-2-ongoing.webp",
@@ -7610,10 +7636,11 @@
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
       "questionMark": [
-        50,
-        64
+        42,
+        69
       ],
-      "source": "assets/construction/build-play-2-ongoing.png"
+      "source": "assets/construction/build-play-2-ongoing.png",
+      "revision": "centered-1"
     },
     "level3-q-ing-dance-2-ongoing": {
       "file": "assets/construction/derived/level3-q-ing-dance-2-ongoing.webp",
@@ -7621,10 +7648,11 @@
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
       "questionMark": [
-        43,
-        64
+        42,
+        69
       ],
-      "source": "assets/construction/build-dance-2-ongoing.png"
+      "source": "assets/construction/build-dance-2-ongoing.png",
+      "revision": "centered-1"
     },
     "level3-q-ing-touch-3-ongoing": {
       "file": "assets/construction/derived/level3-q-ing-touch-3-ongoing.webp",
@@ -7632,10 +7660,11 @@
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
       "questionMark": [
-        50,
-        64
+        42,
+        69
       ],
-      "source": "assets/construction/build-touch-3-ongoing.png"
+      "source": "assets/construction/build-touch-3-ongoing.png",
+      "revision": "centered-1"
     },
     "level3-q-ing-take-3-ongoing": {
       "file": "assets/construction/derived/level3-q-ing-take-3-ongoing.webp",
@@ -7643,10 +7672,11 @@
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
       "questionMark": [
-        50,
-        64
+        42,
+        69
       ],
-      "source": "assets/construction/build-take-3-ongoing.png"
+      "source": "assets/construction/build-take-3-ongoing.png",
+      "revision": "centered-1"
     },
     "level3-q-ing-show-2-ongoing": {
       "file": "assets/construction/derived/level3-q-ing-show-2-ongoing.webp",
@@ -7654,10 +7684,11 @@
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
       "questionMark": [
-        50,
-        64
+        42,
+        69
       ],
-      "source": "assets/construction/build-show-2-ongoing.png"
+      "source": "assets/construction/build-show-2-ongoing.png",
+      "revision": "centered-1"
     },
     "level3-q-ing-use-2-ongoing": {
       "file": "assets/construction/derived/level3-q-ing-use-2-ongoing.webp",
@@ -7665,10 +7696,11 @@
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
       "questionMark": [
-        50,
-        64
+        42,
+        69
       ],
-      "source": "assets/construction/build-use-2-ongoing.png"
+      "source": "assets/construction/build-use-2-ongoing.png",
+      "revision": "centered-1"
     },
     "level3-q-ing-clean-2-ongoing": {
       "file": "assets/construction/derived/level3-q-ing-clean-2-ongoing.webp",
@@ -7676,10 +7708,11 @@
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
       "questionMark": [
-        50,
-        64
+        42,
+        69
       ],
-      "source": "assets/construction/build-clean-2-ongoing.png"
+      "source": "assets/construction/build-clean-2-ongoing.png",
+      "revision": "centered-1"
     },
     "level3-q-be-be-noun-2": {
       "file": "assets/construction/derived/level3-q-be-be-noun-2.webp",
@@ -8240,7 +8273,8 @@
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
       "questionMarkInArt": true,
-      "source": "assets/construction/build-eat-1-ongoing.png"
+      "source": "assets/construction/build-eat-1-ongoing.png",
+      "revision": "centered-1"
     },
     "level3-what-ing-taste-1-ongoing": {
       "file": "assets/construction/derived/level3-what-ing-taste-1-ongoing.webp",
@@ -8248,7 +8282,8 @@
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
       "questionMarkInArt": true,
-      "source": "assets/construction/build-taste-1-ongoing.png"
+      "source": "assets/construction/build-taste-1-ongoing.png",
+      "revision": "centered-1"
     },
     "level3-what-ing-mix-1-ongoing": {
       "file": "assets/construction/derived/level3-what-ing-mix-1-ongoing.webp",
@@ -8256,7 +8291,8 @@
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
       "questionMarkInArt": true,
-      "source": "assets/construction/build-mix-1-past.png"
+      "source": "assets/construction/build-mix-1-past.png",
+      "revision": "centered-1"
     },
     "level3-what-ing-wash-2-ongoing": {
       "file": "assets/construction/derived/level3-what-ing-wash-2-ongoing.webp",
@@ -8264,7 +8300,8 @@
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
       "questionMarkInArt": true,
-      "source": "assets/construction/build-wash-2-ongoing.png"
+      "source": "assets/construction/build-wash-2-ongoing.png",
+      "revision": "centered-1"
     },
     "level3-what-ing-read-3-ongoing": {
       "file": "assets/construction/derived/level3-what-ing-read-3-ongoing.webp",
@@ -8272,7 +8309,8 @@
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
       "questionMarkInArt": true,
-      "source": "assets/construction/build-read-3.png"
+      "source": "assets/construction/build-read-3.png",
+      "revision": "centered-1"
     },
     "level3-what-ing-write-1-ongoing": {
       "file": "assets/construction/derived/level3-what-ing-write-1-ongoing.webp",
@@ -8280,7 +8318,8 @@
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
       "questionMarkInArt": true,
-      "source": "assets/construction/build-write-1-ongoing.png"
+      "source": "assets/construction/build-write-1-ongoing.png",
+      "revision": "centered-1"
     },
     "level3-what-ing-learn-1-ongoing": {
       "file": "assets/construction/derived/level3-what-ing-learn-1-ongoing.webp",
@@ -8288,7 +8327,8 @@
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
       "questionMarkInArt": true,
-      "source": "assets/construction/build-learn-1-ongoing.png"
+      "source": "assets/construction/build-learn-1-ongoing.png",
+      "revision": "centered-1"
     },
     "level3-what-ing-watch-1-ongoing": {
       "file": "assets/construction/derived/level3-what-ing-watch-1-ongoing.webp",
@@ -8296,7 +8336,8 @@
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
       "questionMarkInArt": true,
-      "source": "assets/construction/build-watch-1-past.png"
+      "source": "assets/construction/build-watch-1-past.png",
+      "revision": "centered-1"
     },
     "level3-what-ing-make-2-ongoing": {
       "file": "assets/construction/derived/level3-what-ing-make-2-ongoing.webp",
@@ -8304,15 +8345,17 @@
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
       "questionMarkInArt": true,
-      "source": "assets/construction/build-make-2.png"
+      "source": "assets/construction/build-make-2.png",
+      "revision": "centered-1"
     },
     "level3-what-ing-clean-1-ongoing": {
-      "file": "assets/construction/derived/level3-what-ing-clean-1-ongoing.webp",
+      "file": "assets/construction/derived/level3-what-ing-clean-1-ongoing-centered.webp",
       "alt": "あなたは今家で何をそうじしていますか。 「？」が付いた場所に、たずねている物の手がかりがあります。",
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
       "questionMarkInArt": true,
-      "source": "assets/construction/build-clean-1-ongoing.png"
+      "source": "assets/construction/build-clean-1-ongoing.png",
+      "revision": "centered-1"
     },
     "level3-what-can-drink-2": {
       "file": "assets/construction/derived/level3-what-can-drink-2.webp",
@@ -8544,7 +8587,8 @@
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
       "questionMarkInArt": true,
-      "source": "assets/construction/build-walk-1-ongoing-rect.png"
+      "source": "assets/construction/build-walk-1-ongoing-rect.png",
+      "revision": "centered-1"
     },
     "level3-who-ing-sleep-2-ongoing": {
       "file": "assets/construction/derived/level3-who-ing-sleep-2-ongoing.webp",
@@ -8552,7 +8596,8 @@
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
       "questionMarkInArt": true,
-      "source": "assets/construction/build-sleep-2-ongoing.png"
+      "source": "assets/construction/build-sleep-2-ongoing.png",
+      "revision": "centered-1"
     },
     "level3-who-ing-rest-1-ongoing": {
       "file": "assets/construction/derived/level3-who-ing-rest-1-ongoing.webp",
@@ -8560,7 +8605,8 @@
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
       "questionMarkInArt": true,
-      "source": "assets/construction/build-rest-1-ongoing.png"
+      "source": "assets/construction/build-rest-1-ongoing.png",
+      "revision": "centered-1"
     },
     "level3-who-ing-peel-1-ongoing": {
       "file": "assets/construction/derived/level3-who-ing-peel-1-ongoing.webp",
@@ -8568,7 +8614,8 @@
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
       "questionMarkInArt": true,
-      "source": "assets/construction/build-peel-1-ongoing.png"
+      "source": "assets/construction/build-peel-1-ongoing.png",
+      "revision": "centered-1"
     },
     "level3-who-ing-answer-1-ongoing": {
       "file": "assets/construction/derived/level3-who-ing-answer-1-ongoing.webp",
@@ -8576,7 +8623,8 @@
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
       "questionMarkInArt": true,
-      "source": "assets/construction/build-answer-1-ongoing.png"
+      "source": "assets/construction/build-answer-1-ongoing.png",
+      "revision": "centered-1"
     },
     "level3-who-ing-pull-2-ongoing": {
       "file": "assets/construction/derived/level3-who-ing-pull-2-ongoing.webp",
@@ -8584,7 +8632,8 @@
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
       "questionMarkInArt": true,
-      "source": "assets/construction/build-pull-2-ongoing.png"
+      "source": "assets/construction/build-pull-2-ongoing.png",
+      "revision": "centered-1"
     },
     "level3-who-ing-get-1-ongoing": {
       "file": "assets/construction/derived/level3-who-ing-get-1-ongoing.webp",
@@ -8592,7 +8641,8 @@
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
       "questionMarkInArt": true,
-      "source": "assets/construction/build-get-1-ongoing.png"
+      "source": "assets/construction/build-get-1-ongoing.png",
+      "revision": "centered-1"
     },
     "level3-who-ing-bring-3-ongoing": {
       "file": "assets/construction/derived/level3-who-ing-bring-3-ongoing.webp",
@@ -8600,7 +8650,8 @@
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
       "questionMarkInArt": true,
-      "source": "assets/construction/build-bring-3-ongoing.png"
+      "source": "assets/construction/build-bring-3-ongoing.png",
+      "revision": "centered-1"
     },
     "level3-who-ing-teach-1-ongoing": {
       "file": "assets/construction/derived/level3-who-ing-teach-1-ongoing.webp",
@@ -8608,7 +8659,8 @@
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
       "questionMarkInArt": true,
-      "source": "assets/construction/build-teach-1-ongoing.png"
+      "source": "assets/construction/build-teach-1-ongoing.png",
+      "revision": "centered-1"
     },
     "level3-who-ing-pay-1-ongoing": {
       "file": "assets/construction/derived/level3-who-ing-pay-1-ongoing.webp",
@@ -8616,7 +8668,8 @@
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
       "questionMarkInArt": true,
-      "source": "assets/construction/build-pay-1-ongoing.png"
+      "source": "assets/construction/build-pay-1-ongoing.png",
+      "revision": "centered-1"
     },
     "level3-two-who-must-be-adjective-3": {
       "file": "assets/construction/derived/level3-two-who-must-be-adjective-3.webp",
@@ -8800,7 +8853,8 @@
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
       "questionMarkInArt": true,
-      "source": "assets/construction/build-ride-3-ongoing-rect.png"
+      "source": "assets/construction/build-ride-3-ongoing-rect.png",
+      "revision": "centered-1"
     },
     "level3-where-ing-climb-2-ongoing": {
       "file": "assets/construction/derived/level3-where-ing-climb-2-ongoing.webp",
@@ -8808,7 +8862,8 @@
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
       "questionMarkInArt": true,
-      "source": "assets/construction/build-climb-2-ongoing-rect.png"
+      "source": "assets/construction/build-climb-2-ongoing-rect.png",
+      "revision": "centered-1"
     },
     "level3-where-ing-color-1-ongoing": {
       "file": "assets/construction/derived/level3-where-ing-color-1-ongoing.webp",
@@ -8816,7 +8871,8 @@
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
       "questionMarkInArt": true,
-      "source": "assets/construction/build-color-1-ongoing.png"
+      "source": "assets/construction/build-color-1-ongoing.png",
+      "revision": "centered-1"
     },
     "level3-where-ing-look-1-ongoing": {
       "file": "assets/construction/derived/level3-where-ing-look-1-ongoing.webp",
@@ -8824,7 +8880,8 @@
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
       "questionMarkInArt": true,
-      "source": "assets/construction/build-look-1-ongoing.png"
+      "source": "assets/construction/build-look-1-ongoing.png",
+      "revision": "centered-1"
     },
     "level3-where-ing-lift-1-ongoing": {
       "file": "assets/construction/derived/level3-where-ing-lift-1-ongoing.webp",
@@ -8832,7 +8889,8 @@
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
       "questionMarkInArt": true,
-      "source": "assets/construction/build-lift-1-ongoing.png"
+      "source": "assets/construction/build-lift-1-ongoing.png",
+      "revision": "centered-1"
     },
     "level3-where-ing-carry-3-ongoing": {
       "file": "assets/construction/derived/level3-where-ing-carry-3-ongoing.webp",
@@ -8840,7 +8898,8 @@
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
       "questionMarkInArt": true,
-      "source": "assets/construction/build-carry-3-ongoing.png"
+      "source": "assets/construction/build-carry-3-ongoing.png",
+      "revision": "centered-1"
     },
     "level3-where-ing-give-2-ongoing": {
       "file": "assets/construction/derived/level3-where-ing-give-2-ongoing.webp",
@@ -8848,7 +8907,8 @@
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
       "questionMarkInArt": true,
-      "source": "assets/construction/build-give-2-past.png"
+      "source": "assets/construction/build-give-2-past.png",
+      "revision": "centered-1"
     },
     "level3-where-ing-ask-2-ongoing": {
       "file": "assets/construction/derived/level3-where-ing-ask-2-ongoing.webp",
@@ -8856,7 +8916,8 @@
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
       "questionMarkInArt": true,
-      "source": "assets/construction/build-ask-2-ongoing.png"
+      "source": "assets/construction/build-ask-2-ongoing.png",
+      "revision": "centered-1"
     },
     "level3-where-ing-choose-1-ongoing": {
       "file": "assets/construction/derived/level3-where-ing-choose-1-ongoing.webp",
@@ -8864,7 +8925,8 @@
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
       "questionMarkInArt": true,
-      "source": "assets/construction/build-choose-1-ongoing.png"
+      "source": "assets/construction/build-choose-1-ongoing.png",
+      "revision": "centered-1"
     },
     "level3-where-ing-check-3-ongoing": {
       "file": "assets/construction/derived/level3-where-ing-check-3-ongoing.webp",
@@ -8872,7 +8934,8 @@
       "clue": "",
       "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
       "questionMarkInArt": true,
-      "source": "assets/construction/build-check-3-ongoing.png"
+      "source": "assets/construction/build-check-3-ongoing.png",
+      "revision": "centered-1"
     },
     "level3-two-where-must-be-adjective-3": {
       "file": "assets/construction/derived/level3-two-where-must-be-adjective-3.webp",

@@ -1,5 +1,5 @@
 // Compose separate practice images from the approved Level 1 art and portraits.
-// Run after the app build. By default output only the unregistered derived rows.
+// Run after the app build. Pass --ongoing to recompose the current-progressive scenes.
 const fs = require('node:fs');
 const path = require('node:path');
 const { spawn } = require('node:child_process');
@@ -13,9 +13,19 @@ const curriculum = read('data/construction-examples.json');
 const manifest = read('data/construction-illustrations.json').images;
 const layouts = read('scripts/advanced_art_layouts.json');
 const byId = new Map(curriculum.examples.map(q => [q.id, q]));
-const pending = curriculum.examples.filter(q => q.derivedFrom && !manifest[q.id]);
+// Retain the individually drawn panels and their question marks.
+const ongoingPanels = {
+  'level3-35': ['assets/construction/level3-35.png', [584, 132, 920, 409]],
+  'level3-37': ['assets/construction/level3-37.png', [678, 35, 837, 713]],
+  'level3-38': ['assets/construction/level3-38.png', [595, 36, 710, 647]],
+  'level3-what-ing-clean-1-ongoing': ['assets/construction/derived/level3-what-ing-clean-1-ongoing.webp', [239, 24, 378, 378]],
+};
+const ongoingOnly = process.argv.includes('--ongoing');
+const pending = curriculum.examples.filter(q => ongoingOnly
+  ? ongoingPanels[q.id] || byId.get(q.derivedFrom)?.meaning === 'ongoing'
+  : q.derivedFrom && !manifest[q.id]);
 
-async function drawArtwork({ q, base, sourceBase, file, layout }, portraits) {
+async function drawArtwork({ q, base, sourceBase, file, layout, panelCrop }, portraits) {
   const W = 860, H = 644, paper = '#fcf9f2', inset = '#fff3df', ink = '#a83c2b';
   const canvas = document.createElement('canvas');
   canvas.width = W;
@@ -122,7 +132,9 @@ async function drawArtwork({ q, base, sourceBase, file, layout }, portraits) {
   async function getScene() {
     const src = await asset(file);
     let crop;
-    if (src.naturalWidth === 860) {
+    if (panelCrop) {
+      crop = panelCrop;
+    } else if (src.naturalWidth === 860) {
       const sourceLeft = ({ past: 70, ongoing: 235 })[sourceBase.meaning] ?? 387;
       crop = [sourceLeft + 5, 24, 379, 378];
     } else if (src.naturalWidth === 700) {
@@ -143,7 +155,7 @@ async function drawArtwork({ q, base, sourceBase, file, layout }, portraits) {
     scene.height = crop[3];
     const drawing = scene.getContext('2d');
     drawing.drawImage(src, ...crop, 0, 0, ...crop.slice(2));
-    if (['on Saturdays', 'on Sundays'].includes(sourceBase.slots.time.en)) {
+    if (!panelCrop && ['on Saturdays', 'on Sundays'].includes(sourceBase.slots.time.en)) {
       // The source's weekday calendar is baked into the cream right margin.
       drawing.fillStyle = inset;
       drawing.fillRect(scene.width * .79, 0, scene.width * .21, scene.height * .25);
@@ -157,38 +169,47 @@ async function drawArtwork({ q, base, sourceBase, file, layout }, portraits) {
   const frequency = q.blocks.find(([role]) => role === '頻度')?.[1];
   const negated = q.blocks.some(([role]) => role === '否定');
   const addressed = /\b(?:you|your)\b/i.test(q.en);
-  const speakerName = addressed ? (modal && portraits['boy-' + modal] ? 'boy-' + modal : 'boy')
-    : modal && portraits['girl-' + modal] ? 'girl-' + modal : base.meaning === 'ongoing' ? 'girl-up' : 'girl';
   const mode = base.meaning;
   const past = mode === 'past' || mode === 'experience';
   const ongoing = mode === 'ongoing';
+  const speakerName = addressed ? (modal && portraits['boy-' + modal] ? 'boy-' + modal : ongoing ? 'boy-up' : 'boy')
+    : modal && portraits['girl-' + modal] ? 'girl-' + modal : ongoing ? 'girl-up' : 'girl';
   const x = past ? 58 : ongoing ? 235 : 388;
   const y = 20, size = 386, bottom = y + size;
-  const speaker = past ? 652 : ongoing ? x + size / 2 - (addressed ? 58 : 0) : 224;
-  const listener = speaker + (past ? -146 : 146);
+  const speaker = past ? 652 : ongoing ? x + size / 2 : 224;
+  const listener = speaker + (past ? -146 : ongoing ? 170 : 146);
   const face = past ? 'left' : 'right';
-  const tip = past ? speaker - 9 : speaker + 8;
-  const heel = ongoing ? x + size / 2 : past ? x + size - 42 : x + 50;
-  const outline = [[x, y], [x + size, y], [x + size, bottom], [heel + 35, bottom],
-                   [tip, 469], [heel - 26, bottom], [x, bottom]];
+  const tip = past ? speaker - 9 : ongoing ? speaker : speaker + 8;
+  const heel = ongoing ? speaker : past ? x + size - 42 : x + 50;
+  const outline = [[x, y], [x + size, y], [x + size, bottom], [heel + (ongoing ? 24 : 35), bottom],
+                   [tip, ongoing ? 433 : 469], [heel - 26, bottom], [x, bottom]];
   ctx.fillStyle = paper;
   ctx.fillRect(0, 0, W, H);
   poly(outline, inset);
-  if (ongoing || mode === 'experience') {
+  if (ongoing) {
+    ctx.lineWidth = 3;
+    ctx.strokeStyle = '#b85224';
+    ctx.fillStyle = inset;
     for (let i = 0; i < 4; i++) {
-      const isExperience = mode === 'experience';
-      const bx = isExperience ? x + size + 11 + 19 * i : x - 17 - 19 * i;
-      const margin = isExperience ? i * 31 : 0;
-      ctx.fillStyle = ['#b75b31', '#c97750', '#d89372', '#e8b19b'][isExperience ? i : 0];
-      ctx.fillRect(bx, y + margin, 6, size - margin * 2);
+      const bx = x - 19 - 20 * i;
+      ctx.fillRect(bx, y, 8, size);
+      ctx.strokeRect(bx, y, 8, size);
     }
+  } else if (mode === 'experience') {
+    ['#b75b31', '#c97750', '#d89372', '#e8b19b'].forEach((color, i) => {
+      const margin = i * 31;
+      ctx.fillStyle = color;
+      ctx.fillRect(x + size + 11 + 19 * i, y + margin, 6, size - margin * 2);
+    });
   }
   const scene = await getScene();
   const needsSide = ['where', 'when'].includes(token) || time === 'on Sundays';
   let artWidth = needsSide ? 270 : size - 8;
   let artHeight = artWidth * scene.height / scene.width;
   const ax = x + 4, ay = y + (size - artHeight) / 2;
-  if (token === 'why') {
+  if (panelCrop) {
+    ctx.drawImage(scene, ax, ay, artWidth, artHeight);
+  } else if (token === 'why') {
     rounded(x + 10, 148, 88, 117, 0, '#fff3d9', '#8e583b');
     textMark(x + 54, 211, 83, '#89462e');
     line([[x + 110, 207], [x + 148, 207]], '#8e583b', 4);
@@ -248,10 +269,10 @@ async function drawArtwork({ q, base, sourceBase, file, layout }, portraits) {
   if (negated) barred(cueX, 238);
   if (frequency) frequencies(frequency, past || ongoing ? cueX : cueX - 102, 148);
   poly(outline, null, ink);
-  await portrait(speakerName, speaker, 442, 177, face, .44);
-  if (addressed) await portrait('listener', listener, 456, 158, past ? 'right' : 'left');
+  await portrait(speakerName, speaker, ongoing ? 435 : 442, ongoing ? 188 : 177, face, ongoing ? .5 : .44);
+  if (addressed) await portrait('listener', listener, 456, 158, past || ongoing ? 'right' : 'left');
   const image = { questionMarkInArt: !!token && token !== 'whether' };
-  if (token === 'whether') image.questionMark = [Math.round(speaker / W * 100), 64];
+  if (token === 'whether') image.questionMark = [Math.round((speaker - (ongoing ? 66 : 0)) / W * 100), ongoing ? 69 : 64];
   if (time === 'today') image.todayCalendar = [91, 12];
   return { url: canvas.toDataURL('image/webp', .88), image };
 }
@@ -265,6 +286,10 @@ async function main() {
     if (!referenceScenes.has(key)) referenceScenes.set(key, base);
   }
   const layoutsByQuestion = pending.map(q => {
+    if (ongoingPanels[q.id]) {
+      const [file, panelCrop] = ongoingPanels[q.id];
+      return { q, base: { meaning: 'ongoing' }, file, panelCrop };
+    }
     const base = byId.get(q.derivedFrom);
     const token = q.question?.token;
     const key = base.contrastFamily.replace(/^build-/, '');
@@ -284,6 +309,7 @@ async function main() {
     'girl-up': [material + 'set-01/10-girl-looking-up.png'],
     listener: [material + 'set-01/05-girl-listening.png'],
     boy: [material + 'set-01/04-boy-speaking.png'],
+    'boy-up': [material + 'original-scenes/boyposes.png', [0, 0, 887, 887]],
     'boy-should': [pose + 'boy-should.png'],
     'boy-must': [pose + 'boy-must.png'],
     'boy-can': [pose + 'boy-can.png'],

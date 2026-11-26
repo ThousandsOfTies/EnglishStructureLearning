@@ -100,11 +100,10 @@ const Construction = (() => {
     return Object.hasOwn(choices, role) && choices[role] === q.slots[role].ja;
   }
   function enabledTargets(q, filled) {
-    const targets = targetsFor(q);
+    const targets = targetsFor(q).filter(id => q.level === 1 ? q.slots[id].ja : !advancedOptionalRoles.includes(id));
     if (q.level === 3) {
-      const required = targets.filter(id => !advancedOptionalRoles.includes(id));
-      const firstEmpty = required.findIndex(id => !filled.includes(id));
-      return firstEmpty < 0 ? targets : required.slice(0, firstEmpty + 1);
+      const firstEmpty = targets.findIndex(id => !filled.includes(id));
+      return firstEmpty < 0 ? targets : targets.slice(0, firstEmpty + 1);
     }
     const opening = targets.filter(id => targetRole(q, id) === 'S');
     if (opening.some(id => !filled.includes(id))) return opening;
@@ -119,7 +118,7 @@ const Construction = (() => {
       const role = targetRole(q, id);
       return predicateRoles.has(role) || (q.level === 2 && role === '頻度');
     });
-    const missingPredicate = predicates.some(id => !filled.includes(id) && (q.level !== 1 || q.slots[id].ja));
+    const missingPredicate = predicates.some(id => !filled.includes(id));
     return missingPredicate ? [...opening, ...predicates] : targets;
   }
   function place(q, placements, index, target) {
