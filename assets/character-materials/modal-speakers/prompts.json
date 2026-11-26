@@ -17,6 +17,14 @@
     },
     "boy-should.png": {
       "prompt": "Use case: illustration-story. Asset type: one transparent waist-up narrator sprite for a Japanese child's English learning app. Image 1 is the reference for the existing boy's identity and watercolor style. Image 2 bottom right is the reference for the 'should / recommendation' posture. Draw just the same short tousled chestnut-haired boy from image 1 with blue pullover hoodie and light drawstrings, facing right in a 3/4 view. Showing calm friendly advice: smile gently, lean a little toward the listener to his right, one relaxed hand extended palm up at lower-chest height, as if to say 'I recommend this'. The boy looks toward the other person to his right with both face and eyes, no pointing fingers or raised thumb, and keep his head raised rather than bowing the head. Accurate hands, expressive eyes, warm textured Japanese watercolor picture book, same costume and age. Upper body ends at waist at bottom, no clipping at hair or hand. Solidly colored sprite on truly transparent RGBA background. No cast shadow, lettering, captions, symbols, props, other figures or surrounding scenery."
+    },
+    "boy-can.png": {
+      "reference": "assets/construction/level3-23-can-relaxed-wrist.png",
+      "prompt": "Draw the same watercolor schoolboy in a blue hoodie as a transparent waist-up portrait, facing right. Use his approved relaxed left thumbs-up pose with the thumb angled up-right, the four other fingers curled and the wrist in line with his forearm. Keep the entire gesture and face in view with no text or other objects."
+    },
+    "boy-must.png": {
+      "reference": "assets/construction/level2-26.png",
+      "prompt": "Draw the same watercolor schoolboy in a blue hoodie as a transparent waist-up portrait, facing right. Show his serious, caring expression and one raised index finger, wrist relaxed and the other fingers folded. Keep the full head and gesture in view with no text or other objects."
     }
   }
 }

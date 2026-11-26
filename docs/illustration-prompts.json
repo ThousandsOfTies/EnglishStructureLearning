@@ -14783,6 +14783,2106 @@
       "reference": "assets/construction/level3-40.png",
       "generationMethod": "Built-in image generation, editing the reference illustration.",
       "prompt": "Make a precise local edit to the provided Japanese educational watercolor illustration. Add a small, clearly recognizable unfolded paper map directly UNDER the existing blue map pin inside the red speech bubble, in the lower-right area. The map is a simple cream paper rectangle with two subtle accordion folds and a slight angled perspective, showing an abstract network of thin ocher roads and a small light-blue waterway, with no real identifiable location, buildings, labels, characters, numbers or icons. The lower tip of the original blue pin, with its white question mark, must touch the center of the paper map as though it is pointing to a spot on the map; keep the blue pin visibly in the foreground and keep the white question mark unchanged. The map must stay entirely inside the red frame, with breathing room at the right and bottom margins, and never overlap the girl's hands, her kite string or the kite. Preserve the red-cardigan girl flying the colorful kite, the kite, the other two characters, the square-cornered bubble, its tail, position, scale, framing, and all remaining parts of the existing illustration. Match the original soft colors and watercolor paper texture. No added words, labels, numbers, or extra question marks."
+    },
+    {
+      "exampleId": "level2-can-swim-3",
+      "file": "assets/construction/derived/level2-can-swim-3.webp",
+      "reference": "assets/construction/build-swim-3-rect.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-can-stop-2",
+      "file": "assets/construction/derived/level2-can-stop-2.webp",
+      "reference": "assets/construction/build-stop-2.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-can-cook-2",
+      "file": "assets/construction/derived/level2-can-cook-2.webp",
+      "reference": "assets/construction/build-cook-2.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-can-practice-1",
+      "file": "assets/construction/derived/level2-can-practice-1.webp",
+      "reference": "assets/construction/build-practice-1.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-can-watch-1",
+      "file": "assets/construction/derived/level2-can-watch-1.webp",
+      "reference": "assets/construction/build-watch-1.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-can-share-2",
+      "file": "assets/construction/derived/level2-can-share-2.webp",
+      "reference": "assets/construction/build-share-2.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-can-teach-1",
+      "file": "assets/construction/derived/level2-can-teach-1.webp",
+      "reference": "assets/construction/build-teach-1.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-can-make-2",
+      "file": "assets/construction/derived/level2-can-make-2.webp",
+      "reference": "assets/construction/build-make-2.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-can-save-1",
+      "file": "assets/construction/derived/level2-can-save-1.webp",
+      "reference": "assets/construction/build-save-1.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-can-check-3",
+      "file": "assets/construction/derived/level2-can-check-3.webp",
+      "reference": "assets/construction/build-check-3.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-might-stay-3",
+      "file": "assets/construction/derived/level2-might-stay-3.webp",
+      "reference": "assets/construction/build-stay-3.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-might-taste-2",
+      "file": "assets/construction/derived/level2-might-taste-2.webp",
+      "reference": "assets/construction/build-taste-2.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-might-mix-1",
+      "file": "assets/construction/derived/level2-might-mix-1.webp",
+      "reference": "assets/construction/build-mix-1.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-might-write-1",
+      "file": "assets/construction/derived/level2-might-write-1.webp",
+      "reference": "assets/construction/build-write-1.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-might-thank-2",
+      "file": "assets/construction/derived/level2-might-thank-2.webp",
+      "reference": "assets/construction/build-thank-2.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-might-meet-1",
+      "file": "assets/construction/derived/level2-might-meet-1.webp",
+      "reference": "assets/construction/build-meet-1.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-might-join-1",
+      "file": "assets/construction/derived/level2-might-join-1.webp",
+      "reference": "assets/construction/build-join-1.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-might-try-3",
+      "file": "assets/construction/derived/level2-might-try-3.webp",
+      "reference": "assets/construction/build-try-3.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-might-change-1",
+      "file": "assets/construction/derived/level2-might-change-1.webp",
+      "reference": "assets/construction/build-change-1.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-might-buy-2",
+      "file": "assets/construction/derived/level2-might-buy-2.webp",
+      "reference": "assets/construction/build-buy-2.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-must-wait-1",
+      "file": "assets/construction/derived/level2-must-wait-1.webp",
+      "reference": "assets/construction/build-wait-1.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-must-eat-2",
+      "file": "assets/construction/derived/level2-must-eat-2.webp",
+      "reference": "assets/construction/build-eat-2.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-must-bake-3",
+      "file": "assets/construction/derived/level2-must-bake-3.webp",
+      "reference": "assets/construction/build-bake-3.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-must-pour-2",
+      "file": "assets/construction/derived/level2-must-pour-2.webp",
+      "reference": "assets/construction/build-pour-2.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-must-learn-3",
+      "file": "assets/construction/derived/level2-must-learn-3.webp",
+      "reference": "assets/construction/build-learn-3.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-must-open-3",
+      "file": "assets/construction/derived/level2-must-open-3.webp",
+      "reference": "assets/construction/build-open-3.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-must-put-3",
+      "file": "assets/construction/derived/level2-must-put-3.webp",
+      "reference": "assets/construction/build-put-3.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-must-bring-2",
+      "file": "assets/construction/derived/level2-must-bring-2.webp",
+      "reference": "assets/construction/build-bring-2.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-must-call-2",
+      "file": "assets/construction/derived/level2-must-call-2.webp",
+      "reference": "assets/construction/build-call-2.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-must-fix-1",
+      "file": "assets/construction/derived/level2-must-fix-1.webp",
+      "reference": "assets/construction/build-fix-1.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-should-walk-3",
+      "file": "assets/construction/derived/level2-should-walk-3.webp",
+      "reference": "assets/construction/build-walk-3-rect.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-should-move-3",
+      "file": "assets/construction/derived/level2-should-move-3.webp",
+      "reference": "assets/construction/build-move-3.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-should-drink-2",
+      "file": "assets/construction/derived/level2-should-drink-2.webp",
+      "reference": "assets/construction/build-drink-2.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-should-peel-1",
+      "file": "assets/construction/derived/level2-should-peel-1.webp",
+      "reference": "assets/construction/build-peel-1.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-should-read-3",
+      "file": "assets/construction/derived/level2-should-read-3.webp",
+      "reference": "assets/construction/build-read-3.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-should-listen-3",
+      "file": "assets/construction/derived/level2-should-listen-3.webp",
+      "reference": "assets/construction/build-listen-3.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-should-carry-2",
+      "file": "assets/construction/derived/level2-should-carry-2.webp",
+      "reference": "assets/construction/build-carry-2.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-should-tell-3",
+      "file": "assets/construction/derived/level2-should-tell-3.webp",
+      "reference": "assets/construction/build-tell-3.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-should-help-2",
+      "file": "assets/construction/derived/level2-should-help-2.webp",
+      "reference": "assets/construction/build-help-2.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-should-build-3",
+      "file": "assets/construction/derived/level2-should-build-3.webp",
+      "reference": "assets/construction/build-build-3.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-might-ing-sit-1-ongoing",
+      "file": "assets/construction/derived/level2-might-ing-sit-1-ongoing.webp",
+      "reference": "assets/construction/build-sit-1-ongoing-rect.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-might-ing-start-2-ongoing",
+      "file": "assets/construction/derived/level2-might-ing-start-2-ongoing.webp",
+      "reference": "assets/construction/build-start-2-ongoing.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-might-ing-wash-1-ongoing",
+      "file": "assets/construction/derived/level2-might-ing-wash-1-ongoing.webp",
+      "reference": "assets/construction/build-wash-1-ongoing.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-might-ing-count-1-ongoing",
+      "file": "assets/construction/derived/level2-might-ing-count-1-ongoing.webp",
+      "reference": "assets/construction/build-count-1-ongoing.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-might-ing-answer-2-ongoing",
+      "file": "assets/construction/derived/level2-might-ing-answer-2-ongoing.webp",
+      "reference": "assets/construction/build-answer-2-ongoing.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-might-ing-close-1-ongoing",
+      "file": "assets/construction/derived/level2-might-ing-close-1-ongoing.webp",
+      "reference": "assets/construction/build-close-1-ongoing.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-might-ing-push-1-ongoing",
+      "file": "assets/construction/derived/level2-might-ing-push-1-ongoing.webp",
+      "reference": "assets/construction/build-push-1-ongoing.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-might-ing-give-2-ongoing",
+      "file": "assets/construction/derived/level2-might-ing-give-2-ongoing.webp",
+      "reference": "assets/construction/build-give-2-ongoing.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-might-ing-ask-1-ongoing",
+      "file": "assets/construction/derived/level2-might-ing-ask-1-ongoing.webp",
+      "reference": "assets/construction/build-ask-1-ongoing.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-might-ing-use-2-ongoing",
+      "file": "assets/construction/derived/level2-might-ing-use-2-ongoing.webp",
+      "reference": "assets/construction/build-use-2-ongoing.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-not-stand-3",
+      "file": "assets/construction/derived/level2-not-stand-3.webp",
+      "reference": "assets/construction/build-stand-3-rect.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-not-live-2",
+      "file": "assets/construction/derived/level2-not-live-2.webp",
+      "reference": "assets/construction/build-live-2.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-not-study-1",
+      "file": "assets/construction/derived/level2-not-study-1.webp",
+      "reference": "assets/construction/build-study-1.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-not-see-1",
+      "file": "assets/construction/derived/level2-not-see-1.webp",
+      "reference": "assets/construction/build-see-1.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-not-take-3",
+      "file": "assets/construction/derived/level2-not-take-3.webp",
+      "reference": "assets/construction/build-take-3.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-not-get-2",
+      "file": "assets/construction/derived/level2-not-get-2.webp",
+      "reference": "assets/construction/build-get-2.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-not-visit-2",
+      "file": "assets/construction/derived/level2-not-visit-2.webp",
+      "reference": "assets/construction/build-visit-2.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-not-follow-1",
+      "file": "assets/construction/derived/level2-not-follow-1.webp",
+      "reference": "assets/construction/build-follow-1.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-not-wear-3",
+      "file": "assets/construction/derived/level2-not-wear-3.webp",
+      "reference": "assets/construction/build-wear-3.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-not-keep-1",
+      "file": "assets/construction/derived/level2-not-keep-1.webp",
+      "reference": "assets/construction/build-keep-1.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-did-not-run-2-past",
+      "file": "assets/construction/derived/level2-did-not-run-2-past.webp",
+      "reference": "assets/construction/build-run-2-past-rect.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-did-not-sing-1-past",
+      "file": "assets/construction/derived/level2-did-not-sing-1-past.webp",
+      "reference": "assets/construction/build-sing-1-past.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-did-not-touch-3-past",
+      "file": "assets/construction/derived/level2-did-not-touch-3-past.webp",
+      "reference": "assets/construction/build-touch-3-past.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-did-not-turn-3-past",
+      "file": "assets/construction/derived/level2-did-not-turn-3-past.webp",
+      "reference": "assets/construction/build-turn-3-past.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-did-not-show-2-past",
+      "file": "assets/construction/derived/level2-did-not-show-2-past.webp",
+      "reference": "assets/construction/build-show-2-past.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-did-not-talk-3-past",
+      "file": "assets/construction/derived/level2-did-not-talk-3-past.webp",
+      "reference": "assets/construction/build-talk-3-past.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-did-not-speak-2-past",
+      "file": "assets/construction/derived/level2-did-not-speak-2-past.webp",
+      "reference": "assets/construction/build-speak-2-past.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-did-not-choose-3-past",
+      "file": "assets/construction/derived/level2-did-not-choose-3-past.webp",
+      "reference": "assets/construction/build-choose-3-past.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-did-not-pay-1-past",
+      "file": "assets/construction/derived/level2-did-not-pay-1-past.webp",
+      "reference": "assets/construction/build-pay-1-past.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-did-not-find-3-past",
+      "file": "assets/construction/derived/level2-did-not-find-3-past.webp",
+      "reference": "assets/construction/build-find-3-past.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-not-ing-go-1-ongoing",
+      "file": "assets/construction/derived/level2-not-ing-go-1-ongoing.webp",
+      "reference": "assets/construction/build-go-1-ongoing-rect.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-not-ing-jump-2-ongoing",
+      "file": "assets/construction/derived/level2-not-ing-jump-2-ongoing.webp",
+      "reference": "assets/construction/build-jump-2-ongoing-rect.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-not-ing-ride-1-ongoing",
+      "file": "assets/construction/derived/level2-not-ing-ride-1-ongoing.webp",
+      "reference": "assets/construction/build-ride-1-ongoing-rect.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-not-ing-climb-2-ongoing",
+      "file": "assets/construction/derived/level2-not-ing-climb-2-ongoing.webp",
+      "reference": "assets/construction/build-climb-2-ongoing-rect.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-not-ing-sleep-1-ongoing",
+      "file": "assets/construction/derived/level2-not-ing-sleep-1-ongoing.webp",
+      "reference": "assets/construction/build-sleep-1-ongoing.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-not-ing-color-1-ongoing",
+      "file": "assets/construction/derived/level2-not-ing-color-1-ongoing.webp",
+      "reference": "assets/construction/build-color-1-ongoing.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-not-ing-look-3-ongoing",
+      "file": "assets/construction/derived/level2-not-ing-look-3-ongoing.webp",
+      "reference": "assets/construction/build-look-3-ongoing.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-not-ing-lift-3-ongoing",
+      "file": "assets/construction/derived/level2-not-ing-lift-3-ongoing.webp",
+      "reference": "assets/construction/build-lift-3-ongoing.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-not-ing-send-3-ongoing",
+      "file": "assets/construction/derived/level2-not-ing-send-3-ongoing.webp",
+      "reference": "assets/construction/build-send-3-ongoing.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-not-ing-invite-3-ongoing",
+      "file": "assets/construction/derived/level2-not-ing-invite-3-ongoing.webp",
+      "reference": "assets/construction/build-invite-3-ongoing.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-be-not-be-noun-1",
+      "file": "assets/construction/derived/level2-be-not-be-noun-1.webp",
+      "reference": "assets/construction/build-be-noun-1.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-be-not-be-noun-2-past",
+      "file": "assets/construction/derived/level2-be-not-be-noun-2-past.webp",
+      "reference": "assets/construction/build-be-noun-2-past.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-be-not-be-adjective-1",
+      "file": "assets/construction/derived/level2-be-not-be-adjective-1.webp",
+      "reference": "assets/construction/build-be-adjective-1.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-be-not-be-adjective-2-past",
+      "file": "assets/construction/derived/level2-be-not-be-adjective-2-past.webp",
+      "reference": "assets/construction/build-be-adjective-2-past.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-be-not-be-adjective-3-past",
+      "file": "assets/construction/derived/level2-be-not-be-adjective-3-past.webp",
+      "reference": "assets/construction/build-be-adjective-3-past.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-be-not-be-noun-4",
+      "file": "assets/construction/derived/level2-be-not-be-noun-4.webp",
+      "reference": "assets/construction/build-be-noun-4.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-be-not-be-adjective-4",
+      "file": "assets/construction/derived/level2-be-not-be-adjective-4.webp",
+      "reference": "assets/construction/build-be-adjective-4.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-be-not-be-adjective-4-past",
+      "file": "assets/construction/derived/level2-be-not-be-adjective-4-past.webp",
+      "reference": "assets/construction/build-be-adjective-4-past.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-be-not-be-adjective-5",
+      "file": "assets/construction/derived/level2-be-not-be-adjective-5.webp",
+      "reference": "assets/construction/build-be-adjective-5.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-be-not-be-adjective-5-past",
+      "file": "assets/construction/derived/level2-be-not-be-adjective-5-past.webp",
+      "reference": "assets/construction/build-be-adjective-5-past.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-have-not-tense-bicycle-experience",
+      "file": "assets/construction/derived/level2-have-not-tense-bicycle-experience.webp",
+      "reference": "assets/construction/tense-bicycle-experience.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-have-not-tense-pony-experience",
+      "file": "assets/construction/derived/level2-have-not-tense-pony-experience.webp",
+      "reference": "assets/construction/tense-pony-experience.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-have-not-tense-kite-experience",
+      "file": "assets/construction/derived/level2-have-not-tense-kite-experience.webp",
+      "reference": "assets/construction/tense-kite-experience.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-have-not-tense-rope-experience",
+      "file": "assets/construction/derived/level2-have-not-tense-rope-experience.webp",
+      "reference": "assets/construction/tense-rope-experience.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-have-not-tense-violin-experience",
+      "file": "assets/construction/derived/level2-have-not-tense-violin-experience.webp",
+      "reference": "assets/construction/tense-violin-experience.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-have-not-tense-ball-experience",
+      "file": "assets/construction/derived/level2-have-not-tense-ball-experience.webp",
+      "reference": "assets/construction/tense-ball-experience.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-have-not-tense-piano-experience",
+      "file": "assets/construction/derived/level2-have-not-tense-piano-experience.webp",
+      "reference": "assets/construction/tense-piano-experience.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-have-not-tense-flowers-experience",
+      "file": "assets/construction/derived/level2-have-not-tense-flowers-experience.webp",
+      "reference": "assets/construction/tense-flowers-experience.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-have-not-tense-paint-experience",
+      "file": "assets/construction/derived/level2-have-not-tense-paint-experience.webp",
+      "reference": "assets/construction/tense-paint-experience.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-have-not-tense-sushi-experience",
+      "file": "assets/construction/derived/level2-have-not-tense-sushi-experience.webp",
+      "reference": "assets/construction/tense-sushi-experience.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-often-go-1",
+      "file": "assets/construction/derived/level2-often-go-1.webp",
+      "reference": "assets/construction/build-go-1-rect.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-often-come-3",
+      "file": "assets/construction/derived/level2-often-come-3.webp",
+      "reference": "assets/construction/build-come-3-rect.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-often-fly-1",
+      "file": "assets/construction/derived/level2-often-fly-1.webp",
+      "reference": "assets/construction/build-fly-1-rect.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-often-rest-3",
+      "file": "assets/construction/derived/level2-often-rest-3.webp",
+      "reference": "assets/construction/build-rest-3.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-often-cut-2",
+      "file": "assets/construction/derived/level2-often-cut-2.webp",
+      "reference": "assets/construction/build-cut-2.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-often-pour-3",
+      "file": "assets/construction/derived/level2-often-pour-3.webp",
+      "reference": "assets/construction/build-pour-3.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-often-write-3",
+      "file": "assets/construction/derived/level2-often-write-3.webp",
+      "reference": "assets/construction/build-write-3.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-often-draw-1",
+      "file": "assets/construction/derived/level2-often-draw-1.webp",
+      "reference": "assets/construction/build-draw-1.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-often-dance-3",
+      "file": "assets/construction/derived/level2-often-dance-3.webp",
+      "reference": "assets/construction/build-dance-3.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-often-clean-3",
+      "file": "assets/construction/derived/level2-often-clean-3.webp",
+      "reference": "assets/construction/build-clean-3.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-be-often-be-adjective-1",
+      "file": "assets/construction/derived/level2-be-often-be-adjective-1.webp",
+      "reference": "assets/construction/build-be-adjective-1.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-be-often-be-adjective-2",
+      "file": "assets/construction/derived/level2-be-often-be-adjective-2.webp",
+      "reference": "assets/construction/build-be-adjective-2.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-be-often-be-adjective-3",
+      "file": "assets/construction/derived/level2-be-often-be-adjective-3.webp",
+      "reference": "assets/construction/build-be-adjective-3.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-be-often-be-adjective-4",
+      "file": "assets/construction/derived/level2-be-often-be-adjective-4.webp",
+      "reference": "assets/construction/build-be-adjective-4.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level2-be-often-be-adjective-5",
+      "file": "assets/construction/derived/level2-be-often-be-adjective-5.webp",
+      "reference": "assets/construction/build-be-adjective-5.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-q-do-run-3",
+      "file": "assets/construction/derived/level3-q-do-run-3.webp",
+      "reference": "assets/construction/build-run-3-rect.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-q-do-practice-1",
+      "file": "assets/construction/derived/level3-q-do-practice-1.webp",
+      "reference": "assets/construction/build-practice-1.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-q-do-feel-2",
+      "file": "assets/construction/derived/level3-q-do-feel-2.webp",
+      "reference": "assets/construction/build-feel-2.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-q-do-open-1",
+      "file": "assets/construction/derived/level3-q-do-open-1.webp",
+      "reference": "assets/construction/build-open-1.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-q-do-pull-2",
+      "file": "assets/construction/derived/level3-q-do-pull-2.webp",
+      "reference": "assets/construction/build-pull-2.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-q-do-lift-3",
+      "file": "assets/construction/derived/level3-q-do-lift-3.webp",
+      "reference": "assets/construction/build-lift-3.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-q-do-hold-2",
+      "file": "assets/construction/derived/level3-q-do-hold-2.webp",
+      "reference": "assets/construction/build-hold-2.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-q-do-like-1",
+      "file": "assets/construction/derived/level3-q-do-like-1.webp",
+      "reference": "assets/construction/build-like-1.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-q-do-love-1",
+      "file": "assets/construction/derived/level3-q-do-love-1.webp",
+      "reference": "assets/construction/build-love-1.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-q-do-need-3",
+      "file": "assets/construction/derived/level3-q-do-need-3.webp",
+      "reference": "assets/construction/build-need-3.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-q-did-jump-2-past",
+      "file": "assets/construction/derived/level3-q-did-jump-2-past.webp",
+      "reference": "assets/construction/build-jump-2-past-rect.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-q-did-stay-3-past",
+      "file": "assets/construction/derived/level3-q-did-stay-3-past.webp",
+      "reference": "assets/construction/build-stay-3-past.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-q-did-cut-2-past",
+      "file": "assets/construction/derived/level3-q-did-cut-2-past.webp",
+      "reference": "assets/construction/build-cut-2-past.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-q-did-wash-1-past",
+      "file": "assets/construction/derived/level3-q-did-wash-1-past.webp",
+      "reference": "assets/construction/build-wash-1-past.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-q-did-learn-1-past",
+      "file": "assets/construction/derived/level3-q-did-learn-1-past.webp",
+      "reference": "assets/construction/build-learn-1-past.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-q-did-play-2-past",
+      "file": "assets/construction/derived/level3-q-did-play-2-past.webp",
+      "reference": "assets/construction/build-play-2-past.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-q-did-push-1-past",
+      "file": "assets/construction/derived/level3-q-did-push-1-past.webp",
+      "reference": "assets/construction/build-push-1-past.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-q-did-hold-1-past",
+      "file": "assets/construction/derived/level3-q-did-hold-1-past.webp",
+      "reference": "assets/construction/build-hold-1-past.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-q-did-put-3-past",
+      "file": "assets/construction/derived/level3-q-did-put-3-past.webp",
+      "reference": "assets/construction/build-put-3-past.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-q-did-invite-2-past",
+      "file": "assets/construction/derived/level3-q-did-invite-2-past.webp",
+      "reference": "assets/construction/build-invite-2-past.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-q-ing-swim-1-ongoing",
+      "file": "assets/construction/derived/level3-q-ing-swim-1-ongoing.webp",
+      "reference": "assets/construction/build-swim-1-ongoing-rect.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-q-ing-stop-2-ongoing",
+      "file": "assets/construction/derived/level3-q-ing-stop-2-ongoing.webp",
+      "reference": "assets/construction/build-stop-2-ongoing.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-q-ing-eat-1-ongoing",
+      "file": "assets/construction/derived/level3-q-ing-eat-1-ongoing.webp",
+      "reference": "assets/construction/build-eat-1-ongoing.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-q-ing-play-2-ongoing",
+      "file": "assets/construction/derived/level3-q-ing-play-2-ongoing.webp",
+      "reference": "assets/construction/build-play-2-ongoing.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-q-ing-dance-2-ongoing",
+      "file": "assets/construction/derived/level3-q-ing-dance-2-ongoing.webp",
+      "reference": "assets/construction/build-dance-2-ongoing.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-q-ing-touch-3-ongoing",
+      "file": "assets/construction/derived/level3-q-ing-touch-3-ongoing.webp",
+      "reference": "assets/construction/build-touch-3-ongoing.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-q-ing-take-3-ongoing",
+      "file": "assets/construction/derived/level3-q-ing-take-3-ongoing.webp",
+      "reference": "assets/construction/build-take-3-ongoing.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-q-ing-show-2-ongoing",
+      "file": "assets/construction/derived/level3-q-ing-show-2-ongoing.webp",
+      "reference": "assets/construction/build-show-2-ongoing.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-q-ing-use-2-ongoing",
+      "file": "assets/construction/derived/level3-q-ing-use-2-ongoing.webp",
+      "reference": "assets/construction/build-use-2-ongoing.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-q-ing-clean-2-ongoing",
+      "file": "assets/construction/derived/level3-q-ing-clean-2-ongoing.webp",
+      "reference": "assets/construction/build-clean-2-ongoing.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-q-be-be-noun-2",
+      "file": "assets/construction/derived/level3-q-be-be-noun-2.webp",
+      "reference": "assets/construction/build-be-noun-2.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-q-be-be-noun-2-past",
+      "file": "assets/construction/derived/level3-q-be-be-noun-2-past.webp",
+      "reference": "assets/construction/build-be-noun-2-past.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-q-be-be-noun-3",
+      "file": "assets/construction/derived/level3-q-be-be-noun-3.webp",
+      "reference": "assets/construction/build-be-noun-3.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-q-be-be-adjective-1",
+      "file": "assets/construction/derived/level3-q-be-be-adjective-1.webp",
+      "reference": "assets/construction/build-be-adjective-1.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-q-be-be-adjective-1-past",
+      "file": "assets/construction/derived/level3-q-be-be-adjective-1-past.webp",
+      "reference": "assets/construction/build-be-adjective-1-past.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-q-be-be-adjective-2",
+      "file": "assets/construction/derived/level3-q-be-be-adjective-2.webp",
+      "reference": "assets/construction/build-be-adjective-2.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-q-be-be-adjective-2-past",
+      "file": "assets/construction/derived/level3-q-be-be-adjective-2-past.webp",
+      "reference": "assets/construction/build-be-adjective-2-past.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-q-be-be-adjective-4",
+      "file": "assets/construction/derived/level3-q-be-be-adjective-4.webp",
+      "reference": "assets/construction/build-be-adjective-4.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-q-be-be-adjective-4-past",
+      "file": "assets/construction/derived/level3-q-be-be-adjective-4-past.webp",
+      "reference": "assets/construction/build-be-adjective-4-past.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-q-be-be-adjective-5-past",
+      "file": "assets/construction/derived/level3-q-be-be-adjective-5-past.webp",
+      "reference": "assets/construction/build-be-adjective-5-past.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-q-can-ride-2",
+      "file": "assets/construction/derived/level3-q-can-ride-2.webp",
+      "reference": "assets/construction/build-ride-2-rect.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-q-can-wait-1",
+      "file": "assets/construction/derived/level3-q-can-wait-1.webp",
+      "reference": "assets/construction/build-wait-1.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-q-can-drink-2",
+      "file": "assets/construction/derived/level3-q-can-drink-2.webp",
+      "reference": "assets/construction/build-drink-2.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-q-can-bake-3",
+      "file": "assets/construction/derived/level3-q-can-bake-3.webp",
+      "reference": "assets/construction/build-bake-3.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-q-can-carry-2",
+      "file": "assets/construction/derived/level3-q-can-carry-2.webp",
+      "reference": "assets/construction/build-carry-2.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-q-can-send-2",
+      "file": "assets/construction/derived/level3-q-can-send-2.webp",
+      "reference": "assets/construction/build-send-2.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-q-can-teach-2",
+      "file": "assets/construction/derived/level3-q-can-teach-2.webp",
+      "reference": "assets/construction/build-teach-2.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-q-can-change-2",
+      "file": "assets/construction/derived/level3-q-can-change-2.webp",
+      "reference": "assets/construction/build-change-2.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-q-can-pay-3",
+      "file": "assets/construction/derived/level3-q-can-pay-3.webp",
+      "reference": "assets/construction/build-pay-3.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-q-can-find-1",
+      "file": "assets/construction/derived/level3-q-can-find-1.webp",
+      "reference": "assets/construction/build-find-1.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-q-have-tense-bicycle-experience",
+      "file": "assets/construction/derived/level3-q-have-tense-bicycle-experience.webp",
+      "reference": "assets/construction/tense-bicycle-experience.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-q-have-tense-pony-experience",
+      "file": "assets/construction/derived/level3-q-have-tense-pony-experience.webp",
+      "reference": "assets/construction/tense-pony-experience.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-q-have-tense-kite-experience",
+      "file": "assets/construction/derived/level3-q-have-tense-kite-experience.webp",
+      "reference": "assets/construction/tense-kite-experience.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-q-have-tense-rope-experience",
+      "file": "assets/construction/derived/level3-q-have-tense-rope-experience.webp",
+      "reference": "assets/construction/tense-rope-experience.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-q-have-tense-violin-experience",
+      "file": "assets/construction/derived/level3-q-have-tense-violin-experience.webp",
+      "reference": "assets/construction/tense-violin-experience.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-q-have-tense-ball-experience",
+      "file": "assets/construction/derived/level3-q-have-tense-ball-experience.webp",
+      "reference": "assets/construction/tense-ball-experience.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-q-have-tense-piano-experience",
+      "file": "assets/construction/derived/level3-q-have-tense-piano-experience.webp",
+      "reference": "assets/construction/tense-piano-experience.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-q-have-tense-flowers-experience",
+      "file": "assets/construction/derived/level3-q-have-tense-flowers-experience.webp",
+      "reference": "assets/construction/tense-flowers-experience.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-q-have-tense-paint-experience",
+      "file": "assets/construction/derived/level3-q-have-tense-paint-experience.webp",
+      "reference": "assets/construction/tense-paint-experience.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-q-have-tense-sushi-experience",
+      "file": "assets/construction/derived/level3-q-have-tense-sushi-experience.webp",
+      "reference": "assets/construction/tense-sushi-experience.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-two-whether-must-be-adjective-3",
+      "file": "assets/construction/derived/level3-two-whether-must-be-adjective-3.webp",
+      "reference": "assets/construction/build-be-adjective-3.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-two-whether-should-be-adjective-3",
+      "file": "assets/construction/derived/level3-two-whether-should-be-adjective-3.webp",
+      "reference": "assets/construction/build-be-adjective-3.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-two-whether-can-be-adjective-3",
+      "file": "assets/construction/derived/level3-two-whether-can-be-adjective-3.webp",
+      "reference": "assets/construction/build-be-adjective-3.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-two-whether-can-always-be-adjective-1",
+      "file": "assets/construction/derived/level3-two-whether-can-always-be-adjective-1.webp",
+      "reference": "assets/construction/build-be-adjective-1.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-two-whether-can-always-be-adjective-5",
+      "file": "assets/construction/derived/level3-two-whether-can-always-be-adjective-5.webp",
+      "reference": "assets/construction/build-be-adjective-5.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-what-do-fly-1",
+      "file": "assets/construction/derived/level3-what-do-fly-1.webp",
+      "reference": "assets/construction/build-fly-1-rect.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-what-do-taste-2",
+      "file": "assets/construction/derived/level3-what-do-taste-2.webp",
+      "reference": "assets/construction/build-taste-2.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-what-do-read-3",
+      "file": "assets/construction/derived/level3-what-do-read-3.webp",
+      "reference": "assets/construction/build-read-3.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-what-do-count-3",
+      "file": "assets/construction/derived/level3-what-do-count-3.webp",
+      "reference": "assets/construction/build-count-3.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-what-do-study-3",
+      "file": "assets/construction/derived/level3-what-do-study-3.webp",
+      "reference": "assets/construction/build-study-3.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-what-do-sing-3",
+      "file": "assets/construction/derived/level3-what-do-sing-3.webp",
+      "reference": "assets/construction/build-sing-3.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-what-do-make-2",
+      "file": "assets/construction/derived/level3-what-do-make-2.webp",
+      "reference": "assets/construction/build-make-2.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-what-do-build-3",
+      "file": "assets/construction/derived/level3-what-do-build-3.webp",
+      "reference": "assets/construction/build-build-3.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-what-do-wear-3",
+      "file": "assets/construction/derived/level3-what-do-wear-3.webp",
+      "reference": "assets/construction/build-wear-3.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-what-do-check-1",
+      "file": "assets/construction/derived/level3-what-do-check-1.webp",
+      "reference": "assets/construction/build-check-1.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-what-did-start-2-past",
+      "file": "assets/construction/derived/level3-what-did-start-2-past.webp",
+      "reference": "assets/construction/build-start-2-past.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-what-did-cut-2-past",
+      "file": "assets/construction/derived/level3-what-did-cut-2-past.webp",
+      "reference": "assets/construction/build-cut-2-past.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-what-did-mix-1-past",
+      "file": "assets/construction/derived/level3-what-did-mix-1-past.webp",
+      "reference": "assets/construction/build-mix-1-past.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-what-did-draw-2-past",
+      "file": "assets/construction/derived/level3-what-did-draw-2-past.webp",
+      "reference": "assets/construction/build-draw-2-past.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-what-did-count-3-past",
+      "file": "assets/construction/derived/level3-what-did-count-3-past.webp",
+      "reference": "assets/construction/build-count-3.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-what-did-sing-1-past",
+      "file": "assets/construction/derived/level3-what-did-sing-1-past.webp",
+      "reference": "assets/construction/build-sing-1-past.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-what-did-watch-1-past",
+      "file": "assets/construction/derived/level3-what-did-watch-1-past.webp",
+      "reference": "assets/construction/build-watch-1-past.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-what-did-hold-1-past",
+      "file": "assets/construction/derived/level3-what-did-hold-1-past.webp",
+      "reference": "assets/construction/build-hold-1-past.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-what-did-use-3-past",
+      "file": "assets/construction/derived/level3-what-did-use-3-past.webp",
+      "reference": "assets/construction/build-use-3-past.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-what-did-wear-3-past",
+      "file": "assets/construction/derived/level3-what-did-wear-3-past.webp",
+      "reference": "assets/construction/build-wear-3.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-what-ing-eat-1-ongoing",
+      "file": "assets/construction/derived/level3-what-ing-eat-1-ongoing.webp",
+      "reference": "assets/construction/build-eat-1-ongoing.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-what-ing-taste-1-ongoing",
+      "file": "assets/construction/derived/level3-what-ing-taste-1-ongoing.webp",
+      "reference": "assets/construction/build-taste-1-ongoing.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-what-ing-mix-1-ongoing",
+      "file": "assets/construction/derived/level3-what-ing-mix-1-ongoing.webp",
+      "reference": "assets/construction/build-mix-1-past.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-what-ing-wash-2-ongoing",
+      "file": "assets/construction/derived/level3-what-ing-wash-2-ongoing.webp",
+      "reference": "assets/construction/build-wash-2-ongoing.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-what-ing-read-3-ongoing",
+      "file": "assets/construction/derived/level3-what-ing-read-3-ongoing.webp",
+      "reference": "assets/construction/build-read-3.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-what-ing-write-1-ongoing",
+      "file": "assets/construction/derived/level3-what-ing-write-1-ongoing.webp",
+      "reference": "assets/construction/build-write-1-ongoing.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-what-ing-learn-1-ongoing",
+      "file": "assets/construction/derived/level3-what-ing-learn-1-ongoing.webp",
+      "reference": "assets/construction/build-learn-1-ongoing.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-what-ing-watch-1-ongoing",
+      "file": "assets/construction/derived/level3-what-ing-watch-1-ongoing.webp",
+      "reference": "assets/construction/build-watch-1-past.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-what-ing-make-2-ongoing",
+      "file": "assets/construction/derived/level3-what-ing-make-2-ongoing.webp",
+      "reference": "assets/construction/build-make-2.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-what-ing-clean-1-ongoing",
+      "file": "assets/construction/derived/level3-what-ing-clean-1-ongoing.webp",
+      "reference": "assets/construction/build-clean-1-ongoing.png",
+      "generationMethod": "Composition with a built-in image generation refinement.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target. In the active red rectangular speech bubble the star-clip red cardigan girl clearly uses her vacuum cleaner, vacuum head and hose clearly visible. Remove the bed, dresser, curtains and other room-specific objects and replace them with minimal pale wall and a small patch of floor. Put one cream shape with the original navy question mark near the patch of floor she's vacuuming, suggesting the area is unknown. Preserve the four progress bars."
+    },
+    {
+      "exampleId": "level3-what-can-drink-2",
+      "file": "assets/construction/derived/level3-what-can-drink-2.webp",
+      "reference": "assets/construction/build-drink-2.png",
+      "generationMethod": "Composition with a built-in image generation refinement.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target. Within the panel, the girl must still be clearly drinking from the same glass: keep the rim and the direction of her face. Hide the liquid reliably by placing one large opaque creamy question-mark cutout over the entire bowl of the glass, just beneath the rim. Remove the milk carton and the extra cream box near the right edge, restoring plain room background there, so the drink cannot be identified."
+    },
+    {
+      "exampleId": "level3-what-can-read-3",
+      "file": "assets/construction/derived/level3-what-can-read-3.webp",
+      "reference": "assets/construction/build-read-3.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-what-can-study-2",
+      "file": "assets/construction/derived/level3-what-can-study-2.webp",
+      "reference": "assets/construction/build-study-2.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-what-can-practice-3",
+      "file": "assets/construction/derived/level3-what-can-practice-3.webp",
+      "reference": "assets/construction/build-practice-3.png",
+      "generationMethod": "Composition with a built-in image generation refinement.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target. Within the panel, keep the same girl actively practicing as suggested by an attentive preparation pose and a reflected waist-up view in a simple home mirror. Cover the precise activity, including her lower legs and any dance-specific moves, with one easily visible cream shape with a dark question mark. Preserve a simple home background, keep the girl recognizable, and keep the question mark inside the bubble."
+    },
+    {
+      "exampleId": "level3-what-can-carry-2",
+      "file": "assets/construction/derived/level3-what-can-carry-2.webp",
+      "reference": "assets/construction/build-carry-2.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-what-can-build-3",
+      "file": "assets/construction/derived/level3-what-can-build-3.webp",
+      "reference": "assets/construction/build-build-3.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-what-can-clean-1",
+      "file": "assets/construction/derived/level3-what-can-clean-1.webp",
+      "reference": "assets/construction/build-clean-1-ongoing.png",
+      "generationMethod": "Composition with a built-in image generation refinement.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target. Hide the room details with a neutral wall while keeping the vacuuming action, question mark and speaker's left thumbs-up."
+    },
+    {
+      "exampleId": "level3-what-can-find-1",
+      "file": "assets/construction/derived/level3-what-can-find-1.webp",
+      "reference": "assets/construction/build-find-1.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-who-do-sit-1",
+      "file": "assets/construction/derived/level3-who-do-sit-1.webp",
+      "reference": "assets/construction/build-sit-1-rect.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-who-do-stand-2",
+      "file": "assets/construction/derived/level3-who-do-stand-2.webp",
+      "reference": "assets/construction/build-stand-2-rect.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-who-do-draw-1",
+      "file": "assets/construction/derived/level3-who-do-draw-1.webp",
+      "reference": "assets/construction/build-draw-1.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-who-do-feel-1",
+      "file": "assets/construction/derived/level3-who-do-feel-1.webp",
+      "reference": "assets/construction/build-feel-1.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-who-do-pull-3",
+      "file": "assets/construction/derived/level3-who-do-pull-3.webp",
+      "reference": "assets/construction/build-pull-3.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-who-do-turn-3",
+      "file": "assets/construction/derived/level3-who-do-turn-3.webp",
+      "reference": "assets/construction/build-turn-3.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-who-do-tell-1",
+      "file": "assets/construction/derived/level3-who-do-tell-1.webp",
+      "reference": "assets/construction/build-tell-1.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-who-do-like-2",
+      "file": "assets/construction/derived/level3-who-do-like-2.webp",
+      "reference": "assets/construction/build-like-2.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-who-do-want-3",
+      "file": "assets/construction/derived/level3-who-do-want-3.webp",
+      "reference": "assets/construction/build-want-3.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-who-do-need-3",
+      "file": "assets/construction/derived/level3-who-do-need-3.webp",
+      "reference": "assets/construction/build-need-3.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-who-did-swim-1-past",
+      "file": "assets/construction/derived/level3-who-did-swim-1-past.webp",
+      "reference": "assets/construction/build-swim-1-past-rect.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-who-did-fly-1-past",
+      "file": "assets/construction/derived/level3-who-did-fly-1-past.webp",
+      "reference": "assets/construction/build-fly-1-past-rect.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-who-did-pour-3-past",
+      "file": "assets/construction/derived/level3-who-did-pour-3-past.webp",
+      "reference": "assets/construction/build-pour-3-past.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-who-did-turn-2-past",
+      "file": "assets/construction/derived/level3-who-did-turn-2-past.webp",
+      "reference": "assets/construction/build-turn-2-past.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-who-did-show-3-past",
+      "file": "assets/construction/derived/level3-who-did-show-3-past.webp",
+      "reference": "assets/construction/build-show-3-past.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-who-did-talk-2-past",
+      "file": "assets/construction/derived/level3-who-did-talk-2-past.webp",
+      "reference": "assets/construction/build-talk-2-past.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-who-did-call-1-past",
+      "file": "assets/construction/derived/level3-who-did-call-1-past.webp",
+      "reference": "assets/construction/build-call-1-past.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-who-did-help-1-past",
+      "file": "assets/construction/derived/level3-who-did-help-1-past.webp",
+      "reference": "assets/construction/build-help-1-past.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-who-did-visit-1-past",
+      "file": "assets/construction/derived/level3-who-did-visit-1-past.webp",
+      "reference": "assets/construction/build-visit-1-past.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-who-did-fix-2-past",
+      "file": "assets/construction/derived/level3-who-did-fix-2-past.webp",
+      "reference": "assets/construction/build-fix-2-past.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-who-ing-walk-1-ongoing",
+      "file": "assets/construction/derived/level3-who-ing-walk-1-ongoing.webp",
+      "reference": "assets/construction/build-walk-1-ongoing-rect.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-who-ing-sleep-2-ongoing",
+      "file": "assets/construction/derived/level3-who-ing-sleep-2-ongoing.webp",
+      "reference": "assets/construction/build-sleep-2-ongoing.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-who-ing-rest-1-ongoing",
+      "file": "assets/construction/derived/level3-who-ing-rest-1-ongoing.webp",
+      "reference": "assets/construction/build-rest-1-ongoing.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-who-ing-peel-1-ongoing",
+      "file": "assets/construction/derived/level3-who-ing-peel-1-ongoing.webp",
+      "reference": "assets/construction/build-peel-1-ongoing.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-who-ing-answer-1-ongoing",
+      "file": "assets/construction/derived/level3-who-ing-answer-1-ongoing.webp",
+      "reference": "assets/construction/build-answer-1-ongoing.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-who-ing-pull-2-ongoing",
+      "file": "assets/construction/derived/level3-who-ing-pull-2-ongoing.webp",
+      "reference": "assets/construction/build-pull-2-ongoing.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-who-ing-get-1-ongoing",
+      "file": "assets/construction/derived/level3-who-ing-get-1-ongoing.webp",
+      "reference": "assets/construction/build-get-1-ongoing.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-who-ing-bring-3-ongoing",
+      "file": "assets/construction/derived/level3-who-ing-bring-3-ongoing.webp",
+      "reference": "assets/construction/build-bring-3-ongoing.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-who-ing-teach-1-ongoing",
+      "file": "assets/construction/derived/level3-who-ing-teach-1-ongoing.webp",
+      "reference": "assets/construction/build-teach-1-ongoing.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-who-ing-pay-1-ongoing",
+      "file": "assets/construction/derived/level3-who-ing-pay-1-ongoing.webp",
+      "reference": "assets/construction/build-pay-1-ongoing.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-two-who-must-be-adjective-3",
+      "file": "assets/construction/derived/level3-two-who-must-be-adjective-3.webp",
+      "reference": "assets/construction/build-be-adjective-3.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-two-who-can-always-be-adjective-1",
+      "file": "assets/construction/derived/level3-two-who-can-always-be-adjective-1.webp",
+      "reference": "assets/construction/build-be-adjective-1.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-where-do-climb-1",
+      "file": "assets/construction/derived/level3-where-do-climb-1.webp",
+      "reference": "assets/construction/build-climb-1-rect.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-where-do-rest-3",
+      "file": "assets/construction/derived/level3-where-do-rest-3.webp",
+      "reference": "assets/construction/build-rest-3.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-where-do-move-1",
+      "file": "assets/construction/derived/level3-where-do-move-1.webp",
+      "reference": "assets/construction/build-move-1.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-where-do-peel-3",
+      "file": "assets/construction/derived/level3-where-do-peel-3.webp",
+      "reference": "assets/construction/build-peel-3.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-where-do-color-3",
+      "file": "assets/construction/derived/level3-where-do-color-3.webp",
+      "reference": "assets/construction/build-color-3.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-where-do-listen-1",
+      "file": "assets/construction/derived/level3-where-do-listen-1.webp",
+      "reference": "assets/construction/build-listen-1.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-where-do-look-2",
+      "file": "assets/construction/derived/level3-where-do-look-2.webp",
+      "reference": "assets/construction/build-look-2.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-where-do-talk-2",
+      "file": "assets/construction/derived/level3-where-do-talk-2.webp",
+      "reference": "assets/construction/build-talk-2.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-where-do-speak-2",
+      "file": "assets/construction/derived/level3-where-do-speak-2.webp",
+      "reference": "assets/construction/build-speak-2.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-where-do-help-2",
+      "file": "assets/construction/derived/level3-where-do-help-2.webp",
+      "reference": "assets/construction/build-help-2.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-where-did-sleep-2-past",
+      "file": "assets/construction/derived/level3-where-did-sleep-2-past.webp",
+      "reference": "assets/construction/build-sleep-2-past.png",
+      "generationMethod": "Composition with a built-in image generation refinement.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target. In the active square scene, two children still sleep side by side with closed eyes in purple and green bedding. Remove every recognizable tent element, including the triangular canopy, orange fabric panels, campsite lantern, tent seams and forest surround. Enclose them in a simple cream wash without any location detail, keeping both fully visible."
+    },
+    {
+      "exampleId": "level3-where-did-cook-1-past",
+      "file": "assets/construction/derived/level3-where-did-cook-1-past.webp",
+      "reference": "assets/construction/build-cook-1-past.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-where-did-answer-2-past",
+      "file": "assets/construction/derived/level3-where-did-answer-2-past.webp",
+      "reference": "assets/construction/build-answer-2-past.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-where-did-give-2-past",
+      "file": "assets/construction/derived/level3-where-did-give-2-past.webp",
+      "reference": "assets/construction/build-give-2-past.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-where-did-ask-1-past",
+      "file": "assets/construction/derived/level3-where-did-ask-1-past.webp",
+      "reference": "assets/construction/build-ask-1-past.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-where-did-share-1-past",
+      "file": "assets/construction/derived/level3-where-did-share-1-past.webp",
+      "reference": "assets/construction/build-share-1-past.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-where-did-meet-3-past",
+      "file": "assets/construction/derived/level3-where-did-meet-3-past.webp",
+      "reference": "assets/construction/build-meet-3-past.png",
+      "generationMethod": "Composition with a built-in image generation refinement.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target. In the active square scene, the boy in a blue hoodie is greeting the elderly gray-haired woman. Preserve both faces and recognizable greeting gestures, and remove the recognizable train, station platform, station roof and railway equipment. Place them against a pale watercolor neutral wash. The woman's clothes and handheld bag may stay."
+    },
+    {
+      "exampleId": "level3-where-did-follow-2-past",
+      "file": "assets/construction/derived/level3-where-did-follow-2-past.webp",
+      "reference": "assets/construction/build-follow-2-past.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-where-did-choose-3-past",
+      "file": "assets/construction/derived/level3-where-did-choose-3-past.webp",
+      "reference": "assets/construction/build-choose-3-past.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-where-did-fix-2-past",
+      "file": "assets/construction/derived/level3-where-did-fix-2-past.webp",
+      "reference": "assets/construction/build-fix-2-past.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-where-ing-ride-3-ongoing",
+      "file": "assets/construction/derived/level3-where-ing-ride-3-ongoing.webp",
+      "reference": "assets/construction/build-ride-3-ongoing-rect.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-where-ing-climb-2-ongoing",
+      "file": "assets/construction/derived/level3-where-ing-climb-2-ongoing.webp",
+      "reference": "assets/construction/build-climb-2-ongoing-rect.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-where-ing-color-1-ongoing",
+      "file": "assets/construction/derived/level3-where-ing-color-1-ongoing.webp",
+      "reference": "assets/construction/build-color-1-ongoing.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-where-ing-look-1-ongoing",
+      "file": "assets/construction/derived/level3-where-ing-look-1-ongoing.webp",
+      "reference": "assets/construction/build-look-1-ongoing.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-where-ing-lift-1-ongoing",
+      "file": "assets/construction/derived/level3-where-ing-lift-1-ongoing.webp",
+      "reference": "assets/construction/build-lift-1-ongoing.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-where-ing-carry-3-ongoing",
+      "file": "assets/construction/derived/level3-where-ing-carry-3-ongoing.webp",
+      "reference": "assets/construction/build-carry-3-ongoing.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-where-ing-give-2-ongoing",
+      "file": "assets/construction/derived/level3-where-ing-give-2-ongoing.webp",
+      "reference": "assets/construction/build-give-2-past.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-where-ing-ask-2-ongoing",
+      "file": "assets/construction/derived/level3-where-ing-ask-2-ongoing.webp",
+      "reference": "assets/construction/build-ask-2-ongoing.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-where-ing-choose-1-ongoing",
+      "file": "assets/construction/derived/level3-where-ing-choose-1-ongoing.webp",
+      "reference": "assets/construction/build-choose-1-ongoing.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-where-ing-check-3-ongoing",
+      "file": "assets/construction/derived/level3-where-ing-check-3-ongoing.webp",
+      "reference": "assets/construction/build-check-3-ongoing.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-two-where-must-be-adjective-3",
+      "file": "assets/construction/derived/level3-two-where-must-be-adjective-3.webp",
+      "reference": "assets/construction/build-be-adjective-3.png",
+      "generationMethod": "Composition with a built-in image generation refinement.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target. Inside the red frame, the two girls should quietly hold a finger to their lips, against a blank pale background. Remove all books, bookcases, shelves and other library details. Keep the existing blue question-mark pin and paper map at right, matching their original position."
+    },
+    {
+      "exampleId": "level3-when-do-go-3",
+      "file": "assets/construction/derived/level3-when-do-go-3.webp",
+      "reference": "assets/construction/build-go-3-rect.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-when-do-ride-2",
+      "file": "assets/construction/derived/level3-when-do-ride-2.webp",
+      "reference": "assets/construction/build-ride-2-rect.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-when-do-stay-2",
+      "file": "assets/construction/derived/level3-when-do-stay-2.webp",
+      "reference": "assets/construction/build-stay-2.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-when-do-call-1",
+      "file": "assets/construction/derived/level3-when-do-call-1.webp",
+      "reference": "assets/construction/build-call-1.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-when-do-visit-2",
+      "file": "assets/construction/derived/level3-when-do-visit-2.webp",
+      "reference": "assets/construction/build-visit-2.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-when-do-clean-2",
+      "file": "assets/construction/derived/level3-when-do-clean-2.webp",
+      "reference": "assets/construction/build-clean-2.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-when-do-wear-1",
+      "file": "assets/construction/derived/level3-when-do-wear-1.webp",
+      "reference": "assets/construction/build-wear-1.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-when-did-come-1-past",
+      "file": "assets/construction/derived/level3-when-did-come-1-past.webp",
+      "reference": "assets/construction/build-come-1-past-rect.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-when-did-walk-3-past",
+      "file": "assets/construction/derived/level3-when-did-walk-3-past.webp",
+      "reference": "assets/construction/build-walk-3-past-rect.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-when-did-close-1-past",
+      "file": "assets/construction/derived/level3-when-did-close-1-past.webp",
+      "reference": "assets/construction/build-close-1-past.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-when-did-get-1-past",
+      "file": "assets/construction/derived/level3-when-did-get-1-past.webp",
+      "reference": "assets/construction/build-get-1-past.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-when-did-bring-3-past",
+      "file": "assets/construction/derived/level3-when-did-bring-3-past.webp",
+      "reference": "assets/construction/build-bring-3-past.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-when-did-thank-1-past",
+      "file": "assets/construction/derived/level3-when-did-thank-1-past.webp",
+      "reference": "assets/construction/build-thank-1-past.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-when-did-join-1-past",
+      "file": "assets/construction/derived/level3-when-did-join-1-past.webp",
+      "reference": "assets/construction/build-join-1-past.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-when-did-try-2-past",
+      "file": "assets/construction/derived/level3-when-did-try-2-past.webp",
+      "reference": "assets/construction/build-try-2-past.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-when-did-buy-2-past",
+      "file": "assets/construction/derived/level3-when-did-buy-2-past.webp",
+      "reference": "assets/construction/build-buy-2-past.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-when-did-save-2-past",
+      "file": "assets/construction/derived/level3-when-did-save-2-past.webp",
+      "reference": "assets/construction/build-save-2-past.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-two-when-must-be-adjective-5",
+      "file": "assets/construction/derived/level3-two-when-must-be-adjective-5.webp",
+      "reference": "assets/construction/build-be-adjective-5.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
+    },
+    {
+      "exampleId": "level3-two-why-must-be-adjective-3",
+      "file": "assets/construction/derived/level3-two-why-must-be-adjective-3.webp",
+      "reference": "assets/construction/build-be-adjective-3.png",
+      "generationMethod": "Composition from reviewed Level 1 scene artwork and built-in image generation character poses.",
+      "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
     }
   ],
   "sceneAtlases": {

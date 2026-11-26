@@ -6541,6 +6541,2498 @@
         10,
         40
       ]
+    },
+    "level2-can-swim-3": {
+      "file": "assets/construction/derived/level2-can-swim-3.webp",
+      "alt": "彼女は湖で泳ぐことができます。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-swim-3-rect.png"
+    },
+    "level2-can-stop-2": {
+      "file": "assets/construction/derived/level2-can-stop-2.webp",
+      "alt": "彼女は家で音楽を止めることができます。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-stop-2.png"
+    },
+    "level2-can-cook-2": {
+      "file": "assets/construction/derived/level2-can-cook-2.webp",
+      "alt": "彼は家でお父さんとスープを作ることができます。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-cook-2.png"
+    },
+    "level2-can-practice-1": {
+      "file": "assets/construction/derived/level2-can-practice-1.webp",
+      "alt": "彼らは家でピアノを練習することができます。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-practice-1.png"
+    },
+    "level2-can-watch-1": {
+      "file": "assets/construction/derived/level2-can-watch-1.webp",
+      "alt": "彼女は家でテレビ番組を見ることができます。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-watch-1.png"
+    },
+    "level2-can-share-2": {
+      "file": "assets/construction/derived/level2-can-share-2.webp",
+      "alt": "彼は家で友だちと色鉛筆を分け合うことができます。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-share-2.png"
+    },
+    "level2-can-teach-1": {
+      "file": "assets/construction/derived/level2-can-teach-1.webp",
+      "alt": "私は家で彼に新しいゲームを教えることができます。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-teach-1.png"
+    },
+    "level2-can-make-2": {
+      "file": "assets/construction/derived/level2-can-make-2.webp",
+      "alt": "彼は家でサンドイッチを作ることができます。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-make-2.png"
+    },
+    "level2-can-save-1": {
+      "file": "assets/construction/derived/level2-can-save-1.webp",
+      "alt": "彼は新しい本のためにおこづかいをためることができます。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-save-1.png"
+    },
+    "level2-can-check-3": {
+      "file": "assets/construction/derived/level2-can-check-3.webp",
+      "alt": "彼らは家で時間割を確かめることができます。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-check-3.png"
+    },
+    "level2-might-stay-3": {
+      "file": "assets/construction/derived/level2-might-stay-3.webp",
+      "alt": "彼はホテルにとまるかもしれません。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-stay-3.png"
+    },
+    "level2-might-taste-2": {
+      "file": "assets/construction/derived/level2-might-taste-2.webp",
+      "alt": "彼女は家でカレーを味見するかもしれません。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-taste-2.png"
+    },
+    "level2-might-mix-1": {
+      "file": "assets/construction/derived/level2-might-mix-1.webp",
+      "alt": "彼は家で卵を混ぜるかもしれません。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-mix-1.png"
+    },
+    "level2-might-write-1": {
+      "file": "assets/construction/derived/level2-might-write-1.webp",
+      "alt": "彼は学校で名前を書くかもしれません。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-write-1.png"
+    },
+    "level2-might-thank-2": {
+      "file": "assets/construction/derived/level2-might-thank-2.webp",
+      "alt": "私は家でお母さんにお礼を言うかもしれません。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-thank-2.png"
+    },
+    "level2-might-meet-1": {
+      "file": "assets/construction/derived/level2-might-meet-1.webp",
+      "alt": "彼は駅で友だちに会うかもしれません。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-meet-1.png"
+    },
+    "level2-might-join-1": {
+      "file": "assets/construction/derived/level2-might-join-1.webp",
+      "alt": "彼は学校でゲームに加わるかもしれません。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-join-1.png"
+    },
+    "level2-might-try-3": {
+      "file": "assets/construction/derived/level2-might-try-3.webp",
+      "alt": "彼は学校で新しいスポーツをやってみるかもしれません。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-try-3.png"
+    },
+    "level2-might-change-1": {
+      "file": "assets/construction/derived/level2-might-change-1.webp",
+      "alt": "私は家でシャツを着がえるかもしれません。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-change-1.png"
+    },
+    "level2-might-buy-2": {
+      "file": "assets/construction/derived/level2-might-buy-2.webp",
+      "alt": "彼はお店でお母さんと消しゴムを買うかもしれません。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-buy-2.png"
+    },
+    "level2-must-wait-1": {
+      "file": "assets/construction/derived/level2-must-wait-1.webp",
+      "alt": "あなたはここでバスを待たなければなりません。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-wait-1.png"
+    },
+    "level2-must-eat-2": {
+      "file": "assets/construction/derived/level2-must-eat-2.webp",
+      "alt": "私たちは家でバナナを食べなければなりません。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-eat-2.png"
+    },
+    "level2-must-bake-3": {
+      "file": "assets/construction/derived/level2-must-bake-3.webp",
+      "alt": "あなたは家でお母さんとパンを焼かなければなりません。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-bake-3.png"
+    },
+    "level2-must-pour-2": {
+      "file": "assets/construction/derived/level2-must-pour-2.webp",
+      "alt": "あなたはコップに牛乳をそそがなければなりません。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-pour-2.png"
+    },
+    "level2-must-learn-3": {
+      "file": "assets/construction/derived/level2-must-learn-3.webp",
+      "alt": "私たちは学校で新しいダンスを覚えなければなりません。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-learn-3.png"
+    },
+    "level2-must-open-3": {
+      "file": "assets/construction/derived/level2-must-open-3.webp",
+      "alt": "私たちは家で窓を開けなければなりません。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-open-3.png"
+    },
+    "level2-must-put-3": {
+      "file": "assets/construction/derived/level2-must-put-3.webp",
+      "alt": "あなたは机の上に鉛筆を置かなければなりません。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-put-3.png"
+    },
+    "level2-must-bring-2": {
+      "file": "assets/construction/derived/level2-must-bring-2.webp",
+      "alt": "私たちは学校にお気に入りの本を持ってこなければなりません。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-bring-2.png"
+    },
+    "level2-must-call-2": {
+      "file": "assets/construction/derived/level2-must-call-2.webp",
+      "alt": "私たちはおじいちゃんに電話しなければなりません。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-call-2.png"
+    },
+    "level2-must-fix-1": {
+      "file": "assets/construction/derived/level2-must-fix-1.webp",
+      "alt": "私たちは家でお父さんとおもちゃの車を直さなければなりません。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-fix-1.png"
+    },
+    "level2-should-walk-3": {
+      "file": "assets/construction/derived/level2-should-walk-3.webp",
+      "alt": "あなたは森の中を歩いたほうがいいです。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-walk-3-rect.png"
+    },
+    "level2-should-move-3": {
+      "file": "assets/construction/derived/level2-should-move-3.webp",
+      "alt": "あなたは家で小さな机を動かしたほうがいいです。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-move-3.png"
+    },
+    "level2-should-drink-2": {
+      "file": "assets/construction/derived/level2-should-drink-2.webp",
+      "alt": "あなたは家で牛乳を飲んだほうがいいです。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-drink-2.png"
+    },
+    "level2-should-peel-1": {
+      "file": "assets/construction/derived/level2-should-peel-1.webp",
+      "alt": "あなたは家でバナナの皮をむいたほうがいいです。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-peel-1.png"
+    },
+    "level2-should-read-3": {
+      "file": "assets/construction/derived/level2-should-read-3.webp",
+      "alt": "あなたは家でまんがを読んだほうがいいです。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-read-3.png"
+    },
+    "level2-should-listen-3": {
+      "file": "assets/construction/derived/level2-should-listen-3.webp",
+      "alt": "あなたは家で鳥の歌を聞いたほうがいいです。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-listen-3.png"
+    },
+    "level2-should-carry-2": {
+      "file": "assets/construction/derived/level2-should-carry-2.webp",
+      "alt": "あなたは家でかごを運んだほうがいいです。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-carry-2.png"
+    },
+    "level2-should-tell-3": {
+      "file": "assets/construction/derived/level2-should-tell-3.webp",
+      "alt": "あなたは家でお父さんに時刻を伝えたほうがいいです。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-tell-3.png"
+    },
+    "level2-should-help-2": {
+      "file": "assets/construction/derived/level2-should-help-2.webp",
+      "alt": "あなたは家で友だちを手伝ったほうがいいです。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-help-2.png"
+    },
+    "level2-should-build-3": {
+      "file": "assets/construction/derived/level2-should-build-3.webp",
+      "alt": "あなたは家で高いタワーを作ったほうがいいです。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-build-3.png"
+    },
+    "level2-might-ing-sit-1-ongoing": {
+      "file": "assets/construction/derived/level2-might-ing-sit-1-ongoing.webp",
+      "alt": "彼らは今ベンチに座っているかもしれません。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-sit-1-ongoing-rect.png"
+    },
+    "level2-might-ing-start-2-ongoing": {
+      "file": "assets/construction/derived/level2-might-ing-start-2-ongoing.webp",
+      "alt": "彼らは今家で宿題を始めているかもしれません。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-start-2-ongoing.png"
+    },
+    "level2-might-ing-wash-1-ongoing": {
+      "file": "assets/construction/derived/level2-might-ing-wash-1-ongoing.webp",
+      "alt": "彼女は今家で手を洗っているかもしれません。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-wash-1-ongoing.png"
+    },
+    "level2-might-ing-count-1-ongoing": {
+      "file": "assets/construction/derived/level2-might-ing-count-1-ongoing.webp",
+      "alt": "それは今庭で星を数えているかもしれません。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-count-1-ongoing.png"
+    },
+    "level2-might-ing-answer-2-ongoing": {
+      "file": "assets/construction/derived/level2-might-ing-answer-2-ongoing.webp",
+      "alt": "彼らは今学校でかんたんな質問に答えているかもしれません。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-answer-2-ongoing.png"
+    },
+    "level2-might-ing-close-1-ongoing": {
+      "file": "assets/construction/derived/level2-might-ing-close-1-ongoing.webp",
+      "alt": "彼らは今家で本を閉じているかもしれません。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-close-1-ongoing.png"
+    },
+    "level2-might-ing-push-1-ongoing": {
+      "file": "assets/construction/derived/level2-might-ing-push-1-ongoing.webp",
+      "alt": "彼は今家で青いボタンを押しているかもしれません。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-push-1-ongoing.png"
+    },
+    "level2-might-ing-give-2-ongoing": {
+      "file": "assets/construction/derived/level2-might-ing-give-2-ongoing.webp",
+      "alt": "彼らは今家で友だちにカードをあげているかもしれません。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-give-2-ongoing.png"
+    },
+    "level2-might-ing-ask-1-ongoing": {
+      "file": "assets/construction/derived/level2-might-ing-ask-1-ongoing.webp",
+      "alt": "彼は今学校で先生に質問をしているかもしれません。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-ask-1-ongoing.png"
+    },
+    "level2-might-ing-use-2-ongoing": {
+      "file": "assets/construction/derived/level2-might-ing-use-2-ongoing.webp",
+      "alt": "彼女は今家で定規を使っているかもしれません。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-use-2-ongoing.png"
+    },
+    "level2-not-stand-3": {
+      "file": "assets/construction/derived/level2-not-stand-3.webp",
+      "alt": "彼は先生のとなりに立ちません。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-stand-3-rect.png"
+    },
+    "level2-not-live-2": {
+      "file": "assets/construction/derived/level2-not-live-2.webp",
+      "alt": "彼は海の近くに住んでいません。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-live-2.png"
+    },
+    "level2-not-study-1": {
+      "file": "assets/construction/derived/level2-not-study-1.webp",
+      "alt": "私は学校で英語を勉強しません。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-study-1.png"
+    },
+    "level2-not-see-1": {
+      "file": "assets/construction/derived/level2-not-see-1.webp",
+      "alt": "あなたは赤いバスを見かけません。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-see-1.png"
+    },
+    "level2-not-take-3": {
+      "file": "assets/construction/derived/level2-not-take-3.webp",
+      "alt": "それは通りで花の写真をとりません。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-take-3.png"
+    },
+    "level2-not-get-2": {
+      "file": "assets/construction/derived/level2-not-get-2.webp",
+      "alt": "彼は家でシールをもらいません。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-get-2.png"
+    },
+    "level2-not-visit-2": {
+      "file": "assets/construction/derived/level2-not-visit-2.webp",
+      "alt": "彼らは日曜日に彼のところに遊びに行きません。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-visit-2.png"
+    },
+    "level2-not-follow-1": {
+      "file": "assets/construction/derived/level2-not-follow-1.webp",
+      "alt": "彼女は公園で先生についていきません。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-follow-1.png"
+    },
+    "level2-not-wear-3": {
+      "file": "assets/construction/derived/level2-not-wear-3.webp",
+      "alt": "彼らは日曜日に公園で黄色いコートを着ていません。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-wear-3.png"
+    },
+    "level2-not-keep-1": {
+      "file": "assets/construction/derived/level2-not-keep-1.webp",
+      "alt": "私たちは自分の部屋をきれいに保ちません。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-keep-1.png"
+    },
+    "level2-did-not-run-2-past": {
+      "file": "assets/construction/derived/level2-did-not-run-2-past.webp",
+      "alt": "彼女は昨日校庭で走りませんでした。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-run-2-past-rect.png"
+    },
+    "level2-did-not-sing-1-past": {
+      "file": "assets/construction/derived/level2-did-not-sing-1-past.webp",
+      "alt": "それは昨日家で好きな歌を歌いませんでした。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-sing-1-past.png"
+    },
+    "level2-did-not-touch-3-past": {
+      "file": "assets/construction/derived/level2-did-not-touch-3-past.webp",
+      "alt": "彼らは昨日家で木の葉にさわりませんでした。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-touch-3-past.png"
+    },
+    "level2-did-not-turn-3-past": {
+      "file": "assets/construction/derived/level2-did-not-turn-3-past.webp",
+      "alt": "彼女は昨日家でおもちゃの車輪を回しませんでした。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-turn-3-past.png"
+    },
+    "level2-did-not-show-2-past": {
+      "file": "assets/construction/derived/level2-did-not-show-2-past.webp",
+      "alt": "彼は昨日家で友だちに地図を見せませんでした。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-show-2-past.png"
+    },
+    "level2-did-not-talk-3-past": {
+      "file": "assets/construction/derived/level2-did-not-talk-3-past.webp",
+      "alt": "私は昨日家でおじいちゃんと話しませんでした。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-talk-3-past.png"
+    },
+    "level2-did-not-speak-2-past": {
+      "file": "assets/construction/derived/level2-did-not-speak-2-past.webp",
+      "alt": "彼は昨日家で日本語を話しませんでした。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-speak-2-past.png"
+    },
+    "level2-did-not-choose-3-past": {
+      "file": "assets/construction/derived/level2-did-not-choose-3-past.webp",
+      "alt": "彼らは昨日家で動物の本を選びませんでした。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-choose-3-past.png"
+    },
+    "level2-did-not-pay-1-past": {
+      "file": "assets/construction/derived/level2-did-not-pay-1-past.webp",
+      "alt": "彼らは昨日駅で切符のお金を払いませんでした。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-pay-1-past.png"
+    },
+    "level2-did-not-find-3-past": {
+      "file": "assets/construction/derived/level2-did-not-find-3-past.webp",
+      "alt": "彼女は昨日公園で松ぼっくりを見つけませんでした。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-find-3-past.png"
+    },
+    "level2-not-ing-go-1-ongoing": {
+      "file": "assets/construction/derived/level2-not-ing-go-1-ongoing.webp",
+      "alt": "私は今公園に向かっていません。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-go-1-ongoing-rect.png"
+    },
+    "level2-not-ing-jump-2-ongoing": {
+      "file": "assets/construction/derived/level2-not-ing-jump-2-ongoing.webp",
+      "alt": "彼らは今公園でロープをとびこえていません。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-jump-2-ongoing-rect.png"
+    },
+    "level2-not-ing-ride-1-ongoing": {
+      "file": "assets/construction/derived/level2-not-ing-ride-1-ongoing.webp",
+      "alt": "私は今公園で自転車に乗っていません。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-ride-1-ongoing-rect.png"
+    },
+    "level2-not-ing-climb-2-ongoing": {
+      "file": "assets/construction/derived/level2-not-ing-climb-2-ongoing.webp",
+      "alt": "彼は今公園で木に登っていません。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-climb-2-ongoing-rect.png"
+    },
+    "level2-not-ing-sleep-1-ongoing": {
+      "file": "assets/construction/derived/level2-not-ing-sleep-1-ongoing.webp",
+      "alt": "私たちは今ベッドでねていません。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-sleep-1-ongoing.png"
+    },
+    "level2-not-ing-color-1-ongoing": {
+      "file": "assets/construction/derived/level2-not-ing-color-1-ongoing.webp",
+      "alt": "あなたは今学校で花の絵に色をぬっていません。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-color-1-ongoing.png"
+    },
+    "level2-not-ing-look-3-ongoing": {
+      "file": "assets/construction/derived/level2-not-ing-look-3-ongoing.webp",
+      "alt": "それは今家で地図を見ていません。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-look-3-ongoing.png"
+    },
+    "level2-not-ing-lift-3-ongoing": {
+      "file": "assets/construction/derived/level2-not-ing-lift-3-ongoing.webp",
+      "alt": "彼らは今家でふたを持ち上げていません。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-lift-3-ongoing.png"
+    },
+    "level2-not-ing-send-3-ongoing": {
+      "file": "assets/construction/derived/level2-not-ing-send-3-ongoing.webp",
+      "alt": "彼は今家でお父さんに写真を送っていません。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-send-3-ongoing.png"
+    },
+    "level2-not-ing-invite-3-ongoing": {
+      "file": "assets/construction/derived/level2-not-ing-invite-3-ongoing.webp",
+      "alt": "彼女は今家で誕生日会におとなりさんを招いていません。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-invite-3-ongoing.png"
+    },
+    "level2-be-not-be-noun-1": {
+      "file": "assets/construction/derived/level2-be-not-be-noun-1.webp",
+      "alt": "私は生徒ではありません。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-be-noun-1.png"
+    },
+    "level2-be-not-be-noun-2-past": {
+      "file": "assets/construction/derived/level2-be-not-be-noun-2-past.webp",
+      "alt": "あなたは昨日図書館でお手伝い係ではありませんでした。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-be-noun-2-past.png"
+    },
+    "level2-be-not-be-adjective-1": {
+      "file": "assets/construction/derived/level2-be-not-be-adjective-1.webp",
+      "alt": "彼女は今日家でうれしくありません。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "todayCalendar": [
+        91,
+        12
+      ],
+      "source": "assets/construction/build-be-adjective-1.png"
+    },
+    "level2-be-not-be-adjective-2-past": {
+      "file": "assets/construction/derived/level2-be-not-be-adjective-2-past.webp",
+      "alt": "彼は昨日学校でいそがしくありませんでした。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-be-adjective-2-past.png"
+    },
+    "level2-be-not-be-adjective-3-past": {
+      "file": "assets/construction/derived/level2-be-not-be-adjective-3-past.webp",
+      "alt": "私たちは昨日図書館で静かではありませんでした。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-be-adjective-3-past.png"
+    },
+    "level2-be-not-be-noun-4": {
+      "file": "assets/construction/derived/level2-be-not-be-noun-4.webp",
+      "alt": "私はクラスの当番ではありません。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-be-noun-4.png"
+    },
+    "level2-be-not-be-adjective-4": {
+      "file": "assets/construction/derived/level2-be-not-be-adjective-4.webp",
+      "alt": "彼女は眠くありません。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-be-adjective-4.png"
+    },
+    "level2-be-not-be-adjective-4-past": {
+      "file": "assets/construction/derived/level2-be-not-be-adjective-4-past.webp",
+      "alt": "彼女は昨日眠くありませんでした。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-be-adjective-4-past.png"
+    },
+    "level2-be-not-be-adjective-5": {
+      "file": "assets/construction/derived/level2-be-not-be-adjective-5.webp",
+      "alt": "彼らは準備万端ではありません。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-be-adjective-5.png"
+    },
+    "level2-be-not-be-adjective-5-past": {
+      "file": "assets/construction/derived/level2-be-not-be-adjective-5-past.webp",
+      "alt": "彼らは昨日準備万端ではありませんでした。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-be-adjective-5-past.png"
+    },
+    "level2-have-not-tense-bicycle-experience": {
+      "file": "assets/construction/derived/level2-have-not-tense-bicycle-experience.webp",
+      "alt": "私は自転車に乗ったことがありません。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/tense-bicycle-experience.png"
+    },
+    "level2-have-not-tense-pony-experience": {
+      "file": "assets/construction/derived/level2-have-not-tense-pony-experience.webp",
+      "alt": "私はポニーに乗ったことがありません。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/tense-pony-experience.png"
+    },
+    "level2-have-not-tense-kite-experience": {
+      "file": "assets/construction/derived/level2-have-not-tense-kite-experience.webp",
+      "alt": "私はたこをあげたことがありません。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/tense-kite-experience.png"
+    },
+    "level2-have-not-tense-rope-experience": {
+      "file": "assets/construction/derived/level2-have-not-tense-rope-experience.webp",
+      "alt": "私はなわとびをしたことがありません。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/tense-rope-experience.png"
+    },
+    "level2-have-not-tense-violin-experience": {
+      "file": "assets/construction/derived/level2-have-not-tense-violin-experience.webp",
+      "alt": "私はバイオリンを弾いたことがありません。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/tense-violin-experience.png"
+    },
+    "level2-have-not-tense-ball-experience": {
+      "file": "assets/construction/derived/level2-have-not-tense-ball-experience.webp",
+      "alt": "私はボールをけったことがありません。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/tense-ball-experience.png"
+    },
+    "level2-have-not-tense-piano-experience": {
+      "file": "assets/construction/derived/level2-have-not-tense-piano-experience.webp",
+      "alt": "私はピアノを弾いたことがありません。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/tense-piano-experience.png"
+    },
+    "level2-have-not-tense-flowers-experience": {
+      "file": "assets/construction/derived/level2-have-not-tense-flowers-experience.webp",
+      "alt": "私は花に水をやったことがありません。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/tense-flowers-experience.png"
+    },
+    "level2-have-not-tense-paint-experience": {
+      "file": "assets/construction/derived/level2-have-not-tense-paint-experience.webp",
+      "alt": "私は絵を描いたことがありません。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/tense-paint-experience.png"
+    },
+    "level2-have-not-tense-sushi-experience": {
+      "file": "assets/construction/derived/level2-have-not-tense-sushi-experience.webp",
+      "alt": "私はのり巻きを作ったことがありません。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/tense-sushi-experience.png"
+    },
+    "level2-often-go-1": {
+      "file": "assets/construction/derived/level2-often-go-1.webp",
+      "alt": "私はよく日曜日に公園に行きます。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-go-1-rect.png"
+    },
+    "level2-often-come-3": {
+      "file": "assets/construction/derived/level2-often-come-3.webp",
+      "alt": "私たちはよく公園に来ます。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-come-3-rect.png"
+    },
+    "level2-often-fly-1": {
+      "file": "assets/construction/derived/level2-often-fly-1.webp",
+      "alt": "彼はときどき公園で赤いたこを飛ばします。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-fly-1-rect.png"
+    },
+    "level2-often-rest-3": {
+      "file": "assets/construction/derived/level2-often-rest-3.webp",
+      "alt": "彼らはよくベンチで休みます。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-rest-3.png"
+    },
+    "level2-often-cut-2": {
+      "file": "assets/construction/derived/level2-often-cut-2.webp",
+      "alt": "彼らはたいてい家で紙を切ります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-cut-2.png"
+    },
+    "level2-often-pour-3": {
+      "file": "assets/construction/derived/level2-often-pour-3.webp",
+      "alt": "彼はときどきコップにジュースをそそぎます。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-pour-3.png"
+    },
+    "level2-often-write-3": {
+      "file": "assets/construction/derived/level2-often-write-3.webp",
+      "alt": "それはいつも学校で英語の単語を書きます。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-write-3.png"
+    },
+    "level2-often-draw-1": {
+      "file": "assets/construction/derived/level2-often-draw-1.webp",
+      "alt": "私たちはたいてい学校でうさぎをかきます。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-draw-1.png"
+    },
+    "level2-often-dance-3": {
+      "file": "assets/construction/derived/level2-often-dance-3.webp",
+      "alt": "彼はいつも部屋でおどります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-dance-3.png"
+    },
+    "level2-often-clean-3": {
+      "file": "assets/construction/derived/level2-often-clean-3.webp",
+      "alt": "彼女はいつも学校で黒板をそうじします。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-clean-3.png"
+    },
+    "level2-be-often-be-adjective-1": {
+      "file": "assets/construction/derived/level2-be-often-be-adjective-1.webp",
+      "alt": "彼女はいつも家でうれしいです。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-be-adjective-1.png"
+    },
+    "level2-be-often-be-adjective-2": {
+      "file": "assets/construction/derived/level2-be-often-be-adjective-2.webp",
+      "alt": "彼はよく学校でいそがしいです。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-be-adjective-2.png"
+    },
+    "level2-be-often-be-adjective-3": {
+      "file": "assets/construction/derived/level2-be-often-be-adjective-3.webp",
+      "alt": "私たちはいつも図書館で静かです。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-be-adjective-3.png"
+    },
+    "level2-be-often-be-adjective-4": {
+      "file": "assets/construction/derived/level2-be-often-be-adjective-4.webp",
+      "alt": "彼女はときどき眠いです。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-be-adjective-4.png"
+    },
+    "level2-be-often-be-adjective-5": {
+      "file": "assets/construction/derived/level2-be-often-be-adjective-5.webp",
+      "alt": "彼らはたいてい準備万端です。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "source": "assets/construction/build-be-adjective-5.png"
+    },
+    "level3-q-do-run-3": {
+      "file": "assets/construction/derived/level3-q-do-run-3.webp",
+      "alt": "それは毎日浜辺で走りますか。 話し手のそばに「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMark": [
+        26,
+        64
+      ],
+      "source": "assets/construction/build-run-3-rect.png"
+    },
+    "level3-q-do-practice-1": {
+      "file": "assets/construction/derived/level3-q-do-practice-1.webp",
+      "alt": "彼らは毎日家でピアノを練習しますか。 話し手のそばに「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMark": [
+        26,
+        64
+      ],
+      "source": "assets/construction/build-practice-1.png"
+    },
+    "level3-q-do-feel-2": {
+      "file": "assets/construction/derived/level3-q-do-feel-2.webp",
+      "alt": "あなたは雨のしずくを感じますか。 話し手のそばに「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMark": [
+        26,
+        64
+      ],
+      "source": "assets/construction/build-feel-2.png"
+    },
+    "level3-q-do-open-1": {
+      "file": "assets/construction/derived/level3-q-do-open-1.webp",
+      "alt": "彼女は毎日学校でお弁当箱を開けますか。 話し手のそばに「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMark": [
+        26,
+        64
+      ],
+      "source": "assets/construction/build-open-1.png"
+    },
+    "level3-q-do-pull-2": {
+      "file": "assets/construction/derived/level3-q-do-pull-2.webp",
+      "alt": "彼らは毎日家で小さなワゴンを引きますか。 話し手のそばに「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMark": [
+        26,
+        64
+      ],
+      "source": "assets/construction/build-pull-2.png"
+    },
+    "level3-q-do-lift-3": {
+      "file": "assets/construction/derived/level3-q-do-lift-3.webp",
+      "alt": "彼らは毎日家でふたを持ち上げますか。 話し手のそばに「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMark": [
+        26,
+        64
+      ],
+      "source": "assets/construction/build-lift-3.png"
+    },
+    "level3-q-do-hold-2": {
+      "file": "assets/construction/derived/level3-q-do-hold-2.webp",
+      "alt": "彼は毎日外でかさを持ちますか。 話し手のそばに「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMark": [
+        26,
+        64
+      ],
+      "source": "assets/construction/build-hold-2.png"
+    },
+    "level3-q-do-like-1": {
+      "file": "assets/construction/derived/level3-q-do-like-1.webp",
+      "alt": "彼らはいちごが好きですか。 話し手のそばに「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMark": [
+        26,
+        64
+      ],
+      "source": "assets/construction/build-like-1.png"
+    },
+    "level3-q-do-love-1": {
+      "file": "assets/construction/derived/level3-q-do-love-1.webp",
+      "alt": "彼は雪が大好きですか。 話し手のそばに「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMark": [
+        26,
+        64
+      ],
+      "source": "assets/construction/build-love-1.png"
+    },
+    "level3-q-do-need-3": {
+      "file": "assets/construction/derived/level3-q-do-need-3.webp",
+      "alt": "彼女は水が必要ですか。 話し手のそばに「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMark": [
+        26,
+        64
+      ],
+      "source": "assets/construction/build-need-3.png"
+    },
+    "level3-q-did-jump-2-past": {
+      "file": "assets/construction/derived/level3-q-did-jump-2-past.webp",
+      "alt": "彼らは昨日公園でロープをとびこえましたか。 話し手のそばに「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMark": [
+        76,
+        64
+      ],
+      "source": "assets/construction/build-jump-2-past-rect.png"
+    },
+    "level3-q-did-stay-3-past": {
+      "file": "assets/construction/derived/level3-q-did-stay-3-past.webp",
+      "alt": "彼は昨日ホテルにとまりましたか。 話し手のそばに「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMark": [
+        76,
+        64
+      ],
+      "source": "assets/construction/build-stay-3-past.png"
+    },
+    "level3-q-did-cut-2-past": {
+      "file": "assets/construction/derived/level3-q-did-cut-2-past.webp",
+      "alt": "彼らは昨日家で紙を切りましたか。 話し手のそばに「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMark": [
+        76,
+        64
+      ],
+      "source": "assets/construction/build-cut-2-past.png"
+    },
+    "level3-q-did-wash-1-past": {
+      "file": "assets/construction/derived/level3-q-did-wash-1-past.webp",
+      "alt": "彼女は昨日家で手を洗いましたか。 話し手のそばに「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMark": [
+        76,
+        64
+      ],
+      "source": "assets/construction/build-wash-1-past.png"
+    },
+    "level3-q-did-learn-1-past": {
+      "file": "assets/construction/derived/level3-q-did-learn-1-past.webp",
+      "alt": "彼女は昨日学校で新しい歌を覚えましたか。 話し手のそばに「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMark": [
+        76,
+        64
+      ],
+      "source": "assets/construction/build-learn-1-past.png"
+    },
+    "level3-q-did-play-2-past": {
+      "file": "assets/construction/derived/level3-q-did-play-2-past.webp",
+      "alt": "彼は昨日公園で友だちとかくれんぼをしましたか。 話し手のそばに「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMark": [
+        76,
+        64
+      ],
+      "source": "assets/construction/build-play-2-past.png"
+    },
+    "level3-q-did-push-1-past": {
+      "file": "assets/construction/derived/level3-q-did-push-1-past.webp",
+      "alt": "彼は昨日家で青いボタンを押しましたか。 話し手のそばに「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMark": [
+        76,
+        64
+      ],
+      "source": "assets/construction/build-push-1-past.png"
+    },
+    "level3-q-did-hold-1-past": {
+      "file": "assets/construction/derived/level3-q-did-hold-1-past.webp",
+      "alt": "彼女は昨日外で赤い風船を持ちましたか。 話し手のそばに「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMark": [
+        76,
+        64
+      ],
+      "source": "assets/construction/build-hold-1-past.png"
+    },
+    "level3-q-did-put-3-past": {
+      "file": "assets/construction/derived/level3-q-did-put-3-past.webp",
+      "alt": "あなたは昨日机の上に鉛筆を置きましたか。 話し手のそばに「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMark": [
+        76,
+        64
+      ],
+      "source": "assets/construction/build-put-3-past.png"
+    },
+    "level3-q-did-invite-2-past": {
+      "file": "assets/construction/derived/level3-q-did-invite-2-past.webp",
+      "alt": "彼は昨日家で誕生日会に男の子を招きましたか。 話し手のそばに「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMark": [
+        76,
+        64
+      ],
+      "source": "assets/construction/build-invite-2-past.png"
+    },
+    "level3-q-ing-swim-1-ongoing": {
+      "file": "assets/construction/derived/level3-q-ing-swim-1-ongoing.webp",
+      "alt": "あなたは今プールで泳いでいますか。 話し手のそばに「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMark": [
+        43,
+        64
+      ],
+      "source": "assets/construction/build-swim-1-ongoing-rect.png"
+    },
+    "level3-q-ing-stop-2-ongoing": {
+      "file": "assets/construction/derived/level3-q-ing-stop-2-ongoing.webp",
+      "alt": "彼女は今家で音楽を止めていますか。 話し手のそばに「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMark": [
+        50,
+        64
+      ],
+      "source": "assets/construction/build-stop-2-ongoing.png"
+    },
+    "level3-q-ing-eat-1-ongoing": {
+      "file": "assets/construction/derived/level3-q-ing-eat-1-ongoing.webp",
+      "alt": "彼は今家でおにぎりを食べていますか。 話し手のそばに「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMark": [
+        50,
+        64
+      ],
+      "source": "assets/construction/build-eat-1-ongoing.png"
+    },
+    "level3-q-ing-play-2-ongoing": {
+      "file": "assets/construction/derived/level3-q-ing-play-2-ongoing.webp",
+      "alt": "彼は今公園で友だちとかくれんぼをしていますか。 話し手のそばに「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMark": [
+        50,
+        64
+      ],
+      "source": "assets/construction/build-play-2-ongoing.png"
+    },
+    "level3-q-ing-dance-2-ongoing": {
+      "file": "assets/construction/derived/level3-q-ing-dance-2-ongoing.webp",
+      "alt": "あなたは今ステージでおどっていますか。 話し手のそばに「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMark": [
+        43,
+        64
+      ],
+      "source": "assets/construction/build-dance-2-ongoing.png"
+    },
+    "level3-q-ing-touch-3-ongoing": {
+      "file": "assets/construction/derived/level3-q-ing-touch-3-ongoing.webp",
+      "alt": "彼らは今家で木の葉にさわっていますか。 話し手のそばに「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMark": [
+        50,
+        64
+      ],
+      "source": "assets/construction/build-touch-3-ongoing.png"
+    },
+    "level3-q-ing-take-3-ongoing": {
+      "file": "assets/construction/derived/level3-q-ing-take-3-ongoing.webp",
+      "alt": "それは今通りで花の写真をとっていますか。 話し手のそばに「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMark": [
+        50,
+        64
+      ],
+      "source": "assets/construction/build-take-3-ongoing.png"
+    },
+    "level3-q-ing-show-2-ongoing": {
+      "file": "assets/construction/derived/level3-q-ing-show-2-ongoing.webp",
+      "alt": "彼は今家で友だちに地図を見せていますか。 話し手のそばに「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMark": [
+        50,
+        64
+      ],
+      "source": "assets/construction/build-show-2-ongoing.png"
+    },
+    "level3-q-ing-use-2-ongoing": {
+      "file": "assets/construction/derived/level3-q-ing-use-2-ongoing.webp",
+      "alt": "彼女は今家で定規を使っていますか。 話し手のそばに「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMark": [
+        50,
+        64
+      ],
+      "source": "assets/construction/build-use-2-ongoing.png"
+    },
+    "level3-q-ing-clean-2-ongoing": {
+      "file": "assets/construction/derived/level3-q-ing-clean-2-ongoing.webp",
+      "alt": "彼は今家で机をそうじしていますか。 話し手のそばに「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMark": [
+        50,
+        64
+      ],
+      "source": "assets/construction/build-clean-2-ongoing.png"
+    },
+    "level3-q-be-be-noun-2": {
+      "file": "assets/construction/derived/level3-q-be-be-noun-2.webp",
+      "alt": "あなたは図書館でお手伝い係ですか。 話し手のそばに「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMark": [
+        26,
+        64
+      ],
+      "source": "assets/construction/build-be-noun-2.png"
+    },
+    "level3-q-be-be-noun-2-past": {
+      "file": "assets/construction/derived/level3-q-be-be-noun-2-past.webp",
+      "alt": "あなたは昨日図書館でお手伝い係でしたか。 話し手のそばに「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMark": [
+        76,
+        64
+      ],
+      "source": "assets/construction/build-be-noun-2-past.png"
+    },
+    "level3-q-be-be-noun-3": {
+      "file": "assets/construction/derived/level3-q-be-be-noun-3.webp",
+      "alt": "彼は学校ではチームメイトですか。 話し手のそばに「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMark": [
+        26,
+        64
+      ],
+      "source": "assets/construction/build-be-noun-3.png"
+    },
+    "level3-q-be-be-adjective-1": {
+      "file": "assets/construction/derived/level3-q-be-be-adjective-1.webp",
+      "alt": "彼女は今日家でうれしいですか。 話し手のそばに「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMark": [
+        26,
+        64
+      ],
+      "todayCalendar": [
+        91,
+        12
+      ],
+      "source": "assets/construction/build-be-adjective-1.png"
+    },
+    "level3-q-be-be-adjective-1-past": {
+      "file": "assets/construction/derived/level3-q-be-be-adjective-1-past.webp",
+      "alt": "彼女は昨日家でうれしかったですか。 話し手のそばに「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMark": [
+        76,
+        64
+      ],
+      "source": "assets/construction/build-be-adjective-1-past.png"
+    },
+    "level3-q-be-be-adjective-2": {
+      "file": "assets/construction/derived/level3-q-be-be-adjective-2.webp",
+      "alt": "彼は今日学校でいそがしいですか。 話し手のそばに「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMark": [
+        26,
+        64
+      ],
+      "todayCalendar": [
+        91,
+        12
+      ],
+      "source": "assets/construction/build-be-adjective-2.png"
+    },
+    "level3-q-be-be-adjective-2-past": {
+      "file": "assets/construction/derived/level3-q-be-be-adjective-2-past.webp",
+      "alt": "彼は昨日学校でいそがしかったですか。 話し手のそばに「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMark": [
+        76,
+        64
+      ],
+      "source": "assets/construction/build-be-adjective-2-past.png"
+    },
+    "level3-q-be-be-adjective-4": {
+      "file": "assets/construction/derived/level3-q-be-be-adjective-4.webp",
+      "alt": "彼女は眠いですか。 話し手のそばに「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMark": [
+        26,
+        64
+      ],
+      "source": "assets/construction/build-be-adjective-4.png"
+    },
+    "level3-q-be-be-adjective-4-past": {
+      "file": "assets/construction/derived/level3-q-be-be-adjective-4-past.webp",
+      "alt": "彼女は昨日眠かったですか。 話し手のそばに「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMark": [
+        76,
+        64
+      ],
+      "source": "assets/construction/build-be-adjective-4-past.png"
+    },
+    "level3-q-be-be-adjective-5-past": {
+      "file": "assets/construction/derived/level3-q-be-be-adjective-5-past.webp",
+      "alt": "彼らは昨日準備万端でしたか。 話し手のそばに「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMark": [
+        76,
+        64
+      ],
+      "source": "assets/construction/build-be-adjective-5-past.png"
+    },
+    "level3-q-can-ride-2": {
+      "file": "assets/construction/derived/level3-q-can-ride-2.webp",
+      "alt": "あなたは公園で小さな馬に乗ることができますか。 話し手のそばに「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMark": [
+        26,
+        64
+      ],
+      "source": "assets/construction/build-ride-2-rect.png"
+    },
+    "level3-q-can-wait-1": {
+      "file": "assets/construction/derived/level3-q-can-wait-1.webp",
+      "alt": "あなたはここでバスを待つことができますか。 話し手のそばに「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMark": [
+        26,
+        64
+      ],
+      "source": "assets/construction/build-wait-1.png"
+    },
+    "level3-q-can-drink-2": {
+      "file": "assets/construction/derived/level3-q-can-drink-2.webp",
+      "alt": "あなたは家で牛乳を飲むことができますか。 話し手のそばに「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMark": [
+        26,
+        64
+      ],
+      "source": "assets/construction/build-drink-2.png"
+    },
+    "level3-q-can-bake-3": {
+      "file": "assets/construction/derived/level3-q-can-bake-3.webp",
+      "alt": "あなたは家でお母さんとパンを焼くことができますか。 話し手のそばに「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMark": [
+        26,
+        64
+      ],
+      "source": "assets/construction/build-bake-3.png"
+    },
+    "level3-q-can-carry-2": {
+      "file": "assets/construction/derived/level3-q-can-carry-2.webp",
+      "alt": "あなたは家でかごを運ぶことができますか。 話し手のそばに「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMark": [
+        26,
+        64
+      ],
+      "source": "assets/construction/build-carry-2.png"
+    },
+    "level3-q-can-send-2": {
+      "file": "assets/construction/derived/level3-q-can-send-2.webp",
+      "alt": "あなたは家で友だちに手紙を送ることができますか。 話し手のそばに「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMark": [
+        26,
+        64
+      ],
+      "source": "assets/construction/build-send-2.png"
+    },
+    "level3-q-can-teach-2": {
+      "file": "assets/construction/derived/level3-q-can-teach-2.webp",
+      "alt": "あなたは家で友だちに歌を教えることができますか。 話し手のそばに「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMark": [
+        26,
+        64
+      ],
+      "source": "assets/construction/build-teach-2.png"
+    },
+    "level3-q-can-change-2": {
+      "file": "assets/construction/derived/level3-q-can-change-2.webp",
+      "alt": "あなたは家で靴下をはきかえることができますか。 話し手のそばに「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMark": [
+        26,
+        64
+      ],
+      "source": "assets/construction/build-change-2.png"
+    },
+    "level3-q-can-pay-3": {
+      "file": "assets/construction/derived/level3-q-can-pay-3.webp",
+      "alt": "あなたはお店でノートのお金を払うことができますか。 話し手のそばに「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMark": [
+        26,
+        64
+      ],
+      "source": "assets/construction/build-pay-3.png"
+    },
+    "level3-q-can-find-1": {
+      "file": "assets/construction/derived/level3-q-can-find-1.webp",
+      "alt": "あなたは公園で赤い葉っぱを見つけることができますか。 話し手のそばに「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMark": [
+        26,
+        64
+      ],
+      "source": "assets/construction/build-find-1.png"
+    },
+    "level3-q-have-tense-bicycle-experience": {
+      "file": "assets/construction/derived/level3-q-have-tense-bicycle-experience.webp",
+      "alt": "あなたは今までに自転車に乗ったことがありますか。 話し手のそばに「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMark": [
+        76,
+        64
+      ],
+      "source": "assets/construction/tense-bicycle-experience.png"
+    },
+    "level3-q-have-tense-pony-experience": {
+      "file": "assets/construction/derived/level3-q-have-tense-pony-experience.webp",
+      "alt": "あなたは今までにポニーに乗ったことがありますか。 話し手のそばに「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMark": [
+        76,
+        64
+      ],
+      "source": "assets/construction/tense-pony-experience.png"
+    },
+    "level3-q-have-tense-kite-experience": {
+      "file": "assets/construction/derived/level3-q-have-tense-kite-experience.webp",
+      "alt": "あなたは今までにたこをあげたことがありますか。 話し手のそばに「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMark": [
+        76,
+        64
+      ],
+      "source": "assets/construction/tense-kite-experience.png"
+    },
+    "level3-q-have-tense-rope-experience": {
+      "file": "assets/construction/derived/level3-q-have-tense-rope-experience.webp",
+      "alt": "あなたは今までになわとびをしたことがありますか。 話し手のそばに「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMark": [
+        76,
+        64
+      ],
+      "source": "assets/construction/tense-rope-experience.png"
+    },
+    "level3-q-have-tense-violin-experience": {
+      "file": "assets/construction/derived/level3-q-have-tense-violin-experience.webp",
+      "alt": "あなたは今までにバイオリンを弾いたことがありますか。 話し手のそばに「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMark": [
+        76,
+        64
+      ],
+      "source": "assets/construction/tense-violin-experience.png"
+    },
+    "level3-q-have-tense-ball-experience": {
+      "file": "assets/construction/derived/level3-q-have-tense-ball-experience.webp",
+      "alt": "あなたは今までにボールをけったことがありますか。 話し手のそばに「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMark": [
+        76,
+        64
+      ],
+      "source": "assets/construction/tense-ball-experience.png"
+    },
+    "level3-q-have-tense-piano-experience": {
+      "file": "assets/construction/derived/level3-q-have-tense-piano-experience.webp",
+      "alt": "あなたは今までにピアノを弾いたことがありますか。 話し手のそばに「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMark": [
+        76,
+        64
+      ],
+      "source": "assets/construction/tense-piano-experience.png"
+    },
+    "level3-q-have-tense-flowers-experience": {
+      "file": "assets/construction/derived/level3-q-have-tense-flowers-experience.webp",
+      "alt": "あなたは今までに花に水をやったことがありますか。 話し手のそばに「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMark": [
+        76,
+        64
+      ],
+      "source": "assets/construction/tense-flowers-experience.png"
+    },
+    "level3-q-have-tense-paint-experience": {
+      "file": "assets/construction/derived/level3-q-have-tense-paint-experience.webp",
+      "alt": "あなたは今までに絵を描いたことがありますか。 話し手のそばに「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMark": [
+        76,
+        64
+      ],
+      "source": "assets/construction/tense-paint-experience.png"
+    },
+    "level3-q-have-tense-sushi-experience": {
+      "file": "assets/construction/derived/level3-q-have-tense-sushi-experience.webp",
+      "alt": "あなたは今までにのり巻きを作ったことがありますか。 話し手のそばに「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMark": [
+        76,
+        64
+      ],
+      "source": "assets/construction/tense-sushi-experience.png"
+    },
+    "level3-two-whether-must-be-adjective-3": {
+      "file": "assets/construction/derived/level3-two-whether-must-be-adjective-3.webp",
+      "alt": "私たちは図書館で静かにしていなければなりませんか。 話し手のそばに「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMark": [
+        26,
+        64
+      ],
+      "source": "assets/construction/build-be-adjective-3.png"
+    },
+    "level3-two-whether-should-be-adjective-3": {
+      "file": "assets/construction/derived/level3-two-whether-should-be-adjective-3.webp",
+      "alt": "私たちは図書館で静かにしたほうがいいですか。 話し手のそばに「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMark": [
+        26,
+        64
+      ],
+      "source": "assets/construction/build-be-adjective-3.png"
+    },
+    "level3-two-whether-can-be-adjective-3": {
+      "file": "assets/construction/derived/level3-two-whether-can-be-adjective-3.webp",
+      "alt": "私たちは図書館で静かにしていられますか。 話し手のそばに「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMark": [
+        26,
+        64
+      ],
+      "source": "assets/construction/build-be-adjective-3.png"
+    },
+    "level3-two-whether-can-always-be-adjective-1": {
+      "file": "assets/construction/derived/level3-two-whether-can-always-be-adjective-1.webp",
+      "alt": "彼女は家でいつもうれしい気持ちでいられますか。 話し手のそばに「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMark": [
+        26,
+        64
+      ],
+      "source": "assets/construction/build-be-adjective-1.png"
+    },
+    "level3-two-whether-can-always-be-adjective-5": {
+      "file": "assets/construction/derived/level3-two-whether-can-always-be-adjective-5.webp",
+      "alt": "彼らはいつも準備万端でいられますか。 話し手のそばに「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMark": [
+        26,
+        64
+      ],
+      "source": "assets/construction/build-be-adjective-5.png"
+    },
+    "level3-what-do-fly-1": {
+      "file": "assets/construction/derived/level3-what-do-fly-1.webp",
+      "alt": "彼は毎日公園で何を飛ばしますか。 「？」が付いた場所に、たずねている物の手がかりがあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-fly-1-rect.png"
+    },
+    "level3-what-do-taste-2": {
+      "file": "assets/construction/derived/level3-what-do-taste-2.webp",
+      "alt": "彼女は毎日家で何を味見しますか。 「？」が付いた場所に、たずねている物の手がかりがあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-taste-2.png"
+    },
+    "level3-what-do-read-3": {
+      "file": "assets/construction/derived/level3-what-do-read-3.webp",
+      "alt": "あなたは毎日家で何を読みますか。 「？」が付いた場所に、たずねている物の手がかりがあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-read-3.png"
+    },
+    "level3-what-do-count-3": {
+      "file": "assets/construction/derived/level3-what-do-count-3.webp",
+      "alt": "彼らは毎日学校で何を数えますか。 「？」が付いた場所に、たずねている物の手がかりがあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-count-3.png"
+    },
+    "level3-what-do-study-3": {
+      "file": "assets/construction/derived/level3-what-do-study-3.webp",
+      "alt": "彼は毎日学校で何を勉強しますか。 「？」が付いた場所に、たずねている物の手がかりがあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-study-3.png"
+    },
+    "level3-what-do-sing-3": {
+      "file": "assets/construction/derived/level3-what-do-sing-3.webp",
+      "alt": "彼らは毎日家で何を歌いますか。 「？」が付いた場所に、たずねている物の手がかりがあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-sing-3.png"
+    },
+    "level3-what-do-make-2": {
+      "file": "assets/construction/derived/level3-what-do-make-2.webp",
+      "alt": "彼は毎日家で何を作りますか。 「？」が付いた場所に、たずねている物の手がかりがあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-make-2.png"
+    },
+    "level3-what-do-build-3": {
+      "file": "assets/construction/derived/level3-what-do-build-3.webp",
+      "alt": "あなたは毎日家で何を作りますか。 「？」が付いた場所に、たずねている物の手がかりがあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-build-3.png"
+    },
+    "level3-what-do-wear-3": {
+      "file": "assets/construction/derived/level3-what-do-wear-3.webp",
+      "alt": "彼らは日曜日に公園で何を着ていますか。 「？」が付いた場所に、たずねている物の手がかりがあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-wear-3.png"
+    },
+    "level3-what-do-check-1": {
+      "file": "assets/construction/derived/level3-what-do-check-1.webp",
+      "alt": "それは毎日家で何を確かめますか。 「？」が付いた場所に、たずねている物の手がかりがあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-check-1.png"
+    },
+    "level3-what-did-start-2-past": {
+      "file": "assets/construction/derived/level3-what-did-start-2-past.webp",
+      "alt": "彼らは昨日家で何を始めましたか。 「？」が付いた場所に、たずねている物の手がかりがあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-start-2-past.png"
+    },
+    "level3-what-did-cut-2-past": {
+      "file": "assets/construction/derived/level3-what-did-cut-2-past.webp",
+      "alt": "彼らは昨日家で何を切りましたか。 「？」が付いた場所に、たずねている物の手がかりがあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-cut-2-past.png"
+    },
+    "level3-what-did-mix-1-past": {
+      "file": "assets/construction/derived/level3-what-did-mix-1-past.webp",
+      "alt": "彼は昨日家で何を混ぜましたか。 「？」が付いた場所に、たずねている物の手がかりがあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-mix-1-past.png"
+    },
+    "level3-what-did-draw-2-past": {
+      "file": "assets/construction/derived/level3-what-did-draw-2-past.webp",
+      "alt": "彼らは昨日学校で何をかきましたか。 「？」が付いた場所に、たずねている物の手がかりがあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-draw-2-past.png"
+    },
+    "level3-what-did-count-3-past": {
+      "file": "assets/construction/derived/level3-what-did-count-3-past.webp",
+      "alt": "彼らは昨日学校で何を数えましたか。 「？」が付いた場所に、たずねている物の手がかりがあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-count-3.png"
+    },
+    "level3-what-did-sing-1-past": {
+      "file": "assets/construction/derived/level3-what-did-sing-1-past.webp",
+      "alt": "それは昨日家で何を歌いましたか。 「？」が付いた場所に、たずねている物の手がかりがあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-sing-1-past.png"
+    },
+    "level3-what-did-watch-1-past": {
+      "file": "assets/construction/derived/level3-what-did-watch-1-past.webp",
+      "alt": "彼女は昨日家で何を見ましたか。 「？」が付いた場所に、たずねている物の手がかりがあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-watch-1-past.png"
+    },
+    "level3-what-did-hold-1-past": {
+      "file": "assets/construction/derived/level3-what-did-hold-1-past.webp",
+      "alt": "彼女は昨日外で何を持ちましたか。 「？」が付いた場所に、たずねている物の手がかりがあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-hold-1-past.png"
+    },
+    "level3-what-did-use-3-past": {
+      "file": "assets/construction/derived/level3-what-did-use-3-past.webp",
+      "alt": "それは昨日家で何を使いましたか。 「？」が付いた場所に、たずねている物の手がかりがあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-use-3-past.png"
+    },
+    "level3-what-did-wear-3-past": {
+      "file": "assets/construction/derived/level3-what-did-wear-3-past.webp",
+      "alt": "彼らは昨日公園で何を着ていましたか。 「？」が付いた場所に、たずねている物の手がかりがあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-wear-3.png"
+    },
+    "level3-what-ing-eat-1-ongoing": {
+      "file": "assets/construction/derived/level3-what-ing-eat-1-ongoing.webp",
+      "alt": "彼は今家で何を食べていますか。 「？」が付いた場所に、たずねている物の手がかりがあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-eat-1-ongoing.png"
+    },
+    "level3-what-ing-taste-1-ongoing": {
+      "file": "assets/construction/derived/level3-what-ing-taste-1-ongoing.webp",
+      "alt": "彼は今家で何を味見していますか。 「？」が付いた場所に、たずねている物の手がかりがあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-taste-1-ongoing.png"
+    },
+    "level3-what-ing-mix-1-ongoing": {
+      "file": "assets/construction/derived/level3-what-ing-mix-1-ongoing.webp",
+      "alt": "彼は今家で何を混ぜていますか。 「？」が付いた場所に、たずねている物の手がかりがあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-mix-1-past.png"
+    },
+    "level3-what-ing-wash-2-ongoing": {
+      "file": "assets/construction/derived/level3-what-ing-wash-2-ongoing.webp",
+      "alt": "彼は今家で何を洗っていますか。 「？」が付いた場所に、たずねている物の手がかりがあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-wash-2-ongoing.png"
+    },
+    "level3-what-ing-read-3-ongoing": {
+      "file": "assets/construction/derived/level3-what-ing-read-3-ongoing.webp",
+      "alt": "あなたは今家で何を読んでいますか。 「？」が付いた場所に、たずねている物の手がかりがあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-read-3.png"
+    },
+    "level3-what-ing-write-1-ongoing": {
+      "file": "assets/construction/derived/level3-what-ing-write-1-ongoing.webp",
+      "alt": "彼は今学校で何を書いていますか。 「？」が付いた場所に、たずねている物の手がかりがあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-write-1-ongoing.png"
+    },
+    "level3-what-ing-learn-1-ongoing": {
+      "file": "assets/construction/derived/level3-what-ing-learn-1-ongoing.webp",
+      "alt": "彼女は今学校で何を覚えていますか。 「？」が付いた場所に、たずねている物の手がかりがあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-learn-1-ongoing.png"
+    },
+    "level3-what-ing-watch-1-ongoing": {
+      "file": "assets/construction/derived/level3-what-ing-watch-1-ongoing.webp",
+      "alt": "彼女は今家で何を見ていますか。 「？」が付いた場所に、たずねている物の手がかりがあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-watch-1-past.png"
+    },
+    "level3-what-ing-make-2-ongoing": {
+      "file": "assets/construction/derived/level3-what-ing-make-2-ongoing.webp",
+      "alt": "彼は今家で何を作っていますか。 「？」が付いた場所に、たずねている物の手がかりがあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-make-2.png"
+    },
+    "level3-what-ing-clean-1-ongoing": {
+      "file": "assets/construction/derived/level3-what-ing-clean-1-ongoing.webp",
+      "alt": "あなたは今家で何をそうじしていますか。 「？」が付いた場所に、たずねている物の手がかりがあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-clean-1-ongoing.png"
+    },
+    "level3-what-can-drink-2": {
+      "file": "assets/construction/derived/level3-what-can-drink-2.webp",
+      "alt": "あなたは家で何を飲むことができますか。 「？」が付いた場所に、たずねている物の手がかりがあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-drink-2.png"
+    },
+    "level3-what-can-read-3": {
+      "file": "assets/construction/derived/level3-what-can-read-3.webp",
+      "alt": "あなたは家で何を読むことができますか。 「？」が付いた場所に、たずねている物の手がかりがあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-read-3.png"
+    },
+    "level3-what-can-study-2": {
+      "file": "assets/construction/derived/level3-what-can-study-2.webp",
+      "alt": "あなたは学校で何を勉強することができますか。 「？」が付いた場所に、たずねている物の手がかりがあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-study-2.png"
+    },
+    "level3-what-can-practice-3": {
+      "file": "assets/construction/derived/level3-what-can-practice-3.webp",
+      "alt": "あなたは家で何を練習することができますか。 「？」が付いた場所に、たずねている物の手がかりがあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-practice-3.png"
+    },
+    "level3-what-can-carry-2": {
+      "file": "assets/construction/derived/level3-what-can-carry-2.webp",
+      "alt": "あなたは家で何を運ぶことができますか。 「？」が付いた場所に、たずねている物の手がかりがあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-carry-2.png"
+    },
+    "level3-what-can-build-3": {
+      "file": "assets/construction/derived/level3-what-can-build-3.webp",
+      "alt": "あなたは家で何を作ることができますか。 「？」が付いた場所に、たずねている物の手がかりがあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-build-3.png"
+    },
+    "level3-what-can-clean-1": {
+      "file": "assets/construction/derived/level3-what-can-clean-1.webp",
+      "alt": "あなたは家で何をそうじすることができますか。 「？」が付いた場所に、たずねている物の手がかりがあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-clean-1-ongoing.png"
+    },
+    "level3-what-can-find-1": {
+      "file": "assets/construction/derived/level3-what-can-find-1.webp",
+      "alt": "あなたは公園で何を見つけることができますか。 「？」が付いた場所に、たずねている物の手がかりがあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-find-1.png"
+    },
+    "level3-who-do-sit-1": {
+      "file": "assets/construction/derived/level3-who-do-sit-1.webp",
+      "alt": "だれが毎日ベンチに座りますか。 人物の顔に「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-sit-1-rect.png"
+    },
+    "level3-who-do-stand-2": {
+      "file": "assets/construction/derived/level3-who-do-stand-2.webp",
+      "alt": "だれが毎日木の下に立ちますか。 人物の顔に「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-stand-2-rect.png"
+    },
+    "level3-who-do-draw-1": {
+      "file": "assets/construction/derived/level3-who-do-draw-1.webp",
+      "alt": "だれが毎日学校でうさぎをかきますか。 人物の顔に「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-draw-1.png"
+    },
+    "level3-who-do-feel-1": {
+      "file": "assets/construction/derived/level3-who-do-feel-1.webp",
+      "alt": "だれが風を感じますか。 人物の顔に「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-feel-1.png"
+    },
+    "level3-who-do-pull-3": {
+      "file": "assets/construction/derived/level3-who-do-pull-3.webp",
+      "alt": "だれが毎日家でいすを引きますか。 人物の顔に「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-pull-3.png"
+    },
+    "level3-who-do-turn-3": {
+      "file": "assets/construction/derived/level3-who-do-turn-3.webp",
+      "alt": "だれが毎日家でおもちゃの車輪を回しますか。 人物の顔に「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-turn-3.png"
+    },
+    "level3-who-do-tell-1": {
+      "file": "assets/construction/derived/level3-who-do-tell-1.webp",
+      "alt": "だれが毎日家で私に予定を伝えますか。 人物の顔に「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-tell-1.png"
+    },
+    "level3-who-do-like-2": {
+      "file": "assets/construction/derived/level3-who-do-like-2.webp",
+      "alt": "だれがパズルが好きですか。 人物の顔に「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-like-2.png"
+    },
+    "level3-who-do-want-3": {
+      "file": "assets/construction/derived/level3-who-do-want-3.webp",
+      "alt": "だれが新しいノートがほしいですか。 人物の顔に「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-want-3.png"
+    },
+    "level3-who-do-need-3": {
+      "file": "assets/construction/derived/level3-who-do-need-3.webp",
+      "alt": "だれが水が必要ですか。 人物の顔に「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-need-3.png"
+    },
+    "level3-who-did-swim-1-past": {
+      "file": "assets/construction/derived/level3-who-did-swim-1-past.webp",
+      "alt": "だれが昨日プールで泳ぎましたか。 人物の顔に「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-swim-1-past-rect.png"
+    },
+    "level3-who-did-fly-1-past": {
+      "file": "assets/construction/derived/level3-who-did-fly-1-past.webp",
+      "alt": "だれが昨日公園で赤いたこを飛ばしましたか。 人物の顔に「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-fly-1-past-rect.png"
+    },
+    "level3-who-did-pour-3-past": {
+      "file": "assets/construction/derived/level3-who-did-pour-3-past.webp",
+      "alt": "だれが昨日コップにジュースをそそぎましたか。 人物の顔に「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-pour-3-past.png"
+    },
+    "level3-who-did-turn-2-past": {
+      "file": "assets/construction/derived/level3-who-did-turn-2-past.webp",
+      "alt": "だれが昨日家でドアのつまみを回しましたか。 人物の顔に「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-turn-2-past.png"
+    },
+    "level3-who-did-show-3-past": {
+      "file": "assets/construction/derived/level3-who-did-show-3-past.webp",
+      "alt": "だれが昨日家で彼にロボットを見せましたか。 人物の顔に「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-show-3-past.png"
+    },
+    "level3-who-did-talk-2-past": {
+      "file": "assets/construction/derived/level3-who-did-talk-2-past.webp",
+      "alt": "だれが昨日家でお母さんと話しましたか。 人物の顔に「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-talk-2-past.png"
+    },
+    "level3-who-did-call-1-past": {
+      "file": "assets/construction/derived/level3-who-did-call-1-past.webp",
+      "alt": "だれが昨日おばあちゃんに電話しましたか。 人物の顔に「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-call-1-past.png"
+    },
+    "level3-who-did-help-1-past": {
+      "file": "assets/construction/derived/level3-who-did-help-1-past.webp",
+      "alt": "だれが昨日家でお父さんを手伝いましたか。 人物の顔に「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-help-1-past.png"
+    },
+    "level3-who-did-visit-1-past": {
+      "file": "assets/construction/derived/level3-who-did-visit-1-past.webp",
+      "alt": "だれが昨日おばあちゃんのところに遊びに行きましたか。 人物の顔に「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-visit-1-past.png"
+    },
+    "level3-who-did-fix-2-past": {
+      "file": "assets/construction/derived/level3-who-did-fix-2-past.webp",
+      "alt": "だれが昨日家でお父さんと小さなロボットを直しましたか。 人物の顔に「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-fix-2-past.png"
+    },
+    "level3-who-ing-walk-1-ongoing": {
+      "file": "assets/construction/derived/level3-who-ing-walk-1-ongoing.webp",
+      "alt": "だれが今川のそばを歩いていますか。 人物の顔に「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-walk-1-ongoing-rect.png"
+    },
+    "level3-who-ing-sleep-2-ongoing": {
+      "file": "assets/construction/derived/level3-who-ing-sleep-2-ongoing.webp",
+      "alt": "だれが今テントでねていますか。 人物の顔に「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-sleep-2-ongoing.png"
+    },
+    "level3-who-ing-rest-1-ongoing": {
+      "file": "assets/construction/derived/level3-who-ing-rest-1-ongoing.webp",
+      "alt": "だれが今木の下で休んでいますか。 人物の顔に「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-rest-1-ongoing.png"
+    },
+    "level3-who-ing-peel-1-ongoing": {
+      "file": "assets/construction/derived/level3-who-ing-peel-1-ongoing.webp",
+      "alt": "だれが今家でバナナの皮をむいていますか。 人物の顔に「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-peel-1-ongoing.png"
+    },
+    "level3-who-ing-answer-1-ongoing": {
+      "file": "assets/construction/derived/level3-who-ing-answer-1-ongoing.webp",
+      "alt": "だれが今学校で先生の質問に答えていますか。 人物の顔に「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-answer-1-ongoing.png"
+    },
+    "level3-who-ing-pull-2-ongoing": {
+      "file": "assets/construction/derived/level3-who-ing-pull-2-ongoing.webp",
+      "alt": "だれが今家で小さなワゴンを引いていますか。 人物の顔に「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-pull-2-ongoing.png"
+    },
+    "level3-who-ing-get-1-ongoing": {
+      "file": "assets/construction/derived/level3-who-ing-get-1-ongoing.webp",
+      "alt": "だれが今家で新しい鉛筆をもらっていますか。 人物の顔に「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-get-1-ongoing.png"
+    },
+    "level3-who-ing-bring-3-ongoing": {
+      "file": "assets/construction/derived/level3-who-ing-bring-3-ongoing.webp",
+      "alt": "だれが今学校に青いボールを持ってきていますか。 人物の顔に「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-bring-3-ongoing.png"
+    },
+    "level3-who-ing-teach-1-ongoing": {
+      "file": "assets/construction/derived/level3-who-ing-teach-1-ongoing.webp",
+      "alt": "だれが今家で彼に新しいゲームを教えていますか。 人物の顔に「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-teach-1-ongoing.png"
+    },
+    "level3-who-ing-pay-1-ongoing": {
+      "file": "assets/construction/derived/level3-who-ing-pay-1-ongoing.webp",
+      "alt": "だれが今駅で切符のお金を払っていますか。 人物の顔に「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-pay-1-ongoing.png"
+    },
+    "level3-two-who-must-be-adjective-3": {
+      "file": "assets/construction/derived/level3-two-who-must-be-adjective-3.webp",
+      "alt": "だれが図書館で静かにしていなければなりませんか。 人物の顔に「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-be-adjective-3.png"
+    },
+    "level3-two-who-can-always-be-adjective-1": {
+      "file": "assets/construction/derived/level3-two-who-can-always-be-adjective-1.webp",
+      "alt": "だれが家でいつもうれしい気持ちでいられますか。 人物の顔に「？」があります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-be-adjective-1.png"
+    },
+    "level3-where-do-climb-1": {
+      "file": "assets/construction/derived/level3-where-do-climb-1.webp",
+      "alt": "彼女は毎日どこで小さな丘に登りますか。 場所をたずねる青い「？」のピンと地図が描いてあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-climb-1-rect.png"
+    },
+    "level3-where-do-rest-3": {
+      "file": "assets/construction/derived/level3-where-do-rest-3.webp",
+      "alt": "彼らは毎日どこで休みますか。 場所をたずねる青い「？」のピンと地図が描いてあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-rest-3.png"
+    },
+    "level3-where-do-move-1": {
+      "file": "assets/construction/derived/level3-where-do-move-1.webp",
+      "alt": "彼らは毎日どこで箱を動かしますか。 場所をたずねる青い「？」のピンと地図が描いてあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-move-1.png"
+    },
+    "level3-where-do-peel-3": {
+      "file": "assets/construction/derived/level3-where-do-peel-3.webp",
+      "alt": "彼女は毎日どこでじゃがいもの皮をむきますか。 場所をたずねる青い「？」のピンと地図が描いてあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-peel-3.png"
+    },
+    "level3-where-do-color-3": {
+      "file": "assets/construction/derived/level3-where-do-color-3.webp",
+      "alt": "彼女は毎日どこで魚の絵に色をぬりますか。 場所をたずねる青い「？」のピンと地図が描いてあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-color-3.png"
+    },
+    "level3-where-do-listen-1": {
+      "file": "assets/construction/derived/level3-where-do-listen-1.webp",
+      "alt": "彼らは毎日どこで音楽を聞きますか。 場所をたずねる青い「？」のピンと地図が描いてあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-listen-1.png"
+    },
+    "level3-where-do-look-2": {
+      "file": "assets/construction/derived/level3-where-do-look-2.webp",
+      "alt": "彼女は毎日どこで小さな虫を見ますか。 場所をたずねる青い「？」のピンと地図が描いてあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-look-2.png"
+    },
+    "level3-where-do-talk-2": {
+      "file": "assets/construction/derived/level3-where-do-talk-2.webp",
+      "alt": "彼らは毎日どこでお母さんと話しますか。 場所をたずねる青い「？」のピンと地図が描いてあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-talk-2.png"
+    },
+    "level3-where-do-speak-2": {
+      "file": "assets/construction/derived/level3-where-do-speak-2.webp",
+      "alt": "彼は毎日どこで日本語を話しますか。 場所をたずねる青い「？」のピンと地図が描いてあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-speak-2.png"
+    },
+    "level3-where-do-help-2": {
+      "file": "assets/construction/derived/level3-where-do-help-2.webp",
+      "alt": "あなたは毎日どこで友だちを手伝いますか。 場所をたずねる青い「？」のピンと地図が描いてあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-help-2.png"
+    },
+    "level3-where-did-sleep-2-past": {
+      "file": "assets/construction/derived/level3-where-did-sleep-2-past.webp",
+      "alt": "彼らは昨日どこでねましたか。 場所をたずねる青い「？」のピンと地図が描いてあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-sleep-2-past.png"
+    },
+    "level3-where-did-cook-1-past": {
+      "file": "assets/construction/derived/level3-where-did-cook-1-past.webp",
+      "alt": "彼女は昨日どこでお父さんとカレーを作りましたか。 場所をたずねる青い「？」のピンと地図が描いてあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-cook-1-past.png"
+    },
+    "level3-where-did-answer-2-past": {
+      "file": "assets/construction/derived/level3-where-did-answer-2-past.webp",
+      "alt": "彼らは昨日どこでかんたんな質問に答えましたか。 場所をたずねる青い「？」のピンと地図が描いてあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-answer-2-past.png"
+    },
+    "level3-where-did-give-2-past": {
+      "file": "assets/construction/derived/level3-where-did-give-2-past.webp",
+      "alt": "彼らは昨日どこで友だちにカードをあげましたか。 場所をたずねる青い「？」のピンと地図が描いてあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-give-2-past.png"
+    },
+    "level3-where-did-ask-1-past": {
+      "file": "assets/construction/derived/level3-where-did-ask-1-past.webp",
+      "alt": "彼は昨日どこで先生に質問をしましたか。 場所をたずねる青い「？」のピンと地図が描いてあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-ask-1-past.png"
+    },
+    "level3-where-did-share-1-past": {
+      "file": "assets/construction/derived/level3-where-did-share-1-past.webp",
+      "alt": "彼女は昨日どこで友だちとクッキーを分け合いましたか。 場所をたずねる青い「？」のピンと地図が描いてあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-share-1-past.png"
+    },
+    "level3-where-did-meet-3-past": {
+      "file": "assets/construction/derived/level3-where-did-meet-3-past.webp",
+      "alt": "彼は昨日どこでおばあちゃんに会いましたか。 場所をたずねる青い「？」のピンと地図が描いてあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-meet-3-past.png"
+    },
+    "level3-where-did-follow-2-past": {
+      "file": "assets/construction/derived/level3-where-did-follow-2-past.webp",
+      "alt": "彼は昨日どこで男の人についていきましたか。 場所をたずねる青い「？」のピンと地図が描いてあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-follow-2-past.png"
+    },
+    "level3-where-did-choose-3-past": {
+      "file": "assets/construction/derived/level3-where-did-choose-3-past.webp",
+      "alt": "彼らは昨日どこで動物の本を選びましたか。 場所をたずねる青い「？」のピンと地図が描いてあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-choose-3-past.png"
+    },
+    "level3-where-did-fix-2-past": {
+      "file": "assets/construction/derived/level3-where-did-fix-2-past.webp",
+      "alt": "彼らは昨日どこでお父さんと小さなロボットを直しましたか。 場所をたずねる青い「？」のピンと地図が描いてあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-fix-2-past.png"
+    },
+    "level3-where-ing-ride-3-ongoing": {
+      "file": "assets/construction/derived/level3-where-ing-ride-3-ongoing.webp",
+      "alt": "彼は今どこでスクーターに乗っていますか。 場所をたずねる青い「？」のピンと地図が描いてあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-ride-3-ongoing-rect.png"
+    },
+    "level3-where-ing-climb-2-ongoing": {
+      "file": "assets/construction/derived/level3-where-ing-climb-2-ongoing.webp",
+      "alt": "彼は今どこで木に登っていますか。 場所をたずねる青い「？」のピンと地図が描いてあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-climb-2-ongoing-rect.png"
+    },
+    "level3-where-ing-color-1-ongoing": {
+      "file": "assets/construction/derived/level3-where-ing-color-1-ongoing.webp",
+      "alt": "あなたは今どこで花の絵に色をぬっていますか。 場所をたずねる青い「？」のピンと地図が描いてあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-color-1-ongoing.png"
+    },
+    "level3-where-ing-look-1-ongoing": {
+      "file": "assets/construction/derived/level3-where-ing-look-1-ongoing.webp",
+      "alt": "彼は今どこで月を見ていますか。 場所をたずねる青い「？」のピンと地図が描いてあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-look-1-ongoing.png"
+    },
+    "level3-where-ing-lift-1-ongoing": {
+      "file": "assets/construction/derived/level3-where-ing-lift-1-ongoing.webp",
+      "alt": "それは今どこで小さな箱を持ち上げていますか。 場所をたずねる青い「？」のピンと地図が描いてあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-lift-1-ongoing.png"
+    },
+    "level3-where-ing-carry-3-ongoing": {
+      "file": "assets/construction/derived/level3-where-ing-carry-3-ongoing.webp",
+      "alt": "彼は今どこで毛布を運んでいますか。 場所をたずねる青い「？」のピンと地図が描いてあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-carry-3-ongoing.png"
+    },
+    "level3-where-ing-give-2-ongoing": {
+      "file": "assets/construction/derived/level3-where-ing-give-2-ongoing.webp",
+      "alt": "彼らは今どこで友だちにカードをあげていますか。 場所をたずねる青い「？」のピンと地図が描いてあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-give-2-past.png"
+    },
+    "level3-where-ing-ask-2-ongoing": {
+      "file": "assets/construction/derived/level3-where-ing-ask-2-ongoing.webp",
+      "alt": "彼女は今どこでお父さんに質問をしていますか。 場所をたずねる青い「？」のピンと地図が描いてあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-ask-2-ongoing.png"
+    },
+    "level3-where-ing-choose-1-ongoing": {
+      "file": "assets/construction/derived/level3-where-ing-choose-1-ongoing.webp",
+      "alt": "それは今どこで青いカードを選んでいますか。 場所をたずねる青い「？」のピンと地図が描いてあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-choose-1-ongoing.png"
+    },
+    "level3-where-ing-check-3-ongoing": {
+      "file": "assets/construction/derived/level3-where-ing-check-3-ongoing.webp",
+      "alt": "彼らは今どこで時間割を確かめていますか。 場所をたずねる青い「？」のピンと地図が描いてあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-check-3-ongoing.png"
+    },
+    "level3-two-where-must-be-adjective-3": {
+      "file": "assets/construction/derived/level3-two-where-must-be-adjective-3.webp",
+      "alt": "私たちはどこで静かにしていなければなりませんか。 場所をたずねる青い「？」のピンと地図が描いてあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-be-adjective-3.png"
+    },
+    "level3-when-do-go-3": {
+      "file": "assets/construction/derived/level3-when-do-go-3.webp",
+      "alt": "彼はいつプールに行きますか。 時をたずねる「？」付きのカレンダーがあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-go-3-rect.png"
+    },
+    "level3-when-do-ride-2": {
+      "file": "assets/construction/derived/level3-when-do-ride-2.webp",
+      "alt": "あなたはいつ公園で小さな馬に乗りますか。 時をたずねる「？」付きのカレンダーがあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-ride-2-rect.png"
+    },
+    "level3-when-do-stay-2": {
+      "file": "assets/construction/derived/level3-when-do-stay-2.webp",
+      "alt": "あなたはいつテントにとまりますか。 時をたずねる「？」付きのカレンダーがあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-stay-2.png"
+    },
+    "level3-when-do-call-1": {
+      "file": "assets/construction/derived/level3-when-do-call-1.webp",
+      "alt": "彼はいつおばあちゃんに電話しますか。 時をたずねる「？」付きのカレンダーがあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-call-1.png"
+    },
+    "level3-when-do-visit-2": {
+      "file": "assets/construction/derived/level3-when-do-visit-2.webp",
+      "alt": "彼らはいつ彼のところに遊びに行きますか。 時をたずねる「？」付きのカレンダーがあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-visit-2.png"
+    },
+    "level3-when-do-clean-2": {
+      "file": "assets/construction/derived/level3-when-do-clean-2.webp",
+      "alt": "彼はいつ家で机をそうじしますか。 時をたずねる「？」付きのカレンダーがあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-clean-2.png"
+    },
+    "level3-when-do-wear-1": {
+      "file": "assets/construction/derived/level3-when-do-wear-1.webp",
+      "alt": "彼はいつ公園で赤いぼうしをかぶっていますか。 時をたずねる「？」付きのカレンダーがあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-wear-1.png"
+    },
+    "level3-when-did-come-1-past": {
+      "file": "assets/construction/derived/level3-when-did-come-1-past.webp",
+      "alt": "彼女はいつここに来ましたか。 時をたずねる「？」付きのカレンダーがあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-come-1-past-rect.png"
+    },
+    "level3-when-did-walk-3-past": {
+      "file": "assets/construction/derived/level3-when-did-walk-3-past.webp",
+      "alt": "あなたはいつ森の中を歩きましたか。 時をたずねる「？」付きのカレンダーがあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-walk-3-past-rect.png"
+    },
+    "level3-when-did-close-1-past": {
+      "file": "assets/construction/derived/level3-when-did-close-1-past.webp",
+      "alt": "彼らはいつ家で本を閉じましたか。 時をたずねる「？」付きのカレンダーがあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-close-1-past.png"
+    },
+    "level3-when-did-get-1-past": {
+      "file": "assets/construction/derived/level3-when-did-get-1-past.webp",
+      "alt": "あなたはいつ家で新しい鉛筆をもらいましたか。 時をたずねる「？」付きのカレンダーがあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-get-1-past.png"
+    },
+    "level3-when-did-bring-3-past": {
+      "file": "assets/construction/derived/level3-when-did-bring-3-past.webp",
+      "alt": "彼らはいつ学校に青いボールを持ってきましたか。 時をたずねる「？」付きのカレンダーがあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-bring-3-past.png"
+    },
+    "level3-when-did-thank-1-past": {
+      "file": "assets/construction/derived/level3-when-did-thank-1-past.webp",
+      "alt": "彼らはいつ学校で先生にお礼を言いましたか。 時をたずねる「？」付きのカレンダーがあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-thank-1-past.png"
+    },
+    "level3-when-did-join-1-past": {
+      "file": "assets/construction/derived/level3-when-did-join-1-past.webp",
+      "alt": "彼はいつ学校でゲームに加わりましたか。 時をたずねる「？」付きのカレンダーがあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-join-1-past.png"
+    },
+    "level3-when-did-try-2-past": {
+      "file": "assets/construction/derived/level3-when-did-try-2-past.webp",
+      "alt": "あなたはいつ学校でパズルをやってみましたか。 時をたずねる「？」付きのカレンダーがあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-try-2-past.png"
+    },
+    "level3-when-did-buy-2-past": {
+      "file": "assets/construction/derived/level3-when-did-buy-2-past.webp",
+      "alt": "彼はいつお店でお母さんと消しゴムを買いましたか。 時をたずねる「？」付きのカレンダーがあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-buy-2-past.png"
+    },
+    "level3-when-did-save-2-past": {
+      "file": "assets/construction/derived/level3-when-did-save-2-past.webp",
+      "alt": "彼女はいつ自転車のためにおこづかいをためましたか。 時をたずねる「？」付きのカレンダーがあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-save-2-past.png"
+    },
+    "level3-two-when-must-be-adjective-5": {
+      "file": "assets/construction/derived/level3-two-when-must-be-adjective-5.webp",
+      "alt": "彼らはいつ準備万端でいなければなりませんか。 時をたずねる「？」付きのカレンダーがあります。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-be-adjective-5.png"
+    },
+    "level3-two-why-must-be-adjective-3": {
+      "file": "assets/construction/derived/level3-two-why-must-be-adjective-3.webp",
+      "alt": "私たちはなぜ図書館で静かにしていなければならないのですか。 左の「？」の枠から、右の出来事へ矢印が伸びています。",
+      "clue": "",
+      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "questionMarkInArt": true,
+      "source": "assets/construction/build-be-adjective-3.png"
     }
   }
 }

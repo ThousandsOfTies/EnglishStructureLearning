@@ -9,10 +9,46 @@ from pathlib import Path
 
 from compile_original import SUBJECTS, pair, third_person
 from refine_curriculum import SLOTS as SOURCE_SLOTS, annotate_scene, japanese_sentence, refine
+from advanced_variants import PER_CELL, derive
 
 ROOT = Path(__file__).resolve().parents[1]
 SLOTS = ('S', 'support', *SOURCE_SLOTS[1:])
 BE_FORMS = {'am', 'is', 'are', 'was', 'were', 'be', 'being', 'been'}
+# Lesson list headings. Level 2 follows tense x support, Level 3 the question part.
+UNITS = {
+    'degree': 'できる・かもしれない・必要・おすすめ',
+    'not-routine': 'ふだん〜しない',
+    'not-past': '〜しなかった',
+    'not-ongoing': '今〜していない',
+    'not-state': '〜ではない・〜ではなかった',
+    'not-experience': '〜したことがない',
+    'frequency': 'いつも・よく・ときどき・たいてい',
+    'whether': 'かどうか（はい・いいえで答える）',
+    'what': 'なに（何）',
+    'who': 'だれ（誰）',
+    'where': 'どこ（何処）',
+    'when': 'いつ（何時）',
+    'which': 'どれ・どの',
+    'why': 'なぜ（何故）',
+    'how': 'どうやって',
+    'there': 'ほら、〜がいる（There）',
+}
+
+
+def level2_unit(q):
+    roles = {role: en for role, en, _ in q['blocks']}
+    if '頻度' in roles:
+        return 'frequency'
+    if q['blocks'][1][0] == '助動詞':
+        return 'degree'
+    negation = roles.get('否定', '')
+    if negation in {'do not', 'does not'}:
+        return 'not-routine'
+    if negation == 'did not':
+        return 'not-past'
+    if negation == 'have not':
+        return 'not-experience'
+    return 'not-ongoing' if roles.get('述語', '').endswith('ing') else 'not-state'
 
 # Keep the connectors used by the teaching model with the predicate. A
 # setting can stay together in the place slot, such as 'run in the park'.
@@ -137,6 +173,11 @@ def set_predicate_support(q, predicate_labels):
     values = q['slots']
     english = values['predicate']['en']
     be, _, rest = english.partition(' ')
+    if q['meaning'] == 'experience':
+        assert be == 'have' and values['predicate']['ja'].endswith('ことがある'), q['id']
+        values['support'] = slot('ことがある', be)
+        values['predicate'] = slot(values['predicate']['ja'].removesuffix('ことがある'), rest)
+        return
     if be not in BE_FORMS:
         if q['meaning'] == 'past':
             values['support'] = slot('した')
@@ -381,14 +422,16 @@ def build_examples():
         q['blocks'] = [[k, q['slots'][k]['en']] for k in SLOTS if q['slots'][k]['en']]
         assert ' '.join(text for _, text in q['blocks']) + '.' == q['en'], q['id']
     advanced = json.loads((ROOT / 'data/advanced-examples.json').read_text(encoding='utf-8'))
+    derived2, derived3 = derive(rows, advanced['level2ModalMeanings'], advanced['level2'] + advanced['level3'])
+    advanced['level2'] += derived2
+    advanced['level3'] += derived3
     level2_choices = build_level2_choices(advanced)
-    level2_units = {
-        'degree': 'できる・かもしれない・必要・おすすめ',
-        'patterns': '否定・頻度',
-    }
     for q in advanced['level2']:
-        q['unit'] = 'degree' if q['blocks'][1][0] == '助動詞' else 'patterns'
-    advanced['level2'].sort(key=lambda q: tuple(level2_units).index(q['unit']))
+        q.setdefault('unit', level2_unit(q))
+    for q in advanced['level3']:
+        q.setdefault('unit', q['question']['token'] if q.get('question') else 'there')
+    for level in (2, 3):
+        advanced[f'level{level}'].sort(key=lambda q: tuple(UNITS).index(q['unit']))
     silent_question = {'token': 'whether', 'meaning': 'かどうか', 'spoken': False, 'written': False}
     for level in (2, 3):
         examples = advanced[f'level{level}']
@@ -437,7 +480,7 @@ def build_examples():
         ],
         'silentQuestionWord': silent_question,
         'level2Choices': level2_choices,
-        'level2Units': level2_units,
+        'units': UNITS,
         'counts': {'level1': len(rows), 'level2': len(advanced['level2']), 'level3': len(advanced['level3']), 'total': len(all_examples),
                    'core': sum(q.get('contrastFamily') == q['id'] for q in rows), 'pronounPractice': 39,
                    'ongoing': sum(q['meaning'] == 'ongoing' and not q.get('pronounFocus') for q in rows),
@@ -479,26 +522,28 @@ def build_examples():
         title = '助動詞・否定・頻度' if level == 2 else '疑問文と倒置'
         exercises = advanced[f'level{level}']
         lines = [f'# レベル{level}：{title}・{len(exercises)}文', '',
-                 '日本語のカードを、できあがる英文の順に並べます。', '']
+                 '日本語のカードを、できあがる英文の順に並べます。', '',
+                 f'「元の文」がある例の多くは、レベル1の場面から組み合わせごとに{PER_CELL}文ずつ自動で作りました。これらにはまだ絵がありません。', '']
         if level == 2:
-            lines.extend(['can・might・must・should のグループから始め、そのあとで否定と頻度を練習します。', '',
+            lines.extend(['can・might・must・should のグループから始め、そのあとで「ふだん・過去・今・状態・経験」の否定と、頻度を練習します。', '',
                           '助動詞は、場面に合う日本語に、その助動詞に共通する意味を括弧で添えます。', ''])
         else:
             lines.extend(['疑問文の練習では、先頭に「なに（何）」「だれ（誰）」「かどうか」などの疑問主部を置きます。主語以外をたずねる文では、その次に最初の助述部を置きます。', '',
+                          '前へ出るのは助述部１だけです。画面では主語のあとに元の席を「空席」の枠として残し、「いつも」や助述部２（Can you always be happy? の always と be）はその空席のところに残します。', '',
                           '「かどうか」（黙疑問主部 whether）は練習用の目印です。完成英文や読み上げには含めません。', '',
                           'Who が主語で一般動詞が続く文では、練習で黙助述部の「する」を置きます。完成英文は Who gives … のように続きます。Who can ride a bike? の can は声に出します。', '',
-                          'There で始まる文では、呼びかけの「ほら」、助述部の「いる」、続いて見つけたものを置きます。', ''])
+                          'There で始まる文では、主部（仮）の「ほら」、助述部の「いる」、続いて見つけたものを置きます。There は疑問主部と同じく、先頭で主語の場所をふさぐ部品です。', ''])
         active_unit = None
         for number, q in enumerate(exercises, 1):
-            if level == 2 and q['unit'] != active_unit:
+            if q['unit'] != active_unit:
                 active_unit = q['unit']
-                lines.extend([f"## {level2_units[active_unit]}", ''])
-            heading = '###' if level == 2 else '##'
+                lines.extend([f"## {UNITS[active_unit]}", ''])
+            heading = '###'
             review_mark = ' ［要見直し］' if q.get('needsReview') else ''
             lines.extend([f"{heading} {number:02}　{q['focus']}{review_mark}", '', q['ja'], '', f"**{q['en']}**", ''])
             if q.get('base'):
                 lines.extend([f"元の文：{q['base']}", ''])
-            labels = {'question-marker': '疑問主部', 'support': '助述部', 'there': '呼びかけ'}
+            labels = {'question-marker': '疑問主部', 'support': '助述部', 'there': '主部（仮）'}
             lines.extend(['| ' + ' | '.join(labels.get(role, role) for role, _, _ in q['blocks']) + ' |',
                           '| ' + ' | '.join('---' for _ in q['blocks']) + ' |',
                           '| ' + ' | '.join(japanese for _, _, japanese in q['blocks']) + ' |',

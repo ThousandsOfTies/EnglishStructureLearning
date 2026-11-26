@@ -92,3 +92,16 @@ keep・find・check、be動詞の文、代名詞、助動詞・否定・頻度�
 ## 毎日のカレンダー
 
 時間が every day の249文に赤い綴じのカレンダーを表示する。7日分の緑のチェックを2段に並べ、どの日も繰り返すことを示す。問題の画像とは別に画面で描画する。
+
+## レベル2・3を「時制×助述部（×疑問）」で自動生成（2026-11-25）
+
+`scripts/advanced_variants.py` が、レベル1の場面（いつも・今・過去・状態・経験）から組み合わせごとに10文（`PER_CELL`）ずつ作る。`build_construction_examples.py` から呼ばれ、手作りの `data/advanced-examples.json` の後ろに並ぶ。レベル2は144文（手作り29＋生成115）、レベル3は222文（手作り37＋生成185）。
+
+- レベル2：can・might・must・should、might be＋ing、do/does not・did not・be not＋ing・be not（現在・過去）・have not、頻度（always・often・sometimes・usually）。
+- レベル3：かどうか（Do/Does・Did・Is＋ing・be・Can・Have ever）、なに・どこ（do/does・did・be＋ing、なには can も）、だれ（現在・過去・今）、いつ（曜日の文・過去）。
+- 助述部が２つある疑問文は、自然に言えるものがほぼ「助動詞＋be＋状態」に限られるため、`TWO_SUPPORTS` に1文ずつ選んだ10文（Must we be quiet in the library? など）を置く。ID は `level3-two-…`。
+- 画面では、レベル3の疑問文で助述部１が主語の前へ出たとき、主語のあとに元の席を「空席」の枠として表示する（`seatAfter`）。空席は答えの欄ではなく、「いつも」はその下、助述部２はその右に並ぶ。Who が主語の文、There の文、英語カードの復習では表示しない。
+- ID は `level2-did-not-eat-2-past` のように「組み合わせ＋元の場面」。元の文は `derivedFrom` と `base`（正解後の「もとの文」）に残る。
+- 日本語は元の文から作る。辞書形・否定形・た形の活用は同じファイルの `verb_forms` にある。不自然な組み合わせは `AVOID`・`SKIP_GROUPS`・`SKIP_SCENES` で外す。述語が「する」だけになり助述部と同じカードになる文は自動で外れる。
+- 一覧の見出しは `units`（`build_construction_examples.py` の `UNITS`）。派生した300文の個別画像は `assets/construction/derived/` にある。未登録の派生文を作画する場合は、アプリのビルド後に `node scripts/compose_advanced_art.cjs` を実行すると、既存の場面から `.review-tmp/advanced-composed/` に確認用の画像を作れる。人物・物の隠す箇所と、場所をたずねる場合に残す範囲は `scripts/advanced_art_layouts.json` で調整する。
+- 生成文を変えたら、全文を英日で読み直してから `python scripts/build_construction_app.py` とテストを実行する。

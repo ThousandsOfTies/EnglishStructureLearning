@@ -84,10 +84,10 @@ test('filled slots reconstruct the exact complete English sentence', () => {
   for (const q of basic) {
     const slots = ['S', 'support', 'predicate', 'P1', 'P2', 'place', 'time'].map(k => q.slots[k].en).filter(Boolean);
     assert.equal(slots.join(' ') + '.', q.en, q.id);
-    const leadingBe = q.en.slice(q.slots.S.en.length + 1).match(/^(am|is|are|was|were)\b/);
-    assert.equal(q.slots.support.en, leadingBe?.[0] ?? '', q.id);
+    const leadingSupport = q.en.slice(q.slots.S.en.length + 1).match(/^(am|is|are|was|were|have)\b/);
+    assert.equal(q.slots.support.en, leadingSupport?.[0] ?? '', q.id);
     assert.ok(q.slots.support.ja, q.id);
-    if (!leadingBe) assert.equal(q.slots.support.ja, q.meaning === 'past' ? 'した' : 'する', q.id);
+    if (!leadingSupport) assert.equal(q.slots.support.ja, q.meaning === 'past' ? 'した' : 'する', q.id);
     assert.ok(q.slots.predicate.ja, q.id);
   }
 });
@@ -100,9 +100,50 @@ test('P1 and P2 distinguish recipient/thing from object/description', () => {
 });
 
 test('each selectable level has its requested number of examples', () => {
-  assert.deepEqual([1,2,3].map(level => draft.examples.filter(q => q.level === level).length), [924,29,37]);
+  assert.deepEqual([1,2,3].map(level => draft.examples.filter(q => q.level === level).length), [924,144,222]);
   assert.deepEqual(draft.levels.map(q => q.id), [1,2,3]);
-  assert.equal(new Set(draft.examples.map(q => q.id)).size, 990);
+  assert.equal(new Set(draft.examples.map(q => q.id)).size, 1290);
+});
+
+test('derived practice fills every tense and support combination from the Level 1 scenes', () => {
+  const derived = draft.examples.filter(q => q.derivedFrom);
+  // Questions with two supports are picked one by one instead of ten per combination.
+  const twoSupports = derived.filter(q => q.id.startsWith('level3-two-'));
+  assert.equal(twoSupports.length, 10);
+  const cells = {};
+  for (const q of derived.filter(q => !twoSupports.includes(q))) {
+    const cell = q.id.slice(0, q.id.length - q.derivedFrom.replace(/^build-/, '').length - 1);
+    (cells[cell] ??= []).push(q);
+  }
+  assert.deepEqual(Object.keys(cells).sort(), [
+    'level2-be-not', 'level2-be-often', 'level2-can', 'level2-did-not', 'level2-have-not', 'level2-might',
+    'level2-might-ing', 'level2-must', 'level2-not', 'level2-not-ing', 'level2-often', 'level2-should',
+    'level3-q-be', 'level3-q-can', 'level3-q-did', 'level3-q-do', 'level3-q-have', 'level3-q-ing',
+    'level3-what-can', 'level3-what-did', 'level3-what-do', 'level3-what-ing', 'level3-when-did', 'level3-when-do',
+    'level3-where-did', 'level3-where-do', 'level3-where-ing', 'level3-who-did', 'level3-who-do', 'level3-who-ing',
+  ].sort());
+  for (const [cell, examples] of Object.entries(cells)) {
+    assert.ok(examples.length >= 5 && examples.length <= 10, cell);
+    if (!/be-often|when-do|what-can/.test(cell)) assert.equal(examples.length, 10, cell);
+  }
+  const level1 = new Map(basic.map(q => [q.id, q]));
+  const baseForm = new Set(['do', 'does', 'did', 'do not', 'does not', 'did not', 'can', 'might', 'must', 'should']);
+  for (const q of derived) {
+    const source = level1.get(q.derivedFrom);
+    assert.ok(source, q.id);
+    assert.equal(q.theme, source.theme, q.id);
+    if (!q.en.startsWith('Have ')) assert.equal(q.base, source.en, q.id);
+    assert.doesNotMatch(q.ja, /[a-z]/i, q.id);
+    assert.match(q.ja, q.question ? /か。$/u : /。$/u, q.id);
+    const support = q.blocks.find(([role, text]) => text && ['否定', '助動詞', '疑問の支え'].includes(role));
+    const predicate = q.blocks.find(([role]) => role === '述語');
+    if (support && baseForm.has(support[1].toLowerCase()) && source.group !== 'tense-pictures') {
+      // After do, did and the modals the next verb returns to its base form: eat, or be in might be eating.
+      const be = q.blocks.find(([role]) => role === 'be');
+      if (be) assert.equal(be[1], 'be', q.id);
+      else assert.equal(predicate[1].split(' ')[0], source.group, q.id);
+    }
+  }
 });
 
 test('state verbs stay simple while ongoing actions are be plus ing', () => {
@@ -161,9 +202,14 @@ test('advanced blocks reconstruct English with silent question and support block
     const silent = q.blocks.filter(([, text]) => !text);
     const expected = q.question?.spoken === false ? [['question-marker', '', 'かどうか']] : [];
     const firstSpokenAfterQuestion = q.blocks.slice(1).find(([, text]) => text);
-    const simpleFrequency = ['level2-07', 'level2-08', 'level2-09'].includes(q.id);
-    if (simpleFrequency || (q.question?.target === 'S' && firstSpokenAfterQuestion?.[0] === '述語')) {
-      expected.push(['support', '', 'する']);
+    const silentSupport = q.blocks.find(([role, text]) => role === 'support' && !text);
+    if (silentSupport) {
+      // Only the present-tense frequency pattern and Who-as-subject keep the Level 1 support silent.
+      const frequency = q.blocks.some(([role]) => role === '頻度') && silentSupport[2] === 'する';
+      const subjectQuestion = q.question?.target === 'S' && firstSpokenAfterQuestion?.[0] === '述語';
+      assert.ok(frequency || subjectQuestion, q.id);
+      assert.ok(['する', 'した'].includes(silentSupport[2]), q.id);
+      expected.push(silentSupport);
     }
     assert.deepEqual(silent, expected, q.id);
     assert.equal(q.blocks.map(([, text]) => text).filter(Boolean).join(' ') + (q.question ? '?' : '.'), q.en);

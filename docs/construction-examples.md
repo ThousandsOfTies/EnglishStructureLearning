@@ -2,7 +2,7 @@
 
 基本動詞98種類と「be＋名詞」「be＋形容詞」の原型300文を土台に、いつもの動き・今の動き・昨日の動きを対比し、代名詞の39文も加えました。
 
-内訳：基本313文＋今の動き275文＋過去287文＋経験10文＋代名詞39文。レベル2は29文、レベル3は37文です。
+内訳：基本313文＋今の動き275文＋過去287文＋経験10文＋代名詞39文。レベル2は144文、レベル3は222文です。
 
 全部を一度に練習する必要はありません。まず「いつもの動き／状態」の原型を使い、同じcontrastFamilyの「今」「昨日」と比べます。再帰代名詞8文は発展扱いです。
 
@@ -22,7 +22,7 @@ PはParameter（引数）の教材独自の呼び名です。go to の to は述
 
 「かどうか」は疑問文の先頭に置く教材上の目印（黙疑問主部）です。英文では書かず、発音もしません。S以外をたずねる直接疑問文では助動詞・be・doを主語の前に出します。SをたずねるwhoはSの位置に入ります。
 
-追加例文：[レベル2・29文](level2-examples.md) / [レベル3・37文](level3-examples.md)
+追加例文：[レベル2・144文](level2-examples.md) / [レベル3・222文](level3-examples.md)
 
 ## 10の動作：時制の絵くらべ
 
@@ -31,43 +31,43 @@ PはParameter（引数）の教材独自の呼び名です。go to の to は述
 | いつもの動き | I | する | ride | a bike | — | — | — |
 | 過去の動き | I | した | rode | a bike | — | — | — |
 | 今している | I | am | riding | a bike | — | — | — |
-| したことがある | I | する | have ridden | a bike | — | — | — |
+| したことがある | I | have | ridden | a bike | — | — | — |
 | いつもの動き | I | する | ride | a pony | — | — | — |
 | 過去の動き | I | した | rode | a pony | — | — | — |
 | 今している | I | am | riding | a pony | — | — | — |
-| したことがある | I | する | have ridden | a pony | — | — | — |
+| したことがある | I | have | ridden | a pony | — | — | — |
 | いつもの動き | I | する | fly | a kite | — | — | — |
 | 過去の動き | I | した | flew | a kite | — | — | — |
 | 今している | I | am | flying | a kite | — | — | — |
-| したことがある | I | する | have flown | a kite | — | — | — |
+| したことがある | I | have | flown | a kite | — | — | — |
 | いつもの動き | I | する | jump rope | — | — | — | — |
 | 過去の動き | I | した | jumped rope | — | — | — | — |
 | 今している | I | am | jumping rope | — | — | — | — |
-| したことがある | I | する | have jumped rope | — | — | — | — |
+| したことがある | I | have | jumped rope | — | — | — | — |
 | いつもの動き | I | する | play | the violin | — | — | — |
 | 過去の動き | I | した | played | the violin | — | — | — |
 | 今している | I | am | playing | the violin | — | — | — |
-| したことがある | I | する | have played | the violin | — | — | — |
+| したことがある | I | have | played | the violin | — | — | — |
 | いつもの動き | I | する | kick | a ball | — | — | — |
 | 過去の動き | I | した | kicked | a ball | — | — | — |
 | 今している | I | am | kicking | a ball | — | — | — |
-| したことがある | I | する | have kicked | a ball | — | — | — |
+| したことがある | I | have | kicked | a ball | — | — | — |
 | いつもの動き | I | する | play | the piano | — | — | — |
 | 過去の動き | I | した | played | the piano | — | — | — |
 | 今している | I | am | playing | the piano | — | — | — |
-| したことがある | I | する | have played | the piano | — | — | — |
+| したことがある | I | have | played | the piano | — | — | — |
 | いつもの動き | I | する | water | the flowers | — | — | — |
 | 過去の動き | I | した | watered | the flowers | — | — | — |
 | 今している | I | am | watering | the flowers | — | — | — |
-| したことがある | I | する | have watered | the flowers | — | — | — |
+| したことがある | I | have | watered | the flowers | — | — | — |
 | いつもの動き | I | する | paint | a picture | — | — | — |
 | 過去の動き | I | した | painted | a picture | — | — | — |
 | 今している | I | am | painting | a picture | — | — | — |
-| したことがある | I | する | have painted | a picture | — | — | — |
+| したことがある | I | have | painted | a picture | — | — | — |
 | いつもの動き | I | する | make | sushi rolls | — | — | — |
 | 過去の動き | I | した | made | sushi rolls | — | — | — |
 | 今している | I | am | making | sushi rolls | — | — | — |
-| したことがある | I | する | have made | sushi rolls | — | — | — |
+| したことがある | I | have | made | sushi rolls | — | — | — |
 
 - I ride a bike. — 私が自転車に乗る。
 - I rode a bike. — 私が自転車に乗った。

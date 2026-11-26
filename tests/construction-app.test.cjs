@@ -81,7 +81,8 @@ test('level three starts with the first spoken block and unlocks the rest in Eng
       assert.equal(roles[0], '疑問主部＝S', q.id);
       assert.ok(!roles.includes('S') && !roles.includes('疑問の支え'), q.id);
       assert.ok(app.isSupportRole(roles[1]), q.id);
-      assert.equal(roles[2], '述語', q.id);
+      // Who keeps the statement order: supports (and いつも) first, then the predicate.
+      assert.equal(roles.find((role, i) => i > 0 && !app.isSupportRole(role)), '述語', q.id);
     } else {
       if (q.question.spoken) assert.match(roles[0], /^疑問主部＝/u, q.id);
       else assert.equal(roles[0], 'question-marker', q.id);
@@ -89,6 +90,37 @@ test('level three starts with the first spoken block and unlocks the rest in Eng
       assert.equal(roles[2], 'S', q.id);
     }
   }
+});
+
+test('questions leave the seat of the moved support right after the subject', () => {
+  const roles = q => app.targetsFor(q).map(target => app.targetRole(q, target));
+  for (const q of data.examples) {
+    const order = roles(q);
+    const seat = app.seatAfter(order);
+    if (q.level === 3 && q.question && q.question.target !== 'S') {
+      assert.equal(order[seat], 'S', q.id);
+      assert.ok(app.isSupportRole(order[seat - 1]), q.id);
+    } else {
+      // Statements, There and Who as the subject keep every support in place.
+      assert.equal(seat, -1, q.id);
+    }
+  }
+});
+
+test('level three questions with two supports move only the first one', () => {
+  const twoSupports = data.examples.filter(q => q.level === 3 &&
+    q.blocks.filter(([role, en]) => en && ['助動詞', 'be'].includes(role)).length === 2);
+  assert.equal(twoSupports.length, 10);
+  assert.deepEqual(new Set(twoSupports.map(q => q.question.token)), new Set(['whether', 'why', 'where', 'when', 'who']));
+  for (const q of twoSupports) {
+    const order = app.targetsFor(q).map(target => app.targetRole(q, target));
+    assert.deepEqual(q.blocks.find(([role]) => role === 'be'), ['be', 'be', 'である'], q.id);
+    const be = order.indexOf('be');
+    const start = q.question.target === 'S' ? order.indexOf('助動詞') : app.seatAfter(order);
+    // Only いつも may come between the seat (or the unmoved modal) and be.
+    assert.ok(order.slice(start + 1, be).every(role => role === '頻度'), q.id);
+  }
+  assert.ok(twoSupports.some(q => q.en === 'Can she always be happy at home?'));
 });
 
 test('multiple level two supports unlock in order and use the Level 1 label for be', () => {
@@ -146,7 +178,7 @@ test('list practice accepts untouched unused slots while requiring every filled 
 });
 
 test('the level one action support is required in Japanese and silent in English', () => {
-  for (const [id, label] of [['build-go-1', 'する'], ['build-go-1-past', 'した'], ['tense-bicycle-experience', 'する']]) {
+  for (const [id, label] of [['build-go-1', 'する'], ['build-go-1-past', 'した']]) {
     const q = get(id);
     const cards = app.cardsFor(q);
     const support = cards.findIndex(card => card.role === 'support');
@@ -164,12 +196,30 @@ test('level one past actions keep their Japanese predicate and use the natural E
   for (const q of data.examples.filter(q => q.level === 1 && q.meaning === 'past' && !q.slots.support.en)) {
     assert.deepEqual(q.slots.support, { ja: 'した', en: '' }, q.id);
     assert.equal(q.slots.predicate.ja, get(q.contrastFamily).slots.predicate.ja, q.id);
-    assert.deepEqual(app.choicesFor(data, q, 'support'), ['する', 'した', 'である', 'であった'], q.id);
+    const support = q.group === 'tense-pictures' ? ['する', 'した', 'である', 'であった', 'ことがある'] : ['する', 'した', 'である', 'であった'];
+    assert.deepEqual(app.choicesFor(data, q, 'support'), support, q.id);
   }
   const q = get('build-eat-1-past');
   assert.deepEqual(q.slots.predicate, { ja: '食べます', en: 'ate' });
   assert.equal(q.en, 'He ate a rice ball at home yesterday.');
   assert.equal(get('build-be-noun-1-past').slots.support.en, 'was');
+});
+
+test('level one experience puts have in the support slot like be in the progressive', () => {
+  const experiences = data.examples.filter(q => q.level === 1 && q.meaning === 'experience');
+  assert.equal(experiences.length, 10);
+  for (const q of experiences) {
+    assert.deepEqual(q.slots.support, { ja: 'ことがある', en: 'have' }, q.id);
+    assert.doesNotMatch(q.slots.predicate.ja, /ことがある$/u, q.id);
+    assert.doesNotMatch(q.slots.predicate.en, /^have /, q.id);
+    assert.ok(app.choicesFor(data, q, 'support').includes('ことがある'), q.id);
+  }
+  const q = get('tense-bicycle-experience');
+  assert.deepEqual(q.slots.predicate, { ja: '乗った', en: 'ridden' });
+  const picks = Object.fromEntries(app.roles.filter(role => q.slots[role].ja).map(role => [role, q.slots[role].ja]));
+  assert.ok(app.choicesCorrect(q, picks));
+  assert.equal(app.choicesCorrect(q, { ...picks, support: 'した' }), false);
+  assert.ok(!app.choicesFor(data, get('build-go-1'), 'support').includes('ことがある'));
 });
 
 test('level one grades be in the support slot and rejects exchanging it with the predicate', () => {
@@ -266,8 +316,8 @@ test('levels two and three keep all four complement slots and grade unused slots
       const role = optionalRoles[index];
       if (target === role) {
         const options = app.choicesFor(data, q, target);
-        assert.ok(options.length > 0, q.id);
-        if (q.level === 2) assert.deepEqual(new Set(options), new Set(Object.values(data.level2Choices[role])), q.id);
+        assert.ok(options.length > 0 && options.length <= 4, q.id);
+        if (q.level === 2) assert.ok(options.every(text => Object.values(data.level2Choices[role]).includes(text)), q.id);
         assert.equal(app.choicesCorrect(q, { ...answer, [target]: options[0] }), false, q.id);
         assert.equal(app.isCorrect(q, app.place(q, placements, 0, target)), false, q.id);
       } else {
@@ -313,7 +363,11 @@ test('level two modal choices include the meaning labels and exclude other parts
 
 test('level two begins with the four degree modals before negative and frequency exercises', () => {
   const lessons = data.examples.filter(q => q.level === 2);
-  assert.deepEqual([...new Set(lessons.map(q => q.unit))], ['degree', 'patterns']);
+  assert.deepEqual([...new Set(lessons.map(q => q.unit))],
+    ['degree', 'not-routine', 'not-past', 'not-ongoing', 'not-state', 'not-experience', 'frequency']);
+  assert.deepEqual([...new Set(data.examples.filter(q => q.level === 3).map(q => q.unit))],
+    ['whether', 'what', 'who', 'where', 'when', 'which', 'why', 'how', 'there']);
+  assert.ok(Object.keys(data.units).every(unit => data.units[unit]));
   assert.deepEqual(new Set(lessons.filter(q => q.unit === 'degree').map(q => q.blocks[1][1])),
     new Set(['can', 'might', 'must', 'should']));
   assert.deepEqual(Object.keys(data.level2Choices['助動詞']).sort(), ['can', 'might', 'must', 'should']);
@@ -453,7 +507,8 @@ test('mini sets partition the selected levels and scene themes into short ordere
     }
   }
   const foodAtLevel3 = app.sceneExamples(app.visibleExamples(data, { ...filters, levels: [3] }), 'theme-eat');
-  assert.deepEqual(foodAtLevel3.map(q => q.id), ['level3-01', 'level3-30']);
+  assert.ok(['level3-01', 'level3-30'].every(id => foodAtLevel3.some(q => q.id === id)));
+  assert.ok(foodAtLevel3.every(q => q.level === 3 && q.theme === 'theme-eat'));
   const paperHat = [get('build-make-1'), get('level2-12'), get('level3-17')];
   assert.deepEqual(app.sceneExamples(paperHat, 'theme-like'), paperHat);
   assert.equal(get('pronoun-reflexive-1').theme, get('tense-paint').theme);
@@ -476,6 +531,7 @@ test('English review uses only spoken blocks and grades their sentence order', (
 test('yes-or-no questions mark the speaker and other questions mark the unknown in the art', () => {
   const { images } = JSON.parse(fs.readFileSync(path.join(__dirname, '../data/construction-illustrations.json'), 'utf8'));
   for (const q of data.examples) {
+    assert.ok(images[q.id], q.id);
     const { questionMark: mark, questionMarkInArt } = images[q.id] ?? {};
     if (q.question?.token === 'whether') {
       assert.equal(mark?.length, 2, q.id);
@@ -516,8 +572,25 @@ test('the local-file page embeds the current curriculum and app source', () => {
     assert.ok(illustration.alt);
     assert.equal(typeof illustration.clue, 'string');
     const bytes = fs.readFileSync(path.join(__dirname, '..', illustration.file));
-    assert.equal(bytes.subarray(1, 4).toString(), 'PNG');
-    assert.ok(bytes.readUInt32BE(16) >= 512);
-    assert.ok(bytes.readUInt32BE(20) >= 512);
+    let width, height;
+    if (illustration.file.endsWith('.webp')) {
+      assert.equal(bytes.toString('ascii', 0, 4), 'RIFF', id);
+      assert.equal(bytes.toString('ascii', 8, 12), 'WEBP', id);
+      const encoding = bytes.toString('ascii', 12, 16);
+      if (encoding === 'VP8X') {
+        width = 1 + bytes.readUIntLE(24, 3);
+        height = 1 + bytes.readUIntLE(27, 3);
+      } else {
+        assert.equal(encoding, 'VP8 ', id);
+        assert.deepEqual([...bytes.subarray(23, 26)], [0x9d, 0x01, 0x2a], id);
+        width = bytes.readUInt16LE(26) & 0x3fff;
+        height = bytes.readUInt16LE(28) & 0x3fff;
+      }
+    } else {
+      assert.equal(bytes.toString('ascii', 1, 4), 'PNG', id);
+      width = bytes.readUInt32BE(16);
+      height = bytes.readUInt32BE(20);
+    }
+    assert.ok(width >= 512 && height >= 512, id);
   }
 });
