@@ -15618,6 +15618,13 @@
       "prompt": "Preserve the existing event and tense framing. Add the speaker gesture for modals, check marks for frequency, a red prohibition mark for negation, or a question mark at the target."
     },
     {
+      "exampleId": "level3-q-do-eat-lunch-at-school",
+      "file": "assets/construction/level3-q-do-eat-lunch-at-school.webp",
+      "reference": "assets/construction/derived/level3-q-do-open-1.webp",
+      "generationMethod": "Built-in image generation, editing the existing composition.",
+      "prompt": "Edit this exact original children's English-learning flashcard. Preserve its pale ivory background, precise 4:3 landscape layout, thin angular red-brown square speech bubble at the upper right, the tail pointing to the star-clip girl narrator's head, and the small coral-cardigan/teal-skirt narrator in the bottom left. Keep the same illustration proportions, narrator pose, and generous blank area above the narrator for the app's question mark. The only substantive change is the event inside the square: the same dark brown ponytail girl wearing the same lavender sweater is EATING her lunch at her classroom desk at school. Her pink floral bento box is already fully open and its detached lid lies flat beside it on the desk. She is smiling naturally and actively taking a bite of food from the bento with chopsticks held naturally in her right hand, a small bite clearly near her open mouth, other hand resting by the open bento; anatomically correct hands. Preserve the school classroom desk/chairs/window background and original soft detailed watercolor Japanese children's textbook style. The scene must be immediately distinguishable as eating a meal, not opening a lunch box. Keep the rest of the card composition as close to the reference as possible. No extra characters, no words or symbols anywhere, no question mark, no calendar; the app adds those elements. Do not add four progress bars. Keep all frame lines straight and the square corners sharp."
+    },
+    {
       "exampleId": "level3-q-do-pull-2",
       "file": "assets/construction/derived/level3-q-do-pull-2.webp",
       "reference": "assets/construction/build-pull-2.png",

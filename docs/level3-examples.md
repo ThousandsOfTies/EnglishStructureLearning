@@ -183,16 +183,16 @@ doesが付くと、playsはplayになります。
 
 ### 14　かどうか＋Does
 
-彼女は毎日学校でお弁当箱を開けますか。
+彼女は毎日学校でお弁当を食べますか。
 
-**Does she open her lunch box at school every day?**
+**Does she eat her lunch at school every day?**
 
-元の文：She opens her lunch box at school every day.
+元の文：She eats her lunch at school every day.
 
 | 疑問主部 | 疑問の支え | S | 述語 | P1 | 場所 | 時 |
 | --- | --- | --- | --- | --- | --- | --- |
-| かどうか | する | 彼女は | 開ける | お弁当箱を | 学校で | 毎日 |
-| （発音なし） | Does | she | open | her lunch box | at school | every day |
+| かどうか | する | 彼女は | 食べる | お弁当を | 学校で | 毎日 |
+| （発音なし） | Does | she | eat | her lunch | at school | every day |
 
 ### 15　かどうか＋Do
 

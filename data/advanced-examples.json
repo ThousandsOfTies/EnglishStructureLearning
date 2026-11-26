@@ -13,6 +13,9 @@
     "support": {"did": "した", "be": "です", "was": "だった"},
     "P2": {"a sticker": "シールを", "a card": "カードを", "a photo": "写真を"}
   },
+  "derivedReplacements": {
+    "level3-q-do-open-1": {"id":"level3-q-do-eat-lunch-at-school","theme":"theme-eat","level":3,"focus":"かどうか＋Does","ja":"彼女は毎日学校でお弁当を食べますか。","en":"Does she eat her lunch at school every day?","base":"She eats her lunch at school every day.","unit":"whether","question":{"token":"whether","spoken":false,"target":"truth"},"blocks":[["疑問の支え","Does","する"],["S","she","彼女は"],["述語","eat","食べる"],["P1","her lunch","お弁当を"],["場所","at school","学校で"],["時","every day","毎日"]]}
+  },
   "level2": [
     {"id":"level2-01","theme":"theme-go","level":2,"focus":"can：できる","ja":"私は公園で自転車に乗れます。","en":"I can ride a bike in the park.","base":"I ride a bike in the park.","blocks":[["S","I","私は"],["助動詞","can","〜できる"],["述語","ride","乗る"],["P1","a bike","自転車に"],["場所","in the park","公園で"]]},
     {"id":"level2-03","theme":"theme-read","level":2,"focus":"must＋be：そうしていなければならない","ja":"私たちは図書館では静かにしていなければなりません。","en":"We must be quiet in the library.","base":"We are quiet in the library.","blocks":[["S","We","私たちは"],["助動詞","must","〜しなければならない"],["be","be","である"],["述語の残り","quiet","静か"],["場所","in the library","図書館で"]]},

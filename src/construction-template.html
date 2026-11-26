@@ -37,6 +37,7 @@
 .day-calendar::before{left:24%}.day-calendar::after{right:24%}
 .day-calendar.today{top:var(--today-y);left:var(--today-x);right:auto;transform:translate(-50%,-50%);width:clamp(42px,15%,82px)}
 .daily-calendar{width:clamp(66px,14%,100px);aspect-ratio:1.25;border-radius:10%}
+@media(max-width:720px){.daily-calendar{left:4%;right:auto}}
 .daily-checks{position:absolute;inset:32% 7% 12%;display:grid;grid-template-columns:repeat(7,minmax(0,1fr));grid-template-rows:repeat(2,1fr);place-items:center}
 .daily-checks span{width:74%;aspect-ratio:1.6;border:solid #1d7347;border-width:0 0 2px 2px;border-radius:0 0 0 1px;transform:rotate(-45deg);margin-top:-2px}
 .day-calendar img{position:absolute;left:13%;top:24%;width:74%;height:69%;object-fit:contain;pointer-events:none}

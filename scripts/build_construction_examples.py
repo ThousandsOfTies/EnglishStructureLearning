@@ -422,9 +422,13 @@ def build_examples():
         q['blocks'] = [[k, q['slots'][k]['en']] for k in SLOTS if q['slots'][k]['en']]
         assert ' '.join(text for _, text in q['blocks']) + '.' == q['en'], q['id']
     advanced = json.loads((ROOT / 'data/advanced-examples.json').read_text(encoding='utf-8'))
-    derived2, derived3 = derive(rows, advanced['level2ModalMeanings'], advanced['level2'] + advanced['level3'])
-    advanced['level2'] += derived2
-    advanced['level3'] += derived3
+    replacements = advanced.get('derivedReplacements', {})
+    derived2, derived3 = derive(rows, advanced['level2ModalMeanings'], advanced['level2'] + advanced['level3'] + list(replacements.values()))
+    # Replace individual awkward examples after selection, so revising one scene
+    # does not reshuffle the other illustrated exercises.
+    assert replacements.keys() <= {q['id'] for q in derived2 + derived3}, 'Unknown derived exercise replacement'
+    advanced['level2'] += [replacements.get(q['id'], q) for q in derived2]
+    advanced['level3'] += [replacements.get(q['id'], q) for q in derived3]
     level2_choices = build_level2_choices(advanced)
     for q in advanced['level2']:
         q.setdefault('unit', level2_unit(q))

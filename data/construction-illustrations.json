@@ -7407,16 +7407,16 @@
       ],
       "source": "assets/construction/build-feel-2.png"
     },
-    "level3-q-do-open-1": {
-      "file": "assets/construction/derived/level3-q-do-open-1.webp",
-      "alt": "彼女は毎日学校でお弁当箱を開けますか。 話し手のそばに「？」があります。",
+    "level3-q-do-eat-lunch-at-school": {
+      "file": "assets/construction/level3-q-do-eat-lunch-at-school.webp",
+      "alt": "紫の服の女の子が教室の机でお弁当を食べています。話し手のそばに「？」があります。",
       "clue": "",
-      "review": "レベル1の場面を使用し、助述部・頻度・否定・疑問の手がかりを構図に反映。",
+      "review": "毎日する動作として自然な食事に変更。箸でおかずを口に運ぶ動作を描き、開いた弁当箱のふたは机に置いた。",
       "questionMark": [
-        26,
+        25,
         64
       ],
-      "source": "assets/construction/build-open-1.png"
+      "source": "assets/construction/derived/level3-q-do-open-1.webp"
     },
     "level3-q-do-pull-2": {
       "file": "assets/construction/derived/level3-q-do-pull-2.webp",
